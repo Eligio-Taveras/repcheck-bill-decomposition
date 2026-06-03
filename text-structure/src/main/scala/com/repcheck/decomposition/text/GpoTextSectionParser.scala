@@ -28,6 +28,11 @@ object GpoTextSectionParser {
 
   private val Resolved: Regex = """(?<![A-Za-z])Resolved""".r
   private val Clause: Regex   = """(?<![A-Za-z0-9])\((\d+)\)""".r
+  // Constitutional-amendment joint resolutions: the proposed amendment's units are titlecase
+  // "Section N." (lowercase "section 8" is a Constitution citation). Only applied when the text
+  // actually proposes an amendment, so citations like "Article I, section 8" can't trigger it.
+  private val AmendmentProposal: Regex = """(?i)amendment to the Constitution""".r
+  private val AmendmentSection: Regex  = """(?<![A-Za-z])Section\s+(\d+[A-Za-z]?)\.""".r
 
   def parse(content: String): Either[ParseFailure, List[ParsedSection]] =
     if (content.trim.isEmpty) {
@@ -46,35 +51,44 @@ object GpoTextSectionParser {
 
   // ── bill / section strategy ────────────────────────────────────────────────────────────────────
 
-  // (start, isSection, sectionId, hierarchyLevel) — level only meaningful for hierarchy markers.
-  private type Marker = (Int, Boolean, Option[String], Int)
+  // (start, nestingLevel, shortLabel) — e.g. (1234, 1, "TITLE I").
+  private type HierarchyMarker = (Int, Int, String)
 
   private def buildSections(content: String, sectionMatches: List[Regex.Match]): List[ParsedSection] = {
-    val sectionMarkers: List[Marker] =
-      sectionMatches.map(m => (m.start, true, Option(m.group(2)).map(_.trim).filter(_.nonEmpty), -1))
-    val hierarchyMarkers: List[Marker] =
-      Hierarchy.findAllMatchIn(content).toList.map(m => (m.start, false, None, levelOf(m.group(1))))
-
-    val markers = (sectionMarkers ++ hierarchyMarkers).sortBy(_._1)
-    val starts  = markers.map(_._1)
-    val ends    = starts.drop(1).appended(content.length)
-
+    val starts     = sectionMatches.map(_.start)
     val firstStart = starts.headOption.getOrElse(0)
     val preamble   = leadIn(content, firstStart)
+    val ends       = starts.drop(1).appended(content.length)
 
-    val walked = markers.zip(ends).foldLeft((Map.empty[Int, String], List.empty[ParsedSection], preamble.size)) {
-      case ((levels, acc, idx), ((start, isSection, sectionId, level), end)) =>
-        val slice = content.substring(start, end).trim
-        if (isSection) {
-          val parents = levels.toList.sortBy(_._1).map(_._2)
-          (levels, ParsedSection(idx, sectionId, None, slice, SectionKind.Section, parents) :: acc, idx + 1)
-        } else {
-          // Update the hierarchy stack: drop this level and anything deeper, then set it.
-          (levels.filter { case (k, _) => k < level } + (level -> slice), acc, idx)
-        }
+    // Hierarchy markers contribute only a short breadcrumb LABEL ("TITLE I") to each section's
+    // `parents`. They do NOT slice content — only SECTION markers do — so every character lands in
+    // the preamble or a section and no text is ever lost (the title's name stays in section text).
+    val hierarchy: List[HierarchyMarker] =
+      Hierarchy.findAllMatchIn(content).toList.map(m => (m.start, levelOf(m.group(1)), m.group(1).trim))
+
+    val sections = sectionMatches.zip(starts.zip(ends)).zipWithIndex.map {
+      case ((m, (start, end)), i) =>
+        val id = Option(m.group(2)).map(_.trim).filter(_.nonEmpty)
+        ParsedSection(
+          preamble.size + i,
+          id,
+          None,
+          content.substring(start, end).trim,
+          SectionKind.Section,
+          parentsAt(hierarchy, start),
+        )
     }
 
-    preamble ::: walked._2.reverse
+    preamble ::: sections
+  }
+
+  /** Hierarchy labels in effect just before `pos` (outermost first); deeper levels cleared by newer ones. */
+  private def parentsAt(hierarchy: List[HierarchyMarker], pos: Int): List[String] = {
+    val levels = hierarchy.filter(_._1 < pos).foldLeft(Map.empty[Int, String]) {
+      case (acc, (_, level, label)) =>
+        acc.filter { case (k, _) => k < level } + (level -> label)
+    }
+    levels.toList.sortBy(_._1).map(_._2)
   }
 
   /** Nesting order: DIVISION ⊃ TITLE ⊃ Subtitle ⊃ PART ⊃ CHAPTER. */
@@ -88,26 +102,45 @@ object GpoTextSectionParser {
   // ── resolution strategy ────────────────────────────────────────────────────────────────────────
 
   private def buildResolution(content: String, resolvedStart: Int): List[ParsedSection] = {
-    val preamble = leadIn(content, resolvedStart) // header + Whereas clauses
+    val preamble  = leadIn(content, resolvedStart) // header + Whereas clauses
+    val resolving = content.substring(resolvedStart)
 
-    val resolving     = content.substring(resolvedStart)
-    val clauseMatches = Clause.findAllMatchIn(resolving).toList
+    // A constitutional-amendment proposal splits on the proposed amendment's titlecase Section N.;
+    // every other resolution splits on its numbered resolving clauses (1) (2) ….
+    val markers =
+      if (AmendmentProposal.findFirstMatchIn(content).isDefined) {
+        AmendmentSection.findAllMatchIn(resolving).toList
+      } else {
+        Clause.findAllMatchIn(resolving).toList
+      }
 
-    if (clauseMatches.isEmpty) {
+    if (markers.isEmpty) {
       preamble :+ ParsedSection(preamble.size, None, None, resolving.trim, SectionKind.Section)
     } else {
-      val starts     = clauseMatches.map(_.start)
-      val firstStart = starts.headOption.getOrElse(0)
-      val lead       = resolving.substring(0, firstStart).trim // "Resolved, That the Senate—"
-      val parents    = if (lead.nonEmpty) List(lead) else Nil
-      val ends       = starts.drop(1).appended(resolving.length)
-      val clauses = clauseMatches.zip(starts.zip(ends)).zipWithIndex.map {
-        case ((m, (start, end)), i) =>
-          val id = Option(m.group(1)).map(_.trim).filter(_.nonEmpty)
-          ParsedSection(preamble.size + i, id, None, resolving.substring(start, end).trim, SectionKind.Section, parents)
-      }
-      preamble ::: clauses
+      clausesFrom(resolving, markers, preamble)
     }
+  }
+
+  /**
+   * Split a resolving block at each marker; the lead before the first marker becomes the units' `parents` context (e.g.
+   * "Resolved, That the Senate—" or "…the following article is proposed:").
+   */
+  private def clausesFrom(
+    resolving: String,
+    markers: List[Regex.Match],
+    preamble: List[ParsedSection],
+  ): List[ParsedSection] = {
+    val starts     = markers.map(_.start)
+    val firstStart = starts.headOption.getOrElse(0)
+    val lead       = resolving.substring(0, firstStart).trim
+    val parents    = if (lead.nonEmpty) List(lead) else Nil
+    val ends       = starts.drop(1).appended(resolving.length)
+    val clauses = markers.zip(starts.zip(ends)).zipWithIndex.map {
+      case ((m, (start, end)), i) =>
+        val id = Option(m.group(1)).map(_.trim).filter(_.nonEmpty)
+        ParsedSection(preamble.size + i, id, None, resolving.substring(start, end).trim, SectionKind.Section, parents)
+    }
+    preamble ::: clauses
   }
 
   /**
