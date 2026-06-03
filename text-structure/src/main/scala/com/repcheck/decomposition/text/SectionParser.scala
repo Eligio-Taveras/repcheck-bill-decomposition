@@ -6,8 +6,9 @@ trait SectionParser {
 }
 
 /**
- * The dispatcher (05-DP): XML to USLM, Text to GPO, PDF/Other to fallback. Never throws — a Left or empty result from a
- * specific parser degrades to the single-section fallback.
+ * The dispatcher (05-DP). XML → USLM `<section>` extraction, falling back to the shared text parser for section-less
+ * XML (e.g. resolutions); Formatted Text and already-extracted PDF text → the GPO text parser, which splits bills on
+ * SECTION/SEC. AND resolutions on Resolved-clauses; raw-PDF-binary and Other → single-section fallback. Never throws.
  */
 object DefaultSectionParser extends SectionParser {
 
@@ -16,7 +17,13 @@ object DefaultSectionParser extends SectionParser {
       case TextFormat.FormattedXml =>
         UslmXmlSectionParser.parse(content) match {
           case Right(sections) if sections.nonEmpty => SectionParseResult(sections, ParserKind.UslmXml)
-          case _                                    => fallback(content)
+          case _                                    =>
+            // No USLM <section> (e.g. a resolution): reduce the XML to text and run the shared
+            // section/resolution text parser so XML resolutions are handled too.
+            UslmXmlSectionParser.documentText(content) match {
+              case Right(text) => textPath(text)
+              case Left(_)     => fallback(content)
+            }
         }
       case TextFormat.FormattedText =>
         textPath(content)

@@ -25,6 +25,13 @@ object UslmXmlSectionParser {
       }
     }
 
+  /**
+   * Whole-document plain text (tags stripped, whitespace collapsed). Lets the dispatcher fall back to the shared text
+   * parser when the XML has no USLM `<section>` elements (e.g. a resolution).
+   */
+  def documentText(content: String): Either[ParseFailure, String] =
+    loadXml(content).map(root => collapseWhitespace(root.text))
+
   private def loadXml(content: String): Either[ParseFailure, Elem] =
     try
       Right(XML.loadString(content))
