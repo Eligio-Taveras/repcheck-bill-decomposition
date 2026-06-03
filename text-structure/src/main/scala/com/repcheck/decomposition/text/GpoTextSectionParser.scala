@@ -21,8 +21,10 @@ object GpoTextSectionParser {
 
   private val Section: Regex = """(?<![A-Za-z])(SECTION|SEC\.)\s+(\d+[A-Za-z]?)\.""".r
 
+  // Uppercase keywords only (titlecase "Title"/"Chapter" are TOC/citations, like "Sec." — excluded).
+  // Numbering is a single token (roman | arabic | single letter) so prose like "PART OF" can't match.
   private val Hierarchy: Regex =
-    """(?<![A-Za-z])(DIVISION\s+[A-Z0-9]+|TITLE\s+[IVXLC]+|Subtitle\s+[A-Z]|PART\s+[IVXLC0-9]+)""".r
+    """(?<![A-Za-z])(DIVISION\s+(?:[IVXLC]+|[0-9]+|[A-Z])|TITLE\s+(?:[IVXLC]+|[0-9]+)|Subtitle\s+[A-Z]|PART\s+(?:[IVXLC]+|[0-9]+|[A-Z])|CHAPTER\s+(?:[IVXLC]+|[0-9]+|[A-Z]))""".r
 
   private val Resolved: Regex = """(?<![A-Za-z])Resolved""".r
   private val Clause: Regex   = """(?<![A-Za-z0-9])\((\d+)\)""".r
@@ -75,12 +77,13 @@ object GpoTextSectionParser {
     preamble ::: walked._2.reverse
   }
 
-  /** Nesting order: DIVISION ⊃ TITLE ⊃ Subtitle ⊃ PART. */
+  /** Nesting order: DIVISION ⊃ TITLE ⊃ Subtitle ⊃ PART ⊃ CHAPTER. */
   private def levelOf(marker: String): Int =
     if (marker.startsWith("DIVISION")) { 0 }
     else if (marker.startsWith("TITLE")) { 1 }
     else if (marker.startsWith("Subtitle")) { 2 }
-    else { 3 } // PART
+    else if (marker.startsWith("PART")) { 3 }
+    else { 4 } // CHAPTER
 
   // ── resolution strategy ────────────────────────────────────────────────────────────────────────
 
