@@ -1,7 +1,10 @@
 name: Release
 
 # Triggers on every push to main (i.e. merged PRs).
-# Reads PR labels to decide the semver bump, tags the commit, then publishes.
+# Reads PR labels to decide the semver bump, tags the commit, and cuts a GitHub Release.
+# This is a Cloud Run Job APP repo — it does NOT publish Maven artifacts (subprojects are
+# consumed internally via sbt dependsOn; downstream reads the GCS Parquet snapshot, plan §14).
+# Docker image build + push to Cloud Run (GCP WIF) is added at the deployment phase (D6+).
 on:
   push:
     branches: [main]
@@ -11,11 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write   # create tags + GitHub Releases
-      packages: write   # publish to GitHub Packages
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_ACTOR: ${{ github.actor }}
 
     steps:
       - name: Checkout code (full history for tags)
@@ -84,21 +85,8 @@ jobs:
           git push origin "$TAG"
           echo "Tagged ${{ github.sha }} as $TAG"
 
-      # ── Publish with the new tag (dynver resolves a clean version) ──
-      - name: Set up JDK 21
-        if: steps.labels.outputs.bump != 'skip'
-        uses: actions/setup-java@v4.7.0
-        with:
-          java-version: '21'
-          distribution: 'temurin'
-
-      - name: Install sbt
-        if: steps.labels.outputs.bump != 'skip'
-        uses: sbt/setup-sbt@v1
-
-      - name: Publish to GitHub Packages
-        if: steps.labels.outputs.bump != 'skip'
-        run: sbt textStructure/publish
+      # No Maven publish: app repo (see header). Deployment (Docker -> Cloud Run via GCP WIF)
+      # is added at the deployment phase (plan D6+/Session 6), once an app subproject exists.
 
       # ── Create a GitHub Release for visibility ──
       - name: Create GitHub Release
@@ -106,7 +94,7 @@ jobs:
         run: |
           TAG="${{ steps.version.outputs.tag }}"
           PR="${{ steps.pr.outputs.number }}"
-          BODY="Published \`com.repcheck:text-structure_3:${TAG#v}\` to GitHub Packages."
+          BODY="Tag \`$TAG\` cut from main."
           if [ -n "$PR" ]; then
             BODY="$BODY\n\nSource: #$PR"
           fi
