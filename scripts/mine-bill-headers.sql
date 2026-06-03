@@ -1,82 +1,52 @@
--- Header-mining scan — derive the REAL section-heading vocabulary from the corpus.
+-- Header-mining scan — the REAL section-heading vocabulary, from the corpus (AlloyDB Omni).
+-- Run:  docker exec -i <alloydb-container> psql -U repcheck -d repcheck < scripts/mine-bill-headers.sql
 --
--- Purpose: replace the GPO parser's *guessed* "SECTION/SEC." assumption with evidence.
--- Feeds: the DP gate (parser refinement + property-test corpus) and the §765 coverage metric.
+-- KEY FINDINGS (measured 2026-06-03 on 419K versions / 434K raw_bill_text chunks). These drive
+-- GpoTextSectionParser; re-run after corpus growth to confirm they still hold:
 --
--- WHERE THE TEXT IS (important): migration 026 dropped `content` from `bill_text_versions`
--- (now metadata-only) and moved raw text into `raw_bill_text` — CHUNKED, with naive byte-split
--- OVERLAP, ordered by `chunk_index`. Heading lines are short and survive chunk boundaries, so
--- mining over chunks is valid. (Full-document REASSEMBLY is a separate decomposition concern —
--- overlap must be de-duplicated; see plan §13 note.)
---
--- Run against the corpus DB (dev Cloud SQL / AlloyDB), e.g.:
---   psql "$REPCHECK_PG_URL" -f scripts/mine-bill-headers.sql
--- For a fast first pass on large corpora, prepend a sample CTE (see SAMPLING note at bottom).
+--  * Stored text is WHITESPACE-COLLAPSED — one continuous stream, NO line breaks. So headings must
+--    be matched INLINE (line-anchored `^` matching returns ~nothing).
+--  * Headings are UPPERCASE (`SECTION N.`, `SEC. N.`); lowercase `section 101` is a U.S. Code
+--    CITATION, not a heading. Match CASE-SENSITIVELY to exclude citations.
+--  * Section numbers may carry a letter suffix: `SEC. 102B.`, … up to `…U.`.
+--  * Coverage by bill_type — bills use sections, resolutions mostly do not:
+--        hr 3.7% no-heading, s 3.8%   |   hres/sres ~94%, hconres 88%, sconres 84%, hjres 80%, sjres 74%
+--  * format_type: Formatted Text 404,166 | PDF 15,241 | Formatted XML 2.
+--    PDF rows are ~99.7% ALREADY extracted text (parse as text); only ~41 are raw PDF binary
+--    (corrupted in the TEXT column → need clean bytes re-fetched + PDFBox at the reader layer).
+--  * Large bills carry TITLE I/II… + Subtitle A/B… hierarchy above the section level.
 
-\timing on
+\pset pager off
 
--- A. Leading-token frequency — discovers the heading vocabulary with zero assumptions.
---    Reveals how often SECTION/SEC/TITLE/PART/DIVISION/Resolved/Whereas/etc. actually lead lines.
-SELECT lower(m[1]) AS leading_token, count(*) AS occurrences
-FROM raw_bill_text r
-CROSS JOIN LATERAL regexp_matches(r.content, '(?m)^[ \t]*([A-Za-z]{2,})[ \t.]', 'g') AS m
-GROUP BY 1
-ORDER BY occurrences DESC
-LIMIT 60;
-
--- B. Structural-keyword tally (case-insensitive, line-start) — measures our hypotheses directly.
-SELECT lower(m[1]) AS heading_keyword, count(*) AS occurrences
-FROM raw_bill_text r
-CROSS JOIN LATERAL regexp_matches(
-  r.content,
-  '(?mi)^[ \t]*(SECTION|SEC\.|TITLE|Subtitle|PART|DIVISION|CHAPTER|Article|Resolved|Whereas)\b',
-  'g') AS m
-GROUP BY 1
-ORDER BY occurrences DESC;
-
--- C. Per bill_type FALLBACK RATE — % of versions whose text has NO SECTION/SEC. heading
---    (these under-segment to a single Fallback section under the current parser). The number
---    that matters for "are we sure all bills use SECTION/SEC?".
+-- A. Heading coverage per bill_type (inline, case-sensitive). % with NO heading => fallback rate.
 WITH ver AS (
-  SELECT r.version_id,
-         b.bill_type,
-         bool_or(r.content ~* '(?m)^[ \t]*(SECTION|SEC\.)[ \t]') AS has_sec
-  FROM raw_bill_text r
-  JOIN bills b ON b.id = r.bill_id
+  SELECT r.version_id, b.bill_type,
+         bool_or(r.content ~ '(SECTION|SEC\.) +[0-9]+[A-Za-z]?\.') AS has_heading
+  FROM raw_bill_text r JOIN bills b ON b.id = r.bill_id
   WHERE r.version_id IS NOT NULL
   GROUP BY r.version_id, b.bill_type
 )
-SELECT bill_type,
-       count(*)                                         AS versions,
-       count(*) FILTER (WHERE NOT has_sec)              AS no_sec_versions,
-       round(100.0 * count(*) FILTER (WHERE NOT has_sec) / count(*), 1) AS pct_fallback
-FROM ver
-GROUP BY bill_type
-ORDER BY versions DESC;
+SELECT bill_type, count(*) AS versions,
+       count(*) FILTER (WHERE NOT has_heading) AS no_heading,
+       round(100.0 * count(*) FILTER (WHERE NOT has_heading) / count(*), 1) AS pct_no_heading
+FROM ver GROUP BY bill_type ORDER BY versions DESC;
 
--- D. Distinct SECTION/SEC heading SHAPES (number normalized to N) + a real example + count.
---    Surfaces casing/period/spacing variants the regex must tolerate (e.g. "Sec.", no-period).
-SELECT regexp_replace(m[1], '[0-9]+', 'N') AS heading_shape,
-       count(*)                            AS occurrences,
-       min(m[1])                           AS example
-FROM raw_bill_text r
+-- B. Inline heading SHAPES (5% sample, case-sensitive, number normalized) — variant catalog.
+SELECT regexp_replace(m[1], '[0-9]+', 'N') AS shape, count(*) AS n, min(m[1]) AS example
+FROM (SELECT content FROM raw_bill_text TABLESAMPLE SYSTEM (5)) r
+CROSS JOIN LATERAL regexp_matches(r.content, '((SECTION|SEC\.) +[0-9]+[A-Za-z]?\.)', 'g') AS m
+GROUP BY 1 ORDER BY n DESC LIMIT 25;
+
+-- C. Hierarchy markers above section level (5% sample, structural forms only).
+SELECT m[1] AS marker, count(*) AS n
+FROM (SELECT content FROM raw_bill_text TABLESAMPLE SYSTEM (5)) r
 CROSS JOIN LATERAL regexp_matches(
-  r.content, '(?mi)^[ \t]*((SECTION|SEC\.|Sec\.)[ \t]+[0-9A-Za-z]+\.?)', 'g') AS m
-GROUP BY 1
-ORDER BY occurrences DESC
-LIMIT 40;
+  r.content, '(TITLE [IVXLC]+|Subtitle [A-Z]|PART [IVX0-9]+|DIVISION [A-Z0-9]+)[ —-]', 'g') AS m
+GROUP BY 1 ORDER BY n DESC LIMIT 15;
 
--- E. Hierarchy markers above the section level — do bills use TITLE/Subtitle/PART/DIVISION?
---    Tells us whether the parser must recognize structure above SEC (SectionKind.Title/Subtitle).
-SELECT lower(m[1]) AS hierarchy_marker, count(DISTINCT r.version_id) AS versions_using
-FROM raw_bill_text r
-CROSS JOIN LATERAL regexp_matches(
-  r.content, '(?mi)^[ \t]*(TITLE|Subtitle|PART|DIVISION|CHAPTER)[ \t]+[IVXLC0-9A-Z]', 'g') AS m
-WHERE r.version_id IS NOT NULL
-GROUP BY 1
-ORDER BY versions_using DESC;
-
--- SAMPLING (large corpora): to bound cost on the full ~419K-version corpus, wrap each scan's
--- `raw_bill_text r` with a sampled source, e.g.:
---   FROM (SELECT * FROM raw_bill_text TABLESAMPLE SYSTEM (2)) r        -- ~2% of rows
--- Run sampled first to sanity-check, then full for the authoritative coverage numbers.
+-- D. PDF-format reality: how many rows are raw PDF binary vs already-extracted text.
+SELECT count(*) AS pdf_chunk0_rows,
+       count(*) FILTER (WHERE content LIKE '%PDF%')                AS raw_pdf_binary,
+       count(*) FILTER (WHERE position(chr(65533) IN content) > 0) AS corrupted
+FROM raw_bill_text r JOIN bill_text_versions v ON v.id = r.version_id
+WHERE v.format_type = 'PDF' AND r.chunk_index = 0;

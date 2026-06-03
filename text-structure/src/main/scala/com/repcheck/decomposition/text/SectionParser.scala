@@ -19,12 +19,21 @@ object DefaultSectionParser extends SectionParser {
           case _                                    => fallback(content)
         }
       case TextFormat.FormattedText =>
-        GpoTextSectionParser.parse(content) match {
-          case Right(sections) if sections.nonEmpty => SectionParseResult(sections, ParserKind.GpoText)
-          case _                                    => fallback(content)
-        }
-      case TextFormat.Pdf | TextFormat.Other =>
+        textPath(content)
+      // PDF-format content is ALREADY extracted text for ~99.7% of versions (ingestion ran PDFBox),
+      // so parse it as text — NOT excluded. The rare raw-PDF-binary tail is not parseable here: it
+      // needs clean bytes re-fetched + PdfTextExtractor at the reader layer; degrade to a single
+      // fallback section rather than emit binary garbage.
+      case TextFormat.Pdf =>
+        if (PdfTextExtractor.looksLikePdfBinary(content)) fallback(content) else textPath(content)
+      case TextFormat.Other =>
         fallback(content)
+    }
+
+  private def textPath(content: String): SectionParseResult =
+    GpoTextSectionParser.parse(content) match {
+      case Right(sections) if sections.nonEmpty => SectionParseResult(sections, ParserKind.GpoText)
+      case _                                    => fallback(content)
     }
 
   private def fallback(content: String): SectionParseResult =
