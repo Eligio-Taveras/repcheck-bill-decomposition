@@ -32,7 +32,7 @@ enum SectionKind {
 }
 
 enum ParserKind {
-  case UslmXml, GpoText, Resolution, Fallback
+  case UslmXml, GpoText, Fallback
 }
 
 /** The `format_type` dispatch key. Corpus today (plan §5b): Formatted Text 96.4%, PDF 3.6%, Formatted XML ~0%. */

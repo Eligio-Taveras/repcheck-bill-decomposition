@@ -3,40 +3,46 @@ package com.repcheck.decomposition.text
 import scala.util.matching.Regex
 
 /**
- * GPO "Formatted Text" parser — THE parser (~96% of bills; plan §5b).
+ * GPO "Formatted Text" parser — THE parser for all measure types (bills AND resolutions; ~96% of the corpus is this
+ * format). They share one whitespace-collapsed format and differ only in internal structure, so one parser handles
+ * both, choosing a strategy from the content:
  *
- * Derived from the real corpus (not guessed): stored text is whitespace-collapsed into one continuous stream (no line
- * breaks), so structural markers are matched **inline** and **case-sensitively** — uppercase `SECTION N.` / `SEC. N.`
- * are headings; lowercase `section 101` is a U.S. Code citation (noise) and must NOT split. Numbers may carry a letter
- * suffix (`SEC. 102B.`).
+ *   1. **Sections** (bills) — uppercase `SECTION N.` / `SEC. N.` matched inline + case-sensitively (lowercase `section
+ *      101` is a U.S. Code citation, NOT a heading). Numbers may carry a letter suffix (`SEC. 102B.`).
+ *      `TITLE`/`Subtitle`/`PART`/`DIVISION` hierarchy is tracked and attached to each section as a `parents` breadcrumb
+ *      (sections stay the unit). 2. **Resolutions** (no `SEC.`) — split on `Resolved, That …`: the `Whereas`/header
+ *      preamble is one context unit (`Fallback`), each numbered resolving clause is its own unit (the `Resolved, That`
+ *      lead carried in `parents`); a single resolving statement collapses to one unit.
  *
- * Hierarchy above the section level (`TITLE I`, `Subtitle A`, `PART I`, `DIVISION A` — ~9% of bills) is NOT emitted as
- * its own unit; it is tracked and attached to each section as a `parents` breadcrumb (outermost first), so the SECTION
- * stays the clustering unit while keeping its context.
- *
- * Lossless: lead-in before the first marker (header/sponsors/enacting clause) is preserved as a leading `Fallback`
- * section. Returns `Left` when there are no `SECTION`/`SEC.` headings — the dispatcher then tries the resolution
- * matcher, else single-section fallback.
+ * Lossless: lead-in before the first marker is preserved. Returns `Left` only when there are neither section headings
+ * nor a `Resolved` clause — the dispatcher then degrades to a single-section fallback.
  */
 object GpoTextSectionParser {
 
-  private val Section: Regex =
-    """(?<![A-Za-z])(SECTION|SEC\.)\s+(\d+[A-Za-z]?)\.""".r
+  private val Section: Regex = """(?<![A-Za-z])(SECTION|SEC\.)\s+(\d+[A-Za-z]?)\.""".r
 
   private val Hierarchy: Regex =
     """(?<![A-Za-z])(DIVISION\s+[A-Z0-9]+|TITLE\s+[IVXLC]+|Subtitle\s+[A-Z]|PART\s+[IVXLC0-9]+)""".r
+
+  private val Resolved: Regex = """(?<![A-Za-z])Resolved""".r
+  private val Clause: Regex   = """(?<![A-Za-z0-9])\((\d+)\)""".r
 
   def parse(content: String): Either[ParseFailure, List[ParsedSection]] =
     if (content.trim.isEmpty) {
       Left(ParseFailure("GPO parse: empty content", None))
     } else {
       val sectionMatches = Section.findAllMatchIn(content).toList
-      if (sectionMatches.isEmpty) {
-        Left(ParseFailure("GPO parse: no inline SECTION/SEC. headings found", None))
+      if (sectionMatches.nonEmpty) {
+        Right(buildSections(content, sectionMatches)) // bill: split on sections
       } else {
-        Right(buildSections(content, sectionMatches))
+        Resolved.findFirstMatchIn(content) match {
+          case Some(rm) => Right(buildResolution(content, rm.start)) // resolution: split on clauses
+          case None     => Left(ParseFailure("GPO parse: no SECTION/SEC. headings and no Resolved clause", None))
+        }
       }
     }
+
+  // ── bill / section strategy ────────────────────────────────────────────────────────────────────
 
   // (start, isSection, sectionId, hierarchyLevel) — level only meaningful for hierarchy markers.
   private type Marker = (Int, Boolean, Option[String], Int)
@@ -52,10 +58,7 @@ object GpoTextSectionParser {
     val ends    = starts.drop(1).appended(content.length)
 
     val firstStart = starts.headOption.getOrElse(0)
-    val preamble: List[ParsedSection] = {
-      val lead = content.substring(0, firstStart).trim
-      if (lead.nonEmpty) List(ParsedSection(0, None, None, lead, SectionKind.Fallback)) else Nil
-    }
+    val preamble   = leadIn(content, firstStart)
 
     val walked = markers.zip(ends).foldLeft((Map.empty[Int, String], List.empty[ParsedSection], preamble.size)) {
       case ((levels, acc, idx), ((start, isSection, sectionId, level), end)) =>
@@ -78,5 +81,39 @@ object GpoTextSectionParser {
     else if (marker.startsWith("TITLE")) { 1 }
     else if (marker.startsWith("Subtitle")) { 2 }
     else { 3 } // PART
+
+  // ── resolution strategy ────────────────────────────────────────────────────────────────────────
+
+  private def buildResolution(content: String, resolvedStart: Int): List[ParsedSection] = {
+    val preamble = leadIn(content, resolvedStart) // header + Whereas clauses
+
+    val resolving     = content.substring(resolvedStart)
+    val clauseMatches = Clause.findAllMatchIn(resolving).toList
+
+    if (clauseMatches.isEmpty) {
+      preamble :+ ParsedSection(preamble.size, None, None, resolving.trim, SectionKind.Section)
+    } else {
+      val starts     = clauseMatches.map(_.start)
+      val firstStart = starts.headOption.getOrElse(0)
+      val lead       = resolving.substring(0, firstStart).trim // "Resolved, That the Senate—"
+      val parents    = if (lead.nonEmpty) List(lead) else Nil
+      val ends       = starts.drop(1).appended(resolving.length)
+      val clauses = clauseMatches.zip(starts.zip(ends)).zipWithIndex.map {
+        case ((m, (start, end)), i) =>
+          val id = Option(m.group(1)).map(_.trim).filter(_.nonEmpty)
+          ParsedSection(preamble.size + i, id, None, resolving.substring(start, end).trim, SectionKind.Section, parents)
+      }
+      preamble ::: clauses
+    }
+  }
+
+  /**
+   * The text before the first marker (header / sponsors / enacting clause / Whereas preamble), preserved as a leading
+   * `Fallback` section for no-loss. Empty list if there is none.
+   */
+  private def leadIn(content: String, firstStart: Int): List[ParsedSection] = {
+    val lead = content.substring(0, firstStart).trim
+    if (lead.nonEmpty) List(ParsedSection(0, None, None, lead, SectionKind.Fallback)) else Nil
+  }
 
 }

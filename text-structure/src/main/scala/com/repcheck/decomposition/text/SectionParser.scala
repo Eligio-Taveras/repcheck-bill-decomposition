@@ -30,16 +30,12 @@ object DefaultSectionParser extends SectionParser {
         fallback(content)
     }
 
-  // Bills split on SECTION/SEC. (GPO). Resolutions have none — try the resolution matcher
-  // (Whereas preamble + Resolved-clause units) before degrading to a single fallback section.
+  // One GPO parser for all measure types — it splits bills on SECTION/SEC. and resolutions on
+  // Resolved-clauses internally; degrade to a single fallback section only if it finds neither.
   private def textPath(content: String): SectionParseResult =
     GpoTextSectionParser.parse(content) match {
       case Right(sections) if sections.nonEmpty => SectionParseResult(sections, ParserKind.GpoText)
-      case _ =>
-        ResolutionParser.parse(content) match {
-          case Right(units) if units.nonEmpty => SectionParseResult(units, ParserKind.Resolution)
-          case _                              => fallback(content)
-        }
+      case _                                    => fallback(content)
     }
 
   private def fallback(content: String): SectionParseResult =
