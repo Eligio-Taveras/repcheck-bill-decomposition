@@ -1,12 +1,19 @@
 package com.repcheck.decomposition.text
 
-/** A logical section of a bill, emitted by a parser. PURE — no I/O, no F[_]. (05-DP, plan §5b) */
+/**
+ * A logical section of a bill, emitted by a parser. PURE — no I/O, no F[_]. (05-DP, plan §5b)
+ *
+ * `parents` is the enclosing structural breadcrumb (outermost first), e.g. `List("TITLE I—...", "Subtitle A—...")` for
+ * a section nested under a title hierarchy, or the `Resolved, That` lead for a resolution's clauses. Empty for
+ * top-level sections and the preamble.
+ */
 final case class ParsedSection(
   sectionIndex: Int,
   sectionIdentifier: Option[String],
   heading: Option[String],
   content: String,
   kind: SectionKind,
+  parents: List[String] = Nil,
 )
 
 /** An embeddable unit: a section, or one overlapping sub-part of an oversize section (O6). */
@@ -25,7 +32,7 @@ enum SectionKind {
 }
 
 enum ParserKind {
-  case UslmXml, GpoText, Fallback
+  case UslmXml, GpoText, Resolution, Fallback
 }
 
 /** The `format_type` dispatch key. Corpus today (plan §5b): Formatted Text 96.4%, PDF 3.6%, Formatted XML ~0%. */
