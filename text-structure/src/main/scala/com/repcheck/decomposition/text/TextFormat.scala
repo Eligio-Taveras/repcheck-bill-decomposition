@@ -8,8 +8,9 @@ enum TextFormat {
 object TextFormat {
 
   // Canonical Congress.gov `format_type` values, exactly as persisted to bill_text_versions.format_type.
-  // Authoritative producer: gov-apis FormatType enum in repcheck-data-ingestion (the same three are the
-  // only values the API emits). Matched case-insensitively; any other value maps to Other.
+  // Authoritative producer: gov-apis FormatType enum in repcheck-data-ingestion. Verified against the live
+  // corpus (419,589 rows): these three are the ONLY distinct values, with no NULLs or case/whitespace
+  // variants. Matched case-insensitively; any other value maps to Other (a safety bucket, never hit today).
   val FormattedXmlLabel  = "Formatted XML"
   val FormattedTextLabel = "Formatted Text"
   val PdfLabel           = "PDF"
