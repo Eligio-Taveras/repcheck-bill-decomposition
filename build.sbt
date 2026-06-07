@@ -77,7 +77,8 @@ lazy val root = (project in file("."))
     publish / skip := true
   )
 
-// text-structure — DP: PURE deterministic parsers + SubSplitter. No I/O, no F[_]. Zero foundation deps.
+// text-structure — DP: deterministic parsers + SubSplitter + chunk reassembly + PDF text extraction.
+// Deterministic (no network/disk I/O); PDFBox operates in-memory on bytes. Zero foundation deps.
 // The §4 decomposition-ml / decomposition-llm / decomposition-pipeline subprojects land in later sessions.
 lazy val textStructure = (project in file("text-structure"))
   .settings(
@@ -85,6 +86,7 @@ lazy val textStructure = (project in file("text-structure"))
     name := "text-structure",
     libraryDependencies ++= Seq(
       "org.scala-lang.modules" %% "scala-xml"       % "2.3.0",
+      "org.apache.pdfbox"       % "pdfbox"          % "3.0.3",
       "org.scalatestplus"      %% "scalacheck-1-17" % "3.2.18.0" % Test,
       "org.scalacheck"         %% "scalacheck"      % "1.17.0"   % Test
     )

@@ -1,11 +1,8 @@
 package com.repcheck.decomposition.text
 
 /**
- * Expands oversize sections into overlapping embeddable sub-units (O6). PURE.
- *
- * Sections within `maxTokens` pass through as a single unit (`subIndex = 0`). Oversize sections are cut into
- * overlapping windows of `maxTokens` words stepping by `maxTokens - overlap`, each a sub-row with an incrementing
- * `subIndex`. Token count is approximated by whitespace-delimited words.
+ * Expands oversize sections into overlapping embeddable sub-units (O6): windows of `maxTokens` words stepping by
+ * `maxTokens - overlap`. Within-limit sections pass through unchanged; token count ≈ whitespace words.
  */
 object SubSplitter {
 

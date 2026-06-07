@@ -6,34 +6,53 @@ import org.scalatest.matchers.should.Matchers
 
 class ChunkReassemblerSpec extends AnyFlatSpec with Matchers with Inspectors {
 
+  private def chunks(parts: String*): List[Chunk] =
+    parts.toList.zipWithIndex.map { case (c, i) => Chunk(i, c) }
+
   "ChunkReassembler" should "return empty string for no chunks" in {
-    ChunkReassembler.reassemble(Nil, maxOverlap = 0) shouldBe ""
+    ChunkReassembler.reassemble(Nil) shouldBe Right("")
   }
 
   it should "return the single chunk unchanged" in {
-    ChunkReassembler.reassemble(List("the whole bill"), maxOverlap = 0) shouldBe "the whole bill"
+    ChunkReassembler.reassemble(chunks("the whole bill")) shouldBe Right("the whole bill")
   }
 
-  it should "concatenate contiguous (non-overlapping) chunks verbatim" in {
-    val full   = "SECTION 1. SHORT TITLE. This Act may be cited as the Test Act. SEC. 2. FINDINGS."
-    val chunks = full.grouped(20).toList // exact-size slices, no overlap (mirrors TextChunker)
-    ChunkReassembler.reassemble(chunks, maxOverlap = 0) shouldBe full
+  it should "concatenate contiguous slices verbatim" in {
+    val full = "SECTION 1. SHORT TITLE. This Act may be cited as the Test Act. SEC. 2. FINDINGS."
+    ChunkReassembler.reassemble(full.grouped(20).toList.zipWithIndex.map { case (c, i) => Chunk(i, c) }) shouldBe
+      Right(full)
   }
 
-  it should "drop a duplicated boundary when chunks overlap" in {
-    // acc ends with "the act", next begins with "the act" — overlap of 7 chars.
-    val chunks = List("This is the act", "the act applies to all")
-    ChunkReassembler.reassemble(chunks, maxOverlap = 10) shouldBe "This is the act applies to all"
-  }
-
-  it should "not invent an overlap when none exists (plain concat even with a high maxOverlap)" in {
-    ChunkReassembler.reassemble(List("abc", "def"), maxOverlap = 50) shouldBe "abcdef"
+  it should "reorder by index before concatenating (input order does not matter)" in {
+    ChunkReassembler.reassemble(List(Chunk(2, "c"), Chunk(0, "a"), Chunk(1, "b"))) shouldBe Right("abc")
   }
 
   it should "losslessly reconstruct an arbitrary document across many chunk sizes" in {
     val full = (1 to 500).map(i => s"word$i").mkString(" ")
     forEvery(List(1, 7, 16, 100, 999)) { size =>
-      ChunkReassembler.reassemble(full.grouped(size).toList, maxOverlap = 0) shouldBe full
+      val parts = full.grouped(size).toList.zipWithIndex.map { case (c, i) => Chunk(i, c) }
+      ChunkReassembler.reassemble(parts) shouldBe Right(full)
+    }
+  }
+
+  it should "fail loudly on a missing index (dropped chunk row)" in {
+    ChunkReassembler.reassemble(List(Chunk(0, "a"), Chunk(2, "c"))) match {
+      case Left(f)  => f.message should include("contiguous chunk indices")
+      case Right(r) => fail(s"expected Left, got $r")
+    }
+  }
+
+  it should "fail loudly on a duplicate index" in {
+    ChunkReassembler.reassemble(List(Chunk(0, "a"), Chunk(0, "a"))) match {
+      case Left(f)  => f.message should include("got [0,0]")
+      case Right(r) => fail(s"expected Left, got $r")
+    }
+  }
+
+  it should "fail loudly when indices do not start at 0" in {
+    ChunkReassembler.reassemble(List(Chunk(1, "a"), Chunk(2, "b"))) match {
+      case Left(f)  => f.message should include("expected contiguous chunk indices [0,1]")
+      case Right(r) => fail(s"expected Left, got $r")
     }
   }
 
