@@ -38,7 +38,7 @@ class PdfTextExtractorSpec extends AnyFlatSpec with Matchers {
 
   it should "return Left on non-PDF bytes rather than throw" in {
     PdfTextExtractor.extract("not a pdf at all".getBytes("UTF-8")) match {
-      case Left(f)  => f.message should include("PDF text extraction failed")
+      case Left(f)  => f.message should include("text extraction failed")
       case Right(r) => fail(s"expected Left, got '$r'")
     }
   }

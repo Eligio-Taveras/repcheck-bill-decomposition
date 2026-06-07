@@ -24,14 +24,14 @@ object ChunkReassembler {
   def reassemble(orderedChunks: List[String], maxOverlap: Int): String =
     orderedChunks match {
       case Nil          => ""
-      case head :: tail => tail.foldLeft(head)((acc, next) => stitch(acc, next, maxOverlap))
+      case head :: tail => tail.foldLeft(head)((acc, next) => appendWithoutOverlap(acc, next, maxOverlap))
     }
 
   /**
    * Append `next` to `acc`, dropping the leading part of `next` that duplicates the trailing part of `acc`. With no
    * shared boundary (or `maxOverlap == 0`) this is plain concatenation.
    */
-  private def stitch(acc: String, next: String, maxOverlap: Int): String = {
+  private def appendWithoutOverlap(acc: String, next: String, maxOverlap: Int): String = {
     val maxK = math.min(maxOverlap, math.min(acc.length, next.length))
     acc + next.substring(largestBoundaryOverlap(acc, next, maxK))
   }

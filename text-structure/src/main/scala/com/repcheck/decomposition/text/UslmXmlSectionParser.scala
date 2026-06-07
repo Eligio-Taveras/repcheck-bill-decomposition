@@ -13,12 +13,12 @@ object UslmXmlSectionParser {
 
   def parse(content: String): Either[ParseFailure, List[ParsedSection]] =
     if (content.trim.isEmpty) {
-      Left(ParseFailure("USLM parse: empty content", None))
+      Left(ParseFailure("USLM: empty content", None))
     } else {
       loadXml(content).flatMap { root =>
         val sections = (root \\ "section").toList
         if (sections.isEmpty) {
-          Left(ParseFailure("USLM parse: no <section> elements found", None))
+          Left(ParseFailure("USLM: no section elements", None))
         } else {
           Right(sections.zipWithIndex.map { case (node, idx) => toSection(node, idx) })
         }
@@ -29,14 +29,14 @@ object UslmXmlSectionParser {
    * Whole-document plain text (tags stripped, whitespace collapsed). Lets the dispatcher fall back to the shared text
    * parser when the XML has no USLM `<section>` elements (e.g. a resolution).
    */
-  def documentText(content: String): Either[ParseFailure, String] =
+  def extractPlainText(content: String): Either[ParseFailure, String] =
     loadXml(content).map(root => collapseWhitespace(root.text))
 
   private def loadXml(content: String): Either[ParseFailure, Elem] =
     try
       Right(XML.loadString(content))
     catch {
-      case NonFatal(t) => Left(ParseFailure("USLM parse: malformed XML", Some(t)))
+      case NonFatal(t) => Left(ParseFailure("USLM: malformed XML", Some(t)))
     }
 
   private def toSection(node: Node, idx: Int): ParsedSection = {

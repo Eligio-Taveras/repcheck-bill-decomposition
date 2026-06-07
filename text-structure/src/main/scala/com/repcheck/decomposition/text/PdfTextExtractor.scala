@@ -24,7 +24,7 @@ object PdfTextExtractor {
       finally
         document.close()
     } catch {
-      case NonFatal(t) => Left(ParseFailure("PDF text extraction failed", Some(t)))
+      case NonFatal(t) => Left(ParseFailure("PDF: text extraction failed", Some(t)))
     }
 
   /** True if the content looks like raw PDF bytes (rather than already-extracted text). */
