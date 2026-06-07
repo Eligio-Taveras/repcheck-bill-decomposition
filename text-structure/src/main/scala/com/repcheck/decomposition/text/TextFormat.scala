@@ -7,12 +7,19 @@ enum TextFormat {
 
 object TextFormat {
 
-  def fromFormatType(s: String): TextFormat =
-    s.trim.toLowerCase match {
-      case "formatted xml"  => FormattedXml
-      case "formatted text" => FormattedText
-      case "pdf"            => Pdf
-      case _                => Other
-    }
+  // Canonical Congress.gov `format_type` values, exactly as persisted to bill_text_versions.format_type.
+  // Authoritative producer: gov-apis FormatType enum in repcheck-data-ingestion (the same three are the
+  // only values the API emits). Matched case-insensitively; any other value maps to Other.
+  val FormattedXmlLabel  = "Formatted XML"
+  val FormattedTextLabel = "Formatted Text"
+  val PdfLabel           = "PDF"
+
+  def fromFormatType(s: String): TextFormat = {
+    val v = s.trim
+    if (v.equalsIgnoreCase(FormattedXmlLabel)) FormattedXml
+    else if (v.equalsIgnoreCase(FormattedTextLabel)) FormattedText
+    else if (v.equalsIgnoreCase(PdfLabel)) Pdf
+    else Other
+  }
 
 }

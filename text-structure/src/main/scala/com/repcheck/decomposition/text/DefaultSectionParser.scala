@@ -1,7 +1,7 @@
 package com.repcheck.decomposition.text
 
 /** Routes by format to the right parser; an empty or failed parse degrades to a single-section fallback. */
-object DefaultSectionParser extends SectionParser {
+class DefaultSectionParser extends SectionParser {
 
   def parse(content: String, format: TextFormat): SectionParseResult =
     format match {

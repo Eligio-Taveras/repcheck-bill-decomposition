@@ -9,6 +9,8 @@ import org.scalatest.matchers.should.Matchers
  */
 class SectionParsersSpec extends AnyFlatSpec with Matchers {
 
+  private val defaultParser = new DefaultSectionParser
+
   // Mirrors a real HR bill: header/sponsors preamble, inline UPPERCASE headings, and a lowercase
   // `section 101` CITATION inside section 2 that must NOT be treated as a heading.
   private val gpo =
@@ -163,23 +165,23 @@ class SectionParsersSpec extends AnyFlatSpec with Matchers {
   }
 
   "DefaultSectionParser" should "dispatch Formatted Text to the GPO parser" in {
-    DefaultSectionParser.parse(gpo, TextFormat.FormattedText).parserUsed shouldBe ParserKind.GpoText
+    defaultParser.parse(gpo, TextFormat.FormattedText).parserUsed shouldBe ParserKind.GpoText
   }
 
   it should "dispatch Formatted XML to the USLM parser" in {
-    DefaultSectionParser.parse(uslm, TextFormat.FormattedXml).parserUsed shouldBe ParserKind.UslmXml
+    defaultParser.parse(uslm, TextFormat.FormattedXml).parserUsed shouldBe ParserKind.UslmXml
   }
 
   it should "parse already-extracted PDF text as text (PDF is NOT excluded)" in {
-    DefaultSectionParser.parse(gpo, TextFormat.Pdf).parserUsed shouldBe ParserKind.GpoText
+    defaultParser.parse(gpo, TextFormat.Pdf).parserUsed shouldBe ParserKind.GpoText
   }
 
   it should "fall back (not emit garbage) when PDF content is still raw binary" in {
-    DefaultSectionParser.parse("%PDF-1.5   binary", TextFormat.Pdf).parserUsed shouldBe ParserKind.Fallback
+    defaultParser.parse("%PDF-1.5   binary", TextFormat.Pdf).parserUsed shouldBe ParserKind.Fallback
   }
 
   it should "fall back for PDF text that has no sections (e.g. appropriations)" in {
-    val r = DefaultSectionParser.parse("An Act making appropriations. TITLE I MULTILATERAL ASSISTANCE.", TextFormat.Pdf)
+    val r = defaultParser.parse("An Act making appropriations. TITLE I MULTILATERAL ASSISTANCE.", TextFormat.Pdf)
     r.parserUsed shouldBe ParserKind.Fallback
     r.sections.size shouldBe 1
   }
@@ -187,14 +189,14 @@ class SectionParsersSpec extends AnyFlatSpec with Matchers {
   it should "route a resolution (no SEC.) through the GPO parser, not a single fallback" in {
     val resolution =
       "S. RES. 1 Celebrating X. Whereas A is so; Whereas B is so; Resolved, That the Senate (1) celebrates X; (2) encourages Y."
-    val r = DefaultSectionParser.parse(resolution, TextFormat.FormattedText)
+    val r = defaultParser.parse(resolution, TextFormat.FormattedText)
     r.parserUsed shouldBe ParserKind.GpoText
     r.sections.size should be > 1
   }
 
   it should "resolve resolutions in PDF-format text too" in {
     val resolution = "S. RES. 1 Celebrating X. Whereas A; Resolved, That the Senate (1) celebrates X; (2) encourages Y."
-    val r          = DefaultSectionParser.parse(resolution, TextFormat.Pdf)
+    val r          = defaultParser.parse(resolution, TextFormat.Pdf)
     r.parserUsed shouldBe ParserKind.GpoText
     r.sections.size should be > 1
   }
@@ -203,13 +205,13 @@ class SectionParsersSpec extends AnyFlatSpec with Matchers {
     val xmlRes =
       "<resolution><preamble>Whereas A is so;</preamble>" +
         "<resolution-body>Resolved, That the Senate (1) celebrates X; (2) encourages Y.</resolution-body></resolution>"
-    val r = DefaultSectionParser.parse(xmlRes, TextFormat.FormattedXml)
+    val r = defaultParser.parse(xmlRes, TextFormat.FormattedXml)
     r.sections.size should be > 1
     r.sections.exists(_.sectionIdentifier.contains("1")) shouldBe true
   }
 
   it should "fall back for Other formats" in {
-    DefaultSectionParser.parse("whatever", TextFormat.Other).parserUsed shouldBe ParserKind.Fallback
+    defaultParser.parse("whatever", TextFormat.Other).parserUsed shouldBe ParserKind.Fallback
   }
 
   "TextFormat.fromFormatType" should "map the live format_type strings" in {

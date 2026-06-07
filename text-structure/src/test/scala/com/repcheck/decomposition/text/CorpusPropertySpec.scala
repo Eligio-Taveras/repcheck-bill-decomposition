@@ -33,8 +33,10 @@ class CorpusPropertySpec extends AnyFlatSpec with Matchers {
   private def charFreq(s: String): Map[Char, Int] =
     s.filterNot(_.isWhitespace).groupBy(identity).view.mapValues(_.size).toMap
 
+  private val parser = new DefaultSectionParser
+
   private def parse(b: Bill): SectionParseResult =
-    DefaultSectionParser.parse(b.text, TextFormat.FormattedText)
+    parser.parse(b.text, TextFormat.FormattedText)
 
   "the real-bill corpus fixture" should "cover all 8 measure types" in {
     corpus.map(_.billType).distinct.size shouldBe 8
