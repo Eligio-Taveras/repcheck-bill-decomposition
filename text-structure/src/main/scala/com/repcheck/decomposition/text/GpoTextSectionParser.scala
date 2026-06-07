@@ -3,17 +3,9 @@ package com.repcheck.decomposition.text
 import scala.util.matching.Regex
 
 /**
- * GPO "Formatted Text" parser — THE parser for all measure types (bills AND resolutions; ~96% of the corpus is this
- * format). They share one whitespace-collapsed format and differ only in internal structure, so this single entry point
- * chooses a strategy from the content:
- *
- *   - **bills** — uppercase `SECTION N.` / `SEC. N.` headings → [[BillSectionParser]] (with
- *     `TITLE`/`Subtitle`/`PART`/`DIVISION`/`CHAPTER` hierarchy attached as a `parents` breadcrumb);
- *   - **resolutions** — no `SEC.` but a `Resolved` clause → [[ResolutionClauseParser]].
- *
- * Returns `Left` only when there are neither section headings nor a `Resolved` clause — the dispatcher then degrades to
- * a single-section fallback. Matching is inline + case-sensitive: lowercase `section 101` is a U.S. Code citation, not
- * a heading.
+ * Parses GPO Formatted Text for all measure types: bills split on uppercase SECTION/SEC. ([[BillSectionParser]]),
+ * resolutions on a `Resolved` clause ([[ResolutionClauseParser]]). Case-sensitive — lowercase `section 101` is a
+ * citation, not a heading.
  */
 object GpoTextSectionParser {
 

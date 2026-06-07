@@ -3,10 +3,8 @@ package com.repcheck.decomposition.text
 import scala.util.matching.Regex
 
 /**
- * Tracks the `TITLE`/`Subtitle`/`PART`/`DIVISION`/`CHAPTER` hierarchy above the section level and yields the enclosing
- * breadcrumb labels for a position. Uppercase keywords only (titlecase forms are tables-of-contents / citations);
- * numbering is a single token (roman | arabic | single letter) so prose like `PART OF` can't match. Hierarchy
- * contributes labels only — it never slices content.
+ * Enclosing TITLE/Subtitle/PART/DIVISION/CHAPTER labels for a position. Uppercase keywords only (titlecase forms are
+ * TOC/citations); single-token numbering so prose like `PART OF` can't match.
  */
 private[text] object HierarchyBreadcrumb {
 
@@ -32,6 +30,6 @@ private[text] object HierarchyBreadcrumb {
     else if (marker.startsWith("TITLE")) { 1 }
     else if (marker.startsWith("Subtitle")) { 2 }
     else if (marker.startsWith("PART")) { 3 }
-    else { 4 } // CHAPTER
+    else { 4 }
 
 }

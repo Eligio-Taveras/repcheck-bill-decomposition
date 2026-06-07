@@ -3,10 +3,9 @@ package com.repcheck.decomposition.text
 import scala.util.matching.Regex
 
 /**
- * Splits a resolution (no `SEC.` headings). The `Whereas`/header preamble is one context unit; each operative clause is
- * its own unit. Normal resolutions split on numbered clauses `(1) (2) …`; constitutional-amendment proposals split on
- * the proposed amendment's titlecase `Section N.` — scoped to texts that propose an amendment, so Constitution
- * citations (`Article I, section 8`) can't trigger it.
+ * Splits a resolution: the Whereas/header preamble is one unit, each operative clause another. Normal resolutions split
+ * on numbered `(1) (2)`; amendment proposals on titlecase `Section N.`, gated by [[AmendmentProposal]] so Constitution
+ * citations can't trigger it.
  */
 private[text] object ResolutionClauseParser {
 
@@ -31,10 +30,7 @@ private[text] object ResolutionClauseParser {
     }
   }
 
-  /**
-   * Split the resolving block at each marker; the lead before the first marker becomes the units' `parents` context
-   * (e.g. "Resolved, That the Senate—" or "…the following article is proposed:").
-   */
+  /** Split at each marker; the lead before the first marker becomes the units' `parents` context. */
   private def splitIntoClauses(
     resolving: String,
     markers: List[Regex.Match],

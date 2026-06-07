@@ -1,8 +1,8 @@
 package com.repcheck.decomposition.text
 
 /**
- * The lead-in before the first structural marker (header / sponsors / enacting clause / `Whereas` preamble), preserved
- * as a leading `Fallback` section so the parse is lossless. Empty when absent.
+ * Text before the first marker (header/sponsors/enacting clause/Whereas), kept as a leading `Fallback` section for
+ * losslessness. Empty when absent.
  */
 private[text] object Preamble {
 

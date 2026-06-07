@@ -3,13 +3,12 @@ package com.repcheck.decomposition.text
 import scala.util.matching.Regex
 
 /**
- * Splits a GPO bill on its `SECTION`/`SEC.` headings. Only section markers slice content (so every character lands in
- * the preamble or a section — lossless); the enclosing `TITLE`/`Subtitle`/`PART`/ `DIVISION`/`CHAPTER` hierarchy is
- * attached to each section as a `parents` breadcrumb via [[HierarchyBreadcrumb]] (sections stay the unit).
+ * Splits a bill on its SECTION/SEC. headings, attaching the enclosing hierarchy as each section's `parents`. Only
+ * section markers slice content, so nothing is lost; hierarchy only labels. Takes (first, rest) so the "at least one
+ * heading" precondition is explicit.
  */
 private[text] object BillSectionParser {
 
-  /** @param first the first section heading — makes the "at least one heading" precondition explicit. */
   def parse(content: String, first: Regex.Match, rest: List[Regex.Match]): List[ParsedSection] = {
     val headings  = first :: rest
     val starts    = headings.map(_.start)

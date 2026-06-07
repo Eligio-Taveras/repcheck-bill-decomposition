@@ -6,13 +6,8 @@ import org.apache.pdfbox.Loader
 import org.apache.pdfbox.text.PDFTextStripper
 
 /**
- * Extracts plain text from PDF bytes via Apache PDFBox. Deterministic, in-memory (no disk/network).
- *
- * Used for the small tail of PDF-format versions whose `raw_bill_text` content is raw PDF binary rather than
- * already-extracted text. NOTE: those bytes are corrupted in the DB (stored into a UTF-8 `TEXT` column → replacement
- * chars), so clean bytes must be supplied by the reader layer (re-fetched original) — this extractor takes the bytes;
- * sourcing them is the caller's job. The extracted text is then handed to [[GpoTextSectionParser]] like any
- * Formatted-Text content.
+ * Extracts text from PDF bytes via PDFBox (in-memory, deterministic). For the reader layer's binary-PDF tail; the
+ * caller supplies clean bytes (the DB's stored PDF bytes are corrupted).
  */
 object PdfTextExtractor {
 

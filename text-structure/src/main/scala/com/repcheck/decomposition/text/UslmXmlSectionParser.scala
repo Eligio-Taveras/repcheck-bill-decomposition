@@ -4,10 +4,8 @@ import scala.util.control.NonFatal
 import scala.xml.{Elem, Node, XML}
 
 /**
- * USLM XML parser — forward-looking (near-zero in the corpus today; grows as D2's prefer-XML lands).
- *
- * Extracts every `<section>` element, reading its `<num>` as the identifier and `<heading>` as the heading, with the
- * element's text as content. Built correctly but not over-engineered vs GPO (§5b).
+ * USLM XML parser — forward-looking (near-zero in the corpus today). Extracts each `<section>` (`<num>`→id,
+ * `<heading>`→heading, text→content).
  */
 object UslmXmlSectionParser {
 
@@ -25,10 +23,7 @@ object UslmXmlSectionParser {
       }
     }
 
-  /**
-   * Whole-document plain text (tags stripped, whitespace collapsed). Lets the dispatcher fall back to the shared text
-   * parser when the XML has no USLM `<section>` elements (e.g. a resolution).
-   */
+  /** Whole-document plain text — lets the dispatcher run the text parser on section-less XML. */
   def extractPlainText(content: String): Either[ParseFailure, String] =
     loadXml(content).map(root => collapseWhitespace(root.text))
 

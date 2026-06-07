@@ -1,11 +1,6 @@
 package com.repcheck.decomposition.text
 
-/**
- * The dispatcher (05-DP). `Formatted XML` → USLM `<section>` extraction, falling back to the shared text parser for
- * section-less XML (e.g. resolutions); `Formatted Text` and already-extracted PDF text → the GPO text parser (which
- * handles bills AND resolutions); raw-PDF-binary and `Other` → single-section fallback. Never throws — a `Left` or
- * empty result degrades to the fallback.
- */
+/** Routes by format to the right parser; an empty or failed parse degrades to a single-section fallback. */
 object DefaultSectionParser extends SectionParser {
 
   def parse(content: String, format: TextFormat): SectionParseResult =
@@ -13,9 +8,8 @@ object DefaultSectionParser extends SectionParser {
       case TextFormat.FormattedXml =>
         UslmXmlSectionParser.parse(content) match {
           case Right(sections) if sections.nonEmpty => SectionParseResult(sections, ParserKind.UslmXml)
-          case _                                    =>
-            // No USLM <section> (e.g. a resolution): reduce the XML to text and run the shared text
-            // parser so XML resolutions are handled too.
+          // section-less XML (e.g. a resolution): run the text parser on the stripped XML text
+          case _ =>
             UslmXmlSectionParser.extractPlainText(content) match {
               case Right(text) => parseFormattedText(text)
               case Left(_)     => fallback(content)
@@ -23,10 +17,8 @@ object DefaultSectionParser extends SectionParser {
         }
       case TextFormat.FormattedText =>
         parseFormattedText(content)
+      // PDF content is already extracted text for ~99.7% of versions; raw binary needs the reader layer
       case TextFormat.Pdf =>
-        // PDF-format content is already extracted text for ~99.7% of versions; parse it as text.
-        // Raw PDF binary isn't parseable here — that needs clean bytes + PdfTextExtractor at the
-        // reader layer; degrade to a single fallback section rather than emit binary garbage.
         if (PdfTextExtractor.looksLikePdfBinary(content)) fallback(content) else parseFormattedText(content)
       case TextFormat.Other =>
         fallback(content)

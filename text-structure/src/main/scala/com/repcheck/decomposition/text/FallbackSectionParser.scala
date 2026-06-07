@@ -1,9 +1,6 @@
 package com.repcheck.decomposition.text
 
-/**
- * Single-section fallback — NEVER fails. The whole document becomes one `Fallback` section. Used for PDF/Other formats
- * and when a format-specific parser cannot find structure.
- */
+/** Single-section fallback — never fails; the whole document becomes one `Fallback` section. */
 object FallbackSectionParser {
 
   def parse(content: String): List[ParsedSection] =
