@@ -194,6 +194,38 @@ class SectionParsersSpec extends AnyFlatSpec with Matchers {
     }
   }
 
+  it should "build a breadcrumb from every bill.dtd container level (division..subchapter)" in {
+    val deep =
+      """<bill><legis-body>
+        | <division><enum>A</enum><header>Alpha</header>
+        |  <subdivision><enum>1</enum><header>SubAlpha</header>
+        |   <title><enum>I</enum><header>Tee</header>
+        |    <subtitle><enum>B</enum><header>SubTee</header>
+        |     <part><enum>2</enum><header>Par</header>
+        |      <subpart><enum>C</enum><header>SubPar</header>
+        |       <chapter><enum>3</enum><header>Chap</header>
+        |        <subchapter><enum>IV</enum><header>SubChap</header>
+        |         <section><enum>101.</enum><header>Sec</header><text>body.</text></section>
+        |        </subchapter></chapter></subpart></part></subtitle></title></subdivision></division>
+        |</legis-body></bill>""".stripMargin
+    GpoBillXmlSectionParser.parse(deep) match {
+      case Right(sections) =>
+        sections.filter(_.kind == SectionKind.Section).map(_.parents) shouldBe List(
+          List(
+            "DIVISION A Alpha",
+            "SUBDIVISION 1 SubAlpha",
+            "TITLE I Tee",
+            "SUBTITLE B SubTee",
+            "PART 2 Par",
+            "SUBPART C SubPar",
+            "CHAPTER 3 Chap",
+            "SUBCHAPTER IV SubChap",
+          )
+        )
+      case Left(f) => fail(s"expected Right, got $f")
+    }
+  }
+
   "DefaultSectionParser" should "dispatch Formatted Text to the GPO parser" in {
     defaultParser.parse(gpo, TextFormat.FormattedText).parserUsed shouldBe ParserKind.GpoText
   }

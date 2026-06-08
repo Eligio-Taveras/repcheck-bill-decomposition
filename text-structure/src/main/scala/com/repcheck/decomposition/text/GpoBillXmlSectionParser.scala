@@ -14,7 +14,11 @@ import scala.xml.{Elem, Node, NodeSeq, XML}
  */
 object GpoBillXmlSectionParser {
 
-  private val Containers = Set("title", "subtitle", "part", "division", "chapter")
+  // Full bill.dtd hierarchy above <section>. Verified against omnibus bills (division/title/subtitle/part observed);
+  // the sub* levels are part of the DTD and included for completeness. A section under any other (unknown) wrapper is
+  // still collected — it just doesn't gain that wrapper's breadcrumb label.
+  private val Containers =
+    Set("division", "subdivision", "title", "subtitle", "part", "subpart", "chapter", "subchapter")
 
   def parse(content: String): Either[ParseFailure, List[ParsedSection]] =
     if (content.trim.isEmpty) {
