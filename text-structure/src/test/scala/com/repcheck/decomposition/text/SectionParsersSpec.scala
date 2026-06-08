@@ -19,10 +19,19 @@ class SectionParsersSpec extends AnyFlatSpec with Matchers {
       "SECTION 1. SHORT TITLE. This Act may be cited as the Test Act. " +
       "SEC. 2. FINDINGS. Congress finds that section 101 of title 5 applies."
 
-  private val uslm =
+  // Real GPO bill.dtd shape: <enum>/<header>/<text>, a <form> preamble, a TITLE container, and an amendatory
+  // <quoted-block> whose nested <section> must NOT become its own unit.
+  private val billXml =
     """<bill>
-      |  <section><num>1.</num><heading>Short Title</heading><text>This Act may be cited.</text></section>
-      |  <section><num>2.</num><heading>Findings</heading><text>Congress finds.</text></section>
+      |  <form><legis-num>H. R. 100</legis-num><official-title>A bill to do things.</official-title></form>
+      |  <legis-body>
+      |    <section><enum>1.</enum><header>Short title</header><text>This Act may be cited as the Test Act.</text></section>
+      |    <title id="t1"><enum>I</enum><header>Funding</header>
+      |      <section><enum>101.</enum><header>Authorization</header><text>There is authorized
+      |        <quoted-block><section><enum>9.</enum><header>Quoted</header><text>amendatory text</text></section></quoted-block>
+      |        such sums.</text></section>
+      |    </title>
+      |  </legis-body>
       |</bill>""".stripMargin
 
   "FallbackSectionParser" should "return exactly one Fallback section holding the whole content" in {
@@ -147,19 +156,40 @@ class SectionParsersSpec extends AnyFlatSpec with Matchers {
     }
   }
 
-  "UslmXmlSectionParser" should "extract <section> num/heading in order" in {
-    UslmXmlSectionParser.parse(uslm) match {
-      case Right(s1 :: s2 :: Nil) =>
-        s1.sectionIdentifier shouldBe Some("1.")
-        s1.heading shouldBe Some("Short Title")
-        s2.sectionIdentifier shouldBe Some("2.")
-      case other => fail(s"expected two sections, got $other")
+  "GpoBillXmlSectionParser" should "extract enum/header, attach TITLE parents, and keep quoted-block text inline" in {
+    GpoBillXmlSectionParser.parse(billXml) match {
+      case Right(pre :: s1 :: s101 :: Nil) =>
+        pre.kind shouldBe SectionKind.Fallback // <form> preamble
+        pre.content should include("H. R. 100")
+        s1.kind shouldBe SectionKind.Section
+        s1.sectionIdentifier shouldBe Some("1") // trailing dot stripped
+        s1.heading shouldBe Some("Short title")
+        s1.parents shouldBe Nil
+        s101.sectionIdentifier shouldBe Some("101")
+        s101.heading shouldBe Some("Authorization")
+        s101.parents shouldBe List("TITLE I Funding")
+        s101.content should include("amendatory text") // quoted-block stayed inside, not split into its own unit
+      case other => fail(s"expected preamble + 2 sections, got $other")
+    }
+  }
+
+  it should "index units 0..n-1 in document order" in {
+    GpoBillXmlSectionParser.parse(billXml) match {
+      case Right(sections) => sections.map(_.sectionIndex) shouldBe sections.indices.toList
+      case Left(f)         => fail(s"expected Right, got $f")
     }
   }
 
   it should "fail (Left) on malformed XML" in {
-    UslmXmlSectionParser.parse("<bill><section></bill>") match {
+    GpoBillXmlSectionParser.parse("<bill><section></bill>") match {
       case Left(f)  => f.message should include("malformed")
+      case Right(r) => fail(s"expected Left, got $r")
+    }
+  }
+
+  it should "fail (Left) when there are no section elements" in {
+    GpoBillXmlSectionParser.parse("<bill><form>x</form><legis-body></legis-body></bill>") match {
+      case Left(f)  => f.message should include("no section")
       case Right(r) => fail(s"expected Left, got $r")
     }
   }
@@ -168,8 +198,8 @@ class SectionParsersSpec extends AnyFlatSpec with Matchers {
     defaultParser.parse(gpo, TextFormat.FormattedText).parserUsed shouldBe ParserKind.GpoText
   }
 
-  it should "dispatch Formatted XML to the USLM parser" in {
-    defaultParser.parse(uslm, TextFormat.FormattedXml).parserUsed shouldBe ParserKind.UslmXml
+  it should "dispatch Formatted XML to the GPO XML parser" in {
+    defaultParser.parse(billXml, TextFormat.FormattedXml).parserUsed shouldBe ParserKind.GpoXml
   }
 
   it should "parse already-extracted PDF text as text (PDF is NOT excluded)" in {
