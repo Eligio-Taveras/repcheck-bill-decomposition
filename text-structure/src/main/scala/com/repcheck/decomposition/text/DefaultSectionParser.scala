@@ -6,11 +6,11 @@ class DefaultSectionParser extends SectionParser {
   def parse(content: String, format: TextFormat): SectionParseResult =
     format match {
       case TextFormat.FormattedXml =>
-        UslmXmlSectionParser.parse(content) match {
-          case Right(sections) if sections.nonEmpty => SectionParseResult(sections, ParserKind.UslmXml)
-          // section-less XML (e.g. a resolution): run the text parser on the stripped XML text
+        GpoBillXmlSectionParser.parse(content) match {
+          case Right(sections) if sections.nonEmpty => SectionParseResult(sections, ParserKind.GpoXml)
+          // tag-stripped or non-section XML: run the text parser on the plain text
           case _ =>
-            UslmXmlSectionParser.extractPlainText(content) match {
+            GpoBillXmlSectionParser.extractPlainText(content) match {
               case Right(text) => parseFormattedText(text)
               case Left(_)     => fallback(content)
             }

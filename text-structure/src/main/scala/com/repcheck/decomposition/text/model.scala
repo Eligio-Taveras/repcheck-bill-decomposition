@@ -28,5 +28,5 @@ enum SectionKind {
 }
 
 enum ParserKind {
-  case UslmXml, GpoText, Fallback
+  case GpoXml, GpoText, Fallback
 }

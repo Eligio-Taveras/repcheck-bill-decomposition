@@ -50,6 +50,10 @@ lazy val commonSettings = Seq(
   Test / scalacOptions += "-Wconf:msg=is not declared infix:s",
   Test / scalacOptions += "-Wconf:msg=unused value of type:s",
 
+  // E2E tests (live AlloyDB export / network) are excluded from `sbt test` / CI; scoped to the `test` task only so
+  // they can still be run explicitly with `sbt "textStructure/testOnly -- -n com.repcheck.tags.E2ETest"`.
+  Test / test / testOptions += Tests.Argument(TestFrameworks.ScalaTest, "-l", "com.repcheck.tags.E2ETest"),
+
   // WartRemover — enforces FP discipline at compile time
   wartremoverErrors ++= Seq(
     Wart.AsInstanceOf,          // No unsafe casts
