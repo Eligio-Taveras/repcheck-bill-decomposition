@@ -33,6 +33,7 @@ lazy val commonSettings = Seq(
   resolvers ++= Seq(
     "GitHub Packages - shared-models" at "https://maven.pkg.github.com/Eligio-Taveras/repcheck-shared-models",
     "GitHub Packages - pipeline-models" at "https://maven.pkg.github.com/Eligio-Taveras/repcheck-pipeline-models",
+    "GitHub Packages - repcheck-utils" at "https://maven.pkg.github.com/Eligio-Taveras/repcheck-utils",
   ),
   libraryDependencies ++= Seq(
     "org.scalatest" %% "scalatest" % "3.2.18" % Test
@@ -91,6 +92,7 @@ lazy val textStructure = (project in file("text-structure"))
     libraryDependencies ++= Seq(
       "org.scala-lang.modules" %% "scala-xml"       % "2.3.0",
       "org.apache.pdfbox"       % "pdfbox"          % "3.0.3",
+      "com.repcheck"           %% "repcheck-utils"  % "0.1.1"    % Test, // shared E2ETest tag
       "org.scalatestplus"      %% "scalacheck-1-17" % "3.2.18.0" % Test,
       "org.scalacheck"         %% "scalacheck"      % "1.17.0"   % Test
     )

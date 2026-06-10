@@ -9,7 +9,7 @@ import scala.util.matching.Regex
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
-import com.repcheck.decomposition.tags.E2ETest
+import com.repcheck.utils.tags.E2ETest
 
 /**
  * E2E validation: parse real bills exported from the live AlloyDB and assert the parser's correctness signals (no text
