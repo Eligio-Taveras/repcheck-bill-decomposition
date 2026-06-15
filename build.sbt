@@ -109,9 +109,11 @@ lazy val conformance = (project in file("conformance"))
     name := "conformance",
     libraryDependencies ++= Seq(
       "com.repcheck"      %% "repchecksharedmodels" % "0.1.59"   % Test,
+      "com.repcheck"      %% "repcheck-utils"       % "0.1.1"    % Test, // shared E2ETest tag for DC-3 live schema check
       "org.scalatestplus" %% "scalacheck-1-17"      % "3.2.18.0" % Test,
       "org.scalacheck"    %% "scalacheck"           % "1.17.0"   % Test,
-      "net.reactivecore"  %% "circe-json-schema"    % "0.4.1"    % Test
+      "net.reactivecore"  %% "circe-json-schema"    % "0.4.1"    % Test,
+      "org.postgresql"     % "postgresql"           % "42.7.3"   % Test  // DC-3 live information_schema introspection
     )
   )
 
