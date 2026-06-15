@@ -1,0 +1,22 @@
+version_id	bill_id	bill_type	format_type	chunks	chars	contiguous
+356142	8137862	hr	Formatted Text	1	435	t
+415327	8038414	hr	Formatted Text	5	59973	t
+177012	85436	s	Formatted Text	1	727	t
+150314	56711	s	Formatted Text	5	59985	t
+402717	8007116	hjres	Formatted Text	1	755	t
+189669	98072	hjres	Formatted Text	4	45002	t
+373803	8003734	sjres	Formatted Text	1	757	t
+408763	8156116	sjres	Formatted Text	4	43417	t
+208332	161022	hconres	Formatted Text	1	631	t
+357076	8154201	hconres	Formatted Text	5	59949	t
+267921	648536	sconres	Formatted Text	1	610	t
+356661	8151840	sconres	Formatted Text	5	59828	t
+344387	8162823	hres	Formatted Text	1	400	t
+8966	13631	hres	Formatted Text	5	58907	t
+129397	30673	sres	Formatted Text	1	643	t
+323852	8106432	sres	Formatted Text	5	58660	t
+272091	681021	hr	PDF	1	498	t
+237650	657739	s	PDF	1	430	t
+219039	195984	hjres	PDF	1	523	t
+330298	8144297	hr	Formatted XML	1	1641	t
+154389	23765	hr	Formatted XML	1	2287	t

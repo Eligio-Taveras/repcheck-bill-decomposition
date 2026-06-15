@@ -75,7 +75,7 @@ lazy val commonSettings = Seq(
 )
 
 lazy val root = (project in file("."))
-  .aggregate(textStructure, docGenerator)
+  .aggregate(textStructure, conformance, docGenerator)
   .settings(
     commonSettings,
     name := "repcheck-bill-decomposition-root",
@@ -86,6 +86,7 @@ lazy val root = (project in file("."))
 // Deterministic (no network/disk I/O); PDFBox operates in-memory on bytes. Zero foundation deps.
 // The §4 decomposition-ml / decomposition-llm / decomposition-pipeline subprojects land in later sessions.
 lazy val textStructure = (project in file("text-structure"))
+  .dependsOn(conformance % "test->test")
   .settings(
     commonSettings,
     name := "text-structure",
@@ -95,6 +96,22 @@ lazy val textStructure = (project in file("text-structure"))
       "com.repcheck"           %% "repcheck-utils"  % "0.1.1"    % Test, // shared E2ETest tag
       "org.scalatestplus"      %% "scalacheck-1-17" % "3.2.18.0" % Test,
       "org.scalacheck"         %% "scalacheck"      % "1.17.0"   % Test
+    )
+  )
+
+// conformance — DC: the §10c consistency harness (test-support). The one-corpus fixture (`Corpus`, built from the local
+// AlloyDB by scripts/build-corpus.sh and committed under src/main/resources) + the `*Contract` framework
+// (`ConformanceContract`, `StructuredCodecLaws`). Consumed by other modules via `% "test->test"`; later phases plug
+// their trait contracts in. No main code → no coverage surface; all deps are Test-scoped.
+lazy val conformance = (project in file("conformance"))
+  .settings(
+    commonSettings,
+    name := "conformance",
+    libraryDependencies ++= Seq(
+      "com.repcheck"      %% "repchecksharedmodels" % "0.1.59"   % Test,
+      "org.scalatestplus" %% "scalacheck-1-17"      % "3.2.18.0" % Test,
+      "org.scalacheck"    %% "scalacheck"           % "1.17.0"   % Test,
+      "net.reactivecore"  %% "circe-json-schema"    % "0.4.1"    % Test
     )
   )
 
