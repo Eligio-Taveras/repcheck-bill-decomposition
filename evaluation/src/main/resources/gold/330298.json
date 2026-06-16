@@ -1,0 +1,18 @@
+{
+  "billType" : "hr",
+  "format" : "Formatted XML",
+  "groups" : [
+  ],
+  "labelStatus" : "draft-boundaries",
+  "parserUsed" : "Fallback",
+  "sections" : [
+    {
+      "charLength" : 1642,
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    }
+  ],
+  "versionId" : "330298"
+}

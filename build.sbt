@@ -75,7 +75,7 @@ lazy val commonSettings = Seq(
 )
 
 lazy val root = (project in file("."))
-  .aggregate(textStructure, conformance, docGenerator)
+  .aggregate(textStructure, conformance, evaluation, docGenerator)
   .settings(
     commonSettings,
     name := "repcheck-bill-decomposition-root",
@@ -115,6 +115,22 @@ lazy val conformance = (project in file("conformance"))
       "net.reactivecore"  %% "circe-json-schema"    % "0.4.1"    % Test,
       "org.postgresql"     % "postgresql"           % "42.7.3"   % Test  // DC-3 live information_schema introspection
     )
+  )
+
+// evaluation — DP-0: the empirical-gate harness (master §10b). Throwaway evaluation code, NOT shipped production. The
+// gold set (labels over the shared corpus) + metrics + baselines + A/B experiments that authorize D3b–D6. Gold loader +
+// generator are Test-scoped (test-support data, like the corpus); the gold fixtures live in src/main/resources/gold.
+// Later sub-steps add Ollama-backed wiring + metrics. dependsOn text-structure (parser drafts boundaries) + conformance
+// (Corpus + ConformanceContract).
+lazy val evaluation = (project in file("evaluation"))
+  .dependsOn(textStructure, conformance % "test->test")
+  .settings(
+    commonSettings,
+    name := "evaluation",
+    libraryDependencies ++= (Dependencies.circe ++ Seq(
+      "org.scalatestplus" %% "scalacheck-1-17" % "3.2.18.0",
+      "org.scalacheck"    %% "scalacheck"      % "1.17.0"
+    )).map(_ % Test)
   )
 
 lazy val docGenerator = (project in file("doc-generator"))
