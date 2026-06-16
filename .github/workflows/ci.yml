@@ -74,3 +74,58 @@ jobs:
 
       - name: Run doc generator tests
         run: sbt docGenerator/test
+
+  # DC-4 cross-repo schema-parity gate. The decomposition pipeline READS raw_bill_text / bill_text_versions from the
+  # bills pipeline; this job applies the committed read-contract schema snapshot to a throwaway pgvector container and
+  # runs SchemaContractSpec (E2ETest tag) against it. Fails the PR if the read contract no longer matches the snapshot.
+  # When upstream legitimately evolves, refresh conformance/src/test/resources/schema/read-contract-schema.sql — the
+  # diff is the drift signal. (The live-reality check is the same spec run locally against AlloyDB Omni.)
+  schema-parity:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: read
+      contents: read
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_ACTOR: ${{ github.actor }}
+      CONFORMANCE_JDBC_URL: jdbc:postgresql://localhost:5432/repcheck
+      CONFORMANCE_JDBC_USER: repcheck
+      CONFORMANCE_JDBC_PASSWORD: repcheck
+
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: repcheck
+          POSTGRES_PASSWORD: repcheck
+          POSTGRES_DB: repcheck
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U repcheck -d repcheck"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4.7.0
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Install sbt
+        uses: sbt/setup-sbt@v1
+
+      - name: Install psql client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Apply read-contract schema snapshot
+        run: psql "postgresql://repcheck:repcheck@localhost:5432/repcheck" -v ON_ERROR_STOP=1 -f conformance/src/test/resources/schema/read-contract-schema.sql
+
+      - name: Run schema-parity contract (live DB, E2ETest tag)
+        run: sbt "conformance/testOnly com.repcheck.decomposition.conformance.SchemaContractSpec -- -n com.repcheck.tags.E2ETest"
