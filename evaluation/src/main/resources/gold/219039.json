@@ -1,0 +1,25 @@
+{
+  "billType" : "hjres",
+  "format" : "PDF",
+  "groups" : [
+  ],
+  "labelStatus" : "draft-boundaries",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 46,
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 476,
+      "heading" : null,
+      "identifier" : "3",
+      "index" : 1,
+      "kind" : "Section"
+    }
+  ],
+  "versionId" : "219039"
+}

@@ -1,0 +1,137 @@
+{
+  "billType" : "hr",
+  "format" : "Formatted Text",
+  "groups" : [
+  ],
+  "labelStatus" : "draft-boundaries",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 717,
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 774,
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 1,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 162,
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 2,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2352,
+      "heading" : null,
+      "identifier" : "3",
+      "index" : 3,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2308,
+      "heading" : null,
+      "identifier" : "4",
+      "index" : 4,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1511,
+      "heading" : null,
+      "identifier" : "5",
+      "index" : 5,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7252,
+      "heading" : null,
+      "identifier" : "6",
+      "index" : 6,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6152,
+      "heading" : null,
+      "identifier" : "7",
+      "index" : 7,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1251,
+      "heading" : null,
+      "identifier" : "8",
+      "index" : 8,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 852,
+      "heading" : null,
+      "identifier" : "9",
+      "index" : 9,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3795,
+      "heading" : null,
+      "identifier" : "10",
+      "index" : 10,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 21215,
+      "heading" : null,
+      "identifier" : "11",
+      "index" : 11,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4112,
+      "heading" : null,
+      "identifier" : "12",
+      "index" : 12,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2194,
+      "heading" : null,
+      "identifier" : "13",
+      "index" : 13,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 344,
+      "heading" : null,
+      "identifier" : "14",
+      "index" : 14,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4420,
+      "heading" : null,
+      "identifier" : "15",
+      "index" : 15,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 236,
+      "heading" : null,
+      "identifier" : "16",
+      "index" : 16,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 309,
+      "heading" : null,
+      "identifier" : "17",
+      "index" : 17,
+      "kind" : "Section"
+    }
+  ],
+  "versionId" : "415327"
+}

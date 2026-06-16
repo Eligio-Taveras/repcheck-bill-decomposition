@@ -1,0 +1,18 @@
+{
+  "billType" : "s",
+  "format" : "PDF",
+  "groups" : [
+  ],
+  "labelStatus" : "draft-boundaries",
+  "parserUsed" : "Fallback",
+  "sections" : [
+    {
+      "charLength" : 431,
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    }
+  ],
+  "versionId" : "237650"
+}

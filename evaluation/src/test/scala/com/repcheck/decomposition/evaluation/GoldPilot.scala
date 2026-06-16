@@ -1,0 +1,15 @@
+package com.repcheck.decomposition.evaluation
+
+/**
+ * The 8 pilot bills (DP-0 scaffolding-first decision) — deliberate spread over bill type, format, and size:
+ *   - 3 large Formatted-Text bills carry the multi-section grouping signal (415327 hr · 150314 s · 189669 hjres)
+ *   - 2 tiny Formatted-Text bills are the tight single-theme / degenerate case (356142 hr · 344387 hres)
+ *   - the two edge formats: 330298 (hr, Formatted XML) · 219039 (hjres, PDF) · 237650 (s, PDF)
+ * The full ~25–30-bill set follows once the harness is proven on this pilot.
+ */
+object GoldPilot {
+
+  val versionIds: List[String] =
+    List("415327", "150314", "189669", "356142", "344387", "330298", "219039", "237650")
+
+}

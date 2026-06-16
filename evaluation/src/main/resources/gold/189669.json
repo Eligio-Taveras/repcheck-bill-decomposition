@@ -1,0 +1,109 @@
+{
+  "billType" : "hjres",
+  "format" : "Formatted Text",
+  "groups" : [
+  ],
+  "labelStatus" : "draft-boundaries",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 1092,
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 87,
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 1,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1421,
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 2,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 196,
+      "heading" : null,
+      "identifier" : "3",
+      "index" : 3,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1039,
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 4,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4525,
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 5,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2814,
+      "heading" : null,
+      "identifier" : "3",
+      "index" : 6,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2674,
+      "heading" : null,
+      "identifier" : "4",
+      "index" : 7,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4015,
+      "heading" : null,
+      "identifier" : "5",
+      "index" : 8,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 19744,
+      "heading" : null,
+      "identifier" : "6",
+      "index" : 9,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2388,
+      "heading" : null,
+      "identifier" : "7",
+      "index" : 10,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1436,
+      "heading" : null,
+      "identifier" : "8",
+      "index" : 11,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3269,
+      "heading" : null,
+      "identifier" : "9",
+      "index" : 12,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 299,
+      "heading" : null,
+      "identifier" : "10",
+      "index" : 13,
+      "kind" : "Section"
+    }
+  ],
+  "versionId" : "189669"
+}

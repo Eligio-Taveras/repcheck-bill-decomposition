@@ -1,0 +1,193 @@
+{
+  "billType" : "s",
+  "format" : "Formatted Text",
+  "groups" : [
+  ],
+  "labelStatus" : "draft-boundaries",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 1099,
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 1487,
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 1,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 613,
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 2,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5821,
+      "heading" : null,
+      "identifier" : "3",
+      "index" : 3,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1215,
+      "heading" : null,
+      "identifier" : "101",
+      "index" : 4,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5550,
+      "heading" : null,
+      "identifier" : "102",
+      "index" : 5,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3065,
+      "heading" : null,
+      "identifier" : "103",
+      "index" : 6,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5982,
+      "heading" : null,
+      "identifier" : "104",
+      "index" : 7,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2596,
+      "heading" : null,
+      "identifier" : "105",
+      "index" : 8,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3308,
+      "heading" : null,
+      "identifier" : "106",
+      "index" : 9,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5724,
+      "heading" : null,
+      "identifier" : "107",
+      "index" : 10,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 761,
+      "heading" : null,
+      "identifier" : "108",
+      "index" : 11,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 265,
+      "heading" : null,
+      "identifier" : "109",
+      "index" : 12,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6139,
+      "heading" : null,
+      "identifier" : "201",
+      "index" : 13,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7080,
+      "heading" : null,
+      "identifier" : "202",
+      "index" : 14,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1669,
+      "heading" : null,
+      "identifier" : "203",
+      "index" : 15,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1417,
+      "heading" : null,
+      "identifier" : "204",
+      "index" : 16,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2915,
+      "heading" : null,
+      "identifier" : "205",
+      "index" : 17,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 315,
+      "heading" : null,
+      "identifier" : "206",
+      "index" : 18,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 686,
+      "heading" : null,
+      "identifier" : "301",
+      "index" : 19,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 301,
+      "heading" : null,
+      "identifier" : "302",
+      "index" : 20,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 822,
+      "heading" : null,
+      "identifier" : "303",
+      "index" : 21,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 285,
+      "heading" : null,
+      "identifier" : "304",
+      "index" : 22,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 161,
+      "heading" : null,
+      "identifier" : "305",
+      "index" : 23,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 242,
+      "heading" : null,
+      "identifier" : "401",
+      "index" : 24,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 442,
+      "heading" : null,
+      "identifier" : "501",
+      "index" : 25,
+      "kind" : "Section"
+    }
+  ],
+  "versionId" : "150314"
+}
