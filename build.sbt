@@ -34,6 +34,7 @@ lazy val commonSettings = Seq(
     "GitHub Packages - shared-models" at "https://maven.pkg.github.com/Eligio-Taveras/repcheck-shared-models",
     "GitHub Packages - pipeline-models" at "https://maven.pkg.github.com/Eligio-Taveras/repcheck-pipeline-models",
     "GitHub Packages - repcheck-utils" at "https://maven.pkg.github.com/Eligio-Taveras/repcheck-utils",
+    "GitHub Packages - repcheck-embedding" at "https://maven.pkg.github.com/Eligio-Taveras/repcheck-embedding",
   ),
   libraryDependencies ++= Seq(
     "org.scalatest" %% "scalatest" % "3.2.18" % Test
@@ -127,10 +128,14 @@ lazy val evaluation = (project in file("evaluation"))
   .settings(
     commonSettings,
     name := "evaluation",
-    libraryDependencies ++= (Dependencies.circe ++ Seq(
-      "org.scalatestplus" %% "scalacheck-1-17" % "3.2.18.0",
-      "org.scalacheck"    %% "scalacheck"      % "1.17.0"
-    )).map(_ % Test)
+    libraryDependencies ++= (
+      Dependencies.circe ++ Dependencies.catsEffect ++ Dependencies.http4sEmber ++ Seq(
+        "org.scalatestplus" %% "scalacheck-1-17"    % "3.2.18.0",
+        "org.scalacheck"    %% "scalacheck"         % "1.17.0",
+        "com.repcheck"      %% "repcheck-embedding" % "0.1.4", // DP0-3: F3 SemanticEmbeddingService (live Ollama)
+        "com.repcheck"      %% "repcheck-utils"     % "0.1.5"  // RetryWrapper (F3 ctor); newer than the 0.1.1 elsewhere
+      )
+    ).map(_ % Test)
   )
 
 lazy val docGenerator = (project in file("doc-generator"))
