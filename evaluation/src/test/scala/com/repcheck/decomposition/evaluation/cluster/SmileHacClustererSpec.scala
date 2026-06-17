@@ -29,6 +29,19 @@ class SmileHacClustererSpec extends ConformanceContract {
     }
   }
 
+  it should "separate clusters under euclidean distance too" in {
+    SmileHacClusterer.clusterAtThreshold(
+      IndexedSeq(va, va, vb, vb),
+      ClusteringConfig(dMax = 0.5, distance = "euclidean"),
+    ) shouldBe
+      Vector(0, 0, 1, 1)
+  }
+
+  it should "leave every section a singleton when dMax is below all merge heights" in {
+    SmileHacClusterer.clusterAtThreshold(IndexedSeq(va, va, vb, vb), ClusteringConfig(dMax = -1.0)) shouldBe
+      Vector(0, 1, 2, 3)
+  }
+
   it should "handle the degenerate n<2 cases" in {
     SmileHacClusterer.clusterAtThreshold(IndexedSeq.empty, ClusteringConfig()) shouldBe Vector.empty[Int]
     SmileHacClusterer.clusterAtThreshold(IndexedSeq(va), ClusteringConfig()) shouldBe Vector(0)
@@ -49,6 +62,13 @@ class SmileHacClustererSpec extends ConformanceContract {
 
   it should "fall back to one cluster for fewer than three vectors" in {
     SmileHacClusterer.clusterBySilhouette(IndexedSeq(va, vb), ClusteringConfig(maxK = 3)) shouldBe Vector(0, 0)
+  }
+
+  it should "not merge across dMax even when silhouette would (singletons above D_max)" in {
+    // dMax below every merge height forces kThresh = n > maxK → the dMax cut wins, all singletons
+    val pts = IndexedSeq(va, va, vb, vb, Vector(-1.0, 0.0), Vector(-1.0, 0.0))
+    SmileHacClusterer.clusterBySilhouette(pts, ClusteringConfig(dMax = -1.0, maxK = 5)) shouldBe Vector(0, 1, 2, 3, 4,
+      5)
   }
 
   it should "score partitions that contain a singleton cluster" in {
