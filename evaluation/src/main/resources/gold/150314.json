@@ -2,8 +2,106 @@
   "billType" : "s",
   "format" : "Formatted Text",
   "groups" : [
+    {
+      "conceptLabel" : "",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        2
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        1,
+        3,
+        4,
+        9,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        5,
+        6,
+        7,
+        8,
+        11
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g3",
+      "sectionIndices" : [
+        10
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g4",
+      "sectionIndices" : [
+        15
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g5",
+      "sectionIndices" : [
+        22
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g6",
+      "sectionIndices" : [
+        23
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g7",
+      "sectionIndices" : [
+        24
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g8",
+      "sectionIndices" : [
+        25
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
   ],
-  "labelStatus" : "draft-boundaries",
+  "labelStatus" : "draft-groups",
   "parserUsed" : "GpoText",
   "sections" : [
     {

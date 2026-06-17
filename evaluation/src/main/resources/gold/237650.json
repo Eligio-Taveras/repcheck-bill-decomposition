@@ -2,8 +2,17 @@
   "billType" : "s",
   "format" : "PDF",
   "groups" : [
+    {
+      "conceptLabel" : "",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
   ],
-  "labelStatus" : "draft-boundaries",
+  "labelStatus" : "draft-groups",
   "parserUsed" : "Fallback",
   "sections" : [
     {

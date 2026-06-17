@@ -2,8 +2,26 @@
   "billType" : "hres",
   "format" : "Formatted Text",
   "groups" : [
+    {
+      "conceptLabel" : "",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
   ],
-  "labelStatus" : "draft-boundaries",
+  "labelStatus" : "draft-groups",
   "parserUsed" : "GpoText",
   "sections" : [
     {

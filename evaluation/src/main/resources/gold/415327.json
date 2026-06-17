@@ -2,8 +2,82 @@
   "billType" : "hr",
   "format" : "Formatted Text",
   "groups" : [
+    {
+      "conceptLabel" : "",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        2
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        3,
+        10,
+        11,
+        13
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g3",
+      "sectionIndices" : [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g4",
+      "sectionIndices" : [
+        14
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g5",
+      "sectionIndices" : [
+        15
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "",
+      "groupId" : "g6",
+      "sectionIndices" : [
+        16,
+        17
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
   ],
-  "labelStatus" : "draft-boundaries",
+  "labelStatus" : "draft-groups",
   "parserUsed" : "GpoText",
   "sections" : [
     {

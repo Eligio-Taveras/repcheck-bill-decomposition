@@ -36,8 +36,13 @@ class GoldSetSpec extends ConformanceContract {
     gold.bills.foreach(b => withClue(s"${b.versionId}: ")(GoldSet.LabelStatuses should contain(b.labelStatus)))
   }
 
-  it should "carry draft boundaries with empty groups at the pilot stage" in {
-    gold.bills.foreach(b => withClue(s"${b.versionId}: ")(b.groups shouldBe empty))
+  it should "have draft groups that partition every section once" in {
+    gold.bills.foreach { b =>
+      withClue(s"${b.versionId}: ") {
+        b.groups should not be empty
+        b.groups.flatMap(_.sectionIndices).sorted shouldBe b.sections.map(_.index)
+      }
+    }
   }
 
   it should "have well-formed groups whenever groups are present" in {

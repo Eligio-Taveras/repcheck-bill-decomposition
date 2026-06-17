@@ -43,7 +43,7 @@ object GoldSet {
    * reviewed-groups: groupings confirmed · complete: groupings + taxonomy assignments confirmed.
    */
   val LabelStatuses: Set[String] =
-    Set("draft-boundaries", "reviewed-boundaries", "reviewed-groups", "complete")
+    Set("draft-boundaries", "draft-groups", "reviewed-boundaries", "reviewed-groups", "complete")
 
   /** Load the pilot gold set: `gold/manifest.tsv` (one versionId per row) + one `gold/<versionId>.json` per bill. */
   lazy val pilot: GoldSet = {
