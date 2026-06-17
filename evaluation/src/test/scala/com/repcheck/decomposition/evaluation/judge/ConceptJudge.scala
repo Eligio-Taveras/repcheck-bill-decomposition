@@ -92,7 +92,7 @@ object ConceptJudge {
    * Extract the first balanced JSON object, ignoring code fences / trailing prose the model sometimes adds. Tracks
    * string literals + escapes so braces inside strings don't confuse the depth count.
    */
-  private def jsonSlice(raw: String): Either[String, String] = {
+  private[judge] def jsonSlice(raw: String): Either[String, String] = {
     val start = raw.indexOf('{')
     @tailrec
     def scan(i: Int, depth: Int, inStr: Boolean, esc: Boolean): Int =

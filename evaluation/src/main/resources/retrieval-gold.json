@@ -1,0 +1,8438 @@
+[
+  {
+    "conceptLabel" : "Bill Introduction & Purpose",
+    "queryId" : "415327-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "415327"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "415327"
+      },
+      {
+        "sectionIndex" : 2,
+        "versionId" : "415327"
+      }
+    ],
+    "text" : "what is the Entitlement Control Act of 1994 and what is it trying to do",
+    "versionId" : "415327"
+  },
+  {
+    "conceptLabel" : "Definitions & Baseline",
+    "queryId" : "415327-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 3,
+        "versionId" : "415327"
+      },
+      {
+        "sectionIndex" : 13,
+        "versionId" : "415327"
+      }
+    ],
+    "text" : "how does the government define mandatory spending and calculate the baseline for entitlement programs",
+    "versionId" : "415327"
+  },
+  {
+    "conceptLabel" : "Spending Targets",
+    "queryId" : "415327-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 4,
+        "versionId" : "415327"
+      }
+    ],
+    "text" : "how are annual limits on entitlement spending growth set and what adjustments are allowed for inflation or program changes",
+    "versionId" : "415327"
+  },
+  {
+    "conceptLabel" : "Presidential Budget Process",
+    "queryId" : "415327-g3",
+    "relevant" : [
+      {
+        "sectionIndex" : 5,
+        "versionId" : "415327"
+      }
+    ],
+    "text" : "does the President have to submit a plan to Congress when entitlement spending is expected to go over budget",
+    "versionId" : "415327"
+  },
+  {
+    "conceptLabel" : "Congressional Reconciliation",
+    "queryId" : "415327-g4",
+    "relevant" : [
+      {
+        "sectionIndex" : 6,
+        "versionId" : "415327"
+      },
+      {
+        "sectionIndex" : 7,
+        "versionId" : "415327"
+      }
+    ],
+    "text" : "what happens in Congress when mandatory spending is projected to exceed targets and how does reconciliation work",
+    "versionId" : "415327"
+  },
+  {
+    "conceptLabel" : "Sequestration Mechanisms",
+    "queryId" : "415327-g5",
+    "relevant" : [
+      {
+        "sectionIndex" : 8,
+        "versionId" : "415327"
+      },
+      {
+        "sectionIndex" : 9,
+        "versionId" : "415327"
+      },
+      {
+        "sectionIndex" : 11,
+        "versionId" : "415327"
+      },
+      {
+        "sectionIndex" : 12,
+        "versionId" : "415327"
+      }
+    ],
+    "text" : "how does the automatic sequestration process work to cut mandatory spending when it goes over the cap",
+    "versionId" : "415327"
+  },
+  {
+    "conceptLabel" : "Sequestration Exemptions",
+    "queryId" : "415327-g6",
+    "relevant" : [
+      {
+        "sectionIndex" : 10,
+        "versionId" : "415327"
+      }
+    ],
+    "text" : "which programs are protected from automatic spending cuts and cannot be sequestered",
+    "versionId" : "415327"
+  },
+  {
+    "conceptLabel" : "Interaction with Existing Budget Law",
+    "queryId" : "415327-g7",
+    "relevant" : [
+      {
+        "sectionIndex" : 14,
+        "versionId" : "415327"
+      },
+      {
+        "sectionIndex" : 16,
+        "versionId" : "415327"
+      }
+    ],
+    "text" : "how does this entitlement law interact with existing pay-as-you-go budget rules",
+    "versionId" : "415327"
+  },
+  {
+    "conceptLabel" : "Judicial Review",
+    "queryId" : "415327-g8",
+    "relevant" : [
+      {
+        "sectionIndex" : 15,
+        "versionId" : "415327"
+      }
+    ],
+    "text" : "can Congress members or citizens go to court to challenge automatic entitlement spending cuts",
+    "versionId" : "415327"
+  },
+  {
+    "conceptLabel" : "Effective Date",
+    "queryId" : "415327-g9",
+    "relevant" : [
+      {
+        "sectionIndex" : 17,
+        "versionId" : "415327"
+      }
+    ],
+    "text" : "when does the Entitlement Control Act take effect and which fiscal years does it apply to",
+    "versionId" : "415327"
+  },
+  {
+    "conceptLabel" : "Bill Identity & Purpose",
+    "queryId" : "150314-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 2,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 3,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "what is the BRIDGE Act and what is it trying to accomplish",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "IFA Governance & Structure",
+    "queryId" : "150314-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 4,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 5,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 6,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 7,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 8,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "how is the Infrastructure Financing Authority board set up and who gets appointed",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "IFA Staff & Offices",
+    "queryId" : "150314-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 9,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 10,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 11,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "what offices and staff does the Infrastructure Financing Authority have",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "Loan Eligibility & Terms",
+    "queryId" : "150314-g3",
+    "relevant" : [
+      {
+        "sectionIndex" : 13,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 14,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "what kinds of projects qualify for IFA loans and what are the loan terms",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "Project Delivery & Compliance",
+    "queryId" : "150314-g4",
+    "relevant" : [
+      {
+        "sectionIndex" : 15,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 16,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 18,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "how does the IFA speed up permitting and what happens if a borrower breaks the rules",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "Oversight & Reporting",
+    "queryId" : "150314-g5",
+    "relevant" : [
+      {
+        "sectionIndex" : 17,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "how is the Infrastructure Financing Authority audited and what reports does it have to send to Congress",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "State Law Interaction",
+    "queryId" : "150314-g6",
+    "relevant" : [
+      {
+        "sectionIndex" : 12,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "does federal infrastructure financing through IFA override state laws",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "Fees & Self-Sustainability",
+    "queryId" : "150314-g7",
+    "relevant" : [
+      {
+        "sectionIndex" : 19,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 20,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "how does the IFA pay for itself without relying on taxpayer money",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "Appropriations & Funding Rules",
+    "queryId" : "150314-g8",
+    "relevant" : [
+      {
+        "sectionIndex" : 21,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 22,
+        "versionId" : "150314"
+      },
+      {
+        "sectionIndex" : 23,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "how much money is the IFA authorized to lend and are there any set-asides for rural areas",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "Tax-Exempt Bond Cap",
+    "queryId" : "150314-g9",
+    "relevant" : [
+      {
+        "sectionIndex" : 24,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "does the BRIDGE Act change the limit on tax-exempt bonds for infrastructure",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "PAYGO Compliance",
+    "queryId" : "150314-g10",
+    "relevant" : [
+      {
+        "sectionIndex" : 25,
+        "versionId" : "150314"
+      }
+    ],
+    "text" : "how does the BRIDGE Act handle pay-as-you-go budget rules",
+    "versionId" : "150314"
+  },
+  {
+    "conceptLabel" : "Bill Identity & Purpose",
+    "queryId" : "189669-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "189669"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "189669"
+      },
+      {
+        "sectionIndex" : 2,
+        "versionId" : "189669"
+      },
+      {
+        "sectionIndex" : 3,
+        "versionId" : "189669"
+      },
+      {
+        "sectionIndex" : 4,
+        "versionId" : "189669"
+      }
+    ],
+    "text" : "what is the War Powers Amendments of 2021 and what does it do",
+    "versionId" : "189669"
+  },
+  {
+    "conceptLabel" : "Authorized Use of Force",
+    "queryId" : "189669-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 5,
+        "versionId" : "189669"
+      },
+      {
+        "sectionIndex" : 11,
+        "versionId" : "189669"
+      }
+    ],
+    "text" : "when is the president allowed to send troops into combat without Congress declaring war",
+    "versionId" : "189669"
+  },
+  {
+    "conceptLabel" : "Consultation & Reporting",
+    "queryId" : "189669-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 6,
+        "versionId" : "189669"
+      },
+      {
+        "sectionIndex" : 7,
+        "versionId" : "189669"
+      }
+    ],
+    "text" : "does Congress have to approve military action before the president acts",
+    "versionId" : "189669"
+  },
+  {
+    "conceptLabel" : "Congressional Approval Process",
+    "queryId" : "189669-g3",
+    "relevant" : [
+      {
+        "sectionIndex" : 8,
+        "versionId" : "189669"
+      },
+      {
+        "sectionIndex" : 9,
+        "versionId" : "189669"
+      }
+    ],
+    "text" : "how does the president notify Congress when troops are sent into a war zone",
+    "versionId" : "189669"
+  },
+  {
+    "conceptLabel" : "Judicial Enforcement",
+    "queryId" : "189669-g4",
+    "relevant" : [
+      {
+        "sectionIndex" : 10,
+        "versionId" : "189669"
+      }
+    ],
+    "text" : "how long can the president keep troops deployed before Congress has to vote to approve it",
+    "versionId" : "189669"
+  },
+  {
+    "conceptLabel" : "Definitions & Severability",
+    "queryId" : "189669-g5",
+    "relevant" : [
+      {
+        "sectionIndex" : 12,
+        "versionId" : "189669"
+      },
+      {
+        "sectionIndex" : 13,
+        "versionId" : "189669"
+      }
+    ],
+    "text" : "can a member of Congress sue the president for violating the War Powers Act",
+    "versionId" : "189669"
+  },
+  {
+    "conceptLabel" : "NICS Background Check Reform",
+    "queryId" : "356142-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "356142"
+      }
+    ],
+    "text" : "how has the gun background check system been improved to catch more prohibited buyers",
+    "versionId" : "356142"
+  },
+  {
+    "conceptLabel" : "Committee Assignment",
+    "queryId" : "344387-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "344387"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "344387"
+      }
+    ],
+    "text" : "which committee was Representative Cao assigned to in 2009",
+    "versionId" : "344387"
+  },
+  {
+    "conceptLabel" : "Placeholder Content",
+    "queryId" : "330298-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "330298"
+      }
+    ],
+    "text" : "what does this bill actually cover",
+    "versionId" : "330298"
+  },
+  {
+    "conceptLabel" : "Anniversary Commemoration Proclamation",
+    "queryId" : "219039-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "219039"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "219039"
+      }
+    ],
+    "text" : "president proclamation asking Americans to celebrate anniversary with ceremonies",
+    "versionId" : "219039"
+  },
+  {
+    "conceptLabel" : "Federal Building Renaming",
+    "queryId" : "237650-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "237650"
+      }
+    ],
+    "text" : "which federal building was renamed after John D. Dingell Jr",
+    "versionId" : "237650"
+  },
+  {
+    "conceptLabel" : "Bill Structure & Authority",
+    "queryId" : "148391-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 2,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 3,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 4,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 5,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "what gives Congress the power to pass voting rights laws and where do you sue if you think the law is unconstitutional",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Automatic Voter Registration",
+    "queryId" : "148391-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 6,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 7,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 8,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 9,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 10,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 11,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 12,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 13,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 14,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 15,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "new law making it the government's job to register every eligible citizen to vote automatically",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Election Day Holiday",
+    "queryId" : "148391-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 16,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "is Election Day a federal holiday",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Online & Internet Registration",
+    "queryId" : "148391-g3",
+    "relevant" : [
+      {
+        "sectionIndex" : 17,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 18,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 19,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 20,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 21,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 22,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 23,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 24,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 25,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 26,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can I register to vote online and update my registration on the internet",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Same-Day Registration",
+    "queryId" : "148391-g4",
+    "relevant" : [
+      {
+        "sectionIndex" : 27,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 28,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 29,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can I register and vote on the same day at my polling place",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Voter Registration Outreach",
+    "queryId" : "148391-g5",
+    "relevant" : [
+      {
+        "sectionIndex" : 30,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 31,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 32,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can I get voter registration information at my citizenship ceremony or when I sign a rental lease",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Voter Privacy Protections",
+    "queryId" : "148391-g6",
+    "relevant" : [
+      {
+        "sectionIndex" : 33,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 34,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how does my voter registration information stay private if I am a domestic violence or stalking victim",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Registration Funding & Applicability",
+    "queryId" : "148391-g7",
+    "relevant" : [
+      {
+        "sectionIndex" : 35,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how are states paid to set up new automatic voter registration systems",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Disability Voting Access",
+    "queryId" : "148391-g8",
+    "relevant" : [
+      {
+        "sectionIndex" : 36,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 37,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 38,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 39,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 40,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 41,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 42,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 43,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 44,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 45,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 46,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 47,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how can people with disabilities register to vote and find accessible polling places",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Early In-Person Voting",
+    "queryId" : "148391-g9",
+    "relevant" : [
+      {
+        "sectionIndex" : 48,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 49,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how many days of early voting are required before a federal election and what are the hours",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Absentee & Mail-In Voting",
+    "queryId" : "148391-g10",
+    "relevant" : [
+      {
+        "sectionIndex" : 50,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 51,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can I vote by mail without an excuse and do I need a witness or photo ID for my absentee ballot",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Ballot Tracking Programs",
+    "queryId" : "148391-g11",
+    "relevant" : [
+      {
+        "sectionIndex" : 52,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 53,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 54,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 55,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how can I track my mail-in ballot to see if it was received and counted",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Postal Service & Election Mail",
+    "queryId" : "148391-g12",
+    "relevant" : [
+      {
+        "sectionIndex" : 56,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 57,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 58,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "does the post office have to postmark mail-in ballots and deliver them faster before elections",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Ballot Drop Boxes",
+    "queryId" : "148391-g13",
+    "relevant" : [
+      {
+        "sectionIndex" : 59,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 60,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "are there required ballot drop boxes for returning my voted mail ballot",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Military & Overseas Voting",
+    "queryId" : "148391-g14",
+    "relevant" : [
+      {
+        "sectionIndex" : 61,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 62,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 63,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 64,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 65,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 66,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 67,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 68,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 69,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 70,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 71,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how do military members and overseas citizens get absentee ballots in time for federal elections",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "HAVA Enforcement & Complaints",
+    "queryId" : "148391-g15",
+    "relevant" : [
+      {
+        "sectionIndex" : 72,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how can a voter file a complaint or sue over violations of federal election administration rules",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Polling Place Notifications & Territories",
+    "queryId" : "148391-g16",
+    "relevant" : [
+      {
+        "sectionIndex" : 73,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 74,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 75,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 76,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 77,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "what happens if my polling place changes before the election and do territories like Puerto Rico have to follow federal voter registration laws",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Polling Place Operations",
+    "queryId" : "148391-g17",
+    "relevant" : [
+      {
+        "sectionIndex" : 78,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 79,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 80,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 81,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "is there a maximum wait time allowed at the polls and can my county offer curbside voting",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Election Assistance Commission",
+    "queryId" : "148391-g18",
+    "relevant" : [
+      {
+        "sectionIndex" : 82,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 83,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 84,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "is the Election Assistance Commission still funded and does it have to review its cybersecurity",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "HAVA Definitions & Preemption",
+    "queryId" : "148391-g19",
+    "relevant" : [
+      {
+        "sectionIndex" : 85,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 86,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 87,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 88,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 89,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 90,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "what elections count as federal elections under the Help America Vote Act and can states still pass stricter voting protections",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Felon Voting Rights",
+    "queryId" : "148391-g20",
+    "relevant" : [
+      {
+        "sectionIndex" : 91,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 92,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 93,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 94,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 95,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 96,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 97,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 98,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 99,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can felons vote in federal elections after being released from prison",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Voter ID Requirements",
+    "queryId" : "148391-g21",
+    "relevant" : [
+      {
+        "sectionIndex" : 100,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "what IDs can I use if my state has strict voter ID laws",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Voter Roll Maintenance",
+    "queryId" : "148391-g22",
+    "relevant" : [
+      {
+        "sectionIndex" : 101,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 102,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 103,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 104,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can I be removed from voter rolls just for not voting recently",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Voter Registration Interference",
+    "queryId" : "148391-g23",
+    "relevant" : [
+      {
+        "sectionIndex" : 105,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 106,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "is it illegal to stop someone from registering to vote",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Election Administrator Protections",
+    "queryId" : "148391-g24",
+    "relevant" : [
+      {
+        "sectionIndex" : 107,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 108,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 109,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 110,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "what protections do poll workers and election officials have against threats and harassment",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Deceptive Election Practices",
+    "queryId" : "148391-g25",
+    "relevant" : [
+      {
+        "sectionIndex" : 111,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 112,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 113,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 114,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 115,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 116,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "is it illegal to spread false information about when or where to vote",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Election Records Protection",
+    "queryId" : "148391-g26",
+    "relevant" : [
+      {
+        "sectionIndex" : 117,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 118,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 119,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 120,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "are election records and voting machines required to be preserved after an election",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Right to Vote Act",
+    "queryId" : "148391-g27",
+    "relevant" : [
+      {
+        "sectionIndex" : 121,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 122,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 123,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 124,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 125,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 126,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 127,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can the government make it harder for me to vote in a federal election",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Federal Court Jurisdiction",
+    "queryId" : "148391-g28",
+    "relevant" : [
+      {
+        "sectionIndex" : 128,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 129,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 130,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can I sue in federal court over a voting rights violation",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Poll Worker Recruitment",
+    "queryId" : "148391-g29",
+    "relevant" : [
+      {
+        "sectionIndex" : 131,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 132,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how does the government recruit and train poll workers",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Poll Observer Conduct",
+    "queryId" : "148391-g30",
+    "relevant" : [
+      {
+        "sectionIndex" : 133,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 134,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how close can poll watchers get to voters and can they challenge my eligibility to vote",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Voters' Access to Water",
+    "queryId" : "148391-g31",
+    "relevant" : [
+      {
+        "sectionIndex" : 135,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 136,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 137,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can volunteers hand out water and food to people waiting in line to vote",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Foreign Money in Elections",
+    "queryId" : "148391-g32",
+    "relevant" : [
+      {
+        "sectionIndex" : 138,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 139,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 140,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 141,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 142,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 143,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "do political campaigns have to report contact with foreign nationals offering help or money",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Paper Ballot & Voting System Security",
+    "queryId" : "148391-g33",
+    "relevant" : [
+      {
+        "sectionIndex" : 144,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 145,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 146,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 147,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 148,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 149,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 150,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 151,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 152,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 153,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 154,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 155,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 156,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 157,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "are paper ballots required for federal elections and can I verify my vote before it's counted",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Provisional Ballots",
+    "queryId" : "148391-g34",
+    "relevant" : [
+      {
+        "sectionIndex" : 158,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "if I cast a provisional ballot how do I find out if it was counted",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Post-Election Audits",
+    "queryId" : "148391-g35",
+    "relevant" : [
+      {
+        "sectionIndex" : 159,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 160,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how are federal election results audited after election day to make sure they are accurate",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Election Infrastructure Security",
+    "queryId" : "148391-g36",
+    "relevant" : [
+      {
+        "sectionIndex" : 161,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 162,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 163,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 164,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 165,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 166,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 167,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "is election infrastructure considered critical infrastructure and what security standards apply",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Congressional Redistricting",
+    "queryId" : "148391-g37",
+    "relevant" : [
+      {
+        "sectionIndex" : 168,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 169,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 170,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 171,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 172,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 173,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 174,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 175,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "what rules do states have to follow when drawing congressional district maps",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Campaign Finance Disclosure (DISCLOSE)",
+    "queryId" : "148391-g38",
+    "relevant" : [
+      {
+        "sectionIndex" : 176,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 177,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 178,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 179,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 180,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 181,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 182,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 183,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 184,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 185,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 186,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 187,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 188,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "who has to disclose spending money to influence federal elections",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "FEC Judicial Review & Procedures",
+    "queryId" : "148391-g39",
+    "relevant" : [
+      {
+        "sectionIndex" : 189,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 190,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 191,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 192,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 193,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 194,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "where do you file a lawsuit challenging a campaign finance law",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Online Political Ad Transparency",
+    "queryId" : "148391-g40",
+    "relevant" : [
+      {
+        "sectionIndex" : 195,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 196,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 197,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 198,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 199,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 200,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 201,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 202,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 203,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 204,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "do online political ads have to say who paid for them",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Dark Money Donor Disclosure",
+    "queryId" : "148391-g41",
+    "relevant" : [
+      {
+        "sectionIndex" : 205,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 206,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "should dark money groups have to reveal their donors",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Super PAC Coordination",
+    "queryId" : "148391-g42",
+    "relevant" : [
+      {
+        "sectionIndex" : 207,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 208,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 209,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can super PACs secretly coordinate spending with candidates",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "FEC Reforms",
+    "queryId" : "148391-g43",
+    "relevant" : [
+      {
+        "sectionIndex" : 210,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 211,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 212,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 213,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 214,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 215,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 216,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 217,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 218,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 219,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 220,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "how does the FEC decide whether to investigate campaign finance complaints",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Democracy Advancement Program",
+    "queryId" : "148391-g44",
+    "relevant" : [
+      {
+        "sectionIndex" : 221,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 222,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 223,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 224,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 225,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 226,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "federal grants to states for improving elections and expanding voting access",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Election Assistance Trust Fund",
+    "queryId" : "148391-g45",
+    "relevant" : [
+      {
+        "sectionIndex" : 227,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 228,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 229,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 230,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 231,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 232,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "where does the money come from to pay for election assistance programs",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Democracy Credit Voucher Program",
+    "queryId" : "148391-g46",
+    "relevant" : [
+      {
+        "sectionIndex" : 233,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 234,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 235,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 236,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 237,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "government voucher program to help small donors give to candidates",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Small Dollar Public Financing",
+    "queryId" : "148391-g47",
+    "relevant" : [
+      {
+        "sectionIndex" : 238,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 239,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 240,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 241,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 242,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 243,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 244,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 245,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 246,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 247,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 248,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 249,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 250,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 251,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 252,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 253,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 254,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 255,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 256,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 257,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 258,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 259,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 260,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 261,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 262,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "federal matching funds for small donations to House candidates",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Candidate Campaign Expenses",
+    "queryId" : "148391-g48",
+    "relevant" : [
+      {
+        "sectionIndex" : 263,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 264,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "can candidates use campaign money to pay for childcare while running for office",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Small Dollar Party Accounts",
+    "queryId" : "148391-g49",
+    "relevant" : [
+      {
+        "sectionIndex" : 265,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "small donor accounts for political party contributions to House candidates",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Campaign Finance Severability",
+    "queryId" : "148391-g50",
+    "relevant" : [
+      {
+        "sectionIndex" : 266,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "what happens if part of the campaign finance law is struck down",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Voting Rights Act Reforms",
+    "queryId" : "148391-g51",
+    "relevant" : [
+      {
+        "sectionIndex" : 267,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 268,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 269,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 270,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 271,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 272,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 273,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 274,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 275,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 276,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 277,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 278,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 279,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 280,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 281,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 282,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 283,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 284,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 285,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 286,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 287,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 288,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "new rules making it easier to challenge voting laws that discriminate against minorities",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Election Worker Protection (VRA)",
+    "queryId" : "148391-g52",
+    "relevant" : [
+      {
+        "sectionIndex" : 289,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 290,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "federal law against threatening or intimidating poll workers and election officials",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Native American Voting Rights",
+    "queryId" : "148391-g53",
+    "relevant" : [
+      {
+        "sectionIndex" : 291,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 292,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 293,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 294,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 295,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 296,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 297,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 298,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 299,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 300,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 301,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 302,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 303,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 304,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 305,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 306,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 307,
+        "versionId" : "148391"
+      },
+      {
+        "sectionIndex" : 308,
+        "versionId" : "148391"
+      }
+    ],
+    "text" : "Native American voting access polling places on tribal lands",
+    "versionId" : "148391"
+  },
+  {
+    "conceptLabel" : "Bill Title & Overview",
+    "queryId" : "375702-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "what is the Agriculture Conservation and Rural Enhancement Act of 2001 about",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Farm Commodity Definitions & Contracts",
+    "queryId" : "375702-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 2,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 3,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 4,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how do I sign a farm contract to get direct payments and what crops qualify",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Payment Yields & Base Acres",
+    "queryId" : "375702-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 5,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 6,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how is my farm's payment yield and base acres calculated for federal farm programs",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Direct & Counter-Cyclical Payments",
+    "queryId" : "375702-g3",
+    "relevant" : [
+      {
+        "sectionIndex" : 7,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 8,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 9,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 10,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 11,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how much are direct payments per bushel for wheat and corn and when do counter-cyclical payments kick in",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Marketing Assistance Loans",
+    "queryId" : "375702-g4",
+    "relevant" : [
+      {
+        "sectionIndex" : 12,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 13,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 14,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 15,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 16,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 21,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how do marketing assistance loans work for farmers and what are the loan rates per bushel",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Cotton Competitiveness Programs",
+    "queryId" : "375702-g5",
+    "relevant" : [
+      {
+        "sectionIndex" : 17,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 18,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 19,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 20,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how does the government help keep US cotton competitive with foreign cotton prices",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Dairy Price Support & Promotion",
+    "queryId" : "375702-g6",
+    "relevant" : [
+      {
+        "sectionIndex" : 22,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 23,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 24,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 25,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 26,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "what is the federal milk price support rate and how is it maintained",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Sugar Program & Allotments",
+    "queryId" : "375702-g7",
+    "relevant" : [
+      {
+        "sectionIndex" : 27,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 28,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 29,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 30,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how does the federal sugar loan program work and how are sugar marketing allotments set",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Peanut Support Program",
+    "queryId" : "375702-g8",
+    "relevant" : [
+      {
+        "sectionIndex" : 31,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "what are the loan rates and rules for peanut price support programs",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "CCC Administration & General Provisions",
+    "queryId" : "375702-g9",
+    "relevant" : [
+      {
+        "sectionIndex" : 32,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 33,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 34,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 35,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 36,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 37,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 38,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how does the USDA use the Commodity Credit Corporation to run farm commodity programs",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Risk Management & Disaster Assistance",
+    "queryId" : "375702-g10",
+    "relevant" : [
+      {
+        "sectionIndex" : 39,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 40,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "what disaster assistance is available for crops that don't qualify for federal crop insurance",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Conservation Security Program",
+    "queryId" : "375702-g11",
+    "relevant" : [
+      {
+        "sectionIndex" : 41,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 42,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 43,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 44,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 45,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 46,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 47,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 48,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 49,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 50,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 51,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 52,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 53,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how can farmers get paid for conservation practices on their land through a conservation security contract",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Conservation Reserve & Wetlands Programs",
+    "queryId" : "375702-g12",
+    "relevant" : [
+      {
+        "sectionIndex" : 54,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 55,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 56,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how do I enroll land in the Conservation Reserve Program or Wetlands Reserve Program",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Environmental Quality Incentives",
+    "queryId" : "375702-g13",
+    "relevant" : [
+      {
+        "sectionIndex" : 57,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 58,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 59,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "what financial help is available to livestock farmers for installing environmental conservation practices",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Resource Conservation & Development",
+    "queryId" : "375702-g14",
+    "relevant" : [
+      {
+        "sectionIndex" : 60,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 61,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 62,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 63,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 64,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 65,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 66,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 67,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 68,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 69,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 70,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how can rural communities get help with natural resource conservation and development projects",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Wildlife Habitat & Watershed Programs",
+    "queryId" : "375702-g15",
+    "relevant" : [
+      {
+        "sectionIndex" : 71,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 72,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 73,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "can landowners get money to restore wildlife habitat on their private land",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Agricultural Land Protection",
+    "queryId" : "375702-g16",
+    "relevant" : [
+      {
+        "sectionIndex" : 74,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 75,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 76,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "is there a federal program that pays farmers to protect farmland from being developed",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Grassland Reserve Program",
+    "queryId" : "375702-g17",
+    "relevant" : [
+      {
+        "sectionIndex" : 77,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 78,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 79,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 80,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 81,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how can I protect my grassland from being converted to cropland through a federal easement program",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "State Technical Committees",
+    "queryId" : "375702-g18",
+    "relevant" : [
+      {
+        "sectionIndex" : 82,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 83,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 84,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "who advises USDA on conservation program decisions at the state level",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Food Aid Programs",
+    "queryId" : "375702-g19",
+    "relevant" : [
+      {
+        "sectionIndex" : 85,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 86,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 87,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 88,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 89,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 90,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 91,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 92,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 93,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 94,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 95,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 96,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 97,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 98,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 99,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 100,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 101,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 102,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how much food aid does the US send overseas each year and what organizations can distribute it",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Agricultural Export Programs",
+    "queryId" : "375702-g20",
+    "relevant" : [
+      {
+        "sectionIndex" : 103,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 104,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 105,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 106,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 107,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 108,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 109,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 110,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 111,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 112,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 113,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 114,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how does the US support agricultural exports and fight unfair trade practices by other countries",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Food Stamp Program Title",
+    "queryId" : "375702-g21",
+    "relevant" : [
+      {
+        "sectionIndex" : 115,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "what is the official name of the food stamp reauthorization part of the farm bill",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Food Stamp Eligibility & Benefits",
+    "queryId" : "375702-g22",
+    "relevant" : [
+      {
+        "sectionIndex" : 116,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 117,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 118,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 119,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 120,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 121,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 122,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 123,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 124,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 125,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how do child support payments and scholarships affect food stamp eligibility and benefit amounts",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Food Stamp Administration & Technology",
+    "queryId" : "375702-g23",
+    "relevant" : [
+      {
+        "sectionIndex" : 126,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 127,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 128,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 129,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 130,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 146,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how long before unused food stamp EBT benefits are deactivated and can you apply for food stamps online",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Food Stamp Nutrition Education & Outreach",
+    "queryId" : "375702-g24",
+    "relevant" : [
+      {
+        "sectionIndex" : 131,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 133,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 134,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 135,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 138,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 139,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 140,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how does USDA reward states for accurately processing food stamps and can federal money pay for outreach",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Food Stamp Reauthorization & Special Programs",
+    "queryId" : "375702-g25",
+    "relevant" : [
+      {
+        "sectionIndex" : 132,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 136,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 137,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 141,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 142,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 143,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 144,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 145,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 147,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 148,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 152,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "can you keep getting food stamps after leaving welfare and what happens to food stamp benefits in Puerto Rico",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Immigrant & Alien Food Stamp Eligibility",
+    "queryId" : "375702-g26",
+    "relevant" : [
+      {
+        "sectionIndex" : 149,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "do immigrant children and refugees qualify for food stamps",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Child Nutrition Programs",
+    "queryId" : "375702-g27",
+    "relevant" : [
+      {
+        "sectionIndex" : 150,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 151,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "is there a program that gives free fruits and vegetables to kids at school during the day",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Farm Ownership Loans",
+    "queryId" : "375702-g28",
+    "relevant" : [
+      {
+        "sectionIndex" : 153,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 154,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 155,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 156,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 157,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 158,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 159,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 160,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 161,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how can a beginning farmer get a USDA loan to buy farmland and what are the loan limits",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Farm Operating Loans",
+    "queryId" : "375702-g29",
+    "relevant" : [
+      {
+        "sectionIndex" : 162,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 163,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "can Native American farmers get guaranteed USDA operating loans and what are the requirements",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Farm Loan Administration & Reform",
+    "queryId" : "375702-g30",
+    "relevant" : [
+      {
+        "sectionIndex" : 164,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 165,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 166,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 167,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 168,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 169,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 170,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 171,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 172,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 173,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 174,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 175,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 176,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 181,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 182,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 183,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 184,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "can an LLC apply for a USDA farm loan and how has the application process been simplified",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Farm Credit System",
+    "queryId" : "375702-g31",
+    "relevant" : [
+      {
+        "sectionIndex" : 177,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 178,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 179,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 180,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how are Farm Credit System banks regulated and what changes were made to Farmer Mac board membership",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Business Equity Fund",
+    "queryId" : "375702-g32",
+    "relevant" : [
+      {
+        "sectionIndex" : 185,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 186,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 187,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 188,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 189,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 190,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 191,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 192,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "is there a federal fund that matches private investment to provide equity capital to rural businesses",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Business Investment Program",
+    "queryId" : "375702-g33",
+    "relevant" : [
+      {
+        "sectionIndex" : 193,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 194,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 195,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 196,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 197,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 198,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 199,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 200,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 201,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 202,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 203,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 204,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 205,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 206,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 207,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 208,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 209,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 210,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 211,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "is there a venture capital program specifically for small businesses in rural areas backed by USDA",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Infrastructure Funding",
+    "queryId" : "375702-g34",
+    "relevant" : [
+      {
+        "sectionIndex" : 212,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 225,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 226,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 227,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 228,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 229,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 230,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 231,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 232,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 233,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 234,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "what federal grants are available for rural water systems and regional infrastructure planning",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Endowment Program",
+    "queryId" : "375702-g35",
+    "relevant" : [
+      {
+        "sectionIndex" : 213,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 214,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 215,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 216,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 217,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 218,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "is there a federal endowment program to help distressed rural communities with poverty and economic decline",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Broadband & Telecommunications",
+    "queryId" : "375702-g36",
+    "relevant" : [
+      {
+        "sectionIndex" : 219,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 220,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 273,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "can rural communities get federal loans or grants to build broadband internet infrastructure",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Value-Added Agriculture",
+    "queryId" : "375702-g37",
+    "relevant" : [
+      {
+        "sectionIndex" : 221,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 238,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "are there grants to help farmers develop and market value-added agricultural products",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "National Rural Development Partnership",
+    "queryId" : "375702-g38",
+    "relevant" : [
+      {
+        "sectionIndex" : 222,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 223,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 224,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "what is the National Rural Development Partnership and how does it coordinate federal rural programs",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Business & Loan Programs",
+    "queryId" : "375702-g39",
+    "relevant" : [
+      {
+        "sectionIndex" : 235,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 236,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 237,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 239,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 240,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 241,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "can a farmer get a USDA loan to invest in a cooperative that processes agricultural products",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Microenterprise & Entrepreneurs",
+    "queryId" : "375702-g40",
+    "relevant" : [
+      {
+        "sectionIndex" : 242,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 243,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "grants for small businesses in rural areas microenterprise assistance program",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Seniors & Social Services",
+    "queryId" : "375702-g41",
+    "relevant" : [
+      {
+        "sectionIndex" : 244,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 245,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 246,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "government help for elderly people living in rural areas senior services and facilities",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Telework & Technology",
+    "queryId" : "375702-g42",
+    "relevant" : [
+      {
+        "sectionIndex" : 247,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 248,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "working from home in rural areas telework grants remote work programs",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Historic Barn Preservation",
+    "queryId" : "375702-g43",
+    "relevant" : [
+      {
+        "sectionIndex" : 249,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 250,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "grants to restore or repair old historic barns on farms",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Regional Development Authorities",
+    "queryId" : "375702-g44",
+    "relevant" : [
+      {
+        "sectionIndex" : 251,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 257,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 258,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 259,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 260,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 261,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 262,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 263,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 264,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 265,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 266,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 267,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 268,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 269,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 270,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 271,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "regional development funding for Northern Great Plains states rural authority",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "SEARCH Grants Small Communities",
+    "queryId" : "375702-g45",
+    "relevant" : [
+      {
+        "sectionIndex" : 252,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 253,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 254,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 255,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 256,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "grants to help small rural towns meet environmental regulations clean water",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Alternative Agriculture & Assets",
+    "queryId" : "375702-g46",
+    "relevant" : [
+      {
+        "sectionIndex" : 272,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "what happened to the Alternative Agricultural Research and Commercialization Corporation",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Electric & Telephone Loans",
+    "queryId" : "375702-g47",
+    "relevant" : [
+      {
+        "sectionIndex" : 274,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 275,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 276,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 277,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "government loans or guarantees for rural electric cooperatives and 911 telephone access",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Rural Development Effective Date",
+    "queryId" : "375702-g48",
+    "relevant" : [
+      {
+        "sectionIndex" : 278,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "when do the rural development provisions of the farm bill take effect",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Agricultural Research Definitions & Board",
+    "queryId" : "375702-g49",
+    "relevant" : [
+      {
+        "sectionIndex" : 279,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 280,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "agricultural research advisory board reauthorization and territories like Guam and Pacific islands",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Research Education Grant Programs",
+    "queryId" : "375702-g50",
+    "relevant" : [
+      {
+        "sectionIndex" : 281,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 282,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 283,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 284,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 285,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 286,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 287,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 288,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 289,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 290,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 291,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 292,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 293,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 294,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 295,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 300,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 301,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 302,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 303,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 304,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 305,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 306,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 307,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 308,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 309,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 310,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 311,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 312,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 313,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 314,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 315,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 316,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 317,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 318,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 319,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 340,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 341,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "federal grants for food and agriculture education and rural community development programs",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Biosecurity & Emergency Research",
+    "queryId" : "375702-g51",
+    "relevant" : [
+      {
+        "sectionIndex" : 296,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 297,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 345,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 347,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 349,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "funding for protecting farms and food supply from bioterrorism or biological attacks",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Research Grant Fund Management",
+    "queryId" : "375702-g52",
+    "relevant" : [
+      {
+        "sectionIndex" : 298,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 299,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how long are competitive agricultural research grant funds available to spend",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Land-Grant Institution Programs",
+    "queryId" : "375702-g53",
+    "relevant" : [
+      {
+        "sectionIndex" : 320,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 321,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 322,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 323,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 324,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 325,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 326,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 327,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 328,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 329,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 330,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 331,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 332,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 333,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 334,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 335,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 336,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "land grant college funding rules cooperative extension tribal colleges",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Research Facility Authorizations",
+    "queryId" : "375702-g54",
+    "relevant" : [
+      {
+        "sectionIndex" : 337,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 338,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 339,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 342,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "funding for agricultural research facilities and aquaculture programs reauthorized",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "USDA Research Administration",
+    "queryId" : "375702-g55",
+    "relevant" : [
+      {
+        "sectionIndex" : 343,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 344,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 346,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "independent review of USDA Agricultural Research Service effectiveness and efficiency",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Technology Transfer & Beginning Farmers",
+    "queryId" : "375702-g56",
+    "relevant" : [
+      {
+        "sectionIndex" : 348,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 350,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 351,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 352,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 353,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "training and grants for new beginning farmers ranchers financial and land help",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Forestry Programs",
+    "queryId" : "375702-g57",
+    "relevant" : [
+      {
+        "sectionIndex" : 354,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 355,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 356,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 357,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 358,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 359,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 360,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 361,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 362,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 363,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 364,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 365,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 366,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 367,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 368,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "sustainable forestry education program for private landowners and forestry research funding",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Renewable Energy & Biobased Products",
+    "queryId" : "375702-g58",
+    "relevant" : [
+      {
+        "sectionIndex" : 369,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 370,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 371,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 372,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 373,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 374,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 375,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 376,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 377,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 378,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 379,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 380,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 381,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 382,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 383,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 384,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 385,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 386,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "renewable energy and biobased products grants for farmers and rural businesses",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Agricultural Fair Practices Act",
+    "queryId" : "375702-g59",
+    "relevant" : [
+      {
+        "sectionIndex" : 387,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 388,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 389,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 390,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 391,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 392,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 393,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 394,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 395,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 396,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 397,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 398,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 399,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "farmer rights when dealing with large agricultural contractors unfair contract practices",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Packers & Stockyards Enforcement",
+    "queryId" : "375702-g60",
+    "relevant" : [
+      {
+        "sectionIndex" : 400,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 401,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "can USDA go after live poultry dealers under Packers and Stockyards Act",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Country of Origin Labeling",
+    "queryId" : "375702-g61",
+    "relevant" : [
+      {
+        "sectionIndex" : 402,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 403,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 404,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 405,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 406,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 407,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "does my grocery store have to tell me what country the beef or pork came from",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Commodity Promotion Referenda",
+    "queryId" : "375702-g62",
+    "relevant" : [
+      {
+        "sectionIndex" : 408,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "how often do farmers get to vote on whether to keep commodity promotion checkoff programs",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Perishable Commodities Act",
+    "queryId" : "375702-g63",
+    "relevant" : [
+      {
+        "sectionIndex" : 409,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "can I file a verbal complaint under the Perishable Agricultural Commodities Act",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Miscellaneous Agricultural Programs",
+    "queryId" : "375702-g64",
+    "relevant" : [
+      {
+        "sectionIndex" : 410,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 411,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 412,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 413,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 414,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "what farm programs were extended and got more funding in the 2002 farm bill",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Seniors Farmers Market Nutrition",
+    "queryId" : "375702-g65",
+    "relevant" : [
+      {
+        "sectionIndex" : 415,
+        "versionId" : "375702"
+      },
+      {
+        "sectionIndex" : 416,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "government program giving low-income seniors vouchers to buy fresh produce at farmers markets",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Organic Certification Cost-Share",
+    "queryId" : "375702-g66",
+    "relevant" : [
+      {
+        "sectionIndex" : 417,
+        "versionId" : "375702"
+      }
+    ],
+    "text" : "help paying for organic certification costs reimbursement program for farmers",
+    "versionId" : "375702"
+  },
+  {
+    "conceptLabel" : "Bill Introduction & Findings",
+    "queryId" : "244276-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 2,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 3,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "what is the Health Equity and Accountability Act of 2014 trying to accomplish for minorities",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Health Data Collection",
+    "queryId" : "244276-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 4,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 5,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 6,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 7,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 8,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 9,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 10,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 11,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 12,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 13,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 15,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 16,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 17,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 18,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 21,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 22,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "does the government collect health data by race ethnicity and sexual orientation in federal health programs",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Drug Safety by Race",
+    "queryId" : "244276-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 19,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 20,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "are drug companies required to test and disclose if a medication works differently for different racial groups",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Immigration Reporting Clarification",
+    "queryId" : "244276-g3",
+    "relevant" : [
+      {
+        "sectionIndex" : 14,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 23,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "how can agencies satisfy immigration reporting requirements with a single combined report instead of case by case",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Culturally Appropriate Care Standards",
+    "queryId" : "244276-g4",
+    "relevant" : [
+      {
+        "sectionIndex" : 24,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 25,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 26,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 27,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 28,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 29,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 30,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 31,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 36,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 37,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 207,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 210,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "what federal standards require hospitals to provide care in my language if I don't speak English",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Language Access Services",
+    "queryId" : "244276-g5",
+    "relevant" : [
+      {
+        "sectionIndex" : 32,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 33,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 34,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 35,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 38,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 39,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 40,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "does Medicare pay for medical interpreter services for patients who don't speak English",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Health Workforce Diversity",
+    "queryId" : "244276-g6",
+    "relevant" : [
+      {
+        "sectionIndex" : 41,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 42,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 43,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 44,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 45,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 46,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 47,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 48,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 49,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 50,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 51,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 52,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 53,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 54,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 55,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 56,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 57,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 58,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 59,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 60,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 61,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 62,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 63,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 64,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 65,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 66,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 67,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "are there federal grants to help minority students get into health care careers and medical professions",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Health Empowerment Zones",
+    "queryId" : "244276-g7",
+    "relevant" : [
+      {
+        "sectionIndex" : 68,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 69,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 70,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 71,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 72,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 73,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 74,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "what is a Health Empowerment Zone and how can my community apply to get one designated",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Minority Health Facilities & Territories",
+    "queryId" : "244276-g8",
+    "relevant" : [
+      {
+        "sectionIndex" : 75,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 76,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 77,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 78,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "are there federal grants to rebuild health clinics in Pacific Islander and US territory communities",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Coverage & Eligibility for Immigrants",
+    "queryId" : "244276-g9",
+    "relevant" : [
+      {
+        "sectionIndex" : 79,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 84,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 105,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "can undocumented immigrants or green card holders get Medicaid Medicare or ACA health coverage",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Uninsured Demographics Study",
+    "queryId" : "244276-g10",
+    "relevant" : [
+      {
+        "sectionIndex" : 80,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "has the government studied how many uninsured Americans are minorities or immigrants",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Medicaid & Medicare for Territories",
+    "queryId" : "244276-g11",
+    "relevant" : [
+      {
+        "sectionIndex" : 81,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 82,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 85,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 86,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 142,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 143,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "do US territories like Puerto Rico get the same Medicaid funding as states",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "US-Mexico Border Health",
+    "queryId" : "244276-g12",
+    "relevant" : [
+      {
+        "sectionIndex" : 83,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "are there federal health programs specifically for people living along the US Mexico border",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Community Health Disparities Grants",
+    "queryId" : "244276-g13",
+    "relevant" : [
+      {
+        "sectionIndex" : 87,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "can community groups get federal grants to run health programs targeting racial health disparities",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Rural Health Programs",
+    "queryId" : "244276-g14",
+    "relevant" : [
+      {
+        "sectionIndex" : 88,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 89,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 90,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 91,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 92,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 93,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 94,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 95,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "what special Medicare payment rules exist for small rural hospitals and critical access hospitals",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Medicaid & Medicare Policy Fixes",
+    "queryId" : "244276-g15",
+    "relevant" : [
+      {
+        "sectionIndex" : 96,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 97,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 98,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 101,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "was the rule requiring Medicaid applicants to show citizenship documents ever repealed",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Veterans Minority Health",
+    "queryId" : "244276-g16",
+    "relevant" : [
+      {
+        "sectionIndex" : 99,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "is there a VA office that specifically handles health care for minority veterans",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Indian & Native Hawaiian Health",
+    "queryId" : "244276-g17",
+    "relevant" : [
+      {
+        "sectionIndex" : 100,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 102,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 103,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "what changes did Congress make to improve Indian Health Service funding and Native Hawaiian health programs",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Community Health Workers",
+    "queryId" : "244276-g18",
+    "relevant" : [
+      {
+        "sectionIndex" : 104,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "are there federal grants to hire community health workers to help women and children in minority communities",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Drug Felony Benefits Repeal",
+    "queryId" : "244276-g19",
+    "relevant" : [
+      {
+        "sectionIndex" : 106,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "can people with old drug felony convictions now get food stamps or other government benefits",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Birth Defects Prevention",
+    "queryId" : "244276-g20",
+    "relevant" : [
+      {
+        "sectionIndex" : 107,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "what is the government doing to prevent birth defects during pregnancy and breastfeeding",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Maternal Mortality Review",
+    "queryId" : "244276-g21",
+    "relevant" : [
+      {
+        "sectionIndex" : 108,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 109,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "how do states investigate and report on pregnancy-related deaths",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Maternal Health Disparities",
+    "queryId" : "244276-g22",
+    "relevant" : [
+      {
+        "sectionIndex" : 110,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 111,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "why do Black women have worse pregnancy outcomes and what is the government doing about it",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Infant Death Prevention",
+    "queryId" : "244276-g23",
+    "relevant" : [
+      {
+        "sectionIndex" : 112,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "government programs to prevent sudden infant death SUID education for parents and caregivers",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Teen Pregnancy Prevention",
+    "queryId" : "244276-g24",
+    "relevant" : [
+      {
+        "sectionIndex" : 113,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "grants for teen pregnancy prevention programs for foster youth LGBT youth and minority teens",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Gestational Diabetes",
+    "queryId" : "244276-g25",
+    "relevant" : [
+      {
+        "sectionIndex" : 114,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "CDC research and tracking program for gestational diabetes during pregnancy",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Emergency & Reproductive Contraception",
+    "queryId" : "244276-g26",
+    "relevant" : [
+      {
+        "sectionIndex" : 115,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 116,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 117,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 118,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 119,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "can a pharmacy refuse to fill my birth control prescription and what are my rights",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Optimal Maternity Care",
+    "queryId" : "244276-g27",
+    "relevant" : [
+      {
+        "sectionIndex" : 120,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 121,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 122,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 123,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 124,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 125,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 126,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 127,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 128,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 129,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 130,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "federal effort to improve maternity care quality and help women choose the right birth setting and provider",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Mental & Behavioral Health Coverage",
+    "queryId" : "244276-g28",
+    "relevant" : [
+      {
+        "sectionIndex" : 131,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 132,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 133,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 134,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 135,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 136,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 137,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "does Medicare cover marriage counselors and mental health counselors and what are the requirements",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Lung Cancer Programs",
+    "queryId" : "244276-g29",
+    "relevant" : [
+      {
+        "sectionIndex" : 138,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 139,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 140,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "federal program to reduce lung cancer deaths especially in veterans and minority communities",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Prostate Cancer Disparities",
+    "queryId" : "244276-g30",
+    "relevant" : [
+      {
+        "sectionIndex" : 141,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "why do African American men die from prostate cancer at higher rates and what is Congress doing",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Cancer Screening & Quality",
+    "queryId" : "244276-g31",
+    "relevant" : [
+      {
+        "sectionIndex" : 144,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 145,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 148,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "how does Medicare track and report gaps in cancer screening and care for minority patients",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Bone Marrow Disease Registry",
+    "queryId" : "244276-g32",
+    "relevant" : [
+      {
+        "sectionIndex" : 146,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 147,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "national registry for bone marrow failure diseases and why minorities are disproportionately affected",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Chronic Disease Screening Guidelines",
+    "queryId" : "244276-g33",
+    "relevant" : [
+      {
+        "sectionIndex" : 149,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 150,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 151,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 152,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 153,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 154,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "does Medicaid cover tobacco cessation and clinical trial costs for low income patients",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "HIV/AIDS Policy & Findings",
+    "queryId" : "244276-g34",
+    "relevant" : [
+      {
+        "sectionIndex" : 155,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 156,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 170,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 180,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "what is US policy to end the AIDS epidemic and how is the National HIV AIDS Strategy being implemented",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "HIV/AIDS Funding & Treatment",
+    "queryId" : "244276-g35",
+    "relevant" : [
+      {
+        "sectionIndex" : 157,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 162,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 163,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 164,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 165,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 177,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 178,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "loan repayment programs for doctors and dentists who treat HIV patients in underserved areas",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "HIV/AIDS Surveillance & Data",
+    "queryId" : "244276-g36",
+    "relevant" : [
+      {
+        "sectionIndex" : 158,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 176,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "how is HIV patient data being added to electronic health records and what privacy protections exist",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "HIV Care Linkage & Research",
+    "queryId" : "244276-g37",
+    "relevant" : [
+      {
+        "sectionIndex" : 159,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 160,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "NIH research on keeping HIV positive people in treatment and expanding PrEP access",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "HIV Minority Outreach & Prevention",
+    "queryId" : "244276-g38",
+    "relevant" : [
+      {
+        "sectionIndex" : 161,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 166,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 167,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 168,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "grants for HIV prevention outreach in minority communities including needle exchange and sex education",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "HIV Legal & Criminal Justice",
+    "queryId" : "244276-g39",
+    "relevant" : [
+      {
+        "sectionIndex" : 171,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 172,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 173,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "should HIV transmission be a crime and is the government reviewing state HIV criminalization laws",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "HIV Incarceration & Reentry",
+    "queryId" : "244276-g40",
+    "relevant" : [
+      {
+        "sectionIndex" : 174,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 175,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "do prisoners with HIV get Medicaid when they get out of prison",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "HIV Abstinence Education Repeal",
+    "queryId" : "244276-g41",
+    "relevant" : [
+      {
+        "sectionIndex" : 169,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "does the government have to report how HIV affects Black and Hispanic women and young people",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "HIV Integrated Care Demonstration",
+    "queryId" : "244276-g42",
+    "relevant" : [
+      {
+        "sectionIndex" : 179,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "coordinated HIV care program combining Medicare Medicaid housing and Ryan White funding",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Diabetes in Minority Populations",
+    "queryId" : "244276-g43",
+    "relevant" : [
+      {
+        "sectionIndex" : 181,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 182,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 183,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 184,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 185,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 186,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "federal programs to fight diabetes in Black Hispanic and Native American communities",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Health Disparities Overview Report",
+    "queryId" : "244276-g44",
+    "relevant" : [
+      {
+        "sectionIndex" : 187,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "updated government report on racial health disparities since 2002 Institute of Medicine",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Asthma Programs",
+    "queryId" : "244276-g45",
+    "relevant" : [
+      {
+        "sectionIndex" : 188,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 189,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 190,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "CDC state asthma plans and data on who gets asthma by race and age",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Influenza Vaccination Outreach",
+    "queryId" : "244276-g46",
+    "relevant" : [
+      {
+        "sectionIndex" : 191,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "flu vaccine outreach programs for underserved minority communities",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "COPD Programs",
+    "queryId" : "244276-g47",
+    "relevant" : [
+      {
+        "sectionIndex" : 192,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "national action plan to reduce COPD burden and public awareness programs",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Arthritis & Musculoskeletal Diseases",
+    "queryId" : "244276-g48",
+    "relevant" : [
+      {
+        "sectionIndex" : 193,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 194,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "CDC arthritis education programs for Black and Hispanic communities",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Sleep Disorder Disparities",
+    "queryId" : "244276-g49",
+    "relevant" : [
+      {
+        "sectionIndex" : 195,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 196,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 197,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "why do minorities have worse sleep disorders and what is the government doing about it",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Electronic Health Records",
+    "queryId" : "244276-g50",
+    "relevant" : [
+      {
+        "sectionIndex" : 198,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 199,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 200,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 201,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 202,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 203,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 204,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 205,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 206,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 208,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 209,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "help for community health centers to adopt electronic health records and track minority patient data",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Anti-Discrimination in Health",
+    "queryId" : "244276-g51",
+    "relevant" : [
+      {
+        "sectionIndex" : 211,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "are Medicare payments to doctors covered by civil rights anti-discrimination law",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "HHS Civil Rights Accountability",
+    "queryId" : "244276-g52",
+    "relevant" : [
+      {
+        "sectionIndex" : 212,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 213,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 214,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 215,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 216,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 217,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "HHS office to investigate civil rights violations and racial discrimination in health care",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Social Determinants of Health",
+    "queryId" : "244276-g53",
+    "relevant" : [
+      {
+        "sectionIndex" : 218,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 219,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 220,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 221,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 222,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 223,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 224,
+        "versionId" : "244276"
+      },
+      {
+        "sectionIndex" : 225,
+        "versionId" : "244276"
+      }
+    ],
+    "text" : "how do neighborhood conditions and poverty affect health outcomes and what grants address that",
+    "versionId" : "244276"
+  },
+  {
+    "conceptLabel" : "Bill Basics & Definitions",
+    "queryId" : "150025-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 2,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 3,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 4,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 196,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 197,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 198,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 199,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "what is the FAA Reauthorization Act of 2017 and what does it cover",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "FAA Core Appropriations",
+    "queryId" : "150025-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 5,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 6,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 7,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 8,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 9,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 10,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 200,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 201,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 202,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 203,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 204,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 205,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "how much money is the FAA getting funded for airports and operations 2018 to 2021",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Airport Improvement Program",
+    "queryId" : "150025-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 11,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 12,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 13,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 17,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 18,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 22,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 23,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 24,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 25,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 27,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 28,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 29,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 30,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 31,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 32,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 33,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 34,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 206,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 207,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 208,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 212,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 213,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 217,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 218,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 219,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 220,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 222,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 223,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 224,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 225,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 226,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 227,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 228,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 229,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 230,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 231,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 232,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 233,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "can small airports that lost passengers still get federal improvement grants",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Contract Tower Program",
+    "queryId" : "150025-g3",
+    "relevant" : [
+      {
+        "sectionIndex" : 14,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 15,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 16,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 209,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 210,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 211,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "FAA contract tower program cost benefit ratio changes and remote tower pilot program",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Airport Emissions Programs",
+    "queryId" : "150025-g4",
+    "relevant" : [
+      {
+        "sectionIndex" : 19,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 20,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 21,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 44,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 45,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 214,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 215,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 216,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 244,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "are airports allowed to buy electric or low emission vehicles with federal grant money",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Passenger Facility Charges",
+    "queryId" : "150025-g5",
+    "relevant" : [
+      {
+        "sectionIndex" : 42,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 43,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 241,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 242,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 243,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 245,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "can airports use passenger facility charges for transit connections and ground access",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "General Aviation & FLIGHT Act",
+    "queryId" : "150025-g6",
+    "relevant" : [
+      {
+        "sectionIndex" : 35,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 36,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 37,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 38,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 39,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 40,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 41,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 234,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 235,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 236,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 237,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 238,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 239,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 240,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "federal grants for general aviation hangars and disaster relief airport improvements",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "UAS Definitions & Policy",
+    "queryId" : "150025-g7",
+    "relevant" : [
+      {
+        "sectionIndex" : 46,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 47,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 48,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 49,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 50,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 51,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 52,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 246,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 247,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 248,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 249,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 250,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 251,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 252,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "what are the rules about drone operator privacy policies and public database of drone operators",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "UAS Integration & Operations",
+    "queryId" : "150025-g8",
+    "relevant" : [
+      {
+        "sectionIndex" : 53,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 54,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 55,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 56,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 57,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 58,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 59,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 60,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 61,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 62,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 63,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 64,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 65,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 66,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 67,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 253,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 254,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 255,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 256,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 257,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 258,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 259,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 260,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 261,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 262,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 263,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 264,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 265,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 266,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 267,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 272,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 273,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 274,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 275,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "can drones fly beyond visual line of sight or over people under FAA rules",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "UAS Governance & Education",
+    "queryId" : "150025-g9",
+    "relevant" : [
+      {
+        "sectionIndex" : 68,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 69,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 70,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 71,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 72,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 73,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 74,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 75,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 76,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 268,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 269,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 270,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 271,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 276,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 277,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 278,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 279,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 280,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 281,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 282,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "who regulates drones state or federal government and are there college programs for drone careers",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "UAS Safety & Criminal Penalties",
+    "queryId" : "150025-g10",
+    "relevant" : [
+      {
+        "sectionIndex" : 77,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 78,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 79,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 283,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 284,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 285,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "what is the federal crime for flying a drone near an airplane or airport runway",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "FAA Safety Certification Oversight",
+    "queryId" : "150025-g11",
+    "relevant" : [
+      {
+        "sectionIndex" : 80,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 81,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 82,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 83,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 84,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 85,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 86,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 286,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 287,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 288,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 289,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 290,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 291,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 292,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "how does the FAA oversight and certification advisory committee work and what is ODA",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Flight Standards Reform",
+    "queryId" : "150025-g12",
+    "relevant" : [
+      {
+        "sectionIndex" : 87,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 88,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 89,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 90,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 91,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 293,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 294,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 295,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 296,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 297,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "how is the FAA trying to make flight standards rules more consistent across the country",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "International Aviation Standards",
+    "queryId" : "150025-g13",
+    "relevant" : [
+      {
+        "sectionIndex" : 92,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 93,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 94,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 95,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 298,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 299,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 300,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 301,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "how does the FAA handle foreign country validation of US aviation products and airworthiness directives",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Aviation Safety Rules & Studies",
+    "queryId" : "150025-g14",
+    "relevant" : [
+      {
+        "sectionIndex" : 96,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 97,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 98,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 99,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 100,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 101,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 102,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 103,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 104,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 105,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 106,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 107,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 108,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 109,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 302,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 303,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 304,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 305,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 306,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 307,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 308,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 309,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 310,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 311,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 312,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 313,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 314,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 315,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 316,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 317,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 318,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "new FAA rules on flight attendant rest requirements and aircraft tracking after crashes",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "General Aviation Operations",
+    "queryId" : "150025-g15",
+    "relevant" : [
+      {
+        "sectionIndex" : 110,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 111,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 112,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 113,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 114,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 115,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 319,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 320,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 321,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 322,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 323,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 324,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 325,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "when can pilots use unleaded avgas and do balloon pilots need a medical certificate",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "FAA Workforce & Inspector Programs",
+    "queryId" : "150025-g16",
+    "relevant" : [
+      {
+        "sectionIndex" : 116,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 117,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 326,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 327,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "is there an audit of how many FAA safety inspectors there are and online training programs",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Air Traffic Infrastructure",
+    "queryId" : "150025-g17",
+    "relevant" : [
+      {
+        "sectionIndex" : 118,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 119,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 328,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 329,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 330,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 331,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 332,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 333,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 334,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 335,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 336,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "which airports lack radar approach control and what is FAA doing about airspace change processes",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Pilot Rights & Enforcement",
+    "queryId" : "150025-g18",
+    "relevant" : [
+      {
+        "sectionIndex" : 120,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 121,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 122,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 123,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 124,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 125,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 126,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 337,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 338,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 339,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 340,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 341,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 342,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 343,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "can pilots appeal FAA certificate suspension in court and what are pilot enforcement rights",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Airline Consumer Transparency",
+    "queryId" : "150025-g19",
+    "relevant" : [
+      {
+        "sectionIndex" : 127,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 128,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 131,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 132,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 133,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 134,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 135,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 136,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 137,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 138,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 141,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 142,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 143,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 144,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 145,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 344,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 345,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 348,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 349,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 350,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 351,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 352,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 353,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 354,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 355,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 356,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 363,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 364,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 365,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 366,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 367,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 370,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 372,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "do airlines have to refund fees for services they didnt provide and disclose baggage fees upfront",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Passenger Disability Access",
+    "queryId" : "150025-g20",
+    "relevant" : [
+      {
+        "sectionIndex" : 130,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 139,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 140,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 347,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 357,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 358,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 359,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 360,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 361,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 362,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 368,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "how are airports required to improve wheelchair accessibility for disabled travelers beyond ADA requirements",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Family Assistance & Accidents",
+    "queryId" : "150025-g21",
+    "relevant" : [
+      {
+        "sectionIndex" : 129,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 346,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "what help do airlines have to provide families after a plane crash with any fatalities",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Airline Nondiscrimination & Equity",
+    "queryId" : "150025-g22",
+    "relevant" : [
+      {
+        "sectionIndex" : 369,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 371,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 428,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "do airlines have to train employees to avoid racial and religious discrimination against passengers",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Essential & Small Community Air Service",
+    "queryId" : "150025-g23",
+    "relevant" : [
+      {
+        "sectionIndex" : 146,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 147,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 148,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 149,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 373,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 374,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 375,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 376,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "how does the government subsidize flights to small rural communities with limited air service",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "NextGen Modernization",
+    "queryId" : "150025-g24",
+    "relevant" : [
+      {
+        "sectionIndex" : 150,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 151,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 152,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 153,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 154,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 155,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 156,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 157,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 158,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 159,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 160,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 161,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 162,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 163,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 164,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 165,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 166,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 167,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 168,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 377,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 378,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 379,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 380,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 381,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 382,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 383,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 384,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 385,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 386,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 387,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 388,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 389,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 390,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 391,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 392,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 393,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 394,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 395,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 396,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "what is NextGen air traffic modernization and when do planes need ADS-B equipment installed",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "FAA Management & Operations",
+    "queryId" : "150025-g25",
+    "relevant" : [
+      {
+        "sectionIndex" : 169,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 170,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 171,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 172,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 173,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 174,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 175,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 176,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 397,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 398,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 399,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 400,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 401,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 402,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 403,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 404,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 405,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 406,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "how is the FAA required to cut costs and improve air traffic controller hiring and staffing",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Miscellaneous Aviation Provisions",
+    "queryId" : "150025-g26",
+    "relevant" : [
+      {
+        "sectionIndex" : 177,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 178,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 179,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 180,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 181,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 182,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 183,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 184,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 185,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 186,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 187,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 188,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 189,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 190,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 191,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 192,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 193,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 194,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 195,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 407,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 408,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 409,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 410,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 411,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 412,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 413,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 414,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 415,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 416,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 417,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 418,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 419,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 420,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 421,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 422,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 423,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 424,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 425,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 426,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 427,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 429,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 430,
+        "versionId" : "150025"
+      },
+      {
+        "sectionIndex" : 431,
+        "versionId" : "150025"
+      }
+    ],
+    "text" : "what plan does the federal government have for preventing spread of infectious disease on airplanes",
+    "versionId" : "150025"
+  },
+  {
+    "conceptLabel" : "Congressional Session Start",
+    "queryId" : "177012-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "177012"
+      }
+    ],
+    "text" : "what time does Congress start its session in January 1997",
+    "versionId" : "177012"
+  },
+  {
+    "conceptLabel" : "Continuing Appropriations Resolution",
+    "queryId" : "402717-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "402717"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "402717"
+      }
+    ],
+    "text" : "how is the government being funded to keep running in 1996",
+    "versionId" : "402717"
+  },
+  {
+    "conceptLabel" : "Congressional Session Convening",
+    "queryId" : "373803-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "373803"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "373803"
+      }
+    ],
+    "text" : "when does the 108th Congress start its first session",
+    "versionId" : "373803"
+  },
+  {
+    "conceptLabel" : "Congressional Consent and Introduction",
+    "queryId" : "408763-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "408763"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "408763"
+      }
+    ],
+    "text" : "New England dairy compact congressional approval which states are included and what are the rules",
+    "versionId" : "408763"
+  },
+  {
+    "conceptLabel" : "Federal Oversight and Reimbursement",
+    "queryId" : "408763-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 2,
+        "versionId" : "408763"
+      }
+    ],
+    "text" : "can Congress cancel the dairy compact and who pays if milk overproduction costs the federal government more money",
+    "versionId" : "408763"
+  },
+  {
+    "conceptLabel" : "Document Header",
+    "queryId" : "208332-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "208332"
+      }
+    ],
+    "text" : "H. Con. Res. 38 110th Congress Senate amendment 2007",
+    "versionId" : "208332"
+  },
+  {
+    "conceptLabel" : "Joint Session Reschedule",
+    "queryId" : "208332-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 1,
+        "versionId" : "208332"
+      }
+    ],
+    "text" : "joint session of Congress rescheduled from Wednesday to Tuesday State of the Union",
+    "versionId" : "208332"
+  },
+  {
+    "conceptLabel" : "Resolution Framework",
+    "queryId" : "357076-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "357076"
+      }
+    ],
+    "text" : "what is the 2008 federal budget resolution and what years does it cover",
+    "versionId" : "357076"
+  },
+  {
+    "conceptLabel" : "Overall Budget Levels",
+    "queryId" : "357076-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 2,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 3,
+        "versionId" : "357076"
+      }
+    ],
+    "text" : "how much is the federal government spending and what are the deficit and debt levels for 2008 through 2012",
+    "versionId" : "357076"
+  },
+  {
+    "conceptLabel" : "Chairman Adjustment Allowances",
+    "queryId" : "357076-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 4,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 5,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 6,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 7,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 8,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 9,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 10,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 11,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 12,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 13,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 14,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 15,
+        "versionId" : "357076"
+      }
+    ],
+    "text" : "can Congress adjust budget limits for SCHIP expansion child tax credits farm bill Medicare and college affordability without increasing the deficit",
+    "versionId" : "357076"
+  },
+  {
+    "conceptLabel" : "Appropriations Enforcement Rules",
+    "queryId" : "357076-g3",
+    "relevant" : [
+      {
+        "sectionIndex" : 16,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 17,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 18,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 19,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 20,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 21,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 22,
+        "versionId" : "357076"
+      }
+    ],
+    "text" : "what are the rules for House appropriations spending limits advance appropriations and emergency war spending",
+    "versionId" : "357076"
+  },
+  {
+    "conceptLabel" : "Tax and Defense Policy",
+    "queryId" : "357076-g4",
+    "relevant" : [
+      {
+        "sectionIndex" : 23,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 24,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 25,
+        "versionId" : "357076"
+      }
+    ],
+    "text" : "what does the budget say about middle class tax cuts AMT reform military pay and defense spending priorities",
+    "versionId" : "357076"
+  },
+  {
+    "conceptLabel" : "Sense of House Statements",
+    "queryId" : "357076-g5",
+    "relevant" : [
+      {
+        "sectionIndex" : 26,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 27,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 28,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 29,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 30,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 31,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 32,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 33,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 34,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 35,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 36,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 37,
+        "versionId" : "357076"
+      },
+      {
+        "sectionIndex" : 38,
+        "versionId" : "357076"
+      }
+    ],
+    "text" : "does the budget increase funding for veterans healthcare homeland security clean energy and hurricane Katrina recovery",
+    "versionId" : "357076"
+  },
+  {
+    "conceptLabel" : "Reconciliation Instructions",
+    "queryId" : "357076-g6",
+    "relevant" : [
+      {
+        "sectionIndex" : 39,
+        "versionId" : "357076"
+      }
+    ],
+    "text" : "what spending cuts or savings is the Education and Labor Committee required to find under budget reconciliation",
+    "versionId" : "357076"
+  },
+  {
+    "conceptLabel" : "Legislative Enrollment Correction",
+    "queryId" : "267921-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "267921"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "267921"
+      }
+    ],
+    "text" : "who is responsible for fixing enrollment errors in a bill passed by Congress",
+    "versionId" : "267921"
+  },
+  {
+    "conceptLabel" : "Enactment and Overview",
+    "queryId" : "356661-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "356661"
+      }
+    ],
+    "text" : "what is the 2008 congressional budget resolution and what does it cover",
+    "versionId" : "356661"
+  },
+  {
+    "conceptLabel" : "Overall Budget Levels",
+    "queryId" : "356661-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 2,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 3,
+        "versionId" : "356661"
+      }
+    ],
+    "text" : "how much is the federal government allowed to spend and borrow from 2007 to 2012",
+    "versionId" : "356661"
+  },
+  {
+    "conceptLabel" : "Policy-Specific Reserve Funds",
+    "queryId" : "356661-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 4,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 5,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 6,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 7,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 8,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 9,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 10,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 11,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 12,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 13,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 14,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 15,
+        "versionId" : "356661"
+      }
+    ],
+    "text" : "what budget flexibility exists for expanding children's health insurance, AMT relief, farm programs, college affordability, and Medicare",
+    "versionId" : "356661"
+  },
+  {
+    "conceptLabel" : "Appropriations Enforcement Rules",
+    "queryId" : "356661-g3",
+    "relevant" : [
+      {
+        "sectionIndex" : 16,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 17,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 18,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 21,
+        "versionId" : "356661"
+      }
+    ],
+    "text" : "what are the rules for how Congress can spend money in 2008 appropriations bills",
+    "versionId" : "356661"
+  },
+  {
+    "conceptLabel" : "Budget Process Administration",
+    "queryId" : "356661-g4",
+    "relevant" : [
+      {
+        "sectionIndex" : 19,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 20,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 22,
+        "versionId" : "356661"
+      }
+    ],
+    "text" : "how are budget adjustments tracked and made official during the year",
+    "versionId" : "356661"
+  },
+  {
+    "conceptLabel" : "Tax and AMT Policy Statements",
+    "queryId" : "356661-g5",
+    "relevant" : [
+      {
+        "sectionIndex" : 23,
+        "versionId" : "356661"
+      }
+    ],
+    "text" : "does the 2008 budget plan do anything to protect middle-class families from the alternative minimum tax",
+    "versionId" : "356661"
+  },
+  {
+    "conceptLabel" : "Defense and Military Policy",
+    "queryId" : "356661-g6",
+    "relevant" : [
+      {
+        "sectionIndex" : 24,
+        "versionId" : "356661"
+      }
+    ],
+    "text" : "what does the 2008 budget say about military pay, TRICARE fees, and nuclear nonproliferation spending",
+    "versionId" : "356661"
+  },
+  {
+    "conceptLabel" : "Higher Education Policy",
+    "queryId" : "356661-g7",
+    "relevant" : [
+      {
+        "sectionIndex" : 25,
+        "versionId" : "356661"
+      }
+    ],
+    "text" : "will the 2008 budget cut student loans or financial aid for college students",
+    "versionId" : "356661"
+  },
+  {
+    "conceptLabel" : "Non-Binding Policy Statements",
+    "queryId" : "356661-g8",
+    "relevant" : [
+      {
+        "sectionIndex" : 26,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 27,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 28,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 29,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 30,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 31,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 32,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 33,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 34,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 35,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 36,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 37,
+        "versionId" : "356661"
+      },
+      {
+        "sectionIndex" : 38,
+        "versionId" : "356661"
+      }
+    ],
+    "text" : "what does the 2008 budget say about veterans healthcare, science funding, homeland security, hurricane recovery, and food stamps",
+    "versionId" : "356661"
+  },
+  {
+    "conceptLabel" : "Reconciliation Instructions",
+    "queryId" : "356661-g9",
+    "relevant" : [
+      {
+        "sectionIndex" : 39,
+        "versionId" : "356661"
+      }
+    ],
+    "text" : "what committee was told to find savings and how much does Congress need to cut by 2012",
+    "versionId" : "356661"
+  },
+  {
+    "conceptLabel" : "Rules Adoption",
+    "queryId" : "8966-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "8966"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "8966"
+      }
+    ],
+    "text" : "what rules is the House of Representatives using to govern itself in the 118th Congress",
+    "versionId" : "8966"
+  },
+  {
+    "conceptLabel" : "Fiscal and Budget Rules",
+    "queryId" : "8966-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 2,
+        "versionId" : "8966"
+      },
+      {
+        "sectionIndex" : 3,
+        "versionId" : "8966"
+      }
+    ],
+    "text" : "new budget rules preventing Congress from increasing mandatory spending or raising the debt ceiling automatically",
+    "versionId" : "8966"
+  },
+  {
+    "conceptLabel" : "COVID-19 Oversight",
+    "queryId" : "8966-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 4,
+        "versionId" : "8966"
+      }
+    ],
+    "text" : "House committee investigating COVID-19 origins federal pandemic spending and vaccine policy",
+    "versionId" : "8966"
+  },
+  {
+    "conceptLabel" : "Energy Legislation Procedures",
+    "queryId" : "8966-g3",
+    "relevant" : [
+      {
+        "sectionIndex" : 5,
+        "versionId" : "8966"
+      }
+    ],
+    "text" : "how is Congress fast-tracking oil and gas production bills related to the Strategic Petroleum Reserve",
+    "versionId" : "8966"
+  },
+  {
+    "conceptLabel" : "Senate Meeting Time",
+    "queryId" : "129397-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "129397"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "129397"
+      }
+    ],
+    "text" : "what time does the Senate meet each day",
+    "versionId" : "129397"
+  },
+  {
+    "conceptLabel" : "Overall Spending Framework",
+    "queryId" : "323852-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 1,
+        "versionId" : "323852"
+      }
+    ],
+    "text" : "how much can Senate committees spend on their operations and do they need receipts for expenses",
+    "versionId" : "323852"
+  },
+  {
+    "conceptLabel" : "Individual Committee Authorizations",
+    "queryId" : "323852-g1",
+    "relevant" : [
+      {
+        "sectionIndex" : 2,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 3,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 4,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 5,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 6,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 7,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 8,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 9,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 10,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 11,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 12,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 13,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 14,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 15,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 16,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 17,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 18,
+        "versionId" : "323852"
+      },
+      {
+        "sectionIndex" : 19,
+        "versionId" : "323852"
+      }
+    ],
+    "text" : "how much money does each Senate committee get to hire staff and run their office",
+    "versionId" : "323852"
+  },
+  {
+    "conceptLabel" : "Shared Reserve Fund",
+    "queryId" : "323852-g2",
+    "relevant" : [
+      {
+        "sectionIndex" : 20,
+        "versionId" : "323852"
+      }
+    ],
+    "text" : "can a Senate committee get extra funding if it runs out of money for an investigation",
+    "versionId" : "323852"
+  },
+  {
+    "conceptLabel" : "Individual Immigration Relief",
+    "queryId" : "272091-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "272091"
+      }
+    ],
+    "text" : "private bill granting permanent resident status to specific individual backdated 1969",
+    "versionId" : "272091"
+  },
+  {
+    "conceptLabel" : "Bill Title",
+    "queryId" : "154389-g0",
+    "relevant" : [
+      {
+        "sectionIndex" : 0,
+        "versionId" : "154389"
+      }
+    ],
+    "text" : "what is the CASE Act 2025 courthouse law about",
+    "versionId" : "154389"
+  }
+]
