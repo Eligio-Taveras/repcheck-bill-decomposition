@@ -1,15 +1,16 @@
 package com.repcheck.decomposition.evaluation.cluster
 
 import smile.clustering.HierarchicalClustering
-import smile.clustering.linkage.UPGMALinkage
+import smile.clustering.linkage.{CompleteLinkage, Linkage, SingleLinkage, UPGMALinkage, WardLinkage}
 
 import com.repcheck.decomposition.evaluation.metrics.EmbeddingMetrics
 
 /**
- * Production-faithful clustering for the DP0-5 PREDICTION: Smile's hierarchical agglomerative clustering with average
- * linkage (UPGMA) over cosine distance — exactly what the production `ConceptClusterer` (D3b) will use, so the `D_max`
- * / cut config tuned here transfers literally. Two cut strategies mirror the production switch: a fixed-height cut
- * (`D_max`, for tight bills) and a silhouette-maximizing cut (for omnibus bills).
+ * Production-faithful clustering for the DP0-5 PREDICTION: Smile's hierarchical agglomerative clustering over cosine
+ * distance — exactly what the production `ConceptClusterer` (D3b) will use, so the [[ClusteringConfig]] tuned here
+ * transfers literally. Every knob (linkage, `D_max`, the silhouette k-range) comes from [[ClusteringConfig]]; nothing
+ * is hardcoded. Two cut strategies mirror the production switch: a fixed-height cut (`D_max`, tight bills) and a
+ * silhouette-maximizing cut (omnibus bills).
  */
 object SmileHacClusterer {
 
@@ -18,6 +19,14 @@ object SmileHacClusterer {
       if (i == j) 0.0 else 1.0 - EmbeddingMetrics.cosine(vectors(i), vectors(j))
     )
 
+  private def linkageOf(name: String, prox: Array[Array[Double]]): Linkage =
+    name.toLowerCase match {
+      case "complete" => CompleteLinkage.of(prox)
+      case "single"   => SingleLinkage.of(prox)
+      case "ward"     => WardLinkage.of(prox)
+      case _          => UPGMALinkage.of(prox) // average (UPGMA) — the production default
+    }
+
   /** First-appearance cluster numbering, so labels are stable regardless of Smile's internal ids. */
   private def renumber(raw: IndexedSeq[Int]): Vector[Int] = {
     val order = raw.distinct.zipWithIndex.toMap
@@ -25,33 +34,34 @@ object SmileHacClusterer {
   }
 
   /**
-   * Cut the dendrogram at height `dMax`: sections only merge while their average-linkage cosine distance ≤ `dMax`;
+   * Cut the dendrogram at height `config.dMax`: sections only merge while their linkage cosine distance ≤ `dMax`;
    * anything farther stays its own cluster (the "singletons above D_max" rule). Derived from the merge heights (each
    * merge with height ≤ dMax reduces the cluster count by one) rather than Smile's `partition(double)`, whose cut
    * semantics differ.
    */
-  def clusterAtThreshold(vectors: IndexedSeq[Vector[Double]], dMax: Double): Vector[Int] =
+  def clusterAtThreshold(vectors: IndexedSeq[Vector[Double]], config: ClusteringConfig): Vector[Int] =
     if (vectors.sizeIs < 2) vectors.indices.toVector
     else {
-      val hc     = HierarchicalClustering.fit(UPGMALinkage.of(proximity(vectors)))
-      val merged = hc.height().count(_ <= dMax)
+      val hc     = HierarchicalClustering.fit(linkageOf(config.linkage, proximity(vectors)))
+      val merged = hc.height().count(_ <= config.dMax)
       val k      = vectors.size - merged
       // Smile's partition(int) rejects k < 2; k <= 1 means everything merged below dMax → one cluster.
       if (k <= 1) Vector.fill(vectors.size)(0) else renumber(hc.partition(k).toIndexedSeq)
     }
 
   /**
-   * Cut at the number of clusters k in [2, min(kMax, n-1)] that maximizes the mean silhouette (the production omnibus
-   * branch — lets the data choose the cluster count instead of a fixed height).
+   * Cut at the number of clusters k in [max(2, minK), min(maxK, n-1)] that maximizes the mean silhouette (the
+   * production omnibus branch — lets the data choose the cluster count instead of a fixed height).
    */
-  def clusterBySilhouette(vectors: IndexedSeq[Vector[Double]], kMax: Int): Vector[Int] = {
+  def clusterBySilhouette(vectors: IndexedSeq[Vector[Double]], config: ClusteringConfig): Vector[Int] = {
     val n = vectors.size
-    if (n < 3) clusterAtThreshold(vectors, Double.MaxValue)
+    if (n < 3) clusterAtThreshold(vectors, config.copy(dMax = Double.MaxValue))
     else {
-      val dist  = proximity(vectors) // kept unmutated for silhouette; UPGMALinkage.of mutates its own copy
-      val hc    = HierarchicalClustering.fit(UPGMALinkage.of(proximity(vectors)))
-      val upper = math.min(kMax, n - 1)
-      val best = (2 to upper).foldLeft((Double.NegativeInfinity, Vector.fill(n)(0))) {
+      val dist  = proximity(vectors) // kept unmutated for silhouette; linkage `.of` mutates its own copy
+      val hc    = HierarchicalClustering.fit(linkageOf(config.linkage, proximity(vectors)))
+      val lower = math.max(2, config.minK)
+      val upper = math.min(config.maxK, n - 1)
+      val best = (lower to upper).foldLeft((Double.NegativeInfinity, Vector.fill(n)(0))) {
         case ((bestS, bestLabels), k) =>
           val labels = hc.partition(k).toIndexedSeq
           val s      = silhouette(dist, labels)

@@ -129,8 +129,9 @@ lazy val evaluation = (project in file("evaluation"))
     commonSettings,
     name := "evaluation",
     // Smile is COMPILE-scoped: DP0-5 prediction uses the SAME Smile HAC the production ConceptClusterer (D3b) will, so
-    // the D_max / cut config tuned here transfers literally.
+    // the D_max / cut config tuned here transfers literally. PureConfig drives the tunable ClusteringConfig knobs.
     libraryDependencies += "com.github.haifengl" % "smile-core" % "3.1.1",
+    libraryDependencies ++= Dependencies.pureConfig,
     libraryDependencies ++= (
       Dependencies.circe ++ Dependencies.catsEffect ++ Dependencies.http4sEmber ++ Seq(
         "org.scalatestplus" %% "scalacheck-1-17"    % "3.2.18.0",
