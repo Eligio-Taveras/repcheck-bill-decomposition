@@ -183,7 +183,7 @@ class ComparisonReport extends ConformanceContract {
   /**
    * Guided cut: the subject count is a GUIDE, not an exact split. Search k in a +/- tol window around `guideK` and let
    * the silhouette pick the natural k (a window keeps it from collapsing to k=2). The data decides; the subject count
-   * only sets the neighborhood.
+   * only sets the neighborhood. (A merge-height gap criterion was tried and underperformed silhouette in the window.)
    */
   private def guidedCut(fitted: SmileHacClusterer.Fitted, guideK: Int, tol: Double): Vector[Int] = {
     val lo = math.max(2, math.round(guideK * (1.0 - tol)).toInt)
