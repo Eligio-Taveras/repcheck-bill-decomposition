@@ -107,8 +107,15 @@ class ComparisonReport extends ConformanceContract {
     val analyses   = Transforms.map(t => analyze(t, bills, pooled))
     val structure  = structureSweep(bills, pooled)
     val robustness = robustnessSweep(bills, pooled)
-    val formula    = formulaSweep(bills, pooled)
-    writeReport(analyses, structure, robustness, formula)
+    val cFits      = cosineFits(bills, pooled)
+    val bFits      = blendFits(bills, pooled, 0.1)
+    val formulas = List(
+      dMaxFormula("standardize + cosine", cFits, 0.0),
+      dMaxFormula("standardize + cosine, small-n floor", cFits, 0.8),
+      dMaxFormula("standardize + structure-blend (alpha=0.1)", bFits, 0.0),
+      kFormula("standardize + structure-blend (alpha=0.1)", bFits),
+    )
+    writeReport(analyses, structure, robustness, formulas)
     info("done")
     succeed
   }
@@ -219,25 +226,67 @@ class ComparisonReport extends ConformanceContract {
     vid: String,
     n: Int,
     s: Int,
-    bestDMax: Double,
-    predDMax: Double,
+    bestCut: Double,
+    predCut: Double,
     ariBest: Double,
     ariPred: Double,
   )
 
-  final private case class FormulaResult(a: Double, b: Double, r2: Double, perBill: List[FormulaBill])
+  final private case class FormulaResult(
+    label: String,
+    cutLabel: String,
+    formula: String,
+    r2: Double,
+    perBill: List[FormulaBill],
+  ) {
+    def meanBest: Double = perBill.map(_.ariBest).sum / perBill.size
+    def meanPred: Double = perBill.map(_.ariPred).sum / perBill.size
+  }
 
-  /**
-   * Formulaic cutoff: per bill find the dMax that best matches the reference (standardize + cosine), then regress dMax
-   * \= a + b*ln(n - S) on (section count n, subject count S). Apply the formula to compute each bill's cut height and
-   * measure ARI vs the per-bill oracle — the subject count drives an adaptive, smooth cutoff, no fixed split.
-   */
-  private def formulaSweep(bills: List[BillData], pooled: Seq[Vector[Double]]): FormulaResult = {
+  /** Standardized embeddings, cosine distance — the clean dMax space. */
+  private def cosineFits(
+    bills: List[BillData],
+    pooled: Seq[Vector[Double]],
+  ): List[(BillData, SmileHacClusterer.Fitted)] = {
     val gMean = EmbeddingTransform.mean(pooled)
     val gStd  = EmbeddingTransform.std(pooled, gMean)
-    val fits = bills.filter(_.isNonTrivial).map { b =>
+    bills.filter(_.isNonTrivial).map { b =>
       (b, SmileHacClusterer.fit(b.raw.map(v => EmbeddingTransform.standardize(v, gMean, gStd)), ClusteringConfig()))
     }
+  }
+
+  /** Standardized embeddings blended with the parser-Title structure (alpha) — the production distance. */
+  private def blendFits(
+    bills: List[BillData],
+    pooled: Seq[Vector[Double]],
+    alpha: Double,
+  ): List[(BillData, SmileHacClusterer.Fitted)] = {
+    val gMean = EmbeddingTransform.mean(pooled)
+    val gStd  = EmbeddingTransform.std(pooled, gMean)
+    bills.filter(_.isNonTrivial).map { b =>
+      val vecs = b.raw.map(v => EmbeddingTransform.standardize(v, gMean, gStd))
+      val blended = Array.tabulate(vecs.size, vecs.size)((i, j) =>
+        if (i == j) 0.0
+        else {
+          val cos = 1.0 - EmbeddingMetrics.cosine(vecs(i), vecs(j))
+          val str = if (b.structuralKeys(i) == b.structuralKeys(j)) 0.0 else 1.0
+          alpha * cos + (1.0 - alpha) * str
+        }
+      )
+      (b, SmileHacClusterer.fitFromProximity(blended, "average"))
+    }
+  }
+
+  /**
+   * Formulaic cutoff on the cut HEIGHT: per bill find the dMax that best matches the reference, regress dMax = a +
+   * b*ln(n - S) on (section count n, subject count S), then apply it (floored at `floor` for the small-n regime where a
+   * tiny height error swings ARI). The subject count drives an adaptive, smooth cutoff — no fixed split.
+   */
+  private def dMaxFormula(
+    label: String,
+    fits: List[(BillData, SmileHacClusterer.Fitted)],
+    floor: Double,
+  ): FormulaResult = {
     val data = fits.map {
       case (b, f) =>
         val best = DMaxGrid.foldLeft((Double.NaN, Double.NegativeInfinity)) {
@@ -247,17 +296,45 @@ class ComparisonReport extends ConformanceContract {
         }
         (b, f, b.ref.distinct.size, best._1, best._2)
     }
-    val xs        = data.map { case (b, _, s, _, _) => math.log(math.max(1, b.sections - s).toDouble) }
-    val ys        = data.map(_._4)
-    val (a, b, _) = linreg(xs, ys)
-    val r2        = linreg(xs, ys)._3
+    val xs         = data.map { case (b, _, s, _, _) => math.log(math.max(1, b.sections - s).toDouble) }
+    val ys         = data.map(_._4)
+    val (a, b, r2) = linreg(xs, ys)
     val perBill = data.map {
       case (bill, f, s, bestDMax, ariBest) =>
-        val pred    = a + b * math.log(math.max(1, bill.sections - s).toDouble)
+        val pred    = math.max(floor, a + b * math.log(math.max(1, bill.sections - s).toDouble))
         val ariPred = ClusteringMetrics.adjustedRandIndex(f.cut(f.kThreshold(pred)), bill.ref)
         FormulaBill(bill.versionId, bill.sections, s, bestDMax, pred, ariBest, ariPred)
     }
-    FormulaResult(a, b, r2, perBill)
+    val flo = if (floor > 0.0) f", floor $floor%.2f" else ""
+    FormulaResult(label, "dMax", f"dMax = $a%.3f + $b%.3f * ln(n - S)$flo (R^2 = $r2%.3f)", r2, perBill)
+  }
+
+  /**
+   * Formulaic cutoff on the cut COUNT: on the production blend, dMax sits in a wide Title "gap" and is a degenerate
+   * selector, so k is the real lever. Per bill find the k that best matches the reference, regress k = a + b*S on the
+   * subject count, then apply it — the endpoint subject count directly drives how many groups we cut.
+   */
+  private def kFormula(label: String, fits: List[(BillData, SmileHacClusterer.Fitted)]): FormulaResult = {
+    val data = fits.map {
+      case (b, f) =>
+        val upper = math.min(b.sections - 1, 80)
+        val best = (2 to math.max(2, upper)).foldLeft((Double.NaN, Double.NegativeInfinity)) {
+          case ((bk, bs), k) =>
+            val ari = ClusteringMetrics.adjustedRandIndex(f.cut(k), b.ref)
+            if (ari > bs) (k.toDouble, ari) else (bk, bs)
+        }
+        (b, f, b.ref.distinct.size, best._1, best._2)
+    }
+    val xs         = data.map(_._3.toDouble)
+    val ys         = data.map(_._4)
+    val (a, b, r2) = linreg(xs, ys)
+    val perBill = data.map {
+      case (bill, f, s, bestK, ariBest) =>
+        val predK   = math.max(2, math.round(a + b * s).toInt)
+        val ariPred = ClusteringMetrics.adjustedRandIndex(f.cut(predK), bill.ref)
+        FormulaBill(bill.versionId, bill.sections, s, bestK, predK.toDouble, ariBest, ariPred)
+    }
+    FormulaResult(label, "k", f"k = $a%.2f + $b%.3f * S (R^2 = $r2%.3f)", r2, perBill)
   }
 
   final private case class RobustPoint(factor: Double, exactAri: Double, guidedAri: Double)
@@ -401,13 +478,25 @@ class ComparisonReport extends ConformanceContract {
     analyses: List[Analysis],
     structure: (List[StructPoint], List[StructBill]),
     robustness: List[RobustPoint],
-    formula: FormulaResult,
+    formulas: List[FormulaResult],
   ): Unit = {
-    val formulaRows = formula.perBill.map(fb =>
-      f"| ${fb.vid} | ${fb.n} | ${fb.s} | ${fb.bestDMax}%.2f | ${fb.predDMax}%.2f | ${fb.ariBest}%.3f | ${fb.ariPred}%.3f |"
-    )
-    val meanBest                  = formula.perBill.map(_.ariBest).sum / formula.perBill.size
-    val meanPred                  = formula.perBill.map(_.ariPred).sum / formula.perBill.size
+    val formulaLines = formulas.flatMap { fr =>
+      val rows = fr.perBill.map(fb =>
+        f"| ${fb.vid} | ${fb.n} | ${fb.s} | ${fb.bestCut}%.2f | ${fb.predCut}%.2f | ${fb.ariBest}%.3f | ${fb.ariPred}%.3f |"
+      )
+      List(
+        "",
+        s"### ${fr.label} — cut by ${fr.cutLabel}",
+        "",
+        s"Fit: **${fr.formula}**.",
+        "",
+        s"| bill | n | S | best ${fr.cutLabel} | formula ${fr.cutLabel} | ARI best | ARI formula |",
+        "|---|---|---|---|---|---|---|",
+      ) ++ rows ++ List(
+        "",
+        f"Mean ARI: oracle (per-bill best ${fr.cutLabel}) ${fr.meanBest}%.3f vs formula ${fr.meanPred}%.3f.",
+      )
+    }
     val (alphaSweep, structBills) = structure
     val alphaRows                 = alphaSweep.map(p => f"| ${p.alpha}%.1f | ${p.ari}%.3f | ${p.nmi}%.3f |")
     val bestAlpha = alphaSweep
@@ -485,18 +574,11 @@ class ComparisonReport extends ConformanceContract {
         ) ++ robustRows ++
         List(
           "",
-          "## Formulaic cutoff: dMax = a + b*ln(n - S) from section count n and subject count S",
+          "## Formulaic cutoff: compute the cut from (section count n, subject count S)",
           "",
-          f"Fit over the non-trivial bills (standardize + cosine): **dMax = ${formula.a}%.3f + ${formula.b}%.3f * ln(n - S)** (R^2 = ${formula.r2}%.3f).",
-          "Compute the cut height per bill from (n, S), then cut there (the actual group count is data-driven near S).",
-          "",
-          "| bill | n | S | best dMax | formula dMax | ARI best | ARI formula |",
-          "|---|---|---|---|---|---|---|",
-        ) ++ formulaRows ++
-        List(
-          "",
-          f"Mean ARI: oracle (per-bill best dMax) $meanBest%.3f vs formula $meanPred%.3f.",
-        )
+          "The cutoff is calculated per bill from n and S — not a fixed split. On cosine the lever is the cut height dMax;",
+          "on the production blend dMax is a degenerate Title-gap selector, so the lever is the cut count k = f(S).",
+        ) ++ formulaLines
     val _ = Files.write(Paths.get("COMPARISON_REPORT.md"), lines.mkString("\n").getBytes(StandardCharsets.UTF_8))
   }
 

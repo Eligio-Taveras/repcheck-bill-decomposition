@@ -84,10 +84,14 @@ k = perturbed count; guided = silhouette picks k in a +/-30% window around it. s
 | 1.50 | 0.404 | 0.440 |
 | 2.00 | 0.219 | 0.386 |
 
-## Formulaic cutoff: dMax = a + b*ln(n - S) from section count n and subject count S
+## Formulaic cutoff: compute the cut from (section count n, subject count S)
 
-Fit over the non-trivial bills (standardize + cosine): **dMax = -0.181 + 0.410 * ln(n - S)** (R^2 = 0.969).
-Compute the cut height per bill from (n, S), then cut there (the actual group count is data-driven near S).
+The cutoff is calculated per bill from n and S — not a fixed split. On cosine the lever is the cut height dMax;
+on the production blend dMax is a degenerate Title-gap selector, so the lever is the cut count k = f(S).
+
+### standardize + cosine — cut by dMax
+
+Fit: **dMax = -0.181 + 0.410 * ln(n - S) (R^2 = 0.969)**.
 
 | bill | n | S | best dMax | formula dMax | ARI best | ARI formula |
 |---|---|---|---|---|---|---|
@@ -100,3 +104,51 @@ Compute the cut height per bill from (n, S), then cut there (the actual group co
 | 150025 | 432 | 28 | 2.40 | 2.28 | 0.315 | 0.302 |
 
 Mean ARI: oracle (per-bill best dMax) 0.350 vs formula 0.288.
+
+### standardize + cosine, small-n floor — cut by dMax
+
+Fit: **dMax = -0.181 + 0.410 * ln(n - S), floor 0.80 (R^2 = 0.969)**.
+
+| bill | n | S | best dMax | formula dMax | ARI best | ARI formula |
+|---|---|---|---|---|---|---|
+| 415327 | 18 | 10 | 0.70 | 0.80 | 0.497 | 0.497 |
+| 150314 | 26 | 11 | 0.80 | 0.93 | 0.264 | 0.178 |
+| 189669 | 14 | 6 | 0.80 | 0.80 | 0.491 | 0.491 |
+| 148391 | 309 | 54 | 2.10 | 2.09 | 0.297 | 0.297 |
+| 375702 | 418 | 67 | 2.30 | 2.22 | 0.358 | 0.350 |
+| 244276 | 226 | 54 | 1.70 | 1.93 | 0.229 | 0.187 |
+| 150025 | 432 | 28 | 2.40 | 2.28 | 0.315 | 0.302 |
+
+Mean ARI: oracle (per-bill best dMax) 0.350 vs formula 0.329.
+
+### standardize + structure-blend (alpha=0.1) — cut by dMax
+
+Fit: **dMax = 1.525 + -0.217 * ln(n - S) (R^2 = 0.320)**.
+
+| bill | n | S | best dMax | formula dMax | ARI best | ARI formula |
+|---|---|---|---|---|---|---|
+| 415327 | 18 | 10 | 1.30 | 1.07 | 0.144 | 0.000 |
+| 150314 | 26 | 11 | 1.90 | 0.94 | 0.458 | 0.415 |
+| 189669 | 14 | 6 | 0.10 | 1.07 | 0.000 | 0.000 |
+| 148391 | 309 | 54 | 0.20 | 0.32 | 0.365 | 0.149 |
+| 375702 | 418 | 67 | 0.30 | 0.25 | 0.378 | 0.422 |
+| 244276 | 226 | 54 | 0.20 | 0.41 | 0.402 | 0.347 |
+| 150025 | 432 | 28 | 0.30 | 0.22 | 0.350 | 0.290 |
+
+Mean ARI: oracle (per-bill best dMax) 0.300 vs formula 0.232.
+
+### standardize + structure-blend (alpha=0.1) — cut by k
+
+Fit: **k = 2.37 + 1.041 * S (R^2 = 0.848)**.
+
+| bill | n | S | best k | formula k | ARI best | ARI formula |
+|---|---|---|---|---|---|---|
+| 415327 | 18 | 10 | 11.00 | 13.00 | 0.765 | 0.497 |
+| 150314 | 26 | 11 | 4.00 | 14.00 | 0.458 | 0.331 |
+| 189669 | 14 | 6 | 9.00 | 9.00 | 0.591 | 0.591 |
+| 148391 | 309 | 54 | 75.00 | 59.00 | 0.385 | 0.342 |
+| 375702 | 418 | 67 | 56.00 | 72.00 | 0.432 | 0.381 |
+| 244276 | 226 | 54 | 59.00 | 59.00 | 0.426 | 0.426 |
+| 150025 | 432 | 28 | 42.00 | 32.00 | 0.401 | 0.337 |
+
+Mean ARI: oracle (per-bill best k) 0.494 vs formula 0.415.
