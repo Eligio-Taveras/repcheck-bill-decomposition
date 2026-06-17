@@ -222,6 +222,17 @@ class ComparisonReport extends ConformanceContract {
     (a, b, r2)
   }
 
+  /** Least-squares slope with the intercept forced to 0 (model y = slope*x). Returns (slope, uncentered R^2). */
+  private def linregThroughOrigin(xs: List[Double], ys: List[Double]): (Double, Double) = {
+    val sxx   = xs.map(x => x * x).sum
+    val sxy   = xs.lazyZip(ys).map((x, y) => x * y).sum
+    val slope = if (sxx == 0.0) 0.0 else sxy / sxx
+    val ssTot = ys.map(y => y * y).sum
+    val ssRes = xs.lazyZip(ys).map((x, y) => (y - slope * x) * (y - slope * x)).sum
+    val r2    = if (ssTot == 0.0) 0.0 else 1.0 - ssRes / ssTot
+    (slope, r2)
+  }
+
   final private case class FormulaBill(
     vid: String,
     n: Int,
@@ -311,8 +322,10 @@ class ComparisonReport extends ConformanceContract {
 
   /**
    * Formulaic cutoff on the cut COUNT: on the production blend, dMax sits in a wide Title "gap" and is a degenerate
-   * selector, so k is the real lever. Per bill find the k that best matches the reference, regress k = a + b*S on the
-   * subject count, then apply it — the endpoint subject count directly drives how many groups we cut.
+   * selector, so k is the real lever. Per bill find the k that best matches the reference, regress k = slope*S THROUGH
+   * THE ORIGIN (no intercept — an intercept made a single-subject bill predict ~3 groups instead of 1), then apply it
+   * with the production guard S <= 1 => k = 1 (a single-concept bill must not be decomposed). The endpoint subject
+   * count directly drives how many groups we cut, anchored so S=1 maps to one group.
    */
   private def kFormula(label: String, fits: List[(BillData, SmileHacClusterer.Fitted)]): FormulaResult = {
     val data = fits.map {
@@ -325,16 +338,17 @@ class ComparisonReport extends ConformanceContract {
         }
         (b, f, b.ref.distinct.size, best._1, best._2)
     }
-    val xs         = data.map(_._3.toDouble)
-    val ys         = data.map(_._4)
-    val (a, b, r2) = linreg(xs, ys)
+    val xs                   = data.map(_._3.toDouble)
+    val ys                   = data.map(_._4)
+    val (slope, r2)          = linregThroughOrigin(xs, ys)
+    def predict(s: Int): Int = if (s <= 1) 1 else math.max(1, math.round(slope * s).toInt)
     val perBill = data.map {
       case (bill, f, s, bestK, ariBest) =>
-        val predK   = math.max(2, math.round(a + b * s).toInt)
+        val predK   = predict(s)
         val ariPred = ClusteringMetrics.adjustedRandIndex(f.cut(predK), bill.ref)
         FormulaBill(bill.versionId, bill.sections, s, bestK, predK.toDouble, ariBest, ariPred)
     }
-    FormulaResult(label, "k", f"k = $a%.2f + $b%.3f * S (R^2 = $r2%.3f)", r2, perBill)
+    FormulaResult(label, "k", f"k = $slope%.3f * S (through origin; S<=1 => k=1) (R^2 = $r2%.3f)", r2, perBill)
   }
 
   final private case class RobustPoint(factor: Double, exactAri: Double, guidedAri: Double)
