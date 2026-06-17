@@ -3,7 +3,7 @@
   "format" : "PDF",
   "groups" : [
     {
-      "conceptLabel" : "Presidential Proclamation Authority",
+      "conceptLabel" : "Anniversary Commemoration Proclamation",
       "groupId" : "g0",
       "sectionIndices" : [
         0,
@@ -18,6 +18,7 @@
   "sections" : [
     {
       "charLength" : 46,
+      "description" : "This is Public Law 101-532, enacted on November 7, 1990.",
       "heading" : null,
       "identifier" : null,
       "index" : 0,
@@ -25,11 +26,13 @@
     },
     {
       "charLength" : 476,
+      "description" : "This section authorizes and requests the President to issue a proclamation asking state governors, local government officials, and the American public to observe an anniversary with appropriate ceremonies and activities.",
       "heading" : null,
       "identifier" : "3",
       "index" : 1,
       "kind" : "Section"
     }
   ],
+  "summary" : "This bill is Public Law 101-532, enacted in 1990, which calls for the commemoration of a particular anniversary. It authorizes and requests the President to issue a proclamation encouraging governors, local officials, and the public to mark the occasion with appropriate ceremonies and activities.",
   "versionId" : "219039"
 }

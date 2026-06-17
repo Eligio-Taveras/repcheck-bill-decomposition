@@ -3,7 +3,7 @@
   "format" : "Formatted XML",
   "groups" : [
     {
-      "conceptLabel" : "Fallback",
+      "conceptLabel" : "Placeholder Content",
       "groupId" : "g0",
       "sectionIndices" : [
         0
@@ -17,11 +17,13 @@
   "sections" : [
     {
       "charLength" : 1642,
+      "description" : "This is a fallback placeholder section with no substantive legislative content.",
       "heading" : null,
       "identifier" : null,
       "index" : 0,
       "kind" : "Fallback"
     }
   ],
+  "summary" : "This bill contains no substantive legislative content, consisting solely of a fallback placeholder section. No policy, program, or funding provisions are established by this bill.",
   "versionId" : "330298"
 }

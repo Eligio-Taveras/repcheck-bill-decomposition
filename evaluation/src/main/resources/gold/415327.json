@@ -3,30 +3,38 @@
   "format" : "Formatted Text",
   "groups" : [
     {
-      "conceptLabel" : "Bill Overview and Definitions",
+      "conceptLabel" : "Bill Introduction & Purpose",
       "groupId" : "g0",
       "sectionIndices" : [
         0,
         1,
-        2,
-        3
+        2
       ],
       "taxonomyNodeIds" : [
       ]
     },
     {
-      "conceptLabel" : "Direct Spending Targets",
+      "conceptLabel" : "Definitions & Baseline",
       "groupId" : "g1",
       "sectionIndices" : [
-        4,
+        3,
         13
       ],
       "taxonomyNodeIds" : [
       ]
     },
     {
-      "conceptLabel" : "Presidential Spending Message",
+      "conceptLabel" : "Spending Targets",
       "groupId" : "g2",
+      "sectionIndices" : [
+        4
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Presidential Budget Process",
+      "groupId" : "g3",
       "sectionIndices" : [
         5
       ],
@@ -34,8 +42,8 @@
       ]
     },
     {
-      "conceptLabel" : "Congressional Action and Spin-Off Law",
-      "groupId" : "g3",
+      "conceptLabel" : "Congressional Reconciliation",
+      "groupId" : "g4",
       "sectionIndices" : [
         6,
         7
@@ -45,37 +53,38 @@
     },
     {
       "conceptLabel" : "Sequestration Mechanisms",
-      "groupId" : "g4",
+      "groupId" : "g5",
       "sectionIndices" : [
         8,
         9,
-        10,
-        11
-      ],
-      "taxonomyNodeIds" : [
-      ]
-    },
-    {
-      "conceptLabel" : "Reports and Orders",
-      "groupId" : "g5",
-      "sectionIndices" : [
+        11,
         12
       ],
       "taxonomyNodeIds" : [
       ]
     },
     {
-      "conceptLabel" : "PAYGO and Other Budget Relations",
+      "conceptLabel" : "Sequestration Exemptions",
       "groupId" : "g6",
       "sectionIndices" : [
-        14
+        10
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Interaction with Existing Budget Law",
+      "groupId" : "g7",
+      "sectionIndices" : [
+        14,
+        16
       ],
       "taxonomyNodeIds" : [
       ]
     },
     {
       "conceptLabel" : "Judicial Review",
-      "groupId" : "g7",
+      "groupId" : "g8",
       "sectionIndices" : [
         15
       ],
@@ -83,10 +92,9 @@
       ]
     },
     {
-      "conceptLabel" : "Application and Effective Date",
-      "groupId" : "g8",
+      "conceptLabel" : "Effective Date",
+      "groupId" : "g9",
       "sectionIndices" : [
-        16,
         17
       ],
       "taxonomyNodeIds" : [
@@ -98,6 +106,7 @@
   "sections" : [
     {
       "charLength" : 717,
+      "description" : "Introduces the Entitlement Control Act of 1994, a bill sponsored by Mr. Stenholm and others and referred to the Committees on Government Operations and Rules.",
       "heading" : null,
       "identifier" : null,
       "index" : 0,
@@ -105,6 +114,7 @@
     },
     {
       "charLength" : 774,
+      "description" : "Gives the Act its short title and lists all of its sections in a table of contents.",
       "heading" : null,
       "identifier" : "1",
       "index" : 1,
@@ -112,6 +122,7 @@
     },
     {
       "charLength" : 162,
+      "description" : "States that the Act's purpose is to create a mechanism for controlling mandatory spending and increasing accountability for it.",
       "heading" : null,
       "identifier" : "2",
       "index" : 2,
@@ -119,6 +130,7 @@
     },
     {
       "charLength" : 2352,
+      "description" : "Defines key terms used throughout the Act, including 'direct spending,' 'sequestration,' 'current policy baseline,' and others.",
       "heading" : null,
       "identifier" : "3",
       "index" : 3,
@@ -126,6 +138,7 @@
     },
     {
       "charLength" : 2308,
+      "description" : "Directs OMB to establish annual direct spending targets for fiscal years 1995–2000, allowing growth for inflation, beneficiary changes, and a small additional allowance, with adjustments for health care reform and subsequent legislative changes.",
       "heading" : null,
       "identifier" : "4",
       "index" : 4,
@@ -133,6 +146,7 @@
     },
     {
       "charLength" : 1511,
+      "description" : "Requires the President to include a special message with his budget proposing ways to offset projected excess direct spending, and requires that message to be introduced as a concurrent resolution in Congress.",
       "heading" : null,
       "identifier" : "5",
       "index" : 5,
@@ -140,6 +154,7 @@
     },
     {
       "charLength" : 7252,
+      "description" : "Requires the House Budget Committee to report a reconciliation resolution by March 15 whenever direct spending is projected to exceed targets, and sets procedures for floor consideration if the committee fails to act.",
       "heading" : null,
       "identifier" : "6",
       "index" : 6,
@@ -147,6 +162,7 @@
     },
     {
       "charLength" : 6152,
+      "description" : "Requires the introduction of 'spin-off' legislation after budget resolution adoption to specify allowable direct spending by functional category, and sets expedited House and Senate procedures for its consideration.",
       "heading" : null,
       "identifier" : "7",
       "index" : 7,
@@ -154,6 +170,7 @@
     },
     {
       "charLength" : 1251,
+      "description" : "Establishes a targeted sequestration process that cuts direct spending within specific functional categories by a uniform percentage when spending in those categories exceeds the levels set in a spin-off law.",
       "heading" : null,
       "identifier" : "8",
       "index" : 8,
@@ -161,6 +178,7 @@
     },
     {
       "charLength" : 852,
+      "description" : "Establishes a comprehensive sequestration process that applies a uniform percentage cut across all direct spending accounts when total direct spending exceeds the cap and no spin-off law is in effect.",
       "heading" : null,
       "identifier" : "9",
       "index" : 9,
@@ -168,6 +186,7 @@
     },
     {
       "charLength" : 3795,
+      "description" : "Lists the specific budget accounts, programs, and activities that are exempt from sequestration under this Act, including net interest, deposit insurance, trust fund payments, and certain constitutionally required payments.",
       "heading" : null,
       "identifier" : "10",
       "index" : 10,
@@ -175,6 +194,7 @@
     },
     {
       "charLength" : 21215,
+      "description" : "Sets the general rules governing how sequestrations are calculated and implemented, including requirements for permanent reductions, uniform percentage calculations, and treatment of various types of spending authority.",
       "heading" : null,
       "identifier" : "11",
       "index" : 11,
@@ -182,6 +202,7 @@
     },
     {
       "charLength" : 4112,
+      "description" : "Establishes the timetable and content requirements for OMB and CBO sequestration preview and final reports, and for the President's sequestration order.",
       "heading" : null,
       "identifier" : "12",
       "index" : 12,
@@ -189,6 +210,7 @@
     },
     {
       "charLength" : 2194,
+      "description" : "Defines how the current policy baseline is to be calculated, including assumptions about continuation of existing direct spending laws, expiring programs, and veterans' compensation.",
       "heading" : null,
       "identifier" : "13",
       "index" : 13,
@@ -196,6 +218,7 @@
     },
     {
       "charLength" : 344,
+      "description" : "Specifies that outlay reductions achieved under this Act's reconciliation process generally will not be counted under the pay-as-you-go rules of the Balanced Budget and Emergency Deficit Control Act, except to the extent needed to balance the PAYGO scorecard.",
       "heading" : null,
       "identifier" : "14",
       "index" : 14,
@@ -203,6 +226,7 @@
     },
     {
       "charLength" : 4420,
+      "description" : "Allows Members of Congress and affected parties to sue in D.C. federal district court to challenge orders or the Act's constitutionality, requires a three-judge panel to hear such cases, and provides for direct expedited appeal to the Supreme Court within strict deadlines.",
       "heading" : null,
       "identifier" : "15",
       "index" : 15,
@@ -210,6 +234,7 @@
     },
     {
       "charLength" : 236,
+      "description" : "Eliminates the application of the budget procedures and points of order established under House Resolution 235 (103rd Congress) for fiscal year 1995 and all future fiscal years.",
       "heading" : null,
       "identifier" : "16",
       "index" : 16,
@@ -217,11 +242,13 @@
     },
     {
       "charLength" : 309,
+      "description" : "Sets the Act's effective date as the day it is signed into law, applying its provisions to fiscal year 1995 and all subsequent fiscal years.",
       "heading" : null,
       "identifier" : "17",
       "index" : 17,
       "kind" : "Section"
     }
   ],
+  "summary" : "The Entitlement Control Act of 1994 creates a mechanism to limit the growth of mandatory (direct) spending by establishing annual spending targets and requiring the President and Congress to propose offsets when spending is projected to exceed those targets. If Congress fails to enact sufficient spending reductions, the bill triggers either targeted or comprehensive sequestration — automatic across-the-board cuts to direct spending accounts. The bill also sets baseline calculation rules, exemptions, judicial review procedures, and coordinates with existing deficit-control laws.",
   "versionId" : "415327"
 }

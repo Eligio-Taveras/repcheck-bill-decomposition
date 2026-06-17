@@ -3,7 +3,7 @@
   "format" : "PDF",
   "groups" : [
     {
-      "conceptLabel" : "Legislative Reference",
+      "conceptLabel" : "Federal Building Renaming",
       "groupId" : "g0",
       "sectionIndices" : [
         0
@@ -17,11 +17,13 @@
   "sections" : [
     {
       "charLength" : 431,
+      "description" : "Records the legislative history and approval date of the bill renaming a federal building in honor of John D. Dingell, Jr.",
       "heading" : null,
       "identifier" : null,
       "index" : 0,
       "kind" : "Fallback"
     }
   ],
+  "summary" : "This bill renames a federal building in honor of John D. Dingell, Jr. It consists of a single provision recording the legislative history and approval date of this renaming action.",
   "versionId" : "237650"
 }

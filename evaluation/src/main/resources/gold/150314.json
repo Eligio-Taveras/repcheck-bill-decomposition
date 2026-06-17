@@ -3,7 +3,7 @@
   "format" : "Formatted Text",
   "groups" : [
     {
-      "conceptLabel" : "Bill Title and Purpose",
+      "conceptLabel" : "Bill Identity & Purpose",
       "groupId" : "g0",
       "sectionIndices" : [
         0,
@@ -15,34 +15,33 @@
       ]
     },
     {
-      "conceptLabel" : "IFA Governance and Structure",
+      "conceptLabel" : "IFA Governance & Structure",
       "groupId" : "g1",
       "sectionIndices" : [
         4,
         5,
         6,
         7,
-        8,
+        8
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "IFA Staff & Offices",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        9,
+        10,
         11
       ],
       "taxonomyNodeIds" : [
       ]
     },
     {
-      "conceptLabel" : "Technical Assistance and Oversight",
-      "groupId" : "g2",
-      "sectionIndices" : [
-        9,
-        10
-      ],
-      "taxonomyNodeIds" : [
-      ]
-    },
-    {
-      "conceptLabel" : "Loan Eligibility and Terms",
+      "conceptLabel" : "Loan Eligibility & Terms",
       "groupId" : "g3",
       "sectionIndices" : [
-        12,
         13,
         14
       ],
@@ -50,23 +49,48 @@
       ]
     },
     {
-      "conceptLabel" : "Project Delivery and Compliance",
+      "conceptLabel" : "Project Delivery & Compliance",
       "groupId" : "g4",
       "sectionIndices" : [
         15,
         16,
-        17,
         18
       ],
       "taxonomyNodeIds" : [
       ]
     },
     {
-      "conceptLabel" : "IFA Funding and Self-Sufficiency",
+      "conceptLabel" : "Oversight & Reporting",
       "groupId" : "g5",
       "sectionIndices" : [
+        17
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "State Law Interaction",
+      "groupId" : "g6",
+      "sectionIndices" : [
+        12
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Fees & Self-Sustainability",
+      "groupId" : "g7",
+      "sectionIndices" : [
         19,
-        20,
+        20
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Appropriations & Funding Rules",
+      "groupId" : "g8",
+      "sectionIndices" : [
         21,
         22,
         23
@@ -75,8 +99,8 @@
       ]
     },
     {
-      "conceptLabel" : "Tax-Exempt Bond Financing",
-      "groupId" : "g6",
+      "conceptLabel" : "Tax-Exempt Bond Cap",
+      "groupId" : "g9",
       "sectionIndices" : [
         24
       ],
@@ -84,8 +108,8 @@
       ]
     },
     {
-      "conceptLabel" : "Budgetary Effects",
-      "groupId" : "g7",
+      "conceptLabel" : "PAYGO Compliance",
+      "groupId" : "g10",
       "sectionIndices" : [
         25
       ],
@@ -98,6 +122,7 @@
   "sections" : [
     {
       "charLength" : 1099,
+      "description" : "This is the introductory header identifying the bill as S. 1168 of the 115th Congress, introduced in the Senate to establish an Infrastructure Financing Authority.",
       "heading" : null,
       "identifier" : null,
       "index" : 0,
@@ -105,6 +130,7 @@
     },
     {
       "charLength" : 1487,
+      "description" : "This section gives the bill its short title, the 'BRIDGE Act,' and lists the table of contents for all sections and titles within the bill.",
       "heading" : null,
       "identifier" : "1",
       "index" : 1,
@@ -112,6 +138,7 @@
     },
     {
       "charLength" : 613,
+      "description" : "This section states that the bill's purpose is to create a self-sustaining, merit-based institution that leverages private investment to finance economically viable, regionally or nationally significant infrastructure projects while limiting ongoing federal funding needs.",
       "heading" : null,
       "identifier" : "2",
       "index" : 2,
@@ -119,6 +146,7 @@
     },
     {
       "charLength" : 5821,
+      "description" : "This section defines key terms used throughout the bill, including 'blind trust,' 'eligible entity,' 'eligible infrastructure project,' and other relevant concepts.",
       "heading" : null,
       "identifier" : "3",
       "index" : 3,
@@ -126,6 +154,7 @@
     },
     {
       "charLength" : 1215,
+      "description" : "This section formally establishes the Infrastructure Financing Authority (IFA) as a wholly owned government corporation authorized to provide direct loans and loan guarantees for eligible infrastructure projects.",
       "heading" : null,
       "identifier" : "101",
       "index" : 4,
@@ -133,6 +162,7 @@
     },
     {
       "charLength" : 5550,
+      "description" : "This section establishes the structure of IFA's seven-member Board of Directors, including appointment procedures, political balance requirements, qualifications, terms of service, and geographic diversity considerations.",
       "heading" : null,
       "identifier" : "102",
       "index" : 5,
@@ -140,6 +170,7 @@
     },
     {
       "charLength" : 3065,
+      "description" : "This section establishes the role, appointment process, qualifications, responsibilities, and conflict-of-interest requirements for IFA's presidentially appointed Chief Executive Officer.",
       "heading" : null,
       "identifier" : "103",
       "index" : 6,
@@ -147,6 +178,7 @@
     },
     {
       "charLength" : 5982,
+      "description" : "This section outlines the powers and duties of the Board of Directors, including approving bylaws, overseeing management, establishing subcommittees, and setting compensation for IFA personnel.",
       "heading" : null,
       "identifier" : "104",
       "index" : 7,
@@ -154,6 +186,7 @@
     },
     {
       "charLength" : 2596,
+      "description" : "This section establishes the structure and roles of IFA's senior management team, including appointment, removal, reporting responsibilities, and conflict-of-interest requirements.",
       "heading" : null,
       "identifier" : "105",
       "index" : 8,
@@ -161,6 +194,7 @@
     },
     {
       "charLength" : 3308,
+      "description" : "This section creates the Office of Technical and Rural Assistance within IFA to provide technical help to state and local governments and public-private partnerships in developing and financing infrastructure projects, including through regional infrastructure accelerator programs.",
       "heading" : null,
       "identifier" : "106",
       "index" : 9,
@@ -168,6 +202,7 @@
     },
     {
       "charLength" : 5724,
+      "description" : "This section establishes a Special Inspector General for IFA to conduct audits and investigations of IFA's business activities, initially using the Treasury Department's Inspector General for the first five years.",
       "heading" : null,
       "identifier" : "107",
       "index" : 10,
@@ -175,6 +210,7 @@
     },
     {
       "charLength" : 761,
+      "description" : "This section authorizes the Chief Executive Officer to hire and manage non-senior IFA staff, with guidance from the Secretary of Transportation on identifying appropriate infrastructure finance expertise.",
       "heading" : null,
       "identifier" : "108",
       "index" : 11,
@@ -182,6 +218,7 @@
     },
     {
       "charLength" : 265,
+      "description" : "This section clarifies that IFA assistance does not override applicable state laws or regulations governing eligible infrastructure projects.",
       "heading" : null,
       "identifier" : "109",
       "index" : 12,
@@ -189,6 +226,7 @@
     },
     {
       "charLength" : 6139,
+      "description" : "This section sets the eligibility criteria for IFA financial assistance, requiring projects to demonstrate public benefit, a sufficient revenue stream, and minimum contributed capital of 10 percent for public-private partnerships.",
       "heading" : null,
       "identifier" : "201",
       "index" : 13,
@@ -196,6 +234,7 @@
     },
     {
       "charLength" : 7080,
+      "description" : "This section specifies the terms and conditions for IFA direct loans and loan guarantees, including interest rates, repayment sources, maturity limits of 35 years post-completion, credit fees, and risk assessment requirements.",
       "heading" : null,
       "identifier" : "202",
       "index" : 14,
@@ -203,6 +242,7 @@
     },
     {
       "charLength" : 1669,
+      "description" : "Establishes a Project Delivery Task Force within IFA to coordinate and accelerate permitting timelines and concurrent agency reviews for approved infrastructure projects.",
       "heading" : null,
       "identifier" : "203",
       "index" : 15,
@@ -210,6 +250,7 @@
     },
     {
       "charLength" : 1417,
+      "description" : "Requires entities receiving IFA assistance to sign a credit agreement pledging compliance with IFA policies and all applicable federal laws, and authorizes IFA to cancel loans or accelerate repayment if an entity falls materially out of compliance.",
       "heading" : null,
       "identifier" : "204",
       "index" : 16,
@@ -217,6 +258,7 @@
     },
     {
       "charLength" : 2915,
+      "description" : "Requires IFA to maintain GAAP-compliant books subject to annual independent audit, mandates annual reports to the President and Congress on IFA operations and portfolio risks, and directs a GAO evaluation within five years assessing project impacts and the advisability of consolidating existing federal loan programs into IFA.",
       "heading" : null,
       "identifier" : "205",
       "index" : 17,
@@ -224,6 +266,7 @@
     },
     {
       "charLength" : 315,
+      "description" : "Clarifies that nothing in the Act relieves eligible entities of their obligation to comply with all other applicable federal and state laws governing their infrastructure projects.",
       "heading" : null,
       "identifier" : "206",
       "index" : 18,
@@ -231,6 +274,7 @@
     },
     {
       "charLength" : 686,
+      "description" : "Directs the IFA Chief Executive Officer to set fees on loans and loan guarantees sufficient to cover federal administrative costs, structured as application fees, transaction fees, or interest rate adjustments calibrated to loan risk and market conditions.",
       "heading" : null,
       "identifier" : "301",
       "index" : 19,
@@ -238,6 +282,7 @@
     },
     {
       "charLength" : 301,
+      "description" : "Instructs the IFA Chief Executive Officer to work toward making IFA financially self-sustaining by covering both administrative and credit subsidy costs through fees and risk premiums rather than appropriated funds.",
       "heading" : null,
       "identifier" : "302",
       "index" : 20,
@@ -245,6 +290,7 @@
     },
     {
       "charLength" : 822,
+      "description" : "Authorizes $10 billion in appropriations for IFA direct loans and loan guarantees, caps administrative spending at $25 million per year for fiscal years 2016–2017 and $50 million for fiscal year 2018, requires funds to be held in interest-bearing accounts, and reserves at least 5 percent of available funds for rural infrastructure projects.",
       "heading" : null,
       "identifier" : "303",
       "index" : 21,
@@ -252,6 +298,7 @@
     },
     {
       "charLength" : 285,
+      "description" : "Provides that once the IFA Board approves a federal credit instrument using appropriated funds, that approval creates a binding contractual obligation on the United States to fund the investment.",
       "heading" : null,
       "identifier" : "304",
       "index" : 22,
@@ -259,6 +306,7 @@
     },
     {
       "charLength" : 161,
+      "description" : "Prohibits IFA from issuing debt in its own name.",
       "heading" : null,
       "identifier" : "305",
       "index" : 23,
@@ -266,6 +314,7 @@
     },
     {
       "charLength" : 242,
+      "description" : "Raises the national cap on tax-exempt bond financing for qualified facilities from $15 billion to $16 billion by amending Section 142(m)(2)(A) of the Internal Revenue Code.",
       "heading" : null,
       "identifier" : "401",
       "index" : 24,
@@ -273,11 +322,13 @@
     },
     {
       "charLength" : 442,
+      "description" : "Specifies that the Act's budgetary effects for PAYGO compliance purposes shall be determined by the Senate Budget Committee Chairman's official PAYGO cost statement, provided it is submitted to the Congressional Record before the vote on passage.",
       "heading" : null,
       "identifier" : "501",
       "index" : 25,
       "kind" : "Section"
     }
   ],
+  "summary" : "The BRIDGE Act establishes the Infrastructure Financing Authority (IFA), a wholly owned government corporation empowered to provide direct loans and loan guarantees for economically significant infrastructure projects. IFA is designed to be self-sustaining over time by charging fees and risk premiums to cover its costs, while an initial $10 billion appropriation seeds its lending capacity. The bill also creates supporting structures such as a technical assistance office, a project delivery task force, and oversight mechanisms to ensure accountability.",
   "versionId" : "150314"
 }

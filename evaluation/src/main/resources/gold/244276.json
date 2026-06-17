@@ -1,0 +1,2424 @@
+{
+  "billType": "hr",
+  "format": "Formatted Text",
+  "groups": [
+    {
+      "conceptLabel": "Bill Introduction & Findings",
+      "groupId": "g0",
+      "sectionIndices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Health Data Collection",
+      "groupId": "g1",
+      "sectionIndices": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Drug Safety by Race",
+      "groupId": "g2",
+      "sectionIndices": [
+        19,
+        20
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Immigration Reporting Clarification",
+      "groupId": "g3",
+      "sectionIndices": [
+        14,
+        23
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Culturally Appropriate Care Standards",
+      "groupId": "g4",
+      "sectionIndices": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        36,
+        37,
+        207,
+        210
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Language Access Services",
+      "groupId": "g5",
+      "sectionIndices": [
+        32,
+        33,
+        34,
+        35,
+        38,
+        39,
+        40
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Health Workforce Diversity",
+      "groupId": "g6",
+      "sectionIndices": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Health Empowerment Zones",
+      "groupId": "g7",
+      "sectionIndices": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Minority Health Facilities & Territories",
+      "groupId": "g8",
+      "sectionIndices": [
+        75,
+        76,
+        77,
+        78
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Coverage & Eligibility for Immigrants",
+      "groupId": "g9",
+      "sectionIndices": [
+        79,
+        84,
+        105
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Uninsured Demographics Study",
+      "groupId": "g10",
+      "sectionIndices": [
+        80
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Medicaid & Medicare for Territories",
+      "groupId": "g11",
+      "sectionIndices": [
+        81,
+        82,
+        85,
+        86,
+        142,
+        143
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "US-Mexico Border Health",
+      "groupId": "g12",
+      "sectionIndices": [
+        83
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Community Health Disparities Grants",
+      "groupId": "g13",
+      "sectionIndices": [
+        87
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Rural Health Programs",
+      "groupId": "g14",
+      "sectionIndices": [
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Medicaid & Medicare Policy Fixes",
+      "groupId": "g15",
+      "sectionIndices": [
+        96,
+        97,
+        98,
+        101
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Veterans Minority Health",
+      "groupId": "g16",
+      "sectionIndices": [
+        99
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Indian & Native Hawaiian Health",
+      "groupId": "g17",
+      "sectionIndices": [
+        100,
+        102,
+        103
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Community Health Workers",
+      "groupId": "g18",
+      "sectionIndices": [
+        104
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Drug Felony Benefits Repeal",
+      "groupId": "g19",
+      "sectionIndices": [
+        106
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Birth Defects Prevention",
+      "groupId": "g20",
+      "sectionIndices": [
+        107
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Maternal Mortality Review",
+      "groupId": "g21",
+      "sectionIndices": [
+        108,
+        109
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Maternal Health Disparities",
+      "groupId": "g22",
+      "sectionIndices": [
+        110,
+        111
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Infant Death Prevention",
+      "groupId": "g23",
+      "sectionIndices": [
+        112
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Teen Pregnancy Prevention",
+      "groupId": "g24",
+      "sectionIndices": [
+        113
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Gestational Diabetes",
+      "groupId": "g25",
+      "sectionIndices": [
+        114
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Emergency & Reproductive Contraception",
+      "groupId": "g26",
+      "sectionIndices": [
+        115,
+        116,
+        117,
+        118,
+        119
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Optimal Maternity Care",
+      "groupId": "g27",
+      "sectionIndices": [
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Mental & Behavioral Health Coverage",
+      "groupId": "g28",
+      "sectionIndices": [
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Lung Cancer Programs",
+      "groupId": "g29",
+      "sectionIndices": [
+        138,
+        139,
+        140
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Prostate Cancer Disparities",
+      "groupId": "g30",
+      "sectionIndices": [
+        141
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Cancer Screening & Quality",
+      "groupId": "g31",
+      "sectionIndices": [
+        144,
+        145,
+        148
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Bone Marrow Disease Registry",
+      "groupId": "g32",
+      "sectionIndices": [
+        146,
+        147
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Chronic Disease Screening Guidelines",
+      "groupId": "g33",
+      "sectionIndices": [
+        149,
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "HIV/AIDS Policy & Findings",
+      "groupId": "g34",
+      "sectionIndices": [
+        155,
+        156,
+        170,
+        180
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "HIV/AIDS Funding & Treatment",
+      "groupId": "g35",
+      "sectionIndices": [
+        157,
+        162,
+        163,
+        164,
+        165,
+        177,
+        178
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "HIV/AIDS Surveillance & Data",
+      "groupId": "g36",
+      "sectionIndices": [
+        158,
+        176
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "HIV Care Linkage & Research",
+      "groupId": "g37",
+      "sectionIndices": [
+        159,
+        160
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "HIV Minority Outreach & Prevention",
+      "groupId": "g38",
+      "sectionIndices": [
+        161,
+        166,
+        167,
+        168
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "HIV Legal & Criminal Justice",
+      "groupId": "g39",
+      "sectionIndices": [
+        171,
+        172,
+        173
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "HIV Incarceration & Reentry",
+      "groupId": "g40",
+      "sectionIndices": [
+        174,
+        175
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "HIV Abstinence Education Repeal",
+      "groupId": "g41",
+      "sectionIndices": [
+        169
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "HIV Integrated Care Demonstration",
+      "groupId": "g42",
+      "sectionIndices": [
+        179
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Diabetes in Minority Populations",
+      "groupId": "g43",
+      "sectionIndices": [
+        181,
+        182,
+        183,
+        184,
+        185,
+        186
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Health Disparities Overview Report",
+      "groupId": "g44",
+      "sectionIndices": [
+        187
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Asthma Programs",
+      "groupId": "g45",
+      "sectionIndices": [
+        188,
+        189,
+        190
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Influenza Vaccination Outreach",
+      "groupId": "g46",
+      "sectionIndices": [
+        191
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "COPD Programs",
+      "groupId": "g47",
+      "sectionIndices": [
+        192
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Arthritis & Musculoskeletal Diseases",
+      "groupId": "g48",
+      "sectionIndices": [
+        193,
+        194
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Sleep Disorder Disparities",
+      "groupId": "g49",
+      "sectionIndices": [
+        195,
+        196,
+        197
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Electronic Health Records",
+      "groupId": "g50",
+      "sectionIndices": [
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        208,
+        209
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Anti-Discrimination in Health",
+      "groupId": "g51",
+      "sectionIndices": [
+        211
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "HHS Civil Rights Accountability",
+      "groupId": "g52",
+      "sectionIndices": [
+        212,
+        213,
+        214,
+        215,
+        216,
+        217
+      ],
+      "taxonomyNodeIds": []
+    },
+    {
+      "conceptLabel": "Social Determinants of Health",
+      "groupId": "g53",
+      "sectionIndices": [
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225
+      ],
+      "taxonomyNodeIds": []
+    }
+  ],
+  "labelStatus": "llm-judged",
+  "parserUsed": "GpoText",
+  "sections": [
+    {
+      "charLength": 2168,
+      "description": "Introduces H.R. 5294, the Health Equity and Accountability Act of 2014, a bill aimed at improving health outcomes for minority individuals by addressing data collection, culturally appropriate care, and workforce diversity.",
+      "heading": null,
+      "identifier": null,
+      "index": 0,
+      "kind": "Fallback"
+    },
+    {
+      "charLength": 102,
+      "description": "Names the Act the 'Health Equity and Accountability Act of 2014.'",
+      "heading": null,
+      "identifier": "1",
+      "index": 1,
+      "kind": "Section"
+    },
+    {
+      "charLength": 14757,
+      "description": "Lists all sections and titles of the Act in a table of contents.",
+      "heading": null,
+      "identifier": "2",
+      "index": 2,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2982,
+      "description": "States Congress's findings on the causes and scope of racial and ethnic health disparities and the need for targeted action to address them.",
+      "heading": null,
+      "identifier": "3",
+      "index": 3,
+      "kind": "Section"
+    },
+    {
+      "charLength": 593,
+      "description": "Amends the Public Health Service Act to promote data collection and reporting by race, ethnicity, sex, language, sexual orientation, disability, gender identity, and socioeconomic status across federally supported health programs.",
+      "heading": null,
+      "identifier": "101",
+      "index": 4,
+      "kind": "Section"
+    },
+    {
+      "charLength": 10252,
+      "description": "Requires all HHS-funded health programs to collect, analyze, and report demographic health data—including race, ethnicity, language, and sexual orientation—to identify and address health disparities.",
+      "heading": null,
+      "identifier": "3431",
+      "index": 5,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4388,
+      "description": "Directs the Secretary to establish epidemiology centers in each Native American service area to collect health data, assist tribes in setting health priorities, and conduct disease surveillance for Indian communities.",
+      "heading": null,
+      "identifier": "3432",
+      "index": 6,
+      "kind": "Section"
+    },
+    {
+      "charLength": 264,
+      "description": "Removes the requirement that direct appropriations be in place before HHS can carry out health data collection and analysis activities under existing law.",
+      "heading": null,
+      "identifier": "102",
+      "index": 7,
+      "kind": "Section"
+    },
+    {
+      "charLength": 207,
+      "description": "Amends the Social Security Act to add a new provision requiring the Social Security Administration to collect race and ethnicity data from applicants and beneficiaries.",
+      "heading": null,
+      "identifier": "103",
+      "index": 8,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3671,
+      "description": "Requires the Social Security Administration to collect, analyze, and report race, ethnicity, primary language, and disability data for applicants and beneficiaries, while protecting their privacy and ensuring assistance is not denied for failure to provide such data.",
+      "heading": null,
+      "identifier": "1150C",
+      "index": 9,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1285,
+      "description": "Directs HHS to revise HIPAA claims regulations within one year to require standardized collection of race, ethnicity, language, disability, and sex data in health transactions, and to mandate health entities' compliance within two years.",
+      "heading": null,
+      "identifier": "104",
+      "index": 10,
+      "kind": "Section"
+    },
+    {
+      "charLength": 357,
+      "description": "Updates expiration dates in the National Center for Health Statistics authorization from earlier years to 2020 to extend the center's data collection activities.",
+      "heading": null,
+      "identifier": "105",
+      "index": 11,
+      "kind": "Section"
+    },
+    {
+      "charLength": 280,
+      "description": "Amends the Public Health Service Act to add a new section establishing a national strategy for oversampling Asian-Americans, Native Hawaiians, Pacific Islanders, and other underrepresented groups in federal health surveys.",
+      "heading": null,
+      "identifier": "106",
+      "index": 12,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1729,
+      "description": "Directs HHS to develop and implement a national oversampling strategy for underrepresented populations in federal health surveys, consult with community groups, report progress to Congress within two years, and authorizes appropriations through 2020.",
+      "heading": null,
+      "identifier": "317U",
+      "index": 13,
+      "kind": "Section"
+    },
+    {
+      "charLength": 486,
+      "description": "Requires the Substance Abuse and Mental Health Services Administration to study geographic shortages of mental health providers and assess their readiness to deliver culturally and linguistically appropriate services, then report findings to Congress.",
+      "heading": null,
+      "identifier": "107",
+      "index": 14,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1038,
+      "description": "Requires all federal departments and agencies that collect racial, ethnic, or primary language data to submit that data annually to the Secretary of Health and Human Services, who must then analyze it, make it publicly available, and report findings to Congress each year.",
+      "heading": null,
+      "identifier": "108",
+      "index": 15,
+      "kind": "Section"
+    },
+    {
+      "charLength": 805,
+      "description": "Authorizes the Secretary of Health and Human Services to award grants to minority-serving institutions with accredited public health programs to access and analyze racial and ethnic health disparity data in order to monitor and report on progress toward reducing health disparities.",
+      "heading": null,
+      "identifier": "109",
+      "index": 16,
+      "kind": "Section"
+    },
+    {
+      "charLength": 529,
+      "description": "Amends the Public Health Service Act to add sexual orientation and gender identity as categories for which the federal government must develop standards when collecting health data.",
+      "heading": null,
+      "identifier": "110",
+      "index": 17,
+      "kind": "Section"
+    },
+    {
+      "charLength": 479,
+      "description": "Amends the Public Health Service Act to add socioeconomic status as a category for which the federal government must develop standards when collecting health data.",
+      "heading": null,
+      "identifier": "111",
+      "index": 18,
+      "kind": "Section"
+    },
+    {
+      "charLength": 242,
+      "description": "Amends the Federal Food, Drug, and Cosmetic Act by adding a new section addressing the safety and effectiveness of drugs with respect to patients' racial and ethnic backgrounds.",
+      "heading": null,
+      "identifier": "112",
+      "index": 19,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4398,
+      "description": "Requires drug manufacturers to investigate and disclose racial or ethnic disparities in a drug's safety or effectiveness both before approval and after market authorization, including updating drug labeling when such disparities are confirmed.",
+      "heading": null,
+      "identifier": "505F",
+      "index": 20,
+      "kind": "Section"
+    },
+    {
+      "charLength": 236,
+      "description": "Amends the Public Health Service Act to add a new section specifically addressing the collection and improvement of health data for Native Hawaiian and Other Pacific Islander populations.",
+      "heading": null,
+      "identifier": "113",
+      "index": 21,
+      "kind": "Section"
+    },
+    {
+      "charLength": 6060,
+      "description": "Directs the Secretary of Health and Human Services to develop and implement a national strategy for identifying and evaluating the health status and health care needs of Native Hawaiian and Other Pacific Islander populations, including through consultation with community groups and government representatives.",
+      "heading": null,
+      "identifier": "317V",
+      "index": 22,
+      "kind": "Section"
+    },
+    {
+      "charLength": 641,
+      "description": "Clarifies that agencies subject to a reporting requirement under immigration law can satisfy that requirement by submitting a single report showing the aggregate number of exceptions granted each year, rather than reporting on each individual case.",
+      "heading": null,
+      "identifier": "114",
+      "index": 23,
+      "kind": "Section"
+    },
+    {
+      "charLength": 151,
+      "description": "States that the definitions established in the new Section 3400 of the Public Health Service Act apply throughout Title II of this bill.",
+      "heading": null,
+      "identifier": "201",
+      "index": 24,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2778,
+      "description": "Amends the Public Health Service Act to add a new title addressing culturally and linguistically appropriate health care, supported by congressional findings about the importance of language access and cultural competence in health care delivery.",
+      "heading": null,
+      "identifier": "202",
+      "index": 25,
+      "kind": "Section"
+    },
+    {
+      "charLength": 9409,
+      "description": "Establishes definitions for key terms used in the new title of the Public Health Service Act, including bilingual, community health worker, competent interpreter services, competent translation services, and cultural competence.",
+      "heading": null,
+      "identifier": "3400",
+      "index": 26,
+      "kind": "Section"
+    },
+    {
+      "charLength": 7222,
+      "description": "Requires each federal agency that conducts health-related activities to develop and implement a plan ensuring that limited-English-proficient individuals have meaningful, culturally competent access to federally conducted and federally assisted health care programs and activities.",
+      "heading": null,
+      "identifier": "3401",
+      "index": 27,
+      "kind": "Section"
+    },
+    {
+      "charLength": 5446,
+      "description": "Establishes national standards requiring health programs receiving federal financial assistance to provide culturally and linguistically appropriate services, including free interpreter services, diverse workforce recruitment, staff training, and patient notification of language rights.",
+      "heading": null,
+      "identifier": "3402",
+      "index": 28,
+      "kind": "Section"
+    },
+    {
+      "charLength": 7379,
+      "description": "Directs the Secretary of Health and Human Services to establish the Robert T. Matsui Center for Cultural and Linguistic Competence in Health Care to provide interpreter and translation services, a toll-free multilingual helpline, and a health information clearinghouse for limited-English-proficient individuals and health care providers.",
+      "heading": null,
+      "identifier": "3403",
+      "index": 29,
+      "kind": "Section"
+    },
+    {
+      "charLength": 5698,
+      "description": "Authorizes the Agency for Healthcare Research and Quality to award grants to a wide range of eligible entities to design, implement, and evaluate programs that improve cultural competence and language access in health care for limited-English-proficient individuals.",
+      "heading": null,
+      "identifier": "3404",
+      "index": 30,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2154,
+      "description": "Directs the Agency for Healthcare Research and Quality to expand research on language access in health care, covering topics such as barriers faced by LEP individuals, best practices for data collection, and effective models for telephonic interpretation.",
+      "heading": null,
+      "identifier": "3405",
+      "index": 31,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4826,
+      "description": "Authorizes the Secretary to award grants to three states to design, implement, and evaluate statewide on-site medical interpreter service programs under Medicaid, with preference given to states with large, diverse, or fast-growing LEP populations.",
+      "heading": null,
+      "identifier": "203",
+      "index": 32,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1252,
+      "description": "Amends Medicare law to require that time spent by medical residents and interns in cultural competency and linguistically appropriate service training be counted toward their full-time equivalency calculation for graduate medical education payment purposes.",
+      "heading": null,
+      "identifier": "204",
+      "index": 33,
+      "kind": "Section"
+    },
+    {
+      "charLength": 27463,
+      "description": "Establishes a demonstration grant program through the Centers for Medicare and Medicaid Services to fund eligible Medicare providers serving underserved communities in improving communication with limited-English-proficient beneficiaries.",
+      "heading": null,
+      "identifier": "205",
+      "index": 34,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2741,
+      "description": "Directs the Agency for Healthcare Research and Quality and the Health Resources and Services Administration to award grants to health entities for research and demonstration projects aimed at improving health care for patients with low health literacy.",
+      "heading": null,
+      "identifier": "206",
+      "index": 35,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3239,
+      "description": "Requires any health program or activity receiving federal financial assistance to provide free, competent language services to LEP patients, notify them of that right, and train staff accordingly, while setting specific conditions under which a patient may use an untrained personal interpreter.",
+      "heading": null,
+      "identifier": "207",
+      "index": 36,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1439,
+      "description": "Requires the Secretary of Health and Human Services to contract annually with the Institute of Medicine for a report evaluating federal efforts to provide culturally and linguistically appropriate health care services to limited-English-proficient individuals.",
+      "heading": null,
+      "identifier": "208",
+      "index": 37,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3383,
+      "description": "Authorizes the Secretary of Education to provide grants to states and community organizations serving minority populations for English as a second language instruction that incorporates health care system navigation skills.",
+      "heading": null,
+      "identifier": "209",
+      "index": 38,
+      "kind": "Section"
+    },
+    {
+      "charLength": 800,
+      "description": "Waives state sovereign immunity from federal suits for failure to provide required language access services and clarifies that the title does not reduce existing civil rights obligations under Title VI of the Civil Rights Act.",
+      "heading": null,
+      "identifier": "210",
+      "index": 39,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3747,
+      "description": "Adds language access services—including oral interpretation and written translation—as an essential health benefit, requires employer-sponsored plans to cover such services, and strengthens reporting and regulatory standards for language access across health plans.",
+      "heading": null,
+      "identifier": "211",
+      "index": 40,
+      "kind": "Section"
+    },
+    {
+      "charLength": 227,
+      "description": "Amends the Public Health Service Act to add a new subtitle focused on diversifying the health care workforce.",
+      "heading": null,
+      "identifier": "301",
+      "index": 41,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3706,
+      "description": "Authorizes a grant for establishing a national working group on health workforce diversity that will convene regularly to review initiatives, identify best practices, and develop a national strategic plan for increasing minority representation in health professions.",
+      "heading": null,
+      "identifier": "3411",
+      "index": 42,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1906,
+      "description": "Directs the Office of Minority Health to establish a technical clearinghouse providing information, statistics, model programs, scholarship resources, and best practices related to health workforce diversity.",
+      "heading": null,
+      "identifier": "3412",
+      "index": 43,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3511,
+      "description": "Authorizes grants to minority-serving educational institutions and health professional associations committed to health workforce diversity for expanding, implementing, or evaluating programs that recruit, train, and retain underrepresented minority health professionals.",
+      "heading": null,
+      "identifier": "3413",
+      "index": 44,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2459,
+      "description": "Directs HHS agencies to award grants expanding career opportunities for scientists and researchers, prioritize funding for health research in underserved communities, collect data on minority funding applicants, and establish student loan reimbursement and cancellation programs for researchers focused on racial and ethnic health disparities.",
+      "heading": null,
+      "identifier": "3414",
+      "index": 45,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2477,
+      "description": "Establishes a grant program to support career development for non-research health and wellness professionals, including students, graduates, and faculty, with funds usable for activities serving underserved communities, career advancement, student loan repayment, and leadership training to reduce health disparities.",
+      "heading": null,
+      "identifier": "3415",
+      "index": 46,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1830,
+      "description": "Directs the Agency for Healthcare Research and Quality to award grants to research entities to study how diversity in the health workforce affects care quality, patient outcomes, cultural competence, and related factors.",
+      "heading": null,
+      "identifier": "3416",
+      "index": 47,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2776,
+      "description": "Requires HHS to establish a national education and outreach program to inform health care professionals and the public about racial and ethnic health care disparities, disseminate research findings, and promote data collection on health disparities.",
+      "heading": null,
+      "identifier": "3417",
+      "index": 48,
+      "kind": "Section"
+    },
+    {
+      "charLength": 181,
+      "description": "Amends title VII of the Public Health Service Act to add a new provision establishing a grant program for Hispanic-serving health professions schools.",
+      "heading": null,
+      "identifier": "302",
+      "index": 49,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1160,
+      "description": "Authorizes grants to qualifying Hispanic-serving health professions schools to recruit Hispanic students to enroll in and graduate from those schools, including through scholarships and financial assistance.",
+      "heading": null,
+      "identifier": "742",
+      "index": 50,
+      "kind": "Section"
+    },
+    {
+      "charLength": 387,
+      "description": "Increases the authorized funding for the CDC's loan repayment program by adding $750,000 for fiscal year 2015 and such sums as necessary for fiscal years 2016 through 2020.",
+      "heading": null,
+      "identifier": "303",
+      "index": 51,
+      "kind": "Section"
+    },
+    {
+      "charLength": 280,
+      "description": "Amends the Public Health Service Act to add a new provision authorizing cooperative agreements for online degree programs at schools of public health and allied health.",
+      "heading": null,
+      "identifier": "304",
+      "index": 52,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1445,
+      "description": "Directs HHS to award cooperative agreements to schools of public health and allied health to create online degree programs that prioritize enrollment and completion of underrepresented minority and disadvantaged students.",
+      "heading": null,
+      "identifier": "743",
+      "index": 53,
+      "kind": "Section"
+    },
+    {
+      "charLength": 639,
+      "description": "Expresses Congress's view that the National Health Care Workforce Commission should pay attention to the needs of racial and ethnic minorities, low-income individuals, people with disabilities, and LGBT populations when carrying out its duties.",
+      "heading": null,
+      "identifier": "305",
+      "index": 54,
+      "kind": "Section"
+    },
+    {
+      "charLength": 200,
+      "description": "Further amends the Public Health Service Act subtitle established in section 301 to add new scholarship and fellowship program provisions following section 3417.",
+      "heading": null,
+      "identifier": "306",
+      "index": 55,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2926,
+      "description": "Establishes the David Satcher Public Health and Health Services Corps grant program to fund internships that raise awareness among post-primary and post-secondary students, especially minorities, about non-research health career opportunities.",
+      "heading": null,
+      "identifier": "3418",
+      "index": 56,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2165,
+      "description": "Creates the Louis Stokes Public Health Scholars Program to award scholarships of up to $10,000 per year for up to four years to undergraduate students, prioritizing disadvantaged and minority students, pursuing careers in public health.",
+      "heading": null,
+      "identifier": "3419",
+      "index": 57,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2534,
+      "description": "Establishes the Patsy Mink Health and Gender Research Fellowship Program to award fellowships of up to $18,000 per year for up to three years to post-baccalaureate students conducting research on gender and health disparities.",
+      "heading": null,
+      "identifier": "3420",
+      "index": 58,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2403,
+      "description": "Creates the Paul David Wellstone International Health Fellowship Program to award short-term fellowships of up to $4,000 to college seniors or recent graduates to advance their understanding of international health care access and quality issues.",
+      "heading": null,
+      "identifier": "3420A",
+      "index": 59,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2744,
+      "description": "Establishes a grant program named after Edward R. Roybal to expose entering graduate health profession students to non-research health careers such as public health policy, health economics, and administration, with priority given to entities experienced in reducing health disparities.",
+      "heading": null,
+      "identifier": "3420B",
+      "index": 60,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1016,
+      "description": "Amends the McNair Postbaccalaureate Achievement Program to require coordination with HHS to promote health profession careers among participants and sets minimum funding of $31 million per year from 2015 through 2021.",
+      "heading": null,
+      "identifier": "307",
+      "index": 61,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1870,
+      "description": "Changes Medicare rules so that all time spent by interns and residents in approved training programs at qualifying hospitals counts fully toward calculating full-time equivalent residents for both direct and indirect graduate medical education payment purposes, starting October 1, 2014.",
+      "heading": null,
+      "identifier": "308",
+      "index": 62,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2723,
+      "description": "Directs three federal departments to award grants to academic institutions to build evidence-based strategies for improving local health equity, form community partnerships, and strengthen health workforce pipelines and biomedical research infrastructure.",
+      "heading": null,
+      "identifier": "309",
+      "index": 63,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2228,
+      "description": "Creates a federal student loan forgiveness program that cancels remaining loan balances for mental and behavioral health social workers who make 120 qualifying monthly payments while continuously employed in that field.",
+      "heading": null,
+      "identifier": "310",
+      "index": 64,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2541,
+      "description": "Establishes a Health Professions Workforce Fund administered by HRSA and appropriates escalating amounts from roughly $355 million to $552 million annually from 2015 to 2024, split between health professions education programs under Title VII and nursing workforce programs under Title VIII of the Public Health Service Act.",
+      "heading": null,
+      "identifier": "311",
+      "index": 65,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3703,
+      "description": "States congressional findings about a projected shortage of up to 130,600 physicians by 2025 and expresses the sense of Congress that graduate medical education training positions must be expanded to address that shortage, particularly for underserved populations.",
+      "heading": null,
+      "identifier": "312",
+      "index": 66,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4886,
+      "description": "Authorizes grants to help skilled, internationally educated immigrants who are unemployed or underemployed gain the support and credentialing needed to enter the U.S. health workforce and address projected health worker shortages.",
+      "heading": null,
+      "identifier": "313",
+      "index": 67,
+      "kind": "Section"
+    },
+    {
+      "charLength": 97,
+      "description": "Provides the short title of the subtitle as the 'Health Empowerment Zone Act of 2014.'",
+      "heading": null,
+      "identifier": "401",
+      "index": 68,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1884,
+      "description": "States congressional findings that health disparities disproportionately affect racial and ethnic minorities and are driven by social determinants of health, and that community involvement is essential to eliminating those disparities.",
+      "heading": null,
+      "identifier": "402",
+      "index": 69,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4758,
+      "description": "Authorizes the Secretary of HHS to designate eligible areas as Health Empowerment Zones upon request from a qualified community partnership that demonstrates broad stakeholder support and serves communities with disproportionate health disparities.",
+      "heading": null,
+      "identifier": "403",
+      "index": 70,
+      "kind": "Section"
+    },
+    {
+      "charLength": 547,
+      "description": "Requires the Secretary to provide technical assistance, and allows grants, to organizations seeking to form a community partnership, conduct a health assessment, or prepare an application for Health Empowerment Zone designation.",
+      "heading": null,
+      "identifier": "404",
+      "index": 71,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1507,
+      "description": "Grants Health Empowerment Zones priority consideration for competitive federal grants and authorizes the Secretary to award implementation grants to designated zones for up to 10 years, with required progress reports every six months.",
+      "heading": null,
+      "identifier": "405",
+      "index": 72,
+      "kind": "Section"
+    },
+    {
+      "charLength": 413,
+      "description": "Defines 'Secretary' for this subtitle as the Secretary of HHS acting through HRSA, the Deputy Assistant Secretary for Minority Health, the Office of Community Services, and the National Institute for Minority Health and Health Disparities.",
+      "heading": null,
+      "identifier": "406",
+      "index": 73,
+      "kind": "Section"
+    },
+    {
+      "charLength": 232,
+      "description": "Authorizes $100 million in appropriations for fiscal year 2015 to carry out the Health Empowerment Zone subtitle.",
+      "heading": null,
+      "identifier": "407",
+      "index": 74,
+      "kind": "Section"
+    },
+    {
+      "charLength": 353,
+      "description": "Adds a new subtitle D to Title XXXIV of the Public Health Service Act establishing a program for reconstruction and improvement grants for public health care facilities serving Pacific Islanders and insular areas.",
+      "heading": null,
+      "identifier": "411",
+      "index": 75,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3719,
+      "description": "Authorizes the Secretary of HHS to award grants to health entities serving predominantly minority or low-income patients for demonstration projects aimed at improving health care quality and access.",
+      "heading": null,
+      "identifier": "3451",
+      "index": 76,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1276,
+      "description": "Directs the Secretary to designate centers of excellence at public hospitals serving large minority populations, requiring them to provide training, reduce health disparities, and develop cultural competence education programs.",
+      "heading": null,
+      "identifier": "3452",
+      "index": 77,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2679,
+      "description": "Requires the Secretary to provide direct financial assistance to public health facilities and community health centers in U.S. territories and Hawaii to reconstruct and improve health care facilities, and mandates regular reports to Congress on health resources in those areas.",
+      "heading": null,
+      "identifier": "3453",
+      "index": 78,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2002,
+      "description": "Removes citizenship and immigration status restrictions from ACA provisions related to premium tax credits, cost-sharing reductions, the basic health program, and the minimum essential coverage requirement, making these benefits available regardless of immigration status.",
+      "heading": null,
+      "identifier": "412",
+      "index": 79,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1426,
+      "description": "Requires the Secretary of HHS to study and report to Congress on the demographic characteristics of uninsured individuals, broken down by race, ethnicity, and other factors such as immigration status and sexual orientation.",
+      "heading": null,
+      "identifier": "413",
+      "index": 80,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4072,
+      "description": "Eliminates existing federal funding caps on Medicaid for U.S. territories after fiscal year 2015 and phases in parity in the federal medical assistance percentage (FMAP) for those territories beginning in fiscal year 2018.",
+      "heading": null,
+      "identifier": "414",
+      "index": 81,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1134,
+      "description": "Extends the Medicare Secondary Payer coordination period from 12 months to 42 months for items and services furnished on or after January 1, 2015, and applies the extension to individuals already within the coordination period at enactment.",
+      "heading": null,
+      "identifier": "415",
+      "index": 82,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2671,
+      "description": "Authorizes the Secretary of HHS to award grants to eligible entities in the U.S.-Mexico border area to improve the health of border residents by funding programs addressing a wide range of health priorities including maternal health, mental health, and health disparities.",
+      "heading": null,
+      "identifier": "416",
+      "index": 83,
+      "kind": "Section"
+    },
+    {
+      "charLength": 540,
+      "description": "Amends Medicare Parts A and B to allow any individual who is lawfully present in the United States to enroll in Medicare, removing prior restrictions tied to specific immigration categories.",
+      "heading": null,
+      "identifier": "417",
+      "index": 84,
+      "kind": "Section"
+    },
+    {
+      "charLength": 613,
+      "description": "Establishes a 100 percent federal matching rate (FMAP) under Medicaid for medical assistance provided through urban Indian health organizations operating under title V of the Indian Health Care Improvement Act.",
+      "heading": null,
+      "identifier": "418",
+      "index": 85,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1014,
+      "description": "Establishes a 100 percent federal Medicaid matching rate for medical assistance provided to Native Hawaiians through federally qualified health centers or Native Hawaiian health care systems.",
+      "heading": null,
+      "identifier": "419",
+      "index": 86,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4428,
+      "description": "Authorizes the Secretary of HHS to award grants to community coalitions to design, implement, and evaluate culturally appropriate, science-based programs aimed at reducing or eliminating health disparities among racial and ethnic minority populations.",
+      "heading": null,
+      "identifier": "421",
+      "index": 87,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2523,
+      "description": "Expands Medicare reimbursement for critical access hospital ambulance services and gives states a flexible alternative to the 25-inpatient-bed limit by allowing facilities to instead cap total annual inpatient bed days at 7,300.",
+      "heading": null,
+      "identifier": "422",
+      "index": 88,
+      "kind": "Section"
+    },
+    {
+      "charLength": 6586,
+      "description": "Creates a Rural Community Hospital designation under Medicare for small rural hospitals with fewer than 51 acute care beds that provide 24-hour emergency services, and establishes a corresponding payment framework for those facilities.",
+      "heading": null,
+      "identifier": "423",
+      "index": 89,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4727,
+      "description": "Requires the Secretary of Health and Human Services to launch pilot projects within 9 months that pay home health agencies bonuses for using remote monitoring technology to improve Medicare patient health outcomes and reduce program costs.",
+      "heading": null,
+      "identifier": "424",
+      "index": 90,
+      "kind": "Section"
+    },
+    {
+      "charLength": 7323,
+      "description": "Establishes an 11-member Rural Health Quality Advisory Commission to develop a national rural health quality improvement plan, design demonstration projects, and report annually to Congress.",
+      "heading": null,
+      "identifier": "425",
+      "index": 91,
+      "kind": "Section"
+    },
+    {
+      "charLength": 134,
+      "description": "Amends Section 330A of the Public Health Service Act by replacing its existing text with a new version governing rural health care services grant programs.",
+      "heading": null,
+      "identifier": "426",
+      "index": 92,
+      "kind": "Section"
+    },
+    {
+      "charLength": 13183,
+      "description": "Creates four federal grant programs for rural health care: outreach services, integrated network development, Delta Region health disparity reduction, and small rural provider quality improvement.",
+      "heading": null,
+      "identifier": "330A",
+      "index": 93,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1680,
+      "description": "Allows community health centers to contract with rural health clinics to serve patients who would otherwise qualify for free or reduced-cost community health center care, provided the clinics adopt nondiscrimination and sliding-fee-scale policies.",
+      "heading": null,
+      "identifier": "427",
+      "index": 94,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1126,
+      "description": "Directs the Secretary of Health and Human Services to work with states and health care stakeholders to make it easier for physicians and practitioners to provide Medicare-covered telehealth services across state lines.",
+      "heading": null,
+      "identifier": "428",
+      "index": 95,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2015,
+      "description": "Requires the Congressional Budget Office Director, upon request from budget committee leaders, to estimate long-term federal savings from preventive health measures extending across two future 10-year budget windows.",
+      "heading": null,
+      "identifier": "429",
+      "index": 96,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1287,
+      "description": "Expresses Congress's view that Medicaid and CHIP eligibility maintenance-of-effort requirements enacted in the Affordable Care Act must be strictly enforced to protect vulnerable populations until health insurance exchanges are fully operational.",
+      "heading": null,
+      "identifier": "430",
+      "index": 97,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1428,
+      "description": "Repeals the Deficit Reduction Act requirement that Medicaid applicants provide documentary proof of U.S. citizenship or nationality and makes conforming technical corrections to related statutes.",
+      "heading": null,
+      "identifier": "431",
+      "index": 98,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3528,
+      "description": "Establishes an Office of Minority Health within the Veterans Health Administration to improve health care access, research, education, and services for racial and ethnic minority veterans.",
+      "heading": null,
+      "identifier": "432",
+      "index": 99,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3037,
+      "description": "Adds a comprehensive definition of \"Indian\" to the Affordable Care Act covering federally recognized tribe members, urban Indians, Alaska Natives, and others eligible for Indian Health Service care, and makes conforming amendments throughout the ACA.",
+      "heading": null,
+      "identifier": "433",
+      "index": 100,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4484,
+      "description": "Directs the Comptroller General to study by January 1, 2016, how ACA changes to Medicare and Medicaid disproportionate share hospital payments affect low-income patients' access to care and the financial sustainability of safety-net hospitals.",
+      "heading": null,
+      "identifier": "434",
+      "index": 101,
+      "kind": "Section"
+    },
+    {
+      "charLength": 755,
+      "description": "Renames the head of the Indian Health Service from \"Director\" to \"Assistant Secretary,\" elevating the position on the federal pay schedule and updating all legal references accordingly.",
+      "heading": null,
+      "identifier": "435",
+      "index": 102,
+      "kind": "Section"
+    },
+    {
+      "charLength": 875,
+      "description": "Permanently reauthorizes funding for Native Hawaiian health care systems, the Papa Ola Lokahi administrative grant, and Native Hawaiian health scholarships by removing the prior expiration date of fiscal year 2019.",
+      "heading": null,
+      "identifier": "436",
+      "index": 103,
+      "kind": "Section"
+    },
+    {
+      "charLength": 9499,
+      "description": "Authorizes grants to eligible entities to fund community health workers who promote healthy behaviors, increase insurance enrollment, and connect underserved women and children—especially racial and ethnic minorities—to health care services.",
+      "heading": null,
+      "identifier": "501",
+      "index": 104,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3331,
+      "description": "Removes immigration-status barriers so that alien children under 21, pregnant women, and all lawfully present immigrants can receive Medicaid, SCHIP, and SNAP benefits, and clarifies that sponsors incur no debt for such assistance.",
+      "heading": null,
+      "identifier": "502",
+      "index": 105,
+      "kind": "Section"
+    },
+    {
+      "charLength": 312,
+      "description": "Repeals the provisions of the 1996 welfare reform law that permanently denied certain public benefits to individuals convicted of drug-related felonies.",
+      "heading": null,
+      "identifier": "503",
+      "index": 106,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4371,
+      "description": "Directs the Secretary of HHS to create a birth-defects prevention program, including a nationwide media campaign and grants to states for public education, surveillance, and research on risks during pregnancy and breastfeeding.",
+      "heading": null,
+      "identifier": "504",
+      "index": 107,
+      "kind": "Section"
+    },
+    {
+      "charLength": 227,
+      "description": "Amends Title V of the Social Security Act to add a new section establishing uniform state maternal mortality review committees to examine pregnancy-related deaths.",
+      "heading": null,
+      "identifier": "505",
+      "index": 108,
+      "kind": "Section"
+    },
+    {
+      "charLength": 22042,
+      "description": "Establishes a federal grant program awarding up to $10 million per year from 2015 through 2021 to states to create or strengthen maternal mortality review committees that investigate and report on pregnancy-related deaths.",
+      "heading": null,
+      "identifier": "514",
+      "index": 109,
+      "kind": "Section"
+    },
+    {
+      "charLength": 200,
+      "description": "Amends the Public Health Service Act to add a new section directing the Secretary of HHS to conduct research, expand services, and run a demonstration project in up to eight states to eliminate racial and other disparities in maternal health outcomes.",
+      "heading": null,
+      "identifier": "506",
+      "index": 110,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3612,
+      "description": "Establishes the demonstration project and research activities to identify and implement effective interventions for reducing disparities in maternity care quality and outcomes across diverse populations and geographic areas.",
+      "heading": null,
+      "identifier": "317W",
+      "index": 111,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2353,
+      "description": "Requires HHS to create and fund a culturally competent public awareness campaign and grant program aimed at educating parents, caregivers, and health providers about reducing risk factors for sudden unexpected infant death and sudden unexplained death in childhood.",
+      "heading": null,
+      "identifier": "507",
+      "index": 112,
+      "kind": "Section"
+    },
+    {
+      "charLength": 15466,
+      "description": "Adds a new part to the Public Health Service Act creating competitive demonstration grants to provide at-risk youth—especially minorities, foster youth, juvenile justice-involved youth, rural youth, and LGBT youth—with medically accurate information and skills to prevent unintended teen pregnancy and build healthy relationships.",
+      "heading": null,
+      "identifier": "508",
+      "index": 113,
+      "kind": "Section"
+    },
+    {
+      "charLength": 7667,
+      "description": "Directs the CDC to develop a multisite gestational diabetes research and surveillance project, expand related public health research, and report findings annually to federal and non-federal agencies.",
+      "heading": null,
+      "identifier": "509",
+      "index": 114,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2772,
+      "description": "Requires HHS to develop and distribute accurate, evidence-based public information about emergency contraception to both the general public and health care providers, including pharmacists.",
+      "heading": null,
+      "identifier": "510",
+      "index": 115,
+      "kind": "Section"
+    },
+    {
+      "charLength": 9082,
+      "description": "Authorizes grants to states for medically accurate, age-appropriate sex education programs that cover both abstinence and contraception, healthy relationships, consent, and nondiscrimination based on sexual orientation and gender identity.",
+      "heading": null,
+      "identifier": "511",
+      "index": 116,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4729,
+      "description": "Requires Medicare-participating hospitals and critical access hospitals to provide sexual assault victims with emergency contraception information and options, forensic exams, and referrals as a condition of Medicare participation.",
+      "heading": null,
+      "identifier": "512",
+      "index": 117,
+      "kind": "Section"
+    },
+    {
+      "charLength": 231,
+      "description": "Amends the Public Health Service Act to add a new section imposing duties on pharmacies to ensure timely provision of FDA-approved contraceptives to customers.",
+      "heading": null,
+      "identifier": "513",
+      "index": 118,
+      "kind": "Section"
+    },
+    {
+      "charLength": 5452,
+      "description": "Requires pharmacies that receive FDA-approved drugs through interstate commerce to provide contraceptives in stock without delay, offer referral or expedited ordering when out of stock, and prohibit employees from harassing, deceiving, or obstructing customers seeking contraception.",
+      "heading": null,
+      "identifier": "249",
+      "index": 119,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2412,
+      "description": "Adds a new focus area to the Office on Women's Health requiring it to help policymakers, providers, and other stakeholders understand optimal maternity care, including promoting evidence-based practices, appropriate use of obstetric interventions, provider qualifications, birth setting research, and quality childbirth education.",
+      "heading": null,
+      "identifier": "514",
+      "index": 120,
+      "kind": "Section"
+    },
+    {
+      "charLength": 247,
+      "description": "Amends the Public Health Service Act to establish a new section creating an Interagency Coordinating Committee on the Promotion of Optimal Maternity Outcomes.",
+      "heading": null,
+      "identifier": "515",
+      "index": 121,
+      "kind": "Section"
+    },
+    {
+      "charLength": 5654,
+      "description": "Creates the Interagency Coordinating Committee on the Promotion of Optimal Maternity Outcomes (ICCPOM), a multi-agency federal body chaired by the Deputy Assistant Secretary for Women's Health to guide federal policy on optimal maternity care and report annually to Congress.",
+      "heading": null,
+      "identifier": "229A",
+      "index": 122,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2865,
+      "description": "Directs the Office on Women's Health to develop and implement a four-year, culturally and linguistically appropriate multimedia consumer education campaign promoting evidence-based maternity care practices and informing women about obstetric interventions, birth settings, provider qualifications, and childbirth education.",
+      "heading": null,
+      "identifier": "516",
+      "index": 123,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3759,
+      "description": "Requires the Agency for Healthcare Research and Quality to create and maintain a publicly available online bibliographic database of systematic reviews on care for childbearing women and newborns, searchable by topic and regularly updated.",
+      "heading": null,
+      "identifier": "517",
+      "index": 124,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2733,
+      "description": "Amends the Public Health Service Act to require the Health Resources and Services Administration to designate, publish, and annually review maternity care health professional shortage areas based on shortages of maternity care providers or facilities.",
+      "heading": null,
+      "identifier": "518",
+      "index": 125,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2558,
+      "description": "Directs the Secretary of Health and Human Services to establish additional CDC Prevention Research Centers focused on improving maternity outcomes in underserved populations, each conducting research across multiple birth settings with interdisciplinary provider teams.",
+      "heading": null,
+      "identifier": "519",
+      "index": 126,
+      "kind": "Section"
+    },
+    {
+      "charLength": 715,
+      "description": "Adds maternity care models—including doula and promotoras support, out-of-hospital births, and evidence-based prenatal and postpartum care—to the list of models the Center for Medicare and Medicaid Innovation is authorized to test.",
+      "heading": null,
+      "identifier": "520",
+      "index": 127,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2907,
+      "description": "Requires the Secretary of Health and Human Services to convene a one-year Interprofessional Maternity Provider Education Commission to develop a consensus physiologic maternity care curriculum, recommend interdisciplinary education strategies, and report findings to Congress.",
+      "heading": null,
+      "identifier": "521",
+      "index": 128,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1482,
+      "description": "Amends Medicare to allow inpatient hospital services provided by student midwives, interns, or residents in obstetrics supervised by certified nurse-midwives to be covered, and permits certified nurse-midwives to participate in hospital teaching programs under Medicare.",
+      "heading": null,
+      "identifier": "522",
+      "index": 129,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4420,
+      "description": "Establishes a grant program through HRSA providing planning and implementation grants to health professional organizations to identify workforce diversity disparities in maternity care professions and develop strategies to address them.",
+      "heading": null,
+      "identifier": "523",
+      "index": 130,
+      "kind": "Section"
+    },
+    {
+      "charLength": 7662,
+      "description": "Adds coverage of marriage and family therapist services, mental health counselor services, and substance abuse counselor services under Medicare Part B, and defines the qualifications required for practitioners in each of these newly covered categories.",
+      "heading": null,
+      "identifier": "601",
+      "index": 131,
+      "kind": "Section"
+    },
+    {
+      "charLength": 173,
+      "description": "Amends the Public Health Service Act to insert a new section establishing a Minority Fellowship Program for mental health professionals.",
+      "heading": null,
+      "identifier": "602",
+      "index": 132,
+      "kind": "Section"
+    },
+    {
+      "charLength": 973,
+      "description": "Establishes the Minority Fellowship Program, under which the SAMHSA Administrator awards grants or contracts to support graduate students and fellows from racial and ethnic minority populations pursuing careers in psychology, psychiatry, social work, nursing, marriage and family therapy, or professional counseling, authorizing $10 million per year from 2015 through 2019.",
+      "heading": null,
+      "identifier": "506C",
+      "index": 133,
+      "kind": "Section"
+    },
+    {
+      "charLength": 182,
+      "description": "Amends the Public Health Service Act to add a new section establishing an integrated health care demonstration program within Part D of Title V.",
+      "heading": null,
+      "identifier": "603",
+      "index": 134,
+      "kind": "Section"
+    },
+    {
+      "charLength": 926,
+      "description": "Authorizes $20 million per year for fiscal years 2014–2016 in grants to federally qualified health centers serving high proportions of minority patients to help them build integrated teams that deliver behavioral health care alongside primary care.",
+      "heading": null,
+      "identifier": "544",
+      "index": 135,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1094,
+      "description": "Requires the Director of the National Institute on Minority Health and Health Disparities to commission the Institute of Medicine within six months to study mental and behavioral health disparities in racial and ethnic minority groups and report findings and research recommendations to Congress.",
+      "heading": null,
+      "identifier": "604",
+      "index": 136,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2309,
+      "description": "Directs SAMHSA to award grants to national health professional organizations to develop and distribute curricula and core competencies on minority mental health disparities for training social workers, psychologists, psychiatrists, therapists, counselors, and substance abuse counselors.",
+      "heading": null,
+      "identifier": "605",
+      "index": 137,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3400,
+      "description": "Establishes congressional findings highlighting lung cancer's disproportionate burden, especially on minority and veteran populations, and calls for a coordinated national effort to increase the five-year survival rate and reduce lung cancer mortality.",
+      "heading": null,
+      "identifier": "701",
+      "index": 138,
+      "kind": "Section"
+    },
+    {
+      "charLength": 5005,
+      "description": "Requires the Secretary of HHS to implement a Lung Cancer Mortality Reduction Program within six months, coordinating across multiple federal agencies to achieve at least a 25 percent reduction in lung cancer mortality by 2020 through expanded NIH research, faster FDA drug access, and CDC early-detection activities.",
+      "heading": null,
+      "identifier": "417H",
+      "index": 139,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3016,
+      "description": "Establishes an early disease research and management program targeting high lung cancer incidence and mortality among minority and low-income populations, and requires the Departments of Defense and Veterans Affairs to coordinate lung cancer detection, research, and care programs for military personnel and veterans.",
+      "heading": null,
+      "identifier": "1511",
+      "index": 140,
+      "kind": "Section"
+    },
+    {
+      "charLength": 17672,
+      "description": "Establishes congressional findings on prostate cancer disparities—particularly the more than doubled mortality rate among African Americans—and calls for expanded research, screening, treatment access, and use of telehealth to address inequities including those affecting rural and veteran populations.",
+      "heading": null,
+      "identifier": "702",
+      "index": 141,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1672,
+      "description": "Removes Medicaid funding caps for U.S. territories for individuals qualifying for Medicaid solely because they were screened for breast or cervical cancer, and grants those territories the highest federal matching rate available to any state for that coverage, effective October 1, 2014.",
+      "heading": null,
+      "identifier": "703",
+      "index": 142,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4965,
+      "description": "Directs HHS to run demonstration projects testing models that reduce racial and ethnic disparities in cancer screening, treatment quality, and outcomes for Medicare beneficiaries from minority groups, including by promoting cultural competency and community health workers.",
+      "heading": null,
+      "identifier": "704",
+      "index": 143,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2392,
+      "description": "Requires HHS to develop uniform quality measures for cancer care disparities and establish a public reporting process under which Medicare providers must submit and publish data on those measures to track and reduce gaps in cancer care over time.",
+      "heading": null,
+      "identifier": "705",
+      "index": 144,
+      "kind": "Section"
+    },
+    {
+      "charLength": 24874,
+      "description": "Establishes congressional findings on the high burden of chronic hepatitis B and C—especially in minority populations—as the leading cause of liver cancer, and sets the stage for federal control and prevention programs targeting viral hepatitis and related liver cancer.",
+      "heading": null,
+      "identifier": "711",
+      "index": 145,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2227,
+      "description": "Establishes congressional findings recognizing the growing prevalence and disproportionate impact of acquired bone marrow failure diseases on minority populations and calls for a comprehensive federal research and surveillance strategy, including creation of a national disease registry.",
+      "heading": null,
+      "identifier": "721",
+      "index": 146,
+      "kind": "Section"
+    },
+    {
+      "charLength": 10270,
+      "description": "Directs the CDC to establish a publicly available National Acquired Bone Marrow Failure Disease Registry within six months to collect data on incidence, patient demographics, genetic and environmental risk factors, treatments, and outcomes, guided by a new federal advisory committee.",
+      "heading": null,
+      "identifier": "317X",
+      "index": 147,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2292,
+      "description": "Requires AHRQ to convene stakeholder meetings to develop and publish disease-screening guidelines tailored to minority populations that face above-average risk for a broad range of chronic diseases and cancers, with guidelines to be disseminated to health care providers within 24 months.",
+      "heading": null,
+      "identifier": "731",
+      "index": 148,
+      "kind": "Section"
+    },
+    {
+      "charLength": 749,
+      "description": "Amends the Public Health Service Act to update and increase authorized appropriations for the CDC WISEWOMAN program, which funds state grants for screening and preventive services for low-income women, rising from $23 million in fiscal year 2015 to $34 million in fiscal year 2019.",
+      "heading": null,
+      "identifier": "732",
+      "index": 149,
+      "kind": "Section"
+    },
+    {
+      "charLength": 806,
+      "description": "Requires the Secretary of Health and Human Services to submit annual reports to Congress on the quality of and access to cardiovascular care for women, racial and ethnic minorities, non-English speakers, and people with disabilities, along with recommendations for reducing disparities.",
+      "heading": null,
+      "identifier": "733",
+      "index": 150,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2964,
+      "description": "Expands Medicaid coverage of tobacco cessation counseling and pharmacotherapy—and removes cost-sharing requirements for those services—to all Medicaid beneficiaries who use tobacco, not just pregnant women.",
+      "heading": null,
+      "identifier": "734",
+      "index": 151,
+      "kind": "Section"
+    },
+    {
+      "charLength": 865,
+      "description": "Directs the Secretary of Health and Human Services to expand NIH and National Institute of Dental and Craniofacial Research funding for oral health research, including comparative effectiveness studies on childhood tooth decay and oral cancer and grants to train oral health researchers.",
+      "heading": null,
+      "identifier": "735",
+      "index": 152,
+      "kind": "Section"
+    },
+    {
+      "charLength": 230,
+      "description": "Amends Title XIX of the Social Security Act to add a new section requiring Medicaid to cover routine patient costs for beneficiaries participating in approved clinical trials.",
+      "heading": null,
+      "identifier": "736",
+      "index": 153,
+      "kind": "Section"
+    },
+    {
+      "charLength": 6154,
+      "description": "Defines what routine patient costs Medicaid must cover for clinical trial participants, what is excluded, and establishes a standardized electronic verification process for confirming a trial qualifies as an approved clinical trial.",
+      "heading": null,
+      "identifier": "1944",
+      "index": 154,
+      "kind": "Section"
+    },
+    {
+      "charLength": 956,
+      "description": "States that it is U.S. policy to achieve an AIDS-free generation by expanding treatment access, strengthening prevention efforts, removing legal barriers, accelerating research, and respecting the rights of people living with HIV/AIDS.",
+      "heading": null,
+      "identifier": "741",
+      "index": 155,
+      "kind": "Section"
+    },
+    {
+      "charLength": 8183,
+      "description": "Presents Congressional findings documenting the prevalence, incidence, and disproportionate impact of HIV/AIDS across racial, ethnic, gender, and other demographic groups in the United States.",
+      "heading": null,
+      "identifier": "742",
+      "index": 156,
+      "kind": "Section"
+    },
+    {
+      "charLength": 515,
+      "description": "Authorizes additional appropriations for fiscal years 2015 through 2017 specifically to fund AIDS Drug Assistance Program treatments beyond amounts otherwise appropriated.",
+      "heading": null,
+      "identifier": "743",
+      "index": 157,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2509,
+      "description": "Authorizes grants to states to integrate HIV surveillance data into electronic health records, improve data interoperability, and collect longitudinal HIV care information, while requiring privacy safeguards and prohibiting punitive use of the data.",
+      "heading": null,
+      "identifier": "744",
+      "index": 158,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1816,
+      "description": "Directs multiple federal health agencies to identify and broadly implement evidence-based strategies for linking and retaining HIV-positive individuals in appropriate care, and requires a progress report to Congress within 12 months.",
+      "heading": null,
+      "identifier": "745",
+      "index": 159,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1681,
+      "description": "Directs NIH to expand research on improving HIV testing, treatment adherence, health disparities reduction, integration of HIV care with mental health services, and the implementation of pre-exposure prophylaxis (PrEP).",
+      "heading": null,
+      "identifier": "746",
+      "index": 160,
+      "kind": "Section"
+    },
+    {
+      "charLength": 706,
+      "description": "Authorizes the Secretary, through the Office of Minority Health, to award grants to public health agencies and faith-based organizations for HIV/AIDS outreach, prevention, and testing activities in racial and ethnic minority communities.",
+      "heading": null,
+      "identifier": "747",
+      "index": 161,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1557,
+      "description": "Expands the Minority AIDS Initiative by authorizing additional funding to provide technical assistance, increase access to HIV prevention and care services, and build community programs targeting racial and ethnic minority populations most affected by HIV/AIDS.",
+      "heading": null,
+      "identifier": "748",
+      "index": 162,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2243,
+      "description": "Authorizes the Health Resources and Services Administration to award grants expanding the HIV/AIDS health workforce through provider training, peer navigator support, telehealth programs, and culturally competent care initiatives for underserved and minority communities.",
+      "heading": null,
+      "identifier": "749",
+      "index": 163,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4610,
+      "description": "Establishes a loan repayment program for physicians, nurse practitioners, and physician assistants who commit to at least two years of service at HIV/AIDS shortage facilities, repaying up to 85 percent of their professional education loans over three years.",
+      "heading": null,
+      "identifier": "750",
+      "index": 164,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3465,
+      "description": "Creates a loan repayment program where dentists who serve at least two years at HIV/AIDS-affected facilities with critical dentist shortages can have up to 85 percent of their dental education loans repaid by the federal government.",
+      "heading": null,
+      "identifier": "751",
+      "index": 165,
+      "kind": "Section"
+    },
+    {
+      "charLength": 925,
+      "description": "Authorizes the Secretary of Health and Human Services to issue grants and technical assistance to reduce HIV infections among injecting drug users by funding comprehensive services including sterile syringe distribution, education, testing, overdose prevention, and drug treatment.",
+      "heading": null,
+      "identifier": "752",
+      "index": 166,
+      "kind": "Section"
+    },
+    {
+      "charLength": 24400,
+      "description": "Expresses Congress's support for evidence-based comprehensive sex education and authorizes competitive grants to eligible public and private entities to fund five-year adolescent comprehensive sex education programs aimed at reducing unintended pregnancy and STIs including HIV.",
+      "heading": null,
+      "identifier": "753",
+      "index": 167,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1104,
+      "description": "Eliminates the federal abstinence-only education program by striking Section 510 of the Social Security Act, rescinds unspent abstinence-only funds, and redirects those funds to increase appropriations for the Personal Responsibility Education Program.",
+      "heading": null,
+      "identifier": "754",
+      "index": 168,
+      "kind": "Section"
+    },
+    {
+      "charLength": 731,
+      "description": "Requires the Secretary of Health and Human Services to submit an annual report to Congress and the President on the impact of HIV/AIDS on racial and ethnic minority communities, women, and youth under 25, including progress made, opportunities, challenges, and funding needs.",
+      "heading": null,
+      "identifier": "755",
+      "index": 169,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1052,
+      "description": "Expresses Congress's recognition of national HIV/AIDS observance days for communities of color and calls on the President to urge community members to engage in HIV/AIDS testing, advocacy, prevention, and care.",
+      "heading": null,
+      "identifier": "756",
+      "index": 170,
+      "kind": "Section"
+    },
+    {
+      "charLength": 18029,
+      "description": "Directs the Attorney General, HHS Secretary, and Secretary of Defense to conduct a national review of federal and state laws, policies, and court decisions related to the criminal prosecution of people living with HIV/AIDS, with broad stakeholder consultation.",
+      "heading": null,
+      "identifier": "757",
+      "index": 171,
+      "kind": "Section"
+    },
+    {
+      "charLength": 362,
+      "description": "Removes the existing statutory prohibition against using federal public health funds for education or information that promotes or encourages homosexual or heterosexual activity or intravenous drug use.",
+      "heading": null,
+      "identifier": "758",
+      "index": 172,
+      "kind": "Section"
+    },
+    {
+      "charLength": 13576,
+      "description": "Requires the Attorney General to direct the Bureau of Prisons to allow community organizations to distribute condoms and provide STI counseling in federal prisons, protects inmates from punishment for possessing condoms, and calls on states to adopt similar policies.",
+      "heading": null,
+      "identifier": "759",
+      "index": 173,
+      "kind": "Section"
+    },
+    {
+      "charLength": 10871,
+      "description": "Amends Medicaid law to require states to automatically enroll or reinstate Medicaid coverage for eligible individuals who test HIV-positive before they are released from incarceration, so coverage is active upon reentry into the community.",
+      "heading": null,
+      "identifier": "760",
+      "index": 174,
+      "kind": "Section"
+    },
+    {
+      "charLength": 12501,
+      "description": "Requires the Bureau of Prisons to develop and implement a comprehensive HIV testing, treatment, and prevention policy for all federal inmates, including routine opt-out testing upon intake, counseling, treatment, and reentry planning.",
+      "heading": null,
+      "identifier": "761",
+      "index": 175,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1947,
+      "description": "Directs the Secretary of HHS, in collaboration with multiple federal agencies, to align HIV care metrics, modernize federal data systems, adopt IOM clinical indicators, and expand demographic data collection to better monitor HIV care quality and disparities.",
+      "heading": null,
+      "identifier": "762",
+      "index": 176,
+      "kind": "Section"
+    },
+    {
+      "charLength": 203,
+      "description": "Amends the Public Health Service Act to add a new section authorizing the transfer of funds for implementing the National HIV/AIDS Strategy.",
+      "heading": null,
+      "identifier": "763",
+      "index": 177,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1076,
+      "description": "Authorizes the HHS Secretary to transfer up to one percent of discretionary HIV/AIDS appropriations to the Office of the Assistant Secretary for Health to implement the National HIV/AIDS Strategy, with 30-day advance notice to Congress.",
+      "heading": null,
+      "identifier": "241A",
+      "index": 178,
+      "kind": "Section"
+    },
+    {
+      "charLength": 11072,
+      "description": "Directs the Secretary of HHS to conduct a three-year demonstration project integrating Medicare, Medicaid, CDC, Ryan White, and HUD funding to deliver coordinated HIV prevention, testing, treatment, housing, and support services aimed at reducing infections, improving health outcomes, and lowering costs.",
+      "heading": null,
+      "identifier": "764",
+      "index": 179,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1951,
+      "description": "Requires the President to submit a report to Congress on the implementation status of Goal 4 (improved coordination) of the National HIV/AIDS Strategy, covering interagency coordination, federal-state-local coordination, and partnerships with civil society and private businesses.",
+      "heading": null,
+      "identifier": "765",
+      "index": 180,
+      "kind": "Section"
+    },
+    {
+      "charLength": 197,
+      "description": "Amends the Public Health Service Act to add a new section on diabetes research, treatment, and education in minority populations under NIH.",
+      "heading": null,
+      "identifier": "771",
+      "index": 181,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4077,
+      "description": "Directs NIH to expand research on prediabetes and diabetes in minority populations and requires the Diabetes Mellitus Interagency Coordinating Committee to produce a report and comprehensive federal plan addressing diabetes disparities in those communities.",
+      "heading": null,
+      "identifier": "434B",
+      "index": 182,
+      "kind": "Section"
+    },
+    {
+      "charLength": 198,
+      "description": "Amends the Public Health Service Act to insert a new section directing CDC activities related to diabetes in minority populations.",
+      "heading": null,
+      "identifier": "772",
+      "index": 183,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3009,
+      "description": "Directs the CDC to conduct research, data collection, education, and demonstration programs specifically targeting diabetes prevention and control in minority populations, including enhanced surveying of Asian-American and Pacific Islander subgroups.",
+      "heading": null,
+      "identifier": "317U",
+      "index": 184,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1784,
+      "description": "Directs the Health Resources and Services Administration to educate health professionals about diabetes in minority populations by prioritizing grants, funding career programs, and developing a diabetes focus within the National Health Service Corps Scholarship Program.",
+      "heading": null,
+      "identifier": "773",
+      "index": 185,
+      "kind": "Section"
+    },
+    {
+      "charLength": 787,
+      "description": "Directs the Indian Health Service, in collaboration with other federal agencies, to conduct diabetes research and coordinate data collection on clinically and culturally appropriate diabetes care for American Indian populations.",
+      "heading": null,
+      "identifier": "774",
+      "index": 186,
+      "kind": "Section"
+    },
+    {
+      "charLength": 591,
+      "description": "Requires the Secretary of Health and Human Services to arrange for the Institute of Medicine to submit an updated version of its 2002 report on racial and ethnic health disparities, addressing how those disparities have changed since the original report.",
+      "heading": null,
+      "identifier": "775",
+      "index": 187,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2715,
+      "description": "Requires the Secretary of Health and Human Services to convene a working group to develop a report cataloging federal and non-federal asthma activities and making recommendations for future asthma prevention, management, and surveillance efforts.",
+      "heading": null,
+      "identifier": "776",
+      "index": 188,
+      "kind": "Section"
+    },
+    {
+      "charLength": 186,
+      "description": "Rewrites the existing CDC asthma-activities section of the Public Health Service Act with an updated version covering public education, state plan development, and data collection.",
+      "heading": null,
+      "identifier": "777",
+      "index": 189,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3292,
+      "description": "Directs the CDC to collaborate with state and local health departments on public asthma education, development of state asthma plans, and annual compilation and publication of asthma prevalence and incidence data broken down by age, sex, race, ethnicity, and other factors.",
+      "heading": null,
+      "identifier": "317I",
+      "index": 190,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1122,
+      "description": "Directs the Secretary of Health and Human Services to enhance the annual influenza and pneumonia vaccination campaign with culturally appropriate materials targeted at underserved communities, and authorizes appropriations for fiscal years 2015 through 2019.",
+      "heading": null,
+      "identifier": "778",
+      "index": 191,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4969,
+      "description": "Directs the CDC to expand public health strategies on COPD and requires the National Heart, Lung, and Blood Institute to develop a national COPD action plan and carry out public education, awareness, and grant programs to reduce the burden of the disease.",
+      "heading": null,
+      "identifier": "779",
+      "index": 192,
+      "kind": "Section"
+    },
+    {
+      "charLength": 5029,
+      "description": "States congressional findings on the prevalence, costs, and disproportionate impact of arthritis and musculoskeletal diseases, particularly among women, African-Americans, Hispanics, and obese individuals.",
+      "heading": null,
+      "identifier": "781",
+      "index": 193,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1794,
+      "description": "Directs the CDC to expand its Arthritis Program to conduct culturally and linguistically appropriate education and awareness activities on arthritis and musculoskeletal conditions in minority communities, and authorizes necessary appropriations.",
+      "heading": null,
+      "identifier": "782",
+      "index": 194,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3346,
+      "description": "This section names the subtitle the 'Sleep and Circadian Rhythm Disorders Health Disparities Act' and presents congressional findings documenting the widespread prevalence of sleep disorders and the disproportionate burden they place on racial minorities and low-income populations.",
+      "heading": null,
+      "identifier": "791",
+      "index": 195,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3047,
+      "description": "This section directs the NIH's National Heart, Lung, and Blood Institute to expand research on sleep and circadian rhythm health disparities, including studying their causes, developing interventions, and integrating sleep science with health disparity research.",
+      "heading": null,
+      "identifier": "792",
+      "index": 196,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2447,
+      "description": "This section requires the CDC to conduct and expand public health surveillance, education, and awareness activities on sleep and circadian rhythm disorders, with culturally appropriate outreach to major ethnic minority groups and monthly published reports on disparities.",
+      "heading": null,
+      "identifier": "793",
+      "index": 197,
+      "kind": "Section"
+    },
+    {
+      "charLength": 296,
+      "description": "This section defines the terms 'certified EHR technology' and 'EHR' (electronic health record) as they are used throughout Title VIII of the bill.",
+      "heading": null,
+      "identifier": "800",
+      "index": 198,
+      "kind": "Section"
+    },
+    {
+      "charLength": 620,
+      "description": "This section directs the Health Resources and Services Administration to expand technical assistance and resources to help federally qualified health centers adopt and meaningfully use certified electronic health record technology to manage chronic diseases and reduce health disparities.",
+      "heading": null,
+      "identifier": "801",
+      "index": 199,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4384,
+      "description": "This section requires the National Coordinator for Health IT, the National Center for Health Statistics, and optionally the Institute of Medicine to evaluate EHR use in racial and ethnic minority communities, and requires CMS to collect race and ethnicity data from providers registering for Medicare and Medicaid EHR incentive programs.",
+      "heading": null,
+      "identifier": "802",
+      "index": 200,
+      "kind": "Section"
+    },
+    {
+      "charLength": 694,
+      "description": "This section amends the Public Health Service Act to explicitly include health IT infrastructure activities serving communities with high proportions of racial and ethnic minorities as an eligible use of funds, and requires the National Coordinator to report annually to Congress on spending under that section.",
+      "heading": null,
+      "identifier": "811",
+      "index": 201,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1016,
+      "description": "This section amends the Public Health Service Act to require Regional Extension Centers to prioritize assistance to providers serving racial and ethnic minority groups and to include minority community representatives on evaluation panels assessing those centers.",
+      "heading": null,
+      "identifier": "812",
+      "index": 202,
+      "kind": "Section"
+    },
+    {
+      "charLength": 694,
+      "description": "This section amends the Public Health Service Act to allow competitive grants for loan programs that facilitate EHR adoption to be used specifically for communities with high proportions of racial and ethnic minority individuals.",
+      "heading": null,
+      "identifier": "813",
+      "index": 203,
+      "kind": "Section"
+    },
+    {
+      "charLength": 261,
+      "description": "This section extends the authorization of appropriations for health IT programs under the Public Health Service Act from fiscal years 2009–2013 to fiscal years 2014–2021.",
+      "heading": null,
+      "identifier": "814",
+      "index": 204,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1044,
+      "description": "This section amends the Public Health Service Act to require the National Coordinator for Health IT to coordinate data collection and health assessments in minority communities with historically Black colleges, Hispanic-serving institutions, tribal colleges, and other minority-serving institutions that have accredited health programs.",
+      "heading": null,
+      "identifier": "831",
+      "index": 205,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3694,
+      "description": "This section directs the Secretary of Health and Human Services to commission a study by the Institute of Medicine on barriers, effectiveness, costs, and best practices of health information technology in medically underserved areas, with a report of findings and recommendations submitted to Congress within 24 months.",
+      "heading": null,
+      "identifier": "832",
+      "index": 206,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2100,
+      "description": "This section extends Medicare HITECH incentive payments for adopting electronic health records to Puerto Rico hospitals, while requiring budget-neutral adjustments to ensure the change does not increase overall aggregate Medicare payments.",
+      "heading": null,
+      "identifier": "841",
+      "index": 207,
+      "kind": "Section"
+    },
+    {
+      "charLength": 709,
+      "description": "This section expands Medicaid EHR incentive payment eligibility to include rehabilitation facilities, long-term care hospitals, and home health agencies, in addition to the providers already covered.",
+      "heading": null,
+      "identifier": "842",
+      "index": 208,
+      "kind": "Section"
+    },
+    {
+      "charLength": 804,
+      "description": "This section expands Medicaid EHR incentive payment eligibility to physician assistants who are primary care providers, including those leading rural health clinics or federally qualified health centers.",
+      "heading": null,
+      "identifier": "843",
+      "index": 209,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1031,
+      "description": "Prohibits discrimination based on sex, race, color, national origin, marital status, familial status, sexual orientation, gender identity, or disability in any health program or activity receiving federal financial assistance.",
+      "heading": null,
+      "identifier": "901",
+      "index": 210,
+      "kind": "Section"
+    },
+    {
+      "charLength": 350,
+      "description": "Classifies Medicare payments to providers under Parts B, C, and D as grants rather than insurance contracts, making those payments subject to the non-discrimination requirements of Title VI of the Civil Rights Act of 1964.",
+      "heading": null,
+      "identifier": "902",
+      "index": 211,
+      "kind": "Section"
+    },
+    {
+      "charLength": 298,
+      "description": "Amends the Public Health Service Act to add a new subtitle focused on strengthening accountability within the Department of Health and Human Services.",
+      "heading": null,
+      "identifier": "903",
+      "index": 212,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4514,
+      "description": "Directs the HHS Secretary to create an Office of Health Disparities within the Office for Civil Rights to enforce civil rights compliance, develop action plans addressing racial and ethnic health care disparities, and conduct outreach, investigations, and oversight.",
+      "heading": null,
+      "identifier": "3441",
+      "index": 213,
+      "kind": "Section"
+    },
+    {
+      "charLength": 4411,
+      "description": "Requires the HHS Secretary to establish civil rights compliance offices in every HHS agency that administers health programs, with duties including setting compliance standards, developing disparity-reduction methodologies, and overseeing data collection to eliminate discrimination and health disparities.",
+      "heading": null,
+      "identifier": "3442",
+      "index": 214,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1434,
+      "description": "Requires the U.S. Commission on Civil Rights to coordinate civil rights activities related to health disparities in health care and correctional facilities across relevant Justice and HHS offices, and increases the Commission's authorized funding to $30 million for fiscal year 2015.",
+      "heading": null,
+      "identifier": "904",
+      "index": 215,
+      "kind": "Section"
+    },
+    {
+      "charLength": 2737,
+      "description": "Expresses Congress's finding that minority and LGBT populations face significant health disparities and its view that funding for key minority health agencies and programs should be doubled or substantially increased by fiscal year 2016.",
+      "heading": null,
+      "identifier": "905",
+      "index": 216,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3735,
+      "description": "Requires the GAO and NIH to conduct and submit multiple reports to Congress examining racial and ethnic diversity in NIH grant awards, enforcement of minority health research authority, minority organizations' access to ACA funding, and related health disparity topics.",
+      "heading": null,
+      "identifier": "906",
+      "index": 217,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1158,
+      "description": "Defines key terms used in the title, including determinants of health, environmental determinants of health, personal determinants of health, and social determinants of health.",
+      "heading": null,
+      "identifier": "1001",
+      "index": 218,
+      "kind": "Section"
+    },
+    {
+      "charLength": 7789,
+      "description": "Sets out congressional findings establishing that social determinants of health—including neighborhood conditions, workplace hazards, education, and economic stability—are the largest predictors of health outcomes and contribute significantly to health disparities.",
+      "heading": null,
+      "identifier": "1002",
+      "index": 219,
+      "kind": "Section"
+    },
+    {
+      "charLength": 21746,
+      "description": "Authorizes a grant program and establishes statutory definitions to promote the use of Health Impact Assessments as a planning tool to evaluate and minimize the health effects of proposed policies, plans, programs, and projects on communities.",
+      "heading": null,
+      "identifier": "1003",
+      "index": 220,
+      "kind": "Section"
+    },
+    {
+      "charLength": 6448,
+      "description": "Directs the EPA Administrator to implement Inspector General and GAO recommendations requiring the agency to conduct environmental justice reviews of its programs and rulemaking processes to protect minority and low-income populations from disproportionate health and environmental harms.",
+      "heading": null,
+      "identifier": "1004",
+      "index": 221,
+      "kind": "Section"
+    },
+    {
+      "charLength": 10601,
+      "description": "Establishes a CDC-administered grant program to fund state and local communities disproportionately burdened by environmental health hazards in conducting environmental health improvement activities and addressing social determinants of health disparities.",
+      "heading": null,
+      "identifier": "1005",
+      "index": 222,
+      "kind": "Section"
+    },
+    {
+      "charLength": 3647,
+      "description": "Authorizes a joint HHS and EPA grant program for nonprofit institutions to research the causal relationships between the built environment and individual and population health outcomes, particularly for disadvantaged communities.",
+      "heading": null,
+      "identifier": "1006",
+      "index": 223,
+      "kind": "Section"
+    },
+    {
+      "charLength": 17292,
+      "description": "States congressional findings that federal environmental laws are essential to protecting public health and the environment, and identifies specific regulatory rollbacks since 2001 that have negatively impacted clean water, air quality, and other environmental protections.",
+      "heading": null,
+      "identifier": "1007",
+      "index": 224,
+      "kind": "Section"
+    },
+    {
+      "charLength": 1219,
+      "description": "Sec. 1008",
+      "heading": null,
+      "identifier": "1008",
+      "index": 225,
+      "kind": "Section"
+    }
+  ],
+  "summary": "The Health Equity and Accountability Act of 2014 is a comprehensive bill aimed at reducing racial, ethnic, and other health disparities in the United States by improving demographic data collection, expanding access to culturally and linguistically appropriate care, diversifying the health workforce, and addressing a wide range of disease-specific disparities affecting minority populations. The bill also strengthens civil rights enforcement in health programs, expands health coverage for immigrants and U.S. territories, and addresses social and environmental determinants of health. It covers topics ranging from HIV/AIDS and cancer to maternal health, mental health, and electronic health records.",
+  "versionId": "244276"
+}

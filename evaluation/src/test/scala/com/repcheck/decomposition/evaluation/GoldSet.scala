@@ -15,6 +15,7 @@ final case class GoldSection(
   heading: Option[String],
   kind: String,
   charLength: Int,
+  description: Option[String] = None, // one-line LLM description of what the section does (for review)
 ) derives io.circe.Codec.AsObject
 
 final case class GoldGroup(
@@ -30,6 +31,7 @@ final case class GoldBill(
   format: String,
   labelStatus: String,
   parserUsed: String,
+  summary: Option[String] = None, // 2-3 sentence LLM summary of the whole bill (for review)
   sections: List[GoldSection],
   groups: List[GoldGroup],
 ) derives io.circe.Codec.AsObject
@@ -45,21 +47,17 @@ object GoldSet {
   val LabelStatuses: Set[String] =
     Set("draft-boundaries", "llm-judged", "reviewed-groups", "complete")
 
-  /** Load the pilot gold set: `gold/manifest.tsv` (one versionId per row) + one `gold/<versionId>.json` per bill. */
-  lazy val pilot: GoldSet = {
-    val rows = readResource("gold/manifest.tsv").linesIterator.drop(1).filter(_.nonEmpty).toList
-    val bills = rows.map { line =>
-      line.split("\t", -1).toList match {
-        case versionId :: _ =>
-          decode[GoldBill](readResource(s"gold/$versionId.json")).fold(
-            err => sys.error(s"gold/$versionId.json failed to decode: ${err.getMessage}"),
-            identity,
-          )
-        case other => sys.error(s"gold manifest row malformed: $other")
-      }
-    }
-    GoldSet(bills)
-  }
+  /**
+   * Load the pilot gold set: one `gold/<versionId>.json` per bill in [[GoldPilot]] (the single source of truth for the
+   * pilot membership — no separate manifest to drift).
+   */
+  lazy val pilot: GoldSet =
+    GoldSet(GoldPilot.versionIds.map { versionId =>
+      decode[GoldBill](readResource(s"gold/$versionId.json")).fold(
+        err => sys.error(s"gold/$versionId.json failed to decode: ${err.getMessage}"),
+        identity,
+      )
+    })
 
   private def readResource(path: String): String =
     Option(getClass.getClassLoader.getResourceAsStream(path)) match {
