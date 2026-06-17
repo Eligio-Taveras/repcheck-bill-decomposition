@@ -1,0 +1,4310 @@
+{
+  "billType" : "s",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Bill Title & Overview",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Farm Commodity Definitions & Contracts",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        2,
+        3,
+        4
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Payment Yields & Base Acres",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        5,
+        6
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Direct & Counter-Cyclical Payments",
+      "groupId" : "g3",
+      "sectionIndices" : [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Marketing Assistance Loans",
+      "groupId" : "g4",
+      "sectionIndices" : [
+        12,
+        13,
+        14,
+        15,
+        16,
+        21
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Cotton Competitiveness Programs",
+      "groupId" : "g5",
+      "sectionIndices" : [
+        17,
+        18,
+        19,
+        20
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Dairy Price Support & Promotion",
+      "groupId" : "g6",
+      "sectionIndices" : [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Sugar Program & Allotments",
+      "groupId" : "g7",
+      "sectionIndices" : [
+        27,
+        28,
+        29,
+        30
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Peanut Support Program",
+      "groupId" : "g8",
+      "sectionIndices" : [
+        31
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "CCC Administration & General Provisions",
+      "groupId" : "g9",
+      "sectionIndices" : [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Risk Management & Disaster Assistance",
+      "groupId" : "g10",
+      "sectionIndices" : [
+        39,
+        40
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Conservation Security Program",
+      "groupId" : "g11",
+      "sectionIndices" : [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Conservation Reserve & Wetlands Programs",
+      "groupId" : "g12",
+      "sectionIndices" : [
+        54,
+        55,
+        56
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Environmental Quality Incentives",
+      "groupId" : "g13",
+      "sectionIndices" : [
+        57,
+        58,
+        59
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Resource Conservation & Development",
+      "groupId" : "g14",
+      "sectionIndices" : [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Wildlife Habitat & Watershed Programs",
+      "groupId" : "g15",
+      "sectionIndices" : [
+        71,
+        72,
+        73
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Agricultural Land Protection",
+      "groupId" : "g16",
+      "sectionIndices" : [
+        74,
+        75,
+        76
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Grassland Reserve Program",
+      "groupId" : "g17",
+      "sectionIndices" : [
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "State Technical Committees",
+      "groupId" : "g18",
+      "sectionIndices" : [
+        82,
+        83,
+        84
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Food Aid Programs",
+      "groupId" : "g19",
+      "sectionIndices" : [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Agricultural Export Programs",
+      "groupId" : "g20",
+      "sectionIndices" : [
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Food Stamp Program Title",
+      "groupId" : "g21",
+      "sectionIndices" : [
+        115
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Food Stamp Eligibility & Benefits",
+      "groupId" : "g22",
+      "sectionIndices" : [
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Food Stamp Administration & Technology",
+      "groupId" : "g23",
+      "sectionIndices" : [
+        126,
+        127,
+        128,
+        129,
+        130,
+        146
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Food Stamp Nutrition Education & Outreach",
+      "groupId" : "g24",
+      "sectionIndices" : [
+        131,
+        133,
+        134,
+        135,
+        138,
+        139,
+        140
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Food Stamp Reauthorization & Special Programs",
+      "groupId" : "g25",
+      "sectionIndices" : [
+        132,
+        136,
+        137,
+        141,
+        142,
+        143,
+        144,
+        145,
+        147,
+        148,
+        152
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Immigrant & Alien Food Stamp Eligibility",
+      "groupId" : "g26",
+      "sectionIndices" : [
+        149
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Child Nutrition Programs",
+      "groupId" : "g27",
+      "sectionIndices" : [
+        150,
+        151
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Farm Ownership Loans",
+      "groupId" : "g28",
+      "sectionIndices" : [
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Farm Operating Loans",
+      "groupId" : "g29",
+      "sectionIndices" : [
+        162,
+        163
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Farm Loan Administration & Reform",
+      "groupId" : "g30",
+      "sectionIndices" : [
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        181,
+        182,
+        183,
+        184
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Farm Credit System",
+      "groupId" : "g31",
+      "sectionIndices" : [
+        177,
+        178,
+        179,
+        180
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Business Equity Fund",
+      "groupId" : "g32",
+      "sectionIndices" : [
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Business Investment Program",
+      "groupId" : "g33",
+      "sectionIndices" : [
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Infrastructure Funding",
+      "groupId" : "g34",
+      "sectionIndices" : [
+        212,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Endowment Program",
+      "groupId" : "g35",
+      "sectionIndices" : [
+        213,
+        214,
+        215,
+        216,
+        217,
+        218
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Broadband & Telecommunications",
+      "groupId" : "g36",
+      "sectionIndices" : [
+        219,
+        220,
+        273
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Value-Added Agriculture",
+      "groupId" : "g37",
+      "sectionIndices" : [
+        221,
+        238
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "National Rural Development Partnership",
+      "groupId" : "g38",
+      "sectionIndices" : [
+        222,
+        223,
+        224
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Business & Loan Programs",
+      "groupId" : "g39",
+      "sectionIndices" : [
+        235,
+        236,
+        237,
+        239,
+        240,
+        241
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Microenterprise & Entrepreneurs",
+      "groupId" : "g40",
+      "sectionIndices" : [
+        242,
+        243
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Seniors & Social Services",
+      "groupId" : "g41",
+      "sectionIndices" : [
+        244,
+        245,
+        246
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Telework & Technology",
+      "groupId" : "g42",
+      "sectionIndices" : [
+        247,
+        248
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Historic Barn Preservation",
+      "groupId" : "g43",
+      "sectionIndices" : [
+        249,
+        250
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Regional Development Authorities",
+      "groupId" : "g44",
+      "sectionIndices" : [
+        251,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "SEARCH Grants Small Communities",
+      "groupId" : "g45",
+      "sectionIndices" : [
+        252,
+        253,
+        254,
+        255,
+        256
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Alternative Agriculture & Assets",
+      "groupId" : "g46",
+      "sectionIndices" : [
+        272
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Electric & Telephone Loans",
+      "groupId" : "g47",
+      "sectionIndices" : [
+        274,
+        275,
+        276,
+        277
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Rural Development Effective Date",
+      "groupId" : "g48",
+      "sectionIndices" : [
+        278
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Agricultural Research Definitions & Board",
+      "groupId" : "g49",
+      "sectionIndices" : [
+        279,
+        280
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Research Education Grant Programs",
+      "groupId" : "g50",
+      "sectionIndices" : [
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        340,
+        341
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Biosecurity & Emergency Research",
+      "groupId" : "g51",
+      "sectionIndices" : [
+        296,
+        297,
+        345,
+        347,
+        349
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Research Grant Fund Management",
+      "groupId" : "g52",
+      "sectionIndices" : [
+        298,
+        299
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Land-Grant Institution Programs",
+      "groupId" : "g53",
+      "sectionIndices" : [
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Research Facility Authorizations",
+      "groupId" : "g54",
+      "sectionIndices" : [
+        337,
+        338,
+        339,
+        342
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "USDA Research Administration",
+      "groupId" : "g55",
+      "sectionIndices" : [
+        343,
+        344,
+        346
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Technology Transfer & Beginning Farmers",
+      "groupId" : "g56",
+      "sectionIndices" : [
+        348,
+        350,
+        351,
+        352,
+        353
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Forestry Programs",
+      "groupId" : "g57",
+      "sectionIndices" : [
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Renewable Energy & Biobased Products",
+      "groupId" : "g58",
+      "sectionIndices" : [
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Agricultural Fair Practices Act",
+      "groupId" : "g59",
+      "sectionIndices" : [
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Packers & Stockyards Enforcement",
+      "groupId" : "g60",
+      "sectionIndices" : [
+        400,
+        401
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Country of Origin Labeling",
+      "groupId" : "g61",
+      "sectionIndices" : [
+        402,
+        403,
+        404,
+        405,
+        406,
+        407
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Commodity Promotion Referenda",
+      "groupId" : "g62",
+      "sectionIndices" : [
+        408
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Perishable Commodities Act",
+      "groupId" : "g63",
+      "sectionIndices" : [
+        409
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Miscellaneous Agricultural Programs",
+      "groupId" : "g64",
+      "sectionIndices" : [
+        410,
+        411,
+        412,
+        413,
+        414
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Seniors Farmers Market Nutrition",
+      "groupId" : "g65",
+      "sectionIndices" : [
+        415,
+        416
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Organic Certification Cost-Share",
+      "groupId" : "g66",
+      "sectionIndices" : [
+        417
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 1149,
+      "description" : "This is the introductory header of Senate Bill 1628 from the 107th Congress, introduced by Senator Harkin, aimed at strengthening agricultural safety nets, conservation, rural development, farm credit, research, and nutrition programs.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 17063,
+      "description" : "This section gives the bill its official short title, 'Agriculture, Conservation, and Rural Enhancement Act of 2001,' and provides a table of contents outlining the bill's structure.",
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 1,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3422,
+      "description" : "This section defines key terms used throughout Title I of the bill, including 'base acres,' 'covered commodity,' 'direct payment,' 'counter-cyclical payment,' 'loan commodity,' 'oilseed,' and 'producer.'",
+      "heading" : null,
+      "identifier" : "101",
+      "index" : 2,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2878,
+      "description" : "This section authorizes the Secretary of Agriculture to enter into contracts with eligible farm producers to receive direct and counter-cyclical payments, and specifies eligibility rules for different types of tenants and qualifying cropland.",
+      "heading" : null,
+      "identifier" : "111",
+      "index" : 3,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1479,
+      "description" : "This section establishes the timeline and duration for farm contracts, requiring the Secretary to begin signing contracts within 45 days of enactment, setting a 180-day deadline, and specifying that contracts run from the 2002 crop year through the 2006 crop year.",
+      "heading" : null,
+      "identifier" : "112",
+      "index" : 4,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1088,
+      "description" : "This section establishes how payment yields are calculated for each farm by using the greater of the average yield from 1998–2001 crop years or the yield that would have been set under the 1996 farm law, with assigned yields for farms lacking historical data.",
+      "heading" : null,
+      "identifier" : "113",
+      "index" : 5,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2180,
+      "description" : "This section defines how base acres are calculated for a farm using average planted acreage from 1998–2001, with rules for adjusting base acres when conservation reserve contracts expire or cropland is released, and for preventing the total of base and conservation acres from exceeding actual cropland.",
+      "heading" : null,
+      "identifier" : "114",
+      "index" : 6,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1173,
+      "description" : "This section establishes fixed direct payment rates for each covered commodity (e.g., $0.247 per bushel for wheat, $0.150 for corn) and directs the Secretary to make these payments annually from fiscal years 2003 through 2006 based on base acres and payment yields.",
+      "heading" : null,
+      "identifier" : "115",
+      "index" : 7,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6387,
+      "description" : "This section establishes a counter-cyclical payment program that triggers payments to producers when total crop revenue per planted acre falls below a specified target revenue, with target revenues set per commodity and adjusted annually for inflation using the Prices Paid by Farmers Index.",
+      "heading" : null,
+      "identifier" : "116",
+      "index" : 8,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2936,
+      "description" : "This section requires producers receiving contract payments to comply with conservation (highly erodible land and wetland), planting flexibility, and land-use requirements, and establishes rules for how payments are handled in cases of farm foreclosure or transfer of ownership.",
+      "heading" : null,
+      "identifier" : "117",
+      "index" : 9,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1574,
+      "description" : "This section allows farmers to plant any crop on base acres but prohibits planting fruits and most vegetables on those acres, with limited exceptions for regions with historical double-cropping or established planting histories, in which case contract payments are reduced acre-for-acre.",
+      "heading" : null,
+      "identifier" : "118",
+      "index" : 10,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 497,
+      "description" : "This section caps total direct and counter-cyclical contract payments to any individual or entity at $100,000 per year and applies existing payment limitation rules from the Food Security Act of 1985.",
+      "heading" : null,
+      "identifier" : "119",
+      "index" : 11,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2848,
+      "description" : "This section authorizes the Secretary to offer nonrecourse marketing loans for the 2002–2006 crops of all loan commodities, caps eligible loan quantities at 175,000 loan units per producer using commodity-specific unit conversion factors, and conditions loan eligibility on compliance with conservation requirements.",
+      "heading" : null,
+      "identifier" : "131",
+      "index" : 12,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1612,
+      "description" : "This section sets specific per-unit loan rates for each loan commodity (e.g., $2.94 per bushel for wheat, $5.20 per bushel for soybeans) and allows the Secretary to adjust rates for differences in grade, quality, location, and other factors.",
+      "heading" : null,
+      "identifier" : "132",
+      "index" : 13,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 391,
+      "description" : "This section sets the standard term of marketing loans at nine months and allows the Secretary to grant producers one additional nine-month extension.",
+      "heading" : null,
+      "identifier" : "133",
+      "index" : 14,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3742,
+      "description" : "Sets the rules for how farmers must repay marketing loans for various commodities, allowing repayment at the lower of the original loan rate plus interest or a market-based rate that minimizes government costs and keeps U.S. crops competitive, with special rules for upland cotton, rice, and extra long staple cotton.",
+      "heading" : null,
+      "identifier" : "134",
+      "index" : 15,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1185,
+      "description" : "Allows the government to make direct payments to farmers who are eligible for a marketing loan but choose not to take one, with the payment amount equal to the difference between the established loan rate and the current repayable rate, excluding extra long staple cotton.",
+      "heading" : null,
+      "identifier" : "135",
+      "index" : 16,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 9026,
+      "description" : "Requires the Secretary to issue marketing certificates or cash payments to domestic users and exporters of upland cotton when U.S. cotton prices are uncompetitively high relative to world prices for a sustained period, to help keep American cotton competitive in global markets.",
+      "heading" : null,
+      "identifier" : "136",
+      "index" : 17,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2250,
+      "description" : "Establishes a competitiveness program requiring the Secretary to make payments to domestic users and exporters of extra long staple cotton whenever world market prices for competing foreign cotton fall below U.S. prices for four consecutive weeks, to maintain U.S. market share.",
+      "heading" : null,
+      "identifier" : "137",
+      "index" : 18,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2460,
+      "description" : "Allows producers of corn and grain sorghum harvested at high moisture levels to obtain recourse loans from the government on their crop for the 2002 through 2006 crop years, with repayment required at the established loan rate plus interest.",
+      "heading" : null,
+      "identifier" : "138",
+      "index" : 19,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 437,
+      "description" : "Requires the Secretary to make recourse loans available to producers of upland cotton and extra long staple cotton in seed form for the 2002 through 2006 crop years, with repayment at the established loan rate plus interest.",
+      "heading" : null,
+      "identifier" : "139",
+      "index" : 20,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1320,
+      "description" : "Gives farmers who had production flexibility contracts under the 1996 Farm Act up to 90 days after enactment to choose whether to receive marketing assistance loans and loan deficiency payments for the 2002 crop under the old law or under this new Act.",
+      "heading" : null,
+      "identifier" : "140",
+      "index" : 21,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2018,
+      "description" : "Directs the Secretary to support the price of milk at $9.90 per hundredweight from 2002 through 2006 by purchasing cheese, butter, and nonfat dry milk at uniform prices sufficient to ensure producers receive at least that support rate.",
+      "heading" : null,
+      "identifier" : "151",
+      "index" : 22,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 359,
+      "description" : "Extends the authorization for both the Dairy Export Incentive Program and the Dairy Indemnity Program through 2006 by amending the expiration dates in their respective existing statutes.",
+      "heading" : null,
+      "identifier" : "152",
+      "index" : 23,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1093,
+      "description" : "Updates the Fluid Milk Promotion Act of 1990 by revising the definition of fluid milk product, raising the threshold volume that defines a fluid milk processor from 500,000 to 3,000,000 pounds, and removing the termination date for the promotion order.",
+      "heading" : null,
+      "identifier" : "153",
+      "index" : 24,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 427,
+      "description" : "Expands the definition of dairy products subject to mandatory price reporting under the Agricultural Marketing Act of 1946 to include substantially identical products designated by the Secretary, in addition to already-covered manufactured dairy products.",
+      "heading" : null,
+      "identifier" : "154",
+      "index" : 25,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5551,
+      "description" : "Amends the Dairy Production Stabilization Act of 1983 to add definitions for imported dairy products and importers, require importer representation on the National Dairy Promotion and Research Board, and assess importers of dairy products to fund dairy promotion and research programs.",
+      "heading" : null,
+      "identifier" : "155",
+      "index" : 26,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 9515,
+      "description" : "Establishes a federal sugar price support loan program offering processors of domestically grown sugarcane loans at 18 cents per pound and sugar beet processors loans at 22.9 cents per pound, with provisions for loan rate adjustments based on international subsidy reductions and loan terms of up to nine months within a fiscal year.",
+      "heading" : null,
+      "identifier" : "161",
+      "index" : 27,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1200,
+      "description" : "Directs the Commodity Credit Corporation to create a loan program to help domestic sugarcane and sugar beet processors finance the construction or upgrading of sugar storage and handling facilities, with loans of at least seven years available to creditworthy processors with demonstrated repayment ability.",
+      "heading" : null,
+      "identifier" : "162",
+      "index" : 28,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 18803,
+      "description" : "Overhauls the sugar marketing allotment system by repealing information reporting requirements and amending the Agricultural Adjustment Act of 1938 to update estimation procedures for sugar supply and demand, covering crop years 2002 through 2006 and refining how imports and carryover stocks are calculated.",
+      "heading" : null,
+      "identifier" : "163",
+      "index" : 29,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1017,
+      "description" : "Defines key terms—'mainland State,' 'offshore State,' 'State,' and 'United States'—for the sugar program and makes technical amendments to related provisions of the Agricultural Adjustment Act of 1938.",
+      "heading" : null,
+      "identifier" : "359",
+      "index" : 30,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 14009,
+      "description" : "Establishes nonrecourse loan programs for quota and additional peanuts, sets the national quota loan rate at $610 per ton, and creates area marketing association warehouse storage loans while specifying eligibility, pricing, and appeal procedures.",
+      "heading" : null,
+      "identifier" : "171",
+      "index" : 31,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1671,
+      "description" : "Directs the Secretary to use the Commodity Credit Corporation to administer the title, makes Secretary determinations final, requires implementing regulations within 90 days without normal notice-and-comment procedures, and extends certain producer payment protections to initial counter-cyclical payments.",
+      "heading" : null,
+      "identifier" : "181",
+      "index" : 32,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2592,
+      "description" : "Authorizes the Commodity Credit Corporation to sell commodities at prices that maximize returns, while listing specific exceptions such as disaster relief, deteriorating commodities, export sales, and small-quantity disposals.",
+      "heading" : null,
+      "identifier" : "182",
+      "index" : 33,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1761,
+      "description" : "Authorizes the Commodity Credit Corporation to make in-kind payments using loan-collateral or owned commodities and to issue negotiable certificates exchangeable for commodities, specifying the methods and administrative rules for such payments.",
+      "heading" : null,
+      "identifier" : "183",
+      "index" : 34,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 443,
+      "description" : "Applies existing assignment-of-payment rules from the Soil Conservation and Domestic Allotment Act to payments made under this title and requires producers or assignees to notify the Secretary of any such assignment.",
+      "heading" : null,
+      "identifier" : "184",
+      "index" : 35,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2199,
+      "description" : "Suspends numerous price support and production adjustment provisions of the Agricultural Adjustment Act of 1938 and the Agricultural Act of 1949 with respect to loan commodities, peanuts, sugar, and milk for the 1996 through 2006 crop years.",
+      "heading" : null,
+      "identifier" : "185",
+      "index" : 36,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5078,
+      "description" : "Updates cross-references and conforming language in the Food Security Act of 1985 and the Federal Crop Insurance Act to reflect the new Agriculture, Conservation, and Rural Enhancement Act of 2001 alongside the prior Agricultural Market Transition Act.",
+      "heading" : null,
+      "identifier" : "186",
+      "index" : 37,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 746,
+      "description" : "Clarifies that the new title does not disturb the Secretary's authority to administer existing price support or production adjustment programs for the 1996–2001 crops and does not alter any legal liabilities that arose before enactment.",
+      "heading" : null,
+      "identifier" : "187",
+      "index" : 38,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 833,
+      "description" : "Directs the Secretary, in consultation with the CFTC, to provide farmers with education on financial risk management, including training on futures trading, forward contracting, and crop insurance programs, using existing USDA research and extension resources.",
+      "heading" : null,
+      "identifier" : "191",
+      "index" : 39,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 11801,
+      "description" : "Requires the USDA Farm Service Agency to operate a noninsured crop disaster assistance program offering catastrophic-level coverage for commercial crops ineligible for federal crop insurance that suffer losses due to natural disasters, specifying application, recordkeeping, and acreage-reporting requirements.",
+      "heading" : null,
+      "identifier" : "192",
+      "index" : 40,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 285,
+      "description" : "Amends the Food Security Act of 1985 to add a new chapter establishing the Conservation Security Program and Farmland Protection subchapter within the conservation title.",
+      "heading" : null,
+      "identifier" : "201",
+      "index" : 41,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3842,
+      "description" : "Defines key terms used in the Conservation Security Program subchapter, including 'base payment,' 'bonus amount,' 'conservation practice,' 'conservation security contract,' 'conservation security plan,' 'nutrient management,' 'resource of concern,' and 'resource-conserving crop.'",
+      "heading" : null,
+      "identifier" : "1238",
+      "index" : 42,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 22136,
+      "description" : "Establishes the Conservation Security Program beginning in fiscal year 2003, directing the Secretary to help agricultural landowners promote soil, water, air, wildlife, and other conservation goals through approved conservation security plans and contracts with eligible private agricultural and forested land.",
+      "heading" : null,
+      "identifier" : "1238A",
+      "index" : 43,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1385,
+      "description" : "Specifies the obligations of owners and operators under a conservation security contract, including implementing their approved plan, maintaining records, avoiding interfering activities, and repaying or forfeiting payments upon violation of contract terms.",
+      "heading" : null,
+      "identifier" : "1238B",
+      "index" : 44,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 12786,
+      "description" : "Requires the Secretary to offer advance payments (up to the greater of a tier-based flat amount or 20% of the annual contract value) and sets the formula for calculating annual payments under Tier I, II, and III conservation security contracts.",
+      "heading" : null,
+      "identifier" : "1238C",
+      "index" : 45,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 373,
+      "description" : "Directs the Commodity Credit Corporation to make available whatever funds are necessary to operate the Conservation Security Program, including technical assistance.",
+      "heading" : null,
+      "identifier" : "202",
+      "index" : 46,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3374,
+      "description" : "Allows the Secretary to designate special conservation projects, offer producer incentives for partnerships, and enter into flexible agreements with states to tailor program rules to local environmental and agricultural conditions.",
+      "heading" : null,
+      "identifier" : "203",
+      "index" : 47,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 196,
+      "description" : "Adds a new administrative requirements section to Subtitle E of the Food Security Act's conservation title.",
+      "heading" : null,
+      "identifier" : "204",
+      "index" : 48,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 9268,
+      "description" : "Protects farmers and ranchers from losing conservation contract benefits if they violated a contract in good faith based on advice from a USDA employee, while excluding cases of deliberate misconduct by either party.",
+      "heading" : null,
+      "identifier" : "1244",
+      "index" : 49,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1763,
+      "description" : "Directs the Secretary of Agriculture to develop and report to Congress within 180 days a plan to consolidate and simplify conservation programs and forms, and a separate plan to use the National Conservation Program as the primary tool for managing conservation on agricultural land.",
+      "heading" : null,
+      "identifier" : "205",
+      "index" : 50,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 371,
+      "description" : "Authorizes the Secretary of Agriculture to immediately begin issuing regulations and taking other steps to implement the new Conservation Security Program.",
+      "heading" : null,
+      "identifier" : "206",
+      "index" : 51,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 402,
+      "description" : "Makes conforming technical changes by replacing the acronym 'ECARP' with 'CCEP' throughout the Food Security Act and repealing an outdated section.",
+      "heading" : null,
+      "identifier" : "207",
+      "index" : 52,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 68,
+      "description" : "Renames the administration section heading to reflect the updated 'CCEP' program name.",
+      "heading" : null,
+      "identifier" : "1243",
+      "index" : 53,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 539,
+      "description" : "Extends the Comprehensive Conservation Enhancement Program and its funding authorization from 2002 through 2006 and adds technical assistance to eligible expenditures.",
+      "heading" : null,
+      "identifier" : "211",
+      "index" : 54,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 13096,
+      "description" : "Extends the Conservation Reserve Program through 2006, expands eligible land categories, adds enrollment priority criteria favoring ongoing projects, and allows partial-field buffer enrollment.",
+      "heading" : null,
+      "identifier" : "212",
+      "index" : 55,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 722,
+      "description" : "Extends the Wetlands Reserve Program through 2006, adds technical assistance to authorized expenditures, and caps annual new enrollment at 250,000 acres.",
+      "heading" : null,
+      "identifier" : "213",
+      "index" : 56,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 164,
+      "description" : "Rewrites the purposes section of the Environmental Quality Incentives Program to emphasize maximizing environmental benefits, flexible assistance, energy production, and simplified conservation planning.",
+      "heading" : null,
+      "identifier" : "214",
+      "index" : 57,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8162,
+      "description" : "Updates EQIP's stated purposes to include maximizing environmental benefits per dollar, flexible assistance for resource threats, help with regulatory compliance and energy production, and reduced administrative burdens on producers.",
+      "heading" : null,
+      "identifier" : "1240",
+      "index" : 58,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3510,
+      "description" : "Establishes a federal loan program of up to $150,000 per borrower (capped at $100 million annually) to help confined livestock operation owners install structural conservation practices, funded through a dedicated Treasury fund.",
+      "heading" : null,
+      "identifier" : "1240H",
+      "index" : 59,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 238,
+      "description" : "Rewrites the subtitle of the Agriculture and Food Act of 1981 governing the Resource Conservation and Development Program.",
+      "heading" : null,
+      "identifier" : "215",
+      "index" : 60,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4951,
+      "description" : "Defines key terms used in the Resource Conservation and Development subtitle, including 'area plan,' 'council,' 'designated area,' and 'Board.'",
+      "heading" : null,
+      "identifier" : "1528",
+      "index" : 61,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 693,
+      "description" : "Directs the Secretary of Agriculture to establish a program providing technical and financial assistance to councils to conserve land, develop natural resources, and improve rural conditions.",
+      "heading" : null,
+      "identifier" : "1529",
+      "index" : 62,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 169,
+      "description" : "Requires the Secretary to select designated areas for program assistance based on the elements contained in their area plans.",
+      "heading" : null,
+      "identifier" : "1530",
+      "index" : 63,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 729,
+      "description" : "Grants the Secretary authority to provide technical assistance, cooperate with other government entities, and enter into agreements with councils to implement area plans.",
+      "heading" : null,
+      "identifier" : "1531",
+      "index" : 64,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2538,
+      "description" : "Sets the eligibility requirements and terms and conditions—including loan terms and interest rates—under which councils may receive technical and financial assistance to carry out approved area plans.",
+      "heading" : null,
+      "identifier" : "1532",
+      "index" : 65,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 664,
+      "description" : "Establishes a Resource Conservation and Development Policy Advisory Board within USDA, composed of at least seven department employees, to advise the Secretary on administering the program.",
+      "heading" : null,
+      "identifier" : "1533",
+      "index" : 66,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 760,
+      "description" : "Requires the Secretary to evaluate the program's effectiveness in consultation with councils and submit a report with recommendations to Congress by December 31, 2011.",
+      "heading" : null,
+      "identifier" : "1534",
+      "index" : 67,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 192,
+      "description" : "Caps the number of active designated areas that may receive technical and financial assistance at 450.",
+      "heading" : null,
+      "identifier" : "1535",
+      "index" : 68,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 289,
+      "description" : "Clarifies that the Secretary's authority to assist councils under this subtitle supplements, rather than replaces, any other legal authority the Secretary holds.",
+      "heading" : null,
+      "identifier" : "1536",
+      "index" : 69,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 398,
+      "description" : "Authorizes such sums as necessary to carry out the program, caps loans at $15 million per fiscal year, and makes appropriated funds available until expended.",
+      "heading" : null,
+      "identifier" : "1537",
+      "index" : 70,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 217,
+      "description" : "Amends the Food Security Act of 1985 to rewrite Chapter 5 of Subtitle D as 'Other Conservation Programs,' creating the framework for the wildlife habitat incentive program.",
+      "heading" : null,
+      "identifier" : "216",
+      "index" : 71,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3181,
+      "description" : "Establishes a wildlife habitat incentive program under which the Secretary makes cost-share payments and acquires 30-year or permanent easements to help landowners restore and protect essential plant and animal habitat.",
+      "heading" : null,
+      "identifier" : "1240M",
+      "index" : 72,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1272,
+      "description" : "Authorizes the Secretary, through NRCS, to carry out watershed protection projects—including purchasing floodplain easements—to protect lives and property from floods and erosion, with $15 million authorized annually for fiscal years 2002 through 2006.",
+      "heading" : null,
+      "identifier" : "1240N",
+      "index" : 73,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 219,
+      "description" : "Adds a new Agricultural Land Protection Program subchapter to the Food Security Act of 1985 by amending the chapter inserted by Section 201 of this bill.",
+      "heading" : null,
+      "identifier" : "217",
+      "index" : 74,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1504,
+      "description" : "Defines key terms for the agricultural land protection subchapter, including what qualifies as 'eligible land' (prime or historically significant agricultural land subject to a pending purchase offer, including cropland, ranchland, and prairie but not forest land), 'Indian tribe,' and 'program.'",
+      "heading" : null,
+      "identifier" : "1238H",
+      "index" : 75,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2465,
+      "description" : "Establishes a federal agricultural land protection program under which the Secretary purchases conservation easements on eligible land, with funding from the Commodity Credit Corporation rising from $175 million in FY2002 to $250 million per year in FY2005–2006, capping the federal share of easement costs at 50 percent and cost-share incentives at 75 percent.",
+      "heading" : null,
+      "identifier" : "1238I",
+      "index" : 76,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 199,
+      "description" : "Amends the Food Security Act of 1985 to add a new subchapter establishing a Grassland Reserve Program.",
+      "heading" : null,
+      "identifier" : "218",
+      "index" : 77,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1416,
+      "description" : "Authorizes the Natural Resources Conservation Service to establish a grassland protection program of up to one million acres, enrolling private natural grasslands and ecologically significant land through permanent or 30-year easements.",
+      "heading" : null,
+      "identifier" : "1238N",
+      "index" : 78,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3337,
+      "description" : "Sets out the requirements landowners must meet to enroll in the grassland program—including granting an easement, recording a deed restriction, and following an approved conservation plan—and specifies what activities are permitted (e.g., managed grazing) and prohibited (e.g., row-crop production and soil disturbance) under the easement.",
+      "heading" : null,
+      "identifier" : "1238O",
+      "index" : 79,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2366,
+      "description" : "Specifies what the Secretary must provide in exchange for a grassland easement, including easement payments based on fair market value minus grazing value, federal cost-share of up to 75 percent for restoration (capped at 5 percent of program funds), and technical assistance (capped at 8 percent of program funds), while prohibiting duplicate payments for the same easement under other programs.",
+      "heading" : null,
+      "identifier" : "1238P",
+      "index" : 80,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 196,
+      "description" : "Requires the Secretary to issue all regulations needed to implement the Grassland Reserve Program within 180 days of enactment.",
+      "heading" : null,
+      "identifier" : "1238Q",
+      "index" : 81,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 194,
+      "description" : "Rewrites Subtitle G of the Food Security Act of 1985 to re-establish the State Technical Committees framework.",
+      "heading" : null,
+      "identifier" : "219",
+      "index" : 82,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1867,
+      "description" : "Requires the Secretary to establish a State Technical Committee in every state, composed of diverse professional resource managers and stakeholders, to advise on the technical aspects of private land conservation programs.",
+      "heading" : null,
+      "identifier" : "1261",
+      "index" : 83,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4358,
+      "description" : "Defines the responsibilities of State Technical Committees, including regularly providing written technical advice to the Secretary, holding public meetings, and offering recommendations on wetland protection, conservation reserve program criteria, water quality, wildlife habitat, and other conservation program priorities.",
+      "heading" : null,
+      "identifier" : "1262",
+      "index" : 84,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 228,
+      "description" : "Adds 'conflict prevention' as an explicit goal of U.S. agricultural trade and food aid policy under the Agricultural Trade Development and Assistance Act of 1954.",
+      "heading" : null,
+      "identifier" : "301",
+      "index" : 85,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1963,
+      "description" : "Amends food aid program rules to encourage program diversity among eligible organizations, adjusts the monetization funding band from fixed dollar amounts to percentage ranges (5–10 percent), and creates a 'certified institutional partner' pathway allowing vetted private voluntary organizations and cooperatives to submit streamlined multi-country proposals.",
+      "heading" : null,
+      "identifier" : "302",
+      "index" : 86,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1076,
+      "description" : "Expands food aid monetization rules to allow proceeds from commodity sales to be used across multiple recipient countries rather than a single country, and updates terminology by replacing 'foreign currency' with 'proceeds' throughout the relevant provisions.",
+      "heading" : null,
+      "identifier" : "303",
+      "index" : 87,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 889,
+      "description" : "Raises the minimum tonnage of food commodities that must be provided under the food aid program each year (from 2,025,000 metric tons to a schedule reaching 2,500,000 metric tons by FY2006), reduces the minimum bagged-commodity requirement from 75 to 50 percent, and explicitly includes crude degummed soybean oil and soybean meal in that category.",
+      "heading" : null,
+      "identifier" : "304",
+      "index" : 88,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 399,
+      "description" : "Expands the scope of the Food Aid Consultative Group's review authority to include policies and guidelines in addition to regulations, and extends the group's authorization through fiscal year 2006.",
+      "heading" : null,
+      "identifier" : "305",
+      "index" : 89,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 213,
+      "description" : "Doubles the maximum allowable expenditure level under the Agricultural Trade Development and Assistance Act from $1 billion to $2 billion.",
+      "heading" : null,
+      "identifier" : "306",
+      "index" : 90,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 954,
+      "description" : "Updates food assistance agreement administration rules by requiring proposals to identify recipient countries, setting a 120-day decision deadline for the Administrator, clarifying that guidelines or policies apply, and shifting field consultation responsibility to eligible organizations with approved programs.",
+      "heading" : null,
+      "identifier" : "307",
+      "index" : 91,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 292,
+      "description" : "Extends authorization for assistance related to stockpiling and rapid delivery of shelf-stable prepackaged foods through 2006.",
+      "heading" : null,
+      "identifier" : "308",
+      "index" : 92,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 863,
+      "description" : "Establishes rules for the sale of commodities in recipient countries to generate proceeds for food assistance programs, allowing sales in any currency and requiring sales at reasonable local market prices.",
+      "heading" : null,
+      "identifier" : "309",
+      "index" : 93,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 200,
+      "description" : "Extends authorization for prepositioning of food aid commodities through 2006.",
+      "heading" : null,
+      "identifier" : "310",
+      "index" : 94,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 176,
+      "description" : "Extends the expiration date of certain Agricultural Trade Development and Assistance Act provisions from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "311",
+      "index" : 95,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1188,
+      "description" : "Expands and extends the micronutrient fortification pilot program through 2006, allowing multiple programs, removing the restriction to whole grains, and adding a goal of promoting technologies for improved quality and safety of fortified commodities.",
+      "heading" : null,
+      "identifier" : "312",
+      "index" : 96,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 228,
+      "description" : "Adds a new section to the Agricultural Trade Development and Assistance Act establishing an International Food for Education and Child Nutrition program.",
+      "heading" : null,
+      "identifier" : "313",
+      "index" : 97,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 12358,
+      "description" : "Defines terms and establishes the structure of the International Food for Education and Child Nutrition Program, under which the USDA provides eligible commodities and technical assistance to eligible organizations serving pre-school and school-age children in developing countries.",
+      "heading" : null,
+      "identifier" : "417",
+      "index" : 98,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 248,
+      "description" : "Increases the minimum funding allocation for the Farmer-to-Farmer Program from 0.4 to 0.5 percent and extends its authorization through 2006.",
+      "heading" : null,
+      "identifier" : "314",
+      "index" : 99,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 266,
+      "description" : "Extends the authorization of the Bill Emerson Humanitarian Trust Act provisions from 2002 through 2006.",
+      "heading" : null,
+      "identifier" : "315",
+      "index" : 100,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3385,
+      "description" : "Reauthorizes and updates the Food for Progress Act through 2006, increasing transportation and administrative cost caps, setting a minimum commodity level, encouraging multiyear agreements, raising annual funding, and adding reporting and certified institutional partner requirements.",
+      "heading" : null,
+      "identifier" : "316",
+      "index" : 101,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 654,
+      "description" : "Extends the authorization for debt reduction under the Tropical Forest Conservation Act to cover each of fiscal years 2001 through 2006 for both concessional loans and extended credits.",
+      "heading" : null,
+      "identifier" : "317",
+      "index" : 102,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1559,
+      "description" : "Extends and updates the agricultural export credit guarantee program through 2006, doubles the supplier credit term to 360 days, and requires an annual report to Congress on multilateral WTO and OECD negotiations regarding agricultural export credit programs.",
+      "heading" : null,
+      "identifier" : "321",
+      "index" : 103,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 345,
+      "description" : "Gradually increases the annual funding authorization for the Market Access Program from $100 million in fiscal year 2002 up to $200 million in fiscal year 2006.",
+      "heading" : null,
+      "identifier" : "322",
+      "index" : 104,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 670,
+      "description" : "Extends the Export Enhancement Program through fiscal year 2006 and expands the definition of unfair trade practices to include deliberate currency manipulation by competing exporters.",
+      "heading" : null,
+      "identifier" : "323",
+      "index" : 105,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 174,
+      "description" : "Replaces the existing funding section of the Foreign Market Development Cooperator Program in the Agricultural Trade Act of 1978 with a new section.",
+      "heading" : null,
+      "identifier" : "324",
+      "index" : 106,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 807,
+      "description" : "Sets specific annual funding levels for the Foreign Market Development Cooperator Program and requires that at least 50 percent of funds above $28 million go to new participants or new target countries.",
+      "heading" : null,
+      "identifier" : "703",
+      "index" : 107,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 258,
+      "description" : "Extends the Emerging Markets program authorization from 2002 through 2006.",
+      "heading" : null,
+      "identifier" : "331",
+      "index" : 108,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 257,
+      "description" : "Extends the deadline for reports on inspection of imported meat, poultry, other foods, animals, and plants under NAFTA from 2004 to 2006.",
+      "heading" : null,
+      "identifier" : "332",
+      "index" : 109,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2006,
+      "description" : "Updates the surplus commodities program for developing countries by replacing references to foreign currency with general proceeds and improving administrative procedures, including timelines for publishing commodity estimates and allowing direct delivery to U.S.-owned milling facilities.",
+      "heading" : null,
+      "identifier" : "333",
+      "index" : 110,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 592,
+      "description" : "Removes the financing restriction on agricultural trade with Cuba, eliminating the requirement that sales be made without U.S. government assistance or financing.",
+      "heading" : null,
+      "identifier" : "334",
+      "index" : 111,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 194,
+      "description" : "Adds a new Office of Trade Barrier Rapid Response to the Department of Agriculture's organizational structure within the Foreign Agricultural Service.",
+      "heading" : null,
+      "identifier" : "335",
+      "index" : 112,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1115,
+      "description" : "Establishes the Office of Trade Barrier Rapid Response within the Foreign Agricultural Service to conduct consumer outreach and assist exporters facing unjustified trade barriers, with $5 million authorized annually including at least $2 million reserved for grants.",
+      "heading" : null,
+      "identifier" : "228",
+      "index" : 113,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2554,
+      "description" : "Expresses Congress's view that the principal U.S. agricultural trade negotiating objective should be to achieve fair and open market access equivalent to what foreign countries enjoy in U.S. markets, by reducing tariffs, subsidies, and unjustified trade barriers.",
+      "heading" : null,
+      "identifier" : "336",
+      "index" : 114,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 128,
+      "description" : "Names Title 4 of the bill the 'Food Stamp Reauthorization Act of 2001.'",
+      "heading" : null,
+      "identifier" : "401",
+      "index" : 115,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2126,
+      "description" : "Excludes legally obligated child support payments made by a household member to a non-household individual from food stamp income calculations and allows states to use simplified procedures to determine the amount of those payments.",
+      "heading" : null,
+      "identifier" : "411",
+      "index" : 116,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1775,
+      "description" : "Gives states the option to exclude certain types of income—such as deferred educational loans, scholarships, state assistance payments, and other income excluded under Medicaid or TANF—when calculating food stamp eligibility.",
+      "heading" : null,
+      "identifier" : "412",
+      "index" : 117,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1763,
+      "description" : "Increases the standard deduction used in food stamp benefit calculations by gradually raising the applicable percentage of the income eligibility standard from 8 percent to 9 percent between fiscal years 2002 and 2011, and sets new minimum deduction amounts by region.",
+      "heading" : null,
+      "identifier" : "413",
+      "index" : 118,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1462,
+      "description" : "Expands how housing costs are calculated for food stamp purposes by requiring inclusion of all required landlord payments regardless of designation, and allows homeless households not receiving free shelter to use a flat $143 monthly shelter deduction.",
+      "heading" : null,
+      "identifier" : "414",
+      "index" : 119,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 509,
+      "description" : "Clarifies that states that make the standard utility allowance mandatory are exempt from certain restrictions that would otherwise limit its use.",
+      "heading" : null,
+      "identifier" : "415",
+      "index" : 120,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 733,
+      "description" : "Allows state agencies to simplify earned income calculations by multiplying weekly income by 4 or biweekly income by 2, with a required adjustment to the earned income deduction to avoid increased program costs.",
+      "heading" : null,
+      "identifier" : "416",
+      "index" : 121,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1254,
+      "description" : "Allows states to optionally exclude from food stamp resource calculations any types of financial resources not counted under their state TANF cash assistance program, except for cash, licensed vehicles, readily accessible bank accounts, and other resources the Secretary deems essential.",
+      "heading" : null,
+      "identifier" : "417",
+      "index" : 122,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 414,
+      "description" : "Allows states to use alternative issuance methods and permits consideration of conditions that make electronic benefit transfer systems impractical when responding to disasters.",
+      "heading" : null,
+      "identifier" : "418",
+      "index" : 123,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 855,
+      "description" : "Gives states the option to reduce how frequently households must submit reports, allowing reporting as infrequently as every six months, while still requiring households with excess income to report more promptly.",
+      "heading" : null,
+      "identifier" : "419",
+      "index" : 124,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2390,
+      "description" : "Modifies work requirements for able-bodied adults without dependents by adding job search programs as a qualifying work activity, shortening the benefit period and extension windows, and adjusting exemption categories.",
+      "heading" : null,
+      "identifier" : "420",
+      "index" : 125,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 959,
+      "description" : "Requires that electronic benefit transfer accounts remain accessible for at least 180 days of inactivity before benefits can be taken offline, and mandates that households receive a notice explaining how to reactivate inaccessible benefits.",
+      "heading" : null,
+      "identifier" : "421",
+      "index" : 126,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 232,
+      "description" : "Removes the requirement that electronic benefit transfer systems be cost-neutral compared to paper-based systems.",
+      "heading" : null,
+      "identifier" : "422",
+      "index" : 127,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5137,
+      "description" : "Allows states to use simplified procedures for calculating and issuing food stamp allotments to residents of certain group facilities, with the facility acting as authorized representative and procedures for handling resident departures.",
+      "heading" : null,
+      "identifier" : "423",
+      "index" : 128,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 548,
+      "description" : "Requires state agencies that maintain a website to make food stamp applications available online in every language for which a printed application is offered.",
+      "heading" : null,
+      "identifier" : "424",
+      "index" : 129,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2828,
+      "description" : "Replaces the concept of a fixed certification period with a flexible eligibility review period and simplifies the standards for periodic redetermination of household eligibility.",
+      "heading" : null,
+      "identifier" : "425",
+      "index" : 130,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 649,
+      "description" : "Directs the Secretary of Agriculture to collect descriptions of successful nutrition education programs from states and post them on the USDA website for other states to access.",
+      "heading" : null,
+      "identifier" : "426",
+      "index" : 131,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2573,
+      "description" : "Allows states to provide transitional food stamp benefits for up to six months to households that stop receiving TANF cash assistance, with benefit amounts based on the prior allotment adjusted for income changes.",
+      "heading" : null,
+      "identifier" : "427",
+      "index" : 132,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6286,
+      "description" : "Reforms the food stamp quality control system by changing how payment error rates are measured, replacing automatic sanctions with an investigation-first approach for states exceeding the national error rate benchmark, and capping initial financial penalties.",
+      "heading" : null,
+      "identifier" : "428",
+      "index" : 133,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 500,
+      "description" : "Changes the deadline for finalizing state food stamp payment error rate calculations to the first June 30 after the end of the relevant fiscal year, standardizing the timing for both state and federal reviews.",
+      "heading" : null,
+      "identifier" : "429",
+      "index" : 134,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4743,
+      "description" : "Requires the Secretary to measure state food stamp agency performance on application deadlines, accuracy of denial decisions, and working-family participation rates, then award bonus payments to the top 10 performing states.",
+      "heading" : null,
+      "identifier" : "430",
+      "index" : 135,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3079,
+      "description" : "Sets food stamp employment and training program funding at $90 million per year for fiscal years 2002–2006, revises the allocation formula, rescinds unobligated prior-year carryover funds, and creates up to $25 million annually in additional reimbursements for states that guarantee work-program slots to recipients nearing their time limit.",
+      "heading" : null,
+      "identifier" : "431",
+      "index" : 136,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 967,
+      "description" : "Extends the authorization of the Food Stamp Program and the Food Distribution Program on Indian Reservations through fiscal year 2006 by updating expiration dates in several provisions.",
+      "heading" : null,
+      "identifier" : "432",
+      "index" : 137,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 560,
+      "description" : "Allows federal administrative matching funds to be used to pay for food stamp informational and outreach activities that were previously prohibited from receiving such funding.",
+      "heading" : null,
+      "identifier" : "433",
+      "index" : 138,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 429,
+      "description" : "Expands the Secretary of Agriculture's authority to award grants and contracts for food stamp research and demonstration projects and explicitly extends waiver authority to all such grants and contracts.",
+      "heading" : null,
+      "identifier" : "434",
+      "index" : 139,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5541,
+      "description" : "Replaces the existing outreach provision with a new grant program that funds projects—at a 75 percent federal share—to improve access to and outreach for food stamps, including one-stop application sites, online and telephone applications, farmers'-market EBT systems, and transportation assistance.",
+      "heading" : null,
+      "identifier" : "435",
+      "index" : 140,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2701,
+      "description" : "Increases the nutrition assistance block grant for Puerto Rico and American Samoa through fiscal year 2006, adds American Samoa as a covered entity starting in fiscal year 2003, and allows Puerto Rico to spend up to $6 million to modernize its eligibility and data systems.",
+      "heading" : null,
+      "identifier" : "436",
+      "index" : 141,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1110,
+      "description" : "Reauthorizes community food project grants through fiscal year 2007, raises the maximum grant amount from 50 to 75 percent of project costs, and broadens eligible project purposes to include long-term food-system planning, interagency collaborations, and innovative marketing that benefits farmers and low-income consumers.",
+      "heading" : null,
+      "identifier" : "437",
+      "index" : 142,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 958,
+      "description" : "Reauthorizes the Emergency Food Assistance Program commodity purchases at $140 million per year for fiscal years 2002–2006 and directs $10 million annually to cover states' costs of processing, storing, transporting, and distributing those commodities.",
+      "heading" : null,
+      "identifier" : "438",
+      "index" : 143,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 172,
+      "description" : "Adds a new section to the Food Stamp Act authorizing a program for developing innovative solutions to common community problems such as rural poverty, hunger, and welfare dependency.",
+      "heading" : null,
+      "identifier" : "439",
+      "index" : 144,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2366,
+      "description" : "Directs the Secretary of Agriculture to contract with a qualified nongovernmental organization to identify and share innovative community-problem-solving programs with federal, state, and local entities, funded by two $200,000 transfers from the Treasury.",
+      "heading" : null,
+      "identifier" : "28",
+      "index" : 145,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 680,
+      "description" : "Requires the Secretary of Agriculture to report to Congress within 180 days on difficulties, fraud, and remediation efforts associated with electronic benefit transfer systems used to issue food stamp benefits.",
+      "heading" : null,
+      "identifier" : "440",
+      "index" : 146,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2099,
+      "description" : "Allows food stamp benefits to be used to purchase vitamin and mineral dietary supplements and requires the Secretary to commission a scientific study on the economic, technical, and health impacts of that policy.",
+      "heading" : null,
+      "identifier" : "441",
+      "index" : 147,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2861,
+      "description" : "Reauthorizes the Commodity Distribution Program and Commodity Supplemental Food Program through fiscal year 2006 and establishes an inflation-adjusted per-caseload-slot administrative grant formula for state agencies.",
+      "heading" : null,
+      "identifier" : "451",
+      "index" : 148,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3543,
+      "description" : "Restores food stamp eligibility to all qualified alien children under 18, reduces the work-quarter requirement for immigrant families seeking food stamps from 40 to 16 quarters, and restores benefits to refugees and asylees.",
+      "heading" : null,
+      "identifier" : "452",
+      "index" : 149,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1314,
+      "description" : "Establishes a one-year pilot program starting in July 2002 to provide free fruits and vegetables to students throughout the school day in 25 schools each in 4 states and on 1 Indian reservation, and requires an evaluation of the program's results using $200,000 of allocated funds.",
+      "heading" : null,
+      "identifier" : "453",
+      "index" : 150,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 16962,
+      "description" : "Establishes the Congressional Hunger Fellows Program as an independent legislative branch entity, named in honor of late Representatives Bill Emerson and Mickey Leland, to train future leaders for careers in humanitarian and anti-hunger service.",
+      "heading" : null,
+      "identifier" : "454",
+      "index" : 151,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 323,
+      "description" : "Sets the effective date of the title's amendments as July 1, 2002, while allowing state agencies the option to delay implementation until October 1, 2002.",
+      "heading" : null,
+      "identifier" : "455",
+      "index" : 152,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 212,
+      "description" : "Expands eligibility for direct farm ownership loans by replacing the requirement that an applicant have 'operated' a farm with the broader standard of having 'participated in the business operations of' a farm.",
+      "heading" : null,
+      "identifier" : "501",
+      "index" : 153,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 816,
+      "description" : "Allows the USDA to use farm ownership loan funds to refinance short-term bridge loans made by commercial lenders to beginning farmers or ranchers when the Secretary had approved a direct loan but funds were unavailable at the time of approval.",
+      "heading" : null,
+      "identifier" : "502",
+      "index" : 154,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1136,
+      "description" : "Sets new maximum loan limits for farm ownership loans, including $250,000 (inflation-adjusted) for beginning farmers and ranchers receiving direct loans, $200,000 for other direct loan borrowers, and $700,000 (inflation-adjusted) for guaranteed loans.",
+      "heading" : null,
+      "identifier" : "503",
+      "index" : 155,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 546,
+      "description" : "Requires that beginning farmers and ranchers receiving joint financing arrangement loans be charged an interest rate 50 basis points lower than the rate charged to non-beginning farmers and ranchers.",
+      "heading" : null,
+      "identifier" : "504",
+      "index" : 156,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 317,
+      "description" : "Raises the federal guarantee percentage for beginning farmer and rancher farm ownership loans to a flat 95 percent.",
+      "heading" : null,
+      "identifier" : "505",
+      "index" : 157,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 590,
+      "description" : "Authorizes the Secretary of Agriculture to guarantee loans made under state beginning farmer or rancher programs, including those financed through qualified small issue agricultural bonds.",
+      "heading" : null,
+      "identifier" : "506",
+      "index" : 158,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 395,
+      "description" : "Expands the Down Payment Loan Program by increasing the required borrower down payment threshold from 30 to 40 percent and extending the maximum loan term from 10 to 20 years.",
+      "heading" : null,
+      "identifier" : "507",
+      "index" : 159,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 220,
+      "description" : "Adds a new section to the Consolidated Farm and Rural Development Act creating the Beginning Farmer and Rancher Contract Land Sales Program.",
+      "heading" : null,
+      "identifier" : "508",
+      "index" : 160,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1813,
+      "description" : "Establishes a pilot program in at least 10 states to guarantee up to 5 loans per state per year from fiscal years 2003 through 2006 for private seller-financed land sales to beginning farmers and ranchers, subject to comparable risk determination and escrow agent participation.",
+      "heading" : null,
+      "identifier" : "310F",
+      "index" : 161,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 201,
+      "description" : "Removes a prior eligibility restriction on direct operating loans that had disqualified applicants who had not operated a farm for a specified period of up to 5 years.",
+      "heading" : null,
+      "identifier" : "511",
+      "index" : 162,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2242,
+      "description" : "Requires the USDA to guarantee 95 percent of operating loans to Native American farmers and ranchers on Indian reservations and allows waivers of loan term limits for tribal operations and, on a case-by-case basis, for other borrowers who demonstrate viable operations and inability to obtain commercial credit.",
+      "heading" : null,
+      "identifier" : "512",
+      "index" : 163,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 651,
+      "description" : "Adds limited liability companies to the list of eligible entities that may apply for farm ownership loans, farm operating loans, and emergency loans under the Consolidated Farm and Rural Development Act.",
+      "heading" : null,
+      "identifier" : "521",
+      "index" : 164,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 238,
+      "description" : "Simplifies the debt settlement authority for farm loans by removing a conditional clause so that the Secretary's settlement power applies after a single trigger point rather than two separate conditions.",
+      "heading" : null,
+      "identifier" : "522",
+      "index" : 165,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 364,
+      "description" : "Eliminates the statutory provisions that gave the USDA temporary authority to hire private collection agencies for farm loan debt, while preserving any contracts already in place before the law takes effect.",
+      "heading" : null,
+      "identifier" : "523",
+      "index" : 166,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 563,
+      "description" : "Adds a third interest-rate option for borrowers seeking loan deferrals or restructuring, allowing them to receive the current rate the Secretary charges for the same type of direct loan if it is lower than the other available rates.",
+      "heading" : null,
+      "identifier" : "524",
+      "index" : 167,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 426,
+      "description" : "Exempts certain non-farm-program loans (community facility, rural business, and industrial loans) from the requirement that the USDA conduct annual credit-history and eligibility reviews of borrowers.",
+      "heading" : null,
+      "identifier" : "525",
+      "index" : 168,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 310,
+      "description" : "Raises the loan principal threshold for simplified farmer program loan applications from $50,000 to $100,000.",
+      "heading" : null,
+      "identifier" : "526",
+      "index" : 169,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1963,
+      "description" : "Extends the priority purchase period for beginning farmers to buy USDA inventory property from 75 to 135 days, requires the agency to combine or divide parcels to maximize beginning-farmer purchase opportunities, and directs USDA to offer easements on inventory land to states or nonprofits for farmland preservation.",
+      "heading" : null,
+      "identifier" : "527",
+      "index" : 170,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 673,
+      "description" : "Raises the net-worth ceiling for the 'qualified beginning farmer or rancher' definition from 25 to 30 percent of the average farm price, and exempts discrimination-complaint write-downs and loan restructuring actions from counting as 'debt forgiveness.'",
+      "heading" : null,
+      "identifier" : "528",
+      "index" : 171,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1167,
+      "description" : "Sets total farm loan authorization levels at $3.75 billion per year for fiscal years 2002–2006, allocating specific amounts for direct and guaranteed farm ownership and operating loans, and fixes beginning-farmer loan set-asides at 35 percent through 2006.",
+      "heading" : null,
+      "identifier" : "529",
+      "index" : 172,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1979,
+      "description" : "Expands the interest-rate reduction program by allowing payments to lenders covering up to a 3-percent rate reduction for regular borrowers and up to a 4-percent reduction for beginning farmers, caps total annual program spending at $750 million, and reserves at least 25 percent of those funds for beginning-farmer guaranteed loans until April 1 of each fiscal year.",
+      "heading" : null,
+      "identifier" : "530",
+      "index" : 173,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2933,
+      "description" : "Gives borrowers under shared appreciation agreements the option to satisfy their recapture obligation by granting the USDA a 25-year agricultural use protection and conservation easement on the secured property instead of making a lump-sum or financed cash payment.",
+      "heading" : null,
+      "identifier" : "531",
+      "index" : 174,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 592,
+      "description" : "Allows the USDA Secretary to waive the borrower training certification requirement for individual borrowers who already demonstrate sufficient knowledge, and requires uniform nationwide criteria for applying the waiver.",
+      "heading" : null,
+      "identifier" : "532",
+      "index" : 175,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 215,
+      "description" : "Changes the required frequency of lender supervision reviews of borrowers' operations from biannual to annual.",
+      "heading" : null,
+      "identifier" : "533",
+      "index" : 176,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 498,
+      "description" : "Removes a previously required approval condition for Banks for Cooperatives and eliminates a corresponding subsection for other Farm Credit System banks and associations, reducing regulatory burdens on the Farm Credit System.",
+      "heading" : null,
+      "identifier" : "541",
+      "index" : 177,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 624,
+      "description" : "Broadens the lending authority of Banks for Cooperatives by replacing the term 'farm supplies' with 'agricultural supplies' and defining that term to include processing equipment, machinery, and capital goods related to storing or handling agricultural commodities.",
+      "heading" : null,
+      "identifier" : "542",
+      "index" : 178,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3731,
+      "description" : "Creates a new, lower insurance premium rate category for Farm Credit System banks on the guaranteed portions of loans backed by Government Sponsored Enterprises (such as Fannie Mae, Freddie Mac, or the Federal Home Loan Bank System), with a premium factor capped at 0.0015.",
+      "heading" : null,
+      "identifier" : "543",
+      "index" : 179,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2117,
+      "description" : "Expands the Board of Directors of the Federal Agricultural Mortgage Corporation from 15 to 17 members by adding two seats for the corporation's CEO and another executive officer, elected by common stockholders, and makes related structural and procedural updates to board governance.",
+      "heading" : null,
+      "identifier" : "544",
+      "index" : 180,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 625,
+      "description" : "Excludes agricultural credit decisions made by USDA state, county, or area committees under the Consolidated Farm and Rural Development Act from the finality rule that otherwise shields such committee decisions from agency review.",
+      "heading" : null,
+      "identifier" : "551",
+      "index" : 181,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 820,
+      "description" : "Makes technical corrections to the Consolidated Farm and Rural Development Act by updating the full name and citation of the Stafford Disaster Relief Act and removing obsolete cross-references to a repealed section.",
+      "heading" : null,
+      "identifier" : "552",
+      "index" : 182,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 634,
+      "description" : "Preserves the Secretary of Agriculture's existing authority to operate farm credit programs through fiscal year 2001 and ensures that no prior legal liabilities are erased by the amendments made in this title.",
+      "heading" : null,
+      "identifier" : "553",
+      "index" : 183,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 408,
+      "description" : "Sets October 1, 2001 as the general effective date for this title's provisions, with the exception that the Farmer Mac board amendments take effect immediately upon enactment.",
+      "heading" : null,
+      "identifier" : "554",
+      "index" : 184,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 250,
+      "description" : "Adds a new subtitle G to the Consolidated Farm and Rural Development Act to establish the National Rural Cooperative and Business Equity Fund.",
+      "heading" : null,
+      "identifier" : "601",
+      "index" : 185,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 121,
+      "description" : "Provides the short title for the new subtitle, naming it the 'National Rural Cooperative and Business Equity Fund Act.'",
+      "heading" : null,
+      "identifier" : "383A",
+      "index" : 186,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 352,
+      "description" : "States that the purpose of the subtitle is to revitalize rural communities and boost farm income by using federal funds and credit enhancements to attract private investors into a rural business equity fund.",
+      "heading" : null,
+      "identifier" : "383B",
+      "index" : 187,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2242,
+      "description" : "Defines key terms used throughout the subtitle, including 'authorized private investor,' 'Board,' 'Fund,' 'insured depository institution,' 'rural area,' and 'rural business.'",
+      "heading" : null,
+      "identifier" : "383C",
+      "index" : 188,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1959,
+      "description" : "Authorizes the creation of the National Rural Cooperative and Business Equity Fund as a non-federal, state-chartered entity whose equity ownership is broadly distributed among authorized private investor groups for the purpose of providing equity capital to rural businesses.",
+      "heading" : null,
+      "identifier" : "383D",
+      "index" : 189,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4105,
+      "description" : "Directs the Secretary to commit up to $150 million in Commodity Credit Corporation funds to the Fund on a dollar-for-dollar matching basis with private investors, and authorizes the Secretary to guarantee 50 percent of each private investor's loss and to guarantee repayment of Fund-issued debentures.",
+      "heading" : null,
+      "identifier" : "383E",
+      "index" : 190,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4382,
+      "description" : "Specifies the types of investments the Fund may make in rural businesses, including equity investments and quasi-equity credit, and establishes limits on individual investment size, total nonequity investments, and restrictions against competing with conventional lenders or investing in primarily retail businesses.",
+      "heading" : null,
+      "identifier" : "383F",
+      "index" : 191,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 950,
+      "description" : "Establishes a 12-member board of directors to govern the Fund, composed of federal designees, Secretary-appointed experts, investor-elected members, and a community banker representative, with a cap preventing any single investor from controlling more than 25 percent of board votes.",
+      "heading" : null,
+      "identifier" : "383G",
+      "index" : 192,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 218,
+      "description" : "Adds a new subtitle H to the Consolidated Farm and Rural Development Act to create the Rural Business Investment Program.",
+      "heading" : null,
+      "identifier" : "602",
+      "index" : 193,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8032,
+      "description" : "Defines key terms for the Rural Business Investment Program subtitle, including 'developmental venture capital,' 'equity capital,' 'leverage,' 'license,' 'limited liability company,' 'operational assistance,' and 'participation agreement.'",
+      "heading" : null,
+      "identifier" : "384A",
+      "index" : 194,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1119,
+      "description" : "States that the Rural Business Investment Program exists to boost economic development and job creation in rural areas by encouraging venture capital investments in small rural enterprises and authorizing the Secretary to enter agreements, guarantee debt, and make grants to Rural Business Investment Companies.",
+      "heading" : null,
+      "identifier" : "384B",
+      "index" : 195,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 520,
+      "description" : "Directs the Secretary to formally establish the Rural Business Investment Program with authority to sign participation agreements, guarantee debentures, and make grants to Rural Business Investment Companies.",
+      "heading" : null,
+      "identifier" : "384C",
+      "index" : 196,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4748,
+      "description" : "Sets out the eligibility criteria, application requirements, and licensing process for companies seeking to become Rural Business Investment Companies under the program.",
+      "heading" : null,
+      "identifier" : "384D",
+      "index" : 197,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 955,
+      "description" : "Authorizes the Secretary to guarantee repayment of debentures issued by Rural Business Investment Companies, capping the guarantee at 300 percent of a company's private capital and limiting debenture terms to 15 years.",
+      "heading" : null,
+      "identifier" : "384E",
+      "index" : 198,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3784,
+      "description" : "Allows the Secretary to issue and guarantee trust certificates backed by pools of guaranteed Rural Business Investment Company debentures, and establishes rules for managing, registering, and administering those certificates.",
+      "heading" : null,
+      "identifier" : "384F",
+      "index" : 199,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 897,
+      "description" : "Authorizes the Secretary to charge fees for guarantees and grants, prohibits fees on trust certificate guarantees (except agent fees), and allows licensing fees whose proceeds fund examination costs.",
+      "heading" : null,
+      "identifier" : "384G",
+      "index" : 200,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2476,
+      "description" : "Authorizes the Secretary to make multi-year operational assistance grants of up to $1,000,000 to Rural Business Investment Companies and other entities to support smaller rural enterprises, and allows supplemental grants with matching requirements.",
+      "heading" : null,
+      "identifier" : "384H",
+      "index" : 201,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3189,
+      "description" : "Establishes the organizational, structural, and minimum private capital requirements (at least $5,000,000–$10,000,000) that a Rural Business Investment Company must meet to participate in the program.",
+      "heading" : null,
+      "identifier" : "384I",
+      "index" : 202,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 721,
+      "description" : "Permits national banks, Federal Reserve member banks, federal savings associations, and insured state banks to invest in Rural Business Investment Companies, subject to a cap of 5 percent of the institution's capital and surplus.",
+      "heading" : null,
+      "identifier" : "384J",
+      "index" : 203,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 611,
+      "description" : "Requires each participating Rural Business Investment Company to report program performance data to the Secretary, including employee residency information when investments are made outside rural areas.",
+      "heading" : null,
+      "identifier" : "384K",
+      "index" : 204,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1050,
+      "description" : "Subjects each participating Rural Business Investment Company to Secretary-directed examinations, allows private-sector examiners to assist, and permits the Secretary to charge examination costs to the company being examined.",
+      "heading" : null,
+      "identifier" : "384L",
+      "index" : 205,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2043,
+      "description" : "Empowers the Secretary to seek federal court injunctions or compliance orders against Rural Business Investment Companies or individuals engaging in violations, and allows the court to appoint the Secretary as trustee or receiver over a noncompliant company.",
+      "heading" : null,
+      "identifier" : "384M",
+      "index" : 206,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1204,
+      "description" : "Allows the Secretary to void a participation agreement and strip a Rural Business Investment Company of its rights and privileges if a federal court finds the company has violated the program's rules.",
+      "heading" : null,
+      "identifier" : "384N",
+      "index" : 207,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2459,
+      "description" : "Makes any person who aids or participates in a Rural Business Investment Company's violation jointly liable, prohibits officers and employees from breaching fiduciary duties, and bars individuals convicted of felonies or fraud from serving in company management.",
+      "heading" : null,
+      "identifier" : "384O",
+      "index" : 208,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 282,
+      "description" : "Grants the Secretary authority to remove or suspend directors or officers of any Rural Business Investment Company using established removal procedures.",
+      "heading" : null,
+      "identifier" : "384P",
+      "index" : 209,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 139,
+      "description" : "Authorizes the Secretary of Agriculture to issue regulations needed to implement the subtitle.",
+      "heading" : null,
+      "identifier" : "384Q",
+      "index" : 210,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 704,
+      "description" : "Directs the Treasury to transfer, within 30 days, $350 million in loan guarantee authority and $50 million in grant funding to the Secretary of Agriculture, with funds remaining available until spent.",
+      "heading" : null,
+      "identifier" : "384R",
+      "index" : 211,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2889,
+      "description" : "Creates a Treasury account called the 'Rural America Infrastructure Development Account' to fully fund pending rural development loan, loan guarantee, and grant applications across several specified USDA programs.",
+      "heading" : null,
+      "identifier" : "603",
+      "index" : 212,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 222,
+      "description" : "Adds a new subtitle called the 'Rural Endowment Program' to the Consolidated Farm and Rural Development Act.",
+      "heading" : null,
+      "identifier" : "604",
+      "index" : 213,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 402,
+      "description" : "States that the Rural Endowment Program's purpose is to give distressed rural communities technical and financial help to carry out comprehensive development strategies addressing poverty, unemployment, and economic decline.",
+      "heading" : null,
+      "identifier" : "385A",
+      "index" : 214,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2351,
+      "description" : "Defines key terms used in the Rural Endowment Program subtitle, including eligible rural areas, endowment funds, program entities, and program-related investments.",
+      "heading" : null,
+      "identifier" : "385B",
+      "index" : 215,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 11460,
+      "description" : "Establishes the Rural Endowment Program, setting out how program entities can apply for endowment grants, eligibility criteria, preferences for regional applications, and the Secretary's authority to approve participating entities.",
+      "heading" : null,
+      "identifier" : "385C",
+      "index" : 216,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1733,
+      "description" : "Creates the Federal Interagency Working Group on Rural Development, composed of senior officials from 16 federal departments and agencies, to coordinate rural development policy advice and technical assistance to grant recipients.",
+      "heading" : null,
+      "identifier" : "385D",
+      "index" : 217,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 577,
+      "description" : "Allocates $265 million from the Commodity Credit Corporation to fund the Rural Endowment Program, with specified spending schedules across fiscal years 2002 through 2006.",
+      "heading" : null,
+      "identifier" : "385E",
+      "index" : 218,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 242,
+      "description" : "Amends the Rural Electrification Act of 1936 by adding a new title authorizing programs to expand broadband internet access in rural areas.",
+      "heading" : null,
+      "identifier" : "605",
+      "index" : 219,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 13144,
+      "description" : "Authorizes the Secretary of Agriculture to make grants to nonprofit entities and loans to eligible entities to fund construction, improvement, or acquisition of broadband service facilities in rural communities of 20,000 or fewer people.",
+      "heading" : null,
+      "identifier" : "601",
+      "index" : 220,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4878,
+      "description" : "Amends existing law to establish a competitive grant program providing $75 million per year through fiscal year 2006 to help independent agricultural producers and nonprofit entities develop business plans and marketing strategies for value-added agricultural products.",
+      "heading" : null,
+      "identifier" : "606",
+      "index" : 221,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 112,
+      "description" : "Designates the subtitle's short title as the 'National Rural Development Partnership Act of 2001.'",
+      "heading" : null,
+      "identifier" : "611",
+      "index" : 222,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 185,
+      "description" : "Amends the Consolidated Farm and Rural Development Act to add provisions establishing the National Rural Development Partnership.",
+      "heading" : null,
+      "identifier" : "612",
+      "index" : 223,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 15276,
+      "description" : "Defines key terms and establishes the National Rural Development Partnership and its coordinating committee to align federal agencies with rural responsibilities toward collaborative rural development goals.",
+      "heading" : null,
+      "identifier" : "377",
+      "index" : 224,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 228,
+      "description" : "Increases the maximum authorization for water and waste disposal grants from $590 million to $1.5 billion.",
+      "heading" : null,
+      "identifier" : "621",
+      "index" : 225,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 199,
+      "description" : "Extends the authorization for rural business opportunity grants through 2006 instead of 2002.",
+      "heading" : null,
+      "identifier" : "622",
+      "index" : 226,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 754,
+      "description" : "Establishes a national rural water and wastewater circuit rider program and authorizes $15 million per year for fiscal years 2003 through 2006.",
+      "heading" : null,
+      "identifier" : "623",
+      "index" : 227,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1875,
+      "description" : "Creates a grant program for multijurisdictional regional planning organizations to help local governments improve infrastructure and economic development, prioritizing areas with population loss or low incomes, with grants capped at $100,000 and $30 million authorized annually through 2006.",
+      "heading" : null,
+      "identifier" : "624",
+      "index" : 228,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1641,
+      "description" : "Establishes a certification and grant program allowing qualified nonprofit organizations to provide technical assistance to local governments and nonprofits for infrastructure and economic development, authorizing $20 million per year through 2006.",
+      "heading" : null,
+      "identifier" : "625",
+      "index" : 229,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1430,
+      "description" : "Authorizes the Secretary to guarantee loans for water, wastewater, and essential community facilities projects financed through bonds, and allows similar guarantees for rural business loans.",
+      "heading" : null,
+      "identifier" : "626",
+      "index" : 230,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2725,
+      "description" : "Creates a grant program to fund training for rural firefighters and emergency medical personnel, including scholarships and support for training centers, with $10 million immediately and $30 million annually through 2005.",
+      "heading" : null,
+      "identifier" : "627",
+      "index" : 231,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 204,
+      "description" : "Extends the authorization for the emergency community water assistance grant program through 2006 instead of 2002.",
+      "heading" : null,
+      "identifier" : "628",
+      "index" : 232,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 880,
+      "description" : "Updates the authorization for water and waste facility grants and loans for Native American tribes, setting funding levels of $30 million each for grants and loans and $20 million specifically for Indian tribes annually.",
+      "heading" : null,
+      "identifier" : "629",
+      "index" : 233,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 224,
+      "description" : "Extends the authorization for water systems assistance for rural and Native villages in Alaska through 2006.",
+      "heading" : null,
+      "identifier" : "630",
+      "index" : 234,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 241,
+      "description" : "Reorganizes and restructures the Business and Industry Direct and Guaranteed Loans section of the Consolidated Farm and Rural Development Act with updated formatting and provisions.",
+      "heading" : null,
+      "identifier" : "631",
+      "index" : 235,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4419,
+      "description" : "Restructures the rural industrialization assistance section to clarify loan purposes, expand eligible areas to communities of 50,000 or fewer, and add a cooperative stock share loan guarantee program for farmers and cooperatives creating value-added agricultural ventures.",
+      "heading" : null,
+      "identifier" : "310B",
+      "index" : 236,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 195,
+      "description" : "Extends the authorization for rural cooperative development grants through 2006 instead of 2002.",
+      "heading" : null,
+      "identifier" : "632",
+      "index" : 237,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2392,
+      "description" : "Establishes a value-added intermediary relending program that provides low-interest loans (0% for two years, then 2%) through intermediaries to businesses that add value to agricultural commodities, with preference given to bioenergy projects and a $2 million cap per recipient.",
+      "heading" : null,
+      "identifier" : "633",
+      "index" : 238,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 235,
+      "description" : "Adds a new provision to the Consolidated Farm and Rural Development Act allowing rural development loans and grants to be used for additional purposes as specified.",
+      "heading" : null,
+      "identifier" : "634",
+      "index" : 239,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 900,
+      "description" : "Allows borrowers or grant recipients of rural development loans or grants to repurpose the funded property or sale proceeds for a different eligible project in the same area if the Secretary determines circumstances have sufficiently changed to make the original project no longer appropriate.",
+      "heading" : null,
+      "identifier" : "310G",
+      "index" : 240,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1200,
+      "description" : "Requires the Secretary to provide lenders with a simplified application form for certain smaller loan guarantees, including farmer program loans up to $100,000, water or waste disposal loans up to $300,000, and business and industry guaranteed loans up to $600,000 under specified conditions.",
+      "heading" : null,
+      "identifier" : "635",
+      "index" : 241,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 209,
+      "description" : "Adds a new Rural Entrepreneurs and Microenterprise Assistance Program section to the Consolidated Farm and Rural Development Act.",
+      "heading" : null,
+      "identifier" : "636",
+      "index" : 242,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8740,
+      "description" : "Defines key terms for the Rural Entrepreneurs and Microenterprise Assistance Program, including microenterprise, microcredit, intermediary, and economically disadvantaged microentrepreneur, establishing the framework for providing small business assistance in rural areas.",
+      "heading" : null,
+      "identifier" : "378",
+      "index" : 243,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 247,
+      "description" : "Adds a new section establishing an Interagency Coordinating Committee for Rural Seniors to the Consolidated Farm and Rural Development Act.",
+      "heading" : null,
+      "identifier" : "637",
+      "index" : 244,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1827,
+      "description" : "Creates an interagency committee led by the Undersecretary of Agriculture for Rural Development to study the needs of rural seniors and submit recommendations for administrative and legislative action within one year.",
+      "heading" : null,
+      "identifier" : "379",
+      "index" : 245,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2656,
+      "description" : "Establishes a grant program for nonprofit organizations to provide facilities and technology for rural seniors, reserves at least 12.5 percent of Community Facilities Program funds for senior facilities, and reserves at least 10 percent for children's day care facilities in rural areas.",
+      "heading" : null,
+      "identifier" : "379A",
+      "index" : 246,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 192,
+      "description" : "Adds a new Rural Telework section to the Consolidated Farm and Rural Development Act.",
+      "heading" : null,
+      "identifier" : "638",
+      "index" : 247,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6199,
+      "description" : "Establishes a grant program for regional rural telework institutes to promote remote work in rural areas by conducting research, outreach, developing best practices, and supporting private sector businesses transitioning to telework.",
+      "heading" : null,
+      "identifier" : "379B",
+      "index" : 248,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 202,
+      "description" : "Adds a new Historic Barn Preservation section to the Consolidated Farm and Rural Development Act.",
+      "heading" : null,
+      "identifier" : "639",
+      "index" : 249,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3073,
+      "description" : "Establishes a historic barn preservation program that provides grants to eligible applicants for rehabilitating, repairing, and preserving barns at least 50 years old that meet historic criteria, while also supporting research and educational programs about historic barns.",
+      "heading" : null,
+      "identifier" : "379C",
+      "index" : 250,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 392,
+      "description" : "Extends the authorization of appropriations and the termination date for the Delta Regional Authority from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "640",
+      "index" : 251,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 222,
+      "description" : "Adds a new subtitle establishing the SEARCH Grants program for small communities to the Consolidated Farm and Rural Development Act.",
+      "heading" : null,
+      "identifier" : "641",
+      "index" : 252,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1009,
+      "description" : "Defines key terms for the SEARCH Grant Program, including environmental project, small community, region, and SEARCH grant, which supports environmental compliance projects in rural communities of 2,500 or fewer inhabitants.",
+      "heading" : null,
+      "identifier" : "386A",
+      "index" : 253,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6949,
+      "description" : "Establishes the SEARCH Grant Program, which awards grants of up to $1,000,000 to states to fund environmental compliance projects in small rural communities through independent nine-member citizens' councils appointed by state governors.",
+      "heading" : null,
+      "identifier" : "386B",
+      "index" : 254,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 851,
+      "description" : "Requires each council to submit an annual report to the Secretary by September 1 detailing the number, recipients, purposes, public health or environmental benefits, and status of all SEARCH grants awarded.",
+      "heading" : null,
+      "identifier" : "386C",
+      "index" : 255,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1109,
+      "description" : "Authorizes $51,000,000 for SEARCH grants, specifies how funds are divided equally among states if appropriations fall short, redistributes unused funds to active states, and authorizes additional sums for other subtitle expenses.",
+      "heading" : null,
+      "identifier" : "386D",
+      "index" : 256,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 233,
+      "description" : "Amends the Consolidated Farm and Rural Development Act to add a new subtitle establishing the Northern Great Plains Regional Authority.",
+      "heading" : null,
+      "identifier" : "642",
+      "index" : 257,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 566,
+      "description" : "Defines the key terms used in the Northern Great Plains Regional Authority subtitle, including the Authority itself, the five-state region it covers, and what qualifies as a Federal grant program.",
+      "heading" : null,
+      "identifier" : "387A",
+      "index" : 258,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 13330,
+      "description" : "Establishes the Northern Great Plains Regional Authority, specifying its composition of a presidentially appointed Federal member and state governors, its cochairperson structure, voting rules, quorum requirements, and restrictions on delegating authority.",
+      "heading" : null,
+      "identifier" : "387B",
+      "index" : 259,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2327,
+      "description" : "Authorizes the Northern Great Plains Regional Authority to award grants to states, local governments, and nonprofits for transportation, telecommunications, job training, business development, and basic public services, with funding priorities favoring distressed areas.",
+      "heading" : null,
+      "identifier" : "387C",
+      "index" : 260,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2445,
+      "description" : "Allows the Federal cochairperson to use Authority funds to supplement the Federal share of existing Federal grant programs in the region beyond normal statutory limits, up to 90 percent of project costs, provided the relevant Federal agency certifies the project meets program requirements.",
+      "heading" : null,
+      "identifier" : "387D",
+      "index" : 261,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3407,
+      "description" : "Defines local development districts, authorizes the Authority to make grants covering up to 80 percent of their administrative expenses, and sets eligibility conditions including prohibitions on entities that have misused Federal funds.",
+      "heading" : null,
+      "identifier" : "387E",
+      "index" : 262,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2814,
+      "description" : "Requires the Authority to annually designate distressed counties, nondistressed counties, and isolated areas of distress, mandates that at least 75 percent of appropriations serve distressed areas, and generally prohibits funding projects located in nondistressed counties with limited exceptions.",
+      "heading" : null,
+      "identifier" : "387F",
+      "index" : 263,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1306,
+      "description" : "Requires each state member to submit a development plan aligned with the regional plan, encourages consultation with local governments and development districts, and mandates public participation including public hearings in the planning process.",
+      "heading" : null,
+      "identifier" : "387G",
+      "index" : 264,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2070,
+      "description" : "Directs the Authority to evaluate assistance requests based on criteria such as regional development impact, poverty and unemployment rates, financial capacity of applicants, and measurable outcomes, while prohibiting use of funds to relocate businesses within the U.S. or to reduce existing Federal or state funding levels.",
+      "heading" : null,
+      "identifier" : "387H",
+      "index" : 265,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1261,
+      "description" : "Establishes the process for reviewing and approving development plans and grant applications, requiring state member evaluation and certification that projects comply with state plans and program criteria before the Authority votes on approval.",
+      "heading" : null,
+      "identifier" : "387I",
+      "index" : 266,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 167,
+      "description" : "Clarifies that no state is obligated to participate in or accept any program under the subtitle without its own consent.",
+      "heading" : null,
+      "identifier" : "387J",
+      "index" : 267,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1358,
+      "description" : "Requires the Authority and grant recipients to maintain complete financial records, makes those records available to the Comptroller General and USDA Inspector General, and mandates an annual audit of the Authority by the USDA Inspector General.",
+      "heading" : null,
+      "identifier" : "387K",
+      "index" : 268,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 217,
+      "description" : "Requires the Authority to submit an annual report to the President and Congress within 180 days after each fiscal year describing all activities carried out under the subtitle.",
+      "heading" : null,
+      "identifier" : "387L",
+      "index" : 269,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1037,
+      "description" : "Authorizes $30 million per year from 2002 through 2006 for the Authority, caps administrative expenses at 5%, and guarantees each state receives at least a proportional share of grants based on its population relative to the region.",
+      "heading" : null,
+      "identifier" : "387M",
+      "index" : 270,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 196,
+      "description" : "Terminates the subtitle and all authority granted under it on October 1, 2006.",
+      "heading" : null,
+      "identifier" : "387N",
+      "index" : 271,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2567,
+      "description" : "Abolishes the Alternative Agricultural Research and Commercialization Corporation, transfers its assets and funds to the Secretary of Agriculture, and directs how those assets and any remaining funds shall be managed and disposed of.",
+      "heading" : null,
+      "identifier" : "651",
+      "index" : 272,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 425,
+      "description" : "Extends the authorization for the telemedicine and distance learning services program in rural areas from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "652",
+      "index" : 273,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 221,
+      "description" : "Amends the Rural Electrification Act of 1936 by adding a new section authorizing the Secretary to guarantee bonds and notes issued by cooperative lenders for electrification or telephone purposes.",
+      "heading" : null,
+      "identifier" : "661",
+      "index" : 274,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4471,
+      "description" : "Authorizes the Secretary to guarantee bonds or notes issued by cooperative lenders for eligible electrification or telephone purposes, subject to limits on outstanding guarantees, prohibitions on guaranteeing electricity generation bonds, fee requirements, and a $500 million cap on total outstanding guarantees.",
+      "heading" : null,
+      "identifier" : "313A",
+      "index" : 275,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 146,
+      "description" : "Amends the Rural Electrification Act of 1936 to add a new section authorizing loans to expand 911 access in underserved rural areas.",
+      "heading" : null,
+      "identifier" : "662",
+      "index" : 276,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 596,
+      "description" : "Authorizes the Secretary to make telephone loans to state or local governments, Indian tribes, or other public entities for facilities and equipment to expand 911 access in underserved rural areas.",
+      "heading" : null,
+      "identifier" : "315",
+      "index" : 277,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 272,
+      "description" : "Sets October 1, 2002 as the effective date for Title VII and all amendments made by it.",
+      "heading" : null,
+      "identifier" : "671",
+      "index" : 278,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1088,
+      "description" : "Adds a definition of 'insular area' to federal agricultural research law and updates the definition of 'State' to include insular areas, while protecting existing funding formulas for Micronesia, the Marshall Islands, and Palau.",
+      "heading" : null,
+      "identifier" : "701",
+      "index" : 279,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 266,
+      "description" : "Extends the authorization of the National Agricultural Research, Extension, Education, and Economics Advisory Board from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "702",
+      "index" : 280,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1423,
+      "description" : "Expands the scope of federal grants and fellowships for food and agricultural sciences education to also cover rural economic, community, and business development, and extends the program's authorization from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "703",
+      "index" : 281,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 326,
+      "description" : "Extends the authorization for grants funding research on producing alcohols and industrial hydrocarbons from agricultural commodities and forest products from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "704",
+      "index" : 282,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 347,
+      "description" : "Requires agricultural policy research centers to disseminate (not just collect and analyze) data, and extends the program's authorization from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "705",
+      "index" : 283,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 251,
+      "description" : "Extends the authorization for the human nutrition intervention and health promotion research program from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "706",
+      "index" : 284,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 253,
+      "description" : "Extends the authorization for the pilot program combining medical and agricultural research from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "707",
+      "index" : 285,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 217,
+      "description" : "Extends the authorization for the nutrition education program from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "708",
+      "index" : 286,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 249,
+      "description" : "Extends the authorization for animal health and disease research programs from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "709",
+      "index" : 287,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 225,
+      "description" : "Extends the authorization for research on national or regional problems from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "710",
+      "index" : 288,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 243,
+      "description" : "Extends the authorization for education grants programs for Hispanic-serving institutions from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "711",
+      "index" : 289,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 266,
+      "description" : "Extends the authorization for competitive grants for international agricultural science and education programs from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "712",
+      "index" : 290,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 635,
+      "description" : "Raises the cap on indirect costs for agricultural research grants from 19 percent to 35 percent (or a lesser negotiated rate), and exempts Small Business Act competitive grants from this indirect cost limitation.",
+      "heading" : null,
+      "identifier" : "713",
+      "index" : 291,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 192,
+      "description" : "Adds a new section to the National Agricultural Research, Extension, and Teaching Policy Act of 1977 authorizing competitive grants for scientific research equipment.",
+      "heading" : null,
+      "identifier" : "714",
+      "index" : 292,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1086,
+      "description" : "Creates a competitive grant program allowing the Secretary to award up to $500,000 per grant to colleges, universities, or state cooperative institutions for acquiring special-purpose scientific research equipment for food and agricultural sciences, with $10,000,000 authorized annually for fiscal years 2003 through 2006, and prohibits charging the equipment cost as indirect costs on other federal grants.",
+      "heading" : null,
+      "identifier" : "1462A",
+      "index" : 293,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 413,
+      "description" : "Increases the authorization for agricultural research programs from $850,000,000 to $1,500,000,000 per fiscal year and extends the authorization through 2006.",
+      "heading" : null,
+      "identifier" : "715",
+      "index" : 294,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 293,
+      "description" : "Increases the authorization for extension education from $420,000,000 to $500,000,000 per fiscal year and extends it through fiscal years 2003 through 2006.",
+      "heading" : null,
+      "identifier" : "716",
+      "index" : 295,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 215,
+      "description" : "Replaces the existing special authorization section with a new biosecurity planning and response provision authorizing appropriations through 2006.",
+      "heading" : null,
+      "identifier" : "717",
+      "index" : 296,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 865,
+      "description" : "Authorizes open-ended appropriations for fiscal years 2003 through 2006 for agricultural research, education, and extension activities aimed at reducing vulnerability to, countering, and responding to chemical or biological attacks on the U.S. food and agricultural system.",
+      "heading" : null,
+      "identifier" : "1465",
+      "index" : 297,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 206,
+      "description" : "Adds a new section to the National Agricultural Research, Extension, and Teaching Policy Act of 1977 governing the availability period of competitive grant funds.",
+      "heading" : null,
+      "identifier" : "718",
+      "index" : 298,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 384,
+      "description" : "Specifies that funds made available for competitive agricultural research, education, or extension grants are available for obligation for a two-year period beginning October 1 of the fiscal year for which they are appropriated.",
+      "heading" : null,
+      "identifier" : "1469A",
+      "index" : 299,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 738,
+      "description" : "States the purposes of the joint requests for proposals provision: reducing administrative duplication, maximizing peer review resources, and easing the burden on grant applicants across overlapping federal programs.",
+      "heading" : null,
+      "identifier" : "719",
+      "index" : 300,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2230,
+      "description" : "Authorizes the Secretary of Agriculture to partner with other federal agencies to issue joint grant solicitations, share or transfer funds, delegate administrative responsibilities, apply uniform post-award regulations, and form joint peer review panels for agricultural research, education, and extension grants.",
+      "heading" : null,
+      "identifier" : "1473B",
+      "index" : 301,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 220,
+      "description" : "Extends the authorization for the supplemental and alternative crops research program through 2006 by replacing the prior expiration year of 2002.",
+      "heading" : null,
+      "identifier" : "720",
+      "index" : 302,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 211,
+      "description" : "Extends the authorization for the aquaculture research program through 2006 by replacing the prior expiration year of 2002.",
+      "heading" : null,
+      "identifier" : "721",
+      "index" : 303,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 269,
+      "description" : "Extends the authorization for the rangeland research program through 2006 by replacing the prior expiration year of 2002.",
+      "heading" : null,
+      "identifier" : "722",
+      "index" : 304,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 198,
+      "description" : "Extends the authorization for the National Genetic Resources Program through 2006 by replacing the prior expiration year of 2002.",
+      "heading" : null,
+      "identifier" : "731",
+      "index" : 305,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1247,
+      "description" : "Adds grant priority criteria for biotechnology risk assessment research, favoring institutions focused on interdisciplinary pre-approval review of genetically modified products, biosafety studies, identity preservation systems, and international biosafety partnerships.",
+      "heading" : null,
+      "identifier" : "732",
+      "index" : 306,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 212,
+      "description" : "Extends the authorization for the high-priority agricultural research and extension initiatives program through 2006 by replacing the prior expiration year of 2002.",
+      "heading" : null,
+      "identifier" : "733",
+      "index" : 307,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 219,
+      "description" : "Extends the authorization for the nutrient management research and extension initiative through 2006 by replacing the prior expiration year of 2002.",
+      "heading" : null,
+      "identifier" : "734",
+      "index" : 308,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 765,
+      "description" : "Expands the scope of the organic agriculture research and extension initiative to include genomics-based trait identification, breeding for organic systems, and marketing and policy research, and extends its authorization through 2006.",
+      "heading" : null,
+      "identifier" : "735",
+      "index" : 309,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 203,
+      "description" : "Extends the authorization for the agricultural telecommunications program through 2006 by replacing the prior expiration year of 2002.",
+      "heading" : null,
+      "identifier" : "736",
+      "index" : 310,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 307,
+      "description" : "Extends the authorization for the assistive technology program for farmers with disabilities through 2006 by replacing the prior expiration year of 2002.",
+      "heading" : null,
+      "identifier" : "737",
+      "index" : 311,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 623,
+      "description" : "Extends mandatory Treasury transfers of $145,000,000 per year for the Initiative for Future Agriculture and Food Systems account through fiscal years 2003 to 2006.",
+      "heading" : null,
+      "identifier" : "741",
+      "index" : 312,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 240,
+      "description" : "Extends the authorization for the partnerships for high-value agricultural product quality research program through 2006 by replacing the prior expiration year of 2002.",
+      "heading" : null,
+      "identifier" : "742",
+      "index" : 313,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 202,
+      "description" : "Extends the authorization for the precision agriculture research program through 2006 by replacing the prior expiration year of 2002.",
+      "heading" : null,
+      "identifier" : "743",
+      "index" : 314,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 287,
+      "description" : "Extends the authorization period for the biobased products program from 2001/2002 to 2006.",
+      "heading" : null,
+      "identifier" : "744",
+      "index" : 315,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 227,
+      "description" : "Extends the authorization of the Thomas Jefferson Initiative for Crop Diversification from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "745",
+      "index" : 316,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 495,
+      "description" : "Extends the integrated research, education, and extension competitive grants program to 2006 and limits individual grants to a maximum term of five years.",
+      "heading" : null,
+      "identifier" : "746",
+      "index" : 317,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1406,
+      "description" : "Redirects the research grants program under Section 408 toward developing rapid diagnostics and vaccines for animal diseases that pose bioterrorism risks, and extends funding authorization to 2006.",
+      "heading" : null,
+      "identifier" : "747",
+      "index" : 318,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 268,
+      "description" : "Extends the authorization for the Office of Pest Management Policy from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "748",
+      "index" : 319,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 674,
+      "description" : "Allows state agricultural experiment stations to carry over unexpended annual Hatch Act funds for one additional year, with any still-unexpended balance after two years deducted from the next allotment.",
+      "heading" : null,
+      "identifier" : "751",
+      "index" : 320,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 268,
+      "description" : "Requires state agricultural experiment stations to include in their annual reports a description of technology transfer activities conducted with respect to federally funded agricultural research.",
+      "heading" : null,
+      "identifier" : "752",
+      "index" : 321,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4249,
+      "description" : "Requires states receiving Smith-Lever cooperative extension funds to spend at least 25 percent of those funds on multistate cooperative activities and at least 25 percent on integrated research-and-extension activities, with hardship waivers available.",
+      "heading" : null,
+      "identifier" : "753",
+      "index" : 322,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1281,
+      "description" : "Authorizes ongoing appropriations for cooperative extension programs at 1994 tribal land-grant institutions and allows those institutions to administer the funds through cooperative agreements with 1862 or 1890 institutions.",
+      "heading" : null,
+      "identifier" : "754",
+      "index" : 323,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3430,
+      "description" : "Updates the official list of recognized 1994 tribal land-grant institutions to reflect name changes, extends their land-grant funding authorization through 2006, and updates the Indian student count formula reference.",
+      "heading" : null,
+      "identifier" : "755",
+      "index" : 324,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 275,
+      "description" : "Makes 1994 tribal land-grant institutions eligible to compete for integrated research, extension, and education grants under Section 406.",
+      "heading" : null,
+      "identifier" : "756",
+      "index" : 325,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1413,
+      "description" : "Raises the minimum percentage of Hatch Act funds that must be appropriated for 1890 land-grant institution extension programs to 15 percent and for research programs to 25 percent beginning in fiscal year 2002.",
+      "heading" : null,
+      "identifier" : "757",
+      "index" : 326,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 785,
+      "description" : "Allows 1890 land-grant institutions to carry over unexpended annual research funds for one additional year, with any balance still unspent after two years deducted from the next allotment.",
+      "heading" : null,
+      "identifier" : "758",
+      "index" : 327,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 334,
+      "description" : "Requires 1890 land-grant institutions to include technology transfer activities related to federally funded agricultural research in their annual reports.",
+      "heading" : null,
+      "identifier" : "759",
+      "index" : 328,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 403,
+      "description" : "Increases the annual authorization for facility upgrade grants to 1890 land-grant colleges and Tuskegee University from $15 million to $25 million and extends the program through fiscal year 2006.",
+      "heading" : null,
+      "identifier" : "760",
+      "index" : 329,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 280,
+      "description" : "Extends the authorization period for National Research and Training Centennial Centers from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "761",
+      "index" : 330,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1152,
+      "description" : "Replaces the matching funds requirement for 1890 land-grant institution research and extension activities with a new formula requiring states to provide at least 60% matching funds in fiscal year 2003, rising by 110% of the prior year's requirement each subsequent year through 2006, with a waiver option if the state cannot meet more than 50% matching.",
+      "heading" : null,
+      "identifier" : "762",
+      "index" : 331,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 529,
+      "description" : "Requires that the USDA's priority-setting process for agricultural research, extension, and education be transparent and open to input from diverse agricultural, geographic, and cultural communities.",
+      "heading" : null,
+      "identifier" : "771",
+      "index" : 332,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 293,
+      "description" : "Adds a new subtitle to the National Agricultural Research, Extension, and Teaching Policy Act of 1977 establishing provisions for land-grant institutions in insular areas, including a distance education grants program.",
+      "heading" : null,
+      "identifier" : "775",
+      "index" : 333,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2856,
+      "description" : "Authorizes the Secretary of Agriculture to make grants to state cooperative institutions in insular areas to support distance food and agricultural education programs using digital network technologies, with allowable uses including equipment, curriculum development, teacher training, and leadership development, and an optional 50% non-federal matching requirement that may be waived.",
+      "heading" : null,
+      "identifier" : "1484",
+      "index" : 334,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1888,
+      "description" : "Sets a new matching funds requirement for insular areas (Puerto Rico, Guam, and the U.S. Virgin Islands) of at least 50% of formula funds for both agricultural experiment stations and cooperative extension programs, replacing previous requirements, with a waiver option if the Secretary determines the territory is unlikely to meet the requirement.",
+      "heading" : null,
+      "identifier" : "776",
+      "index" : 335,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1303,
+      "description" : "Expands education grant eligibility to include Pacific Islander serving institutions—such as land-grant institutions in Guam, American Samoa, the Northern Mariana Islands, and the College of Micronesia—alongside Native Hawaiian serving institutions in an existing grant program.",
+      "heading" : null,
+      "identifier" : "777",
+      "index" : 336,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 174,
+      "description" : "Extends the authorization of appropriations for the Critical Agricultural Materials Act from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "781",
+      "index" : 337,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 149,
+      "description" : "Extends the authorization of appropriations for the Research Facilities Act from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "782",
+      "index" : 338,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 248,
+      "description" : "Extends the authorization of appropriations for federal agricultural research facilities under the 1985 NARETPA Amendments from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "783",
+      "index" : 339,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 574,
+      "description" : "Updates the Competitive, Special, and Facilities Research Grant Act to require the Secretary to determine research grant priorities in consultation with the National Agricultural Research Advisory Board by July 1 each year for the following fiscal year, and extends the program's authorization from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "784",
+      "index" : 340,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1151,
+      "description" : "Expands the risk management education grant program under the Federal Crop Insurance Act to explicitly include competitive grants for educating beginning farmers and ranchers about risk management strategies through programs specifically targeted at them.",
+      "heading" : null,
+      "identifier" : "785",
+      "index" : 341,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 196,
+      "description" : "Extends the authorization of appropriations for the National Aquaculture Act of 1980 from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "786",
+      "index" : 342,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 193,
+      "description" : "Defines the terms 'Department' and 'Secretary' as used in the subtitle's new authority provisions.",
+      "heading" : null,
+      "identifier" : "791",
+      "index" : 343,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1566,
+      "description" : "Authorizes the Secretary of Agriculture to use public or private sources to meet the urgent applied research needs of USDA inspection and regulatory agencies in a timely and cost-effective manner, while requiring conflict-of-interest guidelines when research is obtained from agencies whose funding comes from regulated industries.",
+      "heading" : null,
+      "identifier" : "792",
+      "index" : 344,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1120,
+      "description" : "Allows the Secretary of Agriculture to transfer up to 2% (capped at $5 million per fiscal year) of appropriated funds from agricultural research and related programs to address imminent threats to animal and plant health, food safety, or human nutrition, including bioterrorism, subject to OMB approval.",
+      "heading" : null,
+      "identifier" : "793",
+      "index" : 345,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1058,
+      "description" : "Requires the Secretary of Agriculture to conduct an independent external review of the Agricultural Research Service's purpose, efficiency, and effectiveness, and submit a report to Congress by September 30, 2004, using no more than 0.1% of the Service's appropriations for fiscal years 2002–2004.",
+      "heading" : null,
+      "identifier" : "794",
+      "index" : 346,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1216,
+      "description" : "Directs the Secretary of Agriculture to establish a program, through the Rural Business-Cooperative Service and the Agricultural Research Service, to promote technology transfer opportunities from the Department to rural businesses and residents via a website, annual joint programs, and biennial laboratory events.",
+      "heading" : null,
+      "identifier" : "795",
+      "index" : 347,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6866,
+      "description" : "Establishes a competitive grant program to provide training, education, outreach, and technical assistance to beginning farmers and ranchers (those with 10 or fewer years of experience), covering topics such as mentoring, land acquisition, financial management, and risk management, with grants up to three years and a 25% matching requirement.",
+      "heading" : null,
+      "identifier" : "796",
+      "index" : 348,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1508,
+      "description" : "Expresses Congress's view that federal funding for food and agricultural research should be at least doubled over five years to restore the balance between public and private sector investment, and that funding for USDA agencies responsible for biosecurity should be increased to improve their capacity to respond to bioterrorism and animal and plant diseases.",
+      "heading" : null,
+      "identifier" : "797",
+      "index" : 349,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3657,
+      "description" : "Establishes a Rural Research Fund Account in the U.S. Treasury, funded with $15 million per year through fiscal year 2005, to support competitive research grants on rural policy issues including sociology, demographics, community development, infrastructure, business development, education, and health.",
+      "heading" : null,
+      "identifier" : "798",
+      "index" : 350,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 441,
+      "description" : "Requires the Secretary of Agriculture to give priority to farms and ranches enrolled in federal conservation programs when implementing new on-farm research or extension programs authorized by this or future legislation.",
+      "heading" : null,
+      "identifier" : "798A",
+      "index" : 351,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 303,
+      "description" : "Requires the Secretary of Agriculture to ensure that data on the production and marketing of organic agricultural products is included as a segregated category in the Department's ongoing agricultural data collection efforts.",
+      "heading" : null,
+      "identifier" : "798B",
+      "index" : 352,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 693,
+      "description" : "Clarifies that this title's amendments do not affect the Secretary of Agriculture's authority to carry out research, extension, or education programs under prior law for fiscal years 1996–2002, and do not alter any person's legal liability that existed before the Act's enactment.",
+      "heading" : null,
+      "identifier" : "799",
+      "index" : 353,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 196,
+      "description" : "Extends the authorization for the Office of International Forestry under the Food, Agriculture, Conservation, and Trade Act of 1990 from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "801",
+      "index" : 354,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 232,
+      "description" : "Expresses Congress's reaffirmation of the importance of the McIntire-Stennis Cooperative Forestry Act, which supports forestry research at colleges and universities.",
+      "heading" : null,
+      "identifier" : "802",
+      "index" : 355,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 263,
+      "description" : "Amends the Renewable Resources Extension Act of 1978 to add a Sustainable Forestry Outreach Initiative and extends the authorization for renewable resources extension activities and the Act's effective date to 2006.",
+      "heading" : null,
+      "identifier" : "803",
+      "index" : 356,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 926,
+      "description" : "Creates the Sustainable Forestry Outreach Initiative, directing the Secretary of Agriculture to establish a program educating private landowners about the benefits of sustainable forestry, the value of professional forestry advice, and available public and private resources to help them practice sustainable forestry.",
+      "heading" : null,
+      "identifier" : "5B",
+      "index" : 357,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 178,
+      "description" : "Extends the authorization for the Forestry Incentives Program under the Cooperative Forestry Assistance Act of 1978 from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "804",
+      "index" : 358,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 175,
+      "description" : "Amends the Cooperative Forestry Assistance Act of 1978 to add a new Sustainable Forestry Cooperative Program by inserting a new section after section 5.",
+      "heading" : null,
+      "identifier" : "805",
+      "index" : 359,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2542,
+      "description" : "Establishes a grant program administered by the USDA to provide competitive grants to nonprofit organizations for creating and supporting forestry cooperatives owned by nonindustrial private forest landowners, with $2 million per year in mandatory Treasury transfers through 2005.",
+      "heading" : null,
+      "identifier" : "5A",
+      "index" : 360,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 172,
+      "description" : "Amends the Cooperative Forestry Assistance Act of 1978 to insert a new section establishing a Sustainable Forest Management Program.",
+      "heading" : null,
+      "identifier" : "806",
+      "index" : 361,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 15269,
+      "description" : "Creates a Sustainable Forest Management Program to strengthen assistance to nonindustrial private forest landowners for sustainable harvesting, wildfire prevention, water and air quality, and rural economic health.",
+      "heading" : null,
+      "identifier" : "6A",
+      "index" : 362,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1442,
+      "description" : "Amends the Cooperative Forestry Assistance Act of 1978 to add an Enhanced Community Fire Protection section, citing increased wildfire severity and limited authority to act on private lands as justification.",
+      "heading" : null,
+      "identifier" : "807",
+      "index" : 363,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2797,
+      "description" : "Authorizes the Secretary of Agriculture to cooperate with State foresters and establishes the Community and Private Land Fire Assistance Program to reduce wildfire risks on Federal and non-Federal land through fuel hazard mitigation, education, invasive species management, and restoration.",
+      "heading" : null,
+      "identifier" : "10A",
+      "index" : 364,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4230,
+      "description" : "Amends the Cooperative Forestry Assistance Act of 1978 to add a Watershed Forestry Assistance Program section, citing forests' critical role in supplying clean water to more than half the U.S. population and the need for better private-land forest stewardship.",
+      "heading" : null,
+      "identifier" : "808",
+      "index" : 365,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7239,
+      "description" : "Establishes a watershed forestry assistance program providing States with technical and financial help to improve forestry best management practices, prevent water quality degradation, and coordinate watershed planning on non-Federal forest land.",
+      "heading" : null,
+      "identifier" : "5B",
+      "index" : 366,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 809,
+      "description" : "Amends the Cooperative Forestry Assistance Act of 1978 to authorize the Secretary to make grants and enter contracts or cooperative agreements, including providing assistance directly to any public or private entity with State forester concurrence.",
+      "heading" : null,
+      "identifier" : "809",
+      "index" : 367,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1012,
+      "description" : "Amends the Cooperative Forestry Assistance Act of 1978 to add the U.S. Fish and Wildlife Service to State Forest Stewardship Coordinating Committees and require those committees to submit annual reports to Congress on their membership and any exclusions.",
+      "heading" : null,
+      "identifier" : "810",
+      "index" : 368,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4058,
+      "description" : "States Congressional findings that agriculture and rural areas can boost U.S. energy security, farmer income, and environmental quality through renewable energy production, biobased product purchasing, and energy efficiency improvements.",
+      "heading" : null,
+      "identifier" : "901",
+      "index" : 369,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 208,
+      "description" : "Amends the Consolidated Farm and Rural Development Act to add a new subtitle on Clean Energy.",
+      "heading" : null,
+      "identifier" : "902",
+      "index" : 370,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1191,
+      "description" : "Defines key terms—biomass, renewable energy, and rural small business—for use throughout the Clean Energy subtitle of the Consolidated Farm and Rural Development Act.",
+      "heading" : null,
+      "identifier" : "388A",
+      "index" : 371,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5646,
+      "description" : "Requires Federal agencies to purchase biobased products when they appear on a USDA-maintained list, unless price, performance, or availability makes them not reasonably comparable, and directs USDA and EPA to resolve conflicts with existing recycled-content purchasing requirements.",
+      "heading" : null,
+      "identifier" : "388B",
+      "index" : 372,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4301,
+      "description" : "Authorizes USDA to award competitive grants to corporations, cooperatives, universities, and other eligible entities to help build biorefineries that demonstrate commercial-scale conversion of cellulosic biomass into fuels or chemicals.",
+      "heading" : null,
+      "identifier" : "388C",
+      "index" : 373,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1373,
+      "description" : "Directs the Secretary of Agriculture to award competitive grants to qualified nonprofit organizations with biodiesel expertise to educate the public and stakeholders about the benefits of biodiesel fuel, authorizing $1 million per year for fiscal years 2002 through 2006.",
+      "heading" : null,
+      "identifier" : "388D",
+      "index" : 374,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2550,
+      "description" : "Establishes a competitive grant program through the Rural Business Cooperative Service to help farmers and ranchers form cooperatives or rural business ventures focused on renewable electric energy ownership and marketing, with grants capped at $500,000, a 50% federal cost share, and $18 million in annual funding through 2005.",
+      "heading" : null,
+      "identifier" : "388E",
+      "index" : 375,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3878,
+      "description" : "Directs the Secretary to award competitive grants to eligible entities such as state offices, universities, and rural cooperatives to help farmers, ranchers, and rural small businesses conduct energy audits, learn about renewable energy technology, and access financial assistance programs.",
+      "heading" : null,
+      "identifier" : "388F",
+      "index" : 376,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2982,
+      "description" : "Authorizes the Secretary to make competitive grants to farmers, ranchers, and rural small businesses to purchase renewable energy systems or make energy efficiency improvements, covering up to 50% of costs, with preference given to participants in the energy audit program under Section 388F.",
+      "heading" : null,
+      "identifier" : "388G",
+      "index" : 377,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1821,
+      "description" : "Establishes a competitive grant and contract program for demonstrating hydrogen and fuel cell technologies in farm and rural applications, with a 50% federal cost share and $5 million in annual funding through 2005.",
+      "heading" : null,
+      "identifier" : "388H",
+      "index" : 378,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 578,
+      "description" : "Requires the Secretary, through the Cooperative State Research, Education, and Extension Service, to provide education and technical assistance to farmers and ranchers for developing and marketing renewable energy resources.",
+      "heading" : null,
+      "identifier" : "388I",
+      "index" : 379,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6810,
+      "description" : "Directs the Secretary to conduct basic and applied research on soil carbon sequestration, greenhouse gas emissions from agriculture, and methods for measuring and verifying carbon storage, including a competitive grant program for land grant universities.",
+      "heading" : null,
+      "identifier" : "388J",
+      "index" : 380,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3395,
+      "description" : "Requires the Secretary to develop user-friendly monitoring programs and establish demonstration projects to test methods of measuring and verifying carbon sequestration and greenhouse gas emission changes in agricultural soils and plants, while also directing outreach to farmers about conservation practice benefits.",
+      "heading" : null,
+      "identifier" : "388K",
+      "index" : 381,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 327,
+      "description" : "Amends the Biomass Research and Development Act of 2000 by removing a funding subsection, redesignating a section, and inserting a new funding provision for biomass research.",
+      "heading" : null,
+      "identifier" : "903",
+      "index" : 382,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 816,
+      "description" : "Provides $15 million in annual mandatory Treasury transfers through fiscal year 2005 to fund biomass research and development activities, and extends the program's termination date to September 30, 2006.",
+      "heading" : null,
+      "identifier" : "310",
+      "index" : 383,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 558,
+      "description" : "Expresses Congress's sense that the Senate supports adopting a national renewable fuels standard requiring motor vehicle fuel to contain a specified percentage of renewable fuel, and that USDA policies should promote renewable fuel production.",
+      "heading" : null,
+      "identifier" : "904",
+      "index" : 384,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 166,
+      "description" : "Amends Title I of the Rural Electrification Act of 1936 by adding a new section providing financial and technical assistance for renewable energy systems.",
+      "heading" : null,
+      "identifier" : "905",
+      "index" : 385,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1551,
+      "description" : "Authorizes the Secretary to make grants to rural electric cooperatives and utilities for renewable energy project feasibility studies and development, covering up to 75% of study costs and 20% of project costs, with $10 million in annual mandatory funding through 2005.",
+      "heading" : null,
+      "identifier" : "20",
+      "index" : 386,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 141,
+      "description" : "Rewrites the Agricultural Fair Practices Act of 1967 in its entirety with new provisions governing agricultural trade practices and contracts.",
+      "heading" : null,
+      "identifier" : "1001",
+      "index" : 387,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 868,
+      "description" : "Provides the short title and table of contents for the revised Agricultural Fair Practices Act of 1967, outlining its structure covering trade practices, unfair acts, agricultural contracts, enforcement, and related provisions.",
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 388,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6466,
+      "description" : "Defines key terms used throughout the revised Agricultural Fair Practices Act, including agricultural commodity, agricultural contract, cooperative, contractor, contract producer, and covered person.",
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 389,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1196,
+      "description" : "Creates the Office of Special Counsel for Competition Matters within the Department, headed by a Senate-confirmed presidential appointee, to investigate and prosecute agricultural competition violations and liaise with DOJ and the FTC.",
+      "heading" : null,
+      "identifier" : "101",
+      "index" : 390,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 680,
+      "description" : "Requires large covered persons with over $100 million in annual sales to file annual confidential reports with the Secretary detailing their corporate structure, alliances, subsidiaries, brand names, and interlocking directorships.",
+      "heading" : null,
+      "identifier" : "102",
+      "index" : 391,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3585,
+      "description" : "Prohibits unfair or deceptive acts in agricultural commerce, including interference with producers' rights to join associations, discrimination against association members, coercion, bad-faith dealing, and failure to clearly disclose key contract terms.",
+      "heading" : null,
+      "identifier" : "201",
+      "index" : 392,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 437,
+      "description" : "Voids any agricultural contract provisions requiring confidentiality (except for trade secrets) or mandatory arbitration of disputes.",
+      "heading" : null,
+      "identifier" : "202",
+      "index" : 393,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6396,
+      "description" : "Gives contract producers a right to cancel production contracts within three business days of signing and grants them a superior lien on the agricultural commodity and its proceeds to secure amounts owed to them under the contract.",
+      "heading" : null,
+      "identifier" : "203",
+      "index" : 394,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 581,
+      "description" : "Authorizes the Secretary, acting through the Special Counsel for Competition Matters, to issue rules and regulations defining and prohibiting unfair or deceptive acts or practices in agriculture.",
+      "heading" : null,
+      "identifier" : "204",
+      "index" : 395,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3315,
+      "description" : "Allows the Secretary and aggrieved private parties to bring civil actions for injunctive relief or damages (up to $1,000 per violation) against covered persons who violate the Act, with a two-year statute of limitations and potential attorney's fee awards.",
+      "heading" : null,
+      "identifier" : "205",
+      "index" : 396,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 838,
+      "description" : "Preserves state agricultural trade-practice laws except where they conflict with this Act, while specifying that a state law providing greater producer protections is not considered inconsistent with the Act.",
+      "heading" : null,
+      "identifier" : "206",
+      "index" : 397,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1108,
+      "description" : "Allows producers to assign dues or fees to their producer association directly through an agricultural contract clause, requiring covered persons to deduct and forward those amounts on the producer's behalf.",
+      "heading" : null,
+      "identifier" : "207",
+      "index" : 398,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 293,
+      "description" : "States that if any provision of the Act is found invalid, the rest of the Act and its applications to other persons and circumstances remain unaffected.",
+      "heading" : null,
+      "identifier" : "208",
+      "index" : 399,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1756,
+      "description" : "Expands the Packers and Stockyards Act's definitions and enforcement authority to cover live poultry dealers who raise or care for poultry regardless of whether it is destined for slaughter.",
+      "heading" : null,
+      "identifier" : "1011",
+      "index" : 400,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 304,
+      "description" : "Amends the Packers and Stockyards Act to allow the agency to hire outside private attorneys, not just federal government employees, to assist with enforcement.",
+      "heading" : null,
+      "identifier" : "1012",
+      "index" : 401,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 192,
+      "description" : "Adds a new Country of Origin Labeling subtitle to the Agricultural Marketing Act of 1946.",
+      "heading" : null,
+      "identifier" : "1021",
+      "index" : 402,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1310,
+      "description" : "Defines key terms—including covered commodity, beef, lamb, pork, whole farm-raised fish, and food service establishment—for purposes of the country of origin labeling subtitle.",
+      "heading" : null,
+      "identifier" : "271",
+      "index" : 403,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2291,
+      "description" : "Requires retailers to disclose the country of origin of covered commodities to consumers at the point of sale, sets strict standards for a U.S.-origin designation, exempts food service establishments, and directs suppliers to provide origin information to retailers.",
+      "heading" : null,
+      "identifier" : "272",
+      "index" : 404,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 84,
+      "description" : "Applies existing enforcement penalties to violations of this subtitle.",
+      "heading" : null,
+      "identifier" : "273",
+      "index" : 405,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 353,
+      "description" : "Authorizes the Secretary to issue regulations to implement this subtitle and requires partnering with states that have enforcement infrastructure when doing so.",
+      "heading" : null,
+      "identifier" : "274",
+      "index" : 406,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 253,
+      "description" : "Sets the effective date of the subtitle's retail sale requirements to 180 days after enactment, and introduces a new subtitle on referenda for terminating commodity promotion programs.",
+      "heading" : null,
+      "identifier" : "275",
+      "index" : 407,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5454,
+      "description" : "Requires the Secretary to hold a referendum at least every five years among participants in each commodity promotion order to decide whether to terminate it, and mandates timelines for conducting initial referenda on currently active orders.",
+      "heading" : null,
+      "identifier" : "1031",
+      "index" : 408,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 527,
+      "description" : "Removes the word 'written' from complaint provisions and eliminates an exemption for USDA agency employees in the disciplinary violations section of the Perishable Agricultural Commodities Act.",
+      "heading" : null,
+      "identifier" : "1041",
+      "index" : 409,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 239,
+      "description" : "Extends the authorization for cotton classification services from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "1101",
+      "index" : 410,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 234,
+      "description" : "Increases the cap on Section 32 funds available for agricultural commodity purchases from $300 million to $500 million.",
+      "heading" : null,
+      "identifier" : "1102",
+      "index" : 411,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 198,
+      "description" : "Extends the authorization for the pseudorabies eradication program from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "1103",
+      "index" : 412,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 237,
+      "description" : "Extends the authority to collect and use agricultural quarantine and inspection fees from 2002 to 2006.",
+      "heading" : null,
+      "identifier" : "1104",
+      "index" : 413,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 184,
+      "description" : "Extends the authorization for commodity purchases under the National School Lunch Act from 2001 to 2003.",
+      "heading" : null,
+      "identifier" : "1105",
+      "index" : 414,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 161,
+      "description" : "Amends the Child Nutrition Act of 1966 to add a new section establishing a seniors farmers' market nutrition program.",
+      "heading" : null,
+      "identifier" : "1106",
+      "index" : 415,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1391,
+      "description" : "Establishes a seniors farmers' market nutrition program through fiscal year 2006, funded at $75 million from the Commodity Credit Corporation, to provide low-income seniors with fresh locally grown produce and to support the growth of farmers' markets and similar outlets.",
+      "heading" : null,
+      "identifier" : "18",
+      "index" : 416,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 949,
+      "description" : "Directs the Secretary of Agriculture to use $3.5 million in Commodity Credit Corporation funds to create a cost-share program that reimburses farmers and handlers up to 75 percent of organic certification costs, with a maximum payment of $500 per applicant.",
+      "heading" : null,
+      "identifier" : "1107",
+      "index" : 417,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "Senate Bill 1628, the Agriculture, Conservation, and Rural Enhancement Act of 2001, is a comprehensive farm bill reauthorizing and reforming federal programs across commodity price supports, conservation, food assistance, rural development, agricultural research, and trade. It establishes new direct and counter-cyclical payment systems for farmers, expands conservation and land protection programs, reauthorizes food stamps and nutrition programs, strengthens rural business and infrastructure investment, and updates agricultural trade, research, and fair-practice provisions.",
+  "versionId" : "375702"
+}

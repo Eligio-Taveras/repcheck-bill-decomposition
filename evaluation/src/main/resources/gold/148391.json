@@ -1,0 +1,3225 @@
+{
+  "billType" : "hr",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Bill Structure & Authority",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Automatic Voter Registration",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Election Day Holiday",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        16
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Online & Internet Registration",
+      "groupId" : "g3",
+      "sectionIndices" : [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Same-Day Registration",
+      "groupId" : "g4",
+      "sectionIndices" : [
+        27,
+        28,
+        29
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Voter Registration Outreach",
+      "groupId" : "g5",
+      "sectionIndices" : [
+        30,
+        31,
+        32
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Voter Privacy Protections",
+      "groupId" : "g6",
+      "sectionIndices" : [
+        33,
+        34
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Registration Funding & Applicability",
+      "groupId" : "g7",
+      "sectionIndices" : [
+        35
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Disability Voting Access",
+      "groupId" : "g8",
+      "sectionIndices" : [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Early In-Person Voting",
+      "groupId" : "g9",
+      "sectionIndices" : [
+        48,
+        49
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Absentee & Mail-In Voting",
+      "groupId" : "g10",
+      "sectionIndices" : [
+        50,
+        51
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Ballot Tracking Programs",
+      "groupId" : "g11",
+      "sectionIndices" : [
+        52,
+        53,
+        54,
+        55
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Postal Service & Election Mail",
+      "groupId" : "g12",
+      "sectionIndices" : [
+        56,
+        57,
+        58
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Ballot Drop Boxes",
+      "groupId" : "g13",
+      "sectionIndices" : [
+        59,
+        60
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Military & Overseas Voting",
+      "groupId" : "g14",
+      "sectionIndices" : [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "HAVA Enforcement & Complaints",
+      "groupId" : "g15",
+      "sectionIndices" : [
+        72
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Polling Place Notifications & Territories",
+      "groupId" : "g16",
+      "sectionIndices" : [
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Polling Place Operations",
+      "groupId" : "g17",
+      "sectionIndices" : [
+        78,
+        79,
+        80,
+        81
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Election Assistance Commission",
+      "groupId" : "g18",
+      "sectionIndices" : [
+        82,
+        83,
+        84
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "HAVA Definitions & Preemption",
+      "groupId" : "g19",
+      "sectionIndices" : [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Felon Voting Rights",
+      "groupId" : "g20",
+      "sectionIndices" : [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Voter ID Requirements",
+      "groupId" : "g21",
+      "sectionIndices" : [
+        100
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Voter Roll Maintenance",
+      "groupId" : "g22",
+      "sectionIndices" : [
+        101,
+        102,
+        103,
+        104
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Voter Registration Interference",
+      "groupId" : "g23",
+      "sectionIndices" : [
+        105,
+        106
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Election Administrator Protections",
+      "groupId" : "g24",
+      "sectionIndices" : [
+        107,
+        108,
+        109,
+        110
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Deceptive Election Practices",
+      "groupId" : "g25",
+      "sectionIndices" : [
+        111,
+        112,
+        113,
+        114,
+        115,
+        116
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Election Records Protection",
+      "groupId" : "g26",
+      "sectionIndices" : [
+        117,
+        118,
+        119,
+        120
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Right to Vote Act",
+      "groupId" : "g27",
+      "sectionIndices" : [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Federal Court Jurisdiction",
+      "groupId" : "g28",
+      "sectionIndices" : [
+        128,
+        129,
+        130
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Poll Worker Recruitment",
+      "groupId" : "g29",
+      "sectionIndices" : [
+        131,
+        132
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Poll Observer Conduct",
+      "groupId" : "g30",
+      "sectionIndices" : [
+        133,
+        134
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Voters' Access to Water",
+      "groupId" : "g31",
+      "sectionIndices" : [
+        135,
+        136,
+        137
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Foreign Money in Elections",
+      "groupId" : "g32",
+      "sectionIndices" : [
+        138,
+        139,
+        140,
+        141,
+        142,
+        143
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Paper Ballot & Voting System Security",
+      "groupId" : "g33",
+      "sectionIndices" : [
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Provisional Ballots",
+      "groupId" : "g34",
+      "sectionIndices" : [
+        158
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Post-Election Audits",
+      "groupId" : "g35",
+      "sectionIndices" : [
+        159,
+        160
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Election Infrastructure Security",
+      "groupId" : "g36",
+      "sectionIndices" : [
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Congressional Redistricting",
+      "groupId" : "g37",
+      "sectionIndices" : [
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Campaign Finance Disclosure (DISCLOSE)",
+      "groupId" : "g38",
+      "sectionIndices" : [
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "FEC Judicial Review & Procedures",
+      "groupId" : "g39",
+      "sectionIndices" : [
+        189,
+        190,
+        191,
+        192,
+        193,
+        194
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Online Political Ad Transparency",
+      "groupId" : "g40",
+      "sectionIndices" : [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Dark Money Donor Disclosure",
+      "groupId" : "g41",
+      "sectionIndices" : [
+        205,
+        206
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Super PAC Coordination",
+      "groupId" : "g42",
+      "sectionIndices" : [
+        207,
+        208,
+        209
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "FEC Reforms",
+      "groupId" : "g43",
+      "sectionIndices" : [
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Democracy Advancement Program",
+      "groupId" : "g44",
+      "sectionIndices" : [
+        221,
+        222,
+        223,
+        224,
+        225,
+        226
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Election Assistance Trust Fund",
+      "groupId" : "g45",
+      "sectionIndices" : [
+        227,
+        228,
+        229,
+        230,
+        231,
+        232
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Democracy Credit Voucher Program",
+      "groupId" : "g46",
+      "sectionIndices" : [
+        233,
+        234,
+        235,
+        236,
+        237
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Small Dollar Public Financing",
+      "groupId" : "g47",
+      "sectionIndices" : [
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Candidate Campaign Expenses",
+      "groupId" : "g48",
+      "sectionIndices" : [
+        263,
+        264
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Small Dollar Party Accounts",
+      "groupId" : "g49",
+      "sectionIndices" : [
+        265
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Campaign Finance Severability",
+      "groupId" : "g50",
+      "sectionIndices" : [
+        266
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Voting Rights Act Reforms",
+      "groupId" : "g51",
+      "sectionIndices" : [
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Election Worker Protection (VRA)",
+      "groupId" : "g52",
+      "sectionIndices" : [
+        289,
+        290
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Native American Voting Rights",
+      "groupId" : "g53",
+      "sectionIndices" : [
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 627,
+      "description" : "The House proposes to replace the Senate's amendment to a NASA property leasing bill with entirely new legislation.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 92,
+      "description" : "The Act is officially named the 'Freedom to Vote: John R. Lewis Act'.",
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 1,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 18505,
+      "description" : "The Act is organized into four divisions covering voter access, election integrity, civic participation, and voting rights, and provides a full table of contents.",
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 2,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7512,
+      "description" : "Congress asserts its broad constitutional authority under multiple clauses to regulate federal elections, prevent voting discrimination, and protect democratic processes.",
+      "heading" : null,
+      "identifier" : "3",
+      "index" : 3,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2410,
+      "description" : "All legal challenges to this Act must be filed exclusively in the U.S. District Court for the District of Columbia, with expedited review and the right of Members of Congress to intervene.",
+      "heading" : null,
+      "identifier" : "4",
+      "index" : 4,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 432,
+      "description" : "If any part of this Act is found unconstitutional, the rest of the Act remains in full force and effect.",
+      "heading" : null,
+      "identifier" : "5",
+      "index" : 5,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 678,
+      "description" : "Title I is named the 'Voter Empowerment Act of 2021' and establishes a national policy of protecting and enhancing every eligible citizen's right to vote and the integrity of elections.",
+      "heading" : null,
+      "identifier" : "1000",
+      "index" : 6,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 146,
+      "description" : "Subtitle A is officially named the 'Voter Registration Modernization Act of 2021'.",
+      "heading" : null,
+      "identifier" : "1000A",
+      "index" : 7,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1404,
+      "description" : "Part 1 is named the 'Automatic Voter Registration Act of 2021' and declares it the government's responsibility to register all eligible citizens using modern, secure technology.",
+      "heading" : null,
+      "identifier" : "1001",
+      "index" : 8,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 207,
+      "description" : "Amends the National Voter Registration Act to add a new section requiring states to establish automatic voter registration systems.",
+      "heading" : null,
+      "identifier" : "1002",
+      "index" : 9,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 16291,
+      "description" : "Requires each state's motor vehicle authority to automatically transfer eligible individuals' information to election officials to register them to vote unless they affirmatively decline.",
+      "heading" : null,
+      "identifier" : "5A",
+      "index" : 10,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7838,
+      "description" : "Protects individuals from prosecution or immigration consequences due to automatic registration errors, while preserving penalties for knowing and willful voting fraud.",
+      "heading" : null,
+      "identifier" : "1003",
+      "index" : 11,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3259,
+      "description" : "Authorizes the Election Assistance Commission to award grants to states to help them implement automatic voter registration systems, prioritizing electronic upgrades and public education.",
+      "heading" : null,
+      "identifier" : "1004",
+      "index" : 12,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 950,
+      "description" : "Applies existing civil enforcement and private rights of action from the National Voter Registration Act to this Part, and clarifies that this Part does not override other major voting and disability rights laws.",
+      "heading" : null,
+      "identifier" : "1005",
+      "index" : 13,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 650,
+      "description" : "Defines key terms used throughout Part 1, including 'chief State election official,' 'Commission,' and 'State,' with 'State' including U.S. territories.",
+      "heading" : null,
+      "identifier" : "1006",
+      "index" : 14,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 640,
+      "description" : "Sets January 1, 2023 as the effective date for the preceding provisions, while allowing states that certify impracticability to have until January 1, 2025 to comply.",
+      "heading" : null,
+      "identifier" : "1007",
+      "index" : 15,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 772,
+      "description" : "Makes federal Election Day (the Tuesday after the first Monday in November in even-numbered years) an official federal legal public holiday.",
+      "heading" : null,
+      "identifier" : "1011",
+      "index" : 16,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 267,
+      "description" : "Amends the National Voter Registration Act to require states to make online voter registration available to the public.",
+      "heading" : null,
+      "identifier" : "1021",
+      "index" : 17,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 9659,
+      "description" : "Requires each state to provide online voter registration services on official election websites, including application, assistance, form submission, and signature options.",
+      "heading" : null,
+      "identifier" : "6A",
+      "index" : 18,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3575,
+      "description" : "Requires states to allow registered voters to update their voter registration information online, with officials confirming receipt and notifying voters of the disposition within 7 days.",
+      "heading" : null,
+      "identifier" : "1022",
+      "index" : 19,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3238,
+      "description" : "Requires voter registration forms to include an optional field for an email address so election officials can send voting information electronically instead of by mail, while prohibiting use of those addresses for non-official purposes.",
+      "heading" : null,
+      "identifier" : "1023",
+      "index" : 20,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1031,
+      "description" : "Clarifies that a state must register an applicant who has substantially completed the registration form and provided a valid signature, even if the application is not fully perfect.",
+      "heading" : null,
+      "identifier" : "1024",
+      "index" : 21,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 924,
+      "description" : "Prohibits states from requiring voter registration applicants to provide more than the last four digits of their Social Security number on motor vehicle or mail registration forms.",
+      "heading" : null,
+      "identifier" : "1025",
+      "index" : 22,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 910,
+      "description" : "Applies the new internet voter registration rules to states that are otherwise exempt from the National Voter Registration Act, such as those with same-day registration.",
+      "heading" : null,
+      "identifier" : "1026",
+      "index" : 23,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 525,
+      "description" : "Requires the Attorney General to report to Congress within one year on data collection related to online voter registration systems, cybersecurity needs, and risks of potential data breaches.",
+      "heading" : null,
+      "identifier" : "1027",
+      "index" : 24,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1492,
+      "description" : "Allows a voter registration application submitted with a motor vehicle driver's license application to also serve as a standing application to vote by absentee ballot in all future federal elections until the voter revokes it or is no longer registered.",
+      "heading" : null,
+      "identifier" : "1028",
+      "index" : 25,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 905,
+      "description" : "Sets the effective date for the internet registration provisions as the November 2022 general election, with a waiver allowing states that certify impracticability to have until January 1, 2024 to comply.",
+      "heading" : null,
+      "identifier" : "1029",
+      "index" : 26,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 287,
+      "description" : "Amends the Help America Vote Act to add a new section requiring states to offer same-day voter registration at polling places on Election Day and during early voting.",
+      "heading" : null,
+      "identifier" : "1031",
+      "index" : 27,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3538,
+      "description" : "Requires every state to allow eligible individuals to register to vote and cast a ballot on the same day at their polling place during any federal election, with phased compliance deadlines starting in November 2022.",
+      "heading" : null,
+      "identifier" : "304",
+      "index" : 28,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 500,
+      "description" : "Shortens the maximum permissible voter registration deadline before a federal election from 30 days to 28 days to avoid conflicts with legal public holidays.",
+      "heading" : null,
+      "identifier" : "1032",
+      "index" : 29,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1098,
+      "description" : "Requires the Secretary of Homeland Security to create a process allowing the chief state election official to distribute voter registration information at the end of naturalization ceremonies.",
+      "heading" : null,
+      "identifier" : "1041",
+      "index" : 30,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8029,
+      "description" : "Requires voter registration information to be included with federally assisted rental housing leases, vouchers, and federally backed mortgage loan applications.",
+      "heading" : null,
+      "identifier" : "1042",
+      "index" : 31,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1146,
+      "description" : "Prohibits states from rejecting voter registration applications from 16- or 17-year-olds, while clarifying that states are not required to let those individuals vote before turning 18.",
+      "heading" : null,
+      "identifier" : "1043",
+      "index" : 32,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 362,
+      "description" : "Amends the Help America Vote Act to require states to establish voter privacy programs, renumbering existing sections to insert the new provision.",
+      "heading" : null,
+      "identifier" : "1044",
+      "index" : 33,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2031,
+      "description" : "Requires each state to create and publicize a privacy program that keeps personally identifiable voter registration information confidential for victims of domestic violence, stalking, sexual assault, and trafficking.",
+      "heading" : null,
+      "identifier" : "305",
+      "index" : 34,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1170,
+      "description" : "Allows states to use existing HAVA requirements payments to fund compliance with the voter registration requirements imposed by the Voter Registration Modernization Act of 2021.",
+      "heading" : null,
+      "identifier" : "1051",
+      "index" : 35,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 442,
+      "description" : "Amends HAVA to add new requirements for states to improve voter registration and voting access for individuals with disabilities, renumbering existing sections accordingly.",
+      "heading" : null,
+      "identifier" : "1101",
+      "index" : 36,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8851,
+      "description" : "Requires each state to make absentee registration and ballot materials electronically accessible to individuals with disabilities and to designate a single office responsible for providing disability-related voting information.",
+      "heading" : null,
+      "identifier" : "306",
+      "index" : 37,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 405,
+      "description" : "Amends HAVA to require each state to establish and maintain a single accessible election website, renumbering existing sections to insert the new provision.",
+      "heading" : null,
+      "identifier" : "1102",
+      "index" : 38,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7658,
+      "description" : "Requires each state to create, by January 1, 2023, a single accessible election website providing information on polling place accessibility, voter registration, voting rights, and resources for election officials and voters with disabilities and older individuals.",
+      "heading" : null,
+      "identifier" : "307",
+      "index" : 39,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 462,
+      "description" : "Amends HAVA to add protections for in-person voting access for individuals with disabilities and older individuals, renumbering existing sections to insert the new provision.",
+      "heading" : null,
+      "identifier" : "1103",
+      "index" : 40,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4440,
+      "description" : "Requires states to ensure all polling places are accessible and to consider options such as curbside voting, expedited lines, and mobile polling sites to accommodate individuals with disabilities and older individuals.",
+      "heading" : null,
+      "identifier" : "308",
+      "index" : 41,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 426,
+      "description" : "Amends HAVA to add voting protections for individuals under guardianship, renumbering existing sections to insert the new provision.",
+      "heading" : null,
+      "identifier" : "1104",
+      "index" : 42,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1281,
+      "description" : "Prohibits states from denying voting rights to individuals solely because they are under guardianship unless a court finds by clear and convincing evidence that the individual cannot communicate a desire to vote.",
+      "heading" : null,
+      "identifier" : "309",
+      "index" : 43,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3055,
+      "description" : "Expands the purposes of HAVA disability voting access grants to include accessible absentee voting and universally designed solutions, and reauthorizes the grant program with open-ended annual appropriations starting in fiscal year 2022.",
+      "heading" : null,
+      "identifier" : "1105",
+      "index" : 44,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1035,
+      "description" : "Extends federal funding for protection and advocacy systems under the Help America Vote Act to include the system serving the American Indian consortium, and sets minimum grant amounts of $70,000 for certain systems and $35,000 for others.",
+      "heading" : null,
+      "identifier" : "1106",
+      "index" : 45,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1906,
+      "description" : "Authorizes the Election Assistance Commission to grant money to states to run pilot programs letting people with disabilities register to vote and request absentee ballots electronically from home in a private and independent manner.",
+      "heading" : null,
+      "identifier" : "1107",
+      "index" : 46,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3105,
+      "description" : "Requires the Comptroller General to analyze and report to Congress after each federal general election on how accessible the voting process is for people with disabilities, covering polling place accessibility, equipment functioning, poll worker training, and complaint tracking.",
+      "heading" : null,
+      "identifier" : "1108",
+      "index" : 47,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 414,
+      "description" : "Amends the Help America Vote Act to add a new section on early voting requirements by renumbering existing sections and inserting the new early voting provision.",
+      "heading" : null,
+      "identifier" : "1201",
+      "index" : 48,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8361,
+      "description" : "Requires every election jurisdiction to offer at least 15 days of in-person early voting before a federal election, including weekends, with at least 10 hours per day and hours extending before 9 a.m. and after 5 p.m., with modified rules for vote-by-mail jurisdictions and small jurisdictions.",
+      "heading" : null,
+      "identifier" : "310",
+      "index" : 49,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 451,
+      "description" : "Amends the Help America Vote Act to add a new section promoting voting by mail by renumbering existing sections and inserting the new absentee voting provision.",
+      "heading" : null,
+      "identifier" : "1301",
+      "index" : 50,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 19757,
+      "description" : "Requires states to make absentee voting available to all eligible voters without imposing extra eligibility conditions, and prohibits states from requiring photo ID, notarization, or witness signatures as a condition of obtaining or casting a mail-in ballot.",
+      "heading" : null,
+      "identifier" : "311",
+      "index" : 51,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 490,
+      "description" : "Amends the Help America Vote Act to add a new section on ballot tracking by renumbering existing sections and inserting the new ballot materials tracking program provision.",
+      "heading" : null,
+      "identifier" : "1302",
+      "index" : 52,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6394,
+      "description" : "Requires every state to operate a program that tracks mail-in and absentee ballots and informs voters whether their ballot was received and accepted or rejected, with results available within one business day either online or via a toll-free phone number.",
+      "heading" : null,
+      "identifier" : "312",
+      "index" : 53,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1308,
+      "description" : "Directs the Election Assistance Commission to reimburse states for costs of establishing an absentee ballot tracking program, up to $3,000 per jurisdiction, upon submission of a certification of compliance and a cost statement.",
+      "heading" : null,
+      "identifier" : "297",
+      "index" : 54,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1161,
+      "description" : "Authorizes appropriations to the Election Assistance Commission starting in fiscal year 2022 to fund payments to states for absentee ballot tracking programs, with funds remaining available until spent.",
+      "heading" : null,
+      "identifier" : "297A",
+      "index" : 55,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1909,
+      "description" : "Requires the U.S. Postal Service to place a postmark showing the mailing date on every absentee ballot envelope it carries, effective for federal elections on or after January 1, 2022, and amends the Help America Vote Act to add ballot visibility requirements.",
+      "heading" : null,
+      "identifier" : "1303",
+      "index" : 56,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1641,
+      "description" : "Requires state and local election officials to use official USPS tags, the Official Election Mail logo, and proper barcodes to make mail-in ballots easily identifiable when sent through the postal system, effective January 1, 2022.",
+      "heading" : null,
+      "identifier" : "313",
+      "index" : 57,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3035,
+      "description" : "Requires the Postal Service to carry all election mail at first-class service standards, eliminate postage for completed mail-in ballots, prohibit operational changes that could slow mail delivery in the 120 days before a federal election, and appoint an Election Mail Coordinator at each area and district office.",
+      "heading" : null,
+      "identifier" : "1304",
+      "index" : 58,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 564,
+      "description" : "Amends the Help America Vote Act to add a new section requiring states to provide secured drop boxes where voters can deposit their completed ballots in federal elections.",
+      "heading" : null,
+      "identifier" : "1305",
+      "index" : 59,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6264,
+      "description" : "Requires every election jurisdiction to provide secure, labeled drop boxes for returning voted federal ballots, available from the start of mail ballot distribution through poll closing, with at least 25% (or at least one) accessible 24 hours a day, and all boxes accessible to people with disabilities, limited English proficiency, and homeless individuals.",
+      "heading" : null,
+      "identifier" : "314",
+      "index" : 60,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3005,
+      "description" : "Requires states to submit pre-election reports to the Attorney General certifying that absentee ballots will be available and transmitted to military and overseas voters at least 46 days before federal elections, and to report on the numbers of ballots requested, transmitted, and any late transmissions.",
+      "heading" : null,
+      "identifier" : "1401",
+      "index" : 61,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 214,
+      "description" : "Amends the Uniformed and Overseas Citizens Absentee Voting Act to add civil penalties and private rights of action for enforcement of military and overseas voter absentee ballot requirements.",
+      "heading" : null,
+      "identifier" : "1402",
+      "index" : 62,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1170,
+      "description" : "Allows the Attorney General or any aggrieved person to sue in federal court for violations of military and overseas absentee voting laws, naming the state as the sole necessary defendant even when a local official caused the violation.",
+      "heading" : null,
+      "identifier" : "105",
+      "index" : 63,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3785,
+      "description" : "Requires states to transmit absentee ballots to military and overseas voters no later than 46 days before a federal election, and mandates express delivery at no cost to the voter if transmission is late, with additional remedies if the ballot is still unsent by 41 days before the election.",
+      "heading" : null,
+      "identifier" : "1403",
+      "index" : 64,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 218,
+      "description" : "Amends federal law to allow military and overseas voters to submit a single absentee ballot application that covers all subsequent federal elections in the state through the end of the calendar year following the next regularly scheduled general election.",
+      "heading" : null,
+      "identifier" : "1404",
+      "index" : 65,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2868,
+      "description" : "Requires states to honor a military or overseas voter's single postcard application as a standing request for absentee ballots for all subsequent federal elections through the next general election cycle, prohibits rejecting applications submitted earlier than the state's normal acceptance window, and directs that the official postcard form be updated to reflect these options.",
+      "heading" : null,
+      "identifier" : "104",
+      "index" : 66,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1085,
+      "description" : "Extends the existing residency protection for absent military members to their spouses and dependents, ensuring those family members do not lose or gain state residency solely because of the service member's absence, regardless of whether the family members accompany the service member.",
+      "heading" : null,
+      "identifier" : "1405",
+      "index" : 67,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 576,
+      "description" : "Expands the availability of the Federal Write-In Absentee Ballot from general elections only to general, special, primary, and runoff elections for military and overseas voters.",
+      "heading" : null,
+      "identifier" : "1406",
+      "index" : 68,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 650,
+      "description" : "Prohibits states from removing military or overseas voters who registered using the official postcard form from voter rolls except through the same limited grounds permitted under the National Voter Registration Act.",
+      "heading" : null,
+      "identifier" : "1407",
+      "index" : 69,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 689,
+      "description" : "Requires the Presidential designee to report to Congress within one year on whether widespread mail-in voting affects active-duty military members' ability to vote and have their votes counted in federal elections.",
+      "heading" : null,
+      "identifier" : "1408",
+      "index" : 70,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 240,
+      "description" : "Sets January 1, 2022 as the effective date for the amendments in this subtitle, with specific exceptions for the enforcement and single-application provisions that have their own effective dates.",
+      "heading" : null,
+      "identifier" : "1409",
+      "index" : 71,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2292,
+      "description" : "Allows individuals aggrieved by violations of the Help America Vote Act's election technology and administration requirements to file complaints with the Attorney General and to bring private civil rights lawsuits to enforce those requirements, effective for federal elections in 2022 and later.",
+      "heading" : null,
+      "identifier" : "1501",
+      "index" : 72,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4223,
+      "description" : "Requires election officials to notify voters at least two days before early voting begins if their assigned polling place has changed, using mail, phone, text, and email, and to make every reasonable effort to let voters cast a regular ballot (not provisional) if they appear at their old polling place after a late reassignment.",
+      "heading" : null,
+      "identifier" : "1601",
+      "index" : 73,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 328,
+      "description" : "Adds the Commonwealth of the Northern Mariana Islands to the definition of U.S. territories covered by the Uniformed and Overseas Citizens Absentee Voting Act.",
+      "heading" : null,
+      "identifier" : "1602",
+      "index" : 74,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 620,
+      "description" : "Removes the mandatory 14-day waiting period between a general election and a runoff election for federal offices in the Virgin Islands and Guam.",
+      "heading" : null,
+      "identifier" : "1603",
+      "index" : 75,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1674,
+      "description" : "Extends the coverage of the National Voter Registration Act and the Help America Vote Act to U.S. territories including Puerto Rico, Guam, American Samoa, the U.S. Virgin Islands, and the Northern Mariana Islands.",
+      "heading" : null,
+      "identifier" : "1604",
+      "index" : 76,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 825,
+      "description" : "Updates federal voter protection laws against voter intimidation, government employee interference, and noncitizen voting to include all Delegates and Resident Commissioners to Congress, covering U.S. territories.",
+      "heading" : null,
+      "identifier" : "1605",
+      "index" : 77,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 565,
+      "description" : "Amends the Help America Vote Act to add a new section (315) requiring states to ensure equitable and efficient operation of polling places.",
+      "heading" : null,
+      "identifier" : "1606",
+      "index" : 78,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7256,
+      "description" : "Requires states and jurisdictions to provide enough voting systems, poll workers, and resources at polling places so that no voter waits longer than 30 minutes to cast a ballot in any federal election.",
+      "heading" : null,
+      "identifier" : "315",
+      "index" : 79,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 557,
+      "description" : "Amends the Help America Vote Act to add a new section (316) prohibiting states from restricting curbside voting in federal elections.",
+      "heading" : null,
+      "identifier" : "1607",
+      "index" : 80,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1337,
+      "description" : "Prohibits states from banning jurisdictions from offering curbside voting or from excluding eligible voters from using curbside voting in federal elections, effective November 2022.",
+      "heading" : null,
+      "identifier" : "316",
+      "index" : 81,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 356,
+      "description" : "Reauthorizes the Election Assistance Commission with ongoing annual appropriations starting in fiscal year 2022, removing the previous funding cap and expiration date.",
+      "heading" : null,
+      "identifier" : "1611",
+      "index" : 82,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1143,
+      "description" : "Directs the Election Assistance Commission to assess its cybersecurity systems and review state administrative complaint procedures, and to report recommendations to Congress by June 30, 2022.",
+      "heading" : null,
+      "identifier" : "1612",
+      "index" : 83,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 468,
+      "description" : "Removes the Election Assistance Commission's exemption from standard federal government contracting requirements for contracts entered into after the bill's enactment.",
+      "heading" : null,
+      "identifier" : "1613",
+      "index" : 84,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 204,
+      "description" : "Amends the Help America Vote Act to add a new section defining the term 'election for Federal office' for purposes of titles I through III of that Act.",
+      "heading" : null,
+      "identifier" : "1621",
+      "index" : 85,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 521,
+      "description" : "Defines 'election for Federal office' as any general, special, primary, or runoff election for President, Vice President, Senator, Representative, Delegate, or Resident Commissioner.",
+      "heading" : null,
+      "identifier" : "907",
+      "index" : 86,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1504,
+      "description" : "Clarifies that nothing in this title overrides or conflicts with existing federal voting rights and accessibility laws, and that states may enact laws providing greater voting opportunities than those required by this title.",
+      "heading" : null,
+      "identifier" : "1622",
+      "index" : 87,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 546,
+      "description" : "Exempts states that have no voter registration requirement from any voter registration mandates imposed by this title or its amendments.",
+      "heading" : null,
+      "identifier" : "1623",
+      "index" : 88,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 634,
+      "description" : "Amends the Help America Vote Act to add a new section clarifying that states which do not collect telephone information from voters are exempt from any related requirements under this title.",
+      "heading" : null,
+      "identifier" : "1624",
+      "index" : 89,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1304,
+      "description" : "Exempts states that do not collect voter telephone numbers from bill provisions requiring telephone contact with voters, unless a voter voluntarily provided their phone number.",
+      "heading" : null,
+      "identifier" : "317",
+      "index" : 90,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 96,
+      "description" : "Names Subtitle H the 'Democracy Restoration Act of 2021'.",
+      "heading" : null,
+      "identifier" : "1701",
+      "index" : 91,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 9809,
+      "description" : "States Congress's findings on why felon disenfranchisement laws are unfair, racially disparate, and inconsistent across states, and asserts Congress's constitutional authority to address them.",
+      "heading" : null,
+      "identifier" : "1702",
+      "index" : 92,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 359,
+      "description" : "Prohibits denying or abridging a U.S. citizen's right to vote in federal elections based on a criminal conviction, unless that person is currently serving a felony sentence in a correctional institution.",
+      "heading" : null,
+      "identifier" : "1703",
+      "index" : 93,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1120,
+      "description" : "Authorizes the Attorney General and private individuals to bring civil actions to obtain injunctive or declaratory relief to remedy violations of this subtitle.",
+      "heading" : null,
+      "identifier" : "1704",
+      "index" : 94,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2767,
+      "description" : "Requires states and federal authorities to notify individuals convicted of criminal offenses—and provide voter registration materials—at specified times, such as sentencing or release, informing them of their restored right to vote in federal elections.",
+      "heading" : null,
+      "identifier" : "1705",
+      "index" : 95,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1505,
+      "description" : "Defines key terms used in this subtitle, including 'correctional institution or facility,' 'election,' 'federal office,' and 'probation.'",
+      "heading" : null,
+      "identifier" : "1706",
+      "index" : 96,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 654,
+      "description" : "Clarifies that this subtitle does not prevent states from granting broader voting rights, and that its rights and remedies are in addition to, and do not supersede, the Voting Rights Act or the National Voter Registration Act.",
+      "heading" : null,
+      "identifier" : "1707",
+      "index" : 97,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 456,
+      "description" : "Conditions receipt of federal prison construction funds on a jurisdiction having a program that notifies incarcerated U.S. citizens of their voting rights upon release.",
+      "heading" : null,
+      "identifier" : "1708",
+      "index" : 98,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 237,
+      "description" : "Specifies that this subtitle applies to federal elections held after the date of enactment.",
+      "heading" : null,
+      "identifier" : "1709",
+      "index" : 99,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 14292,
+      "description" : "Requires states with voter identification laws to accept a broad set of identifying documents or sworn statements as alternatives, and to allow voters who cannot meet ID requirements to cast a provisional ballot.",
+      "heading" : null,
+      "identifier" : "1801",
+      "index" : 100,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4245,
+      "description" : "Prohibits election officials from using voter caging documents, unverified match lists, or immaterial errors to challenge or deny a person's voter registration or eligibility to vote in federal elections.",
+      "heading" : null,
+      "identifier" : "1901",
+      "index" : 101,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 242,
+      "description" : "Amends the National Voter Registration Act to add new conditions governing when states may remove voters from registration rolls.",
+      "heading" : null,
+      "identifier" : "1911",
+      "index" : 102,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5042,
+      "description" : "Prohibits states from removing voters from registration rolls unless there is objective and reliable evidence of ineligibility, bars using failure to vote as grounds for removal, and requires states to notify removed voters within 48 hours and provide a process to contest removal.",
+      "heading" : null,
+      "identifier" : "8A",
+      "index" : 103,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 454,
+      "description" : "Includes a severability clause ensuring that if any provision of this title is found unconstitutional, the rest of the title remains in effect.",
+      "heading" : null,
+      "identifier" : "1921",
+      "index" : 104,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1511,
+      "description" : "Makes it a federal crime, punishable by up to 5 years in prison, to corruptly hinder, interfere with, or prevent another person from registering to vote or from helping someone else register to vote.",
+      "heading" : null,
+      "identifier" : "2001",
+      "index" : 105,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1844,
+      "description" : "Requires the Attorney General to publish best practices within 180 days to help states prevent interference with voter registration, and requires polling places to post information about related legal prohibitions.",
+      "heading" : null,
+      "identifier" : "2002",
+      "index" : 106,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 12920,
+      "description" : "Asserts Congress's constitutional authority under the Elections Clause to restrict the removal of local election administrators who oversee federal elections.",
+      "heading" : null,
+      "identifier" : "3001",
+      "index" : 107,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 209,
+      "description" : "Amends federal criminal law by adding a new section that prohibits harassment of election workers involved in federal elections.",
+      "heading" : null,
+      "identifier" : "3101",
+      "index" : 108,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1120,
+      "description" : "Makes it a federal crime, punishable by up to 5 years in prison and a $100,000 fine, to intimidate, threaten, or coerce election officials, poll workers, or election volunteers in connection with a federal election.",
+      "heading" : null,
+      "identifier" : "613",
+      "index" : 109,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 501,
+      "description" : "Extends existing federal protections against publishing personal information to intimidate someone (doxxing) to cover election officials, poll workers, and election volunteers in federal elections.",
+      "heading" : null,
+      "identifier" : "3102",
+      "index" : 110,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 128,
+      "description" : "Provides the short title for this subtitle as the 'Deceptive Practices and Voter Intimidation Prevention Act of 2021.'",
+      "heading" : null,
+      "identifier" : "3201",
+      "index" : 111,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8681,
+      "description" : "Prohibits any person from knowingly communicating materially false information about election timing, location, voter eligibility, or candidate endorsements within 60 days of a federal election with the intent to prevent someone from voting.",
+      "heading" : null,
+      "identifier" : "3202",
+      "index" : 112,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2387,
+      "description" : "Requires the Attorney General to publicly correct materially false election information when state and local officials have not done so adequately, and to publish written procedures governing when and how such corrections will be made.",
+      "heading" : null,
+      "identifier" : "3203",
+      "index" : 113,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2897,
+      "description" : "Requires the Attorney General to submit a report to Congress within 180 days after each federal general election detailing all allegations of deceptive election practices received, including investigations, corrective actions taken, and any resulting prosecutions.",
+      "heading" : null,
+      "identifier" : "3204",
+      "index" : 114,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1403,
+      "description" : "Clarifies that election officers responsible for maintaining order at polling places have standing to sue over voter intimidation violations, and requires the Attorney General to publicly communicate warnings when such violations are occurring or likely to occur.",
+      "heading" : null,
+      "identifier" : "3205",
+      "index" : 115,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 461,
+      "description" : "Expands existing federal election law to make it a crime to intimidate or interfere with the processing, scanning, tabulating, canvassing, or certifying of ballots and voting results.",
+      "heading" : null,
+      "identifier" : "3206",
+      "index" : 116,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4770,
+      "description" : "Strengthens federal protections for election records by expanding their scope to include electronic records and election equipment, and requires that paper ballots remain the official record of a cast vote.",
+      "heading" : null,
+      "identifier" : "3301",
+      "index" : 117,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1145,
+      "description" : "Expands federal penalties and inspection, nondisclosure, and jurisdictional provisions related to election records to cover electronic records and election equipment, and adds reckless disregard as a basis for liability.",
+      "heading" : null,
+      "identifier" : "3302",
+      "index" : 118,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 166,
+      "description" : "Adds a judicial review mechanism to the Civil Rights Act of 1960 to allow courts to compel compliance with federal election record retention and protection requirements.",
+      "heading" : null,
+      "identifier" : "3303",
+      "index" : 119,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 767,
+      "description" : "Allows the Attorney General or a federal election candidate to sue in federal court to force compliance with voter registration record-keeping requirements, and requires courts to handle such cases as quickly as possible.",
+      "heading" : null,
+      "identifier" : "307",
+      "index" : 120,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 76,
+      "description" : "Names this part of the bill the 'Right to Vote Act.'",
+      "heading" : null,
+      "identifier" : "3401",
+      "index" : 121,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1519,
+      "description" : "Prohibits governments from reducing or substantially burdening a citizen's ability to vote in federal elections unless the restriction is the least restrictive means of serving an important, specific government interest.",
+      "heading" : null,
+      "identifier" : "3402",
+      "index" : 122,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2721,
+      "description" : "Establishes the legal process, burden-of-proof standards, venue options, and attorney's fee provisions for individuals or the Attorney General to sue in federal court over violations of the Right to Vote Act.",
+      "heading" : null,
+      "identifier" : "3403",
+      "index" : 123,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1223,
+      "description" : "Defines key terms used in this part, including 'covered entity,' 'government,' 'vote,' and 'have one's vote counted.'",
+      "heading" : null,
+      "identifier" : "3404",
+      "index" : 124,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 764,
+      "description" : "Clarifies that nothing in this part authorizes new voting burdens, overrides existing constitutional or legal rights and remedies, affects other provisions of the Act, or allows the part's definitions to alter other laws.",
+      "heading" : null,
+      "identifier" : "3405",
+      "index" : 125,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 289,
+      "description" : "Ensures that if any single provision of this part is found unconstitutional, the rest of the part remains in effect.",
+      "heading" : null,
+      "identifier" : "3406",
+      "index" : 126,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 851,
+      "description" : "Sets the effective dates for the anti-retrogression and substantial-impairment provisions, tying the retrogression rules to changes made after the November 2020 general election and applying both provisions to elections on or after January 1, 2022.",
+      "heading" : null,
+      "identifier" : "3407",
+      "index" : 127,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1294,
+      "description" : "States Congress's findings that federal courts should have jurisdiction over constitutional voting-rights disputes and that the Fifth Circuit has incorrectly interpreted 28 U.S.C. § 1344 to block such cases, justifying the section's repeal.",
+      "heading" : null,
+      "identifier" : "3411",
+      "index" : 128,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 840,
+      "description" : "Repeals 28 U.S.C. § 1344 while confirming that federal district courts retain jurisdiction over election-related constitutional cases through other existing statutes.",
+      "heading" : null,
+      "identifier" : "3412",
+      "index" : 129,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 302,
+      "description" : "Makes the repeal of § 1344 applicable to cases filed on or after enactment and to cases already pending at that time.",
+      "heading" : null,
+      "identifier" : "3413",
+      "index" : 130,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4462,
+      "description" : "Directs the Election Assistance Commission to award grants to states for recruiting and training poll workers, with requirements for using Commission materials, accommodating diverse voters, and serving youth and underrepresented communities.",
+      "heading" : null,
+      "identifier" : "3501",
+      "index" : 131,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 290,
+      "description" : "Expands the definition of 'State' in this subtitle to include the District of Columbia and U.S. territories.",
+      "heading" : null,
+      "identifier" : "3502",
+      "index" : 132,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 228,
+      "description" : "Amends the Help America Vote Act of 2002 to add a new section establishing voter protection requirements.",
+      "heading" : null,
+      "identifier" : "3601",
+      "index" : 133,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2898,
+      "description" : "Prohibits non-election-official poll challengers from filing frivolous or last-minute eligibility challenges, bans race- or ethnicity-based challenges, and requires poll observers to stay at least 8 feet away from voters and ballots during voting and vote-counting processes.",
+      "heading" : null,
+      "identifier" : "303A",
+      "index" : 134,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1347,
+      "description" : "Names the subtitle the 'Voters' Access to Water Act' and states Congress's findings that long voting lines disproportionately burden Black and Latino voters, and that allowing nonpartisan food and water distribution helps protect voters' health and right to vote.",
+      "heading" : null,
+      "identifier" : "3701",
+      "index" : 135,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 619,
+      "description" : "Amends the Help America Vote Act of 2002 by inserting a new section 318 that prohibits states from restricting nonpartisan donations of food and nonalcoholic beverages at polling stations for federal elections.",
+      "heading" : null,
+      "identifier" : "3702",
+      "index" : 136,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1852,
+      "description" : "Prohibits states from banning the donation of food and nonalcoholic beverages to all voters waiting outside polling places for federal elections, while still allowing states to bar distributors from engaging in political or electioneering activity.",
+      "heading" : null,
+      "identifier" : "318",
+      "index" : 137,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2428,
+      "description" : "States Congress's findings that anonymous shell companies are used to launder money, hide illicit foreign campaign contributions, and obscure the true sources of election spending, and calls for stronger beneficial ownership disclosure and anti-money laundering laws.",
+      "heading" : null,
+      "identifier" : "3801",
+      "index" : 138,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6754,
+      "description" : "Requires political committees, candidates, and their family members and staff to report to the FBI and the FEC any contact with foreign nationals that involves offers of campaign contributions, coordination, or other election assistance within one week.",
+      "heading" : null,
+      "identifier" : "3802",
+      "index" : 139,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2629,
+      "description" : "Requires every political committee to establish, certify, and maintain internal policies for reporting foreign contacts within three days, preserving related records for at least three years, and training all officials and staff on these requirements.",
+      "heading" : null,
+      "identifier" : "3803",
+      "index" : 140,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 629,
+      "description" : "Establishes criminal penalties of up to $500,000 in fines and five years imprisonment for knowingly violating foreign contact reporting requirements, and up to $1,000,000 in fines and five years imprisonment for concealing or destroying related materials.",
+      "heading" : null,
+      "identifier" : "3804",
+      "index" : 141,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1324,
+      "description" : "Requires the FBI Director to submit annual reports to congressional intelligence committees detailing the number of foreign contact notifications received from political committees and any actions taken in response.",
+      "heading" : null,
+      "identifier" : "3805",
+      "index" : 142,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 781,
+      "description" : "Clarifies that nothing in the subtitle restricts legitimate journalism or imposes additional limits on political expression by non-citizen, non-permanent-resident individuals residing in the United States.",
+      "heading" : null,
+      "identifier" : "3806",
+      "index" : 143,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 119,
+      "description" : "Names the subtitle the 'Voter Confidence and Increased Accessibility Act of 2021.'",
+      "heading" : null,
+      "identifier" : "3901",
+      "index" : 144,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4046,
+      "description" : "Requires all federal election voting systems to use individual, durable, voter-verifiable paper ballots that are marked and verified by the voter before being preserved as the official ballot and counted by hand during any recount or audit.",
+      "heading" : null,
+      "identifier" : "3902",
+      "index" : 145,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3321,
+      "description" : "Requires voting systems to be fully accessible to voters with disabilities, including providing an equivalent, private, and independent opportunity to verify and cast a voter-verifiable paper ballot at every in-person polling location.",
+      "heading" : null,
+      "identifier" : "3903",
+      "index" : 146,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2831,
+      "description" : "Authorizes $10 million in grants to at least two eligible entities to study and develop accessible and secure remote voting systems and devices to improve ballot accessibility for individuals with disabilities, with any resulting technology to be made publicly available.",
+      "heading" : null,
+      "identifier" : "248",
+      "index" : 147,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1191,
+      "description" : "Requires all voter-verifiable paper ballots to be printed on durable paper capable of surviving multiple hand recounts and retaining ballot information for 22 months, and requires ballots produced by marking devices to be clearly readable by both voters and tabulation devices.",
+      "heading" : null,
+      "identifier" : "3904",
+      "index" : 148,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 489,
+      "description" : "Directs the Election Assistance Commission to study and report to Congress within one year on the best ballot design practices to minimize voter confusion and errors in federal elections.",
+      "heading" : null,
+      "identifier" : "3905",
+      "index" : 149,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1175,
+      "description" : "Bans wireless, power-line, or internet connectivity on any device used to configure, mark, cast, tabulate, or aggregate ballots, with a narrow exception for assistive technology used by voters with disabilities.",
+      "heading" : null,
+      "identifier" : "3906",
+      "index" : 150,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6508,
+      "description" : "Sets compliance deadlines for new voting system requirements, generally requiring compliance by 2022 while allowing jurisdictions that used certain legacy paper-record systems in the 2020 election to delay until they replace those systems, and requiring those grandfathered jurisdictions to offer voters hand-marked paper ballots in the meantime.",
+      "heading" : null,
+      "identifier" : "3907",
+      "index" : 151,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 469,
+      "description" : "Creates a new grant program within the Help America Vote Act to fund states in replacing non-compliant voting systems and carrying out voting system security improvements.",
+      "heading" : null,
+      "identifier" : "3908",
+      "index" : 152,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3421,
+      "description" : "Establishes the specific terms of the grant program, including eligible uses of funds (replacing non-compliant systems, security improvements, ballot design best practices, and accessible voting equipment) and the formula for calculating each state's payment amount based on a minimum base share plus a voting-age-population proportion.",
+      "heading" : null,
+      "identifier" : "298",
+      "index" : 153,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2266,
+      "description" : "Defines the permissible voting system security improvements that grant funds may be spent on, including acquiring goods from qualified vendors, cybersecurity training, vulnerability assessments, infrastructure maintenance, technical support, and enhancing voter registration system security.",
+      "heading" : null,
+      "identifier" : "298A",
+      "index" : 154,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 597,
+      "description" : "Requires states to submit an application to the Election Assistance Commission describing their planned use of grant funds and certifying they will complete voting system security improvements within five years in order to be eligible for a grant.",
+      "heading" : null,
+      "identifier" : "298B",
+      "index" : 155,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 439,
+      "description" : "Requires the Election Assistance Commission to submit annual reports to specified congressional committees on how grant funds under this program were used.",
+      "heading" : null,
+      "identifier" : "298C",
+      "index" : 156,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8897,
+      "description" : "Authorizes $2.4 billion in appropriations for fiscal year 2022 and $175 million every other fiscal year through 2030 for the grant program, and establishes criteria for qualified election infrastructure vendors, including U.S. ownership or Five Eyes alliance membership, domestic assembly of voting machines, and disclosure of foreign parts sourcing and significant ownership interests.",
+      "heading" : null,
+      "identifier" : "298D",
+      "index" : 157,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 10261,
+      "description" : "Requires that provisional ballots cast anywhere within the correct county be counted for all races in which the voter is eligible, and mandates that election officials provide voters with written and verbal explanations of why they received a provisional ballot, what they must do to prove eligibility, and whether their ballot was ultimately counted or rejected.",
+      "heading" : null,
+      "identifier" : "3911",
+      "index" : 158,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 235,
+      "description" : "Adds a new post-election audit requirement to Title III of the Help America Vote Act.",
+      "heading" : null,
+      "identifier" : "4001",
+      "index" : 159,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 9029,
+      "description" : "Requires states to conduct post-election audits of all federal races that have at least a 95 percent chance of correcting a wrong outcome, involve manual human review of paper ballots, and are based on a ballot manifest created independently of the voting system, with an exception for contests where a full hand recount is conducted.",
+      "heading" : null,
+      "identifier" : "303B",
+      "index" : 160,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 232,
+      "description" : "Amends the Homeland Security Act to explicitly include election infrastructure within the definition of critical infrastructure sectors, ensuring it receives corresponding federal protection.",
+      "heading" : null,
+      "identifier" : "4002",
+      "index" : 161,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2605,
+      "description" : "Directs the Election Assistance Commission to develop voluntary guidelines and a certification process covering the functionality, accessibility, and security of electronic poll books and remote ballot marking systems, with initial guidelines due within one year of enactment.",
+      "heading" : null,
+      "identifier" : "4003",
+      "index" : 162,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 241,
+      "description" : "Requires the chief state election official to submit a detailed voting system usage plan to the Election Assistance Commission at least 120 days before each regularly scheduled federal general election, with updated filings if new systems are acquired closer to the election.",
+      "heading" : null,
+      "identifier" : "4004",
+      "index" : 163,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1237,
+      "description" : "Establishes the content and effective date of the pre-election voting system usage report requirement, applying it beginning with the November 2022 general election and all subsequent regularly scheduled federal general elections.",
+      "heading" : null,
+      "identifier" : "301A",
+      "index" : 164,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1608,
+      "description" : "Requires states to make good-faith efforts by November 2024 to use voting machines that are manufactured, assembled, and whose software is developed and stored in the United States.",
+      "heading" : null,
+      "identifier" : "4005",
+      "index" : 165,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 513,
+      "description" : "Allows political party headquarters building funds to also be used for technology and cybersecurity-related expenses, effective starting in calendar year 2022.",
+      "heading" : null,
+      "identifier" : "4006",
+      "index" : 166,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 454,
+      "description" : "Provides a severability clause so that if any part of this title is found unconstitutional, the rest of the title remains in effect.",
+      "heading" : null,
+      "identifier" : "4007",
+      "index" : 167,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1824,
+      "description" : "States Congress's constitutional basis for regulating how states draw congressional districts, citing Article I, the 14th Amendment, and the guarantee of republican government.",
+      "heading" : null,
+      "identifier" : "5001",
+      "index" : 168,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 662,
+      "description" : "Prohibits states from redrawing congressional district maps more than once per decade except when required by a court to comply with law.",
+      "heading" : null,
+      "identifier" : "5002",
+      "index" : 169,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 12580,
+      "description" : "Sets ranked criteria that congressional redistricting plans must follow, prioritizing constitutional population equality, Voting Rights Act compliance, minority voting power protection, and respect for communities of interest.",
+      "heading" : null,
+      "identifier" : "5003",
+      "index" : 170,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4446,
+      "description" : "Requires the entity drawing congressional districts to conduct a transparent, public-facing process including hearings, a multilingual public website with maps and data, and mechanisms for public comment.",
+      "heading" : null,
+      "identifier" : "5004",
+      "index" : 171,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5608,
+      "description" : "Sets deadlines for states to enact redistricting plans and authorizes a federal three-judge court to draw the plan if a state misses its deadline.",
+      "heading" : null,
+      "identifier" : "5005",
+      "index" : 172,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 11281,
+      "description" : "Allows the Attorney General or any aggrieved state resident to sue in federal court to enforce congressional redistricting requirements, with federal courts having exclusive jurisdiction over such claims.",
+      "heading" : null,
+      "identifier" : "5006",
+      "index" : 173,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 315,
+      "description" : "Clarifies that nothing in this redistricting title affects how states draw or conduct elections for state and local offices.",
+      "heading" : null,
+      "identifier" : "5007",
+      "index" : 174,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 679,
+      "description" : "Sets the effective date of the redistricting title as the date of enactment and specifies that most of its provisions apply to redistricting plans drawn after the April 2021 apportionment notice, even if already enacted.",
+      "heading" : null,
+      "identifier" : "5008",
+      "index" : 175,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 174,
+      "description" : "Provides the short title for the campaign finance transparency subtitle, naming it the 'DISCLOSE Act of 2021.'",
+      "heading" : null,
+      "identifier" : "6001",
+      "index" : 176,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3027,
+      "description" : "States Congress's findings that campaign finance disclosure is a narrowly tailored, constitutionally sound tool for preventing corruption and foreign interference, and that current law has significant transparency gaps.",
+      "heading" : null,
+      "identifier" : "6002",
+      "index" : 177,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1329,
+      "description" : "Expands the definition of 'contribution or donation' under the foreign money ban to include disbursements to outside spending groups and other entities used to fund election-related expenditures.",
+      "heading" : null,
+      "identifier" : "6003",
+      "index" : 178,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2649,
+      "description" : "Requires the Comptroller General to study and report to Congress every four years on the presence and targeting of illicit foreign money in federal elections.",
+      "heading" : null,
+      "identifier" : "6004",
+      "index" : 179,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 901,
+      "description" : "Extends the ban on foreign national political contributions to include state and local ballot initiatives and referenda, specifically for certain foreign nationals and foreign agents.",
+      "heading" : null,
+      "identifier" : "6005",
+      "index" : 180,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2636,
+      "description" : "Expands the types of political spending covered by the foreign money ban to include digital ads, electioneering communications, judicial nomination communications, and other disbursements made by foreign nationals.",
+      "heading" : null,
+      "identifier" : "6006",
+      "index" : 181,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1300,
+      "description" : "Makes it a federal crime, punishable by up to five years in prison, for anyone to establish or use a corporation or other entity to conceal prohibited political activity by a foreign national.",
+      "heading" : null,
+      "identifier" : "6007",
+      "index" : 182,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 181,
+      "description" : "Rewrites the existing section 324 of the Federal Election Campaign Act to establish new disclosure requirements for campaign-related disbursements by covered organizations.",
+      "heading" : null,
+      "identifier" : "6011",
+      "index" : 183,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 18868,
+      "description" : "Requires covered organizations spending more than $10,000 on campaign-related disbursements in an election cycle to file detailed disclosure statements with the FEC within 24 hours of each disclosure date, including donor and spending information.",
+      "heading" : null,
+      "identifier" : "324",
+      "index" : 184,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5580,
+      "description" : "Establishes findings and requirements for reporting disbursements made to influence federal judicial nominations, citing concerns about dark money's influence on the judiciary.",
+      "heading" : null,
+      "identifier" : "6012",
+      "index" : 185,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 761,
+      "description" : "Requires the Financial Crimes Enforcement Network to share information with the FEC to help enforce campaign finance disclosure rules, and directs a joint report to Congress within six months.",
+      "heading" : null,
+      "identifier" : "6013",
+      "index" : 186,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 759,
+      "description" : "Extends the foreign money ban to cover transfers made to organizations that subsequently make campaign-related disbursements, closing a loophole allowing indirect foreign spending.",
+      "heading" : null,
+      "identifier" : "6014",
+      "index" : 187,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 317,
+      "description" : "Sets January 1, 2022 as the effective date for the campaign-related disbursement disclosure rules and makes them self-executing without waiting for FEC regulations.",
+      "heading" : null,
+      "identifier" : "6015",
+      "index" : 188,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 232,
+      "description" : "Explicitly authorizes the FEC to participate in Supreme Court certiorari proceedings when appealing campaign finance cases.",
+      "heading" : null,
+      "identifier" : "6021",
+      "index" : 189,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 240,
+      "description" : "Amends the Federal Election Campaign Act to add a new section establishing specific judicial review procedures for campaign finance law challenges.",
+      "heading" : null,
+      "identifier" : "6022",
+      "index" : 190,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3135,
+      "description" : "Requires all constitutional or legal challenges to federal campaign finance laws to be filed exclusively in the U.S. District Court for the District of Columbia, with expedited review, and allows Members of Congress to intervene in such cases.",
+      "heading" : null,
+      "identifier" : "407",
+      "index" : 191,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 310,
+      "description" : "Updates the presidential public financing chapter of the Internal Revenue Code to reference the new centralized judicial review provision in the Federal Election Campaign Act.",
+      "heading" : null,
+      "identifier" : "9011",
+      "index" : 192,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 376,
+      "description" : "Updates the presidential campaign fund chapter of the Internal Revenue Code to reference the new judicial review provision and repeals two previously existing judicial review provisions to consolidate them under the new section.",
+      "heading" : null,
+      "identifier" : "9041",
+      "index" : 193,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 318,
+      "description" : "Makes all amendments in this subtitle effective immediately upon enactment, without waiting for the FEC to issue implementing regulations.",
+      "heading" : null,
+      "identifier" : "6023",
+      "index" : 194,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 77,
+      "description" : "Names this subtitle the 'Honest Ads Act.'",
+      "heading" : null,
+      "identifier" : "6101",
+      "index" : 195,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 316,
+      "description" : "States that the subtitle's purpose is to improve disclosure requirements for online political advertisements to keep voters fully informed.",
+      "heading" : null,
+      "identifier" : "6102",
+      "index" : 196,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 13209,
+      "description" : "Lists congressional findings documenting the growth of online political advertising, the inadequacy of existing disclosure rules, and the need for transparency to prevent illegal foreign spending.",
+      "heading" : null,
+      "identifier" : "6103",
+      "index" : 197,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 868,
+      "description" : "Expresses Congress's opinion that increasing digital political ads require updated transparency and accountability rules, including disclosure of foreign and domestic funding sources.",
+      "heading" : null,
+      "identifier" : "6104",
+      "index" : 198,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2846,
+      "description" : "Expands the legal definition of 'public communication' under federal campaign finance law to include paid internet and paid digital communications, triggering existing disclosure and disclaimer requirements for those media.",
+      "heading" : null,
+      "identifier" : "6105",
+      "index" : 199,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1883,
+      "description" : "Expands the definition of 'electioneering communication' to include paid online and digital communications placed on online platforms, subjecting them to the same disclosure rules as broadcast ads.",
+      "heading" : null,
+      "identifier" : "6106",
+      "index" : 200,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4343,
+      "description" : "Requires that disclaimer statements on political ads be displayed in a 'clear and conspicuous manner' and sets specific formatting and timing standards for text, audio, and video online political ads.",
+      "heading" : null,
+      "identifier" : "6107",
+      "index" : 201,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6896,
+      "description" : "Requires large online platforms to maintain and publicly post machine-readable records of political ad purchases, including the ad copy, targeting details, costs, and buyer information.",
+      "heading" : null,
+      "identifier" : "6108",
+      "index" : 202,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1008,
+      "description" : "Requires broadcast stations, cable and satellite providers, and online platforms to make reasonable efforts to prevent foreign nationals from purchasing political advertisements.",
+      "heading" : null,
+      "identifier" : "6109",
+      "index" : 203,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1593,
+      "description" : "Requires online platforms displaying political ads to show a visible sponsor-identification notice and to ensure that notice remains visible if viewers share the ad with others.",
+      "heading" : null,
+      "identifier" : "6110",
+      "index" : 204,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 76,
+      "description" : "Names this subtitle the 'Spotlight Act.'",
+      "heading" : null,
+      "identifier" : "6201",
+      "index" : 205,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2140,
+      "description" : "Nullifies a 2020 Treasury rule and reinstates the requirement that social welfare organizations, labor unions, and business leagues report donor information on their annual tax returns.",
+      "heading" : null,
+      "identifier" : "6202",
+      "index" : 206,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 104,
+      "description" : "Names this subtitle the 'Stop Super PAC-Candidate Coordination Act.'",
+      "heading" : null,
+      "identifier" : "7001",
+      "index" : 207,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 859,
+      "description" : "Amends federal campaign finance law to treat payments for coordinated expenditures made by outside groups as contributions to the candidate with whom they are coordinated.",
+      "heading" : null,
+      "identifier" : "7002",
+      "index" : 208,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 16527,
+      "description" : "Defines 'coordinated expenditure' and explains when spending by outside parties is considered coordinated with a candidate or party committee, including republication of campaign materials and communications made pursuant to any understanding with the candidate.",
+      "heading" : null,
+      "identifier" : "325",
+      "index" : 209,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 109,
+      "description" : "Names this subtitle the 'Restoring Integrity to America's Elections Act.'",
+      "heading" : null,
+      "identifier" : "7101",
+      "index" : 210,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8159,
+      "description" : "Shifts initial authority to investigate or dismiss FEC complaints to the General Counsel, whose determination takes effect after 30 days unless overruled by a majority of sitting commissioners.",
+      "heading" : null,
+      "identifier" : "7102",
+      "index" : 211,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 491,
+      "description" : "Requires the most senior attorney in the FEC's Office of General Counsel to assume all General Counsel responsibilities whenever that position is vacant.",
+      "heading" : null,
+      "identifier" : "7103",
+      "index" : 212,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1049,
+      "description" : "Requires the FEC to give interested parties who submitted written comments on an advisory opinion request a reasonable opportunity to testify before the Commission if the requestor is also given that opportunity.",
+      "heading" : null,
+      "identifier" : "7104",
+      "index" : 213,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 240,
+      "description" : "Makes the FEC's administrative penalty authority permanent by removing the December 31, 2023 expiration date.",
+      "heading" : null,
+      "identifier" : "7105",
+      "index" : 214,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 551,
+      "description" : "Codifies into law the FEC's existing regulations prohibiting ex parte communications by Commission members and employees.",
+      "heading" : null,
+      "identifier" : "7106",
+      "index" : 215,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 646,
+      "description" : "Explicitly authorizes FEC attorneys, including the General Counsel, to represent the Commission in Supreme Court proceedings.",
+      "heading" : null,
+      "identifier" : "7107",
+      "index" : 216,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 596,
+      "description" : "Requires all FEC forms, including electronic ones, to allow users to include accent marks in their names.",
+      "heading" : null,
+      "identifier" : "7108",
+      "index" : 217,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1050,
+      "description" : "Extends the statute of limitations for both civil and criminal violations of federal campaign finance law from 5 years to 10 years.",
+      "heading" : null,
+      "identifier" : "7109",
+      "index" : 218,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1464,
+      "description" : "Sets the effective date for this subtitle as the date of enactment, preserves existing FEC investigations and proceedings, and applies the new complaint procedures to any complaint for which the General Counsel has not yet made a recommendation.",
+      "heading" : null,
+      "identifier" : "7110",
+      "index" : 219,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 731,
+      "description" : "Imposes a $20 filing fee on any campaign finance report submitted to the FEC by paper, with proceeds deposited into the Treasury for deficit reduction.",
+      "heading" : null,
+      "identifier" : "7201",
+      "index" : 220,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5898,
+      "description" : "Establishes the Democracy Advancement and Innovation Program to allocate federal funds to states for activities including improving election administration, expanding voting access, supporting public campaign financing, and serving underserved communities.",
+      "heading" : null,
+      "identifier" : "8001",
+      "index" : 221,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3686,
+      "description" : "Specifies what a state's plan must contain to receive Program funds, including descriptions of planned activities, fund management, allocation breakdowns, and state-based complaint procedures.",
+      "heading" : null,
+      "identifier" : "8002",
+      "index" : 222,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3349,
+      "description" : "Prohibits states from using Program funds to diminish citizens' ability to participate in elections, and establishes a complaint and review process—including federal court review—to enforce that prohibition.",
+      "heading" : null,
+      "identifier" : "8003",
+      "index" : 223,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1411,
+      "description" : "Sets each state's Program allocation based on the number of its congressional districts multiplied by a per-district amount derived from total available Program funds, which are drawn solely from the Program's Trust Fund.",
+      "heading" : null,
+      "identifier" : "8004",
+      "index" : 224,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3350,
+      "description" : "Establishes the procedures by which the Director instructs the Treasury to disburse or allocate Trust Fund money to States, the Election Assistance Commission, and the Federal Election Commission for various election-related activities approved in State plans.",
+      "heading" : null,
+      "identifier" : "8005",
+      "index" : 225,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7567,
+      "description" : "Creates an independent executive-branch Office of Democracy Advancement and Innovation, headed by a presidentially-appointed Director serving a six-year term, and defines the office's staffing, compensation, and duties including administering the Democracy Advancement and Innovation Program.",
+      "heading" : null,
+      "identifier" : "8006",
+      "index" : 226,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1146,
+      "description" : "Establishes the State Election Assistance and Innovation Trust Fund in the Treasury, funded by criminal and civil penalty assessments and voluntary gifts (but no taxpayer dollars), to pay for election assistance activities and Office operations.",
+      "heading" : null,
+      "identifier" : "8011",
+      "index" : 227,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1209,
+      "description" : "Specifies how money in the Trust Fund must be spent each fiscal year, covering direct State payments, Election Assistance Commission allocations, Federal Election Commission allocations for participating candidates, and Democracy Credit Program payments, with the Director determining aggregate State allocation amounts.",
+      "heading" : null,
+      "identifier" : "8012",
+      "index" : 228,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5716,
+      "description" : "Imposes a 4.75 percent surcharge on fines, settlements, and civil penalties paid by corporations and organizational defendants convicted of or settling federal offenses, with the proceeds transferred to the State Election Assistance and Innovation Trust Fund.",
+      "heading" : null,
+      "identifier" : "8013",
+      "index" : 229,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2662,
+      "description" : "Adds a 4.75 percent additional assessment on tax penalties and additions to tax owed under the Internal Revenue Code, exempting lower-income individual taxpayers, and directs those proceeds to the State Election Assistance and Innovation Trust Fund.",
+      "heading" : null,
+      "identifier" : "6761",
+      "index" : 230,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1934,
+      "description" : "Defines key terms used throughout the subtitle, including 'Director,' 'election cycle,' 'Indian lands,' 'Office,' 'Program,' 'State,' and 'Trust Fund.'",
+      "heading" : null,
+      "identifier" : "8021",
+      "index" : 231,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 697,
+      "description" : "Establishes the rule for calculating deadlines in the subtitle, requiring that if the final day falls on a weekend or federal holiday, the deadline is extended to the next business day.",
+      "heading" : null,
+      "identifier" : "8022",
+      "index" : 232,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 141,
+      "description" : "Provides the short title for the subtitle as the 'Government By the People Act of 2021.'",
+      "heading" : null,
+      "identifier" : "8101",
+      "index" : 233,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3018,
+      "description" : "Directs the Federal Election Commission to create an optional Democracy Credit Program for States, sets eligibility and submission requirements for State participation, and establishes reimbursement of reasonable State operating costs from the Trust Fund up to $10 million per two consecutive election cycles.",
+      "heading" : null,
+      "identifier" : "8102",
+      "index" : 234,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3156,
+      "description" : "Describes the mechanics of the Democracy Credit Program, under which eligible State residents receive a $25 voucher they can allocate in $5 increments to House candidates, with the FEC paying candidates the credited amounts and States required to allow a two-day revocation window and establish an oversight body.",
+      "heading" : null,
+      "identifier" : "8103",
+      "index" : 235,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1038,
+      "description" : "Requires participating States to submit post-cycle reports to the FEC and the Office of Democracy Advancement and Innovation, and directs the FEC to study and report to Congress on the effectiveness of political credit programs in broadening donor and candidate participation.",
+      "heading" : null,
+      "identifier" : "8104",
+      "index" : 236,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 378,
+      "description" : "Defines 'election cycle' for purposes of Part 1 as the period from the day after one regularly scheduled federal general election through the date of the next such election.",
+      "heading" : null,
+      "identifier" : "8105",
+      "index" : 237,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 281,
+      "description" : "Amends the Federal Election Campaign Act of 1971 by adding a new Title V establishing a Small Dollar Financing program for House of Representatives candidates.",
+      "heading" : null,
+      "identifier" : "8111",
+      "index" : 238,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1556,
+      "description" : "Establishes that certified participating House candidates are entitled to federal matching payments equal to 600 percent of qualified small-dollar contributions received, capped at 50 percent of average winning-candidate spending in the prior cycle, funded entirely without taxpayer dollars.",
+      "heading" : null,
+      "identifier" : "501",
+      "index" : 239,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1656,
+      "description" : "Sets out the process by which a certified participating candidate requests matching fund payments, including what information must be submitted, minimum thresholds and waiting periods between requests, and a two-business-day payment deadline.",
+      "heading" : null,
+      "identifier" : "502",
+      "index" : 240,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 915,
+      "description" : "Restricts how candidates may spend public matching funds, limiting use to authorized campaign expenditures and explicitly prohibiting use for legal fees, fines, or civil penalties.",
+      "heading" : null,
+      "identifier" : "503",
+      "index" : 241,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7428,
+      "description" : "Defines a 'qualified small dollar contribution' as a direct individual contribution of $1–$200 that is not bundled or solicited by a third party, and sets rules for how such contributions are counted.",
+      "heading" : null,
+      "identifier" : "504",
+      "index" : 242,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2542,
+      "description" : "Establishes the eligibility requirements a House candidate must meet to become a certified participating candidate in the small-dollar public financing program, including filing required statements and pledging to follow program rules.",
+      "heading" : null,
+      "identifier" : "511",
+      "index" : 243,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1823,
+      "description" : "Specifies that a House candidate qualifies for the program by raising at least $50,000 from a minimum of 1,000 individual small-dollar contributors during the qualifying period, and directs the Division Director to create verification and audit procedures.",
+      "heading" : null,
+      "identifier" : "512",
+      "index" : 244,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5061,
+      "description" : "Requires the Division Director to certify or deny a candidate's participating status within five business days of application, allows the Commission to reverse that determination within ten days, and specifies grounds and effects of revoking certification.",
+      "heading" : null,
+      "identifier" : "513",
+      "index" : 245,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6494,
+      "description" : "Limits participating candidates to accepting only qualified small-dollar contributions, party contributions, limited individual contributions (up to $1,000), multicandidate PAC contributions, public matching funds, and up to $50,000 in personal funds during the election cycle.",
+      "heading" : null,
+      "identifier" : "521",
+      "index" : 246,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1409,
+      "description" : "Requires authorized committees of participating candidates to keep separate accounts for each funding source and to publicly disclose all contribution and expenditure information online in a searchable and downloadable format.",
+      "heading" : null,
+      "identifier" : "522",
+      "index" : 247,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 734,
+      "description" : "Prohibits a participating candidate's committee from spending public matching funds unless it has first spent an equivalent amount of its privately raised funds that are currently available.",
+      "heading" : null,
+      "identifier" : "523",
+      "index" : 248,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1768,
+      "description" : "Requires participating candidates to return any unspent public matching funds to the Commission within 180 days after their last election, while allowing candidates who plan to run again to retain up to $100,000 for use in the next election cycle.",
+      "heading" : null,
+      "identifier" : "524",
+      "index" : 249,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 405,
+      "description" : "Authorizes the Division Director to make an additional 'enhanced support' payment to eligible participating candidates for the general election, which must be used only for authorized campaign expenditures.",
+      "heading" : null,
+      "identifier" : "531",
+      "index" : 250,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1496,
+      "description" : "Sets the conditions a candidate must satisfy to receive enhanced general-election support, including being on the general-election ballot, being a certified participant, and raising at least $50,000 in small-dollar contributions during the 60-to-14-day window before the election.",
+      "heading" : null,
+      "identifier" : "532",
+      "index" : 251,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1394,
+      "description" : "Sets the enhanced support payment at 50 percent of the matching funds attributable to qualifying-period small-dollar contributions, capped at $500,000, and excludes the payment from the overall aggregate payment limit.",
+      "heading" : null,
+      "identifier" : "533",
+      "index" : 252,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 407,
+      "description" : "Provides that any candidate who receives an enhanced support payment is not allowed to retain any portion of unspent funds after the election and must remit the full unspent balance to the Commission.",
+      "heading" : null,
+      "identifier" : "534",
+      "index" : 253,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5134,
+      "description" : "Specifies that matching fund payments come from state allocations in the State Election Assistance and Innovation Trust Fund, directs ongoing review of whether those allocations are sufficient, and allows states to direct additional funds to cover shortfalls.",
+      "heading" : null,
+      "identifier" : "541",
+      "index" : 254,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2725,
+      "description" : "Requires the Federal Election Commission to establish a dedicated division with a appointed director to administer and issue regulations for the small-dollar public campaign financing program, including procedures for verifying contributions, monitoring participating candidates, and conducting audits.",
+      "heading" : null,
+      "identifier" : "542",
+      "index" : 255,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2861,
+      "description" : "Establishes civil penalties, repayment requirements, and eligibility disqualifications for participating candidates who violate contribution, expenditure, or fund-use rules under the small-dollar public financing program.",
+      "heading" : null,
+      "identifier" : "543",
+      "index" : 256,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1777,
+      "description" : "Requires all dollar amounts specified in the small-dollar public campaign financing program to be adjusted for inflation after 2026 using the same indexing method applied to standard campaign contribution limits.",
+      "heading" : null,
+      "identifier" : "544",
+      "index" : 257,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 484,
+      "description" : "Defines the term 'election cycle' for purposes of the small-dollar public financing title as the period beginning the day after one general election and ending on the date of the next general election for the same office.",
+      "heading" : null,
+      "identifier" : "545",
+      "index" : 258,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 177,
+      "description" : "Defines the term 'Division Director' as the individual appointed to head the dedicated division established under section 542 to administer the small-dollar public financing program.",
+      "heading" : null,
+      "identifier" : "546",
+      "index" : 259,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2217,
+      "description" : "Requires multicandidate and party committees to use separate accounts funded only by small-dollar contributions when contributing to publicly financed candidates, and allows unlimited coordinated party expenditures for participating House candidates if those expenditures come solely from such small-dollar accounts.",
+      "heading" : null,
+      "identifier" : "8112",
+      "index" : 260,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 830,
+      "description" : "Restricts participating candidates in the small-dollar public financing program to using any contributions they receive only for authorized campaign expenditures, prohibiting use for other personal or political purposes otherwise allowed under existing law.",
+      "heading" : null,
+      "identifier" : "8113",
+      "index" : 261,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 487,
+      "description" : "Sets October 1, 2022, as the deadline for the Federal Election Commission to issue all regulations needed to implement the small-dollar public financing program, and specifies that the program takes effect on that date regardless of whether the regulations have been issued.",
+      "heading" : null,
+      "identifier" : "8114",
+      "index" : 262,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3704,
+      "description" : "Names the subtitle the 'Help America Run Act' and sets out congressional findings that current campaign finance rules effectively bar non-wealthy Americans—especially women and working people—from running for office by prohibiting use of campaign funds for everyday personal expenses like childcare.",
+      "heading" : null,
+      "identifier" : "8201",
+      "index" : 263,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2654,
+      "description" : "Allows authorized campaign committees to pay for childcare, elder care, dependent care, and health insurance premiums as legitimate campaign expenditures when those services are necessary to enable the candidate's participation in campaign activities, subject to salary-based caps and excluding current federal officeholders.",
+      "heading" : null,
+      "identifier" : "8202",
+      "index" : 264,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1679,
+      "description" : "Allows national party congressional campaign committees to contribute up to $10,000 (double the normal limit) to House candidates and make unlimited coordinated expenditures, provided the funds come from a separate account funded exclusively by individuals giving no more than $200 per year.",
+      "heading" : null,
+      "identifier" : "8301",
+      "index" : 265,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 432,
+      "description" : "Provides that if any provision of the campaign finance title is found unconstitutional, the remainder of the title continues in full force and effect.",
+      "heading" : null,
+      "identifier" : "8401",
+      "index" : 266,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 162,
+      "description" : "Names Division D of the bill the 'John R. Lewis Voting Rights Advancement Act of 2021.'",
+      "heading" : null,
+      "identifier" : "9000",
+      "index" : 267,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8481,
+      "description" : "Amends Section 2 of the Voting Rights Act to explicitly cover intentional discrimination, codifies the Gingles legal standard for vote-dilution claims, recognizes coalition minority groups, and establishes a new standard for vote-denial or vote-abridgment claims based on disproportionate burdens linked to historical discrimination.",
+      "heading" : null,
+      "identifier" : "9001",
+      "index" : 268,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1307,
+      "description" : "Adds a new provision to the Voting Rights Act prohibiting states and localities from enacting or administering any voting qualification or procedure that diminishes minority citizens' ability to participate in elections or elect preferred candidates, applicable to any action taken on or after January 1, 2021, while allowing D.C. District Court preclearance decisions to supersede this provision.",
+      "heading" : null,
+      "identifier" : "9002",
+      "index" : 269,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 861,
+      "description" : "Expands the types of violations that can trigger a federal court's authority to retain jurisdiction over a state or political subdivision to include violations of the Voting Rights Act itself and any other federal anti-discrimination voting law, in addition to the previously listed 14th and 15th Amendment violations.",
+      "heading" : null,
+      "identifier" : "9003",
+      "index" : 270,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 13071,
+      "description" : "Replaces the coverage formula for determining which states and political subdivisions must seek federal preclearance before changing voting laws, basing coverage on whether 15 or more voting rights violations occurred in a state, or 3 or more in a political subdivision, during the previous 25 years, with coverage lasting 10 years unless a declaratory judgment is obtained.",
+      "heading" : null,
+      "identifier" : "9004",
+      "index" : 271,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 230,
+      "description" : "Adds a new section to the Voting Rights Act establishing preclearance requirements for specific covered voting practices.",
+      "heading" : null,
+      "identifier" : "9005",
+      "index" : 272,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 12497,
+      "description" : "Creates a practice-based preclearance system requiring all states and political subdivisions to obtain approval before implementing certain voting changes—such as shifts to at-large elections—in areas where racial or language minority groups meet specified population thresholds.",
+      "heading" : null,
+      "identifier" : "4A",
+      "index" : 273,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 200,
+      "description" : "Adds a new transparency section to the Voting Rights Act requiring states and political subdivisions to publicly disclose changes to voting rules and polling place resources.",
+      "heading" : null,
+      "identifier" : "9006",
+      "index" : 274,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 9251,
+      "description" : "Requires states and political subdivisions to post public notice of any voting rule changes within 48 hours and to publish polling place resource information at least 30 days before a federal election, in formats accessible to voters with disabilities.",
+      "heading" : null,
+      "identifier" : "6",
+      "index" : 275,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2877,
+      "description" : "Broadens the Attorney General's authority to assign federal election observers by expanding the grounds for deployment to include enforcing any federal voting rights law and bilingual election requirements, and transfers administrative control of observers from the Office of Personnel Management to the Attorney General.",
+      "heading" : null,
+      "identifier" : "9007",
+      "index" : 276,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2641,
+      "description" : "Expands who may bring lawsuits to enforce voting rights protections—including against poll taxes, general voting rights violations, language minority provisions, and the 26th Amendment—by allowing aggrieved private individuals to sue in addition to the Attorney General.",
+      "heading" : null,
+      "identifier" : "9008",
+      "index" : 277,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3259,
+      "description" : "Establishes a more plaintiff-friendly standard for courts to grant preliminary injunctions in voting rights cases, requiring relief when a serious legal question exists and the balance of hardships favors the plaintiff, and lists specific factors courts must weigh.",
+      "heading" : null,
+      "identifier" : "9009",
+      "index" : 278,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 174,
+      "description" : "Extends the sunset date for the bilingual election requirements under Section 203 of the Voting Rights Act from 2032 to 2037.",
+      "heading" : null,
+      "identifier" : "9010",
+      "index" : 279,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4267,
+      "description" : "Defines a broad set of prohibited voting acts and practices, allows attorney's fees for prevailing parties, and limits courts from denying equitable relief solely because of election proximity unless the opposing party proves by clear and convincing evidence that granting relief would cause irreparable harm to the public interest.",
+      "heading" : null,
+      "identifier" : "9011",
+      "index" : 280,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2270,
+      "description" : "Strengthens protections for vote counting and certification by prohibiting officials from refusing to tabulate or certify votes, extending record-retention requirements to 22 months after federal elections, and allowing the Attorney General to seek a court order to count ballots that were not properly tallied.",
+      "heading" : null,
+      "identifier" : "9012",
+      "index" : 281,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7594,
+      "description" : "Authorizes the Attorney General to issue pre-lawsuit written demands to states and political subdivisions for documents and information relevant to investigations into potential federal voting rights violations.",
+      "heading" : null,
+      "identifier" : "9013",
+      "index" : 282,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 132,
+      "description" : "Adds a definitions section to Title I of the Voting Rights Act.",
+      "heading" : null,
+      "identifier" : "9014",
+      "index" : 283,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1917,
+      "description" : "Defines key terms used in the Voting Rights Act, including 'Indian,' 'Indian lands,' 'Indian tribe,' 'Tribal Government,' and 'voting-age population,' with the last term tied to Bureau of the Census decennial census data.",
+      "heading" : null,
+      "identifier" : "21",
+      "index" : 284,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 387,
+      "description" : "Defines 'prevailing party' under the Voting Rights Act for purposes of attorneys' fees awards to mean a party that received some benefit sought, stated a valid claim, and showed their action caused a change in the status quo.",
+      "heading" : null,
+      "identifier" : "9015",
+      "index" : 285,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2841,
+      "description" : "Makes several technical and conforming amendments to the Voting Rights Act, including updating language about who may bring enforcement actions, removing outdated provisions on language minority groups, and establishing new 'applicable date of coverage' rules for preclearance requirements triggered by the John R. Lewis Voting Rights Advancement Act.",
+      "heading" : null,
+      "identifier" : "9016",
+      "index" : 286,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1056,
+      "description" : "Ensures that if any single provision of the John R. Lewis Voting Rights Advancement Act or the Voting Rights Act is struck down or found unenforceable, the rest of both laws remains in full effect.",
+      "heading" : null,
+      "identifier" : "9017",
+      "index" : 287,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1036,
+      "description" : "Directs the Attorney General to award annual grants to political subdivisions with populations of 10,000 or fewer to help them comply with Voting Rights Act requirements to give public notice of changes to voting practices.",
+      "heading" : null,
+      "identifier" : "9018",
+      "index" : 288,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 108,
+      "description" : "Provides the short title for the subtitle, naming it the 'Election Worker and Polling Place Protection Act.'",
+      "heading" : null,
+      "identifier" : "9101",
+      "index" : 289,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2902,
+      "description" : "Amends the Voting Rights Act to create federal criminal penalties—fines up to $5,000 and imprisonment up to one year, or up to five years if injury or weapons are involved—for anyone who intimidates election workers, poll watchers, or voters, or who damages or threatens to damage polling places or other election infrastructure with intent to interfere with an election.",
+      "heading" : null,
+      "identifier" : "9102",
+      "index" : 290,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 160,
+      "description" : "Provides the short title for the subtitle, naming it the 'Frank Harrison, Elizabeth Peratrovich, and Miguel Trujillo Native American Voting Rights Act of 2021.'",
+      "heading" : null,
+      "identifier" : "9201",
+      "index" : 291,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6586,
+      "description" : "Sets out Congress's findings that it has broad constitutional authority to protect Native American voting rights and documents the history and persistence of barriers to voting faced by Native Americans.",
+      "heading" : null,
+      "identifier" : "9202",
+      "index" : 292,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 588,
+      "description" : "Defines key terms used throughout the Native American voting rights subtitle, including 'Attorney General,' 'Indian,' 'Indian lands,' 'Indian Tribe,' and 'polling place.'",
+      "heading" : null,
+      "identifier" : "9203",
+      "index" : 293,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5684,
+      "description" : "Directs the Election Assistance Commission, in coordination with the Department of the Interior, to create a grant program funding Native American Voting Task Forces in each state with a federally recognized tribe, aimed at increasing Native American voter registration, access, education, and participation.",
+      "heading" : null,
+      "identifier" : "9204",
+      "index" : 294,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1370,
+      "description" : "Amends the National Voter Registration Act to require that federal facilities and federally funded facilities serving Indian Tribes be designated as voter registration sites, including at least one location on each tribe's Indian lands.",
+      "heading" : null,
+      "identifier" : "9205",
+      "index" : 295,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 20559,
+      "description" : "Requires each state whose territory includes Indian lands to designate a compliance officer and to provide, at no cost to the tribe, at least one polling place per precinct on Indian lands for every federal or state election, with equipment and materials equal to or better than those at other polling places.",
+      "heading" : null,
+      "identifier" : "9206",
+      "index" : 296,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3875,
+      "description" : "Prohibits states and political subdivisions from closing, moving, consolidating, or reducing voting opportunities on Indian lands in federal elections unless the affected tribe consents in writing or a federal court issues a declaratory judgment that the change will not deny or abridge the right to vote.",
+      "heading" : null,
+      "identifier" : "9207",
+      "index" : 297,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1429,
+      "description" : "Requires states that demand voter identification to accept tribal ID cards issued by a federally recognized tribe or federal agency as valid identification for voting or voter registration, and limits the ability of states to require Native American voters who possess only one form of ID to produce more.",
+      "heading" : null,
+      "identifier" : "9208",
+      "index" : 298,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1511,
+      "description" : "Requires states to allow family members, caregivers, tribal assistance providers, or household members to return sealed absentee ballots on behalf of voters residing on Indian lands, with no cap on the number of ballots they may return, provided they receive no per-ballot compensation.",
+      "heading" : null,
+      "identifier" : "9209",
+      "index" : 299,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2010,
+      "description" : "Updates the Voting Rights Act to require states and localities to provide election materials in minority languages using the most recent census data, with specific rules for oral-only languages and tribal certification for unwritten Native languages.",
+      "heading" : null,
+      "identifier" : "9210",
+      "index" : 300,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1164,
+      "description" : "Allows the Attorney General to send federal election observers to a jurisdiction when an Indian Tribe submits a written complaint that voting rights are likely to be denied or abridged, and requires the resulting observer reports to be made publicly available within six months.",
+      "heading" : null,
+      "identifier" : "9211",
+      "index" : 301,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1008,
+      "description" : "Grants tribal law enforcement the authority to detain or remove non-Indians who are not government-affiliated from Indian lands for voter intimidation or interference with elections, and allows the Attorney General to seek injunctive relief against such conduct.",
+      "heading" : null,
+      "identifier" : "9212",
+      "index" : 302,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 169,
+      "description" : "Requires the Attorney General to hold annual consultations with Indian Tribes about voting issues in federal elections.",
+      "heading" : null,
+      "identifier" : "9213",
+      "index" : 303,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 267,
+      "description" : "Requires courts to award reasonable attorneys' fees, expert fees, litigation expenses, and costs to any prevailing non-governmental party in a civil action brought under this title.",
+      "heading" : null,
+      "identifier" : "9214",
+      "index" : 304,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 500,
+      "description" : "Directs the Government Accountability Office to study how nontraditional or nonexistent mailing addresses create barriers to voter registration and ballot access for Native Americans and report its findings to Congress within one year.",
+      "heading" : null,
+      "identifier" : "9215",
+      "index" : 305,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 268,
+      "description" : "Requires the Postmaster General to consult annually with Indian Tribes about postal service barriers that prevent eligible voters on Indian lands from participating in elections.",
+      "heading" : null,
+      "identifier" : "9216",
+      "index" : 306,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1367,
+      "description" : "Establishes that if any part of this title is struck down it does not affect the rest, clarifies that this title does not override other federal voting laws, extends the title's provisions to Maine, and preserves tribal sovereign immunity and existing federal trust responsibilities.",
+      "heading" : null,
+      "identifier" : "9217",
+      "index" : 307,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 298,
+      "description" : "Authorizes Congress to appropriate whatever funds are necessary to implement this title.",
+      "heading" : null,
+      "identifier" : "9218",
+      "index" : 308,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "The Freedom to Vote: John R. Lewis Act is a sweeping federal elections bill that expands voter access through automatic and same-day registration, early voting, mail-in voting, and accessibility protections; strengthens election integrity through paper ballot requirements, post-election audits, and cybersecurity grants; overhauls campaign finance disclosure and public financing; redraws congressional redistricting rules; and restores and expands the Voting Rights Act, including new protections for Native American voters and restoration of preclearance requirements.",
+  "versionId" : "148391"
+}

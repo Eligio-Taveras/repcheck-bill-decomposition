@@ -1,8 +1,12 @@
 version_id	bill_id	bill_type	format_type	chunks	chars	contiguous
 356142	8137862	hr	Formatted Text	1	435	t
 415327	8038414	hr	Formatted Text	5	59973	t
+244276	626348	hr	Formatted Text	66	787566	t
+148391	14887	hr	Formatted Text	67	793047	t
 177012	85436	s	Formatted Text	1	727	t
 150314	56711	s	Formatted Text	5	59985	t
+150025	56404	s	Formatted Text	65	776222	t
+375702	8089559	s	Formatted Text	67	797294	t
 402717	8007116	hjres	Formatted Text	1	755	t
 189669	98072	hjres	Formatted Text	4	45002	t
 373803	8003734	sjres	Formatted Text	1	757	t

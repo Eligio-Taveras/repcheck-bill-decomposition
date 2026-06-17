@@ -2,12 +2,75 @@
   "billType" : "hjres",
   "format" : "Formatted Text",
   "groups" : [
+    {
+      "conceptLabel" : "Bill Identity & Purpose",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Authorized Use of Force",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        5,
+        11
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Consultation & Reporting",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        6,
+        7
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Congressional Approval Process",
+      "groupId" : "g3",
+      "sectionIndices" : [
+        8,
+        9
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Judicial Enforcement",
+      "groupId" : "g4",
+      "sectionIndices" : [
+        10
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Definitions & Severability",
+      "groupId" : "g5",
+      "sectionIndices" : [
+        12,
+        13
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
   ],
-  "labelStatus" : "draft-boundaries",
+  "labelStatus" : "llm-judged",
   "parserUsed" : "GpoText",
   "sections" : [
     {
       "charLength" : 1092,
+      "description" : "This is the introductory header identifying the bill as H.J. Res. 29, introduced in the 117th Congress to amend the War Powers Resolution.",
       "heading" : null,
       "identifier" : null,
       "index" : 0,
@@ -15,6 +78,7 @@
     },
     {
       "charLength" : 87,
+      "description" : "This section gives the legislation its official short title: the 'War Powers Amendments of 2021'.",
       "heading" : null,
       "identifier" : "1",
       "index" : 1,
@@ -22,6 +86,7 @@
     },
     {
       "charLength" : 1421,
+      "description" : "This section states Congress's findings that the executive branch has repeatedly ignored the War Powers Resolution and declares the bill's purpose to reassert congressional war powers and prevent unauthorized military engagements.",
       "heading" : null,
       "identifier" : "2",
       "index" : 2,
@@ -29,6 +94,7 @@
     },
     {
       "charLength" : 196,
+      "description" : "This section directs that the existing text of the War Powers Resolution be completely replaced with the new language that follows.",
       "heading" : null,
       "identifier" : "3",
       "index" : 3,
@@ -36,6 +102,7 @@
     },
     {
       "charLength" : 1039,
+      "description" : "This section restates the purpose of the War Powers Resolution and lists the key constitutional powers of Congress—declaring war, controlling spending, and making necessary laws—that underpin its war powers authority.",
       "heading" : null,
       "identifier" : "1",
       "index" : 4,
@@ -43,6 +110,7 @@
     },
     {
       "charLength" : 4525,
+      "description" : "This section limits the introduction of U.S. Forces into hostilities to three circumstances: a declaration of war, a specific statutory authorization meeting detailed requirements (including defined threats, missions, countries, and a two-year sunset), or an emergency response to an armed attack or imminent threat.",
       "heading" : null,
       "identifier" : "2",
       "index" : 5,
@@ -50,6 +118,7 @@
     },
     {
       "charLength" : 2814,
+      "description" : "This section requires the President to consult with a defined bipartisan group of congressional leaders and committee chairs before and regularly after introducing U.S. Forces into hostilities, and specifies that genuine consultation means seeking Congress's advice before the decision is made.",
       "heading" : null,
       "identifier" : "3",
       "index" : 6,
@@ -57,6 +126,7 @@
     },
     {
       "charLength" : 2674,
+      "description" : "This section requires the President to submit a written report to congressional leaders within 48 hours of introducing U.S. Forces into hostilities, detailing the circumstances, legal authority, scope, duration, countries involved, and estimated costs, with follow-up reports at least every 30 days thereafter.",
       "heading" : null,
       "identifier" : "4",
       "index" : 7,
@@ -64,6 +134,7 @@
     },
     {
       "charLength" : 4015,
+      "description" : "This section requires Congress to act within 30 days of receiving the President's report by authorizing continued use of U.S. Forces through a declaration of war or a specific joint resolution, or the President must withdraw those forces, with a possible 15-day safety extension.",
       "heading" : null,
       "identifier" : "5",
       "index" : 8,
@@ -71,6 +142,7 @@
     },
     {
       "charLength" : 19744,
+      "description" : "This section establishes fast-track 'privileged resolution' procedures in both the House and Senate to ensure that congressional authorizations for the use of military force receive expedited consideration and cannot be blocked by committee inaction or procedural delays.",
       "heading" : null,
       "identifier" : "6",
       "index" : 9,
@@ -78,6 +150,7 @@
     },
     {
       "charLength" : 2388,
+      "description" : "This section grants any Member of Congress standing to sue in federal court to enforce the War Powers Resolution, bars courts from dismissing such cases as political questions, and requires courts to order the President to remove U.S. Forces if a violation is found, with direct appeal to the Supreme Court.",
       "heading" : null,
       "identifier" : "7",
       "index" : 10,
@@ -85,6 +158,7 @@
     },
     {
       "charLength" : 1436,
+      "description" : "This section clarifies that authorization to introduce U.S. Forces into hostilities cannot be implied from appropriations laws, other statutes, or treaties unless those instruments explicitly and specifically grant such authorization, and that congressional inaction does not constitute approval of military action.",
       "heading" : null,
       "identifier" : "8",
       "index" : 11,
@@ -92,6 +166,7 @@
     },
     {
       "charLength" : 3269,
+      "description" : "This section defines key terms used in the resolution, including broad definitions of 'hostilities' (covering cyber attacks, intelligence sharing, and refueling), 'imminent' threat, 'introduce' (covering advisory and support roles), and 'training.'",
       "heading" : null,
       "identifier" : "9",
       "index" : 12,
@@ -99,11 +174,13 @@
     },
     {
       "charLength" : 299,
+      "description" : "This section provides a standard severability clause ensuring that if any part of the resolution is found invalid, the remainder of the resolution continues in full force and effect.",
       "heading" : null,
       "identifier" : "10",
       "index" : 13,
       "kind" : "Section"
     }
   ],
+  "summary" : "H.J. Res. 29, the 'War Powers Amendments of 2021,' completely rewrites the existing War Powers Resolution to reassert Congress's constitutional authority over the use of military force. The bill tightens the conditions under which the President may deploy U.S. forces, strengthens consultation and reporting requirements, and adds judicial enforcement mechanisms so Congress can sue to compel compliance. It also closes loopholes by clarifying that authorization cannot be implied from appropriations, inaction, or other statutes.",
   "versionId" : "189669"
 }

@@ -1,0 +1,4124 @@
+{
+  "billType" : "s",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Bill Basics & Definitions",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1,
+        2,
+        3,
+        4,
+        196,
+        197,
+        198,
+        199
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "FAA Core Appropriations",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Airport Improvement Program",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        11,
+        12,
+        13,
+        17,
+        18,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        206,
+        207,
+        208,
+        212,
+        213,
+        217,
+        218,
+        219,
+        220,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Contract Tower Program",
+      "groupId" : "g3",
+      "sectionIndices" : [
+        14,
+        15,
+        16,
+        209,
+        210,
+        211
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Airport Emissions Programs",
+      "groupId" : "g4",
+      "sectionIndices" : [
+        19,
+        20,
+        21,
+        44,
+        45,
+        214,
+        215,
+        216,
+        244
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Passenger Facility Charges",
+      "groupId" : "g5",
+      "sectionIndices" : [
+        42,
+        43,
+        241,
+        242,
+        243,
+        245
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "General Aviation & FLIGHT Act",
+      "groupId" : "g6",
+      "sectionIndices" : [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "UAS Definitions & Policy",
+      "groupId" : "g7",
+      "sectionIndices" : [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "UAS Integration & Operations",
+      "groupId" : "g8",
+      "sectionIndices" : [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        272,
+        273,
+        274,
+        275
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "UAS Governance & Education",
+      "groupId" : "g9",
+      "sectionIndices" : [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        268,
+        269,
+        270,
+        271,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "UAS Safety & Criminal Penalties",
+      "groupId" : "g10",
+      "sectionIndices" : [
+        77,
+        78,
+        79,
+        283,
+        284,
+        285
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "FAA Safety Certification Oversight",
+      "groupId" : "g11",
+      "sectionIndices" : [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Flight Standards Reform",
+      "groupId" : "g12",
+      "sectionIndices" : [
+        87,
+        88,
+        89,
+        90,
+        91,
+        293,
+        294,
+        295,
+        296,
+        297
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "International Aviation Standards",
+      "groupId" : "g13",
+      "sectionIndices" : [
+        92,
+        93,
+        94,
+        95,
+        298,
+        299,
+        300,
+        301
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Aviation Safety Rules & Studies",
+      "groupId" : "g14",
+      "sectionIndices" : [
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "General Aviation Operations",
+      "groupId" : "g15",
+      "sectionIndices" : [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "FAA Workforce & Inspector Programs",
+      "groupId" : "g16",
+      "sectionIndices" : [
+        116,
+        117,
+        326,
+        327
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Air Traffic Infrastructure",
+      "groupId" : "g17",
+      "sectionIndices" : [
+        118,
+        119,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Pilot Rights & Enforcement",
+      "groupId" : "g18",
+      "sectionIndices" : [
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Airline Consumer Transparency",
+      "groupId" : "g19",
+      "sectionIndices" : [
+        127,
+        128,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        141,
+        142,
+        143,
+        144,
+        145,
+        344,
+        345,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        363,
+        364,
+        365,
+        366,
+        367,
+        370,
+        372
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Passenger Disability Access",
+      "groupId" : "g20",
+      "sectionIndices" : [
+        130,
+        139,
+        140,
+        347,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        368
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Family Assistance & Accidents",
+      "groupId" : "g21",
+      "sectionIndices" : [
+        129,
+        346
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Airline Nondiscrimination & Equity",
+      "groupId" : "g22",
+      "sectionIndices" : [
+        369,
+        371,
+        428
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Essential & Small Community Air Service",
+      "groupId" : "g23",
+      "sectionIndices" : [
+        146,
+        147,
+        148,
+        149,
+        373,
+        374,
+        375,
+        376
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "NextGen Modernization",
+      "groupId" : "g24",
+      "sectionIndices" : [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "FAA Management & Operations",
+      "groupId" : "g25",
+      "sectionIndices" : [
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Miscellaneous Aviation Provisions",
+      "groupId" : "g26",
+      "sectionIndices" : [
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        429,
+        430,
+        431
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "ungrouped",
+      "groupId" : "g27",
+      "sectionIndices" : [
+        26,
+        221
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 1103,
+      "description" : "This is the introductory text of Senate Bill 1405 from the 115th Congress, which proposes to amend title 49 of the U.S. Code to reauthorize the Federal Aviation Administration and related programs.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 13749,
+      "description" : "This section gives the bill its short title as the 'Federal Aviation Administration Reauthorization Act of 2017' and provides a table of contents listing all major sections of the bill.",
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 1,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 371,
+      "description" : "This section clarifies that any amendments or repeals referenced throughout the bill apply to provisions of title 49 of the United States Code unless otherwise specified.",
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 2,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 321,
+      "description" : "This section defines 'appropriate committees of Congress' as the Senate Committee on Commerce, Science, and Transportation and the House Committee on Transportation and Infrastructure.",
+      "heading" : null,
+      "identifier" : "3",
+      "index" : 3,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 302,
+      "description" : "This section establishes that the bill and all its amendments take effect on the date the bill is signed into law unless a specific section states otherwise.",
+      "heading" : null,
+      "identifier" : "4",
+      "index" : 4,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 878,
+      "description" : "This section authorizes appropriations of $3.35 billion for fiscal year 2018 and $3.75 billion annually for fiscal years 2019 through 2021 for airport planning, development, noise compatibility programs, and related research.",
+      "heading" : null,
+      "identifier" : "1001",
+      "index" : 5,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 442,
+      "description" : "This section authorizes specific annual funding amounts for air navigation facilities and equipment, ranging from approximately $2.877 billion in fiscal year 2018 to approximately $2.921 billion in fiscal year 2021.",
+      "heading" : null,
+      "identifier" : "1002",
+      "index" : 6,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 806,
+      "description" : "This section authorizes FAA operations funding amounts ranging from approximately $10.12 billion in fiscal year 2018 to approximately $10.45 billion in fiscal year 2021, and updates related fund transfer and expenditure authorities.",
+      "heading" : null,
+      "identifier" : "1003",
+      "index" : 7,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 831,
+      "description" : "This section authorizes $175 million per year for FAA research and development for fiscal years 2018 through 2021 and makes technical updates to the relevant code sections.",
+      "heading" : null,
+      "identifier" : "1004",
+      "index" : 8,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1303,
+      "description" : "This section updates the Airport and Airway Trust Fund spending guarantee formula for fiscal years 2018 through 2021 to ensure trust fund revenues are used only for authorized aviation investment programs.",
+      "heading" : null,
+      "identifier" : "1005",
+      "index" : 9,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 753,
+      "description" : "This section extends several expiring aviation authorities through September 30, 2021, including funding allocations for the Marshall Islands, Micronesia, and Palau, compatible land use planning grants, and a pilot program for redevelopment of airport properties.",
+      "heading" : null,
+      "identifier" : "1006",
+      "index" : 10,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1831,
+      "description" : "This section provides small airports that drop below 10,000 annual passenger boardings with regulatory relief by allowing them to be funded based on 2012 passenger levels for up to three consecutive years, with a waiver option and a minimum $600,000 apportionment for airports with at least 8,000 boardings.",
+      "heading" : null,
+      "identifier" : "1201",
+      "index" : 11,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 660,
+      "description" : "This section requires the FAA Administrator to prioritize early review of construction projects in states where cold weather limits the construction season to after May 1, and to report annually to Congress on the effectiveness of this practice.",
+      "heading" : null,
+      "identifier" : "1202",
+      "index" : 12,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 320,
+      "description" : "This section increases the number of states eligible to receive block grants for airport improvement programs from 10 to 15 starting in fiscal year 2018.",
+      "heading" : null,
+      "identifier" : "1203",
+      "index" : 13,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8168,
+      "description" : "This section updates the FAA Contract Tower Program by revising cost-benefit ratio calculation rules, doubling the federal construction cost cap to $4 million, and establishing specific criteria for when and how benefit-to-cost ratios must be recalculated for towers in the program.",
+      "heading" : null,
+      "identifier" : "1204",
+      "index" : 14,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1461,
+      "description" : "Requires FAA to approve pending Contract Tower Program applications using 1990 eligibility criteria if a revised cost-benefit methodology is not implemented within 30 days of enactment, and requires FAA to respond within 30 days to requests for expanded contract tower hours and staffing.",
+      "heading" : null,
+      "identifier" : "1205",
+      "index" : 15,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4512,
+      "description" : "Directs the FAA to establish a pilot program to build and operate remote air traffic control towers at public-use airports, including selection criteria, safety consultation, multi-vendor participation, data collection, and annual congressional reporting.",
+      "heading" : null,
+      "identifier" : "1206",
+      "index" : 16,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 352,
+      "description" : "Extends federal funding authority for Midway Island Airport operations through fiscal years 2018 to 2021.",
+      "heading" : null,
+      "identifier" : "1207",
+      "index" : 17,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1623,
+      "description" : "Allows airports to use airport revenue for the maintenance and improvement of on-airport surface transportation facilities that also serve non-airport users, provided the costs are prorated to airport use.",
+      "heading" : null,
+      "identifier" : "1208",
+      "index" : 18,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 375,
+      "description" : "Repeals the existing low-emission airport vehicle pilot program and reserves its place in the statutory table of contents.",
+      "heading" : null,
+      "identifier" : "1209",
+      "index" : 19,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 577,
+      "description" : "Narrows the zero-emission airport vehicle pilot program to cover only vehicles used exclusively for on-airport passenger transport or employee shuttle buses, and updates a cross-reference to the repealed predecessor program.",
+      "heading" : null,
+      "identifier" : "1210",
+      "index" : 20,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 387,
+      "description" : "Repeals the airport ground support equipment emissions retrofit pilot program and reserves its place in the statutory table of contents.",
+      "heading" : null,
+      "identifier" : "1211",
+      "index" : 21,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 542,
+      "description" : "Allows airport energy efficiency assessment grants to also reimburse airports for the costs of conducting the assessment, and requires applicants to certify that no safety projects would be deferred by accepting such a grant.",
+      "heading" : null,
+      "identifier" : "1212",
+      "index" : 22,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1170,
+      "description" : "Updates airport development grant conditions to apply master plan requirements more broadly, and restricts grant-funded projects at unclassified airports to pavement maintenance, obstruction removal, runway rehabilitation, or projects the Secretary deems necessary for safe operations.",
+      "heading" : null,
+      "identifier" : "1213",
+      "index" : 23,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 627,
+      "description" : "Allows airports to transfer instrument landing systems to the FAA without compensation only when a satellite navigation system cannot provide a suitable approach, replacing a broader prior transfer provision.",
+      "heading" : null,
+      "identifier" : "1214",
+      "index" : 24,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4280,
+      "description" : "Authorizes the FAA to run a pilot program providing grants of up to $2 million each to as many as five airports to acquire and install non-movement area surveillance surface display systems that supplement existing FAA movement area systems.",
+      "heading" : null,
+      "identifier" : "1215",
+      "index" : 25,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3864,
+      "description" : "Updates and reorganizes the definitions section of the Airport Improvement Program statutes, including adding a definition for 'categorized airport,' clarifying eligible security and safety equipment, and refining language around zero-emission vehicle projects.",
+      "heading" : null,
+      "identifier" : "1216",
+      "index" : 26,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 659,
+      "description" : "Clarifies that airports must update their noise exposure maps when operational changes during the forecast period or noise compatibility program timeframe would establish new or different noise contours.",
+      "heading" : null,
+      "identifier" : "1217",
+      "index" : 27,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1277,
+      "description" : "Prohibits the FAA from requiring airport owners or sponsors to provide, without cost, building space, construction, maintenance, utilities, or services related to air traffic control, navigation, or weather reporting.",
+      "heading" : null,
+      "identifier" : "1218",
+      "index" : 28,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 228,
+      "description" : "Prohibits the FAA from discontinuing the Contract Weather Observer Program at any airport until October 1, 2021.",
+      "heading" : null,
+      "identifier" : "1219",
+      "index" : 29,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 500,
+      "description" : "Raises the federal funding share to 95 percent for successive phases of multi-phased airport construction projects whose earlier phases received grants in fiscal year 2011 or before.",
+      "heading" : null,
+      "identifier" : "1220",
+      "index" : 30,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 890,
+      "description" : "Makes technical corrections to airport security program statutes by fixing references to the correct federal departments and updating a property conveyance release provision.",
+      "heading" : null,
+      "identifier" : "1221",
+      "index" : 31,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3412,
+      "description" : "Requires medium and large hub airports receiving federal grants to provide a private, accessible lactation room (not in a restroom) in each terminal's secure area, and defines what qualifies as a lactation area.",
+      "heading" : null,
+      "identifier" : "1222",
+      "index" : 32,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 604,
+      "description" : "Updates the definition of 'small business concern' for airport grant purposes so that construction-industry firms are measured against the Small Business Administration size standard for highway and street construction.",
+      "heading" : null,
+      "identifier" : "1223",
+      "index" : 33,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1128,
+      "description" : "Requires the FAA, upon a state's request, to provide technical assistance within 30 days to help states develop acceptable pavement standards for nonprimary public-use airports, accounting for local conditions and materials.",
+      "heading" : null,
+      "identifier" : "1224",
+      "index" : 34,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 231,
+      "description" : "Provides the short title for the subtitle as the 'Forward Looking Investment in General Aviation, Hangars, and Tarmacs Act of 2017' or the 'FLIGHT Act of 2017.'",
+      "heading" : null,
+      "identifier" : "1301",
+      "index" : 35,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2100,
+      "description" : "Reforms general aviation airport entitlements by directing at least $25 million to disaster relief airports, extending fund availability from three to four years, allowing up to a 95 percent federal cost share for basic or unclassified airports, and broadening how apportioned funds may be used.",
+      "heading" : null,
+      "identifier" : "1302",
+      "index" : 36,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2326,
+      "description" : "Extends the FAA's expedited environmental review process to general aviation airport construction and improvement projects, including runway construction and other capacity-building projects at general aviation airports.",
+      "heading" : null,
+      "identifier" : "1303",
+      "index" : 37,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4627,
+      "description" : "Establishes a public-private partnership grant program to help improve facilities such as hangars and airport businesses at general aviation and public-use private airports, capping grants at $500,000 per airport and four airports per state per year.",
+      "heading" : null,
+      "identifier" : "1304",
+      "index" : 38,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4636,
+      "description" : "Directs the Secretary of Transportation to designate certain general aviation airports as official disaster relief airports based on criteria including runway length, proximity to medical facilities, and location in disaster-prone regions.",
+      "heading" : null,
+      "identifier" : "1305",
+      "index" : 39,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 897,
+      "description" : "Expands the definition of eligible airport development to include planning, communication equipment, emergency generators, and airfield infrastructure improvements at federally designated disaster relief airports.",
+      "heading" : null,
+      "identifier" : "1306",
+      "index" : 40,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1232,
+      "description" : "Classifies the construction, repair, or restoration of recreational aircraft by private individuals at general aviation airports as an aeronautical activity, making it eligible for federal airport improvement grant purposes.",
+      "heading" : null,
+      "identifier" : "1307",
+      "index" : 41,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 868,
+      "description" : "Streamlines the passenger facility charge authorization process by removing certain prior findings required by the Secretary and expands a simplified PFC pilot program to include small, medium, and large hub airports in addition to nonhub airports.",
+      "heading" : null,
+      "identifier" : "1401",
+      "index" : 42,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2443,
+      "description" : "Allows passenger facility charges to be used to fund the airport-proportional capital costs of intermodal ground access projects located on airport property that directly serve passengers traveling by air.",
+      "heading" : null,
+      "identifier" : "1402",
+      "index" : 43,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3773,
+      "description" : "Requires the Secretary of Transportation to commission an independent study, with a broad expert panel, examining the condition of national aviation infrastructure, airport financing tools, passenger facility charge purchasing power, and options for funding future airport needs.",
+      "heading" : null,
+      "identifier" : "1403",
+      "index" : 44,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1134,
+      "description" : "Amends federal law to expand eligible airport improvement projects to include acquiring or retrofitting vehicles and ground support equipment with low-emission or cleaner-burning fuel technologies, including diesel/gasoline engine retrofits certified by the EPA in air quality nonattainment or maintenance areas.",
+      "heading" : null,
+      "identifier" : "1404",
+      "index" : 45,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 487,
+      "description" : "Establishes that terms used in the UAS reform subtitle have the meanings defined in the new section 44801 of title 49, and clarifies the definition of 'civil aircraft' for purposes of this subtitle.",
+      "heading" : null,
+      "identifier" : "2001",
+      "index" : 46,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 361,
+      "description" : "Declares it the official policy of the United States that unmanned aircraft systems must be operated in a way that respects and protects personal privacy in accordance with the Constitution and applicable federal, state, and local law.",
+      "heading" : null,
+      "identifier" : "2101",
+      "index" : 47,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 786,
+      "description" : "Expresses Congress's view that commercial and business UAS operators should maintain, regularly update, and publicly post a written privacy policy governing the collection, use, retention, and deletion of data gathered during drone operations.",
+      "heading" : null,
+      "identifier" : "2102",
+      "index" : 48,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 400,
+      "description" : "Makes it an unfair and deceptive trade practice under FTC Act Section 5 for a commercial or for-hire UAS operator to violate its own stated privacy policy while operating in the national airspace system.",
+      "heading" : null,
+      "identifier" : "2103",
+      "index" : 49,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4444,
+      "description" : "Requires the FAA to maintain a publicly searchable online database disclosing identifying and authorization information for commercial and government UAS operators, including data-collection practices for systems that gather personally identifiable information.",
+      "heading" : null,
+      "identifier" : "2104",
+      "index" : 50,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1162,
+      "description" : "Directs the Comptroller General to submit to Congress within one year a review of existing federal, state, and local privacy laws and remedies related to UAS operations, identifying gaps and recommending legislative fixes.",
+      "heading" : null,
+      "identifier" : "2105",
+      "index" : 51,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3018,
+      "description" : "Creates a new Chapter 448 in title 49 and defines key terms for unmanned aircraft systems regulation, including 'small unmanned aircraft,' 'test site,' 'public unmanned aircraft system,' 'sense and avoid capability,' and related concepts.",
+      "heading" : null,
+      "identifier" : "2121",
+      "index" : 52,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 9210,
+      "description" : "Directs the FAA to establish and operate a test-site program through September 30, 2021 to develop operational standards, safety verification, and integration pathways for unmanned aircraft systems in the national airspace system.",
+      "heading" : null,
+      "identifier" : "2122",
+      "index" : 53,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 11158,
+      "description" : "Requires the FAA to charter an aviation rulemaking advisory committee to develop risk-based consensus safety standards and an approval process for small UAS operations integrated into the national airspace system.",
+      "heading" : null,
+      "identifier" : "2123",
+      "index" : 54,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2512,
+      "description" : "Directs the Secretary of Transportation to develop a plan designating permanent Arctic areas where small unmanned aircraft may operate around the clock for research and commercial purposes, including beyond-visual-line-of-sight over-water flights.",
+      "heading" : null,
+      "identifier" : "2124",
+      "index" : 55,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3311,
+      "description" : "Authorizes the Secretary of Transportation to use a risk-based approach to permit certain UAS operations in the national airspace system before completion of comprehensive UAS integration rulemaking, with safety requirements and a public comment process before imposing pilot certification mandates.",
+      "heading" : null,
+      "identifier" : "2125",
+      "index" : 56,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6355,
+      "description" : "Expresses Congress's support for expanding beyond-visual-line-of-sight, nighttime, and over-people UAS operations and directs the FAA to issue regulations allowing certain UAS to operate without an airman certificate, airworthiness certificate, or FAA registration.",
+      "heading" : null,
+      "identifier" : "2126",
+      "index" : 57,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 11681,
+      "description" : "Requires the Secretary of Transportation to issue guidance and develop a certification program streamlining the authorization process for government agencies operating public unmanned aircraft systems in the national airspace system.",
+      "heading" : null,
+      "identifier" : "2127",
+      "index" : 58,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5479,
+      "description" : "Prohibits the FAA from issuing new rules targeting model aircraft flown strictly for hobby or recreational use, provided operators follow community-based safety guidelines, stay within visual line of sight, yield to manned aircraft, notify airports when flying nearby, stay at or below 400 feet, and pass an aeronautical knowledge test.",
+      "heading" : null,
+      "identifier" : "2128",
+      "index" : 59,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 488,
+      "description" : "Restores the FAA's 2015 drone registration and marking rules that were struck down by a federal court in 2017, making them effective again upon enactment.",
+      "heading" : null,
+      "identifier" : "2129",
+      "index" : 60,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4053,
+      "description" : "Requires most drone operators to pass an FAA-developed aeronautical knowledge and safety test before flying, with exceptions for licensed pilots, FAA-authorized operators, young children under adult supervision, and drones under 0.55 pounds.",
+      "heading" : null,
+      "identifier" : "2130",
+      "index" : 61,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 321,
+      "description" : "Exempts unmanned aircraft systems operated underground for mining purposes from FAA regulation and enforcement under drone laws.",
+      "heading" : null,
+      "identifier" : "2131",
+      "index" : 62,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1904,
+      "description" : "Directs the FAA to create a drone safety enforcement program using remote detection and identification technologies, establishes civil penalties for violations, creates a public reporting mechanism, and authorizes $5 million per year from 2018 through 2021.",
+      "heading" : null,
+      "identifier" : "2132",
+      "index" : 63,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6558,
+      "description" : "Directs the FAA to coordinate with defense and homeland security agencies on drone detection and mitigation technologies at airports, develop a deployment plan, and test such systems at five airports.",
+      "heading" : null,
+      "identifier" : "2133",
+      "index" : 64,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 235,
+      "description" : "Adds helicopter air ambulance operations to the list of emergency response efforts protected under aviation emergency safety disruption law.",
+      "heading" : null,
+      "identifier" : "2134",
+      "index" : 65,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 665,
+      "description" : "Classifies unmanned aircraft owned or exclusively leased by tribal governments as public aircraft, giving them the same status as government-operated aircraft.",
+      "heading" : null,
+      "identifier" : "2135",
+      "index" : 66,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3736,
+      "description" : "Requires the Department of Transportation to issue a final rule within one year establishing a certification and regulatory framework for small drone operators to carry property commercially for compensation or hire.",
+      "heading" : null,
+      "identifier" : "2136",
+      "index" : 67,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 962,
+      "description" : "Directs the FAA to establish a Collegiate Training Initiative program within 180 days to partner with higher education institutions in preparing students for careers involving unmanned aircraft systems.",
+      "heading" : null,
+      "identifier" : "2137",
+      "index" : 68,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 783,
+      "description" : "Requires the FAA, within 180 days, to assess whether its unmanned aircraft systems jobs and technology roles can be incorporated into the FAA's Veterans' Employment Program.",
+      "heading" : null,
+      "identifier" : "2138",
+      "index" : 69,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 503,
+      "description" : "Requires the FAA to report to Congress within one year on which existing agricultural aerial application safety regulations should apply to drones used for spraying chemicals on crops.",
+      "heading" : null,
+      "identifier" : "2139",
+      "index" : 70,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1100,
+      "description" : "Requires the FAA to publicly post approved drone waiver safety justifications within 30 days and to improve its online waiver application system within 60 days to provide real-time receipt confirmation and application status tracking.",
+      "heading" : null,
+      "identifier" : "2140",
+      "index" : 71,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3133,
+      "description" : "Moves several existing drone-related provisions from the FAA Extension Safety and Security Act of 2016 into the United States Code as new numbered sections within chapter 448, with minor technical corrections.",
+      "heading" : null,
+      "identifier" : "2141",
+      "index" : 72,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1849,
+      "description" : "Directs the Government Accountability Office to study and report to Congress within 180 days on the division of regulatory authority over airspace and drone operations between the federal government and state and local governments.",
+      "heading" : null,
+      "identifier" : "2151",
+      "index" : 73,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1971,
+      "description" : "Affirms that small drones may use radio spectrum for control and communication consistent with existing law, and requires the FAA, NTIA, and FCC to jointly report within 270 days on whether drones should be permitted to use aviation-designated spectrum and what barriers or alternatives exist.",
+      "heading" : null,
+      "identifier" : "2152",
+      "index" : 74,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3633,
+      "description" : "Requires the FAA to establish procedures and standards within 270 days to allow colleges and universities to safely operate drones for educational and research purposes, with a fallback allowing schools to fly at AMA-approved fields or apply for their own flight fields if the FAA misses the deadline.",
+      "heading" : null,
+      "identifier" : "2153",
+      "index" : 75,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1664,
+      "description" : "Ensures that all existing rules, regulations, permits, and contracts issued under prior drone-related FAA laws remain in effect until formally changed, and preserves any pending legal or administrative proceedings.",
+      "heading" : null,
+      "identifier" : "2154",
+      "index" : 76,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 124,
+      "description" : "Names Part IV of the bill the 'Drone Operator Safety Act.'",
+      "heading" : null,
+      "identifier" : "2161",
+      "index" : 77,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 563,
+      "description" : "States Congress's finding that educating drone operators about federal rules promotes safety, and expresses the sense of Congress that the FAA should continue public outreach programs like 'Know Before You Fly.'",
+      "heading" : null,
+      "identifier" : "2162",
+      "index" : 78,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3142,
+      "description" : "Creates a new federal criminal offense making it illegal to knowingly or recklessly fly a drone in a way that endangers a crewed aircraft, with penalties up to one year in prison for general violations and up to life imprisonment if serious injury or death results, and treats flying within a defined runway exclusion zone as a presumptive violation.",
+      "heading" : null,
+      "identifier" : "2163",
+      "index" : 79,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 864,
+      "description" : "Defines key terms used throughout the subtitle, including 'Administrator,' 'FAA,' 'Secretary,' and 'systems safety approach.'",
+      "heading" : null,
+      "identifier" : "2211",
+      "index" : 80,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 9097,
+      "description" : "Directs the Secretary of Transportation to establish a Safety Oversight and Certification Advisory Committee within 60 days to advise on FAA certification and safety oversight policy across aviation sectors.",
+      "heading" : null,
+      "identifier" : "2212",
+      "index" : 81,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3954,
+      "description" : "Requires the FAA Administrator to set measurable performance objectives and track metrics for aircraft certification within 120 days of the Advisory Committee being established, covering goals such as reducing delays, improving safety, and streamlining hiring.",
+      "heading" : null,
+      "identifier" : "2221",
+      "index" : 82,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7302,
+      "description" : "Adds a new statutory provision codifying the FAA's Organization Designation Authorization program, requiring the FAA to fully delegate certification functions to approved companies under a procedures manual and to work collaboratively with those companies to resolve any limitations placed on their authority.",
+      "heading" : null,
+      "identifier" : "2222",
+      "index" : 83,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3253,
+      "description" : "Directs the FAA to convene an expert review panel within 120 days to survey and assess the ODA program's processes, best practices, training, and resource impacts, and to report recommendations for improvement within 180 days.",
+      "heading" : null,
+      "identifier" : "2223",
+      "index" : 84,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1982,
+      "description" : "Amends federal law to require the FAA to establish a milestone-based issue resolution process for type certification, including automatic escalation to management when key certification milestones are not met on time.",
+      "heading" : null,
+      "identifier" : "2224",
+      "index" : 85,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1731,
+      "description" : "Requires the FAA to establish within 180 days a streamlined, risk-based policy for approving the installation of safety-improving technologies—such as new flight displays, autopilots, and navigation equipment—on small general aviation airplanes.",
+      "heading" : null,
+      "identifier" : "2225",
+      "index" : 86,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3635,
+      "description" : "Requires the FAA to set performance objectives and track metrics for flight standards activities within 120 days of the Advisory Committee being established, targeting goals such as reducing delays, improving consistency, and increasing transparency.",
+      "heading" : null,
+      "identifier" : "2231",
+      "index" : 87,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3315,
+      "description" : "Directs the FAA to establish a Flight Standards Reform Task Force within 90 days, composed of up to 20 stakeholder representatives, to recommend best practices for simplifying flight standards processes, reorganizing the Flight Standards Service, and achieving consistent regulatory interpretation nationwide.",
+      "heading" : null,
+      "identifier" : "2232",
+      "index" : 88,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2440,
+      "description" : "Requires the FAA to create a publicly accessible, centralized online database of all FAA aviation safety regulatory guidance within one year, with existing guidance entered within 14 months and new guidance added as it is issued, while protecting personal and proprietary information.",
+      "heading" : null,
+      "identifier" : "2233",
+      "index" : 89,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2421,
+      "description" : "Establishes a Regulatory Consistency Communication Board to receive, resolve, and publish answers to FAA regulatory interpretation questions submitted by FAA staff or regulated parties, with performance metrics to track its progress.",
+      "heading" : null,
+      "identifier" : "2234",
+      "index" : 90,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2382,
+      "description" : "Requires the FAA Administrator to review and revise the agency's safety workforce training strategy within 60 days and report to Congress on its implementation within 270 days thereafter.",
+      "heading" : null,
+      "identifier" : "2241",
+      "index" : 91,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1073,
+      "description" : "Amends federal law to require the Secretary of Transportation to actively promote U.S. aerospace safety standards abroad, defend approvals of U.S. products overseas, and streamline foreign validation of U.S. aerospace standards and products.",
+      "heading" : null,
+      "identifier" : "2251",
+      "index" : 92,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3152,
+      "description" : "Authorizes the FAA to accept airworthiness directives issued by foreign aviation authorities that meet specific safety and transparency criteria, while retaining the option to issue its own directive when safety or operational reasons require it.",
+      "heading" : null,
+      "identifier" : "2252",
+      "index" : 93,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3497,
+      "description" : "Directs the FAA Administrator to strengthen international engagement by tracking foreign validation timelines, assisting U.S. companies facing delays, and reporting to Congress on the FAA's international strategy and staffing needs.",
+      "heading" : null,
+      "identifier" : "2253",
+      "index" : 94,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1008,
+      "description" : "Amends federal law to allow the FAA to charge foreign governments or entities fees for certification services, provided the fees are consistent with aviation safety agreements and do not exceed actual costs.",
+      "heading" : null,
+      "identifier" : "2254",
+      "index" : 95,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 378,
+      "description" : "Directs the FAA Administrator to work with international aviation authorities to establish a global standard for flight deck access and redundancy requirements consistent with U.S. rules.",
+      "heading" : null,
+      "identifier" : "2301",
+      "index" : 96,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1604,
+      "description" : "Requires the FAA to assess and potentially update performance standards within one year to improve aircraft tracking and flight data recovery after accidents, coordinating with international bodies for global harmonization.",
+      "heading" : null,
+      "identifier" : "2302",
+      "index" : 97,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3877,
+      "description" : "Requires the FAA to revise flight attendant rest rules within one year to mandate at least 10 consecutive hours of rest after a duty period of 14 hours or less, and requires air carriers to submit fatigue risk management plans for their flight attendants.",
+      "heading" : null,
+      "identifier" : "2303",
+      "index" : 98,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1015,
+      "description" : "Requires the FAA Administrator to report to Congress within 18 months on the National Test Equipment Program, including outstanding requests, calibration methods, inventory plans, and recommendations for future equipment improvements.",
+      "heading" : null,
+      "identifier" : "2304",
+      "index" : 99,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 922,
+      "description" : "Directs the FAA Administrator to assess available technologies by June 30, 2018, and report to Congress on the feasibility of installing systems that warn flight crews and air traffic controllers of potential runway incursions.",
+      "heading" : null,
+      "identifier" : "2305",
+      "index" : 100,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4731,
+      "description" : "Requires the FAA to assess public availability of heliport and helipad location data used by air ambulance helicopters, update or create databases as needed, and report findings and implementation actions to Congress.",
+      "heading" : null,
+      "identifier" : "2306",
+      "index" : 101,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1003,
+      "description" : "Requires the FAA, in collaboration with the NTSB and industry stakeholders, to determine what additional accident and incident data should be collected from on-demand Part 135 operators and report its findings to Congress within one year.",
+      "heading" : null,
+      "identifier" : "2307",
+      "index" : 102,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 774,
+      "description" : "Adds a statutory definition of 'human factors' to federal aviation law, describing it as the multidisciplinary study of human capabilities and limitations applied to the design and evaluation of systems for safe and effective performance.",
+      "heading" : null,
+      "identifier" : "2308",
+      "index" : 103,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 373,
+      "description" : "Expresses Congress's view that the pilot in command of an aircraft bears direct and final responsibility for the operation of that aircraft, consistent with existing FAA regulations.",
+      "heading" : null,
+      "identifier" : "2309",
+      "index" : 104,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1552,
+      "description" : "Requires the FAA Administrator to assess within one year what improvements are needed to enhance the predictive capability of the Aviation Safety Information Analysis and Sharing (ASIAS) program for identifying accident precursors, and report findings to Congress within 60 days of completing the assessment.",
+      "heading" : null,
+      "identifier" : "2310",
+      "index" : 105,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 664,
+      "description" : "Directs the FAA Administrator to expedite development of metrics for tracking runway incursions and measuring the effectiveness of runway safety initiatives, and report progress to Congress within one year.",
+      "heading" : null,
+      "identifier" : "2311",
+      "index" : 106,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5753,
+      "description" : "Requires the Secretary of Transportation to align U.S. regulations on air transport of lithium cells and batteries with ICAO standards within 90 days, and establishes a 45-day deadline for processing special permit applications for lithium batteries used in medical devices.",
+      "heading" : null,
+      "identifier" : "2312",
+      "index" : 107,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1937,
+      "description" : "Directs the FAA Administrator to review aircraft cabin evacuation certification standards, crew procedures, passenger demographics, seating configurations, and recent evacuation incidents, then report findings and recommendations to Congress within one year.",
+      "heading" : null,
+      "identifier" : "2313",
+      "index" : 108,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1065,
+      "description" : "Requires the FAA Administrator to submit an annual report to Congress on Part 121 airline safety oversight, including descriptions of oversight processes, risk-based methods, and cases where review timelines for air carriers were accelerated.",
+      "heading" : null,
+      "identifier" : "2314",
+      "index" : 109,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2768,
+      "description" : "Requires the FAA Administrator within 18 months to update standards and policies for automated weather observing systems to embrace new technologies, reduce costs, and allow qualified on-site personnel to perform routine maintenance checks.",
+      "heading" : null,
+      "identifier" : "2401",
+      "index" : 110,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 542,
+      "description" : "Requires the FAA Administrator to consult with general aviation stakeholders within 180 days to define the scope and requirements for any new Future Flight Service Program before issuing a competitive contract solicitation.",
+      "heading" : null,
+      "identifier" : "2402",
+      "index" : 111,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1203,
+      "description" : "Directs the FAA Administrator to allow unleaded aviation gasoline to be used as a replacement for leaded gasoline in eligible aircraft and engines once safety and qualification criteria are met, with a process to be adopted within 180 days of completing relevant industry initiatives.",
+      "heading" : null,
+      "identifier" : "2403",
+      "index" : 112,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 879,
+      "description" : "Requires the FAA Administrator within 180 days to amend regulations so that commercial air balloon operators must meet the same second-class medical certificate standards currently required of other pilot flight crewmembers.",
+      "heading" : null,
+      "identifier" : "2404",
+      "index" : 113,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 208,
+      "description" : "Amends Section 2110 of the FAA Extension Safety and Security Act of 2016 by replacing its text with revised tower marking requirements.",
+      "heading" : null,
+      "identifier" : "2405",
+      "index" : 114,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7349,
+      "description" : "Requires the FAA Administrator to issue regulations within one year mandating that covered towers between 50 and 200 feet tall located in rural or agricultural areas be clearly marked or entered in a database to reduce aviation hazards.",
+      "heading" : null,
+      "identifier" : "2110",
+      "index" : 115,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1930,
+      "description" : "Directs the FAA Administrator to establish a one-year e-learning training pilot program for aviation safety inspectors and airway transportation systems specialists, then use lessons learned to create or update a permanent e-learning training program.",
+      "heading" : null,
+      "identifier" : "2501",
+      "index" : 116,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1524,
+      "description" : "Requires the Department of Transportation Inspector General to audit the FAA's staffing model for aviation safety inspectors within one year and report findings to Congress, including whether the model adequately accounts for industry growth and the use of designees.",
+      "heading" : null,
+      "identifier" : "2502",
+      "index" : 117,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 505,
+      "description" : "Directs the FAA Administrator to identify airports served only by non-radar approach control towers and develop an implementation plan, including budget considerations, to provide those airports with approach control radar where appropriate.",
+      "heading" : null,
+      "identifier" : "2503",
+      "index" : 118,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3208,
+      "description" : "Requires the FAA Administrator to establish an advisory committee within 180 days to review and recommend improvements to FAA practices for developing airspace change proposals, stakeholder consultation, and public accessibility of obstruction data.",
+      "heading" : null,
+      "identifier" : "2504",
+      "index" : 119,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 126,
+      "description" : "Names this subtitle the 'Fairness for Pilots Act.'",
+      "heading" : null,
+      "identifier" : "2601",
+      "index" : 120,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7429,
+      "description" : "Expands pilots' appeal rights by requiring federal district courts to conduct full independent (de novo) reviews of FAA certificate denials, suspensions, or revocations and clarifies that the FAA bears the burden of proof in suspension or revocation cases.",
+      "heading" : null,
+      "identifier" : "2602",
+      "index" : 121,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4147,
+      "description" : "Prohibits the FAA from requiring reexamination of student, sport, recreational, or private pilots when the triggering event was the FAA's own fault, unless the FAA has reasonable grounds to believe the pilot is unqualified or obtained the certificate fraudulently, and requires the FAA to notify the pilot with a detailed justification before ordering any reexamination.",
+      "heading" : null,
+      "identifier" : "2603",
+      "index" : 122,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3241,
+      "description" : "Bars the FAA from taking enforcement action against individuals for NOTAM violations until the FAA certifies it has modernized its NOTAM system into a single, publicly accessible, internet-searchable repository and designates that repository as the sole official source for NOTAMs.",
+      "heading" : null,
+      "identifier" : "2604",
+      "index" : 123,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3943,
+      "description" : "Requires the FAA to obtain covered flight records from contract towers and other contractors upon a pilot's written request and to provide those records to the pilot when they are the subject of an FAA investigation relying on that data.",
+      "heading" : null,
+      "identifier" : "2605",
+      "index" : 124,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 546,
+      "description" : "Directs the FAA to revise its regulations within 180 days to allow FAA legal counsel to close enforcement actions with a warning notice, letter of correction, or other administrative action rather than always pursuing formal enforcement.",
+      "heading" : null,
+      "identifier" : "2606",
+      "index" : 125,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 665,
+      "description" : "Defines 'covered air carrier,' 'online service,' and 'ticket agent' for use throughout Title III of the bill.",
+      "heading" : null,
+      "identifier" : "3001",
+      "index" : 126,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2371,
+      "description" : "Requires the Secretary of Transportation to review how airlines categorize flight delays and cancellations—particularly weather-related ones—and report to Congress on whether current practices are accurate or potentially unfair and deceptive to passengers.",
+      "heading" : null,
+      "identifier" : "3101",
+      "index" : 127,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1346,
+      "description" : "Requires the Secretary of Transportation to review whether it is an unfair or deceptive practice for airlines to change a passenger's itinerary more than 24 hours before departure without offering compensation when the change adds stops or shifts departure time by three or more hours, and to report findings to Congress.",
+      "heading" : null,
+      "identifier" : "3102",
+      "index" : 128,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2250,
+      "description" : "Expands family assistance requirements for aircraft accidents by removing the 'major' loss-of-life threshold so that the obligations apply to any accident investigated by the NTSB, and extends coverage to ground victims and accidents involving any air carrier.",
+      "heading" : null,
+      "identifier" : "3103",
+      "index" : 129,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1016,
+      "description" : "Directs the Comptroller General to study and report to Congress on best practices for making airports more accessible to travelers with disabilities, going beyond existing legal minimums.",
+      "heading" : null,
+      "identifier" : "3104",
+      "index" : 130,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1523,
+      "description" : "Extends the Advisory Committee for Aviation Consumer Protection through September 30, 2021, requires non-government members to disclose conflicts of interest annually, and requires the committee to publish its annual recommendations on the DOT website.",
+      "heading" : null,
+      "identifier" : "3105",
+      "index" : 131,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 189,
+      "description" : "Extends the requirement for airports to submit competitive access reports to the FAA through October 1, 2021.",
+      "heading" : null,
+      "identifier" : "3106",
+      "index" : 132,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 599,
+      "description" : "Requires the Secretary of Transportation to issue regulations mandating that airlines automatically refund passengers for any ancillary fees paid for services—such as seat upgrades or baggage—that the airline fails to provide.",
+      "heading" : null,
+      "identifier" : "3107",
+      "index" : 133,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1333,
+      "description" : "Requires the Secretary of Transportation to issue regulations mandating that airlines and ticket agents disclose baggage, cancellation, change, ticketing, and seat selection fees to consumers in a standardized, clearly readable format before purchase, whether online or by phone.",
+      "heading" : null,
+      "identifier" : "3108",
+      "index" : 134,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1193,
+      "description" : "Requires airlines and ticket agents to disclose to consumers, at multiple points including online, by phone, and at check-in, that paid seat selection is optional and that a free seat will be assigned if no fee is paid.",
+      "heading" : null,
+      "identifier" : "3109",
+      "index" : 135,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 459,
+      "description" : "Directs the Secretary of Transportation to review airline policies on pregnant travelers and, if appropriate, require airlines to offer early boarding to pregnant passengers who request it.",
+      "heading" : null,
+      "identifier" : "3110",
+      "index" : 136,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2734,
+      "description" : "Amends federal law to require airlines and ticket agents to inform consumers at the point of sale that they can file complaints with the carrier and with DOT's Aviation Consumer Protection Division, and to prominently display complaint contact information on their websites and apps.",
+      "heading" : null,
+      "identifier" : "3111",
+      "index" : 137,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2682,
+      "description" : "Directs the Secretary of Transportation to evaluate and improve the DOT's aviation consumer protection website for usability and to develop a mobile app allowing travelers to access consumer protection information and file complaints.",
+      "heading" : null,
+      "identifier" : "3112",
+      "index" : 138,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 672,
+      "description" : "Requires the Architectural and Transportation Barriers Compliance Board, in consultation with DOT and FAA, to study how passengers with significant disabilities who use wheelchairs can be safely accommodated using in-cabin wheelchair restraint systems.",
+      "heading" : null,
+      "identifier" : "3113",
+      "index" : 139,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3715,
+      "description" : "Establishes a federal advisory committee to advise the Secretary of Transportation on improving air travel accessibility for passengers with disabilities, including identifying barriers and recommending improvements.",
+      "heading" : null,
+      "identifier" : "3114",
+      "index" : 140,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 867,
+      "description" : "Directs the Comptroller General to study and report to Congress on how well DOT enforces aviation consumer protection rules, including available enforcement tools, obstacles, and enforcement trends.",
+      "heading" : null,
+      "identifier" : "3115",
+      "index" : 141,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 600,
+      "description" : "Requires the FAA Administrator to initiate a proceeding to study minimum seat pitch requirements for passenger aircraft, with consideration for passenger safety including passengers with disabilities.",
+      "heading" : null,
+      "identifier" : "3116",
+      "index" : 142,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1778,
+      "description" : "Authorizes the Secretary of Transportation to issue regulations prohibiting passengers from making voice calls on mobile devices during flights, with exceptions for flight crew, flight attendants, and federal law enforcement officers.",
+      "heading" : null,
+      "identifier" : "3117",
+      "index" : 143,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3294,
+      "description" : "Prohibits airlines from removing a passenger who has already been cleared to board without the passenger's consent except for safety, security, health, or behavioral reasons, and directs DOT to eliminate caps on involuntary denied-boarding compensation.",
+      "heading" : null,
+      "identifier" : "3118",
+      "index" : 144,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 356,
+      "description" : "Sets January 1, 2018, as the effective compliance date for a DOT rule requiring airlines to report data on mishandled wheelchairs and baggage carried in aircraft cargo compartments.",
+      "heading" : null,
+      "identifier" : "3119",
+      "index" : 145,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1018,
+      "description" : "Extends and increases annual funding authorization for the Essential Air Service program to $175 million per year through fiscal year 2021 and updates eligibility definitions for subsidized small community air service.",
+      "heading" : null,
+      "identifier" : "3201",
+      "index" : 146,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 899,
+      "description" : "Increases annual funding for the Small Community Air Service Development Program to $10 million per year through fiscal year 2021 and updates airport size and service eligibility criteria for the program.",
+      "heading" : null,
+      "identifier" : "3202",
+      "index" : 147,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1496,
+      "description" : "Amends the Small Community Air Service Development Program to allow the Secretary to waive the prohibition on funding the same project twice if a community had little control over why a previous project failed or spent little money on it, and allows grant agreements to be amended or narrowed in scope.",
+      "heading" : null,
+      "identifier" : "3203",
+      "index" : 148,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 544,
+      "description" : "Allows the Secretary of Transportation, upon request by an eligible community, to waive Essential Air Service minimum service and subsidy requirements for a limited period of time.",
+      "heading" : null,
+      "identifier" : "3204",
+      "index" : 149,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 813,
+      "description" : "Defines key terms used throughout the title, including 'Administration,' 'Administrator,' 'ADS-B,' 'ADS-B Out,' and 'NextGen.'",
+      "heading" : null,
+      "identifier" : "4001",
+      "index" : 150,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2428,
+      "description" : "Requires the FAA Administrator to submit annual reports to Congress on the return-on-investment status of each NextGen program and to develop and maintain a prioritized list of NextGen programs.",
+      "heading" : null,
+      "identifier" : "4101",
+      "index" : 151,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 354,
+      "description" : "Directs the FAA Administrator to make a final investment decision by September 30, 2018, on whether to implement a reduced oceanic separation capability for use by the end of 2020.",
+      "heading" : null,
+      "identifier" : "4102",
+      "index" : 152,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2393,
+      "description" : "Requires the FAA to establish annual performance goals for NextGen, report progress toward those goals, and factor NextGen performance into the Chief NextGen Officer's bonus evaluations.",
+      "heading" : null,
+      "identifier" : "4103",
+      "index" : 153,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2462,
+      "description" : "Requires the FAA to update its air traffic control contingency plans every five years and evaluate how NextGen capabilities can improve the resilience of the national airspace system against future disruptions.",
+      "heading" : null,
+      "identifier" : "4104",
+      "index" : 154,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1306,
+      "description" : "Directs the FAA to identify barriers to compliance with the 2020 ADS-B Out equipment mandate, develop a plan to address those barriers, and report progress to Congress annually until January 1, 2020.",
+      "heading" : null,
+      "identifier" : "4105",
+      "index" : 155,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1071,
+      "description" : "Requires the FAA to conduct a gap analysis on risks to NextGen interoperability with foreign air navigation systems, develop a mitigation plan, and report findings to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4106",
+      "index" : 156,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 602,
+      "description" : "Directs the FAA to identify technical and operational gaps in NextGen transition plans, develop a mitigation plan, and report on actions taken to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4107",
+      "index" : 157,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1844,
+      "description" : "Requires the FAA to track use of performance-based navigation procedures, identify additional implementation opportunities, and report annually to Congress on progress toward fully deploying NextGen operational improvements.",
+      "heading" : null,
+      "identifier" : "4108",
+      "index" : 158,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1037,
+      "description" : "Directs the FAA to consider revising airworthiness certification regulations to address cybersecurity for aircraft avionics systems and protect them from unauthorized access through in-flight entertainment systems.",
+      "heading" : null,
+      "identifier" : "4109",
+      "index" : 159,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 777,
+      "description" : "Requires the Government Accountability Office to assess whether items in the FAA's NextGen budget directly contribute to a safer and more efficient air traffic control system and report recommendations to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4110",
+      "index" : 160,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 862,
+      "description" : "Requires the FAA to integrate human factors considerations into early design phases of NextGen programs and ensure a dedicated human factors specialist is involved in the NextGen approval process.",
+      "heading" : null,
+      "identifier" : "4111",
+      "index" : 161,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 954,
+      "description" : "Directs the FAA to evaluate and improve its acquisition reporting practices to accurately track and communicate costs for each major acquisition system, with biennial reports to Congress.",
+      "heading" : null,
+      "identifier" : "4112",
+      "index" : 162,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 606,
+      "description" : "Requires the FAA to provide cost-benefit statements and a detailed schedule of investments and deliverables before imposing NextGen-related equipment mandates on national airspace system users.",
+      "heading" : null,
+      "identifier" : "4113",
+      "index" : 163,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 893,
+      "description" : "Directs the FAA to assess workforce barriers, develop a plan to attract and retain talent in systems engineering and cybersecurity fields, and report progress to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4114",
+      "index" : 164,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 783,
+      "description" : "Requires the FAA Administrator to consult probability and statistics specialists to identify and manage risks to the NextGen air traffic modernization program, and report progress to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4115",
+      "index" : 165,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1279,
+      "description" : "Requires the FAA Administrator, working with the NextGen Advisory Committee and National Academies, to identify best practices, lessons learned, and key risks for NextGen implementation and submit a mitigation plan to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4116",
+      "index" : 166,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1158,
+      "description" : "Requires the FAA Administrator to report to Congress within one year on system-wide improvements to the national airspace—including reduced delays, increased throughput, lower emissions, and improved safety—resulting from four key NextGen programs.",
+      "heading" : null,
+      "identifier" : "4117",
+      "index" : 167,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 750,
+      "description" : "Requires the FAA Administrator to report to Congress within one year identifying the top five research priorities for NextGen advancement, explaining why each is a priority, who is helping with the research, and when it will be completed.",
+      "heading" : null,
+      "identifier" : "4118",
+      "index" : 168,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 707,
+      "description" : "Requires the FAA Administrator to identify and implement agencywide cost-saving initiatives with measurable schedules and metrics, and report progress to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4201",
+      "index" : 169,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1235,
+      "description" : "Requires the Secretary of Transportation to establish FAA performance measures within 180 days and corresponding targets within another 180 days, with the DOT Inspector General reporting to Congress on progress toward those targets within two years.",
+      "heading" : null,
+      "identifier" : "4202",
+      "index" : 170,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 887,
+      "description" : "Allows the FAA Administrator to furlough non-essential employees during required spending reductions while protecting employees whose work involves human safety or property protection, and permits internal budget transfers to maintain those essential employees.",
+      "heading" : null,
+      "identifier" : "4203",
+      "index" : 171,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 589,
+      "description" : "Requires the FAA Administrator to mandate in-person interviews for all air traffic control specialist applicants within 60 days of enactment and to issue guidelines for that interview process within 30 days.",
+      "heading" : null,
+      "identifier" : "4204",
+      "index" : 172,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 474,
+      "description" : "Requires the FAA Administrator to report to Congress within 90 days on staffing and scheduling plans for air traffic control facilities in the New York City and Newark region for the following year.",
+      "heading" : null,
+      "identifier" : "4205",
+      "index" : 173,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 358,
+      "description" : "Requires the FAA Administrator to develop and publish in the Federal Register a work plan for the New York/New Jersey/Philadelphia Metropolitan Area Airspace Project within 90 days of enactment.",
+      "heading" : null,
+      "identifier" : "4206",
+      "index" : 174,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 978,
+      "description" : "Requires the FAA Administrator to provide air traffic services and aviation safety support for airshows and other aviation events at no charge to organizers, funded from existing FAA appropriations.",
+      "heading" : null,
+      "identifier" : "4207",
+      "index" : 175,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 666,
+      "description" : "Requires the FAA Administrator to publish annual public reports for five years on how the FAA's personnel system incorporates disabled veteran leave and how many disabled veterans benefit from that provision.",
+      "heading" : null,
+      "identifier" : "4208",
+      "index" : 176,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 163,
+      "description" : "Amends the law governing the National Transportation Safety Board by removing a specific subsection related to NTSB investigative officers.",
+      "heading" : null,
+      "identifier" : "5001",
+      "index" : 177,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 920,
+      "description" : "Amends the national parks overflight law to clarify that air tour operators flying over Lake Mead National Recreation Area—including over Hoover Dam—solely as a transit route to the Grand Canyon are exempt from the overflight restrictions.",
+      "heading" : null,
+      "identifier" : "5002",
+      "index" : 178,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 998,
+      "description" : "Expands FAA aeronautical hazard studies to include impacts on commercial space launch and reentry vehicles at licensed launch sites, and directs the FAA to begin rulemaking to implement this change within 18 months.",
+      "heading" : null,
+      "identifier" : "5003",
+      "index" : 179,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2849,
+      "description" : "Requires the Secretaries of Transportation and Health and Human Services, in coordination with other federal agencies, to develop a comprehensive national aviation communicable disease preparedness plan within one year covering communications, roles, guidance, training, and public information.",
+      "heading" : null,
+      "identifier" : "5004",
+      "index" : 180,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1525,
+      "description" : "Directs the FAA Administrator to continue operating the Advanced Materials Center of Excellence, which conducts applied research and training on advanced materials in aircraft structures, and authorizes $500,000 per year for fiscal years 2018 and 2021.",
+      "heading" : null,
+      "identifier" : "5005",
+      "index" : 181,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 883,
+      "description" : "Requires the Comptroller General to study and report to Congress within one year on violent crimes committed against airline customer service employees, including a gap analysis of whether existing state and local laws adequately address such crimes.",
+      "heading" : null,
+      "identifier" : "5006",
+      "index" : 182,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 596,
+      "description" : "Requires the FAA Administrator to issue an order within one year mandating installation of secondary cockpit barriers on all newly manufactured aircraft delivered to U.S. passenger air carriers operating under Part 121 regulations.",
+      "heading" : null,
+      "identifier" : "5007",
+      "index" : 183,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 927,
+      "description" : "Directs the FAA Administrator to fund a research and development program through grants and cooperative agreements with universities and nonprofits to improve the safety, durability, and cost-effectiveness of airfield pavement technologies.",
+      "heading" : null,
+      "identifier" : "5008",
+      "index" : 184,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 371,
+      "description" : "Requires the FAA Administrator to begin a rulemaking within 180 days to extend noncommercial general aviation aircraft registration periods to five years.",
+      "heading" : null,
+      "identifier" : "5009",
+      "index" : 185,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 277,
+      "description" : "Amends federal law to clarify that liability limitations for aircraft owners and lessors apply based on whether they had operational control of the aircraft, removing the prior restriction to incidents occurring only on land or water.",
+      "heading" : null,
+      "identifier" : "5010",
+      "index" : 186,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1648,
+      "description" : "Directs the Comptroller General to study and report to Congress within 180 days on illegal drugs seized by federal authorities at U.S. international airports, including types, quantities, origins, and methods of transport.",
+      "heading" : null,
+      "identifier" : "5011",
+      "index" : 187,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1229,
+      "description" : "Requires the Comptroller General to report to Congress within one year on the law enforcement challenges posed by the use of unmanned aircraft systems for international illegal drug trafficking into the United States.",
+      "heading" : null,
+      "identifier" : "5012",
+      "index" : 188,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 539,
+      "description" : "Expresses Congress's view that the Secretaries of Transportation and Agriculture should work with the World Health Organization to develop guidance for preventing disease-carrying insects from being transported on commercial aircraft.",
+      "heading" : null,
+      "identifier" : "5013",
+      "index" : 189,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 411,
+      "description" : "Directs the Secretary of Transportation to revise FAA regulations to ensure that multi-year lessees of large and turbine-powered multiengine aircraft are treated the same as owners under FAA joint ownership policies.",
+      "heading" : null,
+      "identifier" : "5014",
+      "index" : 190,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 710,
+      "description" : "Requires the FAA Administrator to report to Congress within 180 days on existing outreach efforts to encourage elementary and secondary students to pursue aviation and STEM careers and address anticipated shortages of pilots and aviation professionals.",
+      "heading" : null,
+      "identifier" : "5015",
+      "index" : 191,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1934,
+      "description" : "Directs the FAA Administrator to establish a time-limited pilot program within 180 days allowing operators of stage 2 aircraft to fly those aircraft in nonrevenue service into up to four qualifying medium hub or nonhub airports, subject to specific runway and operational limits.",
+      "heading" : null,
+      "identifier" : "5016",
+      "index" : 192,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1003,
+      "description" : "Requires the FAA Administrator within 180 days to review existing laws and regulations on supersonic aircraft flights over U.S. land and report to Congress with findings and recommendations for any legal changes needed to allow such operations.",
+      "heading" : null,
+      "identifier" : "5017",
+      "index" : 193,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1305,
+      "description" : "Permits Part 121 air carriers operating in noncontiguous U.S. states to fly to visual flight rules destinations without a Terminal Aerodrome Forecast if an Area Forecast and an alternate airport with weather reporting are available, and restricts the FAA from imposing more stringent requirements without objective safety evidence.",
+      "heading" : null,
+      "identifier" : "5018",
+      "index" : 194,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2550,
+      "description" : "Makes minor technical and conforming corrections (fixing typos, cross-references, punctuation, and capitalization errors) throughout various sections of aviation law.",
+      "heading" : null,
+      "identifier" : "5019",
+      "index" : 195,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 14655,
+      "description" : "Names the law the 'Federal Aviation Administration Reauthorization Act of 2017' and provides its table of contents.",
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 196,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 332,
+      "description" : "Clarifies that all amendments or repeals in this Act refer to provisions of title 49 of the United States Code unless otherwise stated.",
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 197,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 281,
+      "description" : "Defines 'appropriate committees of Congress' as the Senate Commerce Committee and the House Transportation and Infrastructure Committee for purposes of this Act.",
+      "heading" : null,
+      "identifier" : "3",
+      "index" : 198,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 224,
+      "description" : "Sets the effective date of the Act and its amendments as the date it is signed into law unless a specific provision states otherwise.",
+      "heading" : null,
+      "identifier" : "4",
+      "index" : 199,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 816,
+      "description" : "Reauthorizes funding for airport planning, development, and noise compatibility programs at $3.35 billion for fiscal year 2018 and $3.75 billion annually for fiscal years 2019 through 2021, and extends obligational authority through September 30, 2021.",
+      "heading" : null,
+      "identifier" : "1001",
+      "index" : 200,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 323,
+      "description" : "Sets specific annual funding amounts for air navigation facilities and equipment for fiscal years 2018 through 2021, ranging from approximately $2.877 billion to $2.921 billion.",
+      "heading" : null,
+      "identifier" : "1002",
+      "index" : 201,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 646,
+      "description" : "Authorizes specific annual funding levels for FAA operations for fiscal years 2018 through 2021, ranging from approximately $10.1 billion to $10.45 billion, and updates related fiscal year references.",
+      "heading" : null,
+      "identifier" : "1003",
+      "index" : 202,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 591,
+      "description" : "Authorizes $175 million per year for FAA research and development for each of fiscal years 2018 through 2021 and removes outdated provisions.",
+      "heading" : null,
+      "identifier" : "1004",
+      "index" : 203,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1100,
+      "description" : "Updates the Airport and Airway Trust Fund spending guarantee formula for fiscal years 2018 through 2021 and extends the enforcement of that guarantee through 2021.",
+      "heading" : null,
+      "identifier" : "1005",
+      "index" : 204,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 654,
+      "description" : "Extends several expiring aviation program authorities—including programs for Pacific island nations, compatible land use planning, and airport property redevelopment—through September 30, 2021.",
+      "heading" : null,
+      "identifier" : "1006",
+      "index" : 205,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1672,
+      "description" : "Allows small airports that previously had at least 10,000 passenger boardings in 2012 but have since fallen below that threshold to continue receiving higher federal funding apportionments for up to three consecutive fiscal years, with a waiver option and a new minimum apportionment for airports with 8,000–9,999 boardings.",
+      "heading" : null,
+      "identifier" : "1201",
+      "index" : 206,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 600,
+      "description" : "Requires the FAA Administrator to prioritize early review of construction projects in states where cold weather limits the construction season to after May 1, and to report annually to Congress on this effort.",
+      "heading" : null,
+      "identifier" : "1202",
+      "index" : 207,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 280,
+      "description" : "Increases the number of states eligible to participate in the airport state block grant program from 10 to 15 beginning in fiscal year 2018.",
+      "heading" : null,
+      "identifier" : "1203",
+      "index" : 208,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7757,
+      "description" : "Updates the FAA Contract Tower Program by revising cost-benefit ratio calculation rules, raising the federal construction cost cap from $2 million to $4 million, and adjusting funding and special rule provisions.",
+      "heading" : null,
+      "identifier" : "1204",
+      "index" : 209,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1380,
+      "description" : "Requires the FAA to approve pending Contract Tower Program applications under 1990 eligibility criteria if a revised cost-benefit methodology is not implemented within 30 days of enactment, and requires the FAA to respond within 30 days to requests for expanded contract tower hours and staffing.",
+      "heading" : null,
+      "identifier" : "1205",
+      "index" : 210,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4013,
+      "description" : "Directs the FAA to establish a pilot program testing remote air traffic control towers at public-use airports, including selecting airports, collecting safety and performance data, ensuring vendor diversity, and reporting annually to Congress.",
+      "heading" : null,
+      "identifier" : "1206",
+      "index" : 211,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 260,
+      "description" : "Extends federal funding authorization for Midway Island Airport from fiscal years 2012–2017 to fiscal years 2018–2021.",
+      "heading" : null,
+      "identifier" : "1207",
+      "index" : 212,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1484,
+      "description" : "Allows airports to use airport revenue—prorated to airport use—for the maintenance and improvement of on-airport portions of surface transportation facilities that serve both airport and non-airport purposes.",
+      "heading" : null,
+      "identifier" : "1208",
+      "index" : 213,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 306,
+      "description" : "Repeals the existing inherently low-emission airport vehicle pilot program and reserves its place in the United States Code.",
+      "heading" : null,
+      "identifier" : "1209",
+      "index" : 214,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 498,
+      "description" : "Narrows the zero-emission airport vehicle pilot program to cover only vehicles used exclusively for on-airport passenger transport or employee shuttle buses, and clarifies a cross-reference to the repealed prior program.",
+      "heading" : null,
+      "identifier" : "1210",
+      "index" : 215,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 318,
+      "description" : "Repeals the airport ground support equipment emissions retrofit pilot program and reserves its place in the United States Code.",
+      "heading" : null,
+      "identifier" : "1211",
+      "index" : 216,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 482,
+      "description" : "Expands the airport energy efficiency assessment grant program to allow reimbursement of assessment costs to airport sponsors and requires applicants to certify that no safety projects would be deferred by prioritizing such a grant.",
+      "heading" : null,
+      "identifier" : "1212",
+      "index" : 217,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 930,
+      "description" : "Adds a condition requiring that projects at unclassified airports receiving certain apportioned funds be limited to primary runway maintenance, obstruction removal, rehabilitation, or other projects the Secretary deems necessary for safe airport operation, and updates recycling plan requirements for airport development grants.",
+      "heading" : null,
+      "identifier" : "1213",
+      "index" : 218,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 587,
+      "description" : "Allows an airport to transfer an instrument landing system to the FAA without compensation only when a grant helped purchase the system and the FAA has determined that satellite navigation cannot provide a suitable approach.",
+      "heading" : null,
+      "identifier" : "1214",
+      "index" : 219,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3913,
+      "description" : "Authorizes the FAA to establish a pilot program providing grants of up to $2 million each to no more than five eligible airport sponsors to acquire and install non-movement area surveillance surface display systems that supplement existing movement area systems.",
+      "heading" : null,
+      "identifier" : "1215",
+      "index" : 220,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3330,
+      "description" : "Amends the airport development definitions section to add definitions for 'categorized airport' and 'joint use airport,' clarify eligible airport development project items including security and safety equipment, and update vehicle eligibility criteria for zero-emission projects.",
+      "heading" : null,
+      "identifier" : "1216",
+      "index" : 221,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 538,
+      "description" : "Clarifies that airports must update noise exposure maps when operational changes create new noise impacts, specifying that the update obligation applies during either the forecast map period or the implementation timeframe of the noise compatibility program, whichever is longer.",
+      "heading" : null,
+      "identifier" : "1217",
+      "index" : 222,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1096,
+      "description" : "Prohibits the FAA from requiring airport owners or sponsors to provide, without cost, construction, maintenance, utilities, space, or services related to air traffic control, air navigation, or weather reporting, while preserving existing below-market agreements and grant assurances for land.",
+      "heading" : null,
+      "identifier" : "1218",
+      "index" : 223,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 188,
+      "description" : "Prohibits the FAA from discontinuing the Contract Weather Observer Program at any airport until October 1, 2021.",
+      "heading" : null,
+      "identifier" : "1219",
+      "index" : 224,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 441,
+      "description" : "Raises the federal government's share of funding to 95 percent for airport construction projects that are successive phases of multi-phased projects whose earlier phases received grants in fiscal year 2011 or earlier.",
+      "heading" : null,
+      "identifier" : "1220",
+      "index" : 225,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 729,
+      "description" : "Makes technical corrections to existing law by updating agency name references in the airport security program statute and adding a citation to federal property conveyance law.",
+      "heading" : null,
+      "identifier" : "1221",
+      "index" : 226,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2971,
+      "description" : "Requires medium and large hub airports to maintain a lactation room (meeting specific standards for privacy, accessibility, and amenities) in the secured area of each passenger terminal as a condition of receiving federal airport improvement grants.",
+      "heading" : null,
+      "identifier" : "1222",
+      "index" : 227,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 504,
+      "description" : "Updates the definition of 'small business concern' for airport contracting purposes to use the Small Business Act definition, while specifying a particular size standard for construction industry firms.",
+      "heading" : null,
+      "identifier" : "1223",
+      "index" : 228,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 896,
+      "description" : "Requires the FAA, upon a state's request, to provide technical assistance within 30 days to help the state develop acceptable pavement standards for nonprimary public-use airports, considering local conditions and materials.",
+      "heading" : null,
+      "identifier" : "1224",
+      "index" : 229,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 460,
+      "description" : "Makes security camera installation in public interior and exterior areas of airport terminals eligible for funding under the Airport Improvement Program.",
+      "heading" : null,
+      "identifier" : "1225",
+      "index" : 230,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1128,
+      "description" : "Allows noise mitigation funds to be used for replacing windows, doors, and installing air conditioning units or other noise-reduction elements at schools near congested airports, even if the airport has not completed a Part 150 noise study, provided the project is covered by a memorandum of agreement entered before September 30, 2002.",
+      "heading" : null,
+      "identifier" : "1226",
+      "index" : 231,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1352,
+      "description" : "Prohibits the Secretary of Transportation from regulating how airport owners use, lease, or dispose of non-federally funded land or facilities, except to ensure safe aircraft operations, fair market value transactions, or compliance with rules governing federally funded property.",
+      "heading" : null,
+      "identifier" : "1227",
+      "index" : 232,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2654,
+      "description" : "Establishes a three-year FAA pilot program allowing grant recipients to use social or economic contracting preferences—such as local hiring, economic-based hiring, or veteran hiring preferences—when awarding contracts for FAA-funded projects, and requires a report to Congress on the program's effects afterward.",
+      "heading" : null,
+      "identifier" : "1228",
+      "index" : 233,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 191,
+      "description" : "Names the subtitle the 'Forward Looking Investment in General Aviation, Hangars, and Tarmacs Act of 2017' or the 'FLIGHT Act of 2017.'",
+      "heading" : null,
+      "identifier" : "1301",
+      "index" : 234,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1842,
+      "description" : "Reforms general aviation airport funding by reserving at least $25 million for disaster relief airports, extending the period grant funds remain available from three to four years, raising the federal cost share to 95 percent for basic or unclassified NPIAS airports, and allowing unapportioned funds to be used for general aviation and reliever airports.",
+      "heading" : null,
+      "identifier" : "1302",
+      "index" : 235,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1975,
+      "description" : "Extends the FAA's coordinated and expedited environmental review process to general aviation airport construction and improvement projects, including runway construction, land acquisition, and other capacity-building projects at general aviation airports.",
+      "heading" : null,
+      "identifier" : "1303",
+      "index" : 236,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4020,
+      "description" : "Directs the Secretary of Transportation to create a public-private partnership grant program for general aviation and public-use privately owned airports, offering up to $500,000 per airport per year to improve hangars and other facilities, with priority given to airports leveraging local or private funding.",
+      "heading" : null,
+      "identifier" : "1304",
+      "index" : 237,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4070,
+      "description" : "Directs the Secretary of Transportation to designate general aviation airports meeting specific criteria—such as proximity to hospitals, disaster-prone regions, adequate runways, and fueling capability—as official disaster relief airports eligible for enhanced federal support.",
+      "heading" : null,
+      "identifier" : "1305",
+      "index" : 238,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 775,
+      "description" : "Expands the definition of eligible airport development to include planning, equipment, communications infrastructure, and airfield improvements at federally designated disaster relief airports intended to support disaster preparedness and response.",
+      "heading" : null,
+      "identifier" : "1306",
+      "index" : 239,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1034,
+      "description" : "Classifies the construction, repair, or restoration of recreational aircraft by private individuals at general aviation airports as an aeronautical activity, making such work eligible for airport improvement grant compliance and federal financial assistance.",
+      "heading" : null,
+      "identifier" : "1307",
+      "index" : 240,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 707,
+      "description" : "Streamlines the passenger facility charge approval process by removing certain findings the Secretary had to make before approval, and expands a simplified PFC authorization pilot program to cover small, medium, and large hub airports in addition to nonhub airports.",
+      "heading" : null,
+      "identifier" : "1401",
+      "index" : 241,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2204,
+      "description" : "Allows passenger facility charge revenue to be used to fund the eligible capital costs of intermodal ground access projects—such as transit connections—located on airport property that directly serve passengers or cargo moving through the airport.",
+      "heading" : null,
+      "identifier" : "1402",
+      "index" : 242,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3196,
+      "description" : "Requires the Secretary of Transportation to commission an independent study, with input from a broad panel of aviation stakeholders, examining the future infrastructure and financing needs of the national aviation system, including the adequacy of current funding tools and the impact of passenger facility charges.",
+      "heading" : null,
+      "identifier" : "1403",
+      "index" : 243,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 975,
+      "description" : "Expands the types of vehicle and ground support equipment emission-reduction projects eligible for passenger facility charge funding, including retrofitting diesel or gasoline-powered airport vehicles with EPA-certified emission control technologies at airports in air quality nonattainment or maintenance areas.",
+      "heading" : null,
+      "identifier" : "1404",
+      "index" : 244,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 774,
+      "description" : "Allows passenger facility charge revenue to be used for construction, repair, improvement, or equipment acquisition at airports to enhance security in areas directly related to passenger and baggage movement, excluding TSA screening equipment and functions.",
+      "heading" : null,
+      "identifier" : "1405",
+      "index" : 245,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 408,
+      "description" : "Establishes that terms used in the unmanned aircraft systems subtitle carry the meanings defined in the new Chapter 448 of title 49, and separately defines 'civil aircraft' by reference to existing law.",
+      "heading" : null,
+      "identifier" : "2001",
+      "index" : 246,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 321,
+      "description" : "Declares it U.S. policy that all unmanned aircraft system operations must be conducted in a manner that respects and protects personal privacy in accordance with the Constitution and federal, state, and local law.",
+      "heading" : null,
+      "identifier" : "2101",
+      "index" : 247,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 688,
+      "description" : "Expresses Congress's view that commercial and business UAS operators (other than news gatherers) should maintain, regularly update, and publicly post written privacy policies governing how data collected during drone operations is handled.",
+      "heading" : null,
+      "identifier" : "2102",
+      "index" : 248,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 360,
+      "description" : "Makes it an unfair and deceptive trade practice under the FTC Act for any commercial or business UAS operator to violate its own stated privacy policy while operating in the national airspace system.",
+      "heading" : null,
+      "identifier" : "2103",
+      "index" : 249,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3907,
+      "description" : "Directs the FAA to create and maintain a publicly searchable online database disclosing identifying and authorization information about commercial and government UAS operators, including details about any personally identifiable information their systems collect.",
+      "heading" : null,
+      "identifier" : "2104",
+      "index" : 250,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1023,
+      "description" : "Requires the Government Accountability Office to review existing federal, state, and local privacy laws as they apply to UAS operations, identify gaps or limitations in available legal remedies, and recommend legislative or other actions to address those deficiencies.",
+      "heading" : null,
+      "identifier" : "2105",
+      "index" : 251,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2661,
+      "description" : "Adds a new Chapter 448 to title 49 and defines key unmanned aircraft systems terms—such as 'small unmanned aircraft,' 'unmanned aircraft system,' 'test site,' 'sense and avoid capability,' and others—for use throughout the UAS regulatory framework.",
+      "heading" : null,
+      "identifier" : "2121",
+      "index" : 252,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 8187,
+      "description" : "Directs the FAA to establish and maintain through September 30, 2024, a program using designated UAS test sites to develop operational standards, coordinate with NASA and DoD, and conduct research needed to safely integrate unmanned aircraft into the national airspace system.",
+      "heading" : null,
+      "identifier" : "2122",
+      "index" : 253,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 10335,
+      "description" : "Requires the FAA to charter an aviation rulemaking advisory committee to develop risk-based consensus safety standards and a streamlined authorization process for small unmanned aircraft systems, considering factors such as geofencing, sense-and-avoid, remote identification, and tamper prevention.",
+      "heading" : null,
+      "identifier" : "2123",
+      "index" : 254,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2243,
+      "description" : "Requires the Secretary of Transportation to develop a plan and work with federal, national, and international partners to designate permanent Arctic areas where small unmanned aircraft can operate around the clock for research and commercial purposes, including over-water flights up to at least 2,000 feet altitude.",
+      "heading" : null,
+      "identifier" : "2124",
+      "index" : 255,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3046,
+      "description" : "Directs the Secretary of Transportation to use a risk-based approach to allow certain unmanned aircraft systems to operate safely in national airspace before comprehensive rulemaking is complete, and sets a sunset date of September 30, 2021 for this special authority.",
+      "heading" : null,
+      "identifier" : "2125",
+      "index" : 256,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 5673,
+      "description" : "Expresses Congress's support for expanding drone operations beyond visual line of sight, at night, and over people, and authorizes the FAA Administrator to issue regulations allowing certain unmanned aircraft systems to operate without an airman certificate, airworthiness certificate, or FAA registration, with specific rules for micro UAS within 270 days.",
+      "heading" : null,
+      "identifier" : "2126",
+      "index" : 257,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 10506,
+      "description" : "Directs the Secretary of Transportation to issue guidance and develop certification programs to streamline the authorization process for government agencies operating public unmanned aircraft systems in national airspace, including expedited application reviews and decisions within 60 business days.",
+      "heading" : null,
+      "identifier" : "2127",
+      "index" : 258,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4915,
+      "description" : "Prohibits the FAA from issuing new rules targeting model aircraft flown strictly for hobby or recreational purposes, provided operators follow community-based safety guidelines, stay within 400 feet altitude, yield to manned aircraft, notify nearby airports, and pass an aeronautical knowledge and safety test.",
+      "heading" : null,
+      "identifier" : "2128",
+      "index" : 259,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 448,
+      "description" : "Restores the FAA's 2015 drone registration and marking rules that had been struck down by a federal court, making them effective again upon enactment of this Act.",
+      "heading" : null,
+      "identifier" : "2129",
+      "index" : 260,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3627,
+      "description" : "Requires individuals operating unmanned aircraft systems to first pass an FAA-developed online aeronautical knowledge and safety test, with limited exceptions for certain authorized operators, those holding airmen certificates, and model aircraft hobbyists using a community-based organization's equivalent test.",
+      "heading" : null,
+      "identifier" : "2130",
+      "index" : 261,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 281,
+      "description" : "Exempts unmanned aircraft systems operated underground for mining purposes from FAA regulation and enforcement under chapter 448.",
+      "heading" : null,
+      "identifier" : "2131",
+      "index" : 262,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1686,
+      "description" : "Directs the FAA to establish a program using remote detection and identification technologies to oversee and enforce compliance by drone operators, create a public reporting mechanism for violations, and authorizes $5 million per year from 2018 through 2021 for these activities.",
+      "heading" : null,
+      "identifier" : "2132",
+      "index" : 263,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6033,
+      "description" : "Directs the FAA to work with Defense, Homeland Security, and other federal agencies to ensure drone detection and mitigation technologies do not disrupt safe airport operations, and requires a plan within 180 days for certifying and deploying such technologies, including testing at five airports.",
+      "heading" : null,
+      "identifier" : "2133",
+      "index" : 264,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 195,
+      "description" : "Amends existing law to explicitly include helicopter air ambulance operations within the scope of aviation emergency safety public services disruption protections.",
+      "heading" : null,
+      "identifier" : "2134",
+      "index" : 265,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 586,
+      "description" : "Classifies unmanned aircraft owned or operated by tribal governments as public aircraft, giving them the same status as other government-operated drones for purposes of FAA regulation.",
+      "heading" : null,
+      "identifier" : "2135",
+      "index" : 266,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3731,
+      "description" : "Requires the Secretary of Transportation to issue a final rule within one year establishing a certification and regulatory framework for small unmanned aircraft systems carrying property for compensation or hire, including creating a new 'small UAS air carrier certificate.'",
+      "heading" : null,
+      "identifier" : "2136",
+      "index" : 267,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 902,
+      "description" : "Directs the FAA Administrator to establish a Collegiate Training Initiative program within 180 days to partner with higher education institutions in preparing students for careers involving unmanned aircraft systems.",
+      "heading" : null,
+      "identifier" : "2137",
+      "index" : 268,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 743,
+      "description" : "Requires the FAA Administrator to determine within 180 days, in consultation with the Departments of Veterans Affairs, Defense, and Labor, whether FAA occupations related to unmanned aircraft systems can be incorporated into the agency's Veterans' Employment Program.",
+      "heading" : null,
+      "identifier" : "2138",
+      "index" : 269,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 463,
+      "description" : "Requires the FAA Administrator to report to Congress within one year on which agricultural aerial application safety rules under 14 CFR Part 137 should apply to drones used for chemical spraying on farms.",
+      "heading" : null,
+      "identifier" : "2139",
+      "index" : 270,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 999,
+      "description" : "Requires the FAA to publish approved waiver safety justifications on its website within 30 days and to upgrade its online waiver portal within 60 days to confirm receipt of applications and allow applicants to check their application status.",
+      "heading" : null,
+      "identifier" : "2140",
+      "index" : 271,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1190,
+      "description" : "Requires the FAA to issue a final rule within 30 days removing regulatory prohibitions so that drones can be granted waivers to carry property for hire, including from moving vehicles, and directs the FAA to weigh drone capabilities, pilot qualifications, and operating environment when evaluating such waiver requests.",
+      "heading" : null,
+      "identifier" : "2141",
+      "index" : 272,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2732,
+      "description" : "Moves and renumbers several drone-related provisions from the FAA Extension Safety and Security Act of 2016 into Title 49 of the U.S. Code while making technical corrections to internal cross-references within those provisions.",
+      "heading" : null,
+      "identifier" : "2142",
+      "index" : 273,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 928,
+      "description" : "Expresses Congress's view that the FAA should comply as soon as possible, and no later than 60 days after enactment, with its existing obligation to publish guidance for emergency drone exemptions supporting disaster response, search and rescue, and insurance claims processing.",
+      "heading" : null,
+      "identifier" : "2143",
+      "index" : 274,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1349,
+      "description" : "Makes it a federal crime, punishable by up to one year in prison (or up to ten years if a weapon is involved or serious injury results), to knowingly fly a drone into or over restricted government buildings or grounds with intent to disrupt official government functions.",
+      "heading" : null,
+      "identifier" : "2144",
+      "index" : 275,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1651,
+      "description" : "Directs the Government Accountability Office to study and report to Congress within 180 days on how regulatory authority over airspace and drone operations should be divided between the federal government and state and local governments, including gaps, conflicts, and safety considerations.",
+      "heading" : null,
+      "identifier" : "2151",
+      "index" : 276,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1853,
+      "description" : "Affirms that small drones may use wireless spectrum for control and communication purposes and requires the FAA, NTIA, and FCC to jointly report within 270 days on whether drones should be allowed to use aviation-designated spectrum and what barriers or alternative frequencies exist.",
+      "heading" : null,
+      "identifier" : "2152",
+      "index" : 277,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3942,
+      "description" : "Requires the FAA to establish within 270 days streamlined, risk-based procedures and standards enabling colleges and universities to more easily operate and modify drones for educational and research purposes, with fallback operational permissions if the FAA misses the deadline.",
+      "heading" : null,
+      "identifier" : "2153",
+      "index" : 278,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1420,
+      "description" : "Preserves the validity of all existing drone-related rules, permits, and orders issued under prior FAA laws until they are specifically changed or revoked, and ensures this Act does not disrupt any pending legal or administrative proceedings.",
+      "heading" : null,
+      "identifier" : "2154",
+      "index" : 279,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2663,
+      "description" : "Directs the Secretary of Transportation to establish within 180 days a process to designate consortia of two-year public colleges as Centers of Excellence for training students in small drone technology, operations, maintenance, and industry applications.",
+      "heading" : null,
+      "identifier" : "2155",
+      "index" : 280,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 383,
+      "description" : "Authorizes $1 million per year from fiscal years 2018 through 2021 for the FAA's 'Know Before You Fly' campaign and similar public education efforts to promote drone safety awareness.",
+      "heading" : null,
+      "identifier" : "2156",
+      "index" : 281,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1450,
+      "description" : "Requires the FAA to develop within one year a comprehensive strategy and public website to help state and local law enforcement and first responders identify drone-related public safety threats and learn how to beneficially use drones in their own operations.",
+      "heading" : null,
+      "identifier" : "2157",
+      "index" : 282,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 84,
+      "description" : "Names Part IV of this legislation the 'Drone Operator Safety Act.'",
+      "heading" : null,
+      "identifier" : "2161",
+      "index" : 283,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 503,
+      "description" : "States Congress's finding that educating drone operators about federal law promotes safety, and expresses the sense of Congress that the FAA should continue prioritizing drone operator education through campaigns like 'Know Before You Fly.'",
+      "heading" : null,
+      "identifier" : "2162",
+      "index" : 284,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2700,
+      "description" : "Creates a new federal crime making it illegal to operate a drone in a way that knowingly or recklessly endangers occupied aircraft, with enhanced penalties for causing serious injury or death, and establishes a presumption of violation for drones flown within a defined rectangular exclusion zone around active airport runways.",
+      "heading" : null,
+      "identifier" : "2163",
+      "index" : 285,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 724,
+      "description" : "Defines key terms used throughout this subtitle, including Administrator, Advisory Committee, FAA, Secretary, and systems safety approach.",
+      "heading" : null,
+      "identifier" : "2211",
+      "index" : 286,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7707,
+      "description" : "Requires the Secretary of Transportation to establish a Safety Oversight and Certification Advisory Committee within 60 days to advise on FAA safety oversight and certification policy by bringing together stakeholders from aviation, manufacturing, labor, and the public.",
+      "heading" : null,
+      "identifier" : "2212",
+      "index" : 287,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3397,
+      "description" : "Directs the FAA Administrator to establish measurable performance objectives and tracking metrics for aircraft certification processes within 120 days of the Advisory Committee being formed, and to report progress to Congress annually.",
+      "heading" : null,
+      "identifier" : "2221",
+      "index" : 288,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6537,
+      "description" : "Amends federal aviation law to codify how the FAA must delegate certification functions to Organization Designation Authorization holders, requiring full delegation of approved functions and a collaborative process to restore any functions that are limited.",
+      "heading" : null,
+      "identifier" : "2222",
+      "index" : 289,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2841,
+      "description" : "Requires the FAA to convene a multidisciplinary expert panel within 120 days to survey and assess the ODA program's processes, best practices, training, and resource impacts, and to submit recommendations for improvement to Congress within 180 days.",
+      "heading" : null,
+      "identifier" : "2223",
+      "index" : 290,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1783,
+      "description" : "Requires the FAA Administrator to establish a milestone-based issue resolution process for type certification disputes within 15 months, including automatic escalation to senior management when agreed deadlines are missed.",
+      "heading" : null,
+      "identifier" : "2224",
+      "index" : 291,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1554,
+      "description" : "Directs the FAA Administrator to create a risk-based policy within 180 days that streamlines approval of safety-enhancing technology upgrades—such as new flight displays and autopilots—for small general aviation airplanes.",
+      "heading" : null,
+      "identifier" : "2225",
+      "index" : 292,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3138,
+      "description" : "Requires the FAA Administrator to set performance objectives and trackable metrics for flight standards activities within 120 days of the Advisory Committee being established, with annual progress reports to Congress.",
+      "heading" : null,
+      "identifier" : "2231",
+      "index" : 293,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2737,
+      "description" : "Directs the FAA Administrator to establish a Task Force on Flight Standards Reform within 90 days to identify best practices and make recommendations on streamlining flight standards processes, improving inspector training, and achieving consistent regulatory interpretations across the agency.",
+      "heading" : null,
+      "identifier" : "2232",
+      "index" : 294,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2178,
+      "description" : "Requires the FAA Administrator to create a publicly accessible, centralized online database of all FAA safety regulatory guidance within one year, linked to specific regulations, while protecting personal and proprietary information.",
+      "heading" : null,
+      "identifier" : "2233",
+      "index" : 295,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2101,
+      "description" : "Establishes functions for the Regulatory Consistency Communication Board to collect, resolve, and publicly share regulatory interpretation questions submitted by FAA staff and regulated parties, and directs the Administrator to set metrics and timelines for measuring the Board's performance.",
+      "heading" : null,
+      "identifier" : "2234",
+      "index" : 296,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2103,
+      "description" : "Requires the FAA Administrator to review and revise its safety workforce training strategy within 60 days to align with risk-based oversight, promote auditing skills, and foster knowledge-sharing, and to report implementation progress to Congress within 270 days.",
+      "heading" : null,
+      "identifier" : "2241",
+      "index" : 297,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 934,
+      "description" : "Amends federal law to direct the Secretary of Transportation to actively promote U.S. aerospace safety standards and products abroad and to work with bilateral partners to streamline foreign validation of U.S.-certificated products.",
+      "heading" : null,
+      "identifier" : "2251",
+      "index" : 298,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2833,
+      "description" : "Allows the FAA Administrator to accept airworthiness directives issued by foreign aeronautical safety authorities—rather than issuing separate U.S. directives—when specific safety equivalence and bilateral agreement conditions are met, while preserving the FAA's authority to issue its own directive or accept alternative compliance methods when necessary.",
+      "heading" : null,
+      "identifier" : "2252",
+      "index" : 299,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3158,
+      "description" : "Directs the FAA Administrator to strengthen international aerospace leadership by tracking foreign validation timelines, assisting U.S. companies with delays, setting benchmarks for bilateral safety agreements, and reporting to Congress on the FAA's international engagement strategy and staffing needs.",
+      "heading" : null,
+      "identifier" : "2253",
+      "index" : 300,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 831,
+      "description" : "Amends federal law to allow the FAA to charge foreign governments or entities fees for certification services, provided the fees are consistent with aviation safety agreements and do not exceed the actual cost of those services.",
+      "heading" : null,
+      "identifier" : "2254",
+      "index" : 301,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 338,
+      "description" : "Requires the FAA Administrator to work with other aviation authorities to develop a global standard for flight deck access and crew redundancy requirements that aligns with existing U.S. rules.",
+      "heading" : null,
+      "identifier" : "2301",
+      "index" : 302,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1385,
+      "description" : "Requires the FAA to assess current aircraft tracking performance standards and, if appropriate, conduct rulemaking to improve near-term and long-term aircraft tracking and flight data recovery, coordinating with international bodies for global harmonization.",
+      "heading" : null,
+      "identifier" : "2302",
+      "index" : 303,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3301,
+      "description" : "Requires the FAA to revise flight attendant duty and rest regulations to mandate at least 10 consecutive hours of rest after a duty period of 14 hours or less, and requires air carriers to submit and periodically update fatigue risk management plans for flight attendants.",
+      "heading" : null,
+      "identifier" : "2303",
+      "index" : 304,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 876,
+      "description" : "Requires the FAA Administrator to report to Congress within 18 months on the National Test Equipment Program, including outstanding equipment requests, calibration methods, inventory plans, and recommendations for improving future test equipment.",
+      "heading" : null,
+      "identifier" : "2304",
+      "index" : 305,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 822,
+      "description" : "Requires the FAA Administrator to assess available technologies for runway incursion warning systems, determine feasibility and cost-effectiveness, and report findings and recommendations to Congress by June 30, 2018.",
+      "heading" : null,
+      "identifier" : "2305",
+      "index" : 306,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4158,
+      "description" : "Requires the FAA to assess public availability of information on heliports and helipads used by helicopter air ambulances, update or create relevant databases as needed, and amends existing law to update helicopter air ambulance incident and accident data reporting requirements.",
+      "heading" : null,
+      "identifier" : "2306",
+      "index" : 307,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 866,
+      "description" : "Requires the FAA, in collaboration with the NTSB and industry stakeholders, to determine what additional data should be collected in accident or incident reports for on-demand Part 135 operations and report findings and implementation plans to Congress.",
+      "heading" : null,
+      "identifier" : "2307",
+      "index" : 308,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 674,
+      "description" : "Adds a statutory definition of 'human factors' to federal aviation law, describing it as a multidisciplinary field focused on understanding and applying knowledge of human capabilities and limitations to improve safety and performance.",
+      "heading" : null,
+      "identifier" : "2308",
+      "index" : 309,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 333,
+      "description" : "Expresses Congress's view that the pilot in command of an aircraft bears direct and final responsibility for the operation of that aircraft, as already established in FAA regulations.",
+      "heading" : null,
+      "identifier" : "2309",
+      "index" : 310,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1371,
+      "description" : "Requires the FAA to assess improvements needed for the Aviation Safety Information Analysis and Sharing (ASIAS) program to better predict accident precursors, expand data sources, and disseminate safety trend information, with a report to Congress upon completion.",
+      "heading" : null,
+      "identifier" : "2310",
+      "index" : 311,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2696,
+      "description" : "Directs the FAA to expedite development of metrics to detect increases in runway incursions and measure the effectiveness of safety initiatives, report progress to Congress, and amends existing law to require progress reports on pending runway safety grant applications.",
+      "heading" : null,
+      "identifier" : "2311",
+      "index" : 312,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6005,
+      "description" : "Requires the Department of Transportation to align U.S. regulations on air transport of lithium cells and batteries with current ICAO standards within 90 days, establish a fast-track process for medical device battery special permit applications, and allows review of other related regulations.",
+      "heading" : null,
+      "identifier" : "2312",
+      "index" : 313,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1697,
+      "description" : "Requires the FAA to review aircraft cabin evacuation certification procedures for transport-category aircraft, accounting for emergency conditions, passenger demographics, seating changes, and recent accidents, and to report findings and recommendations to Congress within one year.",
+      "heading" : null,
+      "identifier" : "2313",
+      "index" : 314,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 890,
+      "description" : "Requires the FAA Administrator to submit an annual report to Congress describing its safety oversight process, risk-based oversight methods, and instances where recurrent airline performance reviews were accelerated.",
+      "heading" : null,
+      "identifier" : "2314",
+      "index" : 315,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 458,
+      "description" : "Amends existing law to broaden the types of alternative pilot training courses that can qualify in lieu of the full 1,500-hour flight hours requirement, provided such courses are structured and disciplined and will enhance safety.",
+      "heading" : null,
+      "identifier" : "2315",
+      "index" : 316,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2401,
+      "description" : "Directs the FAA to create and post online educational materials on responding to smoke or fume incidents, issue reporting guidance, commission a research study on bleed air quality and health effects, report to Congress on air quality monitoring systems, and optionally run a pilot program to test related technologies.",
+      "heading" : null,
+      "identifier" : "2316",
+      "index" : 317,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 814,
+      "description" : "Requires the FAA to review and update regulations on emergency medical equipment and first-aid kit contents for passenger aircraft, with specific attention to whether those kits adequately address children's medical needs.",
+      "heading" : null,
+      "identifier" : "2317",
+      "index" : 318,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2487,
+      "description" : "Requires the FAA to update automated weather observing system standards and policies to embrace new technologies, allow qualified on-site personnel to perform routine maintenance checks, apply performance-based standards, and waive benefit-cost ratio requirements for certain airport safety grants, with a progress report due to Congress by September 30, 2018.",
+      "heading" : null,
+      "identifier" : "2401",
+      "index" : 319,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 502,
+      "description" : "Requires the FAA to consult with general aviation stakeholders within 180 days to help define the scope and requirements for any new Future Flight Service Program before it is put out for competitive contract bidding.",
+      "heading" : null,
+      "identifier" : "2402",
+      "index" : 320,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1044,
+      "description" : "Directs the FAA to allow unleaded aviation gasoline to replace leaded gasoline in eligible aircraft and engines by adopting a streamlined (non-traditional certification) approval process within 180 days after the completion of the Piston Aviation Fuels Initiative or publication of an ASTM production specification, whichever is later.",
+      "heading" : null,
+      "identifier" : "2403",
+      "index" : 321,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 799,
+      "description" : "Requires the FAA, within 180 days, to apply the same second-class medical certificate standards to commercial hot air balloon pilots that currently apply to other aircraft flight crew members.",
+      "heading" : null,
+      "identifier" : "2404",
+      "index" : 322,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 156,
+      "description" : "Makes a technical correction by amending the text of Section 2110 of the FAA Extension Safety and Security Act of 2016 to replace its prior content with new tower-marking requirements.",
+      "heading" : null,
+      "identifier" : "2405",
+      "index" : 323,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7537,
+      "description" : "Requires the FAA to issue regulations within one year mandating that covered towers between 50 and 200 feet tall in rural areas be clearly marked or listed in a publicly available database (or both, for meteorological evaluation towers), with consistent requirements for both new and existing towers.",
+      "heading" : null,
+      "identifier" : "2110",
+      "index" : 324,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 604,
+      "description" : "Directs the FAA to expedite certification of fuel system crashworthiness improvements for rotorcraft and to issue periodic bulletins urging rotorcraft owners and operators to install available fuel system safety modifications as soon as practicable.",
+      "heading" : null,
+      "identifier" : "2406",
+      "index" : 325,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1691,
+      "description" : "Requires the FAA to launch a one-year e-learning training pilot program for aviation safety inspectors and airway transportation systems specialists, then assess the results and establish or update a permanent e-learning training program based on lessons learned.",
+      "heading" : null,
+      "identifier" : "2501",
+      "index" : 326,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1385,
+      "description" : "Requires the DOT Inspector General to audit the FAA's staffing model for aviation safety inspectors within one year and report to Congress on whether the model is consistently applied, methodologically sound, and accounts for the use of FAA-designated representatives.",
+      "heading" : null,
+      "identifier" : "2502",
+      "index" : 327,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 425,
+      "description" : "Directs the FAA to identify airports served only by non-radar approach and departure control towers and to develop an implementation plan, including budget considerations, to provide those airports with approach control radar where appropriate.",
+      "heading" : null,
+      "identifier" : "2503",
+      "index" : 328,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2801,
+      "description" : "Requires the FAA to establish within 180 days an advisory committee to review and recommend improvements to the agency's practices for developing airspace change proposals, stakeholder consultation processes, and public accessibility of obstruction data used to evaluate navigational safety.",
+      "heading" : null,
+      "identifier" : "2504",
+      "index" : 329,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1060,
+      "description" : "Requires the FAA Administrator to study and report to Congress by July 1, 2018 on whether federal visibility (conspicuity) standards are needed for ground vehicles operating on the airside areas of large, medium, and small hub airports.",
+      "heading" : null,
+      "identifier" : "2505",
+      "index" : 330,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 719,
+      "description" : "Directs NOAA and the FAA to jointly complete, within one year, a study assessing how extreme weather affects commercial air travel, including turbulence, flight routes, and airport and air traffic control infrastructure.",
+      "heading" : null,
+      "identifier" : "2506",
+      "index" : 331,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1321,
+      "description" : "Requires the FAA Administrator to work with an industry stakeholder committee to develop and submit to Congress within two years a plan for integrating self-piloted (autonomous) aircraft into the national airspace system.",
+      "heading" : null,
+      "identifier" : "2507",
+      "index" : 332,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 682,
+      "description" : "Directs the FAA to task its Aviation Rulemaking Advisory Committee with recommending regulatory changes to make repairman certificates transferable between employers, and requires the FAA to act on those recommendations within one year.",
+      "heading" : null,
+      "identifier" : "2508",
+      "index" : 333,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1039,
+      "description" : "Requires the FAA to publish proposed and final rules within 60 and 90 days, respectively, allowing repair stations to voluntarily surrender their certificates, barring individuals who caused a certificate revocation from reentering the industry, and permitting stations that fired such individuals to reapply for certification.",
+      "heading" : null,
+      "identifier" : "2509",
+      "index" : 334,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 868,
+      "description" : "Requires the FAA to issue a request for proposals within 180 days for studies comparing the durability and pilot-perceived visibility of Type I versus Type III glass beads used in critical airfield markings at multiple airports under varying conditions.",
+      "heading" : null,
+      "identifier" : "2510",
+      "index" : 335,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 553,
+      "description" : "Requires the FAA to report to Congress within 90 days on the number and adequacy of aircraft rescue and firefighting training facilities in each FAA region, along with a plan to fill any identified gaps.",
+      "heading" : null,
+      "identifier" : "2511",
+      "index" : 336,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 86,
+      "description" : "Names the subtitle the 'Fairness for Pilots Act.'",
+      "heading" : null,
+      "identifier" : "2601",
+      "index" : 337,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6686,
+      "description" : "Expands the Pilot's Bill of Rights by broadening pilots' appeal rights to cover certificate suspensions, requiring federal district courts to conduct fully independent de novo reviews of FAA certificate actions, and placing the burden of proof on the FAA when it seeks to suspend or revoke a certificate.",
+      "heading" : null,
+      "identifier" : "2602",
+      "index" : 338,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3606,
+      "description" : "Restricts the FAA from ordering reexamination of student, sport, recreational, or private pilots unless there is a reasonable, documented basis tied to the airman's own conduct or fraud, and requires the FAA to provide pilots with detailed written justification before any reexamination.",
+      "heading" : null,
+      "identifier" : "2603",
+      "index" : 339,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2802,
+      "description" : "Prohibits FAA enforcement actions for NOTAM violations until the FAA certifies it has modernized its NOTAM system into a single, publicly accessible, searchable online repository, and bars enforcement for any NOTAM not yet published in that repository.",
+      "heading" : null,
+      "identifier" : "2604",
+      "index" : 340,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3559,
+      "description" : "Requires the FAA and its contractors (including contract towers) to provide pilots under investigation with any relevant flight records upon written request, and mandates that response deadlines be extended if records are not promptly produced.",
+      "heading" : null,
+      "identifier" : "2605",
+      "index" : 341,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 487,
+      "description" : "Directs the FAA to revise its regulations within 180 days to allow FAA legal counsel to close enforcement cases with informal actions such as warning notices or letters of correction.",
+      "heading" : null,
+      "identifier" : "2606",
+      "index" : 342,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 546,
+      "description" : "Defines key terms—including 'covered air carrier,' 'online service,' and 'ticket agent'—used throughout Title III of the Act.",
+      "heading" : null,
+      "identifier" : "3001",
+      "index" : 343,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2116,
+      "description" : "Requires the Secretary of Transportation to review and report to Congress within roughly 15 months on how airlines categorize flight delays and cancellations, particularly whether weather attributions are accurate and whether they disproportionately affect smaller communities or mislead passengers.",
+      "heading" : null,
+      "identifier" : "3101",
+      "index" : 344,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1247,
+      "description" : "Requires the Secretary of Transportation to review within one year whether it is an unfair or deceptive practice for an airline to significantly change a passenger's itinerary more than 24 hours before departure without offering compensation or better alternatives, and to report findings to Congress within 90 days of completing the review.",
+      "heading" : null,
+      "identifier" : "3102",
+      "index" : 345,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1876,
+      "description" : "Expands family assistance obligations for air carriers and the NTSB after aircraft accidents by removing size and severity thresholds so that the requirements apply to any accident with any loss of life for which the NTSB is the lead investigative agency, and extends protections to ground victims.",
+      "heading" : null,
+      "identifier" : "3103",
+      "index" : 346,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 916,
+      "description" : "Directs the Government Accountability Office to study and report to Congress within one year on airport accessibility best practices for people with disabilities that go beyond what existing disability laws already require.",
+      "heading" : null,
+      "identifier" : "3104",
+      "index" : 347,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1342,
+      "description" : "Extends the Advisory Committee for Aviation Consumer Protection through September 30, 2021, requires non-government members to annually disclose financial conflicts of interest, and mandates that the committee's annual recommendations be posted on the Department of Transportation website.",
+      "heading" : null,
+      "identifier" : "3105",
+      "index" : 348,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 149,
+      "description" : "Extends the deadline for airports to submit competitive access reports from October 1, 2017 to October 1, 2021.",
+      "heading" : null,
+      "identifier" : "3106",
+      "index" : 349,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 559,
+      "description" : "Requires the Secretary of Transportation to issue regulations within one year mandating that airlines automatically refund passengers for any ancillary fees paid for services they did not actually receive.",
+      "heading" : null,
+      "identifier" : "3107",
+      "index" : 350,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1154,
+      "description" : "Requires the Secretary of Transportation to issue regulations within one year mandating that airlines and ticket agents disclose key fees—such as baggage, cancellation, change, ticketing, and seat selection fees—to consumers in a standardized format before purchase, whether online or by phone.",
+      "heading" : null,
+      "identifier" : "3108",
+      "index" : 351,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1054,
+      "description" : "Requires airlines and ticket agents to inform consumers, within 15 months, that paid seat selection is optional and that a free seat will be assigned if no seat is purchased, with this disclosure made online, by phone, at check-in, and at other pre-departure opportunities.",
+      "heading" : null,
+      "identifier" : "3109",
+      "index" : 352,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 417,
+      "description" : "Directs the Secretary of Transportation to review airline policies on traveling while pregnant within 180 days and, if appropriate, issue regulations requiring airlines to offer pre-boarding to pregnant passengers who request it.",
+      "heading" : null,
+      "identifier" : "3110",
+      "index" : 353,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2397,
+      "description" : "Amends federal law to require airlines, foreign carriers, and ticket agents to inform consumers at the point of sale and on their websites about how to file service complaints both with the carrier and with the Department of Transportation's Aviation Consumer Protection Division, and directs the Secretary to issue implementing regulations within one year.",
+      "heading" : null,
+      "identifier" : "3111",
+      "index" : 354,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2244,
+      "description" : "Establishes an Aviation Consumer Advocate within the Department of Transportation's Aviation Consumer Protection Division to help resolve passenger complaints, evaluate complaint handling, and recommend enforcement and regulatory improvements, with annual reporting to Congress.",
+      "heading" : null,
+      "identifier" : "3112",
+      "index" : 355,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2324,
+      "description" : "Requires the Secretary of Transportation to evaluate and improve the aviation consumer protection section of the DOT website within 180 days and to develop and release, within one year, a free mobile app that lets travelers access passenger rights information and file aviation consumer complaints.",
+      "heading" : null,
+      "identifier" : "3113",
+      "index" : 356,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 745,
+      "description" : "Directs the Architectural and Transportation Barriers Compliance Board, in consultation with the DOT and relevant stakeholders, to conduct a study within two years on how passengers with significant disabilities who use wheelchairs—including power wheelchairs—can be safely accommodated through in-cabin wheelchair restraint systems.",
+      "heading" : null,
+      "identifier" : "3114",
+      "index" : 357,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3349,
+      "description" : "Establishes an advisory committee to advise the Secretary of Transportation on improving air travel for passengers with disabilities, including identifying access barriers, evaluating DOT programs, and submitting annual reports with recommendations.",
+      "heading" : null,
+      "identifier" : "3115",
+      "index" : 358,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 501,
+      "description" : "Requires the Secretary of Transportation, when developing best practices for assisting passengers with disabilities, to include specific recommendations on addressing air carrier failures to provide wheelchair assistance and how carrier training programs can correct those failures.",
+      "heading" : null,
+      "identifier" : "3116",
+      "index" : 359,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1784,
+      "description" : "Requires the Secretary of Transportation to review and update regulations within 180 days to ensure airports and airlines provide timely, effective assistance to passengers with disabilities, and mandates annual hands-on training for all personnel who physically assist those passengers.",
+      "heading" : null,
+      "identifier" : "3117",
+      "index" : 360,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 866,
+      "description" : "Increases civil penalties up to three times the normal maximum for airline violations that injure a passenger with a disability or damage their wheelchair or mobility aid, and makes each individual act of discrimination a separate punishable offense.",
+      "heading" : null,
+      "identifier" : "3118",
+      "index" : 361,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2996,
+      "description" : "Directs the Secretary of Transportation to create a plain-language 'Airline Passengers with Disabilities Bill of Rights' document summarizing passenger rights and carrier responsibilities, which airlines must post on their websites and include in pre-flight communications to passengers who disclose a disability.",
+      "heading" : null,
+      "identifier" : "3119",
+      "index" : 362,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 727,
+      "description" : "Requires the Government Accountability Office to study and report to Congress within one year on how the Department of Transportation enforces aviation consumer protection rules, including available enforcement tools, obstacles, and enforcement trends.",
+      "heading" : null,
+      "identifier" : "3120",
+      "index" : 363,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 540,
+      "description" : "Directs the FAA Administrator to begin a study within 18 months on establishing minimum seat pitch (legroom) standards for passenger aircraft, with particular attention to passenger safety including for those with disabilities.",
+      "heading" : null,
+      "identifier" : "3121",
+      "index" : 364,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1475,
+      "description" : "Requires the Secretary of Transportation to issue regulations banning passengers from making voice calls on mobile phones during flights, with exceptions for flight crew, flight attendants, and federal law enforcement officers acting in an official capacity.",
+      "heading" : null,
+      "identifier" : "3122",
+      "index" : 365,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3080,
+      "description" : "Prohibits airlines from removing a passenger who has already been cleared and boarded without the passenger's consent except for safety, security, health, or behavioral reasons; eliminates dollar caps on involuntary denied-boarding compensation; and requires the GAO to study airline oversale practices.",
+      "heading" : null,
+      "identifier" : "3123",
+      "index" : 366,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 263,
+      "description" : "Sets January 1, 2018 as the effective compliance date for the existing federal rule requiring airlines to report data on mishandled wheelchairs and other mobility aids transported in aircraft cargo compartments.",
+      "heading" : null,
+      "identifier" : "3124",
+      "index" : 367,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 832,
+      "description" : "Requires the GAO to report to Congress within 180 days on the availability and accessibility of lavatories on commercial aircraft, including accessibility for passengers with disabilities, safety concerns from shrinking lavatory sizes, and complaint trends.",
+      "heading" : null,
+      "identifier" : "3125",
+      "index" : 368,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1095,
+      "description" : "Requires the GAO to report on airline employee and contractor training policies regarding racial, ethnic, and religious nondiscrimination, and directs the Secretary of Transportation to develop and distribute best practices to airlines based on those findings.",
+      "heading" : null,
+      "identifier" : "3126",
+      "index" : 369,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1567,
+      "description" : "Requires the Secretary of Transportation to issue a final rule within 90 days establishing minimum customer service standards for large ticket agents (those with $100 million or more in annual revenue) to ensure consumer protections comparable to those required of airlines.",
+      "heading" : null,
+      "identifier" : "3127",
+      "index" : 370,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 517,
+      "description" : "Expresses Congress's opinion that the aviation industry and all stakeholders must ensure equal access to air travel for individuals with all types of disabilities at every airport and across all airline services as technology advances.",
+      "heading" : null,
+      "identifier" : "3128",
+      "index" : 371,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4331,
+      "description" : "Directs the Secretary of Transportation to issue regulations within 270 days prohibiting airlines from charging fees—including for cancellations, baggage, seat selection, and same-day flight changes—that are unreasonable or disproportionate to the airline's actual costs.",
+      "heading" : null,
+      "identifier" : "3129",
+      "index" : 372,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 877,
+      "description" : "Extends and increases funding for the Essential Air Service program to $175 million per year for fiscal years 2018 through 2021, updates eligibility definitions, and allows the Secretary to consider seasonal flexibility when awarding service contracts at seasonal airports.",
+      "heading" : null,
+      "identifier" : "3201",
+      "index" : 373,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 759,
+      "description" : "Increases annual funding for the Small Community Air Service Development Program to $10 million per year through 2021 and expands eligibility to include any airport no larger than a small hub that has insufficient air service or unreasonably high fares.",
+      "heading" : null,
+      "identifier" : "3202",
+      "index" : 374,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1336,
+      "description" : "Allows the Secretary to waive the rule against funding the same project twice if the community previously spent little money or faced uncontrollable industry or environmental challenges, and permits the Secretary to amend or narrow the scope of a small community air service grant agreement at the request of the community and carrier.",
+      "heading" : null,
+      "identifier" : "3203",
+      "index" : 375,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 465,
+      "description" : "Allows eligible small communities to request that the Secretary waive, in whole or in part, the aircraft size and service-level requirements for Essential Air Service eligibility, with the waiver lasting a limited time period.",
+      "heading" : null,
+      "identifier" : "3204",
+      "index" : 376,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 656,
+      "description" : "Defines key terms—including Administration, Administrator, ADS-B, ADS-B Out, and NextGen—used throughout Title IV of the bill.",
+      "heading" : null,
+      "identifier" : "4001",
+      "index" : 377,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2111,
+      "description" : "Requires the FAA Administrator to submit annual reports to Congress on each NextGen program's return on investment, expected completion, user benefits, and safety contributions, and to maintain a prioritized list of NextGen programs until each achieves a positive return on investment.",
+      "heading" : null,
+      "identifier" : "4101",
+      "index" : 378,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 314,
+      "description" : "Directs the FAA Administrator to make a final investment decision by September 30, 2018, on whether to implement a reduced oceanic separation capability that, if justified by a positive business case, would be operational by the end of 2020.",
+      "heading" : null,
+      "identifier" : "4102",
+      "index" : 379,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2154,
+      "description" : "Requires the FAA to establish annual measurable performance goals for NextGen, include progress toward those goals in required reports, and tie the Chief NextGen Officer's bonus evaluations and organizational agreements to quantifiable NextGen efficiency, productivity, capacity, and safety objectives.",
+      "heading" : null,
+      "identifier" : "4103",
+      "index" : 380,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2303,
+      "description" : "Requires the FAA Administrator to update air traffic control contingency plans within one year and every five years thereafter, report to Congress on those updates, and convene NextGen officials within 180 days to assess how NextGen capabilities can improve national airspace resilience against facility outages like the 2014 Chicago Center fire.",
+      "heading" : null,
+      "identifier" : "4104",
+      "index" : 381,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1108,
+      "description" : "Directs the FAA, working with the NextGen Advisory Committee, to identify barriers to the 2020 ADS-B Out equipment mandate, develop and submit a plan to address those barriers, and report annually to Congress on compliance progress until January 1, 2020.",
+      "heading" : null,
+      "identifier" : "4105",
+      "index" : 382,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 973,
+      "description" : "Requires the FAA Administrator to conduct a gap analysis of risks to NextGen interoperability with foreign air navigation service providers, develop a mitigation plan, and report findings and actions to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4106",
+      "index" : 383,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 502,
+      "description" : "Directs the FAA Administrator to identify technical and operational gaps in NextGen transition plans, develop a mitigation plan, and report to Congress on actions taken within one year.",
+      "heading" : null,
+      "identifier" : "4107",
+      "index" : 384,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1606,
+      "description" : "Requires the FAA to track use of performance-based navigation procedures, identify additional locations and opportunities for implementation, engage stakeholders early, and report annually to Congress on progress and plans for expanding PBN at additional airports.",
+      "heading" : null,
+      "identifier" : "4108",
+      "index" : 385,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 939,
+      "description" : "Directs the FAA Administrator to consider revising airworthiness certification regulations to address cybersecurity for avionics systems and to require that flight-critical avionics be secured against unauthorized access through passenger in-flight entertainment systems.",
+      "heading" : null,
+      "identifier" : "4109",
+      "index" : 386,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 698,
+      "description" : "Requires the Government Accountability Office to assess whether items in the FAA's NextGen budget actually contribute to a safer and more efficient air traffic control system and to recommend removal of any line items that do not, reporting findings to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4110",
+      "index" : 387,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 762,
+      "description" : "Requires the FAA Administrator to incorporate human factors analysis in the early design phases of all NextGen programs and to include a dedicated human factors specialist in the NextGen approval process, with a progress report to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4111",
+      "index" : 388,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 834,
+      "description" : "Directs the FAA Administrator to review and improve acquisition cost-reporting practices to ensure accurate tracking of total system costs, and to report to Congress on progress within one year and every two years thereafter.",
+      "heading" : null,
+      "identifier" : "4112",
+      "index" : 389,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 524,
+      "description" : "Requires the FAA Administrator to provide cost-benefit statements and a joint investment schedule before mandating that airspace users adopt NextGen-related equipment.",
+      "heading" : null,
+      "identifier" : "4113",
+      "index" : 390,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 773,
+      "description" : "Directs the FAA Administrator to identify workforce barriers, develop a recruitment and retention plan for technical fields like cybersecurity and systems engineering, and report progress to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4114",
+      "index" : 391,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 683,
+      "description" : "Requires the FAA Administrator to consult statistical specialists to identify and prioritize NextGen implementation risks, develop a mitigation method, and report to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4115",
+      "index" : 392,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1040,
+      "description" : "Directs the FAA Administrator, working with the NextGen Advisory Committee and National Academies, to identify best practices, assess key risks for major NextGen programs, develop mitigation plans, and report findings to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4116",
+      "index" : 393,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 938,
+      "description" : "Requires the FAA Administrator to report to Congress within one year on the system-wide benefits of NextGen programs, including reductions in delays, increased throughput, lower emissions, and improved safety.",
+      "heading" : null,
+      "identifier" : "4117",
+      "index" : 394,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 578,
+      "description" : "Requires the FAA Administrator to report to Congress within one year identifying the top five research priorities for NextGen implementation, explaining why each is a priority, who is assisting with the research, and when it will be completed.",
+      "heading" : null,
+      "identifier" : "4118",
+      "index" : 395,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1344,
+      "description" : "Requires the FAA Administrator to submit annual reports to Congress on the status of NextGen implementation at commercial service airports, including developing a standard metric for measuring percentage completion.",
+      "heading" : null,
+      "identifier" : "4119",
+      "index" : 396,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 607,
+      "description" : "Directs the FAA Administrator to identify and implement agency-wide cost-saving initiatives with measurable schedules and metrics, and to report progress to Congress within one year.",
+      "heading" : null,
+      "identifier" : "4201",
+      "index" : 397,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1115,
+      "description" : "Requires the Secretary of Transportation to establish performance measures and targets for FAA administration within 180 days, and directs the DOT Inspector General to report to Congress on progress toward meeting those targets within two years.",
+      "heading" : null,
+      "identifier" : "4202",
+      "index" : 398,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 807,
+      "description" : "Allows the FAA Administrator to furlough non-essential employees to meet required spending reductions while protecting employees whose work involves human safety or property protection, and permits internal budget transfers to maintain essential staff.",
+      "heading" : null,
+      "identifier" : "4203",
+      "index" : 399,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 528,
+      "description" : "Requires the FAA to conduct an in-person interview with every air traffic control specialist applicant before hiring, with guidelines established within 30 days and the requirement in effect within 60 days of enactment.",
+      "heading" : null,
+      "identifier" : "4204",
+      "index" : 400,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 434,
+      "description" : "Requires the FAA Administrator to submit a report to Congress within 90 days detailing staffing and scheduling plans for air traffic control facilities in the New York City and Newark region for the following year.",
+      "heading" : null,
+      "identifier" : "4205",
+      "index" : 401,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 318,
+      "description" : "Requires the FAA Administrator to develop and publish in the Federal Register a work plan for the New York/New Jersey/Philadelphia Metropolitan Area Airspace Project within 90 days of enactment.",
+      "heading" : null,
+      "identifier" : "4206",
+      "index" : 402,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 878,
+      "description" : "Requires the FAA to provide air traffic services and aviation safety support for airshows and fly-ins at no charge to event organizers, funded from existing FAA appropriations.",
+      "heading" : null,
+      "identifier" : "4207",
+      "index" : 403,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 546,
+      "description" : "Requires the FAA Administrator to publish annual reports for five years on the impact of disabled veteran leave provisions on the FAA workforce and the number of disabled veterans benefitting from that leave.",
+      "heading" : null,
+      "identifier" : "4208",
+      "index" : 404,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 276,
+      "description" : "Extends veterans' preference hiring protections to Federal Aviation Administration employees by applying additional statutory provisions to the FAA's personnel management system.",
+      "heading" : null,
+      "identifier" : "4209",
+      "index" : 405,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 420,
+      "description" : "Requires the FAA Administrator to designate Aircraft Registry Office employees in Oklahoma City as excepted (essential) workers who must continue working during any government shutdown or emergency furlough.",
+      "heading" : null,
+      "identifier" : "4210",
+      "index" : 406,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 123,
+      "description" : "Removes a specific subsection from the law governing National Transportation Safety Board investigative officers.",
+      "heading" : null,
+      "identifier" : "5001",
+      "index" : 407,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 782,
+      "description" : "Clarifies that air tour operators flying over federal lands near Grand Canyon National Park solely as a transportation route—including over Hoover Dam—are exempt from overflight regulations.",
+      "heading" : null,
+      "identifier" : "5002",
+      "index" : 408,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 838,
+      "description" : "Requires the FAA to consider the impact on commercial space launch and reentry vehicles when conducting aeronautical studies of proposed structures, and mandates a rulemaking within 18 months to implement this change.",
+      "heading" : null,
+      "identifier" : "5003",
+      "index" : 409,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2552,
+      "description" : "Directs the Secretaries of Transportation and Health and Human Services, in coordination with other federal agencies, to develop a comprehensive national aviation communicable disease preparedness plan within one year.",
+      "heading" : null,
+      "identifier" : "5004",
+      "index" : 410,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1338,
+      "description" : "Codifies the continued operation of the FAA's Advanced Materials Center of Excellence to conduct applied research on durable aircraft materials and authorizes $500,000 annually for fiscal years 2018 and 2021.",
+      "heading" : null,
+      "identifier" : "5005",
+      "index" : 411,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2656,
+      "description" : "Requires the GAO to study violence against airline customer service employees and directs air carriers to develop and submit employee assault prevention and response plans based on the study's findings.",
+      "heading" : null,
+      "identifier" : "5006",
+      "index" : 412,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 536,
+      "description" : "Requires the FAA to mandate installation of secondary cockpit security barriers on all new aircraft manufactured for U.S. passenger air carriers within one year of enactment.",
+      "heading" : null,
+      "identifier" : "5007",
+      "index" : 413,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 807,
+      "description" : "Directs the FAA to fund research, training, demonstrations, and promotion of advanced concrete and asphalt airfield pavement technologies through grants and cooperative agreements with universities and nonprofits.",
+      "heading" : null,
+      "identifier" : "5008",
+      "index" : 414,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 331,
+      "description" : "Requires the FAA to begin a rulemaking within 180 days to extend noncommercial general aviation aircraft registration periods from three to five years.",
+      "heading" : null,
+      "identifier" : "5009",
+      "index" : 415,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 197,
+      "description" : "Narrows aircraft owner/lessor liability by removing the restriction that limits it to incidents occurring on land or water and clarifying it applies only when the owner lacks operational control.",
+      "heading" : null,
+      "identifier" : "5010",
+      "index" : 416,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1448,
+      "description" : "Directs the GAO to study illegal drugs seized by federal authorities at U.S. international airports and report findings, including drug types, origins, and seizure methods, to Congress within 180 days.",
+      "heading" : null,
+      "identifier" : "5011",
+      "index" : 417,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1109,
+      "description" : "Requires the GAO to report to Congress within one year on how drug traffickers use unmanned aircraft systems to smuggle illegal drugs across U.S. international borders.",
+      "heading" : null,
+      "identifier" : "5012",
+      "index" : 418,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 499,
+      "description" : "Expresses Congress's view that the Secretaries of Transportation and Agriculture should work with the World Health Organization to develop guidance for preventing disease-carrying insects from being transported on commercial aircraft.",
+      "heading" : null,
+      "identifier" : "5013",
+      "index" : 419,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 371,
+      "description" : "Requires the FAA to update its regulations so that long-term lessees of large or turbine-powered multiengine aircraft are treated the same as owners under FAA joint ownership policies.",
+      "heading" : null,
+      "identifier" : "5014",
+      "index" : 420,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 630,
+      "description" : "Requires the FAA Administrator to report to Congress within 180 days on the agency's existing STEM outreach efforts aimed at inspiring elementary and secondary students to pursue aviation careers and address projected shortages of pilots and aviation professionals.",
+      "heading" : null,
+      "identifier" : "5015",
+      "index" : 421,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1635,
+      "description" : "Directs the FAA to launch a pilot program allowing operators of older, noisier Stage 2 aircraft to fly those planes in nonrevenue service to up to four qualifying medium hub or nonhub airports, subject to facility and operational requirements, with the program expiring in 10 years or when no Stage 2 aircraft remain in service.",
+      "heading" : null,
+      "identifier" : "5016",
+      "index" : 422,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1386,
+      "description" : "Requires the Secretary of Transportation to publish a proposed rule within one year—and a final rule within 18 months thereafter—establishing noise and operational standards to permit civil supersonic flight over land in the United States, with the existing ban on overland supersonic flight automatically voided if the final rule is not published within 36 months.",
+      "heading" : null,
+      "identifier" : "5017",
+      "index" : 423,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1104,
+      "description" : "Allows FAA-regulated air carriers to fly to destinations under visual flight rules without a Terminal Aerodrome Forecast or METAR if an Area Forecast and an alternate airport with those reports are available, and prohibits the FAA from imposing stricter requirements without objective, evidence-based safety justification.",
+      "heading" : null,
+      "identifier" : "5018",
+      "index" : 424,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2163,
+      "description" : "Makes a series of minor technical corrections—such as fixing cross-references, capitalization, spelling errors, and punctuation—in various sections of aviation and tax law.",
+      "heading" : null,
+      "identifier" : "5019",
+      "index" : 425,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 507,
+      "description" : "Directs the FAA to publish weather observation data from National Weather Service stations and automated weather stations located in noncontiguous states through the FAA's National Airspace Data Interchange Network.",
+      "heading" : null,
+      "identifier" : "5020",
+      "index" : 426,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 524,
+      "description" : "Expands the duties of the National Advisory Committee on Travel and Tourism Infrastructure to include considering the impact of domestic and international aviation markets on U.S. travel and tourism.",
+      "heading" : null,
+      "identifier" : "5021",
+      "index" : 427,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 370,
+      "description" : "Expresses Congress's view that the aviation industry should actively encourage women and girls to pursue aviation careers through pilot training, STEM education, and mentorship programs.",
+      "heading" : null,
+      "identifier" : "5022",
+      "index" : 428,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1954,
+      "description" : "States Congress's findings about the Spectrum Efficient National Surveillance Radar (SENSR) program and expresses the sense of Congress that the FAA should continue assessing whether the 1300–1350 MHz spectrum band can be made available for non-Federal use.",
+      "heading" : null,
+      "identifier" : "5023",
+      "index" : 429,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 845,
+      "description" : "Requires the FAA Administrator to report to Congress within 180 days analyzing a decade of illegal charter flight reports, including FAA enforcement actions, resource allocation decisions, challenges in identifying illegal operators, and recommendations for improvement.",
+      "heading" : null,
+      "identifier" : "5024",
+      "index" : 430,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1230,
+      "description" : "Prohibits states, their subdivisions, and multi-state authorities from enacting or enforcing meal or rest break rules for commercial truck drivers whose hours of service are already regulated by the federal government.",
+      "heading" : null,
+      "identifier" : "5025",
+      "index" : 431,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "This bill reauthorizes the Federal Aviation Administration through fiscal year 2021, appropriating funds for airport improvement, air navigation, FAA operations, and research and development. It also comprehensively reforms FAA safety oversight, certification, and consumer protection rules, establishes a regulatory framework for unmanned aircraft systems (drones), modernizes the NextGen air traffic control system, and addresses general aviation, essential air service, and various other aviation policy matters.",
+  "versionId" : "150025"
+}

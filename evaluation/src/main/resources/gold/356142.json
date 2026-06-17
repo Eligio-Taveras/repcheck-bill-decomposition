@@ -2,17 +2,28 @@
   "billType" : "hr",
   "format" : "Formatted Text",
   "groups" : [
+    {
+      "conceptLabel" : "NICS Background Check Reform",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
   ],
-  "labelStatus" : "draft-boundaries",
+  "labelStatus" : "llm-judged",
   "parserUsed" : "Fallback",
   "sections" : [
     {
       "charLength" : 436,
+      "description" : "This is the NICS Improvement Amendments Act, enacted January 8, 2008, aimed at improving the National Instant Criminal Background Check System.",
       "heading" : null,
       "identifier" : null,
       "index" : 0,
       "kind" : "Fallback"
     }
   ],
+  "summary" : "This bill is the NICS Improvement Amendments Act of 2007, enacted in January 2008, which aims to improve the National Instant Criminal Background Check System (NICS) used for firearm purchase background checks. The legislation focuses on ensuring that relevant records—particularly those related to mental health adjudications and other disqualifying factors—are accurately and completely reported to the federal background check system by states and federal agencies.",
   "versionId" : "356142"
 }

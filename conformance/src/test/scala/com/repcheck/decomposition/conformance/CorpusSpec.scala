@@ -2,8 +2,8 @@ package com.repcheck.decomposition.conformance
 
 class CorpusSpec extends ConformanceContract {
 
-  "the conformance corpus" should "load the pinned 21 bills with non-empty content" in {
-    val _ = Corpus.bills.size shouldBe 21
+  "the conformance corpus" should "load the pinned 25 bills with non-empty content" in {
+    val _ = Corpus.bills.size shouldBe 25
     all(Corpus.bills.map(_.content.length)) should be > 0
   }
 

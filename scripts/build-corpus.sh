@@ -15,8 +15,11 @@ OUT="$(cd "$(dirname "$0")/.." && pwd)/conformance/src/main/resources/corpus"
 psql() { docker exec "$CONTAINER" psql -U repcheck -d repcheck -tA "$@"; }
 
 # Pinned sample (8 bill types x text/xml/pdf x small->large; see DC-1 design).
+# Plus 4 mid-omnibus bills (~750K chars / ~60-80 sections each) added for DP-0: large enough to plausibly carry >15
+# legislative subjects, so the production cut-switch (>15 subjects -> silhouette) can be exercised on the gold set.
 IDS=(208332 357076 402717 189669 356142 415327 344387 8966 177012 150314 \
-     267921 356661 373803 408763 129397 323852 330298 154389 219039 272091 237650)
+     267921 356661 373803 408763 129397 323852 330298 154389 219039 272091 237650 \
+     148391 375702 244276 150025)
 
 mkdir -p "$OUT"
 IN="$(IFS=,; echo "${IDS[*]}")"

@@ -2,12 +2,23 @@
   "billType" : "hres",
   "format" : "Formatted Text",
   "groups" : [
+    {
+      "conceptLabel" : "Committee Assignment",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
   ],
-  "labelStatus" : "draft-boundaries",
+  "labelStatus" : "llm-judged",
   "parserUsed" : "GpoText",
   "sections" : [
     {
       "charLength" : 188,
+      "description" : "This is a House Resolution from the 111th Congress, introduced and passed by the House of Representatives on October 7, 2009.",
       "heading" : null,
       "identifier" : null,
       "index" : 0,
@@ -15,11 +26,13 @@
     },
     {
       "charLength" : 211,
+      "description" : "This resolution elects Representative Cao to the House Committee on Oversight and Government Reform.",
       "heading" : null,
       "identifier" : null,
       "index" : 1,
       "kind" : "Section"
     }
   ],
+  "summary" : "This is a brief House Resolution from the 111th Congress that assigns Representative Cao to a specific House committee. It is a routine organizational action taken by the House of Representatives to fill a committee seat.",
   "versionId" : "344387"
 }
