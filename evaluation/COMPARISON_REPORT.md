@@ -38,3 +38,35 @@ Anisotropy = mean pairwise cosine over a pooled sample (lower = more isotropic).
 | 375702 | omnibus | 418 | 67 | 67 | 2.26 | 0.364 | 0.733 |
 | 244276 | omnibus | 226 | 54 | 54 | 1.75 | 0.219 | 0.692 |
 | 150025 | omnibus | 432 | 28 | 28 | 2.63 | 0.264 | 0.578 |
+
+## Structure-aware distance (standardize + cut@k): blend cosine with same-Title prior
+
+d = alpha*cosine + (1-alpha)*structural (0 if same parser Title, else 1). alpha=1.0 is the pure-cosine baseline.
+
+| alpha | mean ARI | mean NMI |
+|---|---|---|
+| 0.0 | 0.160 | 0.623 |
+| 0.1 | 0.392 | 0.758 |
+| 0.2 | 0.392 | 0.758 |
+| 0.3 | 0.383 | 0.752 |
+| 0.4 | 0.383 | 0.752 |
+| 0.5 | 0.383 | 0.752 |
+| 0.6 | 0.383 | 0.752 |
+| 0.7 | 0.383 | 0.753 |
+| 0.8 | 0.383 | 0.753 |
+| 0.9 | 0.380 | 0.749 |
+| 1.0 | 0.315 | 0.705 |
+
+**Best alpha = 0.1** (alpha=1.0 = pure cosine).
+
+### Per-bill: pure cosine (alpha=1.0) vs structure-blend (alpha=0.1)
+
+| bill | sections | subjects (k) | ARI cosine | ARI blend | NMI blend |
+|---|---|---|---|---|---|
+| 415327 | 18 | 10 | 0.395 | 0.458 | 0.866 |
+| 150314 | 26 | 11 | 0.170 | 0.343 | 0.763 |
+| 189669 | 14 | 6 | 0.494 | 0.494 | 0.767 |
+| 148391 | 309 | 54 | 0.297 | 0.285 | 0.692 |
+| 375702 | 418 | 67 | 0.364 | 0.413 | 0.765 |
+| 244276 | 226 | 54 | 0.219 | 0.406 | 0.763 |
+| 150025 | 432 | 28 | 0.264 | 0.347 | 0.689 |

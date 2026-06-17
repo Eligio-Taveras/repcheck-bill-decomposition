@@ -39,15 +39,18 @@ class ComparisonReport extends ConformanceContract {
   private val Transforms    = List("none", "center", "standardize")
   private val CacheDir      = Paths.get("target", "embed-cache")
   private val AnisoSample   = 250
+  private val AlphaGrid     = (0 to 10).map(_ * 0.1).toList // structure blend: 0.0 (pure Title) .. 1.0 (pure cosine)
 
   final private case class BillData(
     versionId: String,
     sections: Int,
     raw: IndexedSeq[Vector[Double]],
     ref: Vector[Int],
+    structuralKeys: IndexedSeq[String], // top-level parent Title per section (parser hierarchy); unique if none
   ) {
     def isOmnibus: Boolean      = sections > OmnibusMinSec
     def isTunableTight: Boolean = !isOmnibus && sections > TrivialMaxSec
+    def isNonTrivial: Boolean   = isOmnibus || isTunableTight
   }
 
   private def embedAll(texts: List[String]): List[Array[Float]] =
@@ -95,15 +98,85 @@ class ComparisonReport extends ConformanceContract {
       val n      = parsed.sections.size
       val raw    = embedCached(gold.versionId, parsed.sections.map(_.content))
       val ref    = GroupingComparison.labelsFromGroups(gold.groups.map(_.sectionIndices), n)
+      val keys   = parsed.sections.map(s => s.parents.headOption.getOrElse(s"_uniq_${s.sectionIndex}")).toIndexedSeq
       info(s"${gold.versionId}: $n sections")
-      BillData(gold.versionId, n, raw, ref)
+      BillData(gold.versionId, n, raw, ref, keys)
     }
     val pooled = bills.flatMap(_.raw)
 
-    val analyses = Transforms.map(t => analyze(t, bills, pooled))
-    writeReport(analyses)
+    val analyses  = Transforms.map(t => analyze(t, bills, pooled))
+    val structure = structureSweep(bills, pooled)
+    writeReport(analyses, structure)
     info("done")
     succeed
+  }
+
+  final private case class StructPoint(alpha: Double, ari: Double, nmi: Double)
+
+  final private case class StructBill(
+    vid: String,
+    sec: Int,
+    k: Int,
+    ariCosine: Double,
+    ariBlend: Double,
+    nmiBlend: Double,
+  )
+
+  /**
+   * Structure-aware sweep on STANDARDIZED embeddings: blend cosine distance with a same-Title (0/1) distance, d =
+   * alpha*cosine + (1-alpha)*structural, cut at k = subjects. Sweep alpha (1.0 = pure cosine baseline). The cosine
+   * matrix is precomputed once per bill so the alpha sweep is cheap.
+   */
+  private def structureSweep(
+    bills: List[BillData],
+    pooled: Seq[Vector[Double]],
+  ): (List[StructPoint], List[StructBill]) = {
+    val gMean = EmbeddingTransform.mean(pooled)
+    val gStd  = EmbeddingTransform.std(pooled, gMean)
+    val prepared = bills.filter(_.isNonTrivial).map { b =>
+      val vecs = b.raw.map(v => EmbeddingTransform.standardize(v, gMean, gStd))
+      val cosD = Array.tabulate(vecs.size, vecs.size)((i, j) =>
+        if (i == j) 0.0 else 1.0 - EmbeddingMetrics.cosine(vecs(i), vecs(j))
+      )
+      val strD = Array.tabulate(vecs.size, vecs.size)((i, j) =>
+        if (i == j) 0.0 else if (b.structuralKeys(i) == b.structuralKeys(j)) 0.0 else 1.0
+      )
+      (b, cosD, strD)
+    }
+    def blend(cosD: Array[Array[Double]], strD: Array[Array[Double]], alpha: Double): Array[Array[Double]] =
+      Array.tabulate(cosD.length, cosD.length)((i, j) => alpha * cosD(i)(j) + (1.0 - alpha) * strD(i)(j))
+    def labelsAt(cosD: Array[Array[Double]], strD: Array[Array[Double]], k: Int, alpha: Double): Vector[Int] =
+      SmileHacClusterer.fitFromProximity(blend(cosD, strD, alpha), "average").cut(k)
+
+    val sweep = AlphaGrid.map { a =>
+      val pairs = prepared.map {
+        case (b, cosD, strD) =>
+          val labels = labelsAt(cosD, strD, b.ref.distinct.size, a)
+          (
+            ClusteringMetrics.adjustedRandIndex(labels, b.ref),
+            ClusteringMetrics.normalizedMutualInformation(labels, b.ref),
+          )
+      }
+      StructPoint(a, pairs.map(_._1).sum / pairs.size, pairs.map(_._2).sum / pairs.size)
+    }
+    val bestAlpha = sweep
+      .foldLeft((1.0, Double.NegativeInfinity)) { case ((ba, bs), p) => if (p.ari > bs) (p.alpha, p.ari) else (ba, bs) }
+      ._1
+    val perBill = prepared.map {
+      case (b, cosD, strD) =>
+        val k         = b.ref.distinct.size
+        val cosLabels = labelsAt(cosD, strD, k, 1.0)
+        val blLabels  = labelsAt(cosD, strD, k, bestAlpha)
+        StructBill(
+          b.versionId,
+          b.sections,
+          k,
+          ClusteringMetrics.adjustedRandIndex(cosLabels, b.ref),
+          ClusteringMetrics.adjustedRandIndex(blLabels, b.ref),
+          ClusteringMetrics.normalizedMutualInformation(blLabels, b.ref),
+        )
+    }
+    (sweep, perBill)
   }
 
   final private case class Analysis(
@@ -205,7 +278,15 @@ class ComparisonReport extends ConformanceContract {
     )
   }
 
-  private def writeReport(analyses: List[Analysis]): Unit = {
+  private def writeReport(analyses: List[Analysis], structure: (List[StructPoint], List[StructBill])): Unit = {
+    val (alphaSweep, structBills) = structure
+    val alphaRows                 = alphaSweep.map(p => f"| ${p.alpha}%.1f | ${p.ari}%.3f | ${p.nmi}%.3f |")
+    val bestAlpha = alphaSweep
+      .foldLeft((1.0, Double.NegativeInfinity)) { case ((ba, bs), p) => if (p.ari > bs) (p.alpha, p.ari) else (ba, bs) }
+      ._1
+    val structRows = structBills.map(b =>
+      f"| ${b.vid} | ${b.sec} | ${b.k} | ${b.ariCosine}%.3f | ${b.ariBlend}%.3f | ${b.nmiBlend}%.3f |"
+    )
     val summary = analyses.map(a =>
       f"| ${a.transform} | ${a.anisotropy}%.3f | ${a.bestDMaxTight}%.1f | ${a.tightAriThreshold}%.3f | ${a.bestDMaxOmni}%.1f | ${a.omniAriThreshold}%.3f | ${a.omniNmiThreshold}%.3f | ${a.omniAriSilhouette}%.3f | ${a.omniNmiSilhouette}%.3f |"
     )
@@ -243,7 +324,25 @@ class ComparisonReport extends ConformanceContract {
           "",
           "| bill | branch | sections | subjects (k) | HAC groups | dMaxAtK | ARI | NMI |",
           "|---|---|---|---|---|---|---|---|",
-        ) ++ billRows
+        ) ++ billRows ++
+        List(
+          "",
+          "## Structure-aware distance (standardize + cut@k): blend cosine with same-Title prior",
+          "",
+          "d = alpha*cosine + (1-alpha)*structural (0 if same parser Title, else 1). alpha=1.0 is the pure-cosine baseline.",
+          "",
+          "| alpha | mean ARI | mean NMI |",
+          "|---|---|---|",
+        ) ++ alphaRows ++
+        List(
+          "",
+          f"**Best alpha = $bestAlpha%.1f** (alpha=1.0 = pure cosine).",
+          "",
+          f"### Per-bill: pure cosine (alpha=1.0) vs structure-blend (alpha=$bestAlpha%.1f)",
+          "",
+          "| bill | sections | subjects (k) | ARI cosine | ARI blend | NMI blend |",
+          "|---|---|---|---|---|---|",
+        ) ++ structRows
     val _ = Files.write(Paths.get("COMPARISON_REPORT.md"), lines.mkString("\n").getBytes(StandardCharsets.UTF_8))
   }
 

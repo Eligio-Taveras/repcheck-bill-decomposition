@@ -80,6 +80,12 @@ object SmileHacClusterer {
     new Fitted(hc, dist, vectors.size)
   }
 
+  /** Fit from a precomputed (e.g. structure-blended) distance matrix. The matrix is the silhouette distance too. */
+  def fitFromProximity(dist: Array[Array[Double]], linkage: String): Fitted = {
+    val hc = HierarchicalClustering.fit(linkageOf(linkage, dist.map(_.clone)))
+    new Fitted(hc, dist, dist.length)
+  }
+
   /**
    * Cut the dendrogram at height `config.dMax`: sections only merge while their linkage distance ≤ `dMax`; anything
    * farther stays its own cluster (the "singletons above D_max" rule).
