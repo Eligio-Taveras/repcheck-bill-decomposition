@@ -1,0 +1,98 @@
+{
+  "billType" : "hres",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Rules Adoption",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Fiscal and Budget Rules",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        2,
+        3
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "COVID-19 Oversight",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        4
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Energy Legislation Procedures",
+      "groupId" : "g3",
+      "sectionIndices" : [
+        5
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 200,
+      "description" : "This is H. Res. 5, adopted by the House of Representatives on January 9, 2023, to establish the rules governing the 118th Congress.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 523,
+      "description" : "Adopts the rules from the 117th Congress as the starting rules for the 118th Congress, subject to amendments and additional orders specified in this resolution.",
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 1,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 13594,
+      "description" : "Amends House standing rules to prohibit legislation that increases mandatory spending in specified windows, removes the automatic debt limit increase mechanism, and restricts amendments to appropriations bills that increase budget authority.",
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 2,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 30062,
+      "description" : "Establishes several procedural orders for the 118th Congress, including reinstating the Holman Rule to allow spending cuts via appropriations amendments, voiding certain prior COVID-related House regulations, requiring sponsors to declare a single subject for each bill they introduce, restricting rules that waive germaneness points of order, and setting interim budget enforcement measures.",
+      "heading" : null,
+      "identifier" : "3",
+      "index" : 3,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 7963,
+      "description" : "Establishes a Select Subcommittee on the Coronavirus Pandemic under the Committee on Oversight and Accountability, defining its membership, investigative authority, and mandate to investigate pandemic origins, federal spending, vaccine policy, and related economic impacts with a final report due by January 2, 2025.",
+      "heading" : null,
+      "identifier" : "4",
+      "index" : 4,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 6560,
+      "description" : "Sets specific floor procedures for considering H.R. 21 related to increasing oil and gas production alongside Strategic Petroleum Reserve drawdowns, and provides for expedited consideration of additional bills specified elsewhere in the section.",
+      "heading" : null,
+      "identifier" : "5",
+      "index" : 5,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "H. Res. 5 establishes the rules governing the 118th Congress by adopting prior rules with amendments. It introduces new fiscal guardrails, procedural orders, a select subcommittee to investigate COVID-19, and special floor procedures for specific energy legislation.",
+  "versionId" : "8966"
+}

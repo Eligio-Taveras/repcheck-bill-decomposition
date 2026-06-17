@@ -1,0 +1,55 @@
+{
+  "billType" : "sjres",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Congressional Consent and Introduction",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Federal Oversight and Reimbursement",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        2
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 1324,
+      "description" : "This is the introductory header of a Senate Joint Resolution introduced in the 104th Congress to grant congressional consent to the Northeast Interstate Dairy Compact among six New England states.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 41500,
+      "description" : "Congress grants conditional consent to the Northeast Interstate Dairy Compact, imposing restrictions on manufacturing milk price regulation, limiting which additional states may join, and establishing rules for over-order pricing, producer payments, overproduction prevention, and pooling mechanisms.",
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 1,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 591,
+      "description" : "Congress reserves the right to alter or repeal the act and requires the Compact Commission to reimburse the Commodity Credit Corporation for any increased dairy purchase costs resulting from fluid milk production growth within the Compact region that exceeds the national average.",
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 2,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "This Senate Joint Resolution grants congressional consent for six New England states to form the Northeast Interstate Dairy Compact, which allows the member states to jointly regulate fluid milk prices above federal order levels. The bill sets specific conditions on how the compact operates, including limits on manufacturing milk price regulation, rules on additional state membership, and overproduction safeguards. Congress also reserves the right to amend or repeal the consent and requires the Compact Commission to repay the federal government for any excess dairy purchase costs caused by above-average milk production growth in the region.",
+  "versionId" : "408763"
+}

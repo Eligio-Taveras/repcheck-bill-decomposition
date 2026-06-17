@@ -1,0 +1,38 @@
+{
+  "billType" : "sjres",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Congressional Session Convening",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 303,
+      "description" : "This is a joint resolution from the 107th Congress establishing the date for convening the first session of the 108th Congress.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 62,
+      "description" : "This section records that the resolution was considered and passed by both the Senate and the House on November 14, 2002.",
+      "heading" : null,
+      "identifier" : "2002",
+      "index" : 1,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "This is a joint resolution from the 107th Congress that sets the date for convening the first session of the 108th Congress. It was passed by both the Senate and the House on November 14, 2002.",
+  "versionId" : "373803"
+}

@@ -1,0 +1,38 @@
+{
+  "billType" : "sconres",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Legislative Enrollment Correction",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 185,
+      "description" : "This is the legislative header identifying the bill as Senate Concurrent Resolution 46 in its House-amended form during the 108th Congress, passed by the House on May 21, 2003.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 424,
+      "description" : "The House amends S. Con. Res. 46 by replacing the reference to the 'Secretary of the Senate' with the 'Clerk of the House of Representatives' as the official responsible for correcting the enrollment of H.R. 1298.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 1,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "This bill is a Senate Concurrent Resolution (S. Con. Res. 46) from the 108th Congress that makes a technical correction to a previously passed piece of legislation, H.R. 1298. Specifically, it changes the designated official responsible for correcting the enrollment of H.R. 1298 from the Secretary of the Senate to the Clerk of the House of Representatives.",
+  "versionId" : "267921"
+}

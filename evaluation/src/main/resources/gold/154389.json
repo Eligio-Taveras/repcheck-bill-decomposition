@@ -1,0 +1,29 @@
+{
+  "billType" : "hr",
+  "format" : "Formatted XML",
+  "groups" : [
+    {
+      "conceptLabel" : "Bill Title",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "Fallback",
+  "sections" : [
+    {
+      "charLength" : 2288,
+      "description" : "Sets the short title of the legislation as the 'Courthouse Affordability and Space Efficiency Act of 2025' or the 'CASE Act'.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    }
+  ],
+  "summary" : "This bill establishes the 'Courthouse Affordability and Space Efficiency Act of 2025' (CASE Act), which appears to address courthouse space and cost management. The legislation is identified solely by its short title in the available sections.",
+  "versionId" : "154389"
+}

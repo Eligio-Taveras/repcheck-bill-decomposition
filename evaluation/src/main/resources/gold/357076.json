@@ -1,0 +1,428 @@
+{
+  "billType" : "hconres",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Resolution Framework",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Overall Budget Levels",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        2,
+        3
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Chairman Adjustment Allowances",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Appropriations Enforcement Rules",
+      "groupId" : "g3",
+      "sectionIndices" : [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Tax and Defense Policy",
+      "groupId" : "g4",
+      "sectionIndices" : [
+        23,
+        24,
+        25
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Sense of House Statements",
+      "groupId" : "g5",
+      "sectionIndices" : [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Reconciliation Instructions",
+      "groupId" : "g6",
+      "sectionIndices" : [
+        39
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 327,
+      "description" : "This is the engrossed concurrent resolution on the budget passed by the House during the 110th Congress, 1st Session.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 3152,
+      "description" : "This section declares that this resolution replaces the FY2007 budget resolution and establishes it as the concurrent resolution on the budget for FY2008, covering fiscal years 2009 through 2012, and provides a table of contents.",
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 1,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2555,
+      "description" : "This section sets the specific recommended dollar amounts for federal revenues, new budget authority, total outlays, deficits, and debt levels for fiscal years 2007 through 2012.",
+      "heading" : null,
+      "identifier" : "101",
+      "index" : 2,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 12370,
+      "description" : "This section breaks down the appropriate levels of new budget authority and outlays for each major spending category (such as defense, international affairs, and energy) for fiscal years 2007 through 2012.",
+      "heading" : null,
+      "identifier" : "102",
+      "index" : 3,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1561,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits to accommodate legislation expanding the State Children's Health Insurance Program (SCHIP), provided the legislation does not increase the deficit over the relevant budget periods.",
+      "heading" : null,
+      "identifier" : "201",
+      "index" : 4,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1098,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits to accommodate legislation that reduces the Alternative Minimum Tax burden on middle-income families, as long as the legislation does not increase the deficit.",
+      "heading" : null,
+      "identifier" : "202",
+      "index" : 5,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1553,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits for legislation providing various middle-income tax relief measures, such as extending the child tax credit and marriage penalty relief, provided the legislation does not increase the deficit.",
+      "heading" : null,
+      "identifier" : "203",
+      "index" : 6,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1201,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits for legislation reauthorizing farm programs under the 2002 Farm Bill by up to $20 billion, provided the legislation does not increase the deficit.",
+      "heading" : null,
+      "identifier" : "204",
+      "index" : 7,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1014,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits for legislation that makes college more affordable through reforms to the Higher Education Act, provided the legislation does not increase the deficit.",
+      "heading" : null,
+      "identifier" : "205",
+      "index" : 8,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1228,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits for legislation that improves Medicare benefits and physician reimbursement rates, provided the legislation does not increase the deficit.",
+      "heading" : null,
+      "identifier" : "206",
+      "index" : 9,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1615,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits for legislation advancing clean energy goals consistent with H.R. 6, the Clean Energy Act of 2007, provided the legislation does not increase the deficit.",
+      "heading" : null,
+      "identifier" : "207",
+      "index" : 10,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1055,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits for legislation creating an affordable housing fund offset by reforms to government-sponsored enterprise regulation, provided the legislation does not increase the deficit.",
+      "heading" : null,
+      "identifier" : "208",
+      "index" : 11,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1081,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits for legislation that provides or increases benefits for Filipino veterans of World War II and their survivors, provided the legislation does not increase the deficit.",
+      "heading" : null,
+      "identifier" : "209",
+      "index" : 12,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1109,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits for legislation reauthorizing the Secure Rural Schools and Community Self-Determination Act, provided the legislation does not increase the deficit.",
+      "heading" : null,
+      "identifier" : "210",
+      "index" : 13,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1093,
+      "description" : "This section allows the House Budget Committee chairman to adjust spending limits for legislation prohibiting the Bonneville Power Administration from making early payments on its federal bond debt, provided the legislation does not increase the deficit.",
+      "heading" : null,
+      "identifier" : "211",
+      "index" : 14,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1101,
+      "description" : "Allows the House Budget Committee chairman to adjust spending allocations to accommodate legislation extending the Transitional Medical Assistance program through fiscal year 2008, provided the legislation does not increase the deficit over specified multi-year periods.",
+      "heading" : null,
+      "identifier" : "212",
+      "index" : 15,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 4043,
+      "description" : "Permits the House Appropriations Committee's spending allocation to be increased when appropriations bills designate additional funds for specific program integrity efforts—including Social Security disability reviews, IRS tax compliance, healthcare fraud prevention, and unemployment insurance improper payment reviews—that are expected to generate offsetting savings.",
+      "heading" : null,
+      "identifier" : "301",
+      "index" : 16,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1023,
+      "description" : "Generally prohibits advance appropriations in House spending bills, but allows up to $25.558 billion in advance budget authority for fiscal years 2009 and 2010 for a specific list of programs identified in the resolution's joint explanatory statement.",
+      "heading" : null,
+      "identifier" : "302",
+      "index" : 17,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1012,
+      "description" : "Exempts from standard congressional budget enforcement rules any House spending for overseas military deployments and related activities for fiscal years 2008–2009, as well as any nondefense discretionary spending designated as meeting emergency needs.",
+      "heading" : null,
+      "identifier" : "303",
+      "index" : 18,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 942,
+      "description" : "Specifies that budget allocation adjustments made under this resolution apply during consideration of relevant legislation, take effect upon enactment, must be published in the Congressional Record, and are determined by the Budget Committee.",
+      "heading" : null,
+      "identifier" : "304",
+      "index" : 19,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 422,
+      "description" : "Directs the Budget Committee chairman to update the resolution's spending levels and allocations whenever a law changes the budgetary concepts or definitions used to measure spending, in accordance with the Balanced Budget and Emergency Deficit Control Act.",
+      "heading" : null,
+      "identifier" : "305",
+      "index" : 20,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 883,
+      "description" : "Requires that budget conference reports include Social Security Administration discretionary administrative expenses within the Appropriations Committee's spending allocation, and that such amounts be counted when enforcing spending limits in the House.",
+      "heading" : null,
+      "identifier" : "306",
+      "index" : 21,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 530,
+      "description" : "Establishes that the budget enforcement provisions in this title are adopted as formal rules of the House, superseding inconsistent rules, while preserving the House's constitutional right to change its rules at any time.",
+      "heading" : null,
+      "identifier" : "307",
+      "index" : 22,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1455,
+      "description" : "States the resolution's policy of providing middle-income tax relief—including AMT reform, child tax credits, marriage penalty relief, estate tax changes, and other measures—on a revenue-neutral basis offset by fairer and more efficient tax reforms.",
+      "heading" : null,
+      "identifier" : "401",
+      "index" : 23,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2433,
+      "description" : "Expresses the resolution's defense policy priorities, including funding nuclear nonproliferation, maintaining TRICARE fees, increasing military pay and benefits, moderating missile defense and satellite spending, improving Pentagon financial management, and directing resulting savings toward higher-priority defense needs and military healthcare improvements.",
+      "heading" : null,
+      "identifier" : "402",
+      "index" : 24,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 374,
+      "description" : "States that the reconciliation instructions to the Education and Labor Committee must not be interpreted to reduce college affordability assistance, including aid programs run by nonprofit state agencies.",
+      "heading" : null,
+      "identifier" : "403",
+      "index" : 25,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1704,
+      "description" : "Expresses the sense of the House that the resolution provides significantly increased veterans' health care and benefits funding above both the President's request and baseline levels, rejects proposed fee increases, and adds resources for mental health, brain injury treatment, and disability claims processing.",
+      "heading" : null,
+      "identifier" : "501",
+      "index" : 26,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1610,
+      "description" : "Expresses the sense of the House that the resolution invests $450 million above the President's request in science, technology, and energy functions to keep America competitive by funding scientific research, education of new scientists and engineers, and development of clean energy technologies.",
+      "heading" : null,
+      "identifier" : "502",
+      "index" : 27,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1015,
+      "description" : "Expresses the sense of the House that the resolution provides homeland security funding above the President's requested levels across multiple budget functions to strengthen transportation security, port scanning, border patrol, first responder equipment, and public health preparedness.",
+      "heading" : null,
+      "identifier" : "503",
+      "index" : 28,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 866,
+      "description" : "Expresses the sense of the House that Gulf Coast recovery needs must be addressed without delay, additional oversight of recovery contracting is needed, and the resolution provides new funding mechanisms and FEMA appropriations to support ongoing Hurricane Katrina and Rita relief efforts.",
+      "heading" : null,
+      "identifier" : "504",
+      "index" : 29,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1645,
+      "description" : "Expresses the House's view that growing entitlement costs should be addressed by reducing the deficit, paying down debt, and controlling broader health care cost growth while protecting beneficiaries.",
+      "heading" : null,
+      "identifier" : "505",
+      "index" : 30,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1111,
+      "description" : "Expresses the House's view that existing USDA hunger-fighting programs, especially food stamps, should be maintained and expanded to better reach food-insecure Americans.",
+      "heading" : null,
+      "identifier" : "506",
+      "index" : 31,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1394,
+      "description" : "Expresses the House's view that pay-as-you-go legislation should be passed to make health insurance more affordable and accessible, with special attention to small businesses and health information technology.",
+      "heading" : null,
+      "identifier" : "507",
+      "index" : 32,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 240,
+      "description" : "Expresses the House's view that Congress should restore the statutory pay-as-you-go budget rule in its original form from the Budget Enforcement Act of 1990 in order to reduce the deficit.",
+      "heading" : null,
+      "identifier" : "508",
+      "index" : 33,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 406,
+      "description" : "Expresses Congress's view that the federal budget process should take into account the government's Financial Report, including its net operating cost, financial position, and long-term liabilities.",
+      "heading" : null,
+      "identifier" : "509",
+      "index" : 34,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 284,
+      "description" : "Expresses the House's view that civilian federal employees should receive pay raises at the same time and in the same amount as members of the uniformed military services.",
+      "heading" : null,
+      "identifier" : "510",
+      "index" : 35,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1209,
+      "description" : "Expresses the House's view that all committees should review programs under their jurisdiction to identify and eliminate wasteful and fraudulent spending, highlighting specific funding adjustments and oversight requirements included elsewhere in the resolution.",
+      "heading" : null,
+      "identifier" : "511",
+      "index" : 36,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 545,
+      "description" : "Expresses the House's view that additional legislation is needed to ensure states have sufficient resources to collect owed child support and pass 100 percent of collected payments directly to families.",
+      "heading" : null,
+      "identifier" : "512",
+      "index" : 37,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 308,
+      "description" : "Expresses the House's view that the federal government should cover burial plot allowances for eligible spouses and children of veterans interred in state veterans cemeteries, consistent with pay-as-you-go budget rules.",
+      "heading" : null,
+      "identifier" : "513",
+      "index" : 38,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1342,
+      "description" : "Instructs the House Committee on Education and Labor to identify and report legislative changes that reduce the deficit by $75 million over fiscal years 2007 through 2012, with recommendations due by September 10, 2007.",
+      "heading" : null,
+      "identifier" : "601",
+      "index" : 39,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "This is the House-passed concurrent budget resolution for FY2008 (covering FY2009–2012), replacing the FY2007 resolution. It sets overall federal revenue, spending, and deficit targets by budget category, establishes a series of adjustment mechanisms allowing the Budget Committee chairman to accommodate specific legislative priorities without increasing the deficit, and lays out enforcement rules and policy statements on issues ranging from tax relief and veterans' care to homeland security and entitlement reform.",
+  "versionId" : "357076"
+}

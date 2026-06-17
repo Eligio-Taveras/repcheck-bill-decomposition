@@ -1,0 +1,38 @@
+{
+  "billType" : "sres",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Senate Meeting Time",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 541,
+      "description" : "This is a Senate resolution introduced by Mr. McConnell on January 6, 2015, during the 114th Congress, establishing the daily meeting time of the Senate.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 101,
+      "description" : "This section sets the Senate's default daily meeting time to noon (12:00 PM) unless the Senate decides otherwise.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 1,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "This is a simple Senate organizational resolution from the 114th Congress establishing the default daily meeting time for the Senate. It sets noon (12:00 PM) as the standard time for the Senate to convene each day, unless the Senate votes to meet at a different time.",
+  "versionId" : "129397"
+}
