@@ -33,25 +33,89 @@ class ComparisonReport extends ConformanceContract {
   private val EmbedMaxChars = 4000
   private val TrivialMaxSec = 3
   private val OmnibusMinSec = 50
-  private val DMaxGrid      = (1 to 30).map(_ * 0.1).toList // 0.1 .. 3.0 (omnibus bills want a high cut)
+  private val DMaxGrid      = (1 to 30).map(_ * 0.1).toList  // 0.1 .. 3.0 (omnibus bills want a high cut)
   private val MaxKGrid      = List(10, 20, 30, 40, 60, 80, 120)
   private val ProfileMaxK   = MaxKGrid.foldLeft(0)((a, b) => math.max(a, b))
   private val Transforms    = List("none", "center", "standardize")
   private val CacheDir      = Paths.get("target", "embed-cache")
   private val AnisoSample   = 250
-  private val AlphaGrid     = (0 to 10).map(_ * 0.1).toList // structure blend: 0.0 (pure Title) .. 1.0 (pure cosine)
+  private val AlphaGrid     = (0 to 10).map(_ * 0.1).toList  // structure blend: 0.0 (pure Title) .. 1.0 (pure cosine)
+  private val GammaGrid     = List(0.0, 0.3, 0.6)            // lexical (citation/Act) discount weight
+  private val AlphaProbe    = List(0.05, 0.1, 0.2, 0.3, 0.5) // alpha re-sweep for the winning lever variant
+
+  // High-precision legislative cross-references — the "same statute" signal embeddings miss (lever 2).
+  private val UscRe   = """(\d{1,2})\s+U\.?\s?S\.?\s?C\.?\s?(?:§+\s?)?(\d+[A-Za-z0-9]*)""".r
+  private val PubLRe  = """[Pp]ub(?:lic)?\.?\s?L(?:aw)?\.?\s?(\d{1,3}[-–]\d{1,4})""".r
+  private val ActYrRe = """([A-Z][A-Za-z']+(?:\s+[A-Z][A-Za-z']+){0,5})\s+Act\s+of\s+(\d{4})""".r
 
   final private case class BillData(
     versionId: String,
     sections: Int,
     raw: IndexedSeq[Vector[Double]],
     ref: Vector[Int],
-    structuralKeys: IndexedSeq[String], // top-level parent Title per section (parser hierarchy); unique if none
+    paths: IndexedSeq[List[String]], // FULL parser breadcrumb per section, outermost-first (lever 1)
+    refs: IndexedSeq[Set[String]],   // cross-reference tokens per section (lever 2)
   ) {
     def isOmnibus: Boolean      = sections > OmnibusMinSec
     def isTunableTight: Boolean = !isOmnibus && sections > TrivialMaxSec
     def isNonTrivial: Boolean   = isOmnibus || isTunableTight
   }
+
+  /**
+   * Lever 1 — graded hierarchy distance. The blend used only `parents.head` (top Title) binary; this uses the FULL
+   * breadcrumb and grades by shared-prefix depth, so two sections in the same Title but different Subtitles repel each
+   * other (the resolution omnibus bills need). `graded=false` reproduces the old top-Title binary behaviour exactly.
+   */
+  private def structuralDistance(a: List[String], b: List[String], graded: Boolean): Double =
+    if (graded) {
+      val shared = a.zip(b).takeWhile { case (x, y) => x == y }.size
+      val depth  = math.max(a.size, b.size)
+      if (depth == 0) 1.0 else 1.0 - shared.toDouble / depth
+    } else
+      (a.headOption, b.headOption) match {
+        case (Some(x), Some(y)) if x == y => 0.0
+        case _                            => 1.0
+      }
+
+  /** Lever 2 — extract high-precision cross-references (U.S.C. cites, public laws, named Acts) as a token set. */
+  private def extractRefs(content: String): Set[String] = {
+    val usc  = UscRe.findAllMatchIn(content).map(m => s"usc:${m.group(1)}:${m.group(2)}").toSet
+    val publ = PubLRe.findAllMatchIn(content).map(m => s"pl:${m.group(1).replace('–', '-')}").toSet
+    val acts = ActYrRe.findAllMatchIn(content).map(m => s"act:${m.group(1).toLowerCase}:${m.group(2)}").toSet
+    usc ++ publ ++ acts
+  }
+
+  /**
+   * Jaccard overlap of two reference sets; 0 (neutral) when either side has no references — absence is not evidence.
+   */
+  private def lexicalSim(a: Set[String], b: Set[String]): Double =
+    if (a.isEmpty || b.isEmpty) 0.0
+    else {
+      val union = a.union(b).size.toDouble
+      if (union == 0.0) 0.0 else a.intersect(b).size.toDouble / union
+    }
+
+  /**
+   * Production blend: `d = (alpha*cosine + (1-alpha)*structural) * (1 - gamma*lexicalSim)`. The lexical term is a
+   * multiplicative DISCOUNT — shared cross-references only ever pull sections closer, never push them apart, so
+   * citation-free pairs are unaffected.
+   */
+  private def blendMatrix(
+    b: BillData,
+    vecs: IndexedSeq[Vector[Double]],
+    alpha: Double,
+    graded: Boolean,
+    gamma: Double,
+  ): Array[Array[Double]] =
+    Array.tabulate(vecs.size, vecs.size)((i, j) =>
+      if (i == j) 0.0
+      else {
+        val cos  = 1.0 - EmbeddingMetrics.cosine(vecs(i), vecs(j))
+        val str  = structuralDistance(b.paths(i), b.paths(j), graded)
+        val base = alpha * cos + (1.0 - alpha) * str
+        base * (1.0 - gamma * lexicalSim(b.refs(i), b.refs(j)))
+      }
+    )
 
   private def embedAll(texts: List[String]): List[Array[Float]] =
     EmbeddingHarness
@@ -98,9 +162,10 @@ class ComparisonReport extends ConformanceContract {
       val n      = parsed.sections.size
       val raw    = embedCached(gold.versionId, parsed.sections.map(_.content))
       val ref    = GroupingComparison.labelsFromGroups(gold.groups.map(_.sectionIndices), n)
-      val keys   = parsed.sections.map(s => s.parents.headOption.getOrElse(s"_uniq_${s.sectionIndex}")).toIndexedSeq
+      val paths  = parsed.sections.map(_.parents).toIndexedSeq
+      val refs   = parsed.sections.map(s => extractRefs(s.content)).toIndexedSeq
       info(s"${gold.versionId}: $n sections")
-      BillData(gold.versionId, n, raw, ref, keys)
+      BillData(gold.versionId, n, raw, ref, paths, refs)
     }
     val pooled = bills.flatMap(_.raw)
 
@@ -108,14 +173,14 @@ class ComparisonReport extends ConformanceContract {
     val structure  = structureSweep(bills, pooled)
     val robustness = robustnessSweep(bills, pooled)
     val cFits      = cosineFits(bills, pooled)
-    val bFits      = blendFits(bills, pooled, 0.1)
+    val levers     = leverSweep(bills, pooled)
+    val kLabel = f"blend graded=${levers.best.graded}, gamma=${levers.best.gamma}%.1f, alpha=${levers.best.alpha}%.2f"
     val formulas = List(
       dMaxFormula("standardize + cosine", cFits, 0.0),
       dMaxFormula("standardize + cosine, small-n floor", cFits, 0.8),
-      dMaxFormula("standardize + structure-blend (alpha=0.1)", bFits, 0.0),
-      kFormula("standardize + structure-blend (alpha=0.1)", bFits),
+      kFormula(kLabel, levers.bestFits),
     )
-    writeReport(analyses, structure, robustness, formulas)
+    writeReport(analyses, structure, robustness, formulas, levers)
     info("done")
     succeed
   }
@@ -148,7 +213,7 @@ class ComparisonReport extends ConformanceContract {
         if (i == j) 0.0 else 1.0 - EmbeddingMetrics.cosine(vecs(i), vecs(j))
       )
       val strD = Array.tabulate(vecs.size, vecs.size)((i, j) =>
-        if (i == j) 0.0 else if (b.structuralKeys(i) == b.structuralKeys(j)) 0.0 else 1.0
+        if (i == j) 0.0 else structuralDistance(b.paths(i), b.paths(j), graded = false)
       )
       (b, cosD, strD)
     }
@@ -186,6 +251,83 @@ class ComparisonReport extends ConformanceContract {
         )
     }
     (sweep, perBill)
+  }
+
+  final private case class LeverVariant(graded: Boolean, gamma: Double, alpha: Double, ari: Double, nmi: Double)
+
+  final private case class LeverBill(
+    vid: String,
+    sec: Int,
+    k: Int,
+    ariBaseline: Double,
+    ariLevers: Double,
+    nmiLevers: Double,
+  )
+
+  final private case class LeverResult(
+    variants: List[LeverVariant],
+    best: LeverVariant,
+    perBill: List[LeverBill],
+    bestFits: List[(BillData, SmileHacClusterer.Fitted)],
+  )
+
+  /**
+   * Levers 1 & 2: at the production cut (k = subjects), compare the binary top-Title blend (baseline) against the
+   * graded hierarchy and the lexical discount, across graded in {false, true} x gamma in GammaGrid (fixed alpha=0.1).
+   * Re-sweep alpha for the winning variant, then return per-bill baseline-vs-levers and the fitted dendrograms for the
+   * winner so the k-formula is built on the improved distance.
+   */
+  private def leverSweep(bills: List[BillData], pooled: Seq[Vector[Double]]): LeverResult = {
+    val gMean      = EmbeddingTransform.mean(pooled)
+    val gStd       = EmbeddingTransform.std(pooled, gMean)
+    val FixedAlpha = 0.1
+    val prepared =
+      bills.filter(_.isNonTrivial).map(b => (b, b.raw.map(v => EmbeddingTransform.standardize(v, gMean, gStd))))
+    def meanAt(graded: Boolean, gamma: Double, alpha: Double): (Double, Double) = {
+      val pairs = prepared.map {
+        case (b, vecs) =>
+          val labels = SmileHacClusterer
+            .fitFromProximity(blendMatrix(b, vecs, alpha, graded, gamma), "average")
+            .cut(b.ref.distinct.size)
+          (
+            ClusteringMetrics.adjustedRandIndex(labels, b.ref),
+            ClusteringMetrics.normalizedMutualInformation(labels, b.ref),
+          )
+      }
+      (pairs.map(_._1).sum / pairs.size, pairs.map(_._2).sum / pairs.size)
+    }
+    val variants = for { graded <- List(false, true); gamma <- GammaGrid } yield {
+      val (ari, nmi) = meanAt(graded, gamma, FixedAlpha)
+      LeverVariant(graded, gamma, FixedAlpha, ari, nmi)
+    }
+    val bestFixed = variants.foldLeft(LeverVariant(false, 0.0, FixedAlpha, Double.NegativeInfinity, 0.0)) { (acc, v) =>
+      if (v.ari > acc.ari) v else acc
+    }
+    val best = AlphaProbe.foldLeft(bestFixed) { (acc, a) =>
+      val (ari, nmi) = meanAt(bestFixed.graded, bestFixed.gamma, a)
+      if (ari > acc.ari) LeverVariant(bestFixed.graded, bestFixed.gamma, a, ari, nmi) else acc
+    }
+    val bestFits = prepared.map {
+      case (b, vecs) =>
+        (b, SmileHacClusterer.fitFromProximity(blendMatrix(b, vecs, best.alpha, best.graded, best.gamma), "average"))
+    }
+    val perBill = prepared.lazyZip(bestFits).map {
+      case ((b, vecs), (_, f)) =>
+        val k = b.ref.distinct.size
+        val baseline = SmileHacClusterer
+          .fitFromProximity(blendMatrix(b, vecs, FixedAlpha, graded = false, gamma = 0.0), "average")
+          .cut(k)
+        val levers = f.cut(k)
+        LeverBill(
+          b.versionId,
+          b.sections,
+          k,
+          ClusteringMetrics.adjustedRandIndex(baseline, b.ref),
+          ClusteringMetrics.adjustedRandIndex(levers, b.ref),
+          ClusteringMetrics.normalizedMutualInformation(levers, b.ref),
+        )
+    }
+    LeverResult(variants, best, perBill, bestFits)
   }
 
   /**
@@ -263,28 +405,6 @@ class ComparisonReport extends ConformanceContract {
     val gStd  = EmbeddingTransform.std(pooled, gMean)
     bills.filter(_.isNonTrivial).map { b =>
       (b, SmileHacClusterer.fit(b.raw.map(v => EmbeddingTransform.standardize(v, gMean, gStd)), ClusteringConfig()))
-    }
-  }
-
-  /** Standardized embeddings blended with the parser-Title structure (alpha) — the production distance. */
-  private def blendFits(
-    bills: List[BillData],
-    pooled: Seq[Vector[Double]],
-    alpha: Double,
-  ): List[(BillData, SmileHacClusterer.Fitted)] = {
-    val gMean = EmbeddingTransform.mean(pooled)
-    val gStd  = EmbeddingTransform.std(pooled, gMean)
-    bills.filter(_.isNonTrivial).map { b =>
-      val vecs = b.raw.map(v => EmbeddingTransform.standardize(v, gMean, gStd))
-      val blended = Array.tabulate(vecs.size, vecs.size)((i, j) =>
-        if (i == j) 0.0
-        else {
-          val cos = 1.0 - EmbeddingMetrics.cosine(vecs(i), vecs(j))
-          val str = if (b.structuralKeys(i) == b.structuralKeys(j)) 0.0 else 1.0
-          alpha * cos + (1.0 - alpha) * str
-        }
-      )
-      (b, SmileHacClusterer.fitFromProximity(blended, "average"))
     }
   }
 
@@ -366,15 +486,7 @@ class ComparisonReport extends ConformanceContract {
     val Factors = List(0.5, 0.75, 1.0, 1.5, 2.0)
     val fits = bills.filter(_.isNonTrivial).map { b =>
       val vecs = b.raw.map(v => EmbeddingTransform.standardize(v, gMean, gStd))
-      val blended = Array.tabulate(vecs.size, vecs.size)((i, j) =>
-        if (i == j) 0.0
-        else {
-          val cos = 1.0 - EmbeddingMetrics.cosine(vecs(i), vecs(j))
-          val str = if (b.structuralKeys(i) == b.structuralKeys(j)) 0.0 else 1.0
-          Alpha * cos + (1.0 - Alpha) * str
-        }
-      )
-      (b, SmileHacClusterer.fitFromProximity(blended, "average"))
+      (b, SmileHacClusterer.fitFromProximity(blendMatrix(b, vecs, Alpha, graded = false, gamma = 0.0), "average"))
     }
     Factors.map { factor =>
       val pairs = fits.map {
@@ -493,7 +605,16 @@ class ComparisonReport extends ConformanceContract {
     structure: (List[StructPoint], List[StructBill]),
     robustness: List[RobustPoint],
     formulas: List[FormulaResult],
+    levers: LeverResult,
   ): Unit = {
+    val leverVariantRows = levers.variants.map(v =>
+      f"| ${if (v.graded) "graded" else "binary top-Title"} | ${v.gamma}%.1f | ${v.ari}%.3f | ${v.nmi}%.3f |"
+    )
+    val leverBillRows = levers.perBill.map(b =>
+      f"| ${b.vid} | ${b.sec} | ${b.k} | ${b.ariBaseline}%.3f | ${b.ariLevers}%.3f | ${b.nmiLevers}%.3f |"
+    )
+    val leverBaselineMean = levers.perBill.map(_.ariBaseline).sum / levers.perBill.size
+    val leverBestMean     = levers.perBill.map(_.ariLevers).sum / levers.perBill.size
     val formulaLines = formulas.flatMap { fr =>
       val rows = fr.perBill.map(fb =>
         f"| ${fb.vid} | ${fb.n} | ${fb.s} | ${fb.bestCut}%.2f | ${fb.predCut}%.2f | ${fb.ariBest}%.3f | ${fb.ariPred}%.3f |"
@@ -588,10 +709,35 @@ class ComparisonReport extends ConformanceContract {
         ) ++ robustRows ++
         List(
           "",
+          "## Levers 1 & 2: graded hierarchy + lexical cross-reference (no LLM)",
+          "",
+          "Baseline = binary top-Title blend (alpha=0.1, cut@k=subjects). **Lever 1 (graded)** uses the FULL parser",
+          "breadcrumb graded by shared-prefix depth instead of only `parents.head`. **Lever 2 (gamma)** multiplies the",
+          "distance by `(1 - gamma*lexicalSim)` so shared U.S.C./public-law/Act citations pull sections together.",
+          "",
+          "| structure | gamma (lexical) | mean ARI | mean NMI |",
+          "|---|---|---|---|",
+        ) ++ leverVariantRows ++
+        List(
+          "",
+          f"**Winner: ${
+              if (levers.best.graded) "graded" else "binary"
+            } hierarchy, gamma=${levers.best.gamma}%.1f, alpha=${levers.best.alpha}%.2f** — mean ARI ${levers.best.ari}%.3f, NMI ${levers.best.nmi}%.3f.",
+          "",
+          "### Per-bill: baseline (binary, gamma=0) vs levers (winner)",
+          "",
+          "| bill | sections | subjects (k) | ARI baseline | ARI levers | NMI levers |",
+          "|---|---|---|---|---|---|",
+        ) ++ leverBillRows ++
+        List(
+          "",
+          f"Mean ARI: baseline $leverBaselineMean%.3f vs levers $leverBestMean%.3f.",
+          "",
           "## Formulaic cutoff: compute the cut from (section count n, subject count S)",
           "",
           "The cutoff is calculated per bill from n and S — not a fixed split. On cosine the lever is the cut height dMax;",
           "on the production blend dMax is a degenerate Title-gap selector, so the lever is the cut count k = f(S).",
+          "The k-formula below is fit on the LEVER-WINNING blend.",
         ) ++ formulaLines
     val _ = Files.write(Paths.get("COMPARISON_REPORT.md"), lines.mkString("\n").getBytes(StandardCharsets.UTF_8))
   }

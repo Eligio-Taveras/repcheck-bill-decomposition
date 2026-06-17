@@ -84,10 +84,42 @@ k = perturbed count; guided = silhouette picks k in a +/-30% window around it. s
 | 1.50 | 0.404 | 0.440 |
 | 2.00 | 0.219 | 0.386 |
 
+## Levers 1 & 2: graded hierarchy + lexical cross-reference (no LLM)
+
+Baseline = binary top-Title blend (alpha=0.1, cut@k=subjects). **Lever 1 (graded)** uses the FULL parser
+breadcrumb graded by shared-prefix depth instead of only `parents.head`. **Lever 2 (gamma)** multiplies the
+distance by `(1 - gamma*lexicalSim)` so shared U.S.C./public-law/Act citations pull sections together.
+
+| structure | gamma (lexical) | mean ARI | mean NMI |
+|---|---|---|---|
+| binary top-Title | 0.0 | 0.392 | 0.758 |
+| binary top-Title | 0.3 | 0.282 | 0.712 |
+| binary top-Title | 0.6 | 0.279 | 0.708 |
+| graded | 0.0 | 0.549 | 0.843 |
+| graded | 0.3 | 0.484 | 0.811 |
+| graded | 0.6 | 0.478 | 0.806 |
+
+**Winner: graded hierarchy, gamma=0.0, alpha=0.10** — mean ARI 0.549, NMI 0.843.
+
+### Per-bill: baseline (binary, gamma=0) vs levers (winner)
+
+| bill | sections | subjects (k) | ARI baseline | ARI levers | NMI levers |
+|---|---|---|---|---|---|
+| 415327 | 18 | 10 | 0.458 | 0.458 | 0.866 |
+| 150314 | 26 | 11 | 0.343 | 0.343 | 0.763 |
+| 189669 | 14 | 6 | 0.494 | 0.494 | 0.767 |
+| 148391 | 309 | 54 | 0.285 | 0.667 | 0.892 |
+| 375702 | 418 | 67 | 0.413 | 0.599 | 0.879 |
+| 244276 | 226 | 54 | 0.406 | 0.511 | 0.835 |
+| 150025 | 432 | 28 | 0.347 | 0.774 | 0.901 |
+
+Mean ARI: baseline 0.392 vs levers 0.549.
+
 ## Formulaic cutoff: compute the cut from (section count n, subject count S)
 
 The cutoff is calculated per bill from n and S — not a fixed split. On cosine the lever is the cut height dMax;
 on the production blend dMax is a degenerate Title-gap selector, so the lever is the cut count k = f(S).
+The k-formula below is fit on the LEVER-WINNING blend.
 
 ### standardize + cosine — cut by dMax
 
@@ -121,34 +153,18 @@ Fit: **dMax = -0.181 + 0.410 * ln(n - S), floor 0.80 (R^2 = 0.969)**.
 
 Mean ARI: oracle (per-bill best dMax) 0.350 vs formula 0.329.
 
-### standardize + structure-blend (alpha=0.1) — cut by dMax
+### blend graded=true, gamma=0.0, alpha=0.10 — cut by k
 
-Fit: **dMax = 1.525 + -0.217 * ln(n - S) (R^2 = 0.320)**.
-
-| bill | n | S | best dMax | formula dMax | ARI best | ARI formula |
-|---|---|---|---|---|---|---|
-| 415327 | 18 | 10 | 1.30 | 1.07 | 0.144 | 0.000 |
-| 150314 | 26 | 11 | 1.90 | 0.94 | 0.458 | 0.415 |
-| 189669 | 14 | 6 | 0.10 | 1.07 | 0.000 | 0.000 |
-| 148391 | 309 | 54 | 0.20 | 0.32 | 0.365 | 0.149 |
-| 375702 | 418 | 67 | 0.30 | 0.25 | 0.378 | 0.422 |
-| 244276 | 226 | 54 | 0.20 | 0.41 | 0.402 | 0.347 |
-| 150025 | 432 | 28 | 0.30 | 0.22 | 0.350 | 0.290 |
-
-Mean ARI: oracle (per-bill best dMax) 0.300 vs formula 0.232.
-
-### standardize + structure-blend (alpha=0.1) — cut by k
-
-Fit: **k = 1.089 * S (through origin; S<=1 => k=1) (R^2 = 0.947)**.
+Fit: **k = 0.912 * S (through origin; S<=1 => k=1) (R^2 = 0.944)**.
 
 | bill | n | S | best k | formula k | ARI best | ARI formula |
 |---|---|---|---|---|---|---|
-| 415327 | 18 | 10 | 11.00 | 11.00 | 0.765 | 0.765 |
-| 150314 | 26 | 11 | 4.00 | 12.00 | 0.458 | 0.316 |
-| 189669 | 14 | 6 | 9.00 | 7.00 | 0.591 | 0.491 |
-| 148391 | 309 | 54 | 75.00 | 59.00 | 0.385 | 0.342 |
-| 375702 | 418 | 67 | 56.00 | 73.00 | 0.432 | 0.382 |
-| 244276 | 226 | 54 | 59.00 | 59.00 | 0.426 | 0.426 |
-| 150025 | 432 | 28 | 42.00 | 30.00 | 0.401 | 0.332 |
+| 415327 | 18 | 10 | 11.00 | 9.00 | 0.765 | 0.442 |
+| 150314 | 26 | 11 | 4.00 | 10.00 | 0.458 | 0.370 |
+| 189669 | 14 | 6 | 9.00 | 5.00 | 0.591 | 0.316 |
+| 148391 | 309 | 54 | 67.00 | 49.00 | 0.677 | 0.656 |
+| 375702 | 418 | 67 | 50.00 | 61.00 | 0.636 | 0.596 |
+| 244276 | 226 | 54 | 43.00 | 49.00 | 0.639 | 0.539 |
+| 150025 | 432 | 28 | 31.00 | 26.00 | 0.777 | 0.758 |
 
-Mean ARI: oracle (per-bill best k) 0.494 vs formula 0.436.
+Mean ARI: oracle (per-bill best k) 0.649 vs formula 0.525.
