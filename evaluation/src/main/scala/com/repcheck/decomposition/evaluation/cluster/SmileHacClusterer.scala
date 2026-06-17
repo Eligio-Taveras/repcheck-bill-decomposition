@@ -40,47 +40,69 @@ object SmileHacClusterer {
   }
 
   /**
-   * Cut the dendrogram at height `config.dMax`: sections only merge while their linkage cosine distance ≤ `dMax`;
-   * anything farther stays its own cluster (the "singletons above D_max" rule). Derived from the merge heights (each
-   * merge with height ≤ dMax reduces the cluster count by one) rather than Smile's `partition(double)`, whose cut
-   * semantics differ.
+   * A fitted dendrogram — the expensive part (proximity matrix + linkage + Smile fit) done ONCE per bill. Cuts are
+   * cheap, so a dMax sweep re-cuts the same tree instead of refitting. Built via [[fit]].
+   */
+  final class Fitted private[SmileHacClusterer] (
+    hc: HierarchicalClustering,
+    dist: Array[Array[Double]],
+    val n: Int,
+  ) {
+    private val heights: Array[Double] = hc.height()
+
+    /** Cluster count implied by cutting at height `dMax` (the dMax-ceiling count). */
+    def kThreshold(dMax: Double): Int = n - heights.count(_ <= dMax)
+
+    /** Partition into k clusters. k ≤ 1 → one cluster; k ≥ n → all singletons (both reject Smile's partition(int)). */
+    def cut(k: Int): Vector[Int] =
+      if (k <= 1) Vector.fill(n)(0)
+      else if (k >= n) (0 until n).toVector
+      else renumber(hc.partition(k).toIndexedSeq)
+
+    /** Mean silhouette of the k-cluster partition (dMax-independent, so a sweep computes each k at most once). */
+    def silhouetteAt(k: Int): Double = silhouette(dist, hc.partition(k).toIndexedSeq)
+  }
+
+  /** Build the dendrogram once: one proximity matrix (cloned for the linkage, which mutates in place) + Smile fit. */
+  def fit(vectors: IndexedSeq[Vector[Double]], config: ClusteringConfig): Fitted = {
+    val dist = proximity(vectors, config.distance)
+    val hc   = HierarchicalClustering.fit(linkageOf(config.linkage, dist.map(_.clone)))
+    new Fitted(hc, dist, vectors.size)
+  }
+
+  /**
+   * Cut the dendrogram at height `config.dMax`: sections only merge while their linkage distance ≤ `dMax`; anything
+   * farther stays its own cluster (the "singletons above D_max" rule).
    */
   def clusterAtThreshold(vectors: IndexedSeq[Vector[Double]], config: ClusteringConfig): Vector[Int] =
     if (vectors.sizeIs < 2) vectors.indices.toVector
     else {
-      val hc     = HierarchicalClustering.fit(linkageOf(config.linkage, proximity(vectors, config.distance)))
-      val merged = hc.height().count(_ <= config.dMax)
-      val k      = vectors.size - merged
-      // Smile's partition(int) rejects k < 2 and k = n; k <= 1 → one cluster, k >= n → all singletons.
-      if (k <= 1) Vector.fill(vectors.size)(0)
-      else if (k >= vectors.size) vectors.indices.toVector
-      else renumber(hc.partition(k).toIndexedSeq)
+      val f = fit(vectors, config)
+      f.cut(f.kThreshold(config.dMax))
     }
 
   /**
-   * Cut at the k that maximizes the mean silhouette, but never merge across `config.dMax`: k is floored at `kThresh`
-   * (the cluster count the dMax cut implies, from the same dendrogram heights), so sections farther than dMax stay
-   * split -- the production "singletons above D_max" rule applied to the omnibus branch too. If dMax forces more
-   * clusters than maxK allows, the dMax cut wins.
+   * Cut at the k that maximizes the mean silhouette, but never merge across `config.dMax`: k is floored at
+   * `kThreshold(dMax)`, so sections farther than dMax stay split -- the production "singletons above D_max" rule on the
+   * omnibus branch too. If dMax forces more clusters than maxK allows, the dMax cut wins.
    */
   def clusterBySilhouette(vectors: IndexedSeq[Vector[Double]], config: ClusteringConfig): Vector[Int] = {
     val n = vectors.size
     if (n < 3) clusterAtThreshold(vectors, config.copy(dMax = Double.MaxValue))
     else {
-      val dist = proximity(vectors, config.distance) // unmutated for silhouette; linkage `.of` mutates its own copy
-      val hc   = HierarchicalClustering.fit(linkageOf(config.linkage, proximity(vectors, config.distance)))
-      val kThresh = vectors.size - hc.height().count(_ <= config.dMax) // dMax ceiling -> minimum cluster count
-      val lower   = math.max(math.max(2, config.minK), kThresh)
-      val upper   = math.min(config.maxK, n - 1)
-      if (lower > upper) clusterAtThreshold(vectors, config) // dMax forces a finer cut than maxK allows
+      val f     = fit(vectors, config)
+      val lower = math.max(math.max(2, config.minK), f.kThreshold(config.dMax))
+      val upper = math.min(config.maxK, n - 1)
+      if (lower > upper) f.cut(f.kThreshold(config.dMax)) // dMax forces a finer cut than maxK allows
       else {
-        val best = (lower to upper).foldLeft((Double.NegativeInfinity, Vector.fill(n)(0))) {
-          case ((bestS, bestLabels), k) =>
-            val labels = hc.partition(k).toIndexedSeq
-            val s      = silhouette(dist, labels)
-            if (s > bestS) (s, renumber(labels)) else (bestS, bestLabels)
-        }
-        best._2
+        val bestK = (lower to upper)
+          .foldLeft((Double.NegativeInfinity, lower)) {
+            case ((bestS, bestK), k) =>
+              val s = f.silhouetteAt(k)
+              if (s > bestS) (s, k) else (bestS, bestK)
+          }
+          ._2
+        f.cut(bestK)
       }
     }
   }
