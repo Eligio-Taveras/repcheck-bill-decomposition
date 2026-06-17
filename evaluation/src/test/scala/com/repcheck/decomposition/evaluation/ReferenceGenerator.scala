@@ -37,35 +37,43 @@ class ReferenceGenerator extends ConformanceContract {
     val apiKey = sys.env.getOrElse("ANTHROPIC_API_KEY", cancel("ANTHROPIC_API_KEY not set"))
     val client = AnthropicOkHttpClient.builder().apiKey(apiKey).build()
 
-    val perBill = GoldPilot.versionIds.map { vid =>
-      val bill   = Corpus.bills.find(_.versionId == vid).getOrElse(fail(s"$vid not in corpus"))
-      val parsed = parser.parse(bill.content, TextFormat.fromFormatType(bill.format))
-      val sections =
-        parsed.sections.map(s => ConceptJudge.Section(s.sectionIndex, label(s), s.content))
-      val judged = ConceptJudge.judge(client, sections).unsafeRunSync()
+    // Idempotent: only label bills WITHOUT an existing gold/<vid>.json, so a corpus expansion re-labels just the new
+    // bills and never re-calls Claude on (or perturbs) the already-labeled set. Delete a gold file to force a relabel.
+    val perBill = GoldPilot.versionIds.flatMap { vid =>
+      val goldPath = Paths.get("src", "main", "resources", "gold", s"$vid.json")
+      if (Files.exists(goldPath)) {
+        info(s"$vid: gold exists, skipping")
+        None
+      } else {
+        val bill   = Corpus.bills.find(_.versionId == vid).getOrElse(fail(s"$vid not in corpus"))
+        val parsed = parser.parse(bill.content, TextFormat.fromFormatType(bill.format))
+        val sections =
+          parsed.sections.map(s => ConceptJudge.Section(s.sectionIndex, label(s), s.content))
+        val judged = ConceptJudge.judge(client, sections).unsafeRunSync()
 
-      val gold = GoldBill(
-        versionId = vid,
-        billType = bill.billType,
-        format = bill.format,
-        labelStatus = "llm-judged",
-        parserUsed = parsed.parserUsed.toString,
-        summary = Some(judged.summary),
-        sections = parsed.sections.map(s =>
-          GoldSection(
-            s.sectionIndex,
-            s.sectionIdentifier,
-            s.heading,
-            s.kind.toString,
-            s.content.length,
-            judged.descriptions.get(s.sectionIndex),
-          )
-        ),
-        groups = judged.groups,
-      )
-      writeGold(vid, gold)
-      info(s"$vid: ${parsed.sections.size} sections → ${judged.groups.size} groups")
-      report(bill.billType, vid, parsed, gold)
+        val gold = GoldBill(
+          versionId = vid,
+          billType = bill.billType,
+          format = bill.format,
+          labelStatus = "llm-judged",
+          parserUsed = parsed.parserUsed.toString,
+          summary = Some(judged.summary),
+          sections = parsed.sections.map(s =>
+            GoldSection(
+              s.sectionIndex,
+              s.sectionIdentifier,
+              s.heading,
+              s.kind.toString,
+              s.content.length,
+              judged.descriptions.get(s.sectionIndex),
+            )
+          ),
+          groups = judged.groups,
+        )
+        writeGold(vid, gold)
+        info(s"$vid: ${parsed.sections.size} sections → ${judged.groups.size} groups")
+        Some(report(bill.billType, vid, parsed, gold))
+      }
     }
 
     writeReport(perBill.mkString("\n"))

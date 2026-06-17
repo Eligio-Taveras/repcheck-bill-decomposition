@@ -1,0 +1,29 @@
+{
+  "billType" : "s",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Congressional Session Start",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "Fallback",
+  "sections" : [
+    {
+      "charLength" : 728,
+      "description" : "This bill sets the start time of the first session of the 105th Congress to noon on January 7, 1997.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    }
+  ],
+  "summary" : "This bill sets the specific start time for the opening session of the 105th Congress to noon on January 7, 1997. It is a simple procedural measure governing the convening of Congress.",
+  "versionId" : "177012"
+}

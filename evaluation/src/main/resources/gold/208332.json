@@ -1,0 +1,46 @@
+{
+  "billType" : "hconres",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Document Header",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Joint Session Reschedule",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 187,
+      "description" : "This is the header identifying the document as an engrossed Senate amendment to H. Con. Res. 38 during the 110th Congress, received January 22, 2007.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 443,
+      "description" : "The Senate amends the House concurrent resolution by changing the day of the joint session of Congress to receive the President's message from Wednesday to Tuesday.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 1,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "This bill is a Senate amendment to a House concurrent resolution (H. Con. Res. 38) from the 110th Congress. The sole substantive change is rescheduling the joint session of Congress to receive the President's message, moving it from Wednesday to Tuesday.",
+  "versionId" : "208332"
+}

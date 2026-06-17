@@ -1,0 +1,29 @@
+{
+  "billType" : "hr",
+  "format" : "PDF",
+  "groups" : [
+    {
+      "conceptLabel" : "Individual Immigration Relief",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "Fallback",
+  "sections" : [
+    {
+      "charLength" : 499,
+      "description" : "This private law deems Jana Hlavaty to have been lawfully admitted to the United States as a permanent resident as of August 26, 1969, for purposes of the Immigration and Nationality Act.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    }
+  ],
+  "summary" : "This is a private immigration bill that grants permanent resident status to a specific individual, Jana Hlavaty. It retroactively deems her to have been lawfully admitted to the United States as a permanent resident as of August 26, 1969, under the Immigration and Nationality Act.",
+  "versionId" : "272091"
+}

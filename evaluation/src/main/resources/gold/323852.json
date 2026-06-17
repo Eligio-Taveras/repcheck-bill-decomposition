@@ -1,0 +1,225 @@
+{
+  "billType" : "sres",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Overall Spending Framework",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Individual Committee Authorizations",
+      "groupId" : "g1",
+      "sectionIndices" : [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Shared Reserve Fund",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        20
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 972,
+      "description" : "This resolution authorizes Senate committees to spend money for their operations across three time periods: March 1, 2025 through February 28, 2027.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 2184,
+      "description" : "This section sets the total spending limits for all covered Senate committees combined across the three periods and establishes how committee expenses are to be paid and when vouchers are or are not required.",
+      "heading" : null,
+      "identifier" : "1",
+      "index" : 1,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2689,
+      "description" : "This section authorizes the Senate Agriculture, Nutrition, and Forestry Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $4.5 million, $7.7 million, and $3.2 million for each respective period.",
+      "heading" : null,
+      "identifier" : "2",
+      "index" : 2,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2643,
+      "description" : "This section authorizes the Senate Armed Services Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $6.1 million, $10.4 million, and $4.4 million for each respective period.",
+      "heading" : null,
+      "identifier" : "3",
+      "index" : 3,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2679,
+      "description" : "This section authorizes the Senate Banking, Housing, and Urban Affairs Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $5.1 million, $8.8 million, and $3.7 million for each respective period.",
+      "heading" : null,
+      "identifier" : "4",
+      "index" : 4,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2635,
+      "description" : "This section authorizes the Senate Budget Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $4.6 million, $7.9 million, and $3.3 million for each respective period.",
+      "heading" : null,
+      "identifier" : "5",
+      "index" : 5,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2698,
+      "description" : "This section authorizes the Senate Commerce, Science, and Transportation Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $6.3 million, $10.7 million, and $4.5 million for each respective period.",
+      "heading" : null,
+      "identifier" : "6",
+      "index" : 6,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2669,
+      "description" : "This section authorizes the Senate Energy and Natural Resources Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $4.4 million, $7.5 million, and $3.1 million for each respective period.",
+      "heading" : null,
+      "identifier" : "7",
+      "index" : 7,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2663,
+      "description" : "This section authorizes the Senate Environment and Public Works Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $4.1 million, $7.0 million, and $2.9 million for each respective period.",
+      "heading" : null,
+      "identifier" : "8",
+      "index" : 8,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2629,
+      "description" : "This section authorizes the Senate Finance Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $7.6 million, $13.1 million, and $5.5 million for each respective period.",
+      "heading" : null,
+      "identifier" : "9",
+      "index" : 9,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2655,
+      "description" : "This section authorizes the Senate Foreign Relations Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $6.1 million, $10.4 million, and $4.3 million for each respective period.",
+      "heading" : null,
+      "identifier" : "10",
+      "index" : 10,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2692,
+      "description" : "This section authorizes the Senate Health, Education, Labor, and Pensions Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $7.8 million, $13.3 million, and $5.5 million for each respective period.",
+      "heading" : null,
+      "identifier" : "11",
+      "index" : 11,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 9199,
+      "description" : "This section authorizes the Senate Homeland Security and Governmental Affairs Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $8.4 million, $14.4 million, and $6.0 million for each respective period.",
+      "heading" : null,
+      "identifier" : "12",
+      "index" : 12,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 3013,
+      "description" : "This section authorizes the Senate Judiciary Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $9.1 million, $15.5 million, and $6.5 million for each respective period.",
+      "heading" : null,
+      "identifier" : "13",
+      "index" : 13,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2667,
+      "description" : "This section authorizes the Senate Rules and Administration Committee to hire staff, spend funds, and use agency personnel, with spending capped at roughly $2.4 million, $4.0 million, and $1.6 million for each respective period.",
+      "heading" : null,
+      "identifier" : "14",
+      "index" : 14,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2687,
+      "description" : "Authorizes the Senate Committee on Small Business and Entrepreneurship to spend up to approximately $9.5 million total (across three budget periods from March 2025 through February 2027) on staff, consultants, training, and other operational expenses.",
+      "heading" : null,
+      "identifier" : "15",
+      "index" : 15,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2651,
+      "description" : "Authorizes the Senate Committee on Veterans' Affairs to spend up to approximately $9.2 million total (across three budget periods from March 2025 through February 2027) on staff, consultants, training, and other operational expenses.",
+      "heading" : null,
+      "identifier" : "16",
+      "index" : 16,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2499,
+      "description" : "Authorizes the Senate Special Committee on Aging to spend up to approximately $7.1 million total (across three budget periods from March 2025 through February 2027) on staff, consultants, training, and other operational expenses.",
+      "heading" : null,
+      "identifier" : "17",
+      "index" : 17,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2113,
+      "description" : "Authorizes the Senate Select Committee on Intelligence to spend up to approximately $18 million total (across three budget periods from March 2025 through February 2027) on staff, consultants, and other operational expenses.",
+      "heading" : null,
+      "identifier" : "18",
+      "index" : 18,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 2522,
+      "description" : "Authorizes the Senate Committee on Indian Affairs to spend up to approximately $6.4 million total (across three budget periods from March 2025 through February 2027) on staff, consultants, training, and other operational expenses.",
+      "heading" : null,
+      "identifier" : "19",
+      "index" : 19,
+      "kind" : "Section"
+    },
+    {
+      "charLength" : 1481,
+      "description" : "Establishes a special reserve fund—capped at roughly 7–8 percent of the Senate investigations account appropriations for each period—that any committee covered by this resolution may access on a needs basis with approval from the leadership of the Committee on Rules and Administration.",
+      "heading" : null,
+      "identifier" : "20",
+      "index" : 20,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "This Senate resolution authorizes operating budgets for all major Senate committees for a two-year period running from March 1, 2025 through February 28, 2027. It sets individual spending caps for each committee covering staff, consultants, and other operational expenses across three sub-periods, while also establishing overall aggregate limits and a shared reserve fund. The resolution also specifies payment and voucher procedures governing how committee expenses are disbursed.",
+  "versionId" : "323852"
+}

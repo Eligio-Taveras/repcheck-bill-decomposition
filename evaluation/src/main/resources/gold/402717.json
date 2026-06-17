@@ -1,0 +1,38 @@
+{
+  "billType" : "hjres",
+  "format" : "Formatted Text",
+  "groups" : [
+    {
+      "conceptLabel" : "Continuing Appropriations Resolution",
+      "groupId" : "g0",
+      "sectionIndices" : [
+        0,
+        1
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    }
+  ],
+  "labelStatus" : "llm-judged",
+  "parserUsed" : "GpoText",
+  "sections" : [
+    {
+      "charLength" : 646,
+      "description" : "Introduces a joint resolution in the 104th Congress to provide further continuing appropriations for fiscal year 1996.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 0,
+      "kind" : "Fallback"
+    },
+    {
+      "charLength" : 108,
+      "description" : "States that the resolution is formally adopted by both the Senate and the House of Representatives assembled in Congress.",
+      "heading" : null,
+      "identifier" : null,
+      "index" : 1,
+      "kind" : "Section"
+    }
+  ],
+  "summary" : "This bill is a joint resolution from the 104th Congress designed to provide continuing appropriations for the federal government for fiscal year 1996. It establishes the formal legislative basis for keeping government funding in place on a temporary basis. The resolution is adopted by both chambers of Congress acting together.",
+  "versionId" : "402717"
+}
