@@ -104,9 +104,10 @@ class ComparisonReport extends ConformanceContract {
     }
     val pooled = bills.flatMap(_.raw)
 
-    val analyses  = Transforms.map(t => analyze(t, bills, pooled))
-    val structure = structureSweep(bills, pooled)
-    writeReport(analyses, structure)
+    val analyses   = Transforms.map(t => analyze(t, bills, pooled))
+    val structure  = structureSweep(bills, pooled)
+    val robustness = robustnessSweep(bills, pooled)
+    writeReport(analyses, structure, robustness)
     info("done")
     succeed
   }
@@ -177,6 +178,65 @@ class ComparisonReport extends ConformanceContract {
         )
     }
     (sweep, perBill)
+  }
+
+  /**
+   * Guided cut: the subject count is a GUIDE, not an exact split. Search k in a +/- tol window around `guideK` and let
+   * the silhouette pick the natural k (a window keeps it from collapsing to k=2). The data decides; the subject count
+   * only sets the neighborhood.
+   */
+  private def guidedCut(fitted: SmileHacClusterer.Fitted, guideK: Int, tol: Double): Vector[Int] = {
+    val lo = math.max(2, math.round(guideK * (1.0 - tol)).toInt)
+    val hi = math.min(fitted.n - 1, math.round(guideK * (1.0 + tol)).toInt)
+    if (lo > hi) fitted.cut(guideK)
+    else {
+      val bestK = (lo to hi)
+        .foldLeft((Double.NegativeInfinity, lo)) {
+          case ((bs, bk), k) =>
+            val s = fitted.silhouetteAt(k)
+            if (s > bs) (s, k) else (bs, bk)
+        }
+        ._2
+      fitted.cut(bestK)
+    }
+  }
+
+  final private case class RobustPoint(factor: Double, exactAri: Double, guidedAri: Double)
+
+  /**
+   * Robustness: treat the subject count as imperfect (the endpoint will over/under-count). Perturb the true count by a
+   * factor and compare forcing k = perturbed (exact) vs the guided cut, on the standardize + structure-blend
+   * (alpha=0.1) config. The guided cut should degrade gracefully where exact-k falls apart.
+   */
+  private def robustnessSweep(bills: List[BillData], pooled: Seq[Vector[Double]]): List[RobustPoint] = {
+    val gMean   = EmbeddingTransform.mean(pooled)
+    val gStd    = EmbeddingTransform.std(pooled, gMean)
+    val Alpha   = 0.1
+    val Tol     = 0.3
+    val Factors = List(0.5, 0.75, 1.0, 1.5, 2.0)
+    val fits = bills.filter(_.isNonTrivial).map { b =>
+      val vecs = b.raw.map(v => EmbeddingTransform.standardize(v, gMean, gStd))
+      val blended = Array.tabulate(vecs.size, vecs.size)((i, j) =>
+        if (i == j) 0.0
+        else {
+          val cos = 1.0 - EmbeddingMetrics.cosine(vecs(i), vecs(j))
+          val str = if (b.structuralKeys(i) == b.structuralKeys(j)) 0.0 else 1.0
+          Alpha * cos + (1.0 - Alpha) * str
+        }
+      )
+      (b, SmileHacClusterer.fitFromProximity(blended, "average"))
+    }
+    Factors.map { factor =>
+      val pairs = fits.map {
+        case (b, f) =>
+          val guideK = math.max(1, math.round(b.ref.distinct.size * factor).toInt)
+          (
+            ClusteringMetrics.adjustedRandIndex(f.cut(guideK), b.ref),
+            ClusteringMetrics.adjustedRandIndex(guidedCut(f, guideK, Tol), b.ref),
+          )
+      }
+      RobustPoint(factor, pairs.map(_._1).sum / pairs.size, pairs.map(_._2).sum / pairs.size)
+    }
   }
 
   final private case class Analysis(
@@ -278,7 +338,11 @@ class ComparisonReport extends ConformanceContract {
     )
   }
 
-  private def writeReport(analyses: List[Analysis], structure: (List[StructPoint], List[StructBill])): Unit = {
+  private def writeReport(
+    analyses: List[Analysis],
+    structure: (List[StructPoint], List[StructBill]),
+    robustness: List[RobustPoint],
+  ): Unit = {
     val (alphaSweep, structBills) = structure
     val alphaRows                 = alphaSweep.map(p => f"| ${p.alpha}%.1f | ${p.ari}%.3f | ${p.nmi}%.3f |")
     val bestAlpha = alphaSweep
@@ -287,6 +351,7 @@ class ComparisonReport extends ConformanceContract {
     val structRows = structBills.map(b =>
       f"| ${b.vid} | ${b.sec} | ${b.k} | ${b.ariCosine}%.3f | ${b.ariBlend}%.3f | ${b.nmiBlend}%.3f |"
     )
+    val robustRows = robustness.map(r => f"| ${r.factor}%.2f | ${r.exactAri}%.3f | ${r.guidedAri}%.3f |")
     val summary = analyses.map(a =>
       f"| ${a.transform} | ${a.anisotropy}%.3f | ${a.bestDMaxTight}%.1f | ${a.tightAriThreshold}%.3f | ${a.bestDMaxOmni}%.1f | ${a.omniAriThreshold}%.3f | ${a.omniNmiThreshold}%.3f | ${a.omniAriSilhouette}%.3f | ${a.omniNmiSilhouette}%.3f |"
     )
@@ -342,7 +407,17 @@ class ComparisonReport extends ConformanceContract {
           "",
           "| bill | sections | subjects (k) | ARI cosine | ARI blend | NMI blend |",
           "|---|---|---|---|---|---|",
-        ) ++ structRows
+        ) ++ structRows ++
+        List(
+          "",
+          "## Subjects as a GUIDE, not exact: robustness to a wrong subject count",
+          "",
+          "The true count is perturbed by a factor (simulating the endpoint over/under-counting). exact = force",
+          "k = perturbed count; guided = silhouette picks k in a +/-30% window around it. standardize + structure-blend.",
+          "",
+          "| count factor | exact-k ARI | guided ARI |",
+          "|---|---|---|",
+        ) ++ robustRows
     val _ = Files.write(Paths.get("COMPARISON_REPORT.md"), lines.mkString("\n").getBytes(StandardCharsets.UTF_8))
   }
 

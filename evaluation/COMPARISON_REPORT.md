@@ -70,3 +70,16 @@ d = alpha*cosine + (1-alpha)*structural (0 if same parser Title, else 1). alpha=
 | 375702 | 418 | 67 | 0.364 | 0.413 | 0.765 |
 | 244276 | 226 | 54 | 0.219 | 0.406 | 0.763 |
 | 150025 | 432 | 28 | 0.264 | 0.347 | 0.689 |
+
+## Subjects as a GUIDE, not exact: robustness to a wrong subject count
+
+The true count is perturbed by a factor (simulating the endpoint over/under-counting). exact = force
+k = perturbed count; guided = silhouette picks k in a +/-30% window around it. standardize + structure-blend.
+
+| count factor | exact-k ARI | guided ARI |
+|---|---|---|
+| 0.50 | 0.251 | 0.240 |
+| 0.75 | 0.356 | 0.293 |
+| 1.00 | 0.392 | 0.334 |
+| 1.50 | 0.404 | 0.440 |
+| 2.00 | 0.219 | 0.386 |
