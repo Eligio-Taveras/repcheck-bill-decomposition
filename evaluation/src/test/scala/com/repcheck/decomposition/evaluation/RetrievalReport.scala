@@ -105,14 +105,25 @@ class RetrievalReport extends ConformanceContract {
     }
   }
 
-  /** Rank a method's units by query↔unit cosine, expand each to its sections (best-cosine first), dedup. */
+  /**
+   * Rank a method's units, expand each to its sections (best-cosine first), dedup. Unit ranking is either mean-pool
+   * (cosine to the unit centroid) or max-pool (the unit's best single section — pinpoints like raw sections while still
+   * returning the whole unit, lifting MRR without losing coverage).
+   */
   private def rankedSections(
     units: List[Bucket],
     qEmb: Vector[Double],
     secScore: SectionRef => Double,
+    maxPool: Boolean,
   ): List[SectionRef] =
     units
-      .map(u => (u, EmbeddingMetrics.cosine(qEmb, u.emb)))
+      .map(u =>
+        (
+          u,
+          if (maxPool) u.sections.foldLeft(Double.NegativeInfinity)((m, s) => math.max(m, secScore(s)))
+          else EmbeddingMetrics.cosine(qEmb, u.emb),
+        )
+      )
       .sortBy(-_._2)
       .flatMap(_._1.sections.sortBy(s => -secScore(s)))
       .distinct
@@ -176,56 +187,74 @@ class RetrievalReport extends ConformanceContract {
       .map(a => EmbeddingTransform.standardize(a.iterator.map(_.toDouble).toVector, gMean, gStd))
     info(s"queries: ${queries.size}")
 
-    // score every query against every method; the per-section query cosine is computed ONCE per query and reused
-    // across methods + within-unit ordering (the units overlap heavily for B3, so recomputing would explode).
-    val perQuery: List[Map[String, Scores]] = queries.zip(qEmbs).map {
+    // score every query against every method under both unit-ranking poolings; the per-section query cosine is
+    // computed ONCE per query and reused across methods + poolings + within-unit ordering (B3 units overlap heavily).
+    val poolings = List(("mean-pool", false), ("max-pool", true))
+    val perQuery: List[Map[(String, String), Scores]] = queries.zip(qEmbs).map {
       case (q, qe) =>
         val secScoreMap = secEmb.iterator.map { case (ref, e) => ref -> EmbeddingMetrics.cosine(qe, e) }.toMap
         val secScore: SectionRef => Double = s => secScoreMap.getOrElse(s, -1.0)
         val rel                            = q.relevant.toSet
-        methods.map { case (name, units) => name -> score(rankedSections(units, qe, secScore), rel) }.toMap
+        (for {
+          (pname, maxPool) <- poolings
+          (name, units)    <- methods
+        } yield (pname, name) -> score(rankedSections(units, qe, secScore, maxPool), rel)).toMap
     }
-    val results: Map[String, List[Scores]] = methods.map { case (name, _) => name -> perQuery.map(_(name)) }.toMap
+    val results: Map[(String, String), List[Scores]] =
+      (for { (pname, _) <- poolings; (name, _) <- methods } yield (pname, name) -> perQuery.map(_((pname, name)))).toMap
 
-    writeReport(methods.map(_._1), results, queries, methods.map { case (n, u) => n -> u.size }.toMap)
+    writeReport(
+      poolings.map(_._1),
+      methods.map(_._1),
+      results,
+      queries,
+      methods.map { case (n, u) => n -> u.size }.toMap,
+    )
     info("done")
     succeed
   }
 
   private def writeReport(
+    poolings: List[String],
     order: List[String],
-    results: Map[String, List[Scores]],
+    results: Map[(String, String), List[Scores]],
     queries: List[RetrievalQuery],
     unitCounts: Map[String, Int],
   ): Unit = {
     def avg(xs: List[Double]): Double = if (xs.isEmpty) 0.0 else xs.sum / xs.size.toDouble
     // multi-section concepts are where granularity matters; split them out
     val multiIdx = queries.zipWithIndex.filter(_._1.relevant.sizeIs > 1).map(_._2).toSet
-    def rows(filter: Int => Boolean): List[String] =
+    def rows(pooling: String, filter: Int => Boolean): List[String] =
       order.map { m =>
-        val s = results(m).zipWithIndex.filter { case (_, i) => filter(i) }.map(_._1)
+        val s = results((pooling, m)).zipWithIndex.filter { case (_, i) => filter(i) }.map(_._1)
         f"| $m | ${unitCounts(m)} | ${avg(s.map(_.mrr))}%.3f | ${avg(s.map(_.p5))}%.3f | ${avg(s.map(_.rPrec))}%.3f | ${avg(s.map(_.recall10))}%.3f |"
       }
     val header = List(
       "| method | units | MRR | P@5 | R-precision | recall@10 |",
       "|---|---|---|---|---|---|",
     )
+    def section(pooling: String): List[String] =
+      List(
+        "",
+        s"## $pooling — unit ranking",
+        "",
+        s"### All queries (${queries.size})",
+        "",
+      ) ++ header ++ rows(pooling, _ => true) ++
+        List(
+          "",
+          s"### Multi-section concepts only (${multiIdx.size})",
+          "",
+        ) ++ header ++ rows(pooling, multiIdx.contains)
     val lines =
       List(
         "# DP0-6 retrieval gate — does decomposition beat the baselines?",
         "",
-        s"${queries.size} reference-concept queries over the 25-bill corpus. Each method retrieves units (ranked by",
-        "query↔unit cosine, expanded to sections); scored against the concept's own sections. Standardized embeddings.",
-        "R-precision = precision@|relevant| (the natural granularity metric).",
-        "",
-        "## All queries",
-        "",
-      ) ++ header ++ rows(_ => true) ++
-        List(
-          "",
-          s"## Multi-section concepts only (${multiIdx.size} queries — where granularity matters)",
-          "",
-        ) ++ header ++ rows(multiIdx.contains)
+        s"${queries.size} reference-concept queries over the 25-bill corpus. Each method retrieves units, expanded to",
+        "sections, scored against the concept's own sections. Standardized embeddings. R-precision = precision@|relevant|.",
+        "**mean-pool** ranks units by their centroid cosine; **max-pool** ranks by the unit's best single section (then",
+        "still returns the whole unit) — pinpoints like raw sections without losing coverage.",
+      ) ++ poolings.flatMap(section)
     val _ = Files.write(Paths.get("RETRIEVAL_REPORT.md"), lines.mkString("\n").getBytes(StandardCharsets.UTF_8))
   }
 
