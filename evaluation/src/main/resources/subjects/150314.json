@@ -1,0 +1,33 @@
+{
+  "versionId": "150314",
+  "billId": 56711,
+  "congress": 115,
+  "billType": "s",
+  "number": "1168",
+  "policyArea": "Transportation and Public Works",
+  "subjects": [
+    "Aviation and airports",
+    "Dams and canals",
+    "Electric power generation and transmission",
+    "Energy storage, supplies, demand",
+    "Environmental assessment, monitoring, research",
+    "Government corporations and government-sponsored enterprises",
+    "Government lending and loan guarantees",
+    "Income tax exclusion",
+    "Infrastructure development",
+    "Licensing and registrations",
+    "Marine and inland water transportation",
+    "Navigation, waterways, harbors",
+    "Public transit",
+    "Public-private cooperation",
+    "Railroads",
+    "Roads and highways",
+    "Rural conditions and development",
+    "Securities",
+    "State and local finance",
+    "Transportation programs funding",
+    "Water quality",
+    "Water resources funding",
+    "Water use and supply"
+  ]
+}
