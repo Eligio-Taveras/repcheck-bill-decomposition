@@ -47,6 +47,12 @@ class SmileHacClustererSpec extends ConformanceContract {
     SmileHacClusterer.clusterAtThreshold(IndexedSeq(va), ClusteringConfig()) shouldBe Vector(0)
   }
 
+  "a fitted dendrogram" should "cut at k and report the cut height for k clusters" in {
+    val f = SmileHacClusterer.fit(IndexedSeq(va, va, vb, vb), ClusteringConfig())
+    f.cut(2) shouldBe Vector(0, 0, 1, 1)
+    f.heightForK(1) should be > f.heightForK(2) // one cluster needs a higher cut than two
+  }
+
   "clusterBySilhouette" should "recover two well-separated clusters" in {
     SmileHacClusterer.clusterBySilhouette(IndexedSeq(va, va, vb, vb), ClusteringConfig(maxK = 3)) shouldBe
       Vector(0, 0, 1, 1)

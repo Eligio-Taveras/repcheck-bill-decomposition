@@ -117,7 +117,11 @@ class ComparisonReport extends ConformanceContract {
     bestMaxK: Int,
     omniAriSilhouette: Double,
     omniNmiSilhouette: Double,
-    perBill: List[(String, String, Int, Int, Int, Double, Double)], // vid, branch, sec, hacK, refK, ari, nmi
+    cutKAri: Double, // cut at k = subjects, mean over non-trivial bills
+    cutKNmi: Double,
+    perBill: List[
+      (String, String, Int, Int, Int, Double, Double, Double)
+    ], // vid, branch, sec, hacK, subjects, ari, nmi, dMaxAtK
   )
 
   private def analyze(transform: String, bills: List[BillData], pooled: Seq[Vector[Double]]): Analysis = {
@@ -164,19 +168,24 @@ class ComparisonReport extends ConformanceContract {
       .foldLeft((0, Double.NegativeInfinity)) { case ((bk, bs), (k, s)) => if (s > bs) (k, s) else (bk, bs) }
       ._1
 
+    // cut directly at k = the LLM subject count (= reference group count); the robust production mechanism
+    def cutK(f: Fit): Vector[Int] = f.fitted.cut(f.b.ref.distinct.size)
+    val nonTrivial                = tight ++ omni
+
     def branch(f: Fit): String = if (f.b.isOmnibus) "omnibus" else if (f.b.isTunableTight) "tight" else "trivial"
-    // per-bill under the threshold cut at the branch's own best dMax (the candidate production config)
+    // per-bill under cut@k=subjects, with the resulting cut height (the subjects → dMax mapping)
     val perBill = fits.map { f =>
-      val d      = if (f.b.isOmnibus) bestDMaxOmni else bestDMaxTight
-      val labels = thr(d)(f)
+      val kSubj  = f.b.ref.distinct.size
+      val labels = f.fitted.cut(kSubj)
       (
         f.b.versionId,
         branch(f),
         f.b.sections,
         labels.distinct.size,
-        f.b.ref.distinct.size,
+        kSubj,
         ClusteringMetrics.adjustedRandIndex(labels, f.b.ref),
         ClusteringMetrics.normalizedMutualInformation(labels, f.b.ref),
+        f.fitted.heightForK(kSubj),
       )
     }
     Analysis(
@@ -190,6 +199,8 @@ class ComparisonReport extends ConformanceContract {
       bestMaxK,
       meanAri(omni, sil(bestMaxK)),
       meanNmi(omni, sil(bestMaxK)),
+      meanAri(nonTrivial, cutK),
+      meanNmi(nonTrivial, cutK),
       perBill,
     )
   }
@@ -198,33 +209,40 @@ class ComparisonReport extends ConformanceContract {
     val summary = analyses.map(a =>
       f"| ${a.transform} | ${a.anisotropy}%.3f | ${a.bestDMaxTight}%.1f | ${a.tightAriThreshold}%.3f | ${a.bestDMaxOmni}%.1f | ${a.omniAriThreshold}%.3f | ${a.omniNmiThreshold}%.3f | ${a.omniAriSilhouette}%.3f | ${a.omniNmiSilhouette}%.3f |"
     )
-    val best          = analyses.find(_.transform == "standardize").orElse(analyses.headOption)
-    val bestDMaxTight = best.map(_.bestDMaxTight).getOrElse(0.0)
-    val bestDMaxOmni  = best.map(_.bestDMaxOmni).getOrElse(0.0)
+    val cutKTable = analyses.map(a => f"| ${a.transform} | ${a.anisotropy}%.3f | ${a.cutKAri}%.3f | ${a.cutKNmi}%.3f |")
+    val best      = analyses.find(_.transform == "standardize").orElse(analyses.headOption)
     val billRows = best.toList.flatMap(_.perBill).map {
-      case (vid, br, sec, hacK, refK, ari, nmi) =>
-        f"| $vid | $br | $sec | $hacK | $refK | $ari%.3f | $nmi%.3f |"
+      case (vid, br, sec, hacK, subjects, ari, nmi, dMaxAtK) =>
+        f"| $vid | $br | $sec | $subjects | $hacK | $dMaxAtK%.2f | $ari%.3f | $nmi%.3f |"
     }
     val lines =
       List(
-        "# DP-0 comparison — HAC vs Claude reference: threshold vs silhouette, with anisotropy correction",
+        "# DP-0 comparison — HAC vs Claude reference: cut at k = subjects",
         "",
-        "For omnibus bills, the threshold cut (dMax tuned SEPARATELY per branch) is compared head-to-head against the",
-        "silhouette cut, under each embedding transform (§10b anisotropy correction).",
+        "The cut is determined by the subject count (cut the dendrogram at k = subjectCount; the LLM reference group",
+        "count stands in for the endpoint's subject count). Compared against the tuned threshold and silhouette cuts,",
+        "under each anisotropy transform (§10b).",
         "",
-        "## Omnibus: threshold (own dMax) vs silhouette",
+        "## Cut at k = subjects (mean over non-trivial bills)",
         "",
-        "| transform | anisotropy | tight dMax | tight ARI | omni dMax | omni ARI (thr) | omni NMI (thr) | omni ARI (sil) | omni NMI (sil) |",
-        "|---|---|---|---|---|---|---|---|---|",
-      ) ++ summary ++
+        "| transform | anisotropy | ARI | NMI |",
+        "|---|---|---|---|",
+      ) ++ cutKTable ++
         List(
           "",
-          "Anisotropy = mean pairwise cosine over a pooled sample (lower = more isotropic). thr = threshold cut, sil = silhouette.",
+          "## For comparison — tuned threshold vs silhouette (omnibus)",
           "",
-          f"## Per-bill, threshold cut @ standardize (tight dMax=$bestDMaxTight%.1f, omni dMax=$bestDMaxOmni%.1f)",
+          "| transform | anisotropy | tight dMax | tight ARI | omni dMax | omni ARI (thr) | omni NMI (thr) | omni ARI (sil) | omni NMI (sil) |",
+          "|---|---|---|---|---|---|---|---|---|",
+        ) ++ summary ++
+        List(
           "",
-          "| bill | branch | sections | HAC groups | ref groups | ARI | NMI |",
-          "|---|---|---|---|---|---|---|",
+          "Anisotropy = mean pairwise cosine over a pooled sample (lower = more isotropic). thr = threshold, sil = silhouette.",
+          "",
+          "## Per-bill @ standardize, cut at k = subjects (dMaxAtK = the cut height that yields k clusters)",
+          "",
+          "| bill | branch | sections | subjects (k) | HAC groups | dMaxAtK | ARI | NMI |",
+          "|---|---|---|---|---|---|---|---|",
         ) ++ billRows
     val _ = Files.write(Paths.get("COMPARISON_REPORT.md"), lines.mkString("\n").getBytes(StandardCharsets.UTF_8))
   }

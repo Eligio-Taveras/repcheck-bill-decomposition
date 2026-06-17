@@ -61,6 +61,16 @@ object SmileHacClusterer {
 
     /** Mean silhouette of the k-cluster partition (dMax-independent, so a sweep computes each k at most once). */
     def silhouetteAt(k: Int): Double = silhouette(dist, hc.partition(k).toIndexedSeq)
+
+    /**
+     * The cut height (dMax) that yields k clusters: the largest merge height retained. Lets us read off the subjects →
+     * dMax mapping when we cut directly at k = subjectCount.
+     */
+    def heightForK(k: Int): Double =
+      if (k <= 1) if (heights.isEmpty) 0.0 else heights(heights.length - 1)
+      else if (k >= n) 0.0
+      else heights(n - k - 1)
+
   }
 
   /** Build the dendrogram once: one proximity matrix (cloned for the linkage, which mutates in place) + Smile fit. */
