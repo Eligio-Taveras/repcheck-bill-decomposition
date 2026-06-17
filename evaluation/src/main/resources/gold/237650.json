@@ -3,7 +3,7 @@
   "format" : "PDF",
   "groups" : [
     {
-      "conceptLabel" : "",
+      "conceptLabel" : "Legislative Reference",
       "groupId" : "g0",
       "sectionIndices" : [
         0
@@ -12,7 +12,7 @@
       ]
     }
   ],
-  "labelStatus" : "draft-groups",
+  "labelStatus" : "llm-judged",
   "parserUsed" : "Fallback",
   "sections" : [
     {

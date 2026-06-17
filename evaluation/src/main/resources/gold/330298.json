@@ -3,7 +3,7 @@
   "format" : "Formatted XML",
   "groups" : [
     {
-      "conceptLabel" : "",
+      "conceptLabel" : "Fallback",
       "groupId" : "g0",
       "sectionIndices" : [
         0
@@ -12,7 +12,7 @@
       ]
     }
   ],
-  "labelStatus" : "draft-groups",
+  "labelStatus" : "llm-judged",
   "parserUsed" : "Fallback",
   "sections" : [
     {

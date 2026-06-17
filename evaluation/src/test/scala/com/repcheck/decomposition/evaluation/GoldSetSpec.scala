@@ -3,8 +3,8 @@ package com.repcheck.decomposition.evaluation
 import com.repcheck.decomposition.conformance.{ConformanceContract, Corpus}
 
 /**
- * Integrity laws over the loaded pilot gold set. Boundary laws apply now; the grouping laws are ready for when DP0-4 +
- * review fill `groups` (vacuously true while groups are empty).
+ * Integrity laws over the loaded pilot gold set: boundaries (a) + the Claude-judged reference groupings (b) with their
+ * concept names. The taxonomy assignments (c) land in DP0-4b.
  */
 class GoldSetSpec extends ConformanceContract {
 
@@ -36,13 +36,19 @@ class GoldSetSpec extends ConformanceContract {
     gold.bills.foreach(b => withClue(s"${b.versionId}: ")(GoldSet.LabelStatuses should contain(b.labelStatus)))
   }
 
-  it should "have draft groups that partition every section once" in {
+  it should "have reference groups that partition every section once" in {
     gold.bills.foreach { b =>
       withClue(s"${b.versionId}: ") {
         b.groups should not be empty
         b.groups.flatMap(_.sectionIndices).sorted shouldBe b.sections.map(_.index)
       }
     }
+  }
+
+  it should "have a non-empty concept name on every reference group" in {
+    gold.bills.foreach(b =>
+      b.groups.foreach(g => withClue(s"${b.versionId}/${g.groupId}: ")(g.conceptLabel.trim should not be empty))
+    )
   }
 
   it should "have well-formed groups whenever groups are present" in {

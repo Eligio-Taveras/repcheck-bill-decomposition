@@ -3,25 +3,17 @@
   "format" : "Formatted Text",
   "groups" : [
     {
-      "conceptLabel" : "",
+      "conceptLabel" : "Committee Member Election",
       "groupId" : "g0",
       "sectionIndices" : [
-        0
-      ],
-      "taxonomyNodeIds" : [
-      ]
-    },
-    {
-      "conceptLabel" : "",
-      "groupId" : "g1",
-      "sectionIndices" : [
+        0,
         1
       ],
       "taxonomyNodeIds" : [
       ]
     }
   ],
-  "labelStatus" : "draft-groups",
+  "labelStatus" : "llm-judged",
   "parserUsed" : "GpoText",
   "sections" : [
     {

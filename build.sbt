@@ -132,8 +132,9 @@ lazy val evaluation = (project in file("evaluation"))
       Dependencies.circe ++ Dependencies.catsEffect ++ Dependencies.http4sEmber ++ Seq(
         "org.scalatestplus" %% "scalacheck-1-17"    % "3.2.18.0",
         "org.scalacheck"    %% "scalacheck"         % "1.17.0",
-        "com.repcheck"      %% "repcheck-embedding" % "0.1.4", // DP0-3: F3 SemanticEmbeddingService (live Ollama)
-        "com.repcheck"      %% "repcheck-utils"     % "0.1.5"  // RetryWrapper (F3 ctor); newer than the 0.1.1 elsewhere
+        "com.repcheck"      %% "repcheck-embedding" % "0.1.4",  // DP0-3: F3 SemanticEmbeddingService (live Ollama)
+        "com.repcheck"      %% "repcheck-utils"     % "0.1.5",  // RetryWrapper (F3 ctor); newer than the 0.1.1 elsewhere
+        "com.anthropic"      % "anthropic-java"     % "2.18.0" // DP0-4b: Claude concept judge (reference groupings)
       )
     ).map(_ % Test)
   )

@@ -3,53 +3,69 @@
   "format" : "Formatted Text",
   "groups" : [
     {
-      "conceptLabel" : "",
+      "conceptLabel" : "Bill Title and Purpose",
       "groupId" : "g0",
       "sectionIndices" : [
         0,
+        1,
         2,
-        3,
+        3
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Force Authorization Conditions",
+      "groupId" : "g1",
+      "sectionIndices" : [
         4,
-        9,
+        5
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Consultation and Reporting",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        6,
+        7
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Congressional Action Procedures",
+      "groupId" : "g3",
+      "sectionIndices" : [
+        8,
+        9
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Judicial Review",
+      "groupId" : "g4",
+      "sectionIndices" : [
         10
       ],
       "taxonomyNodeIds" : [
       ]
     },
     {
-      "conceptLabel" : "",
-      "groupId" : "g1",
+      "conceptLabel" : "Interpretation Definitions Separability",
+      "groupId" : "g5",
       "sectionIndices" : [
-        1
-      ],
-      "taxonomyNodeIds" : [
-      ]
-    },
-    {
-      "conceptLabel" : "",
-      "groupId" : "g2",
-      "sectionIndices" : [
-        5,
-        6,
-        7,
-        8,
         11,
-        12
-      ],
-      "taxonomyNodeIds" : [
-      ]
-    },
-    {
-      "conceptLabel" : "",
-      "groupId" : "g3",
-      "sectionIndices" : [
+        12,
         13
       ],
       "taxonomyNodeIds" : [
       ]
     }
   ],
-  "labelStatus" : "draft-groups",
+  "labelStatus" : "llm-judged",
   "parserUsed" : "GpoText",
   "sections" : [
     {

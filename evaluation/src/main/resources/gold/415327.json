@@ -3,54 +3,70 @@
   "format" : "Formatted Text",
   "groups" : [
     {
-      "conceptLabel" : "",
+      "conceptLabel" : "Bill Overview and Definitions",
       "groupId" : "g0",
       "sectionIndices" : [
         0,
-        1
+        1,
+        2,
+        3
       ],
       "taxonomyNodeIds" : [
       ]
     },
     {
-      "conceptLabel" : "",
+      "conceptLabel" : "Direct Spending Targets",
       "groupId" : "g1",
       "sectionIndices" : [
-        2
-      ],
-      "taxonomyNodeIds" : [
-      ]
-    },
-    {
-      "conceptLabel" : "",
-      "groupId" : "g2",
-      "sectionIndices" : [
-        3,
-        10,
-        11,
+        4,
         13
       ],
       "taxonomyNodeIds" : [
       ]
     },
     {
-      "conceptLabel" : "",
+      "conceptLabel" : "Presidential Spending Message",
+      "groupId" : "g2",
+      "sectionIndices" : [
+        5
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Congressional Action and Spin-Off Law",
       "groupId" : "g3",
       "sectionIndices" : [
-        4,
-        5,
         6,
-        7,
+        7
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Sequestration Mechanisms",
+      "groupId" : "g4",
+      "sectionIndices" : [
         8,
         9,
+        10,
+        11
+      ],
+      "taxonomyNodeIds" : [
+      ]
+    },
+    {
+      "conceptLabel" : "Reports and Orders",
+      "groupId" : "g5",
+      "sectionIndices" : [
         12
       ],
       "taxonomyNodeIds" : [
       ]
     },
     {
-      "conceptLabel" : "",
-      "groupId" : "g4",
+      "conceptLabel" : "PAYGO and Other Budget Relations",
+      "groupId" : "g6",
       "sectionIndices" : [
         14
       ],
@@ -58,8 +74,8 @@
       ]
     },
     {
-      "conceptLabel" : "",
-      "groupId" : "g5",
+      "conceptLabel" : "Judicial Review",
+      "groupId" : "g7",
       "sectionIndices" : [
         15
       ],
@@ -67,8 +83,8 @@
       ]
     },
     {
-      "conceptLabel" : "",
-      "groupId" : "g6",
+      "conceptLabel" : "Application and Effective Date",
+      "groupId" : "g8",
       "sectionIndices" : [
         16,
         17
@@ -77,7 +93,7 @@
       ]
     }
   ],
-  "labelStatus" : "draft-groups",
+  "labelStatus" : "llm-judged",
   "parserUsed" : "GpoText",
   "sections" : [
     {
