@@ -83,3 +83,20 @@ k = perturbed count; guided = silhouette picks k in a +/-30% window around it. s
 | 1.00 | 0.392 | 0.334 |
 | 1.50 | 0.404 | 0.440 |
 | 2.00 | 0.219 | 0.386 |
+
+## Formulaic cutoff: dMax = a + b*ln(n - S) from section count n and subject count S
+
+Fit over the non-trivial bills (standardize + cosine): **dMax = -0.181 + 0.410 * ln(n - S)** (R^2 = 0.969).
+Compute the cut height per bill from (n, S), then cut there (the actual group count is data-driven near S).
+
+| bill | n | S | best dMax | formula dMax | ARI best | ARI formula |
+|---|---|---|---|---|---|---|
+| 415327 | 18 | 10 | 0.70 | 0.67 | 0.497 | 0.497 |
+| 150314 | 26 | 11 | 0.80 | 0.93 | 0.264 | 0.178 |
+| 189669 | 14 | 6 | 0.80 | 0.67 | 0.491 | 0.204 |
+| 148391 | 309 | 54 | 2.10 | 2.09 | 0.297 | 0.297 |
+| 375702 | 418 | 67 | 2.30 | 2.22 | 0.358 | 0.350 |
+| 244276 | 226 | 54 | 1.70 | 1.93 | 0.229 | 0.187 |
+| 150025 | 432 | 28 | 2.40 | 2.28 | 0.315 | 0.302 |
+
+Mean ARI: oracle (per-bill best dMax) 0.350 vs formula 0.288.
