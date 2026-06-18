@@ -1,4 +1,4 @@
-package com.repcheck.decomposition.evaluation.embed
+package com.repcheck.decomposition.ml.embed
 
 /**
  * Embedding-space anisotropy corrections (master §10b): text embeddings sit in a narrow cone (high mean pairwise

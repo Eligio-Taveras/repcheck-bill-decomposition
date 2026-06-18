@@ -1,4 +1,4 @@
-package com.repcheck.decomposition.evaluation.metrics
+package com.repcheck.decomposition.ml.metrics
 
 import com.repcheck.decomposition.conformance.ConformanceContract
 

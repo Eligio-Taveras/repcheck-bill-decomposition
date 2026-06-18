@@ -76,7 +76,7 @@ lazy val commonSettings = Seq(
 )
 
 lazy val root = (project in file("."))
-  .aggregate(textStructure, conformance, evaluation, docGenerator)
+  .aggregate(textStructure, conformance, decompositionMl, evaluation, docGenerator)
   .settings(
     commonSettings,
     name := "repcheck-bill-decomposition-root",
@@ -118,13 +118,30 @@ lazy val conformance = (project in file("conformance"))
     )
   )
 
+// decomposition-ml — D3b: the PRODUCTION clustering home (DP-0 prototyped it inside `evaluation`; now promoted). The
+// DP-0-validated pipeline — SmileHacClusterer + ClusteringConfig + the embedding primitives (cosine, standardize) — plus
+// the ConceptClusterer trait (Vector1024 sections + parser breadcrumbs + subject count → concept-group member indices).
+// PURE + deterministic (no F[_]). Consumed by `evaluation` (the gold harness) and, later, the decomposition orchestrator.
+lazy val decompositionMl = (project in file("decomposition-ml"))
+  .dependsOn(conformance % "test->test")
+  .settings(
+    commonSettings,
+    name := "decomposition-ml",
+    libraryDependencies += "com.github.haifengl" % "smile-core" % "3.1.1",
+    libraryDependencies ++= Dependencies.pureConfig,
+    libraryDependencies ++= Seq(
+      "org.scalatestplus" %% "scalacheck-1-17" % "3.2.18.0" % Test,
+      "org.scalacheck"    %% "scalacheck"      % "1.17.0"   % Test
+    )
+  )
+
 // evaluation — DP-0: the empirical-gate harness (master §10b). Throwaway evaluation code, NOT shipped production. The
 // gold set (labels over the shared corpus) + metrics + baselines + A/B experiments that authorize D3b–D6. Gold loader +
 // generator are Test-scoped (test-support data, like the corpus); the gold fixtures live in src/main/resources/gold.
-// Later sub-steps add Ollama-backed wiring + metrics. dependsOn text-structure (parser drafts boundaries) + conformance
-// (Corpus + ConformanceContract).
+// Later sub-steps add Ollama-backed wiring + metrics. dependsOn decomposition-ml (production clusterer) + text-structure
+// (parser drafts boundaries) + conformance (Corpus + ConformanceContract).
 lazy val evaluation = (project in file("evaluation"))
-  .dependsOn(textStructure, conformance % "test->test")
+  .dependsOn(decompositionMl, textStructure, conformance % "test->test")
   .settings(
     commonSettings,
     name := "evaluation",

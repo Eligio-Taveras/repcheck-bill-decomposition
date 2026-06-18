@@ -1,4 +1,4 @@
-package com.repcheck.decomposition.evaluation.cluster
+package com.repcheck.decomposition.ml.cluster
 
 import pureconfig.ConfigReader
 

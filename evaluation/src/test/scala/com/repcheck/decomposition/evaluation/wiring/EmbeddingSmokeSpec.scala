@@ -3,7 +3,7 @@ package com.repcheck.decomposition.evaluation.wiring
 import cats.effect.unsafe.implicits.global
 
 import com.repcheck.decomposition.conformance.ConformanceContract
-import com.repcheck.decomposition.evaluation.metrics.EmbeddingMetrics
+import com.repcheck.decomposition.ml.metrics.EmbeddingMetrics
 import com.repcheck.utils.tags.E2ETest
 
 /**

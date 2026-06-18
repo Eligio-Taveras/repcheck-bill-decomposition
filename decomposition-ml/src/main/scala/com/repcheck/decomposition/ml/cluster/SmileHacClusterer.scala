@@ -1,9 +1,9 @@
-package com.repcheck.decomposition.evaluation.cluster
+package com.repcheck.decomposition.ml.cluster
 
 import smile.clustering.HierarchicalClustering
 import smile.clustering.linkage.{CompleteLinkage, Linkage, SingleLinkage, UPGMALinkage, WardLinkage}
 
-import com.repcheck.decomposition.evaluation.metrics.EmbeddingMetrics
+import com.repcheck.decomposition.ml.metrics.EmbeddingMetrics
 
 /**
  * Production-faithful clustering for bill decomposition (D3b's `ConceptClusterer`). The DP-0-validated pipeline lives
