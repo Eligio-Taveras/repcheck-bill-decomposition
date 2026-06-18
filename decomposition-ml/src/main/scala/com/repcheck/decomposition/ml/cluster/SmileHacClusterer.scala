@@ -41,9 +41,23 @@ object SmileHacClusterer {
     )
 
   /**
-   * Production blended proximity: `(1 - structureWeight) * baseDistance + structureWeight * gradedHierarchy`. Section
-   * embeddings must already be transformed per `config.transform` (standardization needs corpus/global stats, applied
-   * upstream — a single bill has no pooled statistics).
+   * Structural coverage: the fraction of sections carrying a non-empty parser breadcrumb. 0.0 for a fully FLAT bill (no
+   * hierarchy → the graded-hierarchy term is a constant and carries no signal), 1.0 when every section is nested.
+   */
+  def structuralCoverage(parents: IndexedSeq[List[String]]): Double =
+    if (parents.isEmpty) 0.0 else parents.count(_.nonEmpty).toDouble / parents.size
+
+  /**
+   * The structure weight actually applied: scaled by coverage when `adaptiveStructure`, else the configured constant.
+   */
+  def effectiveStructureWeight(parents: IndexedSeq[List[String]], config: ClusteringConfig): Double =
+    if (config.adaptiveStructure) config.structureWeight * structuralCoverage(parents) else config.structureWeight
+
+  /**
+   * Production blended proximity: `(1 - w) * baseDistance + w * gradedHierarchy`, where `w` is the
+   * [[effectiveStructureWeight]] (coverage-scaled under `adaptiveStructure`). Section embeddings must already be
+   * transformed per `config.transform` (standardization needs corpus/global stats, applied upstream — a single bill has
+   * no pooled statistics).
    */
   def blendedProximity(
     embeddings: IndexedSeq[Vector[Double]],
@@ -51,12 +65,13 @@ object SmileHacClusterer {
     config: ClusteringConfig,
   ): Array[Array[Double]] = {
     require(parents.sizeIs == embeddings.size, s"parents (${parents.size}) must match embeddings (${embeddings.size})")
+    val w = effectiveStructureWeight(parents, config)
     Array.tabulate(embeddings.size, embeddings.size)((i, j) =>
       if (i == j) 0.0
       else {
         val base = pointDistance(config.distance, embeddings(i), embeddings(j))
         val str  = structuralDistance(parents(i), parents(j), config.gradedHierarchy)
-        (1.0 - config.structureWeight) * base + config.structureWeight * str
+        (1.0 - w) * base + w * str
       }
     )
   }
@@ -145,7 +160,9 @@ object SmileHacClusterer {
   /**
    * The PRODUCTION entry point (D3b). Standardized section embeddings + their parser breadcrumbs + the bill's subject
    * count → a concept-group label per section. `subjectCount <= config.minK` (single-concept bill) returns one group;
-   * otherwise blend → HAC → guided cut. Embeddings must already be transformed per `config.transform`.
+   * otherwise blend → HAC → cut. The cut is silhouette-guided around the subject count, EXCEPT on a flat bill under
+   * `adaptiveCut` (coverage ≤ `flatCutCoverage`), where the silhouette is unreliable so we cut at the subject count
+   * directly. Embeddings must already be transformed per `config.transform`.
    */
   def cluster(
     embeddings: IndexedSeq[Vector[Double]],
@@ -156,13 +173,14 @@ object SmileHacClusterer {
     val n = embeddings.size
     if (n < 2) (0 until n).map(_ => 0).toVector
     else if (subjectCount <= config.minK) Vector.fill(n)(0)
-    else
-      guidedCut(
-        fitFromProximity(blendedProximity(embeddings, parents, config), config.linkage),
-        subjectCount,
-        config.guidedTolerance,
-        config.minK,
-      )
+    else {
+      val fitted = fitFromProximity(blendedProximity(embeddings, parents, config), config.linkage)
+      if (config.adaptiveCut && structuralCoverage(parents) <= config.flatCutCoverage)
+        fitted.cut(
+          subjectCount
+        ) // flat bill: trust the subject count, skip the silhouette (cut() clamps k≥n → singletons)
+      else guidedCut(fitted, subjectCount, config.guidedTolerance, config.minK)
+    }
   }
 
   /** Mean silhouette coefficient of `labels` under the precomputed distance matrix `dist`. */

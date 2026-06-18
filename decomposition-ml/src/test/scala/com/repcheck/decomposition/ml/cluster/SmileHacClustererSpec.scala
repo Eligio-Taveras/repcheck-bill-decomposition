@@ -75,4 +75,61 @@ class SmileHacClustererSpec extends ConformanceContract {
     SmileHacClusterer.cluster(IndexedSeq(va), noParents(1), 2, ClusteringConfig()) shouldBe Vector(0)
   }
 
+  "structuralCoverage" should "be the fraction of sections with a non-empty breadcrumb" in {
+    SmileHacClusterer.structuralCoverage(noParents(4)) shouldBe 0.0
+    SmileHacClusterer.structuralCoverage(IndexedSeq(List("T1"), List("T2"))) shouldBe 1.0
+    SmileHacClusterer.structuralCoverage(IndexedSeq(Nil, List("T1"), Nil, List("T2"))) shouldBe 0.5
+    SmileHacClusterer.structuralCoverage(IndexedSeq.empty) shouldBe 0.0
+  }
+
+  "effectiveStructureWeight" should "return the configured weight when adaptiveStructure is off" in {
+    val off = ClusteringConfig(structureWeight = 0.9, adaptiveStructure = false)
+    SmileHacClusterer.effectiveStructureWeight(noParents(3), off) shouldBe 0.9
+  }
+
+  it should "scale the weight by coverage when adaptiveStructure is on" in {
+    val cfg = ClusteringConfig(structureWeight = 0.9, adaptiveStructure = true)
+    SmileHacClusterer.effectiveStructureWeight(noParents(3), cfg) shouldBe 0.0 +- 1e-9 // flat → cosine
+    SmileHacClusterer.effectiveStructureWeight(IndexedSeq(List("T1"), List("T2")), cfg) shouldBe 0.9 +- 1e-9
+    SmileHacClusterer.effectiveStructureWeight(IndexedSeq(Nil, List("T1")), cfg) shouldBe 0.45 +- 1e-9 // half coverage
+  }
+
+  it should "make a flat bill's blended matrix the pure cosine distance when adaptive" in {
+    val embs = IndexedSeq(va, Vector(1.0, 1.0)) // cosine = 1/√2 → cosine distance ≈ 0.29289
+    SmileHacClusterer.blendedProximity(embs, noParents(2), ClusteringConfig(adaptiveStructure = true))(0)(1) shouldBe
+      0.29289322 +- 1e-6
+    // off: the constant structural term dominates the same flat pair
+    SmileHacClusterer.blendedProximity(embs, noParents(2), ClusteringConfig(adaptiveStructure = false))(0)(1) shouldBe
+      (0.1 * 0.29289322 + 0.9) +- 1e-6
+  }
+
+  "cluster with adaptiveCut" should "cut a FLAT bill at exactly subjectCount (skip the silhouette)" in {
+    // {0,1}{2,3} are the two natural cosine groups; the silhouette would pick k=2, but the subject count says 3.
+    val embs = IndexedSeq(va, va, vb, vb)
+    val cut  = ClusteringConfig(adaptiveCut = true)
+    SmileHacClusterer.cluster(embs, noParents(4), subjectCount = 3, cut).distinct.size shouldBe 3
+  }
+
+  it should "keep the guided cut on a hierarchical bill (coverage above the flat threshold)" in {
+    val embs    = IndexedSeq(va, va, vb, vb)
+    val parents = IndexedSeq(List("T1"), List("T1"), List("T2"), List("T2")) // coverage 1.0 → not flat
+    val cut     = ClusteringConfig(adaptiveCut = true)
+    SmileHacClusterer.cluster(embs, parents, subjectCount = 3, cut).distinct.size shouldBe 2 // guided picks natural k=2
+  }
+
+  it should "leave the guided cut unchanged when adaptiveCut is off" in {
+    val embs = IndexedSeq(va, va, vb, vb)
+    SmileHacClusterer
+      .cluster(embs, noParents(4), subjectCount = 3, ClusteringConfig(adaptiveCut = false))
+      .distinct
+      .size shouldBe 2
+  }
+
+  it should "not collapse a 2-section flat bill when subjectCount == n (k≥n → singletons, not one group)" in {
+    // regression guard: clamping k to n-1 would merge the two distinct concepts into one (ARI → 0)
+    val embs = IndexedSeq(va, vb)
+    SmileHacClusterer.cluster(embs, noParents(2), subjectCount = 2, ClusteringConfig(adaptiveCut = true)) shouldBe
+      Vector(0, 1)
+  }
+
 }

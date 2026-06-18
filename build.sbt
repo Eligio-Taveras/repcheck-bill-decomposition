@@ -129,6 +129,7 @@ lazy val decompositionMl = (project in file("decomposition-ml"))
     name := "decomposition-ml",
     libraryDependencies += "com.github.haifengl" % "smile-core" % "3.1.1",
     libraryDependencies ++= Dependencies.pureConfig,
+    libraryDependencies ++= Dependencies.circe, // parse the bundled standardization-stats artifact
     libraryDependencies ++= Seq(
       "org.scalatestplus" %% "scalacheck-1-17" % "3.2.18.0" % Test,
       "org.scalacheck"    %% "scalacheck"      % "1.17.0"   % Test
