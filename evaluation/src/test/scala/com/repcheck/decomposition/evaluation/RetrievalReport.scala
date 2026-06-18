@@ -9,10 +9,11 @@ import cats.effect.unsafe.implicits.global
 import cats.syntax.all._
 
 import com.repcheck.decomposition.conformance.{ConformanceContract, Corpus}
-import com.repcheck.decomposition.evaluation.cluster.{ClusteringConfig, SmileHacClusterer}
-import com.repcheck.decomposition.evaluation.embed.EmbeddingTransform
-import com.repcheck.decomposition.evaluation.metrics.{EmbeddingMetrics, RetrievalMetrics}
+import com.repcheck.decomposition.evaluation.metrics.RetrievalMetrics
 import com.repcheck.decomposition.evaluation.wiring.EmbeddingHarness
+import com.repcheck.decomposition.ml.cluster.{ClusteringConfig, SmileHacClusterer}
+import com.repcheck.decomposition.ml.embed.EmbeddingTransform
+import com.repcheck.decomposition.ml.metrics.EmbeddingMetrics
 import com.repcheck.decomposition.text.{DefaultSectionParser, TextFormat}
 import com.repcheck.utils.tags.E2ETest
 

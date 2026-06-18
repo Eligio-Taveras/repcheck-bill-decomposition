@@ -1,4 +1,4 @@
-package com.repcheck.decomposition.evaluation.metrics
+package com.repcheck.decomposition.ml.metrics
 
 /**
  * Intrinsic embedding-quality metrics (master §10b, validates the D10 model choice). Operate on section vectors + their
