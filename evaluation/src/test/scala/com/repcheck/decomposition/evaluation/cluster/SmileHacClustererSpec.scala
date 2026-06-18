@@ -4,47 +4,33 @@ import com.repcheck.decomposition.conformance.ConformanceContract
 
 class SmileHacClustererSpec extends ConformanceContract {
 
-  private val va = Vector(1.0, 0.0)
-  private val vb = Vector(0.0, 1.0)
+  private val va                                          = Vector(1.0, 0.0)
+  private val vb                                          = Vector(0.0, 1.0)
+  private val vc                                          = Vector(-1.0, 0.0)
+  private def noParents(n: Int): IndexedSeq[List[String]] = IndexedSeq.fill(n)(Nil)
 
-  "clusterAtThreshold" should "separate two tight, well-separated clusters" in {
-    // same-cluster cosine distance 0; cross-cluster 1.0 → its Smile merge height (2.0) > dMax 0.5 → two clusters
-    SmileHacClusterer.clusterAtThreshold(IndexedSeq(va, va, vb, vb), ClusteringConfig(dMax = 0.5)) shouldBe
-      Vector(0, 0, 1, 1)
+  "structuralDistance" should "grade by shared-prefix depth when graded" in {
+    SmileHacClusterer.structuralDistance(List("T1", "SubA"), List("T1", "SubA"), graded = true) shouldBe 0.0
+    SmileHacClusterer.structuralDistance(List("T1", "SubA"), List("T1", "SubB"), graded = true) shouldBe 0.5 +- 1e-9
+    SmileHacClusterer.structuralDistance(List("T1"), List("T2"), graded = true) shouldBe 1.0
   }
 
-  it should "merge everything under a high threshold (above Smile's top merge height)" in {
-    SmileHacClusterer.clusterAtThreshold(IndexedSeq(va, va, vb, vb), ClusteringConfig(dMax = 2.5)) shouldBe
-      Vector(0, 0, 0, 0)
+  it should "fall back to top-Title binary when not graded" in {
+    SmileHacClusterer.structuralDistance(List("T1", "SubA"), List("T1", "SubB"), graded = false) shouldBe 0.0
+    SmileHacClusterer.structuralDistance(List("T1"), List("T2"), graded = false) shouldBe 1.0
+    SmileHacClusterer.structuralDistance(Nil, Nil, graded = false) shouldBe 1.0
   }
 
-  it should "honor every configured linkage" in {
-    Seq("average", "complete", "single", "ward").foreach { lk =>
-      withClue(s"linkage=$lk: ") {
-        SmileHacClusterer
-          .clusterAtThreshold(IndexedSeq(va, va, vb, vb), ClusteringConfig(dMax = 0.5, linkage = lk))
-          .distinct
-          .size shouldBe 2
-      }
-    }
+  "blendedProximity" should "mix base distance and structure by structureWeight" in {
+    val cfg = ClusteringConfig(structureWeight = 0.9, gradedHierarchy = true)
+    val d   = SmileHacClusterer.blendedProximity(IndexedSeq(va, vb), IndexedSeq(List("T1"), List("T2")), cfg)
+    d(0)(1) shouldBe 1.0 +- 1e-9 // 0.1*cosineDist(1.0) + 0.9*structural(1.0)
+    d(0)(0) shouldBe 0.0
   }
 
-  it should "separate clusters under euclidean distance too" in {
-    SmileHacClusterer.clusterAtThreshold(
-      IndexedSeq(va, va, vb, vb),
-      ClusteringConfig(dMax = 0.5, distance = "euclidean"),
-    ) shouldBe
-      Vector(0, 0, 1, 1)
-  }
-
-  it should "leave every section a singleton when dMax is below all merge heights" in {
-    SmileHacClusterer.clusterAtThreshold(IndexedSeq(va, va, vb, vb), ClusteringConfig(dMax = -1.0)) shouldBe
-      Vector(0, 1, 2, 3)
-  }
-
-  it should "handle the degenerate n<2 cases" in {
-    SmileHacClusterer.clusterAtThreshold(IndexedSeq.empty, ClusteringConfig()) shouldBe Vector.empty[Int]
-    SmileHacClusterer.clusterAtThreshold(IndexedSeq(va), ClusteringConfig()) shouldBe Vector(0)
+  it should "reject a parents/embeddings size mismatch" in {
+    an[IllegalArgumentException] should be thrownBy
+      SmileHacClusterer.blendedProximity(IndexedSeq(va, vb), IndexedSeq(Nil), ClusteringConfig())
   }
 
   "fitFromProximity" should "cluster from a precomputed distance matrix" in {
@@ -63,35 +49,30 @@ class SmileHacClustererSpec extends ConformanceContract {
     f.heightForK(1) should be > f.heightForK(2) // one cluster needs a higher cut than two
   }
 
-  "clusterBySilhouette" should "recover two well-separated clusters" in {
-    SmileHacClusterer.clusterBySilhouette(IndexedSeq(va, va, vb, vb), ClusteringConfig(maxK = 3)) shouldBe
-      Vector(0, 0, 1, 1)
+  "guidedCut" should "pick the k that maximizes silhouette within the window" in {
+    val f = SmileHacClusterer.fit(IndexedSeq(va, va, vb, vb, vc, vc), ClusteringConfig())
+    SmileHacClusterer.guidedCut(f, guideK = 3, tolerance = 0.5, minK = 1).distinct.size shouldBe 3
   }
 
-  it should "recover three well-separated clusters" in {
-    val vc  = Vector(-1.0, 0.0)
-    val pts = IndexedSeq(va, va, vb, vb, vc, vc)
-    val out = SmileHacClusterer.clusterBySilhouette(pts, ClusteringConfig(maxK = 5))
-    out.distinct.size shouldBe 3
-    out shouldBe Vector(0, 0, 1, 1, 2, 2)
+  it should "collapse to one group when the guide count is at or below minK" in {
+    val f = SmileHacClusterer.fit(IndexedSeq(va, va, vb, vb), ClusteringConfig())
+    SmileHacClusterer.guidedCut(f, guideK = 1, tolerance = 0.3, minK = 1) shouldBe Vector(0, 0, 0, 0)
   }
 
-  it should "fall back to one cluster for fewer than three vectors" in {
-    SmileHacClusterer.clusterBySilhouette(IndexedSeq(va, vb), ClusteringConfig(maxK = 3)) shouldBe Vector(0, 0)
+  "cluster" should "separate concept groups via the production pipeline" in {
+    val embs    = IndexedSeq(va, va, vb, vb)
+    val parents = IndexedSeq(List("T1"), List("T1"), List("T2"), List("T2"))
+    SmileHacClusterer.cluster(embs, parents, subjectCount = 2, ClusteringConfig()) shouldBe Vector(0, 0, 1, 1)
   }
 
-  it should "not merge across dMax even when silhouette would (singletons above D_max)" in {
-    // dMax below every merge height forces kThresh = n > maxK → the dMax cut wins, all singletons
-    val pts = IndexedSeq(va, va, vb, vb, Vector(-1.0, 0.0), Vector(-1.0, 0.0))
-    SmileHacClusterer.clusterBySilhouette(pts, ClusteringConfig(dMax = -1.0, maxK = 5)) shouldBe Vector(0, 1, 2, 3, 4,
-      5)
+  it should "return one group for a single-subject bill" in {
+    SmileHacClusterer.cluster(IndexedSeq(va, va, vb, vb), noParents(4), subjectCount = 1, ClusteringConfig()) shouldBe
+      Vector(0, 0, 0, 0)
   }
 
-  it should "score partitions that contain a singleton cluster" in {
-    // {va,va,va} + lone vb — at k=2 the vb is a singleton, exercising the singleton silhouette branch
-    val out = SmileHacClusterer.clusterBySilhouette(IndexedSeq(va, va, va, vb), ClusteringConfig(maxK = 3))
-    out.distinct.size should be >= 2
-    out.groupBy(identity).values.map(_.size).toList should contain(1)
+  it should "handle the degenerate n<2 cases" in {
+    SmileHacClusterer.cluster(IndexedSeq.empty, IndexedSeq.empty, 2, ClusteringConfig()) shouldBe Vector.empty[Int]
+    SmileHacClusterer.cluster(IndexedSeq(va), noParents(1), 2, ClusteringConfig()) shouldBe Vector(0)
   }
 
 }
