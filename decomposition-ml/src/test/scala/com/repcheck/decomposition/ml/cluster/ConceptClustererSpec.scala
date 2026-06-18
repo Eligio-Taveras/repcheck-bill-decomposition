@@ -1,7 +1,7 @@
 package com.repcheck.decomposition.ml.cluster
 
 import com.repcheck.decomposition.conformance.ConformanceContract
-import com.repcheck.decomposition.ml.embed.Vector1024
+import com.repcheck.decomposition.ml.embed.{StandardizationStats, Vector1024}
 
 class ConceptClustererSpec extends ConformanceContract {
 
@@ -16,7 +16,10 @@ class ConceptClustererSpec extends ConformanceContract {
   private val parents: Vector[List[String]] =
     Vector(List("T1"), List("T1"), List("T2"), List("T2"))
 
-  private val clusterer: ConceptClusterer = HacConceptClusterer.production
+  // Identity stats (mean 0, std 1) so these assertions test grouping deterministically, independent of the real
+  // global-stats values; `production` (the bundled real stats) is exercised by the smoke test below.
+  private val identityStats = StandardizationStats(Vector.fill(Vector1024.Dim)(0.0), Vector.fill(Vector1024.Dim)(1.0))
+  private val clusterer: ConceptClusterer = new HacConceptClusterer(ClusteringConfig(), identityStats)
 
   "HacConceptClusterer" should "split two distinct groups at subjectCount = 2" in {
     val groups = clusterer.cluster(vectors, parents, subjectCount = 2)
@@ -37,6 +40,12 @@ class ConceptClustererSpec extends ConformanceContract {
   it should "order member indices ascending within each group" in {
     val groups = clusterer.cluster(vectors, parents, subjectCount = 2)
     groups.foreach(g => g.memberIndices shouldBe g.memberIndices.sorted)
+  }
+
+  "HacConceptClusterer.production" should "cluster with the bundled global stats and return a full partition" in {
+    val groups  = HacConceptClusterer.production.cluster(vectors, parents, subjectCount = 2)
+    val members = groups.flatMap(_.memberIndices)
+    members.sorted shouldBe vectors.indices.toList
   }
 
 }

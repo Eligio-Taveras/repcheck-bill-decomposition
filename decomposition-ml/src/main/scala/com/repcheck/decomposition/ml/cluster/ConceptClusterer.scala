@@ -1,6 +1,6 @@
 package com.repcheck.decomposition.ml.cluster
 
-import com.repcheck.decomposition.ml.embed.Vector1024
+import com.repcheck.decomposition.ml.embed.{EmbeddingTransform, StandardizationStats, Vector1024}
 
 /** A concept group: indices into the input section-vector list (the clustering granularity — one entry per section). */
 final case class Cluster(memberIndices: List[Int])
@@ -28,11 +28,16 @@ trait ConceptClusterer {
   def cluster(vectors: Vector[Vector1024], parents: Vector[List[String]], subjectCount: Int): List[Cluster]
 }
 
-/** Smile HAC implementation over the consolidated [[SmileHacClusterer.cluster]]. */
-final class HacConceptClusterer(config: ClusteringConfig) extends ConceptClusterer {
+/**
+ * Smile HAC implementation over the consolidated [[SmileHacClusterer.cluster]]. Owns the FULL validated transform: it
+ * standardizes each section vector with the global [[StandardizationStats]] (the anisotropy correction) before the cut.
+ * Callers pass raw 1024-dim embeddings — they cannot forget the standardization step, which is the footgun the global
+ * stats exist to prevent.
+ */
+final class HacConceptClusterer(config: ClusteringConfig, stats: StandardizationStats) extends ConceptClusterer {
 
   def cluster(vectors: Vector[Vector1024], parents: Vector[List[String]], subjectCount: Int): List[Cluster] = {
-    val embeddings = vectors.map(_.toDoubles)
+    val embeddings = vectors.map(v => EmbeddingTransform.standardize(v.toDoubles, stats.mean, stats.std))
     SmileHacClusterer
       .cluster(embeddings, parents, subjectCount, config)
       .zipWithIndex
@@ -46,7 +51,7 @@ final class HacConceptClusterer(config: ClusteringConfig) extends ConceptCluster
 
 object HacConceptClusterer {
 
-  /** Build with the DP-0-validated production defaults ([[ClusteringConfig]]). */
-  def production: HacConceptClusterer = new HacConceptClusterer(ClusteringConfig())
+  /** Build with the DP-0-validated production defaults ([[ClusteringConfig]]) + the bundled global stats. */
+  def production: HacConceptClusterer = new HacConceptClusterer(ClusteringConfig(), StandardizationStats.bundled)
 
 }
