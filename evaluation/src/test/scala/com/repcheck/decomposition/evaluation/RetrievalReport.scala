@@ -9,7 +9,7 @@ import cats.effect.unsafe.implicits.global
 import cats.syntax.all._
 
 import com.repcheck.decomposition.conformance.{ConformanceContract, Corpus}
-import com.repcheck.decomposition.evaluation.cluster.SmileHacClusterer
+import com.repcheck.decomposition.evaluation.cluster.{ClusteringConfig, SmileHacClusterer}
 import com.repcheck.decomposition.evaluation.embed.EmbeddingTransform
 import com.repcheck.decomposition.evaluation.metrics.{EmbeddingMetrics, RetrievalMetrics}
 import com.repcheck.decomposition.evaluation.wiring.EmbeddingHarness
@@ -31,7 +31,7 @@ class RetrievalReport extends ConformanceContract {
   private val EmbedChunk    = 64
   private val EmbedMaxChars = 4000
   private val CacheDir      = Paths.get("target", "embed-cache")
-  private val Alpha         = 0.1 // production blend: 0.1*cosine + 0.9*graded-hierarchy
+  private val ProdConfig = ClusteringConfig() // standardize-upstream + 0.1*cosine + 0.9*graded-hierarchy, avg linkage
 
   final private case class Sec(ref: SectionRef, emb: Vector[Double], parents: List[String])
   final private case class Bucket(sections: List[SectionRef], emb: Vector[Double])
@@ -72,23 +72,14 @@ class RetrievalReport extends ConformanceContract {
   private def subjectsOf(vid: String): List[String] =
     io.circe.parser.decode[SubjectsDoc](readResource(s"subjects/$vid.json")).fold(_ => Nil, _.subjects)
 
-  // ---- production graded-hierarchy blend (the DP0-5b winner), to FORM the decomposition groups ----
-  private def structuralDistance(a: List[String], b: List[String]): Double = {
-    val shared = a.zip(b).takeWhile { case (x, y) => x == y }.size
-    val depth  = math.max(a.size, b.size)
-    if (depth == 0) 1.0 else 1.0 - shared.toDouble / depth
-  }
-
+  // Form the decomposition groups via the consolidated PRODUCTION pipeline (blendedProximity = 0.1*cosine +
+  // 0.9*graded-hierarchy), but cut at EXACTLY k = subject count — the gate scores the production grouping at the
+  // reference granularity (guidedCut's robustness window is a separate, already-validated property).
   private def decompose(secs: IndexedSeq[Sec], k: Int): List[Bucket] =
     if (secs.sizeIs < 2) List(Bucket(secs.map(_.ref).toList, mean(secs.map(_.emb).toList)))
     else {
-      val blended = Array.tabulate(secs.size, secs.size)((i, j) =>
-        if (i == j) 0.0
-        else
-          Alpha * (1.0 - EmbeddingMetrics.cosine(secs(i).emb, secs(j).emb)) +
-            (1.0 - Alpha) * structuralDistance(secs(i).parents, secs(j).parents)
-      )
-      val labels = SmileHacClusterer.fitFromProximity(blended, "average").cut(math.max(1, k))
+      val blended = SmileHacClusterer.blendedProximity(secs.map(_.emb), secs.map(_.parents), ProdConfig)
+      val labels  = SmileHacClusterer.fitFromProximity(blended, ProdConfig.linkage).cut(math.max(1, k))
       labels.zipWithIndex
         .groupBy(_._1)
         .toList

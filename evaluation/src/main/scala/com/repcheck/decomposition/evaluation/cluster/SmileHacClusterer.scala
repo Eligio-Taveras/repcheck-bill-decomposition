@@ -6,24 +6,60 @@ import smile.clustering.linkage.{CompleteLinkage, Linkage, SingleLinkage, UPGMAL
 import com.repcheck.decomposition.evaluation.metrics.EmbeddingMetrics
 
 /**
- * Production-faithful clustering for the DP0-5 PREDICTION: Smile's hierarchical agglomerative clustering over cosine
- * distance — exactly what the production `ConceptClusterer` (D3b) will use, so the [[ClusteringConfig]] tuned here
- * transfers literally. Every knob (linkage, `D_max`, the silhouette k-range) comes from [[ClusteringConfig]]; nothing
- * is hardcoded. Two cut strategies mirror the production switch: a fixed-height cut (`D_max`, tight bills) and a
- * silhouette-maximizing cut (omnibus bills).
+ * Production-faithful clustering for bill decomposition (D3b's `ConceptClusterer`). The DP-0-validated pipeline lives
+ * in [[cluster]]: blend a base section distance with the graded parser-hierarchy, run Smile HAC, and cut at the subject
+ * count guided by silhouette. Every knob comes from [[ClusteringConfig]] (the tuned production values). The lower-level
+ * [[fit]] / [[Fitted]] primitives remain for the DP0 evaluation sweeps.
  */
 object SmileHacClusterer {
 
   private def pointDistance(name: String, a: Vector[Double], b: Vector[Double]): Double =
     name.toLowerCase match {
       case "euclidean" => math.sqrt(a.lazyZip(b).map((x, y) => (x - y) * (x - y)).sum)
-      case _           => 1.0 - EmbeddingMetrics.cosine(a, b) // cosine distance — D6/D10 default
+      case _           => 1.0 - EmbeddingMetrics.cosine(a, b) // cosine distance — production default
     }
+
+  /**
+   * Graded hierarchy distance: 0 when two sections share the full parser breadcrumb, 1 when they share nothing, graded
+   * by shared-prefix depth in between (the DP0-5b winner — the single biggest non-LLM lever, esp. on omnibus bills).
+   * `graded=false` reproduces the legacy top-level-Title binary distance.
+   */
+  def structuralDistance(a: List[String], b: List[String], graded: Boolean): Double =
+    if (graded) {
+      val shared = a.zip(b).takeWhile { case (x, y) => x == y }.size
+      val depth  = math.max(a.size, b.size)
+      if (depth == 0) 1.0 else 1.0 - shared.toDouble / depth
+    } else
+      (a.headOption, b.headOption) match {
+        case (Some(x), Some(y)) if x == y => 0.0
+        case _                            => 1.0
+      }
 
   private def proximity(vectors: IndexedSeq[Vector[Double]], distance: String): Array[Array[Double]] =
     Array.tabulate(vectors.size, vectors.size)((i, j) =>
       if (i == j) 0.0 else pointDistance(distance, vectors(i), vectors(j))
     )
+
+  /**
+   * Production blended proximity: `(1 - structureWeight) * baseDistance + structureWeight * gradedHierarchy`. Section
+   * embeddings must already be transformed per `config.transform` (standardization needs corpus/global stats, applied
+   * upstream — a single bill has no pooled statistics).
+   */
+  def blendedProximity(
+    embeddings: IndexedSeq[Vector[Double]],
+    parents: IndexedSeq[List[String]],
+    config: ClusteringConfig,
+  ): Array[Array[Double]] = {
+    require(parents.sizeIs == embeddings.size, s"parents (${parents.size}) must match embeddings (${embeddings.size})")
+    Array.tabulate(embeddings.size, embeddings.size)((i, j) =>
+      if (i == j) 0.0
+      else {
+        val base = pointDistance(config.distance, embeddings(i), embeddings(j))
+        val str  = structuralDistance(parents(i), parents(j), config.gradedHierarchy)
+        (1.0 - config.structureWeight) * base + config.structureWeight * str
+      }
+    )
+  }
 
   private def linkageOf(name: String, prox: Array[Array[Double]]): Linkage =
     name.toLowerCase match {
@@ -41,7 +77,7 @@ object SmileHacClusterer {
 
   /**
    * A fitted dendrogram — the expensive part (proximity matrix + linkage + Smile fit) done ONCE per bill. Cuts are
-   * cheap, so a dMax sweep re-cuts the same tree instead of refitting. Built via [[fit]].
+   * cheap, so an evaluation sweep re-cuts the same tree instead of refitting. Built via [[fit]] / [[fitFromProximity]].
    */
   final class Fitted private[SmileHacClusterer] (
     hc: HierarchicalClustering,
@@ -50,8 +86,8 @@ object SmileHacClusterer {
   ) {
     private val heights: Array[Double] = hc.height()
 
-    /** Cluster count implied by cutting at height `dMax` (the dMax-ceiling count). */
-    def kThreshold(dMax: Double): Int = n - heights.count(_ <= dMax)
+    /** Cluster count implied by cutting at merge height `h` (the height-ceiling count). */
+    def kThreshold(h: Double): Int = n - heights.count(_ <= h)
 
     /** Partition into k clusters. k ≤ 1 → one cluster; k ≥ n → all singletons (both reject Smile's partition(int)). */
     def cut(k: Int): Vector[Int] =
@@ -59,13 +95,10 @@ object SmileHacClusterer {
       else if (k >= n) (0 until n).toVector
       else renumber(hc.partition(k).toIndexedSeq)
 
-    /** Mean silhouette of the k-cluster partition (dMax-independent, so a sweep computes each k at most once). */
+    /** Mean silhouette of the k-cluster partition (height-independent, so a sweep computes each k at most once). */
     def silhouetteAt(k: Int): Double = silhouette(dist, hc.partition(k).toIndexedSeq)
 
-    /**
-     * The cut height (dMax) that yields k clusters: the largest merge height retained. Lets us read off the subjects →
-     * dMax mapping when we cut directly at k = subjectCount.
-     */
+    /** The cut height that yields k clusters: the largest merge height retained. */
     def heightForK(k: Int): Double =
       if (k <= 1) if (heights.isEmpty) 0.0 else heights(heights.length - 1)
       else if (k >= n) 0.0
@@ -80,47 +113,56 @@ object SmileHacClusterer {
     new Fitted(hc, dist, vectors.size)
   }
 
-  /** Fit from a precomputed (e.g. structure-blended) distance matrix. The matrix is the silhouette distance too. */
+  /** Fit from a precomputed (e.g. blended) distance matrix. The matrix is the silhouette distance too. */
   def fitFromProximity(dist: Array[Array[Double]], linkage: String): Fitted = {
     val hc = HierarchicalClustering.fit(linkageOf(linkage, dist.map(_.clone)))
     new Fitted(hc, dist, dist.length)
   }
 
   /**
-   * Cut the dendrogram at height `config.dMax`: sections only merge while their linkage distance ≤ `dMax`; anything
-   * farther stays its own cluster (the "singletons above D_max" rule).
+   * Guided cut — the subject count is a GUIDE, not an exact split. Search k within ±`tolerance` of `guideK` and let the
+   * silhouette pick the natural k (a window keeps it from collapsing to k=2 and degrades gracefully when the count is
+   * over/under-stated). `guideK <= minK` collapses to one group (the single-concept guard).
    */
-  def clusterAtThreshold(vectors: IndexedSeq[Vector[Double]], config: ClusteringConfig): Vector[Int] =
-    if (vectors.sizeIs < 2) vectors.indices.toVector
+  def guidedCut(fitted: Fitted, guideK: Int, tolerance: Double, minK: Int): Vector[Int] =
+    if (guideK <= minK) fitted.cut(1)
     else {
-      val f = fit(vectors, config)
-      f.cut(f.kThreshold(config.dMax))
+      val lo = math.max(2, math.round(guideK * (1.0 - tolerance)).toInt)
+      val hi = math.min(fitted.n - 1, math.round(guideK * (1.0 + tolerance)).toInt)
+      if (lo > hi) fitted.cut(guideK)
+      else
+        fitted.cut(
+          (lo to hi)
+            .foldLeft((Double.NegativeInfinity, lo)) {
+              case ((bestS, bestK), k) =>
+                val s = fitted.silhouetteAt(k)
+                if (s > bestS) (s, k) else (bestS, bestK)
+            }
+            ._2
+        )
     }
 
   /**
-   * Cut at the k that maximizes the mean silhouette, but never merge across `config.dMax`: k is floored at
-   * `kThreshold(dMax)`, so sections farther than dMax stay split -- the production "singletons above D_max" rule on the
-   * omnibus branch too. If dMax forces more clusters than maxK allows, the dMax cut wins.
+   * The PRODUCTION entry point (D3b). Standardized section embeddings + their parser breadcrumbs + the bill's subject
+   * count → a concept-group label per section. `subjectCount <= config.minK` (single-concept bill) returns one group;
+   * otherwise blend → HAC → guided cut. Embeddings must already be transformed per `config.transform`.
    */
-  def clusterBySilhouette(vectors: IndexedSeq[Vector[Double]], config: ClusteringConfig): Vector[Int] = {
-    val n = vectors.size
-    if (n < 3) clusterAtThreshold(vectors, config.copy(dMax = Double.MaxValue))
-    else {
-      val f     = fit(vectors, config)
-      val lower = math.max(math.max(2, config.minK), f.kThreshold(config.dMax))
-      val upper = math.min(config.maxK, n - 1)
-      if (lower > upper) f.cut(f.kThreshold(config.dMax)) // dMax forces a finer cut than maxK allows
-      else {
-        val bestK = (lower to upper)
-          .foldLeft((Double.NegativeInfinity, lower)) {
-            case ((bestS, bestK), k) =>
-              val s = f.silhouetteAt(k)
-              if (s > bestS) (s, k) else (bestS, bestK)
-          }
-          ._2
-        f.cut(bestK)
-      }
-    }
+  def cluster(
+    embeddings: IndexedSeq[Vector[Double]],
+    parents: IndexedSeq[List[String]],
+    subjectCount: Int,
+    config: ClusteringConfig,
+  ): Vector[Int] = {
+    val n = embeddings.size
+    if (n < 2) (0 until n).map(_ => 0).toVector
+    else if (subjectCount <= config.minK) Vector.fill(n)(0)
+    else
+      guidedCut(
+        fitFromProximity(blendedProximity(embeddings, parents, config), config.linkage),
+        subjectCount,
+        config.guidedTolerance,
+        config.minK,
+      )
   }
 
   /** Mean silhouette coefficient of `labels` under the precomputed distance matrix `dist`. */
