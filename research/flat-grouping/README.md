@@ -44,6 +44,16 @@ Both models retrain deterministically from the gold. The MLP variant was tested 
 - `tfidf_embed_cluster.py` — TF-IDF vs whole-section vs TF-IDF-terms→embed clustering.
 - `cutfeat.py`, `cutfit.py`, `cutsearch.py`, `fitcut.py` — cut-count formula exploration (`n^0.75`); retired in favor of the supervised merge-stop.
 - `omni_section_test.py` — omnibus sprawl / section=concept test.
+- `export_models.py` — **productionization**: retrains the shipped affinity + merge-stop models on all
+  405 flat bills and writes the JSON artifacts consumed by the Scala port
+  (`decomposition-ml/src/main/resources/flat-grouping/*-v1.json`) plus the parity fixture used by
+  `FlatSectionClustererParitySpec`. Re-run this to regenerate the artifacts.
+
+## Production port
+The validated pipeline is implemented in Scala under
+`decomposition-ml/src/main/scala/com/repcheck/decomposition/ml/cluster/flat/` (`FlatSectionClusterer`
++ single-responsibility helpers). It loads the bundled artifacts and reproduces the Python reference
+clustering exactly (parity ARI 1.0 in `FlatSectionClustererParitySpec`).
 
 ## Data
 The 406-bill Sonnet-labeled gold + parsed sections + raw corpus + cached embeddings live in GCS
