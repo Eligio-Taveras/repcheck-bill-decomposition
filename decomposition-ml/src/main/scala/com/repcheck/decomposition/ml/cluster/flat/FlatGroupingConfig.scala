@@ -11,5 +11,11 @@ final case class FlatGroupingConfig(
   // A bill with more sections than this skips the more expensive "vetoed" agglomeration and uses the
   // cheaper sequential stop, keeping run time bounded on rare oversized bills. Flat bills almost
   // always have only a handful of sections, so this guard rarely triggers.
-  maxVetoedSections: Int = 40
+  maxVetoedSections: Int = FlatGroupingConfig.DefaultMaxVetoedSections
 ) derives ConfigReader
+
+object FlatGroupingConfig {
+
+  /** Section count above which the clusterer uses the O(n^3) sequential fallback instead of vetoed agglomeration. */
+  val DefaultMaxVetoedSections: Int = 40
+}

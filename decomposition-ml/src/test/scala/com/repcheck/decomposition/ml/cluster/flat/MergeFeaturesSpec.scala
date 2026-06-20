@@ -14,7 +14,7 @@ class MergeFeaturesSpec extends com.repcheck.decomposition.conformance.Conforman
 
   "describeMerge" should "produce thirteen features in the documented order" in {
     val features = MergeFeatures.describeMerge(context, List(0), List(1), nextBestAffinity = 0.5)
-    features.size shouldBe 13
+    features.size shouldBe FlatGroupingArtifacts.MergeStopFeatureCount
     math.abs(features(0) - 0.9) should be < 1e-9          // 0  mean cross affinity = matrix(0)(1)
     math.abs(features(1) - (0.9 - 0.5)) should be < 1e-9  // 1  margin over next-best
     features(2) shouldBe 0.25                             // 2  min size / n
