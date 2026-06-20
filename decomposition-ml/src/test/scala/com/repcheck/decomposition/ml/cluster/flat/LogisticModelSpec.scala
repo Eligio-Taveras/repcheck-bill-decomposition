@@ -28,4 +28,12 @@ class LogisticModelSpec extends com.repcheck.decomposition.conformance.Conforman
     LogisticModel.logistic(-1000.0) should be < 0.000001
   }
 
+  it should "treat a zero-variance feature as contributing nothing" in {
+    val model = LogisticModel
+      .of(Vector("x"), Vector(2.0), 0.0, Vector(0.0), Vector(0.0), 1)
+      .toOption
+      .getOrElse(fail("model should build"))
+    model.predict(Vector(5.0)) shouldBe 0.5 // sd == 0 → standardized 0 → logit 0 → logistic(0) = 0.5
+  }
+
 }

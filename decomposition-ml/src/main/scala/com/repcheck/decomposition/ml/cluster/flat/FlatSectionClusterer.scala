@@ -68,14 +68,10 @@ final class FlatSectionClusterer(
   private def sequentialStop(context: SectionContext, clusters: Vector[List[Int]]): Vector[List[Int]] =
     if (clusters.sizeIs <= 1) clusters
     else {
+      // clusters.size > 1 guarantees sortedClusterPairs is non-empty, so rankedPairs(0) is the most-similar pair.
       val rankedPairs = sortedClusterPairs(context, clusters)
-      rankedPairs.headOption match {
-        // Two or more clusters always produce at least one pair; None is unreachable but handled totally.
-        case None => clusters
-        case Some(topPair) =>
-          if (!endorsesMerge(context, clusters, rankedPairs, 0)) clusters
-          else sequentialStop(context, mergeClusters(clusters, topPair.leftIndex, topPair.rightIndex))
-      }
+      if (!endorsesMerge(context, clusters, rankedPairs, 0)) clusters
+      else sequentialStop(context, mergeClusters(clusters, rankedPairs(0).leftIndex, rankedPairs(0).rightIndex))
     }
 
   /** All current cluster pairs scored by average-linkage affinity, most-similar first (stable ties). */

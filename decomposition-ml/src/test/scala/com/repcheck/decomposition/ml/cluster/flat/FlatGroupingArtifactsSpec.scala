@@ -44,4 +44,13 @@ class FlatGroupingArtifactsSpec extends com.repcheck.decomposition.conformance.C
     }
   }
 
+  "orThrow" should "throw when the load result is a Left" in {
+    a[RuntimeException] should be thrownBy FlatGroupingArtifacts.orThrow(Left("simulated failure"))
+  }
+
+  it should "return the artifacts when the load result is a Right" in {
+    val loaded = FlatGroupingArtifacts.bundled
+    FlatGroupingArtifacts.orThrow(Right(loaded)) shouldBe loaded
+  }
+
 }

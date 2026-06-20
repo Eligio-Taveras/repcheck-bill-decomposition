@@ -32,4 +32,8 @@ class VectorSimilaritySpec extends com.repcheck.decomposition.conformance.Confor
     VectorSimilarity.cosineSparse(Map("a" -> 1.0), Map("b" -> 1.0)) shouldBe 0.0
   }
 
+  it should "be 0 when one sparse vector is empty (zero norm)" in {
+    VectorSimilarity.cosineSparse(Map.empty[String, Double], Map("a" -> 1.0)) shouldBe 0.0
+  }
+
 }

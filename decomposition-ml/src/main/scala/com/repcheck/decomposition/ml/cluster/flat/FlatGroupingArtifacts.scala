@@ -83,9 +83,12 @@ object FlatGroupingArtifacts {
       idf           <- parseIdf(idfJson)
     } yield FlatGroupingArtifacts(affinity._1, mergeStop._1, idf, affinity._2, mergeStop._2)
 
+  /** Unwrap a load result or fail hard (a packaging invariant). Package-private so the failure path is testable. */
+  private[flat] def orThrow(result: Either[String, FlatGroupingArtifacts]): FlatGroupingArtifacts =
+    result.valueOr(error => sys.error(s"flat-grouping artifacts unusable: $error"))
+
   /** Load the committed artifacts; fails hard if a bundled resource is missing or malformed. */
   def bundled: FlatGroupingArtifacts =
-    fromResources(AffinityResource, MergeStopResource, IdfResource)
-      .valueOr(error => sys.error(s"bundled flat-grouping artifacts unusable: $error"))
+    orThrow(fromResources(AffinityResource, MergeStopResource, IdfResource))
 
 }
