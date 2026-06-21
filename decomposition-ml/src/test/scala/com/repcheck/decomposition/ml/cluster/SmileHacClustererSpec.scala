@@ -59,20 +59,25 @@ class SmileHacClustererSpec extends ConformanceContract {
     SmileHacClusterer.guidedCut(f, guideK = 1, tolerance = 0.3, minK = 1) shouldBe Vector(0, 0, 0, 0)
   }
 
-  "cluster" should "separate concept groups via the production pipeline" in {
-    val embs    = IndexedSeq(va, va, vb, vb)
-    val parents = IndexedSeq(List("T1"), List("T1"), List("T2"), List("T2"))
-    SmileHacClusterer.cluster(embs, parents, subjectCount = 2, ClusteringConfig()) shouldBe Vector(0, 0, 1, 1)
+  "silhouetteCut" should "cut at the silhouette-optimal k (three clear groups → k=3)" in {
+    val f = SmileHacClusterer.fit(IndexedSeq(va, va, vb, vb, vc, vc), ClusteringConfig())
+    SmileHacClusterer.silhouetteCut(f) shouldBe Vector(0, 0, 1, 1, 2, 2)
   }
 
-  it should "return one group for a single-subject bill" in {
-    SmileHacClusterer.cluster(IndexedSeq(va, va, vb, vb), noParents(4), subjectCount = 1, ClusteringConfig()) shouldBe
-      Vector(0, 0, 0, 0)
+  it should "split the two distinct sections of an n=2 bill" in {
+    val f = SmileHacClusterer.fit(IndexedSeq(va, vb), ClusteringConfig())
+    SmileHacClusterer.silhouetteCut(f) shouldBe Vector(0, 1)
+  }
+
+  "cluster" should "separate concept groups via the omnibus silhouette-cut pipeline" in {
+    val embs    = IndexedSeq(va, va, vb, vb)
+    val parents = IndexedSeq(List("T1"), List("T1"), List("T2"), List("T2"))
+    SmileHacClusterer.cluster(embs, parents, ClusteringConfig()) shouldBe Vector(0, 0, 1, 1)
   }
 
   it should "handle the degenerate n<2 cases" in {
-    SmileHacClusterer.cluster(IndexedSeq.empty, IndexedSeq.empty, 2, ClusteringConfig()) shouldBe Vector.empty[Int]
-    SmileHacClusterer.cluster(IndexedSeq(va), noParents(1), 2, ClusteringConfig()) shouldBe Vector(0)
+    SmileHacClusterer.cluster(IndexedSeq.empty, IndexedSeq.empty, ClusteringConfig()) shouldBe Vector.empty[Int]
+    SmileHacClusterer.cluster(IndexedSeq(va), noParents(1), ClusteringConfig()) shouldBe Vector(0)
   }
 
   "structuralCoverage" should "be the fraction of sections with a non-empty breadcrumb" in {
@@ -101,35 +106,6 @@ class SmileHacClustererSpec extends ConformanceContract {
     // off: the constant structural term dominates the same flat pair
     SmileHacClusterer.blendedProximity(embs, noParents(2), ClusteringConfig(adaptiveStructure = false))(0)(1) shouldBe
       (0.1 * 0.29289322 + 0.9) +- 1e-6
-  }
-
-  "cluster with adaptiveCut" should "cut a FLAT bill at exactly subjectCount (skip the silhouette)" in {
-    // {0,1}{2,3} are the two natural cosine groups; the silhouette would pick k=2, but the subject count says 3.
-    val embs = IndexedSeq(va, va, vb, vb)
-    val cut  = ClusteringConfig(adaptiveCut = true)
-    SmileHacClusterer.cluster(embs, noParents(4), subjectCount = 3, cut).distinct.size shouldBe 3
-  }
-
-  it should "keep the guided cut on a hierarchical bill (coverage above the flat threshold)" in {
-    val embs    = IndexedSeq(va, va, vb, vb)
-    val parents = IndexedSeq(List("T1"), List("T1"), List("T2"), List("T2")) // coverage 1.0 → not flat
-    val cut     = ClusteringConfig(adaptiveCut = true)
-    SmileHacClusterer.cluster(embs, parents, subjectCount = 3, cut).distinct.size shouldBe 2 // guided picks natural k=2
-  }
-
-  it should "leave the guided cut unchanged when adaptiveCut is off" in {
-    val embs = IndexedSeq(va, va, vb, vb)
-    SmileHacClusterer
-      .cluster(embs, noParents(4), subjectCount = 3, ClusteringConfig(adaptiveCut = false))
-      .distinct
-      .size shouldBe 2
-  }
-
-  it should "not collapse a 2-section flat bill when subjectCount == n (k≥n → singletons, not one group)" in {
-    // regression guard: clamping k to n-1 would merge the two distinct concepts into one (ARI → 0)
-    val embs = IndexedSeq(va, vb)
-    SmileHacClusterer.cluster(embs, noParents(2), subjectCount = 2, ClusteringConfig(adaptiveCut = true)) shouldBe
-      Vector(0, 1)
   }
 
 }
