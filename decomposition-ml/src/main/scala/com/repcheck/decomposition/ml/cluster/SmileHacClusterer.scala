@@ -6,10 +6,12 @@ import smile.clustering.linkage.{CompleteLinkage, Linkage, SingleLinkage, UPGMAL
 import com.repcheck.decomposition.ml.metrics.EmbeddingMetrics
 
 /**
- * Production-faithful clustering for bill decomposition (D3b's `ConceptClusterer`). The DP-0-validated pipeline lives
- * in [[cluster]]: blend a base section distance with the graded parser-hierarchy, run Smile HAC, and cut at the subject
- * count guided by silhouette. Every knob comes from [[ClusteringConfig]] (the tuned production values). The lower-level
- * [[fit]] / [[Fitted]] primitives remain for the DP0 evaluation sweeps.
+ * Production clustering for OMNIBUS / hierarchical bills (D3b). The validated pipeline lives in [[cluster]]: blend a
+ * base section distance with the graded parser-hierarchy, run Smile HAC, and cut at the silhouette-optimal k
+ * ([[silhouetteCut]]) — no external guide. FLAT bills (no hierarchy) use the logistic-regression
+ * [[com.repcheck.decomposition.ml.cluster.flat.FlatSectionClusterer]] instead; [[RoutingConceptClusterer]] dispatches
+ * between the two by structural coverage. Every knob comes from [[ClusteringConfig]] (the tuned production values). The
+ * lower-level [[fit]] / [[Fitted]] / [[guidedCut]] primitives remain for the DP0 evaluation sweeps.
  */
 object SmileHacClusterer {
 
@@ -158,29 +160,43 @@ object SmileHacClusterer {
     }
 
   /**
-   * The PRODUCTION entry point (D3b). Standardized section embeddings + their parser breadcrumbs + the bill's subject
-   * count → a concept-group label per section. `subjectCount <= config.minK` (single-concept bill) returns one group;
-   * otherwise blend → HAC → cut. The cut is silhouette-guided around the subject count, EXCEPT on a flat bill under
-   * `adaptiveCut` (coverage ≤ `flatCutCoverage`), where the silhouette is unreliable so we cut at the subject count
-   * directly. Embeddings must already be transformed per `config.transform`.
+   * Omnibus cut: partition at the silhouette-optimal k — argmax mean silhouette over k ∈ [2, n-1], chosen entirely from
+   * the dendrogram's own geometry (no external guide). The validated omnibus strategy: held-out ARI ~0.53 on 71
+   * Sonnet-labeled omnibus bills — the deterministic ceiling (finer splits are semantic, not geometric). `n <= 2` → the
+   * only possible non-trivial cut (k=2; `cut` clamps k≥n → singletons, so n=0/1 stay degenerate). FLAT bills use the
+   * logistic-regression [[com.repcheck.decomposition.ml.cluster.flat.FlatSectionClusterer]] instead, dispatched by
+   * [[RoutingConceptClusterer]].
+   */
+  def silhouetteCut(fitted: Fitted): Vector[Int] = {
+    val n = fitted.n
+    if (n <= 2) fitted.cut(2)
+    else
+      fitted.cut(
+        (2 to n - 1)
+          .foldLeft((Double.NegativeInfinity, 2)) {
+            case ((bestScore, bestK), k) =>
+              val s = fitted.silhouetteAt(k)
+              if (s > bestScore) (s, k) else (bestScore, bestK)
+          }
+          ._2
+      )
+  }
+
+  /**
+   * The OMNIBUS production entry point (D3b): standardized section embeddings + their parser breadcrumbs → a
+   * concept-group label per section, cutting the graded-hierarchy dendrogram at the [[silhouetteCut]] k. No subject
+   * count — the Congress.gov subjects were rejected, and the silhouette finds the cut from the structure itself. FLAT
+   * bills (no hierarchy) are routed to the logistic-regression clusterer upstream by [[RoutingConceptClusterer]]; this
+   * path assumes structural coverage > 0. Embeddings must already be transformed per `config.transform`.
    */
   def cluster(
     embeddings: IndexedSeq[Vector[Double]],
     parents: IndexedSeq[List[String]],
-    subjectCount: Int,
     config: ClusteringConfig,
   ): Vector[Int] = {
     val n = embeddings.size
     if (n < 2) (0 until n).map(_ => 0).toVector
-    else if (subjectCount <= config.minK) Vector.fill(n)(0)
-    else {
-      val fitted = fitFromProximity(blendedProximity(embeddings, parents, config), config.linkage)
-      if (config.adaptiveCut && structuralCoverage(parents) <= config.flatCutCoverage)
-        fitted.cut(
-          subjectCount
-        ) // flat bill: trust the subject count, skip the silhouette (cut() clamps k≥n → singletons)
-      else guidedCut(fitted, subjectCount, config.guidedTolerance, config.minK)
-    }
+    else silhouetteCut(fitFromProximity(blendedProximity(embeddings, parents, config), config.linkage))
   }
 
   /** Mean silhouette coefficient of `labels` under the precomputed distance matrix `dist`. */
