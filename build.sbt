@@ -76,7 +76,7 @@ lazy val commonSettings = Seq(
 )
 
 lazy val root = (project in file("."))
-  .aggregate(textStructure, conformance, decompositionMl, evaluation, docGenerator)
+  .aggregate(textStructure, conformance, decompositionMl, evaluation, billDecompositionPipeline, docGenerator)
   .settings(
     commonSettings,
     name := "repcheck-bill-decomposition-root",
@@ -159,6 +159,24 @@ lazy val evaluation = (project in file("evaluation"))
         "com.anthropic"      % "anthropic-java"     % "2.18.0" // DP0-4b: Claude concept judge (reference groupings)
       )
     ).map(_ % Test)
+  )
+
+// bill-decomposition-pipeline — Component 10.4 decomposition ORCHESTRATOR: a Cloud Run Job IOApp that
+// subscribes to `bill.text.ingested`, runs the validated chain (deterministic parse → qwen3 embed →
+// RoutingConceptClusterer → Haiku summarize+stance-tag → single-txn persist) and emits
+// `bill.decomposition.completed`. The DP-0/DP-7-validated design SUPERSEDES the stale votr 10.4 spec —
+// see docs/architecture/adr/ADR-001-decomposition-orchestrator-vs-10.4.md.
+// Slice 1 = compiling scaffold (App shell + config + ADR). orchestration/persistence/llm/embed/events/
+// subscription logic + the GitHub-Packages libs (shared-models/pipeline-models/llm-adapter/embedding/
+// ingestion-common) land in slices 4–8, with their resolvers added when first consumed.
+lazy val billDecompositionPipeline = (project in file("bill-decomposition-pipeline"))
+  .dependsOn(textStructure, decompositionMl)
+  .settings(
+    commonSettings,
+    name := "bill-decomposition-pipeline",
+    libraryDependencies ++=
+      Dependencies.catsEffect ++ Dependencies.pureConfig ++ Dependencies.circe ++ Dependencies.logging,
+    libraryDependencies += "org.typelevel" %% "cats-effect-testing-scalatest" % "1.5.0" % Test
   )
 
 lazy val docGenerator = (project in file("doc-generator"))
