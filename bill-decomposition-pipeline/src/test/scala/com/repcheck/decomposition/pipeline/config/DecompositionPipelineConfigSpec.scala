@@ -9,7 +9,6 @@ class DecompositionPipelineConfigSpec extends AnyFlatSpec with Matchers {
 
   private val config: DecompositionPipelineConfig =
     ConfigSource.default
-      .at("decomposition-pipeline")
       .load[DecompositionPipelineConfig]
       .fold(failures => fail(failures.prettyPrint()), identity)
 
@@ -18,6 +17,7 @@ class DecompositionPipelineConfigSpec extends AnyFlatSpec with Matchers {
     config.ollama.embeddingModel shouldBe "qwen3-embedding:0.6b" // DP-7 validated embedder
     config.decompositionSnapshotVersion shouldBe "v1"
     config.maxSectionsPerBill shouldBe 500
+    config.claude.maxTokens shouldBe 8192 // sized for the 6-field stance schema (DP-7: 2048 truncated)
     config.pubsub.completedTopicId shouldBe "bill-decomposition-completed"
   }
 

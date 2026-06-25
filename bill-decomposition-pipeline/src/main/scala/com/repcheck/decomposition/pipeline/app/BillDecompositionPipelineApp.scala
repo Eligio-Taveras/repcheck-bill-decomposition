@@ -23,13 +23,14 @@ object BillDecompositionPipelineApp extends IOApp.Simple {
   def run: IO[Unit] = runPipeline(loadConfig())
 
   /**
-   * Load + validate config from the `decomposition-pipeline` namespace; fail fast with a readable message. The `source`
-   * is injectable so the failure path is testable (production passes `ConfigSource.default`).
+   * Load + validate config from the classpath `application.conf` (defaults baked into the jar; every
+   * environment-specific value is overridden by a `${?ENV_VAR}` set on the Cloud Run Job, with secrets from Secret
+   * Manager — see the header of `application.conf`). Fails fast with a readable message. The `source` is injectable so
+   * the failure path is testable (production passes `ConfigSource.default`).
    */
   private[app] def loadConfig(source: ConfigSource = ConfigSource.default): IO[DecompositionPipelineConfig] =
     IO.fromEither(
       source
-        .at("decomposition-pipeline")
         .load[DecompositionPipelineConfig]
         .leftMap(failures =>
           new IllegalArgumentException(s"invalid decomposition-pipeline config:\n${failures.prettyPrint()}")

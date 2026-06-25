@@ -30,7 +30,7 @@ class BillDecompositionPipelineAppSpec extends AsyncFreeSpec with AsyncIOSpec wi
     }
 
     "fails fast on a config missing required fields" in {
-      val incomplete = ConfigSource.string("decomposition-pipeline { parallelism = 1 }")
+      val incomplete = ConfigSource.string("parallelism = 1")
       BillDecompositionPipelineApp.loadConfig(incomplete).attempt.asserting(_.isLeft shouldBe true)
     }
   }
