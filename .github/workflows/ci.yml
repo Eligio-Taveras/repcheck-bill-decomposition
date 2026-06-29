@@ -92,6 +92,9 @@ jobs:
       CONFORMANCE_JDBC_URL: jdbc:postgresql://localhost:5432/repcheck
       CONFORMANCE_JDBC_USER: repcheck
       CONFORMANCE_JDBC_PASSWORD: repcheck
+      DECOMP_JDBC_URL: jdbc:postgresql://localhost:5432/repcheck
+      DECOMP_JDBC_USER: repcheck
+      DECOMP_JDBC_PASSWORD: repcheck
 
     services:
       postgres:
@@ -129,3 +132,19 @@ jobs:
 
       - name: Run schema-parity contract (live DB, E2ETest tag)
         run: sbt "conformance/testOnly com.repcheck.decomposition.conformance.SchemaContractSpec -- -n com.repcheck.tags.E2ETest"
+
+      # D5 persister (Doobie) DB integration — runs against the same pgvector service WITH coverage so the persister SQL
+      # counts toward Codecov patch coverage (the E2ETest tag excludes it from the no-DB `build` job's `sbt test`). The
+      # spec self-creates its decomposition schema, so it needs only a reachable Postgres. Codecov merges this upload
+      # per-file with the build job's, covering both the App/config (build) and the persister (here).
+      - name: Run decomposition persister integration (live DB, E2ETest tag, with coverage)
+        run: |
+          sbt coverage \
+            "billDecompositionPipeline/testOnly com.repcheck.decomposition.pipeline.persistence.DoobieDecompositionPersisterSpec -- -n com.repcheck.tags.E2ETest" \
+            billDecompositionPipeline/coverageReport
+
+      - name: Upload persister coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: false

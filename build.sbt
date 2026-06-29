@@ -175,8 +175,15 @@ lazy val billDecompositionPipeline = (project in file("bill-decomposition-pipeli
     commonSettings,
     name := "bill-decomposition-pipeline",
     libraryDependencies ++=
-      Dependencies.catsEffect ++ Dependencies.pureConfig ++ Dependencies.circe ++ Dependencies.logging,
-    libraryDependencies += "org.typelevel" %% "cats-effect-testing-scalatest" % "1.5.0" % Test
+      Dependencies.catsEffect ++ Dependencies.pureConfig ++ Dependencies.circe ++ Dependencies.logging ++ Dependencies.doobie,
+    // Slice 4 (D5 persister): the shared-models decomposition DOs/enums + the pgvector Doobie Get/Put.
+    libraryDependencies ++= Seq(
+      "com.repcheck" %% "repchecksharedmodels"  % "0.1.63",
+      "com.repcheck" %% "repcheck-utils-doobie" % "0.1.5"
+    ),
+    libraryDependencies += "org.typelevel" %% "cats-effect-testing-scalatest" % "1.5.0" % Test,
+    // E2ETest tag (DB-backed persister specs run in the DB-coverage CI step, excluded from plain `sbt test`).
+    libraryDependencies += "com.repcheck" %% "repcheck-utils" % "0.1.1" % Test
   )
 
 lazy val docGenerator = (project in file("doc-generator"))

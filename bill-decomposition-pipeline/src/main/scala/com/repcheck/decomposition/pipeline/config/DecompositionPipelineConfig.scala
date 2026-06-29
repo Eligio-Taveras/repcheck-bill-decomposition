@@ -14,14 +14,11 @@ import pureconfig.ConfigReader
  *   bounded `parEvalMap` width for the per-concept Haiku summarize+stance call (the LLM hot path)
  * @param maxSectionsPerBill
  *   safety cap — bills above this are processed but the cap bounds the worst-case fan-out
- * @param decompositionSnapshotVersion
- *   the snapshot the run writes under; idempotency key is `(versionId, decompositionSnapshotVersion)`
  */
 final case class DecompositionPipelineConfig(
   parallelism: Int,
   simplificationParallelism: Int,
   maxSectionsPerBill: Int,
-  decompositionSnapshotVersion: String,
   ollama: OllamaConfig,
   claude: ClaudeConfig,
   database: DatabaseConfig,
