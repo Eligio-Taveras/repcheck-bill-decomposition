@@ -15,7 +15,6 @@ class DecompositionPipelineConfigSpec extends AnyFlatSpec with Matchers {
   "reference.conf" should "load the decomposition-pipeline config with the validated production defaults" in {
     config.claude.model shouldBe "claude-haiku-4-5" // production summarizer = Haiku (DP-7 validated to hold retrieval)
     config.ollama.embeddingModel shouldBe "qwen3-embedding:0.6b" // DP-7 validated embedder
-    config.decompositionSnapshotVersion shouldBe "v1"
     config.maxSectionsPerBill shouldBe 500
     config.claude.maxTokens shouldBe 8192 // sized for the 6-field stance schema (DP-7: 2048 truncated)
     config.pubsub.completedTopicId shouldBe "bill-decomposition-completed"

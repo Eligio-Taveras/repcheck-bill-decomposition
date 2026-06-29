@@ -83,7 +83,7 @@ object BillDecompositionPipelineApp extends IOApp {
       runContext <- runContextIo
       _ <- logger.info(
         s"bill-decomposition-pipeline starting — runId=${runContext.runId}, stepRunId=${runContext.stepRunId}, " +
-          s"snapshot=${config.decompositionSnapshotVersion}, summarizer=${config.claude.model}, " +
+          s"summarizer=${config.claude.model}, " +
           s"embedder=${config.ollama.embeddingModel}, parallelism=${config.parallelism}"
       )
       _ <- logger.info("scaffold only (slice 1) — orchestration wiring lands in slices 4–8")
