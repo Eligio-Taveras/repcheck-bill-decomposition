@@ -34,7 +34,6 @@ final case class ConceptGroupRow(
 
 /** Provenance for one decomposition sweep (no id). */
 final case class DecompositionRunRow(
-  snapshotVersion: Int,
   orchestratorVersion: String,
   embedderVersion: String,
   clustererVersion: String,
@@ -52,14 +51,15 @@ final case class PersistedSection(
 )
 
 /**
- * Persistence boundary for the decomposition pipeline (D5). Outputs are reproducible per `(versionId,
- * snapshotVersion)`; the single-transaction [[persistDecomposition]] makes a bill's concept groups + topics
- * all-or-nothing, so the [[existsForVersion]] reuse-check is a sound idempotency key.
+ * Persistence boundary for the decomposition pipeline (D5). A bill text version is self-contained, so a decomposition
+ * is reproducible per `versionId` ALONE (independent of any DB metadata snapshot); the single-transaction
+ * [[persistDecomposition]] makes a bill's concept groups + topics all-or-nothing, so the [[existsForVersion]]
+ * reuse-check on `versionId` is a sound idempotency key.
  */
 trait DecompositionPersister[F[_]] {
 
-  /** Reuse-check / idempotency key — has this version already been decomposed under this snapshot? */
-  def existsForVersion(versionId: Long, snapshotVersion: Int): F[Boolean]
+  /** Reuse-check / idempotency key — has this self-contained bill version already been decomposed? */
+  def existsForVersion(versionId: Long): F[Boolean]
 
   /** Insert the run-provenance row (once per sweep); returns its `run_id`. */
   def startRun(run: DecompositionRunRow): F[Long]
@@ -78,12 +78,11 @@ trait DecompositionPersister[F[_]] {
 
   /**
    * Persist a bill's concept groups + their topics + group↔section junctions in ONE transaction, each group tagged with
-   * `snapshotVersion` + `runId`. All-or-nothing per bill.
+   * its provenance `runId`. All-or-nothing per bill.
    */
   def persistDecomposition(
     versionId: Long,
     billId: Long,
-    snapshotVersion: Int,
     runId: Long,
     groups: List[ConceptGroupRow],
   ): F[Unit]

@@ -18,17 +18,17 @@ import com.repcheck.utils.doobie.VectorCodec.{floatArrayGet, floatArrayPut}
  */
 final class DoobieDecompositionPersister[F[_]: MonadCancelThrow](xa: Transactor[F]) extends DecompositionPersister[F] {
 
-  override def existsForVersion(versionId: Long, snapshotVersion: Int): F[Boolean] =
+  override def existsForVersion(versionId: Long): F[Boolean] =
     sql"""SELECT EXISTS (
             SELECT 1 FROM ${Fragment.const(Tables.BillConceptGroups)}
-            WHERE version_id = $versionId AND decomposition_snapshot_version = $snapshotVersion
+            WHERE version_id = $versionId
           )""".query[Boolean].unique.transact(xa)
 
   override def startRun(run: DecompositionRunRow): F[Long] =
     sql"""INSERT INTO ${Fragment.const(Tables.BillDecompositionRuns)}
-            (snapshot_version, orchestrator_version, embedder_version, clusterer_version, prompt_version,
+            (orchestrator_version, embedder_version, clusterer_version, prompt_version,
              status, workflow_run_id)
-          VALUES (${run.snapshotVersion}, ${run.orchestratorVersion}, ${run.embedderVersion},
+          VALUES (${run.orchestratorVersion}, ${run.embedderVersion},
                   ${run.clustererVersion}, ${run.promptVersion}, 'running', ${run.workflowRunId})""".update
       .withUniqueGeneratedKeys[Long]("id")
       .transact(xa)
@@ -50,11 +50,10 @@ final class DoobieDecompositionPersister[F[_]: MonadCancelThrow](xa: Transactor[
   override def persistDecomposition(
     versionId: Long,
     billId: Long,
-    snapshotVersion: Int,
     runId: Long,
     groups: List[ConceptGroupRow],
   ): F[Unit] =
-    groups.traverse_(persistGroup(versionId, billId, snapshotVersion, runId, _)).transact(xa)
+    groups.traverse_(persistGroup(versionId, billId, runId, _)).transact(xa)
 
   // ---- ConnectionIO building blocks (composed inside one transaction by persistDecomposition) ----
 
@@ -70,12 +69,11 @@ final class DoobieDecompositionPersister[F[_]: MonadCancelThrow](xa: Transactor[
   private def persistGroup(
     versionId: Long,
     billId: Long,
-    snapshotVersion: Int,
     runId: Long,
     g: ConceptGroupRow,
   ): ConnectionIO[Unit] =
     for {
-      groupId <- insertGroup(versionId, billId, snapshotVersion, runId, g)
+      groupId <- insertGroup(versionId, billId, runId, g)
       _       <- g.topics.traverse_(insertTopic(groupId, _))
       _       <- g.memberSectionIds.traverse_(insertGroupSection(groupId, _))
     } yield ()
@@ -83,14 +81,13 @@ final class DoobieDecompositionPersister[F[_]: MonadCancelThrow](xa: Transactor[
   private def insertGroup(
     versionId: Long,
     billId: Long,
-    snapshotVersion: Int,
     runId: Long,
     g: ConceptGroupRow,
   ): ConnectionIO[Long] =
     sql"""INSERT INTO ${Fragment.const(Tables.BillConceptGroups)}
-            (version_id, bill_id, label, concept_summary, embedding, decomposition_snapshot_version, run_id)
+            (version_id, bill_id, label, concept_summary, embedding, run_id)
           VALUES ($versionId, $billId, ${g.label}, ${g.conceptSummary}, ${g.embedding}::vector,
-                  $snapshotVersion, $runId)""".update.withUniqueGeneratedKeys[Long]("id")
+                  $runId)""".update.withUniqueGeneratedKeys[Long]("id")
 
   private def insertTopic(groupId: Long, t: TopicRow): ConnectionIO[Int] =
     sql"""INSERT INTO ${Fragment.const(Tables.BillConceptTopics)}

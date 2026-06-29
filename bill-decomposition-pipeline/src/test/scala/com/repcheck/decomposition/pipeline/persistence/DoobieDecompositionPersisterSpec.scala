@@ -52,10 +52,9 @@ class DoobieDecompositionPersisterSpec extends AnyFlatSpec with Matchers with Be
     val billId    = 1L
 
     val program = for {
-      snapshot <- insertSnapshot.transact(xa)
-      before   <- persister.existsForVersion(versionId, snapshot)
+      before <- persister.existsForVersion(versionId)
       runId <- persister.startRun(
-        DecompositionRunRow(snapshot, "orch-1", "qwen3-0.6b", "routing-2", "sum-1", Some(99L))
+        DecompositionRunRow("orch-1", "qwen3-0.6b", "routing-2", "sum-1", Some(99L))
       )
       secIds <- persister.persistSections(
         versionId,
@@ -68,7 +67,6 @@ class DoobieDecompositionPersisterSpec extends AnyFlatSpec with Matchers with Be
       _ <- persister.persistDecomposition(
         versionId,
         billId,
-        snapshot,
         runId,
         List(
           ConceptGroupRow(
@@ -99,7 +97,7 @@ class DoobieDecompositionPersisterSpec extends AnyFlatSpec with Matchers with Be
           )
         ),
       )
-      after  <- persister.existsForVersion(versionId, snapshot)
+      after  <- persister.existsForVersion(versionId)
       loaded <- persister.loadSectionsWithEmbeddings(versionId)
       _      <- persister.completeRun(runId, "completed")
       stance <- sql"SELECT effect, impact, scope FROM bill_concept_topics ORDER BY id"
@@ -129,22 +127,14 @@ class DoobieDecompositionPersisterSpec extends AnyFlatSpec with Matchers with Be
     one shouldBe 1
   }
 
-  // ---- per-method ConnectionIO building blocks the persister composes (this returns the assigned snapshot_version) ----
-
-  private def insertSnapshot: ConnectionIO[Int] =
-    sql"INSERT INTO pre_llm_metadata_snapshots (status) VALUES ('active') RETURNING snapshot_version".query[Int].unique
+  // ---- self-created decomposition schema (the spec depends only on a reachable Postgres) ----
 
   // Each statement runs on its own — Postgres PreparedStatement executes a single statement.
   private val createDdl: ConnectionIO[Unit] =
     List(
       sql"CREATE EXTENSION IF NOT EXISTS vector",
-      sql"""CREATE TABLE pre_llm_metadata_snapshots (
-              snapshot_version SERIAL PRIMARY KEY,
-              created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-              status TEXT NOT NULL CHECK (status IN ('capturing','active','superseded')))""",
       sql"""CREATE TABLE bill_decomposition_runs (
               id BIGSERIAL PRIMARY KEY,
-              snapshot_version INT NOT NULL REFERENCES pre_llm_metadata_snapshots(snapshot_version),
               orchestrator_version TEXT NOT NULL, embedder_version TEXT NOT NULL,
               clusterer_version TEXT NOT NULL, prompt_version TEXT NOT NULL,
               status TEXT NOT NULL CHECK (status IN ('running','completed','completed_with_errors','failed')),
@@ -159,7 +149,6 @@ class DoobieDecompositionPersisterSpec extends AnyFlatSpec with Matchers with Be
               id BIGSERIAL PRIMARY KEY, version_id BIGINT NOT NULL, bill_id BIGINT NOT NULL,
               label TEXT NOT NULL, concept_summary TEXT NOT NULL, embedding vector(1024), taxonomy_version INT,
               created_at TIMESTAMPTZ NOT NULL DEFAULT now(), updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-              decomposition_snapshot_version INT REFERENCES pre_llm_metadata_snapshots(snapshot_version),
               run_id BIGINT REFERENCES bill_decomposition_runs(id))""",
       sql"""CREATE TABLE bill_concept_topics (
               id BIGSERIAL PRIMARY KEY,
@@ -183,7 +172,6 @@ class DoobieDecompositionPersisterSpec extends AnyFlatSpec with Matchers with Be
       "bill_concept_groups",
       "bill_text_sections",
       "bill_decomposition_runs",
-      "pre_llm_metadata_snapshots",
     ).traverse_(t => (fr"DROP TABLE IF EXISTS" ++ Fragment.const(t) ++ fr"CASCADE").update.run)
 
 }
